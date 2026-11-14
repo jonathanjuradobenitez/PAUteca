@@ -1,0 +1,41 @@
+PAUteca · aplicación instalable (PWA)
+=====================================
+
+Esta carpeta es la app lista para subir a internet. Nombre visible: PAUteca.
+Icono: el icono oficial de PAUteca en todas las plataformas.
+
+QUÉ HAY DENTRO
+  index.html               la app (igual que la versión actual)
+  manifest.webmanifest     name y short_name = "PAUteca", iconos
+  sw.js                    funcionamiento sin conexión
+  apple-touch-icon*.png    icono para iPhone / iPad / Mac (Safari)
+  icon-192/512.png         icono para Windows, Mac (Chrome/Edge) y Android
+  icon-maskable-*.png      icono adaptable de Android (círculo, squircle...)
+  favicon*                 icono de la pestaña del navegador
+
+1) SUBIRLA A INTERNET (una vez)
+   Entra en https://app.netlify.com/drop y arrastra ESTA CARPETA entera.
+   (O súbela a GitHub Pages.) Tiene que ser una dirección https.
+
+2) IPHONE / IPAD
+   Abre la dirección en Safari > botón Compartir > "Añadir a pantalla de inicio".
+   El nombre propuesto será "PAUteca"; pulsa Añadir.
+
+3) ANDROID
+   Chrome > "Instalar aplicación" (o menú ⋮ > "Añadir a pantalla de inicio").
+
+4) WINDOWS
+   Chrome o Edge > icono de instalar en la barra de direcciones (o menú >
+   "Instalar PAUteca"). Aparece en el escritorio y en el menú Inicio.
+
+5) MAC
+   Chrome/Edge: igual que en Windows (queda en Launchpad y en el Dock).
+   Safari (macOS 14 o posterior): Archivo > "Añadir al Dock".
+
+ACTUALIZAR LA APP
+   Sustituye index.html, cambia en sw.js la versión (pauteca-v3 -> pauteca-v4)
+   y vuelve a subir la carpeta.
+
+SI YA LA TENÍAS INSTALADA CON EL ICONO ANTIGUO
+   El icono de un acceso ya creado no siempre se renueva solo (sobre todo en
+   iPhone). Bórralo de la pantalla de inicio y vuelve a añadirlo.
