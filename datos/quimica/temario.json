@@ -1,0 +1,197 @@
+{
+ "version": 1,
+ "temas": [
+  {
+   "id": "form",
+   "nombre": "Formulación y nomenclatura",
+   "icono": "🏷️",
+   "color": "#8b5cf6",
+   "tipos": [
+    {
+     "id": "inorg",
+     "nombre": "Formulación y nomenclatura inorgánica"
+    },
+    {
+     "id": "orgf",
+     "nombre": "Formulación y nomenclatura orgánica"
+    }
+   ]
+  },
+  {
+   "id": "atom",
+   "nombre": "Estructura atómica y sistema periódico",
+   "icono": "⚛️",
+   "color": "#2f6df0",
+   "tipos": [
+    {
+     "id": "part",
+     "nombre": "Partículas subatómicas, isótopos e iones"
+    },
+    {
+     "id": "conf",
+     "nombre": "Configuración electrónica y posición en la tabla"
+    },
+    {
+     "id": "cuant",
+     "nombre": "Números cuánticos"
+    },
+    {
+     "id": "prop",
+     "nombre": "Propiedades periódicas (radio, energía de ionización, electronegatividad, afinidad)"
+    }
+   ]
+  },
+  {
+   "id": "enlace",
+   "nombre": "Enlace químico y propiedades de las sustancias",
+   "icono": "🔗",
+   "color": "#17a673",
+   "tipos": [
+    {
+     "id": "lewis",
+     "nombre": "Estructuras de Lewis, geometría (RPECV) e hibridación"
+    },
+    {
+     "id": "pol",
+     "nombre": "Polaridad de las moléculas"
+    },
+    {
+     "id": "inter",
+     "nombre": "Fuerzas intermoleculares, solubilidad y puntos de fusión"
+    },
+    {
+     "id": "tipo",
+     "nombre": "Tipos de enlace y propiedades de las sustancias"
+    }
+   ]
+  },
+  {
+   "id": "termo",
+   "nombre": "Termodinámica química",
+   "icono": "🔥",
+   "color": "#dc2626",
+   "tipos": [
+    {
+     "id": "ent",
+     "nombre": "Entalpía de reacción (formación, enlaces, Hess)"
+    },
+    {
+     "id": "esp",
+     "nombre": "Entropía, energía libre de Gibbs y espontaneidad"
+    },
+    {
+     "id": "calor",
+     "nombre": "Calor a presión y a volumen constante"
+    }
+   ]
+  },
+  {
+   "id": "cinet",
+   "nombre": "Cinética química",
+   "icono": "⏱️",
+   "color": "#f0a30a",
+   "tipos": [
+    {
+     "id": "vel",
+     "nombre": "Ecuación de velocidad, órdenes y unidades"
+    },
+    {
+     "id": "fact",
+     "nombre": "Factores que modifican la velocidad"
+    }
+   ]
+  },
+  {
+   "id": "equil",
+   "nombre": "Equilibrio químico y solubilidad",
+   "icono": "⚖️",
+   "color": "#2f9e9e",
+   "tipos": [
+    {
+     "id": "kc",
+     "nombre": "Constantes Kc y Kp y cálculo de concentraciones"
+    },
+    {
+     "id": "lech",
+     "nombre": "Principio de Le Châtelier"
+    },
+    {
+     "id": "solub",
+     "nombre": "Solubilidad y producto de solubilidad"
+    }
+   ]
+  },
+  {
+   "id": "acbase",
+   "nombre": "Reacciones ácido-base",
+   "icono": "💧",
+   "color": "#6d4ae0",
+   "tipos": [
+    {
+     "id": "prep",
+     "nombre": "Preparación de disoluciones y concentraciones"
+    },
+    {
+     "id": "ph",
+     "nombre": "Cálculo de pH y grado de disociación"
+    },
+    {
+     "id": "hidrol",
+     "nombre": "Hidrólisis de sales y carácter ácido-base"
+    },
+    {
+     "id": "neut",
+     "nombre": "Neutralización y volumetrías"
+    },
+    {
+     "id": "pares",
+     "nombre": "Pares conjugados y especies anfóteras"
+    }
+   ]
+  },
+  {
+   "id": "redox",
+   "nombre": "Reacciones redox y electroquímica",
+   "icono": "⚡",
+   "color": "#e8487a",
+   "tipos": [
+    {
+     "id": "ajuste",
+     "nombre": "Ajuste por el método del ion-electrón"
+    },
+    {
+     "id": "estq",
+     "nombre": "Estequiometría de reacciones redox"
+    },
+    {
+     "id": "pila",
+     "nombre": "Pilas galvánicas y potenciales estándar"
+    },
+    {
+     "id": "elec",
+     "nombre": "Electrólisis y leyes de Faraday"
+    },
+    {
+     "id": "ident",
+     "nombre": "Oxidante y reductor"
+    }
+   ]
+  },
+  {
+   "id": "org",
+   "nombre": "Química orgánica",
+   "icono": "🧬",
+   "color": "#7c5a2b",
+   "tipos": [
+    {
+     "id": "reac",
+     "nombre": "Reacciones orgánicas (adición, eliminación, sustitución, combustión)"
+    },
+    {
+     "id": "isom",
+     "nombre": "Isomería e hibridación del carbono"
+    }
+   ]
+  }
+ ]
+}

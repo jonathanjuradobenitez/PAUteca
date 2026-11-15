@@ -1,0 +1,312 @@
+{
+ "version": 1,
+ "id": "matematicas-2020-reserva-3",
+ "asignatura": "matematicas",
+ "anio": 2020,
+ "convocatoria": "Reserva 3",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2020-reserva-3-1",
+   "n": 1,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(f\\) definida por \\(f(x)=\\dfrac{x^3}{x^2-1}\\) para \\(x\\neq1,-1\\).",
+    "apartados": [
+     "(1,25 p.) Estudia y halla las asíntotas de la gráfica de \\(f\\).",
+     "(1,25 p.) Determina los intervalos de crecimiento y de decrecimiento de \\(f\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p><b>Verticales</b> \\(x=\\pm1\\): el numerador vale \\(\\pm1\\neq0\\). Límites laterales (\\(x^2-1\\) es positivo si \\(|x|\\gt1\\) y negativo si \\(|x|\\lt1\\)):</p>\\[\\lim_{x\\to1^+}f=+\\infty\\quad\\lim_{x\\to1^-}f=-\\infty\\qquad\\lim_{x\\to-1^+}f=\\frac{-1}{0^-}=+\\infty\\quad\\lim_{x\\to-1^-}f=\\frac{-1}{0^+}=-\\infty\\]<p><b>Horizontal:</b> no hay (grado 3 sobre 2). <b>Oblicua:</b> \\(f(x)=x+\\dfrac x{x^2-1}\\): la fracción tiende a 0 en \\(\\pm\\infty\\).<i class='n' data-t='th'>Asíntota oblicua: se obtiene dividiendo; el cociente es la recta y el resto da una fracción que tiende a 0.</i></p><div class='res'>Asíntotas verticales \\(x=-1\\) y \\(x=1\\), y asíntota oblicua \\(y=x\\) (en \\(\\pm\\infty\\))</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'>\\[f'(x)=\\frac{3x^2(x^2-1)-2x\\cdot x^3}{(x^2-1)^2}=\\frac{x^4-3x^2}{(x^2-1)^2}=\\frac{x^2(x^2-3)}{(x^2-1)^2}\\]<p>\\(f'=0\\iff x=0,\\ \\pm\\sqrt3\\). El signo es el de \\(x^2-3\\) (salvo en \\(x=0\\)): positivo si \\(|x|\\gt\\sqrt3\\), negativo si \\(|x|\\lt\\sqrt3\\).</p><div class='res'>Creciente en \\((-\\infty,-\\sqrt3)\\) y en \\((\\sqrt3,+\\infty)\\); decreciente en \\((-\\sqrt3,-1)\\), \\((-1,1)\\) y \\((1,\\sqrt3)\\) (máximo relativo en \\(x=-\\sqrt3\\), mínimo relativo en \\(x=\\sqrt3\\))</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "asint",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-3-2",
+   "n": 2,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Determina la única función derivable \\(f:\\mathbb R\\to\\mathbb R\\) que cumple que \\(f(0)=1\\), \\(f'(0)=1\\) y \\(f''(x)=e^x(x+2)\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Integrar dos veces",
+     "html": "<div class='ex'><p>Por partes (polinomio antes que exponencial en ALPES<i class='n' data-t='th'>Regla ALPES: Arcos, Logaritmos, Polinomios, Exponenciales, Senos/cosenos. \\(u=x+2\\), \\(dv=e^xdx\\).</i>): \\(\\int(x+2)e^x\\,dx=(x+2)e^x-e^x=(x+1)e^x\\). Entonces \\(f'(x)=(x+1)e^x+C_1\\); \\(f'(0)=1+C_1=1\\Rightarrow C_1=0\\).</p>\\[f(x)=\\int(x+1)e^x\\,dx=xe^x+C_2\\qquad f(0)=C_2=1\\]<div class='res'>\\(f(x)=xe^x+1\\)</div><i class='n' data-t='tp'>Comprueba: \\(f'(x)=(x+1)e^x\\), \\(f''(x)=(x+2)e^x\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "pcond",
+     "apartados": ""
+    },
+    {
+     "tema": "integ",
+     "tipo": "part",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-3-3",
+   "n": 3,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera \\(A=\\begin{pmatrix}2&1&1\\\\1&0&1\\end{pmatrix}\\), \\(B=\\begin{pmatrix}1&0\\\\-1&m\\\\1&1\\end{pmatrix}\\), \\(X=\\begin{pmatrix}x\\\\y\\\\z\\end{pmatrix}\\) y \\(C=\\begin{pmatrix}2\\\\-2\\\\3\\end{pmatrix}\\).",
+    "apartados": [
+     "(0,75 p.) Determina los valores de \\(m\\) para los que \\(AB\\) no tiene inversa.",
+     "(0,75 p.) Determina los valores de \\(m\\) para los que \\(BA\\) no tiene inversa.",
+     "(1 p.) Para \\(m=0\\), resuelve, si es posible, el sistema dado por \\(BAX=C\\) y halla una solución en la que \\(x+y+z=0\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(AB\\) es \\(2\\times2\\): \\(AB=\\begin{pmatrix}2&m+1\\\\2&1\\end{pmatrix}\\), \\(|AB|=2-2(m+1)=-2m\\). No tiene inversa si y solo si \\(|AB|=0\\)<i class='n' data-t='th'>Una matriz cuadrada es invertible si y solo si su determinante es distinto de 0.</i>.</p><div class='res'>\\(m=0\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(BA\\) es \\(3\\times3\\) y \\(\\operatorname{rg}(BA)\\le\\operatorname{rg}A\\le2\\)<i class='n' data-t='th'>\\(\\operatorname{rg}(MN)\\le\\min(\\operatorname{rg}M,\\operatorname{rg}N)\\). Una matriz \\(2\\times3\\) tiene rango como máximo 2.</i>, luego \\(|BA|=0\\) para todo \\(m\\).</p><div class='res'>\\(BA\\) no tiene inversa para ningún valor de \\(m\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Para \\(m=0\\): \\(BA=\\begin{pmatrix}2&1&1\\\\-2&-1&-1\\\\3&1&2\\end{pmatrix}\\) y el sistema \\(BAX=C\\) es \\(2x+y+z=2\\), \\(-2x-y-z=-2\\), \\(3x+y+2z=3\\). La 2.ª repite la 1.ª. De \\(y=2-2x-z\\) y la 3.ª: \\(3x+2-2x-z+2z=3\\Rightarrow z=1-x\\), \\(y=1-x\\).</p><p>Compatible indeterminado: \\((x,\\,1-x,\\,1-x)\\). Con \\(x+y+z=0\\): \\(x+2-2x=0\\Rightarrow x=2\\).</p><div class='res'>Soluciones: \\((\\lambda,\\ 1-\\lambda,\\ 1-\\lambda)\\). La que cumple \\(x+y+z=0\\) es \\((2,\\,-1,\\,-1)\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "ecmat",
+     "apartados": "c"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-3-4",
+   "n": 4,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera los puntos \\(A(t,2,-1)\\), \\(B(0,1,1)\\), \\(C(-1,0,2)\\) y \\(D(2,3,-t-1)\\).",
+    "apartados": [
+     "(1,25 p.) Calcula el valor o valores de \\(t\\) para que el volumen del tetraedro de vértices \\(A,B,C,D\\) sea 5 unidades cúbicas.",
+     "(1,25 p.) Para \\(t=0\\), calcula la distancia del punto \\(A\\) a la recta determinada por los puntos \\(B\\) y \\(C\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(\\overrightarrow{AB}=(-t,-1,2)\\), \\(\\overrightarrow{AC}=(-1-t,-2,3)\\), \\(\\overrightarrow{AD}=(2-t,1,-t)\\):</p>\\[[\\overrightarrow{AB},\\overrightarrow{AC},\\overrightarrow{AD}]=\\begin{vmatrix}-t&-1&2\\\\-1-t&-2&3\\\\2-t&1&-t\\end{vmatrix}=t-t^2\\]<p>\\(V=\\frac16|t-t^2|=5\\iff|t^2-t|=30\\iff t^2-t=30\\) (la otra, \\(t^2-t=-30\\), no tiene solución real).</p><div class='res'>\\(t=6\\) o \\(t=-5\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Con \\(t=0\\): \\(A(0,2,-1)\\), \\(\\overrightarrow{BC}=(-1,-1,1)\\), \\(\\overrightarrow{BA}=(0,1,-2)\\). Distancia punto-recta<i class='n' data-t='th'>\\(d(A,r)=\\dfrac{|\\overrightarrow{BA}\\times\\vec d|}{|\\vec d|}\\), la altura del paralelogramo de lados \\(\\overrightarrow{BA}\\) y \\(\\vec d\\).</i>:</p>\\[\\overrightarrow{BA}\\times\\overrightarrow{BC}=(-1,2,1)\\qquad d=\\frac{\\sqrt6}{\\sqrt3}\\]<div class='res'>\\(\\sqrt2\\approx1{,}414\\) unidades</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "area",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "dist",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-3-5",
+   "n": 5,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Se sabe que la función \\(f:\\mathbb R\\to\\mathbb R\\) dada por \\(f(x)=ax^3+bx^2+cx+d\\) tiene un punto crítico en \\(x=0\\), que su gráfica pasa por \\((0,3)\\) y que la recta \\(y=-2x+2\\) es tangente a dicha gráfica en el punto de abscisa \\(x=1\\). Calcula \\(a\\), \\(b\\), \\(c\\) y \\(d\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Condiciones",
+     "html": "<div class='ex'><p>\\(f'(x)=3ax^2+2bx+c\\). Cuatro condiciones:</p><p>• Punto crítico en \\(x=0\\): \\(f'(0)=c=0\\). • Pasa por \\((0,3)\\): \\(d=3\\).</p><p>• La tangente en \\(x=1\\) es \\(y=-2x+2\\): \\(f'(1)=-2\\) y \\(f(1)=-2\\cdot1+2=0\\)<i class='n' data-t='th'>Si una recta es tangente en \\(x_0\\), la gráfica pasa por el punto de la recta en \\(x_0\\) y \\(f'(x_0)\\) es la pendiente de la recta.</i>: \\(3a+2b+c=-2\\) y \\(a+b+c+d=0\\).</p><p>Con \\(c=0\\), \\(d=3\\): \\(3a+2b=-2\\) y \\(a+b=-3\\Rightarrow b=-3-a\\), \\(3a-6-2a=-2\\Rightarrow a=4\\), \\(b=-7\\).</p><div class='res'>\\(a=4\\), \\(b=-7\\), \\(c=0\\), \\(d=3\\); es decir, \\(f(x)=4x^3-7x^2+3\\)</div><i class='n' data-t='tp'>Comprobación: \\(f(1)=4-7+3=0\\) ✓ y \\(f'(1)=12-14=-2\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-3-6",
+   "n": 6,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Calcula el valor de \\(a\\gt0\\) para que el área comprendida entre la parábola \\(y=3x^2-2ax\\) y el eje de abscisas sea 4 unidades cuadradas.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>\\(3x^2-2ax=x(3x-2a)=0\\iff x=0,\\ x=\\frac{2a}3\\). Entre las raíces la parábola (abierta hacia arriba) queda bajo el eje:</p>\\[A=\\left|\\int_0^{2a/3}(3x^2-2ax)\\,dx\\right|=\\bigl|x^3-ax^2\\bigr|_0^{2a/3}=\\left|\\frac{8a^3}{27}-\\frac{12a^3}{27}\\right|=\\frac{4a^3}{27}\\]<div class='res'>\\(\\dfrac{4a^3}{27}=4\\iff a^3=27\\iff a=3\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "area",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-3-7",
+   "n": 7,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las matrices \\(A=\\begin{pmatrix}1&1\\\\1&2\\end{pmatrix}\\) y \\(B=\\begin{pmatrix}2&1\\\\2&0\\end{pmatrix}\\).",
+    "apartados": [
+     "(1 p.) Sabiendo que una matriz \\(X\\) verifica que \\(X^3AX=B^2\\), halla los posibles valores de su determinante.",
+     "(1,5 p.) Determina, si existe, una matriz \\(Y\\) que verifique \\(A^2YB^{-1}=A\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(|A|=1\\) y \\(|B|=-2\\). Tomo determinantes<i class='n' data-t='th'>\\(|MN|=|M||N|\\), \\(|M^n|=|M|^n\\).</i>:</p>\\[|X|^3\\cdot|A|\\cdot|X|=|B|^2\\iff|X|^4=4\\]<div class='res'>\\(|X|=\\sqrt2\\) o \\(|X|=-\\sqrt2\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(|A|=1\\neq0\\) y \\(|B|=-2\\neq0\\): existen \\(A^{-1}\\) y \\(B^{-1}\\). Despejo multiplicando por \\(A^{-2}\\) por la izquierda y por \\(B\\) por la derecha<i class='n' data-t='err'>\\(A^2YB^{-1}=A\\Rightarrow Y=A^{-2}AB=A^{-1}B\\). \\(A^{-2}\\) va a la izquierda de \\(Y\\) y \\(B\\) a la derecha.</i>: \\(Y=A^{-1}B\\). Con \\(A^{-1}=\\begin{pmatrix}2&-1\\\\-1&1\\end{pmatrix}\\):</p><div class='res'>\\(Y=\\begin{pmatrix}2&-1\\\\-1&1\\end{pmatrix}\\begin{pmatrix}2&1\\\\2&0\\end{pmatrix}=\\begin{pmatrix}2&2\\\\0&-1\\end{pmatrix}\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "det",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "ecmat",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-3-8",
+   "n": 8,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el punto \\(A(0,1,-2)\\) y los planos \\(\\pi_1\\equiv2x-y-z+5=0\\) y \\(\\pi_2\\equiv x+5y-6z-4=0\\).",
+    "apartados": [
+     "(1,5 p.) Halla el punto simétrico de \\(A\\) respecto de \\(\\pi_1\\).",
+     "(1 p.) Determina la recta que pasa por \\(A\\) y es paralela a \\(\\pi_1\\) y \\(\\pi_2\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Recta perpendicular a \\(\\pi_1\\) por \\(A\\) (dirección \\((2,-1,-1)\\)): \\((2t,\\,1-t,\\,-2-t)\\). Corte con \\(\\pi_1\\):</p>\\[4t-(1-t)-(-2-t)+5=0\\iff6t+6=0\\iff t=-1\\ \\Rightarrow\\ M(-2,2,-1)\\]<div class='res'>\\(A'=2M-A=(-4,4,-2)-(0,1,-2)=(-4,\\,3,\\,0)\\)</div><i class='n' data-t='tp'>Comprobación: \\(A'\\) cumple \\(-8-3-0+5=-6\\) y \\(A\\): \\(0-1+2+5=6\\): valores opuestos ✓.</i></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Una recta paralela a dos planos tiene dirección perpendicular a ambas normales<i class='n' data-t='th'>Recta paralela a dos planos: \\(\\vec d=\\vec n_1\\times\\vec n_2\\).</i>:</p>\\[\\vec d=(2,-1,-1)\\times(1,5,-6)=(11,11,11)\\sim(1,1,1)\\]<div class='res'>\\((x,y,z)=(0,1,-2)+t\\,(1,1,1)\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "simet",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "perp",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

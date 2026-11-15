@@ -1,0 +1,1415 @@
+{
+ "version": 1,
+ "asignatura": "fisica",
+ "examenes": [
+  {
+   "id": "fisica-2025-reserva-1",
+   "anio": 2025,
+   "convocatoria": "Reserva 1",
+   "archivo": "examenes/2025-reserva-1.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2025-reserva-1-a",
+     "n": "A",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a"
+      },
+      {
+       "tema": "din",
+       "tipo": null,
+       "apartados": "b1"
+      },
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "b2"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2025-reserva-1-b",
+     "n": "B",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b1"
+      },
+      {
+       "tema": "elec",
+       "tipo": "sup",
+       "apartados": "b2"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2025-reserva-1-c",
+     "n": "C",
+     "clasificacion": [
+      {
+       "tema": "ondas",
+       "tipo": null,
+       "apartados": "a"
+      },
+      {
+       "tema": "opt",
+       "tipo": null,
+       "apartados": "b1, b2"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2025-reserva-1-d",
+     "n": "D",
+     "clasificacion": [
+      {
+       "tema": "cuant",
+       "tipo": null,
+       "apartados": "a, b2"
+      },
+      {
+       "tema": "nuc",
+       "tipo": null,
+       "apartados": "b1"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fisica-2025-reserva-2",
+   "anio": 2025,
+   "convocatoria": "Reserva 2",
+   "archivo": "examenes/2025-reserva-2.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2025-reserva-2-a",
+     "n": "A",
+     "clasificacion": [
+      {
+       "tema": "din",
+       "tipo": null,
+       "apartados": "a"
+      },
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "b1, b2"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2025-reserva-2-b",
+     "n": "B",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b1"
+      },
+      {
+       "tema": "elec",
+       "tipo": "unif",
+       "apartados": "b2"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2025-reserva-2-c",
+     "n": "C",
+     "clasificacion": [
+      {
+       "tema": "ondas",
+       "tipo": null,
+       "apartados": "a"
+      },
+      {
+       "tema": "opt",
+       "tipo": null,
+       "apartados": "b1, b2"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2025-reserva-2-d",
+     "n": "D",
+     "clasificacion": [
+      {
+       "tema": "nuc",
+       "tipo": null,
+       "apartados": "a, b2"
+      },
+      {
+       "tema": "cuant",
+       "tipo": null,
+       "apartados": "b1"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fisica-2025-reserva-3",
+   "anio": 2025,
+   "convocatoria": "Reserva 3",
+   "archivo": "examenes/2025-reserva-3.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2025-reserva-3-a",
+     "n": "A",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b1"
+      },
+      {
+       "tema": "din",
+       "tipo": null,
+       "apartados": "b2"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2025-reserva-3-b",
+     "n": "B",
+     "clasificacion": [
+      {
+       "tema": "elec",
+       "tipo": "unif",
+       "apartados": "a"
+      },
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "b1, b2"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2025-reserva-3-c",
+     "n": "C",
+     "clasificacion": [
+      {
+       "tema": "opt",
+       "tipo": null,
+       "apartados": "a, b1"
+      },
+      {
+       "tema": "ondas",
+       "tipo": null,
+       "apartados": "b2"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2025-reserva-3-d",
+     "n": "D",
+     "clasificacion": [
+      {
+       "tema": "nuc",
+       "tipo": null,
+       "apartados": "a"
+      },
+      {
+       "tema": "cuant",
+       "tipo": null,
+       "apartados": "b1, b2"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fisica-2021-junio",
+   "anio": 2021,
+   "convocatoria": "Junio",
+   "archivo": "examenes/2021-junio.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2021-junio-a1",
+     "n": "A.1",
+     "clasificacion": [
+      {
+       "tema": "din",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2021-junio-a2",
+     "n": "A.2",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2021-junio-b1",
+     "n": "B.1",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2021-junio-b2",
+     "n": "B.2",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fisica-2021-julio",
+   "anio": 2021,
+   "convocatoria": "Julio",
+   "archivo": "examenes/2021-julio.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2021-julio-a1",
+     "n": "A.1",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2021-julio-a2",
+     "n": "A.2",
+     "clasificacion": [
+      {
+       "tema": "din",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2021-julio-b1",
+     "n": "B.1",
+     "clasificacion": [
+      {
+       "tema": "elec",
+       "tipo": "trab",
+       "apartados": "a-i, a-ii, b"
+      },
+      {
+       "tema": "elec",
+       "tipo": "sup",
+       "apartados": "b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2021-julio-b2",
+     "n": "B.2",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2021-julio-c1",
+     "n": "C.1",
+     "clasificacion": [
+      {
+       "tema": "ondas",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fisica-2020-julio",
+   "anio": 2020,
+   "convocatoria": "Julio",
+   "archivo": "examenes/2020-julio.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2020-julio-1",
+     "n": "1",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2020-julio-2",
+     "n": "2",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2020-julio-5",
+     "n": "5",
+     "clasificacion": [
+      {
+       "tema": "din",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2020-julio-6",
+     "n": "6",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2020-julio-7",
+     "n": "7",
+     "clasificacion": [
+      {
+       "tema": "ondas",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fisica-2019-junio",
+   "anio": 2019,
+   "convocatoria": "Junio",
+   "archivo": "examenes/2019-junio.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2019-junio-a1",
+     "n": "A.1",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2019-junio-a2",
+     "n": "A.2",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2019-junio-b1",
+     "n": "B.1",
+     "clasificacion": [
+      {
+       "tema": "din",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2019-junio-b2",
+     "n": "B.2",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2019-junio-b3",
+     "n": "B.3",
+     "clasificacion": [
+      {
+       "tema": "ondas",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fisica-2018-junio",
+   "anio": 2018,
+   "convocatoria": "Junio",
+   "archivo": "examenes/2018-junio.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2018-junio-a1",
+     "n": "A.1",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2018-junio-a2",
+     "n": "A.2",
+     "clasificacion": [
+      {
+       "tema": "elec",
+       "tipo": "unif",
+       "apartados": "a-i, a-ii"
+      },
+      {
+       "tema": "elec",
+       "tipo": "sup",
+       "apartados": "b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2018-junio-a3",
+     "n": "A.3",
+     "clasificacion": [
+      {
+       "tema": "ondas",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2018-junio-b1",
+     "n": "B.1",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2018-junio-b2",
+     "n": "B.2",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fisica-2017-junio",
+   "anio": 2017,
+   "convocatoria": "Junio",
+   "archivo": "examenes/2017-junio.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2017-junio-a1",
+     "n": "A.1",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2017-junio-a2",
+     "n": "A.2",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2017-junio-b1",
+     "n": "B.1",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2017-junio-b2",
+     "n": "B.2",
+     "clasificacion": [
+      {
+       "tema": "elec",
+       "tipo": "teo",
+       "apartados": "a-i, a-ii"
+      },
+      {
+       "tema": "elec",
+       "tipo": "sup",
+       "apartados": "b"
+      },
+      {
+       "tema": "elec",
+       "tipo": "trab",
+       "apartados": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fisica-2016-junio",
+   "anio": 2016,
+   "convocatoria": "Junio",
+   "archivo": "examenes/2016-junio.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2016-junio-a1",
+     "n": "A.1",
+     "clasificacion": [
+      {
+       "tema": "elec",
+       "tipo": "teo",
+       "apartados": "a"
+      },
+      {
+       "tema": "elec",
+       "tipo": "unif",
+       "apartados": "b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2016-junio-a2",
+     "n": "A.2",
+     "clasificacion": [
+      {
+       "tema": "ondas",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2016-junio-a3",
+     "n": "A.3",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2016-junio-b1",
+     "n": "B.1",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2016-junio-b3",
+     "n": "B.3",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fisica-2015-junio",
+   "anio": 2015,
+   "convocatoria": "Junio",
+   "archivo": "examenes/2015-junio.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2015-junio-a1",
+     "n": "A.1",
+     "clasificacion": [
+      {
+       "tema": "elec",
+       "tipo": "teo",
+       "apartados": "a"
+      },
+      {
+       "tema": "elec",
+       "tipo": "sup",
+       "apartados": "b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2015-junio-a2",
+     "n": "A.2",
+     "clasificacion": [
+      {
+       "tema": "ondas",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2015-junio-a3",
+     "n": "A.3",
+     "clasificacion": [
+      {
+       "tema": "din",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2015-junio-b1",
+     "n": "B.1",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2015-junio-b3",
+     "n": "B.3",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fisica-2014-junio",
+   "anio": 2014,
+   "convocatoria": "Junio",
+   "archivo": "examenes/2014-junio.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2014-junio-a1",
+     "n": "A.1",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2014-junio-a3",
+     "n": "A.3",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2014-junio-b1",
+     "n": "B.1",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2014-junio-b3",
+     "n": "B.3",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2014-junio-b4",
+     "n": "B.4",
+     "clasificacion": [
+      {
+       "tema": "ondas",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fisica-2013-junio",
+   "anio": 2013,
+   "convocatoria": "Junio",
+   "archivo": "examenes/2013-junio.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2013-junio-a1",
+     "n": "A.1",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2013-junio-a2",
+     "n": "A.2",
+     "clasificacion": [
+      {
+       "tema": "ondas",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2013-junio-a3",
+     "n": "A.3",
+     "clasificacion": [
+      {
+       "tema": "din",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2013-junio-b1",
+     "n": "B.1",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2013-junio-b3",
+     "n": "B.3",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fisica-2012-junio",
+   "anio": 2012,
+   "convocatoria": "Junio",
+   "archivo": "examenes/2012-junio.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2012-junio-a1",
+     "n": "A.1",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2012-junio-a3",
+     "n": "A.3",
+     "clasificacion": [
+      {
+       "tema": "ondas",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2012-junio-a4",
+     "n": "A.4",
+     "clasificacion": [
+      {
+       "tema": "elec",
+       "tipo": "unif",
+       "apartados": "a, b"
+      },
+      {
+       "tema": "elec",
+       "tipo": "trab",
+       "apartados": "a"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2012-junio-b2",
+     "n": "B.2",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2012-junio-b3",
+     "n": "B.3",
+     "clasificacion": [
+      {
+       "tema": "din",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fisica-2011-junio",
+   "anio": 2011,
+   "convocatoria": "Junio",
+   "archivo": "examenes/2011-junio.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2011-junio-a1",
+     "n": "A.1",
+     "clasificacion": [
+      {
+       "tema": "elec",
+       "tipo": "teo",
+       "apartados": "a"
+      },
+      {
+       "tema": "elec",
+       "tipo": "sup",
+       "apartados": "b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2011-junio-a2",
+     "n": "A.2",
+     "clasificacion": [
+      {
+       "tema": "ondas",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2011-junio-a3",
+     "n": "A.3",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2011-junio-b1",
+     "n": "B.1",
+     "clasificacion": [
+      {
+       "tema": "din",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2011-junio-b3",
+     "n": "B.3",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fisica-2010-junio",
+   "anio": 2010,
+   "convocatoria": "Junio",
+   "archivo": "examenes/2010-junio.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2010-junio-a1",
+     "n": "A.1",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2010-junio-a3",
+     "n": "A.3",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2010-junio-b1",
+     "n": "B.1",
+     "clasificacion": [
+      {
+       "tema": "elec",
+       "tipo": "teo",
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2010-junio-b3",
+     "n": "B.3",
+     "clasificacion": [
+      {
+       "tema": "din",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2010-junio-b4",
+     "n": "B.4",
+     "clasificacion": [
+      {
+       "tema": "ondas",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fisica-2009-junio",
+   "anio": 2009,
+   "convocatoria": "Junio",
+   "archivo": "examenes/2009-junio.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2009-junio-a1",
+     "n": "A.1",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2009-junio-a2",
+     "n": "A.2",
+     "clasificacion": [
+      {
+       "tema": "ondas",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2009-junio-a3",
+     "n": "A.3",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2009-junio-b1",
+     "n": "B.1",
+     "clasificacion": [
+      {
+       "tema": "elec",
+       "tipo": "teo",
+       "apartados": "a"
+      },
+      {
+       "tema": "elec",
+       "tipo": "equil",
+       "apartados": "b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2009-junio-b3",
+     "n": "B.3",
+     "clasificacion": [
+      {
+       "tema": "din",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2009-junio-b4",
+     "n": "B.4",
+     "clasificacion": [
+      {
+       "tema": "ondas",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fisica-2008-junio",
+   "anio": 2008,
+   "convocatoria": "Junio",
+   "archivo": "examenes/2008-junio.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2008-junio-a1",
+     "n": "A.1",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2008-junio-a3",
+     "n": "A.3",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2008-junio-b1",
+     "n": "B.1",
+     "clasificacion": [
+      {
+       "tema": "din",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2008-junio-b2",
+     "n": "B.2",
+     "clasificacion": [
+      {
+       "tema": "ondas",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2008-junio-b3",
+     "n": "B.3",
+     "clasificacion": [
+      {
+       "tema": "elec",
+       "tipo": "equil",
+       "apartados": "a"
+      },
+      {
+       "tema": "elec",
+       "tipo": "unif",
+       "apartados": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fisica-2007-junio",
+   "anio": 2007,
+   "convocatoria": "Junio",
+   "archivo": "examenes/2007-junio.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2007-junio-a1",
+     "n": "A.1",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2007-junio-a3",
+     "n": "A.3",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2007-junio-a4",
+     "n": "A.4",
+     "clasificacion": [
+      {
+       "tema": "ondas",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2007-junio-b1",
+     "n": "B.1",
+     "clasificacion": [
+      {
+       "tema": "din",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2007-junio-b3",
+     "n": "B.3",
+     "clasificacion": [
+      {
+       "tema": "elec",
+       "tipo": "equil",
+       "apartados": "a"
+      },
+      {
+       "tema": "elec",
+       "tipo": "unif",
+       "apartados": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fisica-2006-junio",
+   "anio": 2006,
+   "convocatoria": "Junio",
+   "archivo": "examenes/2006-junio.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2006-junio-a1",
+     "n": "A.1",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2006-junio-a3",
+     "n": "A.3",
+     "clasificacion": [
+      {
+       "tema": "din",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2006-junio-b1",
+     "n": "B.1",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a"
+      },
+      {
+       "tema": "din",
+       "tipo": null,
+       "apartados": "b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2006-junio-b2",
+     "n": "B.2",
+     "clasificacion": [
+      {
+       "tema": "ondas",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2006-junio-b3",
+     "n": "B.3",
+     "clasificacion": [
+      {
+       "tema": "elec",
+       "tipo": "unif",
+       "apartados": "a, b"
+      },
+      {
+       "tema": "elec",
+       "tipo": "trab",
+       "apartados": "b"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "fisica-2005-junio",
+   "anio": 2005,
+   "convocatoria": "Junio",
+   "archivo": "examenes/2005-junio.json",
+   "ejercicios": [
+    {
+     "id": "fisica-2005-junio-a1",
+     "n": "A.1",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2005-junio-a3",
+     "n": "A.3",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2005-junio-b1",
+     "n": "B.1",
+     "clasificacion": [
+      {
+       "tema": "grav",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2005-junio-b3",
+     "n": "B.3",
+     "clasificacion": [
+      {
+       "tema": "emag",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    },
+    {
+     "id": "fisica-2005-junio-b4",
+     "n": "B.4",
+     "clasificacion": [
+      {
+       "tema": "ondas",
+       "tipo": null,
+       "apartados": "a, b"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

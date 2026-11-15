@@ -1,0 +1,325 @@
+{
+ "version": 1,
+ "id": "matematicas-2023-septiembre",
+ "asignatura": "matematicas",
+ "anio": 2023,
+ "convocatoria": "Septiembre",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2023-septiembre-1",
+   "n": 1,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea la función \\(f:[-2,2\\pi]\\to\\mathbb R\\), definida por \\[f(x)=\\begin{cases}5x+1&\\text{si }-2\\le x\\le0\\\\e^x\\cos(x)&\\text{si }0\\lt x\\le2\\pi\\end{cases}\\]",
+    "apartados": [
+     "(2 p.) Halla los extremos relativos y absolutos de \\(f\\) (abscisas donde se obtienen y valores que se alcanzan).",
+     "(0,5 p.) Determina la ecuación de la recta tangente a la gráfica de \\(f\\) en el punto de abscisa \\(x=\\dfrac\\pi2\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(f\\) es continua en \\(x=0\\): \\(f(0)=1\\) y \\(\\lim_{x\\to0^+}e^x\\cos x=1\\). Estudio la derivada en cada trozo.</p><p>• En \\((-2,0)\\): \\(f'(x)=5\\gt0\\): \\(f\\) crece. • En \\((0,2\\pi)\\): \\(f'(x)=e^x\\cos x-e^x\\operatorname{sen}x=e^x(\\cos x-\\operatorname{sen}x)=0\\iff\\operatorname{tg}x=1\\iff x=\\frac\\pi4\\) o \\(x=\\frac{5\\pi}4\\).</p><table class='tb'><tr><th>Intervalo</th><th>\\((0,\\frac\\pi4)\\)</th><th>\\((\\frac\\pi4,\\frac{5\\pi}4)\\)</th><th>\\((\\frac{5\\pi}4,2\\pi)\\)</th></tr><tr><td>\\(f'\\)</td><td>\\(+\\)</td><td>\\(-\\)</td><td>\\(+\\)</td></tr><tr><td>\\(f\\)</td><td>crece</td><td>decrece</td><td>crece</td></tr></table><p>En \\(x=0\\) la función crece a ambos lados (pendiente 5 a la izquierda y \\(f'\\gt0\\) a la derecha): no hay extremo en \\(x=0\\). Valores:</p>\\[f(-2)=-9\\quad f\\!\\left(\\tfrac\\pi4\\right)=e^{\\pi/4}\\tfrac{\\sqrt2}2\\approx1{,}55\\quad f\\!\\left(\\tfrac{5\\pi}4\\right)=-e^{5\\pi/4}\\tfrac{\\sqrt2}2\\approx-35{,}89\\quad f(2\\pi)=e^{2\\pi}\\approx535{,}49\\]<p><b>Relativos</b> (en un intervalo cerrado, los extremos del intervalo también cuentan):<i class='n' data-t='why'>Los extremos del intervalo son extremos relativos si la función crece o decrece hacia ellos: aquí \\(f\\) crece cerca de \\(x=-2\\) (mínimo en ese extremo) y cerca de \\(x=2\\pi\\) (máximo).</i> máximos relativos en \\(x=\\frac\\pi4\\) y en \\(x=2\\pi\\); mínimos relativos en \\(x=-2\\) y en \\(x=\\frac{5\\pi}4\\).</p><p><b>Absolutos</b> (\\(f\\) continua en un intervalo cerrado: se comparan los valores):<i class='n' data-t='th'>Teorema de Weierstrass: una función continua en un intervalo cerrado alcanza su máximo y su mínimo absolutos, en puntos críticos o en los extremos.</i></p><div class='res'>Máximo absoluto en \\(x=2\\pi\\), de valor \\(e^{2\\pi}\\). Mínimo absoluto en \\(x=\\frac{5\\pi}4\\), de valor \\(-\\frac{\\sqrt2}2e^{5\\pi/4}\\). Relativos: máximos en \\(x=\\frac\\pi4\\) (\\(\\frac{\\sqrt2}2e^{\\pi/4}\\)) y en \\(x=2\\pi\\); mínimos en \\(x=-2\\) (\\(-9\\)) y en \\(x=\\frac{5\\pi}4\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>En \\(x=\\frac\\pi2\\in(0,2\\pi]\\): \\(f\\!\\left(\\frac\\pi2\\right)=e^{\\pi/2}\\cos\\frac\\pi2=0\\) y \\(f'\\!\\left(\\frac\\pi2\\right)=e^{\\pi/2}\\left(\\cos\\frac\\pi2-\\operatorname{sen}\\frac\\pi2\\right)=-e^{\\pi/2}\\).</p><div class='res'>\\(y=-e^{\\pi/2}\\left(x-\\dfrac\\pi2\\right)\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-septiembre-2",
+   "n": 2,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea \\(f:(0,+\\infty)\\to\\mathbb R\\) la función definida por \\(f(x)=x\\,(\\ln(x))^2\\) (\\(\\ln\\) denota la función logaritmo neperiano).",
+    "apartados": [
+     "(1,25 p.) Calcula, si existen, sus extremos relativos (abscisas donde se obtienen y valores que se alcanzan).",
+     "(1,25 p.) Calcula, si existen, sus extremos absolutos (abscisas donde se obtienen y valores que se alcanzan)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'>\\[f'(x)=(\\ln x)^2+x\\cdot2\\ln x\\cdot\\frac1x=\\ln x\\,(\\ln x+2)=0\\iff x=1\\ \\text{o}\\ x=e^{-2}\\]<table class='tb'><tr><th>Intervalo</th><th>\\((0,e^{-2})\\)</th><th>\\((e^{-2},1)\\)</th><th>\\((1,+\\infty)\\)</th></tr><tr><td>\\(\\ln x\\)</td><td>\\(\\lt-2\\)</td><td>\\((-2,0)\\)</td><td>\\(\\gt0\\)</td></tr><tr><td>\\(f'\\)</td><td>\\(+\\)</td><td>\\(-\\)</td><td>\\(+\\)</td></tr><tr><td>\\(f\\)</td><td>crece</td><td>decrece</td><td>crece</td></tr></table><div class='res'>Máximo relativo en \\(x=e^{-2}\\), de valor \\(f(e^{-2})=4e^{-2}\\approx0{,}5413\\). Mínimo relativo en \\(x=1\\), de valor \\(f(1)=0\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Límites en los extremos del dominio:</p>\\[\\lim_{x\\to0^+}x(\\ln x)^2=\\lim_{x\\to0^+}\\frac{(\\ln x)^2}{1/x}\\ \\left(\\tfrac\\infty\\infty\\right)=\\lim\\frac{2\\ln x\\cdot\\frac1x}{-\\frac1{x^2}}=\\lim_{x\\to0^+}(-2x\\ln x)=0\\qquad\\lim_{x\\to+\\infty}f(x)=+\\infty\\]<p><b>Máximo absoluto:</b> no existe, pues \\(f\\to+\\infty\\) cuando \\(x\\to+\\infty\\).</p><p><b>Mínimo absoluto:</b> \\(f(x)=x(\\ln x)^2\\ge0\\) para todo \\(x\\gt0\\) y \\(f(1)=0\\): el mínimo absoluto se alcanza en \\(x=1\\) y vale 0.<i class='n' data-t='why'>Cerca de \\(x=0\\), \\(f\\) tiende a 0 pero siempre por encima de 0; como el mínimo \\(0\\) se alcanza en \\(x=1\\), es mínimo absoluto.</i></p><div class='res'>Mínimo absoluto en \\(x=1\\), de valor 0. No tiene máximo absoluto</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-septiembre-3",
+   "n": 3,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Calcula \\(a\\) con \\(0\\lt a\\lt1\\), tal que \\(\\displaystyle\\int_a^1\\frac{\\ln(x)}x\\,dx+2=0\\) (\\(\\ln\\) denota la función logaritmo neperiano).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>Integral inmediata<i class='n' data-t='th'>\\(\\int f(x)^n f'(x)\\,dx=\\dfrac{f(x)^{n+1}}{n+1}\\). Con \\(f=\\ln x\\): \\(\\int\\ln x\\cdot\\frac1x\\,dx=\\frac{(\\ln x)^2}2\\).</i>: \\(\\displaystyle\\int\\frac{\\ln x}x\\,dx=\\frac{(\\ln x)^2}2\\). Por la regla de Barrow:</p>\\[\\int_a^1\\frac{\\ln x}x\\,dx=\\frac{(\\ln1)^2}2-\\frac{(\\ln a)^2}2=-\\frac{(\\ln a)^2}2\\]<p>La ecuación queda \\(-\\dfrac{(\\ln a)^2}2+2=0\\iff(\\ln a)^2=4\\iff\\ln a=\\pm2\\). Como \\(0\\lt a\\lt1\\), \\(\\ln a\\lt0\\): \\(\\ln a=-2\\).</p><div class='res'>\\(a=e^{-2}\\approx0{,}1353\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "def",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-septiembre-4",
+   "n": 4,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las funciones \\(f:\\mathbb R\\to\\mathbb R\\) y \\(g:\\mathbb R-\\{0\\}\\to\\mathbb R\\) definidas por \\(f(x)=5-x^2\\) y \\(g(x)=\\dfrac4{x^2}\\).",
+    "apartados": [
+     "(1,25 p.) Esboza las gráficas de las dos funciones y calcula los puntos de corte entre ellas.",
+     "(1,25 p.) Calcula la suma de las áreas de los recintos limitados por las gráficas de \\(f\\) y \\(g\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(f\\) es una parábola con vértice en \\((0,5)\\) abierta hacia abajo. \\(g\\) es par, positiva, con asíntota vertical \\(x=0\\) (\\(g\\to+\\infty\\)) y asíntota horizontal \\(y=0\\).</p><p><b>Cortes:</b> \\(5-x^2=\\dfrac4{x^2}\\iff5x^2-x^4=4\\iff x^4-5x^2+4=0\\). Con \\(u=x^2\\): \\(u^2-5u+4=0\\Rightarrow u=1\\) o \\(u=4\\):</p>\\[x=\\pm1\\ (y=4)\\qquad x=\\pm2\\ (y=1)\\]<div style='overflow-x:auto'><svg viewBox='0 0 300 220' width='100%' style='max-width:380px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='202.0,78.0 207.2,83.9 212.4,90.3 217.6,97.3 222.8,104.9 228.0,113.0 233.2,121.7 238.4,130.9 243.6,140.7 248.8,151.1 254.0,162.0 254.0,162.0 248.8,159.0 243.6,155.4 238.4,151.2 233.2,146.2 228.0,140.2 222.8,132.9 217.6,123.7 212.4,112.2 207.2,97.4 202.0,78.0' fill='#b9a4f5' fill-opacity='.6'/><polygon points='46.0,162.0 51.2,151.1 56.4,140.7 61.6,130.9 66.8,121.7 72.0,113.0 77.2,104.9 82.4,97.3 87.6,90.3 92.8,83.9 98.0,78.0 98.0,78.0 92.8,97.4 87.6,112.2 82.4,123.7 77.2,132.9 72.0,140.2 66.8,146.2 61.6,151.2 56.4,155.4 51.2,159.0 46.0,162.0' fill='#b9a4f5' fill-opacity='.6'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M10 190H292M150 212V8'/></g><polyline points='25.2,211.3 40.8,173.5 56.4,140.7 72.0,113.0 87.6,90.3 103.2,72.7 118.8,60.1 134.4,52.5 150.0,50.0 165.6,52.5 181.2,60.1 196.8,72.7 212.4,90.3 228.0,113.0 243.6,140.7 259.2,173.5 274.8,211.3' fill='none' stroke='#2f6df0' stroke-width='2'/><polyline points='191.6,15.0 196.8,51.7 202.0,78.0 212.4,112.2 228.0,140.2 243.6,155.4 254.0,162.0 269.6,168.8 285.2,173.4' fill='none' stroke='#e8487a' stroke-width='2'/><polyline points='14.8,173.4 30.4,168.8 46.0,162.0 56.4,155.4 72.0,140.2 87.6,112.2 98.0,78.0 103.2,51.7 108.4,15.0' fill='none' stroke='#e8487a' stroke-width='2'/><circle cx='202' cy='78' r='3.5' fill='#17825a'/><circle cx='98' cy='78' r='3.5' fill='#17825a'/><circle cx='254' cy='162' r='3.5' fill='#17825a'/><circle cx='46' cy='162' r='3.5' fill='#17825a'/><text x='207' y='73'>(1,4)</text><text x='58' y='73'>(−1,4)</text><text x='258' y='156'>(2,1)</text><text x='10' y='156'>(−2,1)</text><text x='248.8' y='100.39999999999999' fill='#2f6df0'>f</text><text x='180.0' y='16.400000000000006' fill='#e8487a'>g</text></svg></div><div class='res'>Puntos de corte: \\((-2,1)\\), \\((-1,4)\\), \\((1,4)\\) y \\((2,1)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Los recintos acotados son los dos que se ven en la figura (entre \\(x=1\\) y \\(x=2\\) y su simétrico): en \\((1,2)\\), por ejemplo en \\(x=1{,}5\\), \\(f=2{,}75\\gt g=1{,}78\\). Entre \\(-1\\) y \\(1\\) la región no está acotada (\\(g\\to+\\infty\\)). Por la simetría (ambas funciones son pares):</p>\\[A=2\\int_1^2\\left(5-x^2-\\frac4{x^2}\\right)dx=2\\left[5x-\\frac{x^3}3+\\frac4x\\right]_1^2=2\\left[\\left(10-\\frac83+2\\right)-\\left(5-\\frac13+4\\right)\\right]=2\\cdot\\frac23\\]<div class='res'>Suma de las áreas \\(=\\dfrac43\\ u^2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "area",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "rep",
+     "apartados": "a"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-septiembre-5",
+   "n": 5,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea la matriz \\(A=\\begin{pmatrix}1&1&1\\\\1&1&1\\\\1&1&1\\end{pmatrix}\\) e \\(I\\) la matriz identidad de orden 3.",
+    "apartados": [
+     "(1 p.) Halla los valores de \\(m\\) para que la matriz \\(A-mI\\) no tenga inversa.",
+     "(1,5 p.) Halla \\(x\\), distinto de cero, para que \\(A-xI\\) sea la inversa de la matriz \\(\\dfrac1x(A-I)\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(A-mI\\) no tiene inversa si y solo si \\(|A-mI|=0\\)<i class='n' data-t='th'>Una matriz cuadrada tiene inversa si y solo si su determinante es distinto de 0.</i>. Calculo el determinante: sumo a la 1.ª fila las otras dos y saco factor común:</p>\\[\\begin{vmatrix}1-m&1&1\\\\1&1-m&1\\\\1&1&1-m\\end{vmatrix}=(3-m)\\begin{vmatrix}1&1&1\\\\1&1-m&1\\\\1&1&1-m\\end{vmatrix}=(3-m)\\begin{vmatrix}1&1&1\\\\0&-m&0\\\\0&0&-m\\end{vmatrix}=(3-m)\\,m^2\\]<p>(en el segundo paso resto la 1.ª fila a las otras dos).</p><div class='res'>\\(A-mI\\) no tiene inversa para \\(m=0\\) y \\(m=3\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(A-xI\\) es la inversa de \\(\\frac1x(A-I)\\) si y solo si su producto es \\(I\\):</p>\\[\\frac1x(A-I)(A-xI)=I\\]<p>Desarrollo con \\(A^2=3A\\)<i class='n' data-t='why'>Cada elemento de \\(A^2\\) es la suma de una fila de unos por una columna de unos: vale 3. Luego \\(A^2=3A\\).</i>:</p>\\[(A-I)(A-xI)=A^2-xA-A+xI=3A-(x+1)A+xI=(2-x)A+xI\\]\\[\\frac1x\\bigl[(2-x)A+xI\\bigr]=\\frac{2-x}x\\,A+I=I\\iff\\frac{2-x}x\\,A=O\\iff x=2\\]<p>(pues \\(A\\neq O\\) y \\(x\\neq0\\)).</p><div class='res'>\\(x=2\\)</div><i class='n' data-t='tp'>Comprobación: \\(\\frac12(A-I)(A-2I)=\\frac12\\begin{pmatrix}0&1&1\\\\1&0&1\\\\1&1&0\\end{pmatrix}\\begin{pmatrix}-1&1&1\\\\1&-1&1\\\\1&1&-1\\end{pmatrix}=\\frac12\\begin{pmatrix}2&0&0\\\\0&2&0\\\\0&0&2\\end{pmatrix}=I\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "det",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "ecmat",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-septiembre-6",
+   "n": 6,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "El dueño de un bar ha comprado refrescos, cerveza y vino por un importe de 500 euros sin incluir impuestos. El gasto en vino es 60 euros menos que los gastos en refrescos y cerveza conjuntamente, sin incluir impuestos. Teniendo en cuenta que los impuestos de los refrescos, la cerveza y el vino son el 6 %, el 12 % y el 30 %, respectivamente, entonces el importe total de la factura incluyendo impuestos ha ascendido a 592,4 euros. Calcula el importe, incluyendo impuestos, invertido en cada una de las bebidas.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>Sean \\(x\\), \\(y\\), \\(z\\) los gastos sin impuestos en refrescos, cerveza y vino:</p>\\[\\begin{cases}x+y+z=500\\\\z=x+y-60\\\\1{,}06x+1{,}12y+1{,}3z=592{,}4\\end{cases}\\iff\\begin{cases}x+y+z=500\\\\-x-y+z=-60\\\\1{,}06x+1{,}12y+1{,}3z=592{,}4\\end{cases}\\]<p>Determinante de los coeficientes: \\(\\begin{vmatrix}1&1&1\\\\-1&-1&1\\\\1{,}06&1{,}12&1{,}3\\end{vmatrix}=-0{,}12\\neq0\\). Por el teorema de Rouché-Frobenius<i class='n' data-t='th'>Si \\(|M|\\neq0\\), el sistema \\(3\\times3\\) es compatible determinado.</i>, el sistema es compatible determinado.</p></div>"
+    },
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>Sumando las dos primeras ecuaciones: \\(2z=440\\Rightarrow z=220\\) y \\(x+y=280\\). En la tercera:</p>\\[1{,}06x+1{,}12(280-x)+1{,}3\\cdot220=592{,}4\\iff-0{,}06x+313{,}6+286=592{,}4\\iff x=120\\]<p>Entonces \\(y=160\\) y \\(z=220\\) (sin impuestos). Con impuestos:</p>\\[\\text{refrescos: }120\\cdot1{,}06=127{,}2\\qquad\\text{cerveza: }160\\cdot1{,}12=179{,}2\\qquad\\text{vino: }220\\cdot1{,}3=286\\]<div class='res'>Refrescos: 127,2 €; cerveza: 179,2 €; vino: 286 €</div><i class='n' data-t='tp'>Comprobación: \\(127{,}2+179{,}2+286=592{,}4\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "sistemas",
+     "tipo": "plan",
+     "apartados": ""
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-septiembre-7",
+   "n": 7,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera los planos \\(\\pi_1\\equiv x-y+z=0\\) y \\(\\pi_2\\equiv x+y=2\\).",
+    "apartados": [
+     "(1,5 p.) Calcula la distancia entre la recta intersección de \\(\\pi_1\\) y \\(\\pi_2\\) y el punto \\(P(2,6,-2)\\).",
+     "(1 p.) Halla el ángulo que forman \\(\\pi_1\\) y \\(\\pi_2\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p><b>La recta \\(r=\\pi_1\\cap\\pi_2\\).</b> Dirección perpendicular a las dos normales \\(\\vec n_1=(1,-1,1)\\) y \\(\\vec n_2=(1,1,0)\\):</p>\\[\\vec d=\\vec n_1\\times\\vec n_2=\\begin{vmatrix}\\vec i&\\vec j&\\vec k\\\\1&-1&1\\\\1&1&0\\end{vmatrix}=(-1,\\,1,\\,2)\\]<p>Un punto: con \\(x=0\\): \\(y=2\\) y \\(-2+z=0\\Rightarrow z=2\\): \\(R(0,2,2)\\).</p><p><b>Distancia de \\(P\\) a \\(r\\)</b><i class='n' data-t='th'>\\(d(P,r)=\\dfrac{|\\overrightarrow{RP}\\times\\vec d|}{|\\vec d|}\\) (altura del paralelogramo de lados \\(\\overrightarrow{RP}\\) y \\(\\vec d\\)).</i>: \\(\\overrightarrow{RP}=(2,4,-4)\\):</p>\\[\\overrightarrow{RP}\\times\\vec d=\\begin{vmatrix}\\vec i&\\vec j&\\vec k\\\\2&4&-4\\\\-1&1&2\\end{vmatrix}=(12,\\,0,\\,6)\\qquad d(P,r)=\\frac{\\sqrt{144+36}}{\\sqrt6}=\\frac{6\\sqrt5}{\\sqrt6}=\\sqrt{30}\\]<div class='res'>\\(d(P,r)=\\sqrt{30}\\approx5{,}4772\\) unidades</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>El ángulo entre dos planos es el que forman sus normales<i class='n' data-t='th'>\\(\\cos\\theta=\\dfrac{|\\vec n_1\\cdot\\vec n_2|}{|\\vec n_1||\\vec n_2|}\\), con \\(\\theta\\in[0,\\frac\\pi2]\\).</i>:</p>\\[\\cos\\theta=\\frac{|1\\cdot1+(-1)\\cdot1+1\\cdot0|}{\\sqrt3\\cdot\\sqrt2}=\\frac0{\\sqrt6}=0\\]<div class='res'>\\(\\theta=90^\\circ\\) (\\(\\frac\\pi2\\) rad): los planos son perpendiculares</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "dist",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "ecs",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "pos",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-septiembre-8",
+   "n": 8,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Calcula el volumen del tetraedro que limita el plano determinado por los puntos \\(A(0,2,-2)\\), \\(B(3,2,1)\\) y \\(C(2,3,2)\\) con los planos cartesianos.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Ecuación del plano",
+     "html": "<div class='ex'><p>\\(\\overrightarrow{AB}=(3,0,3)\\) y \\(\\overrightarrow{AC}=(2,1,4)\\). Normal: \\(\\vec n=\\overrightarrow{AB}\\times\\overrightarrow{AC}=(-3,-6,3)\\sim(1,2,-1)\\):</p>\\[x+2y-z+D=0\\ \\text{por }A(0,2,-2):\\ 4+2+D=0\\Rightarrow D=-6\\ \\Rightarrow\\ \\pi\\equiv x+2y-z=6\\]<p>(comprobación: \\(B\\): \\(3+4-1=6\\) ✓; \\(C\\): \\(2+6-2=6\\) ✓).</p></div>"
+    },
+    {
+     "titulo": "Vértices y volumen",
+     "html": "<div class='ex'><p>Cortes con los ejes: \\(X(6,0,0)\\), \\(Y(0,3,0)\\), \\(Z(0,0,-6)\\). El tetraedro tiene vértices \\(O\\), \\(X\\), \\(Y\\) y \\(Z\\), con tres aristas perpendiculares en \\(O\\) de longitudes 6, 3 y 6.</p><div style='overflow-x:auto'><svg viewBox='0 0 340 270' width='100%' style='max-width:440px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><defs><marker id='s8n' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#dc2626'/></marker><marker id='s8d' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#16a34a'/></marker><marker id='s8r' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#2563eb'/></marker><marker id='s8a' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#64748b'/></marker></defs><polygon points='51.2,105.2 288.8,65.6 209.6,220.0' fill='#8b5cf6' fill-opacity='.28' stroke='#7c3aed' stroke-width='1.3'/><line x1='51.2' y1='105.2' x2='288.8' y2='65.6' stroke='#2563eb' stroke-width='2.2'/><line x1='288.8' y1='65.6' x2='209.6' y2='220.0' stroke='#2563eb' stroke-width='2.2'/><line x1='209.6' y1='220.0' x2='51.2' y2='105.2' stroke='#2563eb' stroke-width='2.2'/><line x1='209.6' y1='26.0' x2='51.2' y2='105.2' stroke='#64748b' stroke-width='1.6' stroke-dasharray='4 3'/><line x1='209.6' y1='26.0' x2='288.8' y2='65.6' stroke='#64748b' stroke-width='1.6' stroke-dasharray='4 3'/><line x1='209.6' y1='26.0' x2='209.6' y2='220.0' stroke='#64748b' stroke-width='1.6' stroke-dasharray='4 3'/><line x1='183.2' y1='130.3' x2='214.9' y2='216.6' stroke='#dc2626' stroke-width='2.4' marker-end='url(#s8n)'/><text x='220.9' y='212.6' fill='#dc2626' font-weight='700'>n</text><circle cx='51.2' cy='105.2' r='3.8' fill='#e8487a'/><text x='45.2' y='97.2' font-weight='700'>X(6,0,0)</text><circle cx='288.8' cy='65.6' r='3.8' fill='#e8487a'/><text x='296.8' y='61.6' font-weight='700'>Y(0,3,0)</text><circle cx='209.6' cy='220.0' r='3.8' fill='#e8487a'/><text x='179.6' y='234.0' font-weight='700'>Z(0,0,−6)</text><circle cx='209.6' cy='26.0' r='3.8' fill='#e8487a'/><text x='195.6' y='38.0' font-weight='700'>O</text><g stroke='#64748b' stroke-width='1.2' fill='none'><line x1='30' y1='224' x2='14.4' y2='231.8'/><line x1='30' y1='224' x2='45.6' y2='231.8'/><line x1='30' y1='224' x2='30.0' y2='204.9'/></g><g fill='#64748b' font-size='10'><text x='6.5' y='238.3'>x</text><text x='47.5' y='238.3'>y</text><text x='27.0' y='202.9'>z</text></g><g transform='translate(10.0,258)'><rect x='0' y='-8' width='12' height='9' fill='#8b5cf6' fill-opacity='.4' stroke='#7c3aed'/><text x='18' y='0' font-size='10'>plano</text></g><g transform='translate(63.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#2563eb' stroke-width='2'/><text x='18' y='0' font-size='10'>recta</text></g><g transform='translate(116.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#dc2626' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector normal</text></g><g transform='translate(212.2,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#16a34a' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector director</text></g><g transform='translate(319.2,258)'><circle cx='6' cy='-4' r='3.8' fill='#e8487a'/><text x='18' y='0' font-size='10'>puntos</text></g></svg></div><p>Volumen<i class='n' data-t='th'>Volumen del tetraedro \\(=\\frac16\\bigl|[\\overrightarrow{OX},\\overrightarrow{OY},\\overrightarrow{OZ}]\\bigr|\\) (producto mixto): un sexto del volumen del paralelepípedo.</i>:</p>\\[V=\\frac16\\left|\\begin{vmatrix}6&0&0\\\\0&3&0\\\\0&0&-6\\end{vmatrix}\\right|=\\frac16\\,|{-108}|\\]<div class='res'>\\(V=18\\ u^3\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "ecs",
+     "apartados": ""
+    },
+    {
+     "tema": "geom",
+     "tipo": "area",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

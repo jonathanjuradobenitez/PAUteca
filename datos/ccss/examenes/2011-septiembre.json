@@ -1,0 +1,375 @@
+{
+ "version": 1,
+ "id": "ccss-2011-septiembre",
+ "asignatura": "ccss",
+ "anio": 2011,
+ "convocatoria": "Septiembre",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "ccss-2011-septiembre-1",
+   "n": 1,
+   "num": 1,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Se considera el recinto R del plano, determinado por las siguientes inecuaciones: \\(x+y\\ge2;\\quad x+3y\\le15;\\quad3x-y\\le15;\\quad x\\ge0;\\quad y\\ge0\\).",
+    "apartados": [
+     "(1,5 p.) Represente gráficamente el recinto R y calcule sus vértices.",
+     "(0,5 p.) Halle los valores máximo y mínimo que alcanza la función \\(F(x,y)=3x+y\\) en dicho recinto.",
+     "(0,5 p.) Razone si existen puntos \\((x,y)\\) del recinto, para los que \\(F(x,y)=30\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Tabla de valores (dos puntos) de cada recta frontera:</p><table class='tb'><tr><th>\\(x+y=2\\)</th><td>\\((0,2)\\)</td><td>\\((2,0)\\)</td></tr><tr><th>\\(x+3y=15\\)</th><td>\\((0,5)\\)</td><td>\\((6,3)\\)</td></tr><tr><th>\\(3x-y=15\\)</th><td>\\((5,0)\\)</td><td>\\((6,3)\\)</td></tr></table><p>Probamos el origen: \\(0\\ge2\\) falso (semiplano sin el origen)<i class='n' data-t='th'>Cada recta divide el plano en dos semiplanos; si un punto de prueba no cumple la inecuación, la solución es el semiplano opuesto.</i>; \\(0\\le15\\) y \\(0\\le15\\) ciertos. Con \\(x\\ge0\\), \\(y\\ge0\\) estamos en el primer cuadrante.</p><div style='overflow-x:auto'><svg viewBox='0 0 330 210' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='101.0,190.0 200.0,190.0 233.0,112.0 35.0,60.0 35.0,138.0' fill='#b9a4f5' fill-opacity='.5' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M15 190H319M35 206V18'/></g><text x='313' y='185'>x</text><text x='40' y='26'>y</text><g font-size='10' fill='currentColor'><line x1='68.0' y1='187.0' x2='68.0' y2='193.0' stroke='currentColor'/><text x='68.0' y='204.0' text-anchor='middle'>1</text><line x1='101.0' y1='187.0' x2='101.0' y2='193.0' stroke='currentColor'/><text x='101.0' y='204.0' text-anchor='middle'>2</text><line x1='134.0' y1='187.0' x2='134.0' y2='193.0' stroke='currentColor'/><text x='134.0' y='204.0' text-anchor='middle'>3</text><line x1='167.0' y1='187.0' x2='167.0' y2='193.0' stroke='currentColor'/><text x='167.0' y='204.0' text-anchor='middle'>4</text><line x1='200.0' y1='187.0' x2='200.0' y2='193.0' stroke='currentColor'/><text x='200.0' y='204.0' text-anchor='middle'>5</text><line x1='233.0' y1='187.0' x2='233.0' y2='193.0' stroke='currentColor'/><text x='233.0' y='204.0' text-anchor='middle'>6</text><line x1='266.0' y1='187.0' x2='266.0' y2='193.0' stroke='currentColor'/><text x='266.0' y='204.0' text-anchor='middle'>7</text><line x1='299.0' y1='187.0' x2='299.0' y2='193.0' stroke='currentColor'/><text x='299.0' y='204.0' text-anchor='middle'>8</text><line x1='32.0' y1='164.0' x2='38.0' y2='164.0' stroke='currentColor'/><text x='29.0' y='167.0' text-anchor='end'>1</text><line x1='32.0' y1='138.0' x2='38.0' y2='138.0' stroke='currentColor'/><text x='29.0' y='141.0' text-anchor='end'>2</text><line x1='32.0' y1='112.0' x2='38.0' y2='112.0' stroke='currentColor'/><text x='29.0' y='115.0' text-anchor='end'>3</text><line x1='32.0' y1='86.0' x2='38.0' y2='86.0' stroke='currentColor'/><text x='29.0' y='89.0' text-anchor='end'>4</text><line x1='32.0' y1='60.0' x2='38.0' y2='60.0' stroke='currentColor'/><text x='29.0' y='63.0' text-anchor='end'>5</text><line x1='32.0' y1='34.0' x2='38.0' y2='34.0' stroke='currentColor'/><text x='29.0' y='37.0' text-anchor='end'>6</text></g><line x1='35.0' y1='138.0' x2='117.5' y2='203.0' stroke='#2f6df0' stroke-width='1.6'/><line x1='35.0' y1='60.0' x2='315.5' y2='133.6' stroke='#0a9396' stroke-width='1.6'/><line x1='193.4' y1='205.6' x2='269.3' y2='26.2' stroke='#e07a00' stroke-width='1.6'/><g font-size='10' font-weight='700'><text x='39' y='181' fill='#2f6df0'>x+y=2</text><text x='88' y='60' fill='#0a9396'>x+3y=15</text><text x='273' y='44' fill='#e07a00'>3x−y=15</text></g><circle cx='101.0' cy='190.0' r='3.3' fill='#e8487a'/><text x='105.0' y='184.0' font-weight='700'>A(2,0)</text><circle cx='200.0' cy='190.0' r='3.3' fill='#e8487a'/><text x='164.0' y='184.0' font-weight='700'>B(5,0)</text><circle cx='233.0' cy='112.0' r='3.3' fill='#e8487a'/><text x='241.0' y='120.0' font-weight='700'>C(6,3)</text><circle cx='35.0' cy='60.0' r='3.3' fill='#e8487a'/><text x='41.0' y='52.0' font-weight='700'>D(0,5)</text><circle cx='35.0' cy='138.0' r='3.3' fill='#e8487a'/><text x='41.0' y='132.0' font-weight='700'>E(0,2)</text></svg></div><p>Hallamos sus vértices:</p><i class='n' data-t='tp'>Cada vértice es el corte de dos rectas frontera consecutivas del recinto: se ve en el dibujo cuáles son.</i>\\[A:\\begin{cases}x+y=2\\\\y=0\\end{cases}\\Rightarrow\\boxed{A(2,0)}\\qquad B:\\begin{cases}3x-y=15\\\\y=0\\end{cases}\\Rightarrow\\boxed{B(5,0)}\\]\\[C:\\begin{cases}3x-y=15\\\\x+3y=15\\end{cases}\\Rightarrow y=3x-15\\Rightarrow10x=60\\Rightarrow\\boxed{C(6,3)}\\]\\[D:\\begin{cases}x+3y=15\\\\x=0\\end{cases}\\Rightarrow\\boxed{D(0,5)}\\qquad E:\\begin{cases}x+y=2\\\\x=0\\end{cases}\\Rightarrow\\boxed{E(0,2)}\\]<div class='res'>Vértices: \\(A(2,0)\\), \\(B(5,0)\\), \\(C(6,3)\\), \\(D(0,5)\\) y \\(E(0,2)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>La función \\(F\\) alcanza sus extremos en el recinto, en puntos de su frontera; evaluamos, por tanto, \\(F\\) en los vértices<i class='n' data-t='th'>Teorema fundamental de la programación lineal: si la región factible es un polígono convexo y acotado, la función objetivo alcanza su máximo y su mínimo en alguno de sus vértices.</i>:</p>\\[F(2,0)=6\\qquad F(5,0)=15\\qquad F(6,3)=21\\qquad F(0,5)=5\\qquad F(0,2)=2\\]<div class='res'>\\(F\\) alcanza un máximo en \\(C(6,3)\\) de valor 21 y un mínimo en \\(E(0,2)\\) de valor 2</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>En todo el recinto \\(2\\le F(x,y)\\le21\\), porque 21 es el máximo.<i class='n' data-t='why'>El recinto es convexo y \\(F\\) es lineal: toma todos los valores entre su mínimo (2) y su máximo (21), y ninguno fuera de ese intervalo.</i></p><div class='res'>No existen: \\(30\\gt21\\), que es el valor máximo de \\(F\\) en el recinto</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "pl",
+     "tipo": "reg",
+     "apartados": "a"
+    },
+    {
+     "tema": "pl",
+     "tipo": "opt",
+     "apartados": "b"
+    },
+    {
+     "tema": "pl",
+     "tipo": "valor",
+     "apartados": "c"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2011-septiembre-2",
+   "n": 2,
+   "num": 2,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "",
+    "apartados": [
+     "(1,25 p.) Halle el dominio, los puntos de corte con los ejes, y las asíntotas de la función \\(f(x)=\\dfrac{4x}{2x+1}\\).",
+     "(1,25 p.) Halle los intervalos de monotonía, los extremos relativos, los intervalos de curvatura y los puntos de inflexión de la función \\(g(x)=x^3+3x^2+3x\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p><b>Dominio:</b> \\(2x+1=0\\iff x=-\\frac12\\), así que \\(\\mathrm{Dom}\\,f=\\mathbb R\\setminus\\left\\{-\\frac12\\right\\}\\).</p><p><b>Cortes:</b> con el eje \\(y\\), \\(f(0)=0\\); con el eje \\(x\\), \\(4x=0\\iff x=0\\). Único punto de corte: \\((0,0)\\).</p><p><b>Asíntota vertical</b> \\(x=-\\frac12\\) (el numerador vale \\(-2\\neq0\\)):</p>\\[\\lim_{x\\to-\\frac12^-}\\frac{4x}{2x+1}=\\frac{-2}{0^-}=+\\infty\\qquad\\lim_{x\\to-\\frac12^+}\\frac{4x}{2x+1}=\\frac{-2}{0^+}=-\\infty\\]<p><b>Asíntota horizontal:</b></p>\\[\\lim_{x\\to\\pm\\infty}\\frac{4x}{2x+1}=\\frac42=2\\]<div class='res'>Dominio \\(\\mathbb R\\setminus\\{-\\frac12\\}\\); corta a los ejes en \\((0,0)\\); asíntota vertical \\(x=-\\frac12\\) y asíntota horizontal \\(y=2\\) (no hay oblicua)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Al ser \\(g\\) una función polinómica, no presenta puntos «problemáticos» en su dominio.</p><p>Estudiamos el signo de \\(g'\\)<i class='n' data-t='tp'>Dentro de cada intervalo la derivada no cambia de signo, así que basta sustituir un valor cualquiera del intervalo para conocer su signo.</i>.</p>\\[g'(x)=3x^2+6x+3\\]\\[3x^2+6x+3=0\\]\\[x=\\dfrac{-6\\pm\\sqrt{6^2-4\\cdot 3\\cdot 3}}{2\\cdot 3}\\]\\[x=\\dfrac{-6}{6}=-1\\]<div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 192 108' width='100%' style='max-width:230px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H178' stroke='currentColor' stroke-width='1.6'/><path d='M96 46V58' stroke='currentColor' stroke-width='1.6'/><text x='96' y='76' text-anchor='middle' font-weight='700'>−1</text><text x='29.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#17a673'>+</text><path d='M43.0 40L79.0 10' stroke='#17a673' stroke-width='2' fill='none'/><path d='M70.0 11L79.0 10L77.0 19' stroke='#17a673' stroke-width='2' fill='none'/><text x='55.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>g</tspan>′(−2) &gt; 0</text><text x='111.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#17a673'>+</text><path d='M125.0 40L161.0 10' stroke='#17a673' stroke-width='2' fill='none'/><path d='M152.0 11L161.0 10L159.0 19' stroke='#17a673' stroke-width='2' fill='none'/><text x='137.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>g</tspan>′(0) &gt; 0</text></svg></div><p>Luego \\(g\\) crece en \\((-\\infty,-1)\\) y \\((-1,+\\infty)\\)<i class='n' data-t='th'>Si \\(f'\\gt0\\) en un intervalo, \\(f\\) crece en él; si \\(f'\\lt0\\), decrece.</i>.</p><p>No tiene extremos relativos.</p><p>Aunque \\(g'(-1)=0\\), la derivada no cambia de signo, así que no hay extremos<i class='n' data-t='err'>No basta con que se anule la derivada: tiene que cambiar de signo.</i>.</p><p>Estudiamos su curvatura<i class='n' data-t='th'>Si \\(f''\\gt0\\) en un intervalo, \\(f\\) es convexa (\\(\\cup\\)) en él; si \\(f''\\lt0\\), es cóncava (\\(\\cap\\)).</i>.</p>\\[g''(x)=6x+6\\]\\[6x+6=0\\Rightarrow\\boxed{x=-1}\\]<p>Estudiamos el signo de \\(g''\\).</p><div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 192 108' width='100%' style='max-width:230px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H178' stroke='currentColor' stroke-width='1.6'/><path d='M96 46V58' stroke='currentColor' stroke-width='1.6'/><text x='96' y='76' text-anchor='middle' font-weight='700'>−1</text><path d='M37.0 42Q55.0 -4 73.0 42' stroke='#e8487a' stroke-width='2' fill='none'/><text x='55.0' y='36' text-anchor='middle' font-size='18' font-weight='700' fill='#e8487a'>−</text><text x='55.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>g</tspan>″(−2) &lt; 0</text><path d='M119.0 6Q137.0 52 155.0 6' stroke='#17a673' stroke-width='2' fill='none'/><text x='137.0' y='21' text-anchor='middle' font-size='18' font-weight='700' fill='#17a673'>+</text><text x='137.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>g</tspan>″(0) &gt; 0</text></svg></div><p>\\(g\\) es cóncava en \\((-\\infty,-1)\\) y convexa en \\((-1,+\\infty)\\).</p><p>Tiene un punto de inflexión en \\(x=-1\\) de valor \\(g(-1)=-1\\)<i class='n' data-t='why'>Hay un punto de inflexión donde la función cambia de curvatura y pertenece al dominio.</i>.</p><div class='res'>Creciente en \\(\\mathbb R\\), sin extremos relativos. Cóncava en \\((-\\infty,-1)\\), convexa en \\((-1,+\\infty)\\); punto de inflexión en \\((-1,-1)\\)</div><i class='n' data-t='tp'>En \\((-1,-1)\\) la tangente es horizontal (\\(g'(-1)=0\\)) pero no es extremo: es un punto de inflexión con tangente horizontal.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "asint",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2011-septiembre-3",
+   "n": 3,
+   "num": 3,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "En un sistema de alarma, la probabilidad de que haya un incidente es 0,1. Si éste se produce, la probabilidad de que la alarma suene es 0,95. La probabilidad de que suene la alarma sin que haya incidente es de 0,03.",
+    "apartados": [
+     "(1,5 p.) ¿Cuál es la probabilidad de que suene la alarma?",
+     "(1 p.) Si ha sonado la alarma, calcule la probabilidad de que no haya habido incidente."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Diagrama de árbol",
+     "html": "<div class='ex'><p>Sean \\(I\\): «hay incidente» y \\(S\\): «suena la alarma».</p>\\[P(I)=0{,}1\\quad P(I^c)=0{,}9\\quad P(S\\mid I)=0{,}95\\quad P(S\\mid I^c)=0{,}03\\]<svg viewBox='0 0 420 180' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><circle cx='18' cy='90.0' r='4' fill='#9d174d'/><line x1='26' y1='90.0' x2='146' y2='40.0' stroke='#9d174d' stroke-width='1.5'/><text x='84.0' y='60.0' font-size='11' text-anchor='middle' fill='#9d174d'>0,1</text><text x='150' y='44.0' font-size='12' font-weight='bold'>I</text><line x1='167' y1='40.0' x2='366' y2='20.0' stroke='#9d174d' stroke-width='1.3'/><text x='310.3' y='21.6' font-size='11' text-anchor='middle' fill='#9d174d'>0,95</text><text x='370' y='24.0' font-size='12' font-weight='bold'>S</text><line x1='167' y1='40.0' x2='366' y2='60.0' stroke='#9d174d' stroke-width='1.3'/><text x='310.3' y='50.4' font-size='11' text-anchor='middle' fill='#9d174d'>0,05</text><text x='370' y='64.0' font-size='12' font-weight='bold'>Sᶜ</text><line x1='26' y1='90.0' x2='146' y2='120.0' stroke='#9d174d' stroke-width='1.5'/><text x='84.0' y='100.0' font-size='11' text-anchor='middle' fill='#9d174d'>0,9</text><text x='150' y='124.0' font-size='12' font-weight='bold'>Iᶜ</text><line x1='174' y1='120.0' x2='366' y2='100.0' stroke='#9d174d' stroke-width='1.3'/><text x='312.2' y='101.6' font-size='11' text-anchor='middle' fill='#9d174d'>0,03</text><text x='370' y='104.0' font-size='12' font-weight='bold'>S</text><line x1='174' y1='120.0' x2='366' y2='140.0' stroke='#9d174d' stroke-width='1.3'/><text x='312.2' y='130.4' font-size='11' text-anchor='middle' fill='#9d174d'>0,97</text><text x='370' y='144.0' font-size='12' font-weight='bold'>Sᶜ</text></svg></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Por el teorema de la probabilidad total<i class='n' data-t='th'>Teorema de la probabilidad total: la probabilidad de un suceso es la suma de las probabilidades de todas las ramas del árbol que llegan a él.</i>:</p>\\[P(S)=P(I)\\cdot P(S\\mid I)+P(I^c)\\cdot P(S\\mid I^c)=0{,}1\\cdot0{,}95+0{,}9\\cdot0{,}03=0{,}095+0{,}027\\]<div class='res'>\\(P(S)=0{,}122\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Por el teorema de Bayes<i class='n' data-t='th'>Teorema de Bayes: se parte de la definición de probabilidad condicionada, \\(P(A\\mid B)=\\dfrac{P(A\\cap B)}{P(B)}\\).</i>:</p>\\[P(I^c\\mid S)=\\frac{P(I^c)\\cdot P(S\\mid I^c)}{P(S)}=\\frac{0{,}027}{0{,}122}\\]<div class='res'>\\(P(I^c\\mid S)\\approx0{,}2213\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "prob",
+     "tipo": "arbol",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "prob",
+     "tipo": "cond",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "ccss-2011-septiembre-4",
+   "n": 4,
+   "num": 4,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Suponiendo que la variable «años de vida de los individuos de un país» sigue una distribución Normal con desviación típica 8,9 años, se desea contrastar la hipótesis de que la vida media de los mismos no supera los 70 años. A partir de una muestra aleatoria de 100 individuos se ha obtenido que su vida media ha sido 71,8 años.",
+    "apartados": [
+     "(0,5 p.) Formule el contraste de hipótesis que indica el enunciado.",
+     "(1 p.) Determine la región crítica a un nivel de significación del 5 %.",
+     "(1 p.) Con los datos muestrales, ¿existe evidencia estadística para rechazar la hipótesis a ese nivel de significación?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a: planteamiento",
+     "html": "<div class='ex'><p>Sea \\(X\\) la variable aleatoria «años de vida de un individuo del país». Según el enunciado, \\(X\\) sigue una normal de media \\(\\mu\\) y \\(\\sigma=8{,}9\\). La hipótesis que se quiere contrastar es que la vida media no supera los 70 años<i class='n' data-t='th'>Contraste de hipótesis: se supone cierta \\(H_0\\) y se mira si lo observado en la muestra es «demasiado raro» bajo esa suposición. Si el estadístico cae en la región de rechazo (la zona de probabilidad \\(\\alpha\\)), se rechaza \\(H_0\\); si no, no hay evidencia suficiente para rechazarla y se acepta.</i>:</p>\\[H_0:\\ \\mu\\le70\\qquad H_1:\\ \\mu\\gt70\\]<p>Es un contraste unilateral por la derecha. Si \\(H_0\\) es cierta (caso límite \\(\\mu_0=70\\))<i class='n' data-t='why'>Se trabaja con el valor frontera de \\(H_0\\): si con \\(\\mu=70\\) la muestra no es «rara», con cualquier \\(\\mu\\lt70\\) lo sería todavía menos.</i>, como \\(n=100\\ge30\\), por el teorema central del límite</p>\\[\\bar X\\sim N\\left(\\mu_0,\\ \\frac\\sigma{\\sqrt n}\\right)=N\\left(70,\\ \\frac{8{,}9}{\\sqrt{100}}\\right)=N(70;\\ 0{,}89)\\]<div class='res'>\\(H_0:\\ \\mu\\le70\\), \\(H_1:\\ \\mu\\gt70\\) (unilateral por la derecha); bajo \\(H_0\\), \\(\\bar X\\sim N(70;\\ 0{,}89)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b: región crítica",
+     "html": "<div class='ex'><p>Nivel de significación: \\(\\alpha=0{,}05\\). Como el contraste es unilateral (por la derecha), toda la región de rechazo está en la cola derecha<i class='n' data-t='why'>\\(H_1\\) dice «más de 70»: solo nos hacen dudar de \\(H_0\\) las medias muestrales grandes, así que la probabilidad \\(\\alpha\\) se pone entera a la derecha.</i> y buscamos el valor crítico \\(z_{1-\\alpha}\\):</p>\\[P\\left(Z\\lt z_{1-\\alpha}\\right)=1-\\alpha=0{,}95\\]<p>Busco \\(0{,}95\\) en el interior de la tabla \\(N(0,1)\\): queda justo en el punto medio entre \\(P(Z\\lt1{,}64)=0{,}9495\\) y \\(P(Z\\lt1{,}65)=0{,}9505\\), así que se interpola:</p>\\[\\Rightarrow\\ z_{1-\\alpha}=1{,}645\\]<div style='overflow-x:auto'><svg viewBox='0 0 320 170' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='8.0,135.0 8.0,134.9 11.6,134.9 15.3,134.8 18.9,134.8 22.5,134.7 26.2,134.6 29.8,134.4 33.4,134.2 37.0,133.9 40.7,133.6 44.3,133.2 47.9,132.6 51.6,132.0 55.2,131.1 58.8,130.1 62.5,128.9 66.1,127.4 69.7,125.6 73.3,123.6 77.0,121.1 80.6,118.3 84.2,115.1 87.9,111.5 91.5,107.4 95.1,102.9 98.8,97.9 102.4,92.6 106.0,86.9 109.6,80.8 113.3,74.5 116.9,68.0 120.5,61.4 124.2,54.9 127.8,48.5 131.4,42.3 135.1,36.5 138.7,31.2 142.3,26.5 145.9,22.5 149.6,19.3 153.2,17.0 156.8,15.7 160.5,15.3 164.1,15.9 167.7,17.5 171.4,20.0 175.0,23.4 178.6,27.6 182.2,32.5 185.9,37.9 189.5,43.8 193.1,50.1 196.8,56.5 200.4,63.1 204.0,69.7 207.7,76.1 211.3,82.4 214.9,88.4 218.5,94.0 222.2,99.2 225.8,104.1 225.8,135.0' fill='#6d4ae0' fill-opacity='.35' stroke='none'/><polygon points='225.8,135.0 225.8,104.1 227.2,105.9 228.7,107.6 230.1,109.2 231.5,110.8 233.0,112.3 234.4,113.8 235.9,115.2 237.3,116.5 238.7,117.7 240.2,118.9 241.6,120.1 243.0,121.1 244.5,122.1 245.9,123.1 247.3,124.0 248.8,124.8 250.2,125.6 251.7,126.3 253.1,127.0 254.5,127.7 256.0,128.3 257.4,128.8 258.8,129.3 260.3,129.8 261.7,130.3 263.2,130.7 264.6,131.1 266.0,131.4 267.5,131.8 268.9,132.1 270.3,132.3 271.8,132.6 273.2,132.8 274.6,133.0 276.1,133.2 277.5,133.4 279.0,133.6 280.4,133.7 281.8,133.8 283.3,134.0 284.7,134.1 286.1,134.2 287.6,134.3 289.0,134.3 290.4,134.4 291.9,134.5 293.3,134.5 294.8,134.6 296.2,134.6 297.6,134.7 299.1,134.7 300.5,134.7 301.9,134.8 303.4,134.8 304.8,134.8 306.3,134.9 307.7,134.9 309.1,134.9 310.6,134.9 312.0,134.9 312.0,135.0' fill='#e8487a' fill-opacity='.35' stroke='none'/><polyline points='8.0,134.9 10.5,134.9 13.1,134.9 15.6,134.8 18.1,134.8 20.7,134.7 23.2,134.7 25.7,134.6 28.3,134.5 30.8,134.4 33.3,134.2 35.9,134.0 38.4,133.8 40.9,133.6 43.5,133.3 46.0,132.9 48.5,132.5 51.1,132.1 53.6,131.5 56.1,130.9 58.7,130.2 61.2,129.3 63.7,128.4 66.3,127.3 68.8,126.1 71.3,124.7 73.9,123.2 76.4,121.5 78.9,119.6 81.5,117.6 84.0,115.3 86.5,112.8 89.1,110.2 91.6,107.3 94.1,104.2 96.7,100.8 99.2,97.3 101.7,93.6 104.3,89.7 106.8,85.6 109.3,81.3 111.9,77.0 114.4,72.5 116.9,68.0 119.5,63.4 122.0,58.8 124.5,54.2 127.1,49.7 129.6,45.3 132.1,41.1 134.7,37.1 137.2,33.3 139.7,29.7 142.3,26.5 144.8,23.7 147.3,21.2 149.9,19.1 152.4,17.5 154.9,16.3 157.5,15.6 160.0,15.3 162.5,15.6 165.1,16.3 167.6,17.5 170.1,19.1 172.7,21.2 175.2,23.7 177.7,26.5 180.3,29.7 182.8,33.3 185.3,37.1 187.9,41.1 190.4,45.3 192.9,49.7 195.5,54.2 198.0,58.8 200.5,63.4 203.1,68.0 205.6,72.5 208.1,77.0 210.7,81.3 213.2,85.6 215.7,89.7 218.3,93.6 220.8,97.3 223.3,100.8 225.9,104.2 228.4,107.3 230.9,110.2 233.5,112.8 236.0,115.3 238.5,117.6 241.1,119.6 243.6,121.5 246.1,123.2 248.7,124.7 251.2,126.1 253.7,127.3 256.3,128.4 258.8,129.3 261.3,130.2 263.9,130.9 266.4,131.5 268.9,132.1 271.5,132.5 274.0,132.9 276.5,133.3 279.1,133.6 281.6,133.8 284.1,134.0 286.7,134.2 289.2,134.4 291.7,134.5 294.3,134.6 296.8,134.7 299.3,134.7 301.9,134.8 304.4,134.8 306.9,134.9 309.5,134.9 312.0,134.9' fill='none' stroke='#2f6df0' stroke-width='2'/><line x1='4.0' y1='135.0' x2='316.0' y2='135.0' stroke='currentColor' stroke-width='1.2'/><line x1='225.8' y1='139.0' x2='225.8' y2='104.1' stroke='#c2185b' stroke-width='1.4' stroke-dasharray='3 2'/><text x='225.8' y='152.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#c2185b'>z<tspan font-size='8' dy='3'>1−α</tspan><tspan dy='-3'> = 1,645</tspan></text><text x='144.0' y='84.0' text-anchor='middle' font-size='11' font-weight='700'>aceptación: 1 − α = 0,95</text><line x1='237.8' y1='127.8' x2='284' y2='102' stroke='#c2185b' stroke-width='1'/><text x='312' y='99' text-anchor='end' font-size='10' fill='#c2185b'>rechazo: α = 0,05</text></svg></div><p>La frontera de la región crítica es:</p>\\[\\mu_0+z_{1-\\alpha}\\frac\\sigma{\\sqrt n}=70+1{,}645\\cdot0{,}89=71{,}46\\]<div class='res'>Región crítica: \\(\\bar x\\gt71{,}46\\) años (en tipificado, \\(Z\\gt1{,}645\\))</div></div>"
+    },
+    {
+     "titulo": "Apartado c: decisión",
+     "html": "<div class='ex'><p>La media muestral, \\(\\bar x=71{,}8\\), es mayor que 71,46: cae en la región crítica<i class='n' data-t='th'>Si el valor de la muestra cae en la región crítica, el resultado es demasiado improbable suponiendo \\(H_0\\) cierta, y se rechaza \\(H_0\\).</i> (en tipificado, \\(z=\\dfrac{71{,}8-70}{0{,}89}=2{,}02\\gt1{,}645\\)).</p><div class='res'>Sí: hay evidencia estadística para rechazar la hipótesis de que la vida media no supera los 70 años</div><p><b>Conclusión:</b> con un nivel de significación del 5 %, los datos indican que la vida media de los individuos del país es superior a 70 años.</p></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "contr",
+     "tipo": "media",
+     "apartados": "a, b, c"
+    },
+    {
+     "tema": "contr",
+     "tipo": "uni",
+     "apartados": "a, b, c"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2011-septiembre-5",
+   "n": 5,
+   "num": 1,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sean las matrices \\(A=\\begin{pmatrix}0&1&0\\\\1&0&1\\end{pmatrix}\\) y \\(B=\\begin{pmatrix}3&-1\\\\1&2\\end{pmatrix}\\).",
+    "apartados": [
+     "(1,25 p.) Efectúe, si es posible, los siguientes productos: \\(A\\cdot A^t\\); \\(A^t\\cdot A\\); \\(A\\cdot B\\).",
+     "(1,25 p.) Resuelva la siguiente ecuación matricial \\(A\\cdot A^t\\cdot X=B\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(A\\) es \\(2\\times3\\), luego \\(A^t\\) es \\(3\\times2\\). Un producto es posible cuando el número de columnas de la primera matriz coincide con el de filas de la segunda<i class='n' data-t='th'>El producto de una matriz \\(m\\times n\\) por otra \\(n\\times p\\) es una matriz \\(m\\times p\\); si los números centrales no coinciden, el producto no existe.</i>.</p><p>\\(A\\cdot A^t\\): \\((2\\times3)(3\\times2)\\) → matriz \\(2\\times2\\):</p>\\[A\\cdot A^t=\\begin{pmatrix}0&1&0\\\\1&0&1\\end{pmatrix}\\begin{pmatrix}0&1\\\\1&0\\\\0&1\\end{pmatrix}=\\begin{pmatrix}1&0\\\\0&2\\end{pmatrix}\\]<p>\\(A^t\\cdot A\\): \\((3\\times2)(2\\times3)\\) → matriz \\(3\\times3\\):</p>\\[A^t\\cdot A=\\begin{pmatrix}0&1\\\\1&0\\\\0&1\\end{pmatrix}\\begin{pmatrix}0&1&0\\\\1&0&1\\end{pmatrix}=\\begin{pmatrix}1&0&1\\\\0&1&0\\\\1&0&1\\end{pmatrix}\\]<p>\\(A\\cdot B\\): \\((2\\times3)(2\\times2)\\); las columnas de \\(A\\) (3) no coinciden con las filas de \\(B\\) (2), así que no se puede efectuar.</p><div class='res'>\\(AA^t=\\begin{pmatrix}1&0\\\\0&2\\end{pmatrix}\\), \\(A^tA=\\begin{pmatrix}1&0&1\\\\0&1&0\\\\1&0&1\\end{pmatrix}\\); \\(A\\cdot B\\) no se puede efectuar</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Llamamos \\(C=A\\cdot A^t=\\begin{pmatrix}1&0\\\\0&2\\end{pmatrix}\\); la ecuación es \\(C\\cdot X=B\\).</p><p>\\(C\\) tiene inversa si y solo si \\(|C|\\neq0\\)<i class='n' data-t='th'>Una matriz cuadrada es invertible si y solo si su determinante es distinto de cero.</i>:</p>\\[|C|=\\begin{vmatrix}1&0\\\\0&2\\end{vmatrix}=2\\neq0\\]<p>Luego existe \\(C^{-1}\\). Multiplicamos la ecuación por \\(C^{-1}\\) por la izquierda<i class='n' data-t='err'>El producto de matrices no es conmutativo: como \\(C\\) está a la izquierda de \\(X\\), hay que multiplicar por \\(C^{-1}\\) también por la izquierda, y queda \\(X=C^{-1}B\\), no \\(BC^{-1}\\).</i>:</p>\\[C^{-1}CX=C^{-1}B\\Rightarrow X=C^{-1}B\\]<p>Calculamos la inversa con la matriz adjunta:</p>\\[C^{-1}=\\frac1{|C|}\\left(\\mathrm{Adj}\\,C\\right)^t=\\frac12\\begin{pmatrix}2&0\\\\0&1\\end{pmatrix}=\\begin{pmatrix}1&0\\\\0&\\frac12\\end{pmatrix}\\]\\[X=\\begin{pmatrix}1&0\\\\0&\\frac12\\end{pmatrix}\\begin{pmatrix}3&-1\\\\1&2\\end{pmatrix}\\]<div class='res'>\\(X=\\begin{pmatrix}3&-1\\\\\\frac12&1\\end{pmatrix}\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "ops",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "ecmat",
+     "apartados": "b"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "ccss-2011-septiembre-6",
+   "n": 6,
+   "num": 2,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea la función \\(f(x)=\\begin{cases}x^2-3x+4&\\text{si }x\\le2\\\\4-\\dfrac ax&\\text{si }x\\gt2\\end{cases}\\)",
+    "apartados": [
+     "(1,5 p.) Halle el valor de \\(a\\) para que dicha función sea continua y estudie la derivabilidad de \\(f\\) para ese valor de \\(a\\).",
+     "(1 p.) Para \\(a=1\\), ¿existe alguna asíntota vertical de esa función? ¿Y horizontal? Razone las respuestas y calcule, en caso afirmativo, dichas asíntotas."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>El primer trozo es un polinomio; el segundo solo falla en \\(x=0\\), que no está en \\((2,+\\infty)\\). En \\(x=2\\):</p>\\[\\lim_{x\\to2^-}f(x)=f(2)=4-6+4=2\\qquad\\lim_{x\\to2^+}\\left(4-\\frac a2\\right)=4-\\frac a2\\]\\[2=4-\\frac a2\\iff a=4\\]<p>Con \\(a=4\\):</p>\\[f'(x)=\\begin{cases}2x-3&\\text{si }x\\lt2\\\\\\dfrac4{x^2}&\\text{si }x\\gt2\\end{cases}\\qquad f'(2^-)=1\\qquad f'(2^+)=\\frac44=1\\]<div class='res'>\\(a=4\\); con ese valor \\(f\\) es continua y derivable en todo \\(\\mathbb R\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Con \\(a=1\\): \\(f(x)=x^2-3x+4\\) si \\(x\\le2\\) y \\(f(x)=4-\\frac1x\\) si \\(x\\gt2\\).</p><p><b>Asíntotas verticales:</b><i class='n' data-t='why'>Si en un punto se anula el denominador y no el numerador, hay una asíntota vertical.</i> el polinomio no tiene; \\(4-\\frac1x\\) solo podría tenerla en \\(x=0\\), que no está en su tramo. En \\(x=2\\) hay un salto finito (\\(f(2)=2\\), \\(\\lim_{x\\to2^+}f(x)=3{,}5\\)), no un límite infinito. No hay asíntotas verticales.</p><p><b>Asíntotas horizontales:</b></p>\\[\\lim_{x\\to+\\infty}\\left(4-\\frac1x\\right)=4\\qquad\\lim_{x\\to-\\infty}(x^2-3x+4)=+\\infty\\]<div class='res'>No hay asíntota vertical. Hay asíntota horizontal \\(y=4\\) solo cuando \\(x\\to+\\infty\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "cont",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "asint",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "ccss-2011-septiembre-7",
+   "n": 7,
+   "num": 3,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sean \\(A\\) y \\(B\\) dos sucesos aleatorios tales que: \\(P(A)=0{,}4\\), \\(P(B)=0{,}5\\) y \\(P(A\\cap B)=0{,}2\\).",
+    "apartados": [
+     "(1,5 p.) Calcule las siguientes probabilidades: \\(P(A\\cup B)\\), \\(P(A/B)\\) y \\(P(B/A^c)\\).",
+     "(0,5 p.) Razone si \\(A\\) y \\(B\\) son sucesos incompatibles.",
+     "(0,5 p.) Razone si \\(A\\) y \\(B\\) son independientes."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p><b>Unión.</b> Por la fórmula de la probabilidad de la unión<i class='n' data-t='th'>\\(P(A\\cup B)=P(A)+P(B)-P(A\\cap B)\\): se resta la intersección porque al sumar se ha contado dos veces.</i>:</p>\\[P(A\\cup B)=P(A)+P(B)-P(A\\cap B)=0{,}4+0{,}5-0{,}2=0{,}7\\]<p><b>\\(P(A/B)\\).</b> Por la definición de probabilidad condicionada:</p>\\[P(A/B)=\\frac{P(A\\cap B)}{P(B)}=\\frac{0{,}2}{0{,}5}=0{,}4\\]<p><b>\\(P(B/A^c)\\).</b> De nuevo por la definición:</p>\\[P(B/A^c)=\\frac{P(B\\cap A^c)}{P(A^c)}\\]<p>\\(B\\cap A^c\\) es la parte de \\(B\\) que queda al quitarle \\(A\\cap B\\)<i class='n' data-t='tp'>\\(B\\) se divide en dos partes incompatibles, \\(B\\cap A\\) y \\(B\\cap A^c\\); por eso \\(P(B\\cap A^c)=P(B)-P(A\\cap B)\\).</i>:</p>\\[P(B/A^c)=\\frac{P(B)-P(A\\cap B)}{1-P(A)}=\\frac{0{,}5-0{,}2}{0{,}6}=0{,}5\\]<div class='res'>\\(P(A\\cup B)=0{,}7\\), \\(P(A/B)=0{,}4\\) y \\(P(B/A^c)=0{,}5\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(A\\) y \\(B\\) son incompatibles si y solo si \\(P(A\\cap B)=0\\).</p><p>En este caso \\(P(A\\cap B)=0{,}2\\neq0\\): \\(A\\) y \\(B\\) pueden ocurrir a la vez.</p><div class='res'>No son incompatibles, porque \\(P(A\\cap B)=0{,}2\\neq0\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>\\(A\\) y \\(B\\) son independientes si \\(P(A\\mid B)=P(A)\\), es decir, \\(P(A\\cap B)=P(A)\\cdot P(B)\\).</p>\\[P(A)\\cdot P(B)=0{,}4\\cdot0{,}5=0{,}2=P(A\\cap B)\\]<div class='res'>Sí son independientes</div><i class='n' data-t='tp'>También se ve en que \\(P(A/B)=0{,}4=P(A)\\).</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "prob",
+     "tipo": "suc",
+     "apartados": "a, b, c"
+    },
+    {
+     "tema": "prob",
+     "tipo": "cond",
+     "apartados": "a"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "ccss-2011-septiembre-8",
+   "n": 8,
+   "num": 4,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea X una variable aleatoria Normal de media 50 y desviación típica 4. Se toman muestras de tamaño 16.",
+    "apartados": [
+     "(1 p.) ¿Cuál es la distribución de la media muestral?",
+     "(1,5 p.) ¿Cuál es la probabilidad de que la media muestral esté comprendida entre 47,5 y 52,5?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Sea \\(X\\) la variable aleatoria del enunciado, que sigue una distribución normal de media \\(\\mu=50\\) y desviación típica \\(\\sigma=4\\): \\(X\\sim N(50,\\ 4)\\). Tomamos muestras de tamaño \\(n=16\\) y estudiamos la media muestral \\(\\bar X\\). Aunque \\(n=16\\lt30\\), como la población es normal, la media de las muestras de tamaño 16 sigue exactamente una normal de media \\(\\mu\\) y desviación típica \\(\\dfrac\\sigma{\\sqrt n}\\)<i class='n' data-t='th'>Teorema central del límite: \\(\\bar X\\sim N\\left(\\mu,\\frac\\sigma{\\sqrt n}\\right)\\), exactamente si la población es normal y aproximadamente si \\(n\\ge30\\).</i>:</p>\\[\\frac4{\\sqrt{16}}=1\\]<div class='res'>\\(\\bar X\\sim N(50,\\ 1)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Por el apartado a, \\(\\bar X\\sim N(50,\\ 1)\\). Tipificamos<i class='n' data-t='th'>Si \\(\\bar X\\sim N(\\mu,\\sigma/\\sqrt n)\\), entonces \\(Z=\\dfrac{\\bar X-\\mu}{\\sigma/\\sqrt n}\\sim N(0,1)\\).</i> con \\(Z=\\dfrac{\\bar X-50}{1}\\):</p>\\[P(47{,}5\\le\\bar X\\le52{,}5)=P\\left(\\frac{47{,}5-50}1\\le Z\\le\\frac{52{,}5-50}1\\right)\\]\\[=P(-2{,}5\\le Z\\le2{,}5)=P(Z\\le2{,}5)-P(Z\\le-2{,}5)\\]<p>Por la simetría de la normal, \\(P(Z\\le-2{,}5)\\) \\(=1-P(Z\\le2{,}5)\\):</p>\\[=2\\,P(Z\\le2{,}5)-1\\]<p>En la tabla, \\(P(Z\\le2{,}5)=0{,}9938\\):</p>\\[=2\\cdot0{,}9938-1=0{,}9876\\]<div class='res'>\\(P(47{,}5\\le\\bar X\\le52{,}5)\\) \\(=0{,}9876\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "muest",
+     "tipo": "media",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "dist",
+     "tipo": "normal",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  }
+ ]
+}

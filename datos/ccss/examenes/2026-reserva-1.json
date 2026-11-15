@@ -1,0 +1,348 @@
+{
+ "version": 1,
+ "id": "ccss-2026-reserva-1",
+ "asignatura": "ccss",
+ "anio": 2026,
+ "convocatoria": "Reserva 1",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "ccss-2026-reserva-1-1",
+   "n": 1,
+   "bloque": "",
+   "puntos": "3",
+   "enunciado": {
+    "intro": "Una empresa fabrica dos productos, \\(P_1\\) y \\(P_2\\), a partir de tres recursos productivos: mano de obra, energía y capital. La disponibilidad anual de energía y de capital es de 3500 y 1300 unidades, respectivamente. Para optar a una ayuda del gobierno para el fomento del empleo, la empresa va a contratar, al menos, 4200 horas anuales. Cada unidad de \\(P_1\\) necesita 10 horas de mano de obra, 10 unidades de energía y 5 de capital, y se vende a 800 euros. Cada unidad de \\(P_2\\) necesita 20 horas de mano de obra y 5 unidades de energía, y se vende a 400 euros. La empresa vende todo lo que produce y quiere maximizar sus ingresos anuales.",
+    "apartados": [
+     "(2,5 p.) ¿Cuántas unidades de cada producto han de fabricarse anualmente para maximizar los ingresos? ¿Cuál es dicho ingreso óptimo?",
+     "(0,5 p.) ¿Es posible alcanzar el máximo elaborando un único producto?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>Sean \\(x\\) el número de unidades de \\(P_1\\) e \\(y\\) el número de unidades de \\(P_2\\) que se fabrican al año.<i class='n' data-t='why'>Las incógnitas son lo que la empresa puede decidir: cuánto produce de cada producto.</i></p><p>Ordeno los datos en una tabla:</p><table class='tb'><tr><th>Variables</th><th>Mano de obra (h)</th><th>Energía</th><th>Capital</th><th>Precio (€)</th></tr><tr><td>\\(x\\): unidades de \\(P_1\\)</td><td>10</td><td>10</td><td>5</td><td>800</td></tr><tr><td>\\(y\\): unidades de \\(P_2\\)</td><td>20</td><td>5</td><td>0</td><td>400</td></tr><tr><th>Disponibilidad</th><td>\\(\\ge4200\\)</td><td>\\(\\le3500\\)</td><td>\\(\\le1300\\)</td><td></td></tr></table><p>Las restricciones del problema son:<i class='n' data-t='tp'>«Al menos 4200 horas» es una desigualdad \\(\\ge\\) (mínimo que hay que contratar); la energía y el capital son disponibilidades máximas, luego \\(\\le\\). Como \\(P_2\\) no usa capital, la tercera restricción solo contiene \\(x\\).</i></p>\\[\\begin{cases}10x+20y\\ge4200\\\\10x+5y\\le3500\\\\5x\\le1300\\\\x\\ge0,\\ y\\ge0\\end{cases}\\iff\\begin{cases}x+2y\\ge420\\\\2x+y\\le700\\\\x\\le260\\\\x\\ge0,\\ y\\ge0\\end{cases}\\]<p>La función objetivo es la de los ingresos, que hay que maximizar:</p>\\[F(x,y)=800x+400y\\]</div>"
+    },
+    {
+     "titulo": "Región factible y vértices",
+     "html": "<div class='ex'><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(x+2y=420\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(420\\)</td></tr><tr><th>\\(y\\)</th><td>\\(210\\)</td><td>\\(0\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(2x+y=700\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(350\\)</td></tr><tr><th>\\(y\\)</th><td>\\(700\\)</td><td>\\(0\\)</td></tr></table><p>\\(x=260\\) es una recta vertical, paralela al eje de ordenadas.</p><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(x+2y\\ge420\\): con el origen, \\(0\\ge420\\) no se cumple → semiplano que <b>no</b> lo contiene.</li><li>\\(2x+y\\le700\\): con el origen, \\(0\\le700\\) se cumple → semiplano que lo contiene.</li><li>\\(x\\le260\\): con el origen, \\(0\\le260\\) se cumple → semiplano que lo contiene.</li></ul><p>Además, \\(x\\ge0\\) y \\(y\\ge0\\) limitan la región al primer cuadrante.</p><div style='overflow-x:auto'><svg viewBox='0 0 370 290' width='100%' style='max-width:420px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='40,190 40,27 222,200 222,233' fill='#b9a4f5' fill-opacity='.45' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M40 262V10M40 262H345'/><path d='M40 190L334 262M40 27L285 262' stroke-dasharray='4 3' stroke-opacity='.55'/><path d='M222 262V20' stroke-dasharray='4 3' stroke-opacity='.55'/></g><g><text x='350' y='266'>x</text><text x='30' y='12'>y</text><text x='48' y='186' font-weight='700'>A(0, 210)</text><text x='48' y='24' font-weight='700'>B(0, 700)</text><text x='228' y='192' font-weight='700'>C(260, 180)</text><text x='228' y='248' font-weight='700'>D(260, 80)</text><text x='150' y='98'>r₂: 2x + y = 700</text><text x='110' y='252'>r₁: x + 2y = 420</text><text x='226' y='110'>r₃: x = 260</text></g></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(A:\\;\\left\\{\\begin{array}{l}x=0\\\\x+2y=420\\end{array}\\right.\\Rightarrow y=210\\Rightarrow \\boxed{A(0,210)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}x=0\\\\2x+y=700\\end{array}\\right.\\Rightarrow y=700\\Rightarrow \\boxed{B(0,700)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}x=260\\\\2x+y=700\\end{array}\\right.\\Rightarrow y=180\\Rightarrow \\boxed{C(260,180)}\\)</li><li>\\(D:\\;\\left\\{\\begin{array}{l}x=260\\\\x+2y=420\\end{array}\\right.\\Rightarrow y=80\\Rightarrow \\boxed{D(260,80)}\\)</li></ul></div>"
+    },
+    {
+     "titulo": "Apartado a: optimización",
+     "html": "<div class='ex'><p>La función \\(F\\) alcanza sus extremos en el recinto, en puntos de su frontera; evaluamos, por tanto, \\(F\\) en los vértices<i class='n' data-t='th'>Teorema fundamental de la programación lineal: si la región factible es un polígono convexo y acotado, la función objetivo alcanza su máximo y su mínimo en alguno de sus vértices.</i>:</p>\\[\\begin{aligned}F(A)&=F(0,210)\\\\&=800\\cdot0+400\\cdot210\\\\&=84\\,000\\end{aligned}\\]\\[\\begin{aligned}F(B)&=F(0,700)\\\\&=800\\cdot0+400\\cdot700\\\\&=280\\,000\\end{aligned}\\]\\[\\begin{aligned}F(C)&=F(260,180)\\\\&=800\\cdot260+400\\cdot180\\\\&=280\\,000\\end{aligned}\\]\\[\\begin{aligned}F(D)&=F(260,80)\\\\&=800\\cdot260+400\\cdot80\\\\&=240\\,000\\end{aligned}\\]<p>\\(F\\) alcanza un máximo de valor \\(280\\,000\\) en todos los puntos del segmento de extremos \\(B\\) y \\(C\\).</p><p>El valor se repite en dos vértices consecutivos, \\(B\\) y \\(C\\)<i class='n' data-t='th'>Si la función objetivo toma el mismo valor óptimo en dos vértices consecutivos, lo toma en todo el lado que los une: hay infinitas soluciones.</i>, así que se alcanza en todo el segmento \\(BC\\), sobre la recta \\(2x+y=700\\).</p><div class='res'>Los ingresos máximos son 280 000 € y se obtienen fabricando \\((x,\\,700-2x)\\) unidades con \\(0\\le x\\le260\\) (por ejemplo, 260 de \\(P_1\\) y 180 de \\(P_2\\))</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Sí. En el vértice \\(B(0,700)\\) solo se fabrica \\(P_2\\): 700 unidades de \\(P_2\\) y ninguna de \\(P_1\\), y se obtienen 280 000 €, el máximo.<i class='n' data-t='tp'>Comprueba que ese punto cumple las restricciones: \\(10\\cdot0+5\\cdot700=3500\\le3500\\) ✓ y \\(20\\cdot700=14\\,000\\ge4200\\) ✓.</i></p><p>Con solo \\(P_1\\) no sería posible: \\(y=0\\) exige \\(x\\ge420\\) en \\(x+2y\\ge420\\), pero \\(x\\le260\\).</p><div class='res'>Sí, fabricando únicamente 700 unidades de \\(P_2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "pl",
+     "tipo": "plan",
+     "apartados": "a"
+    },
+    {
+     "tema": "pl",
+     "tipo": "reg",
+     "apartados": "a"
+    },
+    {
+     "tema": "pl",
+     "tipo": "opt",
+     "apartados": "a"
+    },
+    {
+     "tema": "pl",
+     "tipo": "interp",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2026-reserva-1-2a",
+   "n": "2A",
+   "bloque": "",
+   "puntos": "3",
+   "enunciado": {
+    "intro": "<b>Opción A.</b> Sea \\(f\\) la función definida por \\[f(x)=\\begin{cases}x^3+ax^2+9x&\\text{si }x\\lt3\\\\\\dfrac{bx+18}{x+1}&\\text{si }x\\ge3\\end{cases}\\] siendo \\(a\\) y \\(b\\) números reales.",
+    "apartados": [
+     "(1 p.) Determine los valores de \\(a\\) y \\(b\\) para que \\(f\\) sea continua en su dominio y su gráfica pase por el punto \\((2,2)\\).",
+     "Para \\(a=b=-6\\):",
+     "b-i) (0,5 p.) Determine las asíntotas de \\(f\\), en el caso de que existan.",
+     "b-ii) (0,75 p.) Estudie la monotonía de \\(f\\) y calcule sus extremos relativos.",
+     "b-iii) (0,75 p.) Esboce la gráfica de \\(f\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Cada trozo es continuo en su intervalo (un polinomio y una función racional cuyo denominador \\(x+1\\) no se anula para \\(x\\ge3\\)): solo hay que vigilar el punto de unión \\(x=3\\).<i class='n' data-t='why'>Estudiar la continuidad «en su dominio» significa asegurarse de que no hay saltos; los únicos candidatos son los puntos donde cambia la fórmula.</i></p><p>Dominio: \\(\\operatorname{Dom}f=\\mathbb R\\).</p><p>La gráfica pasa por \\((2,2)\\): \\(f(2)=2\\) con \\(2\\lt3\\):</p>\\[\\begin{aligned}8+4a+18&=2\\\\&\\iff4a=-24\\\\&\\iff a=-6\\end{aligned}\\]<p>Continuidad en \\(x=3\\)<i class='n' data-t='th'>\\(f\\) es continua en \\(x_0\\) si \\(\\lim_{x\\to x_0^-}f=\\lim_{x\\to x_0^+}f\\) \\(=f(x_0)\\).</i>:</p>\\[\\begin{aligned}\\lim_{x\\to3^-}f(x)&=27+9a+27\\\\&=54-54=0\\\\ \\lim_{x\\to3^+}f(x)&=f(3)\\\\&=\\frac{3b+18}{4}\\end{aligned}\\]\\[0=\\frac{3b+18}{4}\\iff b=-6\\]<div class='res'>\\(a=-6\\) y \\(b=-6\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b-i",
+     "html": "<div class='ex'><p>Con \\(a=b=-6\\): \\(f(x)=x^3-6x^2+9x\\) si \\(x\\lt3\\) y \\(f(x)=\\dfrac{-6x+18}{x+1}\\) si \\(x\\ge3\\).</p><p><b>Verticales:</b> el polinomio no tiene. En el segundo trozo el denominador se anula en \\(x=-1\\notin[3,+\\infty)\\): no hay asíntota vertical.<i class='n' data-t='err'>Un valor que anula el denominador solo da asíntota vertical si pertenece al dominio de esa rama. Aquí \\(x=-1\\) no está en \\(x\\ge3\\).</i></p><p><b>Horizontales:</b> en \\(-\\infty\\), \\(f(x)\\to-\\infty\\) (polinomio de grado 3): ninguna. En \\(+\\infty\\): \\(\\displaystyle\\lim_{x\\to+\\infty}\\frac{-6x+18}{x+1}\\) \\(=-6\\).</p><p><b>Oblicuas:</b> ninguna.</p><div class='res'>Única asíntota: \\(y=-6\\) (horizontal, cuando \\(x\\to+\\infty\\))</div></div>"
+    },
+    {
+     "titulo": "Apartado b-ii",
+     "html": "<div class='ex'><p>Al ser \\(f\\) una función definida a trozos, el único punto «problemático» es \\(x=3\\), donde cambia la expresión<i class='n' data-t='why'>Los puntos «problemáticos» son los que no pertenecen al dominio (por ejemplo, los que anulan un denominador) y los puntos donde cambia la expresión de una función a trozos. Hay que marcarlos en la recta porque en ellos también puede cambiar el signo de la derivada.</i> (\\(x=-1\\), que anula el denominador, no está en \\(x\\ge3\\)).</p><p>Estudiamos el signo de \\(f'\\)<i class='n' data-t='tp'>Dentro de cada intervalo la derivada no cambia de signo, así que basta sustituir un valor cualquiera del intervalo para conocer su signo.</i>.</p>\\[f'(x)=\\begin{cases}3x^2-12x+9&\\text{si }x\\lt3\\\\\\dfrac{-6(x+1)-(-6x+18)}{(x+1)^2}=\\dfrac{-24}{(x+1)^2}&\\text{si }x\\gt3\\end{cases}\\]\\[3x^2-12x+9=0\\]\\[x=\\dfrac{12\\pm\\sqrt{12^2-4\\cdot3\\cdot9}}{2\\cdot3}\\]\\[x=\\dfrac{12\\pm6}{6}=\\begin{cases}x=1\\\\x=3\\end{cases}\\]<p>\\(x=3\\) no está en \\(x\\lt3\\), y el segundo trozo no se anula nunca.</p><div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 274 108' width='100%' style='max-width:329px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H260' stroke='currentColor' stroke-width='1.6'/><path d='M96 46V58' stroke='currentColor' stroke-width='1.6'/><text x='96' y='76' text-anchor='middle' font-weight='700'>1</text><path d='M178 46V58' stroke='currentColor' stroke-width='1.6'/><text x='178' y='76' text-anchor='middle' font-weight='700'>3</text><text x='29.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#17a673'>+</text><path d='M43.0 40L79.0 10' stroke='#17a673' stroke-width='2' fill='none'/><path d='M70.0 11L79.0 10L77.0 19' stroke='#17a673' stroke-width='2' fill='none'/><text x='55.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(0) &gt; 0</text><text x='111.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#e8487a'>−</text><path d='M125.0 10L161.0 40' stroke='#e8487a' stroke-width='2' fill='none'/><path d='M152.0 39L161.0 40L159.0 31' stroke='#e8487a' stroke-width='2' fill='none'/><text x='137.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(2) &lt; 0</text><text x='193.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#e8487a'>−</text><path d='M207.0 10L243.0 40' stroke='#e8487a' stroke-width='2' fill='none'/><path d='M234.0 39L243.0 40L241.0 31' stroke='#e8487a' stroke-width='2' fill='none'/><text x='219.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(4) &lt; 0</text></svg></div><p>Luego \\(f\\) crece en \\((-\\infty,1)\\) y decrece en \\((1,+\\infty)\\)<i class='n' data-t='th'>Si \\(f'\\gt0\\) en un intervalo, \\(f\\) crece en él; si \\(f'\\lt0\\), decrece.</i><i class='n' data-t='why'>Como \\(f\\) es continua en \\(x=3\\) y tiene el mismo comportamiento a ambos lados, los dos intervalos se unen en uno solo.</i>.</p><p>Alcanza un máximo en \\(x=1\\) de valor \\(f(1)=4\\)<i class='n' data-t='why'>Hay un mínimo donde \\(f\\) pasa de decrecer a crecer y un máximo donde pasa de crecer a decrecer.</i>.</p><p>\\(f\\) es continua en \\(x=3\\) y decrece a ambos lados, así que no hay extremo en ese punto.</p><div class='res'>Creciente en \\((-\\infty,1)\\); decreciente en \\((1,+\\infty)\\). Máximo relativo en \\((1,4)\\); no hay mínimos relativos</div></div>"
+    },
+    {
+     "titulo": "Apartado b-iii",
+     "html": "<div class='ex'><p>Datos para el esbozo: cortes con los ejes \\(f(x)=x(x-3)^2\\) si \\(x\\lt3\\): \\((0,0)\\) y \\((3,0)\\); máximo en \\((1,4)\\); la rama \\(x\\ge3\\) parte de \\((3,0)\\), decrece y se acerca a la asíntota \\(y=-6\\).<i class='n' data-t='tp'>Marca en el dibujo los puntos clave (máximo, cortes y asíntota) y la forma «de pico» en \\(x=3\\): el corrector puntúa cada elemento.</i></p><div style='overflow-x:auto'><svg viewBox='0 0 310 245' width='100%' style='max-width:420px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M8 110H305M40 235V15'/><path d='M136 218H300' stroke-dasharray='4 3' stroke-opacity='.6'/></g><polyline points='28.8,180.7 40,110 56,53.8 72,38 88,49.3 104,74 120,98.8 136,110' fill='none' stroke='#2f6df0' stroke-width='2'/><polyline points='136,110 168,131.6 200,146 232,156.3 264,164 296,170' fill='none' stroke='#e8487a' stroke-width='2'/><circle cx='72' cy='38' r='3.5' fill='#2f6df0'/><circle cx='136' cy='110' r='3.5' fill='currentColor'/><g><text x='80' y='34'>máx. (1, 4)</text><text x='140' y='104'>(3, 0)</text><text x='46' y='124'>(0, 0)</text><text x='200' y='212'>y = −6</text><text x='300' y='106'>x</text><text x='44' y='20'>y</text></g></svg></div><div class='res'>Pasa por \\((0,0)\\), sube al máximo \\((1,4)\\), baja a \\((3,0)\\) y sigue decreciendo hacia la asíntota \\(y=-6\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "cont",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "asint",
+     "apartados": "b-i"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "b-ii"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "rep",
+     "apartados": "b-iii"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2026-reserva-1-2b",
+   "n": "2B",
+   "bloque": "",
+   "puntos": "3",
+   "enunciado": {
+    "intro": "<b>Opción B.</b> Se considera la función \\(f(x)=1-\\dfrac{x-6}{2+x}\\).",
+    "apartados": [
+     "(0,75 p.) Halle su dominio y determine sus asíntotas.",
+     "(1 p.) Estudie la monotonía y la curvatura, calculando los extremos relativos y los puntos de inflexión.",
+     "(0,5 p.) Represente gráficamente \\(f\\).",
+     "(0,75 p.) Determine la ecuación de la recta tangente a la gráfica de \\(f\\) en todos aquellos puntos donde la pendiente de dicha recta vale \\(-8\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Simplificación previa",
+     "html": "<div class='ex'><p>\\[\\begin{aligned}f(x)&=1-\\frac{x-6}{x+2}\\\\&=\\frac{(x+2)-(x-6)}{x+2}\\\\&=\\frac{8}{x+2}\\end{aligned}\\]<i class='n' data-t='tp'>Simplificar antes de derivar ahorra cuentas y errores: \\(f'\\) y \\(f''\\) salen en una línea.</i></p></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Dominio: \\(x+2\\neq0\\), luego \\(\\operatorname{Dom}f=\\mathbb R\\setminus\\{-2\\}\\).</p><p>Vertical: \\(\\displaystyle\\lim_{x\\to-2^+}\\frac{8}{x+2}=+\\infty\\) y \\(\\displaystyle\\lim_{x\\to-2^-}\\frac{8}{x+2}=-\\infty\\): asíntota vertical \\(x=-2\\).<i class='n' data-t='why'>\\(x=-2\\) anula el denominador y no anula el numerador, por eso el límite es infinito.</i></p><p>Horizontal: \\(\\displaystyle\\lim_{x\\to\\pm\\infty}\\frac{8}{x+2}=0\\): asíntota horizontal \\(y=0\\).</p><div class='res'>Asíntotas: \\(x=-2\\) (vertical) e \\(y=0\\) (horizontal)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Usamos la expresión simplificada \\(f(x)=\\dfrac{8}{x+2}\\).</p><p>Al ser \\(f\\) una función racional, el único punto «problemático» es \\(x=-2\\), que anula el denominador y no pertenece al dominio<i class='n' data-t='why'>Los puntos «problemáticos» son los que no pertenecen al dominio (por ejemplo, los que anulan un denominador) y los puntos donde cambia la expresión de una función a trozos. Hay que marcarlos en la recta porque en ellos también puede cambiar el signo de la derivada.</i>.</p><p>Estudiamos el signo de \\(f'\\)<i class='n' data-t='tp'>Dentro de cada intervalo la derivada no cambia de signo, así que basta sustituir un valor cualquiera del intervalo para conocer su signo.</i>.</p>\\[f'(x)=\\dfrac{-8}{(x+2)^2}\\]<p>\\(f'\\) no se anula nunca.</p><div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 192 108' width='100%' style='max-width:230px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H178' stroke='currentColor' stroke-width='1.6'/><circle cx='96' cy='52' r='4' fill='#fff' stroke='currentColor' stroke-width='1.5'/><text x='96' y='76' text-anchor='middle' font-weight='700'>−2</text><text x='29.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#e8487a'>−</text><path d='M43.0 10L79.0 40' stroke='#e8487a' stroke-width='2' fill='none'/><path d='M70.0 39L79.0 40L77.0 31' stroke='#e8487a' stroke-width='2' fill='none'/><text x='55.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(−3) &lt; 0</text><text x='111.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#e8487a'>−</text><path d='M125.0 10L161.0 40' stroke='#e8487a' stroke-width='2' fill='none'/><path d='M152.0 39L161.0 40L159.0 31' stroke='#e8487a' stroke-width='2' fill='none'/><text x='137.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(−1) &lt; 0</text></svg></div><p>Luego \\(f\\) decrece en \\((-\\infty,-2)\\) y \\((-2,+\\infty)\\)<i class='n' data-t='th'>Si \\(f'\\gt0\\) en un intervalo, \\(f\\) crece en él; si \\(f'\\lt0\\), decrece.</i>.</p><p>No tiene extremos relativos.</p><p>Estudiamos su curvatura<i class='n' data-t='th'>Si \\(f''\\gt0\\) en un intervalo, \\(f\\) es convexa (\\(\\cup\\)) en él; si \\(f''\\lt0\\), es cóncava (\\(\\cap\\)).</i>.</p>\\[f''(x)=\\dfrac{16}{(x+2)^3}\\]<p>\\(f''\\) tampoco se anula.</p><p>Estudiamos el signo de \\(f''\\).</p><div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 192 108' width='100%' style='max-width:230px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H178' stroke='currentColor' stroke-width='1.6'/><circle cx='96' cy='52' r='4' fill='#fff' stroke='currentColor' stroke-width='1.5'/><text x='96' y='76' text-anchor='middle' font-weight='700'>−2</text><path d='M37.0 42Q55.0 -4 73.0 42' stroke='#e8487a' stroke-width='2' fill='none'/><text x='55.0' y='36' text-anchor='middle' font-size='18' font-weight='700' fill='#e8487a'>−</text><text x='55.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>″(−3) &lt; 0</text><path d='M119.0 6Q137.0 52 155.0 6' stroke='#17a673' stroke-width='2' fill='none'/><text x='137.0' y='21' text-anchor='middle' font-size='18' font-weight='700' fill='#17a673'>+</text><text x='137.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>″(−1) &gt; 0</text></svg></div><p>\\(f\\) es cóncava en \\((-\\infty,-2)\\) y convexa en \\((-2,+\\infty)\\).</p><p>No tiene puntos de inflexión.</p><p>En \\(x=-2\\) cambia la curvatura, pero no es punto de inflexión porque no pertenece al dominio.</p><div class='res'>Decreciente en \\((-\\infty,-2)\\) y en \\((-2,+\\infty)\\), sin extremos; cóncava en \\((-\\infty,-2)\\), convexa en \\((-2,+\\infty)\\), sin inflexión</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Tabla de valores y asíntotas \\(x=-2\\), \\(y=0\\):</p><table class='tb'><tr><th>\\(x\\)</th><td>−6</td><td>−4</td><td>−3</td><td>−1</td><td>0</td><td>2</td><td>6</td></tr><tr><th>\\(f(x)\\)</th><td>−2</td><td>−4</td><td>−8</td><td>8</td><td>4</td><td>2</td><td>1</td></tr></table><div style='overflow-x:auto'><svg viewBox='0 0 320 240' width='100%' style='max-width:420px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M6 120H315M170 6V236'/><path d='M126 6V236' stroke-dasharray='4 3' stroke-opacity='.65'/></g><polyline points='148,24 159,56 170,72 192,88 214,96 258,104 302,108' fill='none' stroke='#2f6df0' stroke-width='2'/><polyline points='104,216 82,168 60,152 38,144 16,139' fill='none' stroke='#2f6df0' stroke-width='2'/><path d='M146 14L177 149M82 120L107 228' stroke='#e8487a' stroke-width='1.4' stroke-dasharray='5 3' fill='none'/><circle cx='148' cy='24' r='3.5' fill='#e8487a'/><circle cx='104' cy='216' r='3.5' fill='#e8487a'/><g><text x='130' y='16'>x = −2</text><text x='260' y='132'>y = 0</text><text x='152' y='22'>(−1, 8)</text><text x='108' y='226'>(−3, −8)</text><text x='200' y='80'>f(x) = 8/(x+2)</text></g></svg></div><div class='res'>Dos ramas de hipérbola decrecientes con asíntotas \\(x=-2\\) e \\(y=0\\); la de la derecha pasa por \\((0,4)\\) y \\((2,2)\\), y la de la izquierda por \\((-4,-4)\\) y \\((-6,-2)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado d",
+     "html": "<div class='ex'><p>Buscamos los puntos con \\(f'(x)=-8\\)<i class='n' data-t='th'>La pendiente de la recta tangente en \\(x_0\\) es \\(f'(x_0)\\), y la tangente es \\(y-f(x_0)\\) \\(=f'(x_0)(x-x_0)\\).</i>:</p>\\[\\begin{aligned}\\frac{-8}{(x+2)^2}&=-8\\\\&\\iff(x+2)^2=1\\\\&\\iff x=-1\\ \\text{ o }\\ x\\\\&=-3\\end{aligned}\\]<p>En \\(x=-1\\): \\(f(-1)=8\\). Tangente: \\(y-8=-8(x+1)\\) \\(\\iff y=-8x\\).</p><p>En \\(x=-3\\): \\(f(-3)=-8\\). Tangente: \\(y+8=-8(x+3)\\) \\(\\iff y=-8x-32\\).</p><div class='res'>\\(y=-8x\\) (en \\((-1,8)\\)) e \\(y=-8x-32\\) (en \\((-3,-8)\\))</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "asint",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "b"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "rep",
+     "apartados": "c"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": "d"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2026-reserva-1-3a",
+   "n": "3A",
+   "bloque": "",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "<b>Opción A.</b> Sea \\(X\\) una variable aleatoria que sigue una ley Normal de media desconocida y desviación típica 2.",
+    "apartados": [
+     "(1 p.) Se selecciona una muestra de tamaño 81 resultando una media de 20. Calcule un intervalo de confianza al 98,5 % para estimar la media poblacional. ¿Qué error máximo se comete en la estimación?",
+     "(0,75 p.) Manteniendo el mismo nivel de confianza, ¿qué tamaño mínimo debería tener una nueva muestra para que la amplitud del intervalo para la media fuese inferior a 2,16?",
+     "(0,25 p.) Razone qué efecto produciría sobre la amplitud del intervalo una disminución del nivel de confianza."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento (teoría)",
+     "html": "<div class='ex'><p>Sea \\(X\\) la variable aleatoria «variable del enunciado (el enunciado no indica qué magnitud mide)». Según el enunciado, \\(X\\) sigue una distribución normal de media \\(\\mu\\) desconocida y desviación típica \\(\\sigma=2\\):</p>\\[X\\sim N\\left(\\mu,\\ 2\\right)\\]<p>Tomamos muestras aleatorias simples de tamaño \\(n=81\\) y estudiamos la media muestral \\(\\bar X\\). Según el teorema central del límite, como \\(n=81\\ge30\\) (y además la población es normal), la media muestral sigue una distribución normal con la misma media que la población y desviación típica \\(\\dfrac\\sigma{\\sqrt n}\\)<i class='n' data-t='th'>Teorema central del límite: si una población tiene media \\(\\mu\\) y desviación típica \\(\\sigma\\), la media de las muestras de tamaño \\(n\\) se distribuye \\(N\\left(\\mu,\\frac\\sigma{\\sqrt n}\\right)\\), exactamente si la población es normal y de forma aproximada si \\(n\\ge30\\).</i>:</p>\\[\\bar X\\sim N\\left(\\mu,\\ \\frac{\\sigma}{\\sqrt n}\\right)\\]<p>Si tipificamos, obtenemos una normal estándar, \\(Z=\\dfrac{\\bar X-\\mu}{\\sigma/\\sqrt n}\\sim N(0,1)\\). Para un nivel de confianza \\(1-\\alpha\\) buscamos el valor crítico \\(z_{1-\\alpha/2}\\) que deja entre \\(-z_{1-\\alpha/2}\\) y \\(z_{1-\\alpha/2}\\) una probabilidad \\(1-\\alpha\\). Despejando \\(\\mu\\) se obtiene el intervalo de confianza para la media poblacional:</p>\\[IC_{1-\\alpha}(\\mu)=(\\bar x-E,\\ \\bar x+E)\\]\\[E=z_{1-\\alpha/2}\\cdot\\frac\\sigma{\\sqrt n}\\]<p>donde \\(\\bar x\\) es la media de nuestra muestra y \\(E\\) es el error máximo de la estimación. Si se exige que el error sea menor que una cantidad \\(E_0\\), despejamos \\(n\\):</p>\\[z_{1-\\alpha/2}\\frac\\sigma{\\sqrt n}\\lt E_0\\]\\[\\iff n\\gt\\left(\\frac{z_{1-\\alpha/2}\\,\\sigma}{E_0}\\right)^2\\]<p>y, como \\(n\\) es un número de individuos, se redondea siempre hacia arriba.</p></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Datos: \\(n=81\\), \\(\\bar x=20\\), \\(\\sigma=2\\).</p><p>Nivel de confianza: \\(1-\\alpha=0{,}985\\), luego \\(\\alpha=0{,}015\\) y \\(\\dfrac\\alpha2=0{,}0075\\).</p>\\[P\\left(Z\\lt z_{1-\\alpha/2}\\right)=1-\\frac\\alpha2\\]\\[\\begin{aligned}P\\left(Z\\lt z_{1-\\alpha/2}\\right)&=1-0{,}0075\\\\&=0{,}9925\\end{aligned}\\]<p>Busco \\(0{,}9925\\) en el interior de la tabla \\(N(0,1)\\): \\(P(Z\\lt2{,}43)=0{,}9925\\)<i class='n' data-t='why'>Se busca en la tabla el valor cuya probabilidad acumulada es \\(1-\\alpha/2=0{,}9925\\), no \\(0{,}985\\).</i>:</p>\\[\\Rightarrow\\ z_{1-\\alpha/2}=2{,}43\\]<div style='overflow-x:auto'><svg viewBox='0 0 320 170' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='8.0,135.0 8.0,134.9 8.9,134.9 9.8,134.9 10.7,134.9 11.7,134.9 12.6,134.9 13.5,134.9 14.4,134.8 15.3,134.8 16.2,134.8 17.1,134.8 18.0,134.8 19.0,134.8 19.9,134.7 20.8,134.7 21.7,134.7 22.6,134.7 23.5,134.6 24.4,134.6 25.4,134.6 26.3,134.6 27.2,134.5 28.1,134.5 29.0,134.4 29.9,134.4 30.8,134.3 31.7,134.3 32.7,134.2 33.6,134.2 34.5,134.1 35.4,134.1 36.3,134.0 37.2,133.9 38.1,133.8 39.1,133.8 40.0,133.7 40.9,133.6 41.8,133.5 42.7,133.4 43.6,133.3 44.5,133.1 45.4,133.0 46.4,132.9 47.3,132.7 48.2,132.6 49.1,132.4 50.0,132.3 50.9,132.1 51.8,131.9 52.8,131.7 53.7,131.5 54.6,131.3 55.5,131.1 56.4,130.8 57.3,130.6 58.2,130.3 59.1,130.0 60.1,129.7 61.0,129.4 61.9,129.1 62.8,128.8 62.8,135.0' fill='#e8487a' fill-opacity='.28' stroke='none'/><polygon points='257.2,135.0 257.2,128.8 258.1,129.1 259.0,129.4 259.9,129.7 260.9,130.0 261.8,130.3 262.7,130.6 263.6,130.8 264.5,131.1 265.4,131.3 266.3,131.5 267.2,131.7 268.2,131.9 269.1,132.1 270.0,132.3 270.9,132.4 271.8,132.6 272.7,132.7 273.6,132.9 274.6,133.0 275.5,133.1 276.4,133.3 277.3,133.4 278.2,133.5 279.1,133.6 280.0,133.7 280.9,133.8 281.9,133.8 282.8,133.9 283.7,134.0 284.6,134.1 285.5,134.1 286.4,134.2 287.3,134.2 288.3,134.3 289.2,134.3 290.1,134.4 291.0,134.4 291.9,134.5 292.8,134.5 293.7,134.6 294.6,134.6 295.6,134.6 296.5,134.6 297.4,134.7 298.3,134.7 299.2,134.7 300.1,134.7 301.0,134.8 302.0,134.8 302.9,134.8 303.8,134.8 304.7,134.8 305.6,134.8 306.5,134.9 307.4,134.9 308.3,134.9 309.3,134.9 310.2,134.9 311.1,134.9 312.0,134.9 312.0,135.0' fill='#e8487a' fill-opacity='.28' stroke='none'/><polygon points='62.8,135.0 62.8,128.8 66.0,127.4 69.3,125.9 72.5,124.0 75.8,122.0 79.0,119.6 82.2,116.9 85.5,113.9 88.7,110.5 92.0,106.8 95.2,102.8 98.4,98.4 101.7,93.7 104.9,88.6 108.2,83.3 111.4,77.8 114.6,72.1 117.9,66.3 121.1,60.4 124.4,54.5 127.6,48.8 130.8,43.2 134.1,38.0 137.3,33.1 140.6,28.6 143.8,24.7 147.0,21.4 150.3,18.8 153.5,16.9 156.8,15.7 160.0,15.3 163.2,15.7 166.5,16.9 169.7,18.8 173.0,21.4 176.2,24.7 179.4,28.6 182.7,33.1 185.9,38.0 189.2,43.2 192.4,48.8 195.6,54.5 198.9,60.4 202.1,66.3 205.4,72.1 208.6,77.8 211.8,83.3 215.1,88.6 218.3,93.7 221.6,98.4 224.8,102.8 228.0,106.8 231.3,110.5 234.5,113.9 237.8,116.9 241.0,119.6 244.2,122.0 247.5,124.0 250.7,125.9 254.0,127.4 257.2,128.8 257.2,135.0' fill='#6d4ae0' fill-opacity='.35' stroke='none'/><polyline points='8.0,134.9 10.5,134.9 13.1,134.9 15.6,134.8 18.1,134.8 20.7,134.7 23.2,134.7 25.7,134.6 28.3,134.5 30.8,134.4 33.3,134.2 35.9,134.0 38.4,133.8 40.9,133.6 43.5,133.3 46.0,132.9 48.5,132.5 51.1,132.1 53.6,131.5 56.1,130.9 58.7,130.2 61.2,129.3 63.7,128.4 66.3,127.3 68.8,126.1 71.3,124.7 73.9,123.2 76.4,121.5 78.9,119.6 81.5,117.6 84.0,115.3 86.5,112.8 89.1,110.2 91.6,107.3 94.1,104.2 96.7,100.8 99.2,97.3 101.7,93.6 104.3,89.7 106.8,85.6 109.3,81.3 111.9,77.0 114.4,72.5 116.9,68.0 119.5,63.4 122.0,58.8 124.5,54.2 127.1,49.7 129.6,45.3 132.1,41.1 134.7,37.1 137.2,33.3 139.7,29.7 142.3,26.5 144.8,23.7 147.3,21.2 149.9,19.1 152.4,17.5 154.9,16.3 157.5,15.6 160.0,15.3 162.5,15.6 165.1,16.3 167.6,17.5 170.1,19.1 172.7,21.2 175.2,23.7 177.7,26.5 180.3,29.7 182.8,33.3 185.3,37.1 187.9,41.1 190.4,45.3 192.9,49.7 195.5,54.2 198.0,58.8 200.5,63.4 203.1,68.0 205.6,72.5 208.1,77.0 210.7,81.3 213.2,85.6 215.7,89.7 218.3,93.6 220.8,97.3 223.3,100.8 225.9,104.2 228.4,107.3 230.9,110.2 233.5,112.8 236.0,115.3 238.5,117.6 241.1,119.6 243.6,121.5 246.1,123.2 248.7,124.7 251.2,126.1 253.7,127.3 256.3,128.4 258.8,129.3 261.3,130.2 263.9,130.9 266.4,131.5 268.9,132.1 271.5,132.5 274.0,132.9 276.5,133.3 279.1,133.6 281.6,133.8 284.1,134.0 286.7,134.2 289.2,134.4 291.7,134.5 294.3,134.6 296.8,134.7 299.3,134.7 301.9,134.8 304.4,134.8 306.9,134.9 309.5,134.9 312.0,134.9' fill='none' stroke='#2f6df0' stroke-width='2'/><line x1='4.0' y1='135.0' x2='316.0' y2='135.0' stroke='currentColor' stroke-width='1.2'/><line x1='62.8' y1='139.0' x2='62.8' y2='128.8' stroke='#6d4ae0' stroke-width='1.4' stroke-dasharray='3 2'/><text x='62.8' y='152.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>−z<tspan font-size='8' dy='3'>1−α/2</tspan></text><line x1='257.2' y1='139.0' x2='257.2' y2='128.8' stroke='#6d4ae0' stroke-width='1.4' stroke-dasharray='3 2'/><text x='257.2' y='152.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>z<tspan font-size='8' dy='3'>1−α/2</tspan></text><text x='257.2' y='165.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>= 2,43</text><text x='160.0' y='87.0' text-anchor='middle' font-size='12' font-weight='700'>1 − α = 0,985</text><line x1='52.8' y1='133.5' x2='36.0' y2='105.0' stroke='#c2185b' stroke-width='1'/><text x='8.0' y='102.0' text-anchor='start' font-size='10' fill='#c2185b'>α/2 = 0,0075</text><line x1='267.2' y1='133.5' x2='284.0' y2='105.0' stroke='#c2185b' stroke-width='1'/><text x='312.0' y='102.0' text-anchor='end' font-size='10' fill='#c2185b'>α/2 = 0,0075</text><text x='160.0' y='148.0' text-anchor='middle' font-size='9.5'>0</text></svg></div><p>Calculamos el error máximo de la estimación:</p>\\[\\begin{aligned}E&=2{,}43\\cdot\\frac{2}{\\sqrt{81}}\\\\&=2{,}43\\cdot\\frac29=0{,}54\\end{aligned}\\]<p>Por tanto, los extremos del intervalo son:</p>\\[\\begin{aligned}IC_{0{,}985}(\\mu)&=(20-0{,}54;\\ 20+0{,}54)\\\\&=(19{,}46;\\ 20{,}54)\\end{aligned}\\]<div class='res'>\\(IC_{0{,}985}(\\mu)\\) \\(=(19{,}46;\\ 20{,}54)\\). Error máximo: \\(E=0{,}54\\)</div><p><b>Conclusión:</b> podemos afirmar, con un nivel de confianza del 98,5 %, que la media poblacional de \\(X\\) se encuentra entre 19,46 y 20,54.</p></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>La amplitud es \\(A=2E=2\\,z_{1-\\alpha/2}\\dfrac{\\sigma}{\\sqrt n}\\). Con el mismo nivel de confianza (\\(z=2{,}43\\)) exigimos \\(A\\lt2{,}16\\):</p>\\[\\begin{aligned}&2\\cdot2{,}43\\cdot\\frac{2}{\\sqrt n}\\lt2{,}16\\\\&\\iff\\sqrt n\\gt\\frac{9{,}72}{2{,}16}=4{,}5\\\\&\\iff n\\gt20{,}25\\end{aligned}\\]<p>Como \\(n\\) es entero, se redondea hacia arriba.<i class='n' data-t='err'>Es un tamaño <b>mínimo</b>: se toma el menor entero que cumple la desigualdad (21), no el más cercano a 20,25.</i></p><div class='res'>Tamaño mínimo: \\(n=21\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>\\(A=2\\,z_{1-\\alpha/2}\\dfrac{\\sigma}{\\sqrt n}\\). Al disminuir el nivel de confianza, \\(z_{1-\\alpha/2}\\) disminuye, luego \\(A\\) disminuye.<i class='n' data-t='why'>Intervalo más estrecho = más precisión pero menos confianza: ambas cosas van en sentidos contrarios.</i></p><div class='res'>La amplitud del intervalo disminuye</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "inf",
+     "tipo": "ic",
+     "apartados": "a"
+    },
+    {
+     "tema": "inf",
+     "tipo": "error",
+     "apartados": "a, c"
+    },
+    {
+     "tema": "inf",
+     "tipo": "tam",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2026-reserva-1-3b",
+   "n": "3B",
+   "bloque": "",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "<b>Opción B.</b> Sean \\(A\\) y \\(B\\) dos sucesos de un mismo espacio muestral tales que \\(P(A)=0{,}4\\), \\(P(B^c)=0{,}7\\) y \\(P(A\\cup B)=0{,}58\\).",
+    "apartados": [
+     "(0,5 p.) ¿Son \\(A\\) y \\(B\\) independientes? ¿Son incompatibles?",
+     "Calcule la probabilidad de que:",
+     "b-i) (0,5 p.) Ocurra alguno de los sucesos contrarios.",
+     "b-ii) (0,5 p.) Ocurra \\(B\\) sabiendo que no ha ocurrido \\(A\\).",
+     "b-iii) (0,5 p.) Ocurra uno y solo uno de los dos sucesos."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Datos previos",
+     "html": "<div class='ex'><p>\\(P(B)=1-P(B^c)\\) \\(=1-0{,}7=0{,}3\\)<i class='n' data-t='why'>Los datos están en términos de \\(B^c\\); lo primero es pasar a \\(P(B)\\).</i>. Por la probabilidad de la unión,<i class='n' data-t='th'>\\(P(A\\cup B)\\) \\(=P(A)+P(B)-P(A\\cap B)\\).</i></p>\\[\\begin{aligned}P(A\\cap B)&=P(A)\\\\&\\quad+P(B)-P(A\\cup B)\\\\&=0{,}4+0{,}3-0{,}58\\\\&=0{,}12\\end{aligned}\\]</div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(A\\) y \\(B\\) son independientes si \\(P(A\\mid B)=P(A)\\), es decir, \\(P(A\\cap B)=P(A)\\cdot P(B)\\).</p>\\[\\begin{aligned}P(A)\\cdot P(B)&=0{,}4\\cdot0{,}3\\\\&=0{,}12=P(A\\cap B)\\end{aligned}\\]<p>Son independientes.</p><p>\\(A\\) y \\(B\\) son incompatibles si y solo si \\(P(A\\cap B)=0\\).</p><p>Como \\(P(A\\cap B)=0{,}12\\neq0\\), no son incompatibles.</p><div class='res'>\\(A\\) y \\(B\\) son independientes y no son incompatibles</div></div>"
+    },
+    {
+     "titulo": "Apartado b-i",
+     "html": "<div class='ex'><p>«Alguno de los contrarios» es \\(A^c\\cup B^c\\). Por las leyes de De Morgan, \\(A^c\\cup B^c=(A\\cap B)^c\\)<i class='n' data-t='th'>Leyes de De Morgan: \\((A\\cap B)^c=A^c\\cup B^c\\) y \\((A\\cup B)^c=A^c\\cap B^c\\).</i>:</p>\\[\\begin{aligned}P(A^c\\cup B^c)&=1-P(A\\cap B)\\\\&=1-0{,}12=0{,}88\\end{aligned}\\]<div class='res'>0,88</div></div>"
+    },
+    {
+     "titulo": "Apartado b-ii",
+     "html": "<div class='ex'><p>Sabemos que no ha ocurrido \\(A\\): es una probabilidad condicionada. Por su definición<i class='n' data-t='th'>Definición de probabilidad condicionada: \\(P(A\\mid B)=\\dfrac{P(A\\cap B)}{P(B)}\\).</i>:</p>\\[\\begin{aligned}P(B\\mid A^c)&=\\frac{P(B\\cap A^c)}{P(A^c)}\\\\&=\\frac{P(B)-P(A\\cap B)}{1-P(A)}\\\\&=\\frac{0{,}3-0{,}12}{0{,}6}=0{,}3\\end{aligned}\\]<i class='n' data-t='why'>Coincide con \\(P(B)\\) porque \\(A\\) y \\(B\\) son independientes (y entonces también lo son \\(A^c\\) y \\(B\\)).</i><div class='res'>0,3</div></div>"
+    },
+    {
+     "titulo": "Apartado b-iii",
+     "html": "<div class='ex'><p>«Uno y solo uno» es \\((A\\cap B^c)\\cup(A^c\\cap B)\\), la unión sin la intersección:</p>\\[\\begin{aligned}P&=P(A\\cup B)-P(A\\cap B)\\\\&=0{,}58-0{,}12=0{,}46\\end{aligned}\\]<div class='res'>0,46</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "prob",
+     "tipo": "suc",
+     "apartados": "a, b-i, b-iii"
+    },
+    {
+     "tema": "prob",
+     "tipo": "cond",
+     "apartados": "b-ii"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2026-reserva-1-4",
+   "n": 4,
+   "bloque": "",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "Una empresa de alquiler de patinetes eléctricos quiere analizar el comportamiento de sus usuarios durante la hora punta de la mañana en una determinada ciudad. La duración del trayecto de cada usuario (en minutos) se distribuye según una ley Normal con media 18 y desviación típica 4.",
+    "apartados": [
+     "(0,75 p.) ¿Cuál es la probabilidad de que un usuario tarde menos de 15 minutos en hacer su trayecto?",
+     "(1,25 p.) Se sabe que cada usuario que desbloquea un patinete tiene una probabilidad de 0,9 de completar su trayecto sin incidencias. Si 120 usuarios desbloquean un patinete para moverse por la ciudad, ¿cuál es la probabilidad de que al menos 110 completen el trayecto sin incidencias?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Sea \\(X\\) la duración del trayecto (minutos), \\(X\\sim N(18,\\,4)\\). Tipifico con \\(Z=\\dfrac{X-18}{4}\\sim N(0,1)\\):</p>\\[\\begin{aligned}P(X\\lt15)&=P\\!\\left(Z\\lt\\frac{15-18}{4}\\right)\\\\&=P(Z\\lt-0{,}75)\\\\&=1-\\Phi(0{,}75)\\\\&=1-0{,}7734\\end{aligned}\\]<i class='n' data-t='th'>Por la simetría de la normal, \\(P(Z\\lt-z)=1-\\Phi(z)\\): así solo se usa la parte positiva de la tabla.</i><div class='res'>\\(P(X\\lt15)=0{,}2266\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Sea \\(Y\\) el número de usuarios que completan el trayecto sin incidencias entre 120: \\(Y\\sim B(120;\\ 0{,}9)\\), con \\(q=0{,}1\\).</p><p>Calcular \\(P(Y\\ge110)\\) con la binomial exigiría sumar 11 términos, así que la aproximo por una normal. Compruebo las condiciones<i class='n' data-t='th'>Aproximación de la binomial por la normal: \\(B(n,p)\\approx N\\bigl(np,\\sqrt{npq}\\bigr)\\) si \\(n\\ge30\\), \\(np\\ge5\\) y \\(nq\\ge5\\). Las tres comprobaciones hay que escribirlas en el examen.</i>:</p>\\[\\begin{aligned}n&=120\\ge30\\\\ np&=108\\ge5\\\\ nq&=120\\cdot0{,}1=12\\ge5\\end{aligned}\\]<p>Por tanto,</p>\\[Y\\approx N\\bigl(np,\\ \\sqrt{npq}\\bigr)=N\\bigl(108,\\ \\sqrt{10{,}8}\\bigr)=N(108;\\ 3{,}29)\\]<p>Como \\(Y\\) es discreta y la normal es continua, aplico la corrección de continuidad de Yates<i class='n' data-t='why'>Yates: \\(P(Y\\ge k)\\) pasa a \\(P(Y'\\ge k-0{,}5)\\), porque el valor \\(k\\) de la discreta «ocupa» el intervalo \\([k-0{,}5,\\ k+0{,}5]\\) en la continua. Si fuera \\(Y\\le k\\), se usaría \\(k+0{,}5\\).</i>:</p>\\[\\begin{aligned}P(Y\\ge110)&\\approx P(Y'\\ge109{,}5)\\\\&=P\\!\\left(Z\\ge\\frac{109{,}5-108}{3{,}29}\\right)\\\\&=P(Z\\ge0{,}46)\\\\&=1-\\Phi(0{,}46)\\\\&=1-0{,}6772\\end{aligned}\\]<div class='res'>\\(P(Y\\ge110)\\approx0{,}3228\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "dist",
+     "tipo": "normal",
+     "apartados": "a"
+    },
+    {
+     "tema": "dist",
+     "tipo": "aprox",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  }
+ ]
+}

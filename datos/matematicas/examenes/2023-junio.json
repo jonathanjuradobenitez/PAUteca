@@ -1,0 +1,322 @@
+{
+ "version": 1,
+ "id": "matematicas-2023-junio",
+ "asignatura": "matematicas",
+ "anio": 2023,
+ "convocatoria": "Junio",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2023-junio-1",
+   "n": 1,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(f:\\mathbb R\\to\\mathbb R\\) definida por \\(f(x)=\\dfrac1{e^x+e^{-x}}\\).",
+    "apartados": [
+     "(1,5 p.) Estudia y halla los máximos y mínimos absolutos de \\(f\\) (abscisas donde se obtienen y valores que se alcanzan).",
+     "(1 p.) Calcula \\(\\displaystyle\\lim_{x\\to+\\infty}\\bigl(x^2f(x)\\bigr)\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(e^x+e^{-x}\\gt0\\) para todo \\(x\\): \\(f\\) está definida y es derivable en \\(\\mathbb R\\), y \\(f(x)\\gt0\\). Derivo con la regla del cociente:</p>\\[f'(x)=\\frac{-(e^x-e^{-x})}{(e^x+e^{-x})^2}\\qquad f'(x)=0\\iff e^x=e^{-x}\\iff x=0\\]<p>El denominador es positivo, luego el signo de \\(f'\\) es el de \\(-(e^x-e^{-x})\\): si \\(x\\lt0\\), \\(e^x\\lt e^{-x}\\) y \\(f'\\gt0\\); si \\(x\\gt0\\), \\(f'\\lt0\\). \\(f\\) crece hasta \\(x=0\\) y decrece después: máximo en \\(x=0\\), con \\(f(0)=\\frac12\\).</p><p><b>Absolutos.</b> Miro los límites en \\(\\pm\\infty\\)<i class='n' data-t='why'>En un intervalo no acotado hay que ver qué hace \\(f\\) en \\(\\pm\\infty\\): un extremo relativo es absoluto si \\(f\\) no supera ese valor en ningún otro sitio, y un «ínfimo» solo es mínimo si se alcanza.</i>: \\(e^x+e^{-x}\\to+\\infty\\), luego</p>\\[\\lim_{x\\to+\\infty}f(x)=\\lim_{x\\to-\\infty}f(x)=0\\]<p>Como \\(f\\) crece hasta 0 y decrece después, \\(f(x)\\le f(0)=\\frac12\\) para todo \\(x\\): es máximo absoluto. Por otra parte \\(f(x)\\gt0\\) siempre y se acerca a 0 sin llegar a valer 0: el mínimo absoluto no existe.</p><div class='res'>Máximo absoluto en \\(x=0\\), de valor \\(\\dfrac12\\). No tiene mínimo absoluto</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(x^2f(x)=\\dfrac{x^2}{e^x+e^{-x}}\\): cuando \\(x\\to+\\infty\\), \\(\\tfrac\\infty\\infty\\). Aplico L'Hôpital<i class='n' data-t='th'>Regla de L'Hôpital: si \\(N,D\\to\\infty\\) (o ambas \\(\\to0\\)) y existe \\(\\lim\\dfrac{N'}{D'}\\), entonces \\(\\lim\\dfrac ND=\\lim\\dfrac{N'}{D'}\\).</i> dos veces:</p>\\[\\lim_{x\\to+\\infty}\\frac{x^2}{e^x+e^{-x}}=\\lim\\frac{2x}{e^x-e^{-x}}\\ \\left(\\tfrac\\infty\\infty\\right)=\\lim\\frac2{e^x+e^{-x}}=0\\]<div class='res'>\\(\\displaystyle\\lim_{x\\to+\\infty}x^2f(x)=0\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "lim",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-junio-2",
+   "n": 2,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea la función \\(f:[-2,2]\\to\\mathbb R\\), definida por \\(f(x)=x^3-2x+5\\).",
+    "apartados": [
+     "(1,5 p.) Determina las abscisas de los puntos, si existen, en los que la pendiente de la recta tangente coincide con la pendiente de la recta que pasa por los puntos \\((-2,f(-2))\\) y \\((2,f(2))\\).",
+     "(1 p.) Determina la ecuación de la recta tangente y la ecuación de la recta normal a la gráfica de \\(f\\) en el punto de inflexión."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Pendiente de la recta que pasa por los dos puntos: \\(f(-2)=-8+4+5=1\\) y \\(f(2)=8-4+5=9\\):</p>\\[m=\\frac{f(2)-f(-2)}{2-(-2)}=\\frac{9-1}4=2\\]<p>La pendiente de la tangente es \\(f'(x)=3x^2-2\\)<i class='n' data-t='th'>Teorema del valor medio de Lagrange: si \\(f\\) es continua en \\([a,b]\\) y derivable en \\((a,b)\\), existe \\(c\\in(a,b)\\) con \\(f'(c)=\\dfrac{f(b)-f(a)}{b-a}\\).</i>. Igualo:</p>\\[3x^2-2=2\\iff x^2=\\frac43\\iff x=\\pm\\frac2{\\sqrt3}=\\pm\\frac{2\\sqrt3}3\\approx\\pm1{,}1547\\]<div class='res'>\\(x=\\dfrac{2\\sqrt3}3\\) y \\(x=-\\dfrac{2\\sqrt3}3\\), ambas dentro de \\((-2,2)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Punto de inflexión: \\(f''(x)=6x=0\\iff x=0\\), y \\(f''\\) cambia de signo en \\(x=0\\) (negativa a la izquierda, positiva a la derecha). \\(f(0)=5\\), \\(f'(0)=-2\\).</p><p><b>Tangente:</b> \\(y-5=-2x\\Rightarrow y=-2x+5\\).</p><p><b>Normal:</b> pendiente \\(-\\dfrac1{f'(0)}=\\dfrac12\\)<i class='n' data-t='th'>Rectas perpendiculares: \\(m\\cdot m'=-1\\).</i>: \\(y-5=\\dfrac12x\\Rightarrow y=\\dfrac x2+5\\).</p><div class='res'>Inflexión en \\((0,5)\\). Tangente: \\(y=-2x+5\\). Normal: \\(y=\\dfrac x2+5\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "curv",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-junio-3",
+   "n": 3,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(f:\\mathbb R\\to\\mathbb R\\), definida por \\(f(x)=x\\,|x-1|\\). Calcula el área del recinto limitado por la gráfica de dicha función y su recta tangente en el punto de abscisa \\(x=0\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Función a trozos y recta tangente",
+     "html": "<div class='ex'><p>Quito el valor absoluto:</p>\\[f(x)=\\begin{cases}x(1-x)=x-x^2&\\text{si }x\\lt1\\\\x(x-1)=x^2-x&\\text{si }x\\ge1\\end{cases}\\]<p>En \\(x=0\\) (zona \\(x\\lt1\\)): \\(f(0)=0\\) y \\(f'(x)=1-2x\\Rightarrow f'(0)=1\\). Tangente: \\(y=x\\).</p></div>"
+    },
+    {
+     "titulo": "Puntos de corte y recinto",
+     "html": "<div class='ex'><p>Corto \\(f\\) con \\(y=x\\):</p>\\[x\\lt1:\\ x-x^2=x\\iff x^2=0\\iff x=0\\ (\\text{doble: es la tangente})\\qquad x\\ge1:\\ x^2-x=x\\iff x(x-2)=0\\iff x=2\\]<p>Los dos puntos de corte son \\(x=0\\) y \\(x=2\\): el recinto acotado está entre ellos. Para \\(x\\lt0\\) la recta y la curva solo se tocan en \\(x=0\\) y se separan sin cerrarse.</p><div style='overflow-x:auto'><svg viewBox='0 0 300 215' width='100%' style='max-width:380px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='60.0,170.0 72.0,161.2 84.0,156.8 96.0,156.8 108.0,161.2 120.0,170.0 132.0,156.8 144.0,139.2 156.0,117.2 168.0,90.8 180.0,60.0 180.0,60.0' fill='#b9a4f5' fill-opacity='.55'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M20 170H290M60 205V10'/></g><polyline points='30.0,38.0 201.0,38.0' fill='none' stroke='none'/><line x1='30.0' y1='197.5' x2='204.0' y2='38.0' stroke='#e8487a' stroke-width='2'/><polyline points='30.0,211.2 42.0,191.4 60.0,170.0 75.0,159.7 90.0,156.2 105.0,159.7 120.0,170.0' fill='none' stroke='#2f6df0' stroke-width='2'/><polyline points='120.0,170.0 135.0,152.8 150.0,128.8 165.0,97.8 180.0,60.0 195.0,15.3' fill='none' stroke='#2f6df0' stroke-width='2'/><circle cx='60' cy='170' r='3.5' fill='#e8487a'/><circle cx='180' cy='60' r='3.5' fill='#e8487a'/><circle cx='120' cy='170' r='3' fill='#2f6df0'/><text x='186' y='64'>(2,2)</text><text x='34' y='184'>(0,0)</text><text x='118' y='184'>1</text><text x='190.0' y='42.0' fill='#e8487a'>y = x</text><text x='194.0' y='93.0' fill='#2f6df0'>f</text><text x='102.0' y='125.9' font-size='10'>A</text></svg></div><p><b>Área.</b> La recta queda por encima de la curva en \\([0,2]\\)<i class='n' data-t='why'>Hay que partir la integral en \\(x=1\\), donde cambia la expresión de \\(f\\).</i>:</p>\\[A=\\int_0^1\\bigl[x-(x-x^2)\\bigr]dx+\\int_1^2\\bigl[x-(x^2-x)\\bigr]dx=\\int_0^1x^2\\,dx+\\int_1^2(2x-x^2)\\,dx\\]\\[=\\frac13+\\left[x^2-\\frac{x^3}3\\right]_1^2=\\frac13+\\left(4-\\frac83\\right)-\\left(1-\\frac13\\right)=\\frac13+\\frac23\\]<div class='res'>Área \\(=1\\ u^2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "area",
+     "apartados": ""
+    },
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-junio-4",
+   "n": 4,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(F:\\mathbb R\\to\\mathbb R\\) definida por \\(F(x)=\\displaystyle\\int_0^x\\operatorname{sen}\\!\\left(t^2\\right)dt\\). Calcula \\(\\displaystyle\\lim_{x\\to0}\\frac{x\\,F(x)}{\\operatorname{sen}(x^2)}\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Indeterminación y L'Hôpital",
+     "html": "<div class='ex'><p>Con \\(N(x)=xF(x)\\) y \\(D(x)=\\operatorname{sen}(x^2)\\): \\(N(0)=0\\cdot F(0)=0\\) y \\(D(0)=0\\): indeterminación \\(\\tfrac00\\). Por el teorema fundamental del cálculo<i class='n' data-t='th'>Teorema fundamental del cálculo: si \\(g\\) es continua, \\(F(x)=\\int_0^xg(t)\\,dt\\) es derivable y \\(F'(x)=g(x)\\). Aquí \\(F'(x)=\\operatorname{sen}(x^2)\\).</i>, \\(F'(x)=\\operatorname{sen}(x^2)\\). Aplico L'Hôpital:</p>\\[N'(x)=F(x)+x\\operatorname{sen}(x^2)\\qquad D'(x)=2x\\cos(x^2)\\qquad N'(0)=0,\\ D'(0)=0\\]<p>De nuevo \\(\\tfrac00\\): segunda aplicación,</p>\\[N''(x)=\\operatorname{sen}(x^2)+\\operatorname{sen}(x^2)+2x^2\\cos(x^2)\\qquad D''(x)=2\\cos(x^2)-4x^2\\operatorname{sen}(x^2)\\]\\[\\lim_{x\\to0}\\frac{N''(x)}{D''(x)}=\\frac{0}{2}=0\\]<div class='res'>\\(\\displaystyle\\lim_{x\\to0}\\frac{xF(x)}{\\operatorname{sen}(x^2)}=0\\)</div><i class='n' data-t='tp'>Comprobación: \\(F(x)\\approx\\frac{x^3}3\\) cerca de 0, luego \\(\\frac{xF(x)}{\\operatorname{sen}(x^2)}\\approx\\frac{x^4/3}{x^2}=\\frac{x^2}3\\to0\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "lim",
+     "apartados": ""
+    },
+    {
+     "tema": "funciones",
+     "tipo": "tfc",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-junio-5",
+   "n": 5,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Una marca de vehículos ha vendido este mes coches de tres colores: blancos, negros y rojos. El 60 % de los coches blancos más el 50 % de los coches negros representan el 30 % de los coches vendidos. El 20 % de los coches blancos junto con el 60 % de los coches negros y el 60 % de los coches rojos representan la mitad de los coches vendidos. Se han vendido 100 coches negros más que blancos. Determina el número de coches vendidos de cada color.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>Sean \\(x\\), \\(y\\), \\(z\\) los coches blancos, negros y rojos (total \\(x+y+z\\)):</p>\\[\\begin{cases}0{,}6x+0{,}5y=0{,}3(x+y+z)\\\\0{,}2x+0{,}6y+0{,}6z=0{,}5(x+y+z)\\\\y=x+100\\end{cases}\\iff\\begin{cases}3x+2y-3z=0\\\\-3x+y+z=0\\\\-x+y=100\\end{cases}\\]<p>Determinante de la matriz de coeficientes:</p>\\[\\begin{vmatrix}3&2&-3\\\\-3&1&1\\\\-1&1&0\\end{vmatrix}=3(0-1)-2(0+1)-3(-3+1)=-3-2+6=1\\neq0\\]<p>Por el teorema de Rouché-Frobenius<i class='n' data-t='th'>Si \\(|M|\\neq0\\): \\(\\operatorname{rg}M=\\operatorname{rg}M^*=3=n\\) y el sistema es compatible determinado.</i>, el sistema es compatible determinado.</p></div>"
+    },
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>De la tercera: \\(y=x+100\\). En la segunda: \\(z=3x-y=2x-100\\). En la primera:</p>\\[3x+2(x+100)-3(2x-100)=0\\iff-x+500=0\\iff x=500\\]<p>Entonces \\(y=600\\) y \\(z=900\\).</p><div class='res'>500 coches blancos, 600 negros y 900 rojos (2000 en total)</div><i class='n' data-t='tp'>Comprobación: \\(0{,}6\\cdot500+0{,}5\\cdot600=600=0{,}3\\cdot2000\\) ✓ y \\(0{,}2\\cdot500+0{,}6\\cdot600+0{,}6\\cdot900=1000=0{,}5\\cdot2000\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "sistemas",
+     "tipo": "plan",
+     "apartados": ""
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-junio-6",
+   "n": 6,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las matrices \\(A=\\begin{pmatrix}0&0&m\\\\m&0&0\\\\0&m&0\\end{pmatrix}\\) y \\(B=\\begin{pmatrix}1&0&0\\\\0&0&1\\\\0&1&0\\end{pmatrix}\\).",
+    "apartados": [
+     "(0,5 p.) Determina para qué valores de \\(m\\) existe la inversa de la matriz \\(A\\).",
+     "(2 p.) Para todo \\(m\\neq-1\\), resuelve, si es posible, la ecuación \\(AX+X=B\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Existe la inversa de \\(A\\) si y solo si \\(|A|\\neq0\\)<i class='n' data-t='th'>Una matriz cuadrada es invertible si y solo si su determinante es distinto de 0.</i>:</p>\\[|A|=\\begin{vmatrix}0&0&m\\\\m&0&0\\\\0&m&0\\end{vmatrix}=m\\cdot\\begin{vmatrix}m&0\\\\0&m\\end{vmatrix}=m\\cdot m^2=m^3\\]<div class='res'>Existe \\(A^{-1}\\) si y solo si \\(m\\neq0\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Saco factor común \\(X\\): \\(AX+X=B\\iff(A+I)X=B\\). Sea \\(M=A+I=\\begin{pmatrix}1&0&m\\\\m&1&0\\\\0&m&1\\end{pmatrix}\\).</p><p><b>Existencia de \\(M^{-1}\\):</b> existe si y solo si \\(|M|\\neq0\\):</p>\\[|M|=1\\cdot(1-0)+m\\cdot(m\\cdot m-0)=1+m^3\\]<p>\\(1+m^3=0\\iff m=-1\\). Para \\(m\\neq-1\\), \\(|M|\\neq0\\) y existe \\(M^{-1}\\); multiplico por la izquierda<i class='n' data-t='err'>\\(M\\) está a la izquierda de \\(X\\): \\(M^{-1}\\) se multiplica por la <b>izquierda</b> en ambos miembros: \\(X=M^{-1}B\\).</i>: \\(X=M^{-1}B\\).</p><p><b>Inversa</b> \\(M^{-1}=\\dfrac1{|M|}(\\operatorname{Adj}M)^t\\):</p>\\[\\operatorname{Adj}M=\\begin{pmatrix}1&-m&m^2\\\\m^2&1&-m\\\\-m&m^2&1\\end{pmatrix}\\ \\Rightarrow\\ M^{-1}=\\frac1{1+m^3}\\begin{pmatrix}1&m^2&-m\\\\-m&1&m^2\\\\m^2&-m&1\\end{pmatrix}\\]<p>Multiplicar por \\(B\\) por la derecha intercambia las columnas 2 y 3 (\\(B\\) es la matriz que permuta esas columnas):</p><div class='res'>\\(X=\\dfrac1{1+m^3}\\begin{pmatrix}1&-m&m^2\\\\-m&m^2&1\\\\m^2&1&-m\\end{pmatrix}\\), para \\(m\\neq-1\\)</div><i class='n' data-t='tp'>Comprobación con \\(m=0\\): \\(M=I\\) y \\(X=B\\); la fórmula da \\(X=\\begin{pmatrix}1&0&0\\\\0&0&1\\\\0&1&0\\end{pmatrix}=B\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "ecmat",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-junio-7",
+   "n": 7,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "El plano perpendicular al segmento de extremos \\(P(0,3,8)\\) y \\(Q(2,1,6)\\) que pasa por su punto medio corta a los ejes coordenados en los puntos \\(A\\), \\(B\\) y \\(C\\). Halla el área del triángulo cuyos vértices son los puntos \\(A\\), \\(B\\) y \\(C\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Ecuación del plano",
+     "html": "<div class='ex'><p>Punto medio \\(M=\\dfrac{P+Q}2=(1,2,7)\\). El plano es perpendicular al segmento: su normal es \\(\\overrightarrow{PQ}=(2,-2,-2)\\sim\\vec n=(1,-1,-1)\\)<i class='n' data-t='th'>Un plano \\(Ax+By+Cz+D=0\\) tiene normal \\((A,B,C)\\); si es perpendicular a un segmento, ese segmento es paralelo a la normal.</i>:</p>\\[x-y-z+D=0\\ \\text{por }M(1,2,7):\\ 1-2-7+D=0\\Rightarrow D=8\\ \\Rightarrow\\ \\pi\\equiv x-y-z+8=0\\]</div>"
+    },
+    {
+     "titulo": "Puntos de corte con los ejes y área",
+     "html": "<div class='ex'><p>Cortes con los ejes (se anulan las otras dos coordenadas):</p>\\[\\text{eje }X:\\ x+8=0\\Rightarrow A(-8,0,0)\\quad\\text{eje }Y:\\ -y+8=0\\Rightarrow B(0,8,0)\\quad\\text{eje }Z:\\ -z+8=0\\Rightarrow C(0,0,8)\\]<div style='overflow-x:auto'><svg viewBox='0 0 340 270' width='100%' style='max-width:440px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><defs><marker id='j7n' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#dc2626'/></marker><marker id='j7d' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#16a34a'/></marker><marker id='j7r' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#2563eb'/></marker><marker id='j7a' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#64748b'/></marker></defs><polygon points='34.0,188.7 186.1,150.2 306.0,52.7 153.9,91.2' fill='#8b5cf6' fill-opacity='.28' stroke='#7c3aed' stroke-width='1.3'/><line x1='34.0' y1='188.7' x2='186.1' y2='150.2' stroke='#2563eb' stroke-width='2.2'/><line x1='186.1' y1='150.2' x2='153.9' y2='91.2' stroke='#2563eb' stroke-width='2.2'/><line x1='153.9' y1='91.2' x2='34.0' y2='188.7' stroke='#2563eb' stroke-width='2.2'/><line x1='152.8' y1='44.7' x2='201.1' y2='142.8' stroke='#2563eb' stroke-width='2.2'/><line x1='124.7' y1='143.3' x2='153.2' y2='201.3' stroke='#dc2626' stroke-width='2.4' marker-end='url(#j7n)'/><text x='159.2' y='197.3' fill='#dc2626' font-weight='700'>n</text><circle cx='34.0' cy='188.7' r='3.8' fill='#e8487a'/><text x='20.0' y='200.7' font-weight='700'>A</text><circle cx='186.1' cy='150.2' r='3.8' fill='#e8487a'/><text x='194.1' y='162.2' font-weight='700'>B</text><circle cx='153.9' cy='91.2' r='3.8' fill='#e8487a'/><text x='161.9' y='85.2' font-weight='700'>C</text><circle cx='166.0' cy='71.5' r='3.8' fill='#e8487a'/><text x='152.0' y='65.5' font-weight='700'>P</text><circle cx='187.9' cy='116.0' r='3.8' fill='#e8487a'/><text x='195.9' y='128.0' font-weight='700'>Q</text><circle cx='177.0' cy='93.7' r='3.8' fill='#e8487a'/><text x='185.0' y='85.7' font-weight='700'>M</text><g stroke='#64748b' stroke-width='1.2' fill='none'><line x1='30' y1='224' x2='51.3' y2='226.5'/><line x1='30' y1='224' x2='35.7' y2='214.7'/><line x1='30' y1='224' x2='30.0' y2='204.2'/></g><g fill='#64748b' font-size='10'><text x='55.0' y='231.3'>x</text><text x='34.5' y='215.7'>y</text><text x='27.0' y='201.9'>z</text></g><g transform='translate(10.0,258)'><rect x='0' y='-8' width='12' height='9' fill='#8b5cf6' fill-opacity='.4' stroke='#7c3aed'/><text x='18' y='0' font-size='10'>plano</text></g><g transform='translate(63.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#2563eb' stroke-width='2'/><text x='18' y='0' font-size='10'>recta</text></g><g transform='translate(116.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#dc2626' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector normal</text></g><g transform='translate(212.2,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#16a34a' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector director</text></g><g transform='translate(319.2,258)'><circle cx='6' cy='-4' r='3.8' fill='#e8487a'/><text x='18' y='0' font-size='10'>puntos</text></g></svg></div><p>El área del triángulo es la mitad del módulo del producto vectorial<i class='n' data-t='th'>Área del triángulo \\(ABC\\) \\(=\\tfrac12\\left|\\overrightarrow{AB}\\times\\overrightarrow{AC}\\right|\\) (mitad del área del paralelogramo que determinan los dos vectores).</i>:</p>\\[\\overrightarrow{AB}=(8,8,0)\\quad\\overrightarrow{AC}=(8,0,8)\\quad\\overrightarrow{AB}\\times\\overrightarrow{AC}=\\begin{vmatrix}\\vec i&\\vec j&\\vec k\\\\8&8&0\\\\8&0&8\\end{vmatrix}=(64,\\,-64,\\,-64)\\]\\[\\text{Área}=\\tfrac12\\sqrt{64^2+64^2+64^2}=\\tfrac12\\cdot64\\sqrt3\\]<div class='res'>Área \\(=32\\sqrt3\\approx55{,}43\\ u^2\\)</div><i class='n' data-t='tp'>Comprobación: el triángulo es equilátero de lado \\(8\\sqrt2\\): área \\(\\frac{\\sqrt3}4(8\\sqrt2)^2=32\\sqrt3\\) ✓. En la figura, el segmento \\(PQ\\) (azul) atraviesa el plano por \\(M\\) y el normal (rojo) es paralelo a él.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "ecs",
+     "apartados": ""
+    },
+    {
+     "tema": "geom",
+     "tipo": "area",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-junio-8",
+   "n": 8,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el punto \\(A(-1,1,3)\\) y la recta \\(r\\) determinada por los puntos \\(B(2,1,1)\\) y \\(C(0,1,-1)\\).",
+    "apartados": [
+     "(1,5 p.) Halla la distancia del punto \\(A\\) a la recta \\(r\\).",
+     "(1 p.) Calcula el área del triángulo cuyos vértices son \\(A\\), \\(B\\) y \\(C\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Dirección de \\(r\\): \\(\\vec d=\\overrightarrow{BC}=(-2,0,-2)\\); punto \\(B\\); \\(\\overrightarrow{BA}=(-3,0,2)\\). La distancia de un punto a una recta es<i class='n' data-t='th'>Deducción: el área del paralelogramo de lados \\(\\overrightarrow{BA}\\) y \\(\\vec d\\) es base \\(\\cdot\\) altura \\(=|\\vec d|\\cdot d(A,r)\\), y también \\(|\\overrightarrow{BA}\\times\\vec d|\\). Por tanto \\(d(A,r)=\\dfrac{|\\overrightarrow{BA}\\times\\vec d|}{|\\vec d|}\\).</i></p>\\[\\overrightarrow{BA}\\times\\vec d=\\begin{vmatrix}\\vec i&\\vec j&\\vec k\\\\-3&0&2\\\\-2&0&-2\\end{vmatrix}=(0,\\,-10,\\,0)\\]\\[d(A,r)=\\frac{|(0,-10,0)|}{|(-2,0,-2)|}=\\frac{10}{\\sqrt8}=\\frac{10}{2\\sqrt2}\\]<div style='overflow-x:auto'><svg viewBox='0 0 340 270' width='100%' style='max-width:440px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><defs><marker id='j8n' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#dc2626'/></marker><marker id='j8d' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#16a34a'/></marker><marker id='j8r' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#2563eb'/></marker><marker id='j8a' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#64748b'/></marker></defs><polygon points='120.0,26.0 195.0,149.2 145.0,199.8' fill='#8b5cf6' fill-opacity='.28' stroke='#7c3aed' stroke-width='1.3'/><line x1='220.0' y1='123.9' x2='125.0' y2='220.0' stroke='#2563eb' stroke-width='2.2'/><line x1='120.0' y1='26.0' x2='182.5' y2='161.8' stroke='#64748b' stroke-width='1.6' stroke-dasharray='4 3'/><line x1='120.0' y1='26.0' x2='195.0' y2='149.2' stroke='#64748b' stroke-width='1.1' stroke-dasharray='2 3'/><line x1='120.0' y1='26.0' x2='145.0' y2='199.8' stroke='#64748b' stroke-width='1.1' stroke-dasharray='2 3'/><line x1='192.5' y1='151.7' x2='167.5' y2='177.0' stroke='#16a34a' stroke-width='2.4' marker-end='url(#j8d)'/><text x='173.5' y='171.0' fill='#16a34a' font-weight='700'>d</text><circle cx='120.0' cy='26.0' r='3.8' fill='#e8487a'/><text x='106.0' y='20.0' font-weight='700'>A</text><circle cx='195.0' cy='149.2' r='3.8' fill='#e8487a'/><text x='203.0' y='143.2' font-weight='700'>B</text><circle cx='145.0' cy='199.8' r='3.8' fill='#e8487a'/><text x='153.0' y='211.8' font-weight='700'>C</text><circle cx='182.5' cy='161.8' r='3.8' fill='#e8487a'/><text x='190.5' y='173.8' font-weight='700'>H</text><text x='133.0' y='218.0' fill='#2563eb' font-weight='700' font-style='italic'>r</text><g stroke='#64748b' stroke-width='1.2' fill='none'><line x1='30' y1='224' x2='42.6' y2='231.3'/><line x1='30' y1='224' x2='48.0' y2='218.9'/><line x1='30' y1='224' x2='30.0' y2='203.9'/></g><g fill='#64748b' font-size='10'><text x='43.6' y='237.7'>x</text><text x='50.8' y='221.2'>y</text><text x='27.0' y='201.5'>z</text></g><g transform='translate(10.0,258)'><rect x='0' y='-8' width='12' height='9' fill='#8b5cf6' fill-opacity='.4' stroke='#7c3aed'/><text x='18' y='0' font-size='10'>plano</text></g><g transform='translate(63.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#2563eb' stroke-width='2'/><text x='18' y='0' font-size='10'>recta</text></g><g transform='translate(116.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#dc2626' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector normal</text></g><g transform='translate(212.2,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#16a34a' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector director</text></g><g transform='translate(319.2,258)'><circle cx='6' cy='-4' r='3.8' fill='#e8487a'/><text x='18' y='0' font-size='10'>puntos</text></g></svg></div><div class='res'>\\(d(A,r)=\\dfrac5{\\sqrt2}=\\dfrac{5\\sqrt2}2\\approx3{,}5355\\) unidades</div><i class='n' data-t='tp'>En la figura, el pie de la perpendicular es \\(H\\left(\\tfrac32,1,\\tfrac12\\right)\\) y \\(|AH|=\\sqrt{2{,}5^2+2{,}5^2}=\\frac{5\\sqrt2}2\\) ✓.</i></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>El área del triángulo \\(ABC\\) es \\(\\tfrac12|\\overrightarrow{BA}\\times\\overrightarrow{BC}|\\), con el mismo producto vectorial:</p>\\[\\text{Área}=\\frac12\\bigl|(0,-10,0)\\bigr|=5\\]<div class='res'>Área \\(=5\\ u^2\\)</div><i class='n' data-t='tp'>Comprobación: base \\(|BC|=2\\sqrt2\\) y altura \\(d(A,r)=\\frac{5\\sqrt2}2\\): \\(\\frac12\\cdot2\\sqrt2\\cdot\\frac{5\\sqrt2}2=5\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "dist",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "area",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

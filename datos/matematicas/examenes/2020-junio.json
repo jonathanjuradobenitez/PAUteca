@@ -1,0 +1,335 @@
+{
+ "version": 1,
+ "id": "matematicas-2020-junio",
+ "asignatura": "matematicas",
+ "anio": 2020,
+ "convocatoria": "Junio",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2020-junio-1",
+   "n": 1,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(f\\) definida por \\(f(x)=\\dfrac{x^2-2x-3}{x^2-1}\\) para \\(x\\neq1,-1\\).",
+    "apartados": [
+     "(1,25 p.) Estudia y halla las asíntotas de la gráfica de \\(f\\).",
+     "(1,25 p.) Determina los intervalos de crecimiento y de decrecimiento de \\(f\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Factorizo: \\(x^2-2x-3=(x-3)(x+1)\\) y \\(x^2-1=(x-1)(x+1)\\), luego \\(f(x)=\\dfrac{x-3}{x-1}\\) para \\(x\\neq\\pm1\\).</p><p><b>En \\(x=1\\):</b> el numerador del original vale \\(-4\\neq0\\): asíntota vertical. Límites laterales:</p>\\[\\lim_{x\\to1^+}\\frac{x-3}{x-1}=\\frac{-2}{0^+}=-\\infty\\qquad\\lim_{x\\to1^-}\\frac{x-3}{x-1}=\\frac{-2}{0^-}=+\\infty\\]<p><b>En \\(x=-1\\):</b> el numerador también se anula; \\(\\displaystyle\\lim_{x\\to-1}\\frac{x-3}{x-1}=\\frac{-4}{-2}=2\\) (finito): discontinuidad evitable (un «hueco» en \\((-1,2)\\)), sin asíntota.<i class='n' data-t='why'>Un valor que anula el denominador solo da asíntota vertical si el límite en él es infinito. Si el numerador también se anula, hay que simplificar y calcular el límite.</i></p><p><b>Horizontal:</b> \\(\\displaystyle\\lim_{x\\to\\pm\\infty}\\frac{x-3}{x-1}=1\\).</p><div class='res'>Asíntota vertical \\(x=1\\) y asíntota horizontal \\(y=1\\); en \\(x=-1\\) hay una discontinuidad evitable (límite 2)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Con \\(f(x)=\\dfrac{x-3}{x-1}\\) (\\(x\\neq\\pm1\\)):</p>\\[f'(x)=\\frac{(x-1)-(x-3)}{(x-1)^2}=\\frac2{(x-1)^2}\\gt0\\]<div class='res'>\\(f\\) es creciente en cada intervalo de su dominio: \\((-\\infty,-1)\\), \\((-1,1)\\) y \\((1,+\\infty)\\); no tiene intervalos de decrecimiento</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "asint",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-junio-2",
+   "n": 2,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Calcula \\(a\\gt0\\) sabiendo que el área de la región determinada por la gráfica de la función \\(f(x)=xe^{3x}\\), el eje de abscisas y la recta \\(x=a\\) vale \\(\\dfrac19\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>\\(f(x)=xe^{3x}\\ge0\\) para \\(x\\ge0\\) y \\(f(0)=0\\): la región va de \\(x=0\\) a \\(x=a\\). Integro por partes (polinomio antes que exponencial en ALPES<i class='n' data-t='th'>Regla ALPES: Arcos, Logaritmos, Polinomios, Exponenciales, Senos/cosenos. \\(u=x\\), \\(dv=e^{3x}dx\\Rightarrow v=\\frac{e^{3x}}3\\).</i>):</p>\\[\\int xe^{3x}\\,dx=\\frac{xe^{3x}}3-\\frac19e^{3x}=\\left(\\frac x3-\\frac19\\right)e^{3x}\\]\\[\\int_0^axe^{3x}\\,dx=\\left(\\frac a3-\\frac19\\right)e^{3a}+\\frac19=\\frac19\\iff\\left(\\frac a3-\\frac19\\right)e^{3a}=0\\iff a=\\frac13\\]<div class='res'>\\(a=\\dfrac13\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "area",
+     "apartados": ""
+    },
+    {
+     "tema": "integ",
+     "tipo": "part",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-junio-3",
+   "n": 3,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la matriz \\(A=\\begin{pmatrix}1&-1&m+2\\\\0&1&m+1\\\\m&0&5\\end{pmatrix}\\).",
+    "apartados": [
+     "(1,5 p.) Estudia el rango de \\(A\\) según los valores de \\(m\\).",
+     "(1 p.) Para \\(m=2\\), calcula la inversa de \\(2020A\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'>\\[|A|=1\\cdot5+(-m(m+1))+(m+2)(-m)=5-m^2-m-m^2-2m=-2m^2-3m+5=-(2m+5)(m-1)\\]<p>Si \\(m\\neq1,-\\frac52\\): \\(|A|\\neq0\\Rightarrow\\operatorname{rg}A=3\\)<i class='n' data-t='th'>El rango de una matriz cuadrada \\(3\\times3\\) es 3 si y solo si su determinante es distinto de 0; si es 0, el rango es 2 cuando hay un menor \\(2\\times2\\) no nulo.</i>. Si \\(m=1\\) o \\(m=-\\frac52\\): \\(|A|=0\\) y el menor \\(\\begin{vmatrix}1&-1\\\\0&1\\end{vmatrix}=1\\neq0\\): rango 2.</p><div class='res'>\\(\\operatorname{rg}A=3\\) si \\(m\\neq1,-\\frac52\\); \\(\\operatorname{rg}A=2\\) si \\(m=1\\) o \\(m=-\\frac52\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Para \\(m=2\\): \\(|A|=-(9)(1)=-9\\neq0\\): existe \\(A^{-1}\\), y también \\((2020A)^{-1}=\\frac1{2020}A^{-1}\\)<i class='n' data-t='th'>\\((kA)^{-1}=\\frac1kA^{-1}\\) para \\(k\\neq0\\). Y \\(A^{-1}=\\frac1{|A|}(\\operatorname{Adj}A)^t\\).</i>. Con \\(A=\\begin{pmatrix}1&-1&4\\\\0&1&3\\\\2&0&5\\end{pmatrix}\\):</p>\\[\\operatorname{Adj}A=\\begin{pmatrix}5&6&-2\\\\5&-3&-2\\\\-7&-3&1\\end{pmatrix}\\ \\Rightarrow\\ A^{-1}=-\\frac19\\begin{pmatrix}5&5&-7\\\\6&-3&-3\\\\-2&-2&1\\end{pmatrix}\\]<div class='res'>\\((2020A)^{-1}=-\\dfrac1{18180}\\begin{pmatrix}5&5&-7\\\\6&-3&-3\\\\-2&-2&1\\end{pmatrix}\\)</div><i class='n' data-t='tp'>Comprobación: fila 1 de \\(A\\) por columna 1 de la adjunta traspuesta: \\(5-6-8=-9=|A|\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "rango",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-junio-4",
+   "n": 4,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Siendo \\(a\\neq0\\), considera las rectas \\(r\\equiv x-1=y-2=\\dfrac{z-1}a\\) y \\(s\\equiv\\dfrac{x-3}{-a}=\\dfrac{y-3}{-1}=\\dfrac{z+1}2\\).",
+    "apartados": [
+     "(1,25 p.) Estudia la posición relativa de ambas rectas según los valores de \\(a\\).",
+     "(1,25 p.) Para \\(a=2\\), determina las ecuaciones de la recta que pasa por el punto de corte de \\(r\\) y \\(s\\) y es perpendicular a ambas."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(r\\): \\(R(1,2,1)\\), \\(\\vec d_r=(1,1,a)\\). \\(s\\): \\(S(3,3,-1)\\), \\(\\vec d_s=(-a,-1,2)\\). Direcciones proporcionales: \\(1=-ka\\), \\(1=-k\\), \\(a=2k\\) \\(\\Rightarrow k=-1\\), \\(a=1\\) y \\(a=-2\\): contradicción. No son paralelas. Producto mixto con \\(\\overrightarrow{RS}=(2,1,-2)\\)<i class='n' data-t='th'>Direcciones no proporcionales: se cortan si \\([\\overrightarrow{RS},\\vec d_r,\\vec d_s]=0\\) y se cruzan si no.</i>:</p>\\[\\begin{vmatrix}2&1&-2\\\\1&1&a\\\\-a&-1&2\\end{vmatrix}=4-a^2\\]<div class='res'>\\(a=2\\) o \\(a=-2\\): las rectas se cortan. \\(a\\neq\\pm2\\) (y \\(a\\neq0\\)): las rectas se cruzan</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Para \\(a=2\\): \\(r\\equiv(1+t,2+t,1+2t)\\) y \\(s\\equiv(3-2u,3-u,-1+2u)\\). Igualando la 1.ª y la 2.ª coordenadas: \\(1+t=3-2u\\) y \\(2+t=3-u\\); restando: \\(1=u\\), \\(t=0\\). Comprobación en la 3.ª: \\(1=1\\) ✓. Punto de corte \\(P(1,2,1)\\).</p><p>Dirección perpendicular a ambas: \\(\\vec d_r\\times\\vec d_s=(1,1,2)\\times(-2,-1,2)=(4,-6,1)\\):</p><div class='res'>\\((x,y,z)=(1,2,1)+\\lambda\\,(4,-6,1)\\), es decir, \\(\\dfrac{x-1}4=\\dfrac{y-2}{-6}=\\dfrac{z-1}1\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "pos",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "perp",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-junio-5",
+   "n": 5,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea \\(f:[0,2\\pi]\\to\\mathbb R\\) la función definida por \\(f(x)=\\dfrac{\\operatorname{sen}x}{2-\\cos x}\\).",
+    "apartados": [
+     "(2 p.) Halla los extremos absolutos de \\(f\\) (abscisas donde se obtienen y valores que se alcanzan).",
+     "(0,5 p.) Determina la ecuación de la recta tangente y de la recta normal a la gráfica de \\(f\\) en el punto de abscisa \\(x=\\dfrac\\pi3\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'>\\[f'(x)=\\frac{\\cos x(2-\\cos x)-\\operatorname{sen}x\\cdot\\operatorname{sen}x}{(2-\\cos x)^2}=\\frac{2\\cos x-1}{(2-\\cos x)^2}=0\\iff\\cos x=\\tfrac12\\iff x=\\tfrac\\pi3\\ \\text{o}\\ x=\\tfrac{5\\pi}3\\]<p>El denominador es positivo: \\(f'\\gt0\\) si \\(\\cos x\\gt\\frac12\\) y \\(f'\\lt0\\) si \\(\\cos x\\lt\\frac12\\). \\(f\\) es continua en el intervalo cerrado: comparo valores<i class='n' data-t='th'>Teorema de Weierstrass: una función continua en un intervalo cerrado alcanza máximo y mínimo absolutos, en puntos críticos o en los extremos.</i>:</p><table class='tb'><tr><th>\\(x\\)</th><th>0</th><th>\\(\\frac\\pi3\\)</th><th>\\(\\frac{5\\pi}3\\)</th><th>\\(2\\pi\\)</th></tr><tr><td>\\(f(x)\\)</td><td>0</td><td>\\(\\frac{\\sqrt3}3\\)</td><td>\\(-\\frac{\\sqrt3}3\\)</td><td>0</td></tr></table><div class='res'>Máximo absoluto en \\(x=\\frac\\pi3\\), de valor \\(\\frac{\\sqrt3}3\\). Mínimo absoluto en \\(x=\\frac{5\\pi}3\\), de valor \\(-\\frac{\\sqrt3}3\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>En \\(x=\\frac\\pi3\\): \\(f=\\frac{\\sqrt3}3\\) y \\(f'=0\\): tangente horizontal y normal vertical.</p><div class='res'>Tangente: \\(y=\\dfrac{\\sqrt3}3\\). Normal: \\(x=\\dfrac\\pi3\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-junio-6",
+   "n": 6,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea \\(f\\) la función dada por \\(f(x)=\\dfrac{3x^2+4}{(x-2)^2}\\) para \\(x\\neq2\\).",
+    "apartados": [
+     "(2 p.) Calcula \\(\\displaystyle\\int f(x)\\,dx\\).",
+     "(0,5 p.) Calcula la primitiva de \\(f\\) cuya gráfica pasa por el punto \\((3,5)\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Grados iguales: divido, o escribo el numerador en potencias de \\((x-2)\\): \\(3x^2+4=3(x-2)^2+12(x-2)+16\\)<i class='n' data-t='why'>Con el denominador \\((x-2)^2\\) conviene desarrollar el numerador en potencias de \\(x-2\\): así cada término se integra directamente.</i>. Entonces</p>\\[f(x)=3+\\frac{12}{x-2}+\\frac{16}{(x-2)^2}\\]<div class='res'>\\(\\displaystyle\\int f(x)\\,dx=3x+12\\ln|x-2|-\\frac{16}{x-2}+C\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Por \\((3,5)\\) (\\(x\\gt2\\)): \\(F(3)=9+12\\ln1-16+C=-7+C=5\\Rightarrow C=12\\).</p><div class='res'>\\(F(x)=3x+12\\ln(x-2)-\\dfrac{16}{x-2}+12\\), para \\(x\\gt2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "racional",
+     "apartados": "a"
+    },
+    {
+     "tema": "integ",
+     "tipo": "pcond",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-junio-7",
+   "n": 7,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera \\(A=\\begin{pmatrix}1&1&1\\\\1&0&1\\\\4&1&4\\end{pmatrix}\\), \\(B=\\begin{pmatrix}a\\\\2a\\\\3a\\end{pmatrix}\\) y \\(X=\\begin{pmatrix}x\\\\y\\\\z\\end{pmatrix}\\).",
+    "apartados": [
+     "(1,25 p.) Discute el sistema dado por \\(AX=B\\), según los valores de \\(a\\).",
+     "(1,25 p.) Para \\(a=0\\), resuelve el sistema dado por \\(AX=B\\). Calcula, si es posible, una solución en la que \\(y+z=4\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(|A|=1(0-1)-1(4-4)+1(1-0)=0\\) y el menor \\(\\begin{vmatrix}1&1\\\\1&0\\end{vmatrix}=-1\\neq0\\): \\(\\operatorname{rg}A=2\\). En \\(A^*\\), el menor de las columnas 1, 2 y 4:</p>\\[\\begin{vmatrix}1&1&a\\\\1&0&2a\\\\4&1&3a\\end{vmatrix}=-2a+5a+a=4a\\]<p>Por Rouché-Frobenius<i class='n' data-t='th'>\\(\\operatorname{rg}A=\\operatorname{rg}A^*\\lt n\\): SCI; \\(\\operatorname{rg}A\\lt\\operatorname{rg}A^*\\): SI.</i>: si \\(a\\neq0\\), \\(\\operatorname{rg}A^*=3\\neq2\\): incompatible; si \\(a=0\\), \\(\\operatorname{rg}A^*=2=\\operatorname{rg}A\\lt3\\): compatible indeterminado.</p><div class='res'>\\(a\\neq0\\): sistema incompatible. \\(a=0\\): compatible indeterminado (un parámetro)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Para \\(a=0\\) (sistema homogéneo): \\(x+y+z=0\\), \\(x+z=0\\), \\(4x+y+4z=0\\). Restando las dos primeras: \\(y=0\\); entonces \\(x=-z\\) (la tercera: \\(4x+4z=0\\) ✓).</p><div class='res'>Soluciones: \\((-\\lambda,\\ 0,\\ \\lambda)\\). Con \\(y+z=4\\): \\(\\lambda=4\\), es decir, \\((-4,\\,0,\\,4)\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "sistemas",
+     "tipo": "disc",
+     "apartados": "a"
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-junio-8",
+   "n": 8,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Se considera el punto \\(A(1,-2,0)\\) y la recta \\(r\\equiv\\begin{cases}x+y=0\\\\y-3z+2=0\\end{cases}\\)",
+    "apartados": [
+     "(1,25 p.) Calcula la ecuación del plano que pasa por \\(A\\) y es perpendicular a \\(r\\).",
+     "(1,25 p.) Calcula la ecuación del plano que pasa por \\(A\\) y contiene a \\(r\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Datos de \\(r\\)",
+     "html": "<div class='ex'><p>Dirección: \\(\\vec d=(1,1,0)\\times(0,1,-3)=(-3,3,1)\\). Un punto (con \\(z=0\\)): \\(y=-2\\), \\(x=2\\): \\(R(2,-2,0)\\).</p></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Un plano perpendicular a \\(r\\) tiene por normal su dirección \\(\\vec d\\)<i class='n' data-t='th'>Plano perpendicular a una recta: su normal es paralela a la dirección de la recta.</i>:</p>\\[-3x+3y+z+D=0\\ \\text{por }A(1,-2,0):\\ -3-6+D=0\\Rightarrow D=9\\]<div class='res'>\\(3x-3y-z-9=0\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>El plano contiene a \\(\\vec d\\) y a \\(\\overrightarrow{RA}=(-1,0,0)\\); su normal es perpendicular a ambos:</p>\\[\\vec n=\\vec d\\times\\overrightarrow{RA}=(-3,3,1)\\times(-1,0,0)=(0,-1,3)\\sim(0,1,-3)\\]\\[y-3z+D=0\\ \\text{por }A:\\ -2+D=0\\Rightarrow D=2\\]<div class='res'>\\(y-3z+2=0\\)</div><i class='n' data-t='tp'>Es una de las ecuaciones que definen \\(r\\), y \\(A\\) la cumple (\\(-2-0+2=0\\)) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "perp",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "ecs",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

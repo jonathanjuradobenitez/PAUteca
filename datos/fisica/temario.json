@@ -1,0 +1,82 @@
+{
+ "version": 1,
+ "temas": [
+  {
+   "id": "din",
+   "nombre": "Dinámica: trabajo y energía",
+   "icono": "🛷",
+   "color": "#64748b",
+   "tipos": []
+  },
+  {
+   "id": "grav",
+   "nombre": "Interacción gravitatoria",
+   "icono": "🪐",
+   "color": "#6d4ae0",
+   "tipos": []
+  },
+  {
+   "id": "elec",
+   "nombre": "Interacción electrostática",
+   "icono": "⚡",
+   "color": "#f0a30a",
+   "tipos": [
+    {
+     "id": "teo",
+     "nombre": "Cuestiones teóricas: campo, potencial y ley de Coulomb"
+    },
+    {
+     "id": "sup",
+     "nombre": "Campo y potencial de varias cargas (superposición)"
+    },
+    {
+     "id": "trab",
+     "nombre": "Trabajo, energía y movimiento entre dos puntos"
+    },
+    {
+     "id": "unif",
+     "nombre": "Partículas en un campo eléctrico uniforme"
+    },
+    {
+     "id": "equil",
+     "nombre": "Equilibrio de cargas (fuerza eléctrica, peso, tensión)"
+    }
+   ]
+  },
+  {
+   "id": "emag",
+   "nombre": "Electromagnetismo e inducción",
+   "icono": "🧲",
+   "color": "#dc2626",
+   "tipos": []
+  },
+  {
+   "id": "ondas",
+   "nombre": "Fenómenos ondulatorios",
+   "icono": "🌊",
+   "color": "#0891b2",
+   "tipos": []
+  },
+  {
+   "id": "opt",
+   "nombre": "Óptica: la luz y las ondas electromagnéticas",
+   "icono": "🔦",
+   "color": "#17a673",
+   "tipos": []
+  },
+  {
+   "id": "nuc",
+   "nombre": "Física nuclear",
+   "icono": "☢️",
+   "color": "#ca8a04",
+   "tipos": []
+  },
+  {
+   "id": "cuant",
+   "nombre": "Física cuántica",
+   "icono": "💡",
+   "color": "#db2777",
+   "tipos": []
+  }
+ ]
+}

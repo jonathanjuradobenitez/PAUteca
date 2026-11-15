@@ -1,0 +1,233 @@
+{
+ "version": 1,
+ "id": "matematicas-2026-julio",
+ "asignatura": "matematicas",
+ "anio": 2026,
+ "convocatoria": "Julio",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2026-julio-1",
+   "n": 1,
+   "bloque": "obligatorio",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "La velocidad de crecimiento de la población de peces en un lago al cabo del tiempo, \\(t\\) en años, viene dada por \\(P'(t)=20\\,t\\,e^{-t/10}\\), siendo \\(P(t)\\) la población de peces. Sabiendo que la población inicial es de 1000 peces, calcula cuántos tendrá el lago transcurridos 10 años.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Integrar \\(P'(t)\\)",
+     "html": "<div class='ex'><p>\\(P\\) es una primitiva de \\(P'\\): \\(P(t)=\\displaystyle\\int20\\,t\\,e^{-t/10}\\,dt\\). Por partes: polinomio (P) antes que exponencial (E) en ALPES<i class='n' data-t='th'>Regla ALPES: Arcos, Logaritmos, Polinomios, Exponenciales, Senos/cosenos. \\(u\\) es lo que aparece antes: aquí \\(u=t\\), \\(dv=e^{-t/10}dt\\).</i>: \\(u=t\\), \\(dv=e^{-t/10}dt\\Rightarrow du=dt\\), \\(v=-10\\,e^{-t/10}\\):</p>\\[\\int t\\,e^{-t/10}dt=-10t\\,e^{-t/10}+10\\int e^{-t/10}dt=-10t\\,e^{-t/10}-100\\,e^{-t/10}\\]\\[P(t)=20\\bigl(-10t-100\\bigr)e^{-t/10}+C=-200\\,(t+10)\\,e^{-t/10}+C\\]</div>"
+    },
+    {
+     "titulo": "Condición inicial y valor en \\(t=10\\)",
+     "html": "<div class='ex'><p>\\(P(0)=-2000+C=1000\\Rightarrow C=3000\\). Entonces</p>\\[P(10)=-200\\cdot20\\,e^{-1}+3000=3000-\\frac{4000}e\\approx3000-1471{,}5\\]<div class='res'>\\(P(10)=3000-\\dfrac{4000}e\\approx1528{,}5\\): unos 1528 peces</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "part",
+     "apartados": ""
+    },
+    {
+     "tema": "integ",
+     "tipo": "pcond",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2026-julio-2",
+   "n": 2,
+   "bloque": "obligatorio",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Se sabe que la función \\(f:\\mathbb R\\to\\mathbb R\\) definida por \\(f(x)=x^3+ax^2+bx+c\\), verifica que: \\(f(1)=0\\), \\(x=0\\) es un punto crítico de la función y la recta tangente a su gráfica en \\(x=-1\\), es paralela a la recta de ecuación \\(y+3x=0\\). Determina \\(a\\), \\(b\\) y \\(c\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Condiciones",
+     "html": "<div class='ex'><p>\\(f'(x)=3x^2+2ax+b\\). Tres condiciones, tres incógnitas:</p><p>• \\(x=0\\) es punto crítico<i class='n' data-t='th'>Punto crítico: \\(f'(x_0)=0\\).</i>: \\(f'(0)=b=0\\).</p><p>• La tangente en \\(x=-1\\) es paralela a \\(y=-3x\\) (pendiente \\(-3\\)): \\(f'(-1)=3-2a+b=-3\\Rightarrow3-2a=-3\\Rightarrow a=3\\).</p><p>• \\(f(1)=0\\): \\(1+a+b+c=0\\Rightarrow c=-1-3-0=-4\\).</p><div class='res'>\\(a=3\\), \\(b=0\\), \\(c=-4\\); es decir, \\(f(x)=x^3+3x^2-4\\)</div><i class='n' data-t='tp'>Comprobación: \\(f(1)=1+3-4=0\\) ✓, \\(f'(0)=0\\) ✓ y \\(f'(-1)=3-6=-3\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2026-julio-3-1",
+   "n": "3.1",
+   "bloque": "optativo 1",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Una familia va al mercado semanalmente y compra tres tipos de alimentos: verdura, carne y pescado. El año pasado, en el que gastó 115 € semanales, observó que pagaba el doble en el puesto del pescado que en el de la verdura. En 2026 se ha notado un incremento de precios pues ahora gasta 19 € más que el año pasado por la misma compra, comprobando que la verdura ha subido un 12 %, la carne un 15 % y el pescado un 20 %. Calcula el precio que la familia paga semanalmente en 2026, por cada tipo de alimento.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>Sean \\(x\\), \\(y\\), \\(z\\) los gastos semanales del año pasado en verdura, carne y pescado:</p>\\[\\begin{cases}x+y+z=115\\\\z=2x\\\\1{,}12x+1{,}15y+1{,}2z=115+19=134\\end{cases}\\iff\\begin{cases}x+y+z=115\\\\2x-z=0\\\\1{,}12x+1{,}15y+1{,}2z=134\\end{cases}\\]<p>\\(\\begin{vmatrix}1&1&1\\\\2&0&-1\\\\1{,}12&1{,}15&1{,}2\\end{vmatrix}=-0{,}07\\neq0\\): por Rouché-Frobenius<i class='n' data-t='th'>Si \\(|M|\\neq0\\), el sistema \\(3\\times3\\) es compatible determinado.</i> la solución es única.</p></div>"
+    },
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>De la segunda, \\(z=2x\\); en la primera, \\(y=115-3x\\). En la tercera:</p>\\[1{,}12x+1{,}15(115-3x)+2{,}4x=134\\iff0{,}07x+132{,}25=134\\iff x=25\\]<p>Entonces \\(y=40\\) y \\(z=50\\) (año pasado). En 2026, con las subidas:</p>\\[\\text{verdura: }25\\cdot1{,}12=28\\qquad\\text{carne: }40\\cdot1{,}15=46\\qquad\\text{pescado: }50\\cdot1{,}2=60\\]<div class='res'>En 2026: verdura 28 €, carne 46 € y pescado 60 € semanales (134 € en total)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "sistemas",
+     "tipo": "plan",
+     "apartados": ""
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2026-julio-3-2",
+   "n": "3.2",
+   "bloque": "optativo 1",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las matrices \\(A=\\begin{pmatrix}2&2\\\\3&4\\end{pmatrix}\\) y \\(B=\\begin{pmatrix}3&1\\\\2&2\\end{pmatrix}\\).",
+    "apartados": [
+     "(1 p.) Halla razonadamente el determinante de una matriz \\(X\\) que verifica \\(A^3XB^t=5B^2A^{-1}\\).",
+     "(1,5 p.) Determina, si existe, una matriz \\(Y\\) que verifica \\(A^3YB^{-1}=A^2\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(|A|=8-6=2\\) y \\(|B|=6-2=4\\). Tomo determinantes en los dos miembros<i class='n' data-t='th'>\\(|MN|=|M||N|\\), \\(|M^n|=|M|^n\\), \\(|M^t|=|M|\\), \\(|M^{-1}|=\\frac1{|M|}\\), y para una matriz \\(n\\times n\\), \\(|kM|=k^n|M|\\) (aquí \\(n=2\\)).</i>:</p>\\[|A|^3\\,|X|\\,|B^t|=5^2\\,|B|^2\\,|A|^{-1}\\iff8\\cdot|X|\\cdot4=25\\cdot16\\cdot\\frac12\\iff32|X|=200\\]<div class='res'>\\(|X|=\\dfrac{200}{32}=\\dfrac{25}4=6{,}25\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(A\\) y \\(B\\) son invertibles (\\(|A|=2\\neq0\\), \\(|B|=4\\neq0\\)). Despejo \\(Y\\) multiplicando por \\(A^{-3}\\) por la izquierda y por \\(B\\) por la derecha<i class='n' data-t='err'>\\(Y\\) está entre \\(A^3\\) y \\(B^{-1}\\): \\(A^3YB^{-1}=A^2\\Rightarrow Y=A^{-3}A^2B=A^{-1}B\\). El orden: \\(A^{-3}\\) a la izquierda y \\(B\\) a la derecha.</i>:</p>\\[Y=A^{-3}A^2B=A^{-1}B\\]<p>\\(A^{-1}=\\dfrac1{|A|}\\begin{pmatrix}4&-2\\\\-3&2\\end{pmatrix}=\\begin{pmatrix}2&-1\\\\-\\frac32&1\\end{pmatrix}\\):</p>\\[Y=\\begin{pmatrix}2&-1\\\\-\\frac32&1\\end{pmatrix}\\begin{pmatrix}3&1\\\\2&2\\end{pmatrix}\\]<div class='res'>\\(Y=\\begin{pmatrix}4&0\\\\-\\frac52&\\frac12\\end{pmatrix}\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "det",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "ecmat",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2026-julio-4-1",
+   "n": "4.1",
+   "bloque": "optativo 2",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la recta \\(r\\equiv\\begin{cases}x=-2\\lambda\\\\y=-1+2\\lambda\\\\z=3+2\\lambda\\end{cases}\\) y el plano \\(\\pi\\equiv x-2y+z-3=0\\).",
+    "apartados": [
+     "(1 p.) Determina la ecuación de la recta que corta perpendicularmente a \\(r\\) y que está contenida en \\(\\pi\\).",
+     "(1,5 p.) Halla el punto simétrico de \\(P(1,1,1)\\) respecto de \\(\\pi\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Dirección de \\(r\\): \\(\\vec d=(-2,2,2)\\sim(-1,1,1)\\); normal de \\(\\pi\\): \\(\\vec n=(1,-2,1)\\). Como \\(\\vec d\\cdot\\vec n=-1-2+1=-2\\neq0\\), \\(r\\) corta a \\(\\pi\\). Punto de corte \\(I=r\\cap\\pi\\):</p>\\[-2\\lambda-2(-1+2\\lambda)+(3+2\\lambda)-3=0\\iff-4\\lambda+2=0\\iff\\lambda=\\tfrac12\\ \\Rightarrow\\ I(-1,0,4)\\]<p>La recta pedida está en \\(\\pi\\) y corta a \\(r\\): debe pasar por \\(I\\). Su dirección \\(\\vec u\\) es perpendicular a \\(r\\) (\\(\\vec u\\perp\\vec d\\)) y está contenida en \\(\\pi\\) (\\(\\vec u\\perp\\vec n\\))<i class='n' data-t='th'>Una recta está contenida en un plano si pasa por un punto del plano y su dirección es perpendicular a la normal del plano.</i>:</p>\\[\\vec u=\\vec d\\times\\vec n=\\begin{vmatrix}\\vec i&\\vec j&\\vec k\\\\-1&1&1\\\\1&-2&1\\end{vmatrix}=(3,\\,2,\\,1)\\]<div class='res'>\\(s\\equiv(x,y,z)=(-1,0,4)+t\\,(3,2,1)\\)</div><i class='n' data-t='tp'>Comprobación: \\(\\vec u\\cdot\\vec d=-3+2+1=0\\) ✓ y \\(\\vec u\\cdot\\vec n=3-4+1=0\\) ✓.</i></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Método: recta perpendicular a \\(\\pi\\) por \\(P\\), corte con \\(\\pi\\) (punto medio) y simétrico. Recta por \\(P\\) con dirección \\(\\vec n\\):</p>\\[(x,y,z)=(1+t,\\ 1-2t,\\ 1+t)\\]<p>Corte con \\(\\pi\\): \\((1+t)-2(1-2t)+(1+t)-3=0\\iff6t-3=0\\iff t=\\tfrac12\\Rightarrow M\\left(\\tfrac32,0,\\tfrac32\\right)\\). \\(M\\) es el punto medio de \\(P\\) y \\(P'\\): \\(P'=2M-P\\):</p><div style='overflow-x:auto'><svg viewBox='0 0 340 270' width='100%' style='max-width:440px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><defs><marker id='ju41n' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#dc2626'/></marker><marker id='ju41d' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#16a34a'/></marker><marker id='ju41r' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#2563eb'/></marker><marker id='ju41a' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#64748b'/></marker></defs><polygon points='306.0,65.4 189.2,145.5 34.0,180.6 150.8,100.5' fill='#8b5cf6' fill-opacity='.28' stroke='#7c3aed' stroke-width='1.3'/><line x1='158.6' y1='144.7' x2='158.6' y2='68.5' stroke='#2563eb' stroke-width='2.2'/><line x1='122.1' y1='119.1' x2='195.1' y2='102.6' stroke='#2563eb' stroke-width='2.2'/><line x1='186.0' y1='150.6' x2='176.8' y2='144.7' stroke='#64748b' stroke-width='1.6' stroke-dasharray='4 3'/><line x1='167.7' y1='108.8' x2='195.1' y2='102.6' stroke='#16a34a' stroke-width='2.4' marker-end='url(#ju41d)'/><text x='201.1' y='98.6' fill='#16a34a' font-weight='700'>u</text><line x1='210.6' y1='127.6' x2='204.2' y2='123.5' stroke='#dc2626' stroke-width='2.4' marker-end='url(#ju41n)'/><text x='210.2' y='119.5' fill='#dc2626' font-weight='700'>n</text><circle cx='158.6' cy='110.8' r='3.8' fill='#e8487a'/><text x='166.6' y='122.8' font-weight='700'>I</text><circle cx='186.0' cy='150.6' r='3.8' fill='#e8487a'/><text x='166.0' y='138.6' font-weight='700'>P</text><circle cx='176.8' cy='144.7' r='3.8' fill='#e8487a'/><text x='186.8' y='164.7' font-weight='700'>P′</text><circle cx='181.4' cy='147.7' r='3.8' fill='#e8487a'/><text x='195.4' y='145.7' font-weight='700'>M</text><text x='146.6' y='156.7' fill='#2563eb' font-weight='700' font-style='italic'>r</text><text x='201.1' y='98.6' fill='#2563eb' font-weight='700' font-style='italic'>s</text><g stroke='#64748b' stroke-width='1.2' fill='none'><line x1='30' y1='224' x2='45.6' y2='227.8'/><line x1='30' y1='224' x2='45.6' y2='220.2'/><line x1='30' y1='224' x2='30.0' y2='202.7'/></g><g fill='#64748b' font-size='10'><text x='47.5' y='233.0'>x</text><text x='47.5' y='223.0'>y</text><text x='27.0' y='199.9'>z</text></g><g transform='translate(10.0,258)'><rect x='0' y='-8' width='12' height='9' fill='#8b5cf6' fill-opacity='.4' stroke='#7c3aed'/><text x='18' y='0' font-size='10'>plano</text></g><g transform='translate(63.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#2563eb' stroke-width='2'/><text x='18' y='0' font-size='10'>recta</text></g><g transform='translate(116.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#dc2626' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector normal</text></g><g transform='translate(212.2,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#16a34a' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector director</text></g><g transform='translate(319.2,258)'><circle cx='6' cy='-4' r='3.8' fill='#e8487a'/><text x='18' y='0' font-size='10'>puntos</text></g></svg></div><div class='res'>\\(P'=(3,0,3)-(1,1,1)=(2,\\,-1,\\,2)\\)</div><i class='n' data-t='tp'>Comprobación: \\(P'\\) cumple \\(2+2+2-3=3\\) y \\(P\\): \\(1-2+1-3=-3\\): valores opuestos, a la misma distancia del plano y a lados distintos ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "perp",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "simet",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2026-julio-4-2",
+   "n": "4.2",
+   "bloque": "optativo 2",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Tres máquinas A, B y C, producen el 45 %, 30 % y 25 %, respectivamente, del total de los coches que se producen en una fábrica. Los porcentajes de producción defectuosa de estas máquinas son del 3 %, 4 % y 5 %, respectivamente.",
+    "apartados": [
+     "(1,25 p.) Seleccionamos un coche al azar. Calcula la probabilidad de que sea defectuoso.",
+     "(1,25 p.) Tomamos, al azar, un coche y resulta ser defectuoso. ¿Qué máquina tiene la mayor probabilidad de haber producido dicho coche?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Probabilidad total<i class='n' data-t='th'>\\(A,B,C\\) forman un sistema completo de sucesos: \\(P(D)=P(A)P(D\\mid A)+P(B)P(D\\mid B)+P(C)P(D\\mid C)\\).</i>:</p>\\[P(D)=0{,}45\\cdot0{,}03+0{,}30\\cdot0{,}04+0{,}25\\cdot0{,}05=0{,}0135+0{,}012+0{,}0125\\]<div class='res'>\\(P(D)=0{,}038\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Bayes:<i class='n' data-t='th'>\\(P(M\\mid D)=\\dfrac{P(M)\\,P(D\\mid M)}{P(D)}\\).</i></p>\\[P(A\\mid D)=\\frac{0{,}0135}{0{,}038}\\approx0{,}3553\\qquad P(B\\mid D)=\\frac{0{,}012}{0{,}038}\\approx0{,}3158\\qquad P(C\\mid D)=\\frac{0{,}0125}{0{,}038}\\approx0{,}3289\\]<div class='res'>La máquina \\(A\\) (probabilidad \\(\\approx0{,}3553\\))</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "prob",
+     "tipo": "cond",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

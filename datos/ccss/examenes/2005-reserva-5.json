@@ -1,0 +1,498 @@
+{
+ "version": 1,
+ "id": "ccss-2005-reserva-5",
+ "asignatura": "ccss",
+ "anio": 2005,
+ "convocatoria": "Reserva 5",
+ "documento": [
+  {
+   "archivo": "MAT_CCSS_2005_RESERVA_5.pdf",
+   "archivo_subido": "a33ddc89-MAT_CCSS_2005_RESERVA_5.pdf",
+   "sha256": "5ad2c8dd12ce55195979871f1355e7664f469690c2f0d664d9d6f5cb8083d7cb",
+   "paginas": 2,
+   "contenido": "Examen completo: Opción A (pág. 1) y Opción B (pág. 2).",
+   "capa_texto": "correcta: enunciados extraídos del texto del PDF y comprobados con la imagen de la página en las fórmulas",
+   "procesado_en": "lote 2004-2005",
+   "identificacion": {
+    "segun_nombre": {
+     "anio": 2005,
+     "convocatoria": "Reserva 5"
+    },
+    "segun_contenido": {
+     "anio": null,
+     "convocatoria": null,
+     "opciones": [
+      "A",
+      "B"
+     ],
+     "nota": "La cabecera no indica año ni convocatoria; el documento trae las dos opciones."
+    },
+    "indicios": [
+     "Importes en euros (compatibles con 2002 o posterior).",
+     "El enunciado del ejercicio 1 B menciona el estadio del Mediterráneo y los «Juegos Mediterráneos Almería 2005»."
+    ],
+    "resultado": "confirmada",
+    "criterio": "regla general fijada por el autor: año y convocatoria del nombre del archivo; un PDF con las dos opciones es el examen completo",
+    "incidencias": []
+   },
+   "revision": "borrador"
+  }
+ ],
+ "ejercicios": [
+  {
+   "id": "ccss-2005-reserva-5-a1",
+   "n": "A1",
+   "num": 1,
+   "bloque": "Opción A",
+   "puntos": "3",
+   "enunciado": {
+    "intro": "",
+    "apartados": [
+     "(1 punto) Sean las matrices \\(A=\\begin{pmatrix}2&1&3\\\\1&-2&0\\end{pmatrix}\\) y \\(B=\\begin{pmatrix}0&1\\\\1&-2\\\\1&1\\end{pmatrix}\\).<br>De las siguientes operaciones, algunas no se pueden realizar; razone por qué. Efectúe las que se puedan realizar.<br>\\(A+B\\); \\(A^t+B\\); \\(A\\cdot B\\); \\(A\\cdot B^t\\).",
+     "(2 puntos) Resuelva y clasifique, atendiendo al número de soluciones, el sistema: \\(\\begin{pmatrix}2&1&3\\\\1&0&2\\\\1&3&1\\end{pmatrix}\\cdot\\begin{pmatrix}x\\\\y\\\\z\\end{pmatrix}=\\begin{pmatrix}3\\\\2\\\\-1\\end{pmatrix}\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(A\\) es \\(2\\times3\\) y \\(B\\) es \\(3\\times2\\); por tanto, \\(A^t\\) es \\(3\\times2\\) y \\(B^t\\) es \\(2\\times3\\).</p><p>• \\(A+B\\): <b>no se puede</b>, porque solo se pueden sumar matrices de la misma dimensión<i class='n' data-t='th'>Dos matrices se pueden sumar si tienen el mismo número de filas y de columnas; se suman elemento a elemento.</i>.</p><p>• \\(A^t+B\\): las dos son \\(3\\times2\\), así que sí se puede:</p>\\[A^t+B=\\begin{pmatrix}2&1\\\\ 1&-2\\\\ 3&0\\end{pmatrix}+\\begin{pmatrix}0&1\\\\ 1&-2\\\\ 1&1\\end{pmatrix}=\\begin{pmatrix}2&2\\\\ 2&-4\\\\ 4&1\\end{pmatrix}\\]<p>• \\(A\\cdot B\\): \\((2\\times3)\\cdot(3\\times2)\\), sí se puede y da una matriz \\(2\\times2\\)<i class='n' data-t='th'>Dos matrices se pueden multiplicar si el número de columnas de la primera coincide con el número de filas de la segunda; el resultado tiene las filas de la primera y las columnas de la segunda.</i>:</p>\\[A\\cdot B=\\begin{pmatrix}2&1&3\\\\ 1&-2&0\\end{pmatrix}\\begin{pmatrix}0&1\\\\ 1&-2\\\\ 1&1\\end{pmatrix}=\\begin{pmatrix}2\\cdot0+1\\cdot1+3\\cdot1&2\\cdot1+1\\cdot(-2)+3\\cdot1\\\\ 1\\cdot0+(-2)\\cdot1+0\\cdot1&1\\cdot1+(-2)\\cdot(-2)+0\\cdot1\\end{pmatrix}=\\begin{pmatrix}4&3\\\\ -2&5\\end{pmatrix}\\]<p>• \\(A\\cdot B^t\\): \\((2\\times3)\\cdot(2\\times3)\\), <b>no se puede</b>, porque \\(A\\) tiene 3 columnas y \\(B^t\\) tiene 2 filas.</p><div class='res'>\\(A+B\\) y \\(A\\cdot B^t\\) no se pueden realizar; \\(A^t+B=\\begin{pmatrix}2&2\\\\ 2&-4\\\\ 4&1\\end{pmatrix}\\) y \\(A\\cdot B=\\begin{pmatrix}4&3\\\\ -2&5\\end{pmatrix}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Calculamos el determinante de la matriz de coeficientes por la regla de Sarrus:</p>\\[|A|=\\begin{vmatrix}2&1&3\\\\ 1&0&2\\\\ 1&3&1\\end{vmatrix}=2\\cdot0\\cdot1+1\\cdot2\\cdot1+3\\cdot1\\cdot3-\\left[3\\cdot0\\cdot1+2\\cdot2\\cdot3+1\\cdot1\\cdot1\\right]=-2\\neq0\\]<p>Como \\(|A|\\neq0\\), \\(\\operatorname{rg}A=\\operatorname{rg}A^*=3\\): por el teorema de Rouché-Frobenius el sistema es compatible determinado<i class='n' data-t='th'>Teorema de Rouché-Frobenius: el sistema es compatible si y solo si \\(\\operatorname{rg}A=\\operatorname{rg}A^*\\); si además ese rango es igual al número de incógnitas, la solución es única.</i>. Lo resolvemos por Cramer<i class='n' data-t='th'>Regla de Cramer: cada incógnita es el cociente entre el determinante que resulta de sustituir su columna por la de términos independientes y \\(|A|\\).</i>:</p>\\[x=\\frac{\\begin{vmatrix}3&1&3\\\\ 2&0&2\\\\ -1&3&1\\end{vmatrix}}{-2}=\\frac{-4}{-2}=2\\]\\[y=\\frac{\\begin{vmatrix}2&3&3\\\\ 1&2&2\\\\ 1&-1&1\\end{vmatrix}}{-2}=\\frac{2}{-2}=-1\\]\\[z=\\frac{\\begin{vmatrix}2&1&3\\\\ 1&0&2\\\\ 1&3&-1\\end{vmatrix}}{-2}=\\frac{0}{-2}=0\\]<i class='n' data-t='tp'>Comprobación: \\(4-1+0=3\\) ✓, \\(2+0=2\\) ✓ y \\(2-3+0=-1\\) ✓.</i><div class='res'>Sistema compatible determinado: \\(x=2\\), \\(y=-1\\), \\(z=0\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "ops",
+     "apartados": "a"
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT_CCSS_2005_RESERVA_5.pdf",
+    "sha256": "5ad2c8dd12ce55195979871f1355e7664f469690c2f0d664d9d6f5cb8083d7cb",
+    "pagina": 1,
+    "opcion": "A",
+    "ejercicio_original": 1,
+    "parte": null,
+    "transcripcion": "texto del PDF"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador",
+   "revision_apartados": {
+    "a": "borrador",
+    "b": "borrador"
+   },
+   "dependencias": {},
+   "incidencias": [],
+   "relaciones": []
+  },
+  {
+   "id": "ccss-2005-reserva-5-a2",
+   "n": "A2",
+   "num": 2,
+   "bloque": "Opción A",
+   "puntos": "3",
+   "enunciado": {
+    "intro": "",
+    "apartados": [
+     "(1.5 puntos) Determine \\(a\\) y \\(b\\) en la ecuación de la parábola \\(y=ax^2+bx+5\\) sabiendo que ésta tiene un máximo en el punto \\((2,9)\\).",
+     "(1.5 puntos) Calcule las asíntotas de la función \\(f(x)=\\dfrac{2x-1}{x+3}\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>La parábola pasa por \\((2,9)\\) y tiene en \\(x=2\\) un extremo relativo, así que \\(y'(2)=0\\)<i class='n' data-t='th'>Si una función derivable tiene un extremo relativo en \\(x=a\\), entonces \\(f'(a)=0\\).</i>:</p>\\[y'=2ax+b\\]\\[\\left\\{\\begin{array}{l}y(2)=9\\iff4a+2b+5=9\\iff4a+2b=4\\\\ y'(2)=0\\iff4a+b=0\\end{array}\\right.\\]<p>Restando la segunda ecuación a la primera: \\(b=4\\); y entonces \\(4a=-4\\iff a=-1\\).</p><p>Es un máximo, porque \\(a=-1\\lt0\\) (parábola con las ramas hacia abajo)<i class='n' data-t='why'>También: \\(y''=2a=-2\\lt0\\).</i>.</p><i class='n' data-t='tp'>Comprobación: \\(y=-x^2+4x+5\\), \\(y(2)=-4+8+5=9\\) ✓ y \\(y'(2)=-4+4=0\\) ✓.</i><div class='res'>\\(a=-1\\) y \\(b=4\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p><b>Asíntota vertical.</b> El denominador se anula en \\(x=-3\\), y el numerador vale \\(-6-1=-7\\neq0\\). Estudiamos los límites laterales:</p>\\[\\lim_{x\\to-3^-}\\frac{2x-1}{x+3}=\\frac{-7}{0^-}=+\\infty\\]\\[\\lim_{x\\to-3^+}\\frac{2x-1}{x+3}=\\frac{-7}{0^+}=-\\infty\\]<p><b>Asíntota horizontal.</b></p>\\[\\lim_{x\\to\\pm\\infty}\\frac{2x-1}{x+3}=\\frac21=2\\Rightarrow y=2\\]<i class='n' data-t='tp'>Numerador y denominador tienen el mismo grado: el límite es el cociente de los coeficientes principales. Al haber asíntota horizontal no hay oblicua.</i><div class='res'>Asíntota vertical \\(x=-3\\) y asíntota horizontal \\(y=2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "asint",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT_CCSS_2005_RESERVA_5.pdf",
+    "sha256": "5ad2c8dd12ce55195979871f1355e7664f469690c2f0d664d9d6f5cb8083d7cb",
+    "pagina": 1,
+    "opcion": "A",
+    "ejercicio_original": 2,
+    "parte": null,
+    "transcripcion": "texto del PDF"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador",
+   "revision_apartados": {
+    "a": "borrador",
+    "b": "borrador"
+   },
+   "dependencias": {},
+   "incidencias": [],
+   "relaciones": []
+  },
+  {
+   "id": "ccss-2005-reserva-5-a3-1",
+   "n": "A3-I",
+   "num": "3 · Parte I",
+   "bloque": "Opción A",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "En una urna hay 1 bola blanca, 3 rojas y 4 verdes. Se considera el experimento que consiste en sacar primero una bola, si es blanca se deja fuera, y si no lo es se vuelve a introducir en la urna; a continuación se extrae una segunda bola y se observa su color.",
+    "apartados": [
+     "(1 punto) ¿Cuál es la probabilidad de que salgan 2 bolas del mismo color?",
+     "(1 punto) ¿Cuál es la probabilidad de que la bola blanca salga en la 2ª extracción?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Diagrama de árbol",
+     "html": "<div class='ex'><p>Hay 8 bolas: 1 blanca (\\(B\\)), 3 rojas (\\(R\\)) y 4 verdes (\\(V\\)). Si la primera es blanca, queda fuera y la segunda se saca entre 7 bolas, ninguna blanca; si no, se devuelve y la urna vuelve a tener las 8.</p><div style='overflow-x:auto'><svg viewBox='0 0 420 340' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><circle cx='18' cy='170.0' r='4' fill='#9d174d'/><line x1='26' y1='170.0' x2='146' y2='40.0' stroke='#9d174d' stroke-width='1.5'/><text x='84.0' y='100.0' font-size='11' text-anchor='middle' fill='#9d174d'>1/8</text><text x='150' y='44.0' font-size='12' font-weight='bold'>B</text><line x1='167' y1='40.0' x2='366' y2='20.0' stroke='#9d174d' stroke-width='1.3'/><text x='310.3' y='21.6' font-size='11' text-anchor='middle' fill='#9d174d'>3/7</text><text x='370' y='24.0' font-size='12' font-weight='bold'>R</text><line x1='167' y1='40.0' x2='366' y2='60.0' stroke='#9d174d' stroke-width='1.3'/><text x='310.3' y='50.4' font-size='11' text-anchor='middle' fill='#9d174d'>4/7</text><text x='370' y='64.0' font-size='12' font-weight='bold'>V</text><line x1='26' y1='170.0' x2='146' y2='140.0' stroke='#9d174d' stroke-width='1.5'/><text x='84.0' y='150.0' font-size='11' text-anchor='middle' fill='#9d174d'>3/8</text><text x='150' y='144.0' font-size='12' font-weight='bold'>R</text><line x1='167' y1='140.0' x2='366' y2='100.0' stroke='#9d174d' stroke-width='1.3'/><text x='310.3' y='107.2' font-size='11' text-anchor='middle' fill='#9d174d'>1/8</text><text x='370' y='104.0' font-size='12' font-weight='bold'>B</text><line x1='167' y1='140.0' x2='366' y2='140.0' stroke='#9d174d' stroke-width='1.3'/><text x='310.3' y='136.0' font-size='11' text-anchor='middle' fill='#9d174d'>3/8</text><text x='370' y='144.0' font-size='12' font-weight='bold'>R</text><line x1='167' y1='140.0' x2='366' y2='180.0' stroke='#9d174d' stroke-width='1.3'/><text x='310.3' y='164.8' font-size='11' text-anchor='middle' fill='#9d174d'>4/8</text><text x='370' y='184.0' font-size='12' font-weight='bold'>V</text><line x1='26' y1='170.0' x2='146' y2='260.0' stroke='#9d174d' stroke-width='1.5'/><text x='84.0' y='210.0' font-size='11' text-anchor='middle' fill='#9d174d'>4/8</text><text x='150' y='264.0' font-size='12' font-weight='bold'>V</text><line x1='167' y1='260.0' x2='366' y2='220.0' stroke='#9d174d' stroke-width='1.3'/><text x='310.3' y='227.2' font-size='11' text-anchor='middle' fill='#9d174d'>1/8</text><text x='370' y='224.0' font-size='12' font-weight='bold'>B</text><line x1='167' y1='260.0' x2='366' y2='260.0' stroke='#9d174d' stroke-width='1.3'/><text x='310.3' y='256.0' font-size='11' text-anchor='middle' fill='#9d174d'>3/8</text><text x='370' y='264.0' font-size='12' font-weight='bold'>R</text><line x1='167' y1='260.0' x2='366' y2='300.0' stroke='#9d174d' stroke-width='1.3'/><text x='310.3' y='284.8' font-size='11' text-anchor='middle' fill='#9d174d'>4/8</text><text x='370' y='304.0' font-size='12' font-weight='bold'>V</text></svg></div></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Dos bolas blancas es imposible (solo hay una y, si sale, se deja fuera). Sumamos las ramas de dos rojas y de dos verdes<i class='n' data-t='th'>Regla del producto: \\(P(A\\cap B)=P(A)\\cdot P(B\\mid A)\\), que sale de la definición de probabilidad condicionada; en el árbol, se multiplican las probabilidades de la rama.</i>:</p>\\[P(RR)+P(VV)=\\frac38\\cdot\\frac38+\\frac48\\cdot\\frac48=\\frac9{64}+\\frac{16}{64}=\\frac{25}{64}\\]<div class='res'>\\(P=\\dfrac{25}{64}\\approx0{,}3906\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>La blanca solo puede salir en la segunda extracción si en la primera no salió<i class='n' data-t='th'>Teorema de la probabilidad total: la probabilidad de un suceso es la suma de las probabilidades de todas las ramas del árbol que llegan a él.</i>:</p>\\[P(B_2)=P(R)\\cdot\\frac18+P(V)\\cdot\\frac18=\\frac38\\cdot\\frac18+\\frac48\\cdot\\frac18=\\frac7{64}\\]<div class='res'>\\(P=\\dfrac7{64}\\approx0{,}1094\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "prob",
+     "tipo": "arbol",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT_CCSS_2005_RESERVA_5.pdf",
+    "sha256": "5ad2c8dd12ce55195979871f1355e7664f469690c2f0d664d9d6f5cb8083d7cb",
+    "pagina": 1,
+    "opcion": "A",
+    "ejercicio_original": 3,
+    "parte": "I",
+    "transcripcion": "texto del PDF"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador",
+   "revision_apartados": {
+    "a": "borrador",
+    "b": "borrador"
+   },
+   "dependencias": {},
+   "incidencias": [],
+   "relaciones": []
+  },
+  {
+   "id": "ccss-2005-reserva-5-a3-2",
+   "n": "A3-II",
+   "num": "3 · Parte II",
+   "bloque": "Opción A",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "La estatura de los soldados de un cuartel sigue una distribución Normal con desviación típica 12 cm.",
+    "apartados": [
+     "(0.5 puntos) Indique la distribución que sigue la media de la estatura de las muestras de soldados de ese cuartel, de tamaño 81.",
+     "(1.5 puntos) Si se desea estimar la estatura media de los soldados de ese cuartel de forma que el error no sobrepase los 3 cm, ¿cuántos soldados deberán escogerse para formar parte de la muestra si se utiliza un nivel de confianza del 97 %?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Sea \\(X\\) la variable aleatoria «estatura, en cm, de un soldado del cuartel». Según el enunciado, \\(X\\sim N(\\mu,\\ 12)\\), con \\(\\mu\\) desconocida.</p><p>Como la población es normal, la media muestral \\(\\bar X\\) de las muestras de tamaño 81 sigue una normal con la misma media y desviación típica \\(\\dfrac\\sigma{\\sqrt n}\\)<i class='n' data-t='th'>Teorema central del límite: si una población tiene media \\(\\mu\\) y desviación típica \\(\\sigma\\), la media de las muestras de tamaño \\(n\\) se distribuye \\(N\\left(\\mu,\\frac\\sigma{\\sqrt n}\\right)\\), exactamente si la población es normal y de forma aproximada si \\(n\\ge30\\).</i>:</p>\\[\\frac{\\sigma}{\\sqrt n}=\\frac{12}{9}=\\frac43\\approx1{,}3333\\]<div class='res'>\\(\\bar X\\sim N\\left(\\mu;\\ \\dfrac43\\right)\\), donde \\(\\mu\\) es la estatura media de los soldados del cuartel</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Nivel de confianza: \\(1-\\alpha=0{,}97\\), luego \\(\\alpha=0{,}03\\) y \\(\\dfrac\\alpha2=0{,}015\\).</p>\\[P\\left(Z\\lt z_{1-\\alpha/2}\\right)=1-\\frac\\alpha2\\]\\[P\\left(Z\\lt z_{1-\\alpha/2}\\right)=1-0{,}015=0{,}985\\]<p>Busco \\(0{,}985\\) en el interior de la tabla \\(N(0,1)\\)<i class='n' data-t='why'>El intervalo deja \\(\\frac\\alpha2\\) en cada cola, así que a la izquierda de \\(z_{1-\\alpha/2}\\) queda \\(1-\\frac\\alpha2\\).</i>: \\(P(Z\\lt2{,}17)=0{,}985\\):</p>\\[\\Rightarrow\\ z_{1-\\alpha/2}=2{,}17\\]<div style='overflow-x:auto'><svg viewBox='0 0 320 170' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='8.0,135.0 8.0,134.9 9.1,134.9 10.2,134.9 11.3,134.9 12.3,134.9 13.4,134.9 14.5,134.8 15.6,134.8 16.7,134.8 17.8,134.8 18.9,134.8 20.0,134.7 21.0,134.7 22.1,134.7 23.2,134.7 24.3,134.6 25.4,134.6 26.5,134.5 27.6,134.5 28.6,134.5 29.7,134.4 30.8,134.3 31.9,134.3 33.0,134.2 34.1,134.2 35.2,134.1 36.3,134.0 37.3,133.9 38.4,133.8 39.5,133.7 40.6,133.6 41.7,133.5 42.8,133.4 43.9,133.2 44.9,133.1 46.0,132.9 47.1,132.8 48.2,132.6 49.3,132.4 50.4,132.2 51.5,132.0 52.6,131.8 53.6,131.5 54.7,131.3 55.8,131.0 56.9,130.7 58.0,130.4 59.1,130.0 60.2,129.7 61.2,129.3 62.3,128.9 63.4,128.5 64.5,128.1 65.6,127.6 66.7,127.1 67.8,126.6 68.9,126.1 69.9,125.5 71.0,124.9 72.1,124.3 73.2,123.6 73.2,135.0' fill='#e8487a' fill-opacity='.28' stroke='none'/><polygon points='246.8,135.0 246.8,123.6 247.9,124.3 249.0,124.9 250.1,125.5 251.1,126.1 252.2,126.6 253.3,127.1 254.4,127.6 255.5,128.1 256.6,128.5 257.7,128.9 258.8,129.3 259.8,129.7 260.9,130.0 262.0,130.4 263.1,130.7 264.2,131.0 265.3,131.3 266.4,131.5 267.4,131.8 268.5,132.0 269.6,132.2 270.7,132.4 271.8,132.6 272.9,132.8 274.0,132.9 275.1,133.1 276.1,133.2 277.2,133.4 278.3,133.5 279.4,133.6 280.5,133.7 281.6,133.8 282.7,133.9 283.7,134.0 284.8,134.1 285.9,134.2 287.0,134.2 288.1,134.3 289.2,134.3 290.3,134.4 291.4,134.5 292.4,134.5 293.5,134.5 294.6,134.6 295.7,134.6 296.8,134.7 297.9,134.7 299.0,134.7 300.0,134.7 301.1,134.8 302.2,134.8 303.3,134.8 304.4,134.8 305.5,134.8 306.6,134.9 307.7,134.9 308.7,134.9 309.8,134.9 310.9,134.9 312.0,134.9 312.0,135.0' fill='#e8487a' fill-opacity='.28' stroke='none'/><polygon points='73.2,135.0 73.2,123.6 76.1,121.7 79.0,119.6 81.9,117.2 84.8,114.6 87.7,111.7 90.6,108.5 93.5,105.0 96.3,101.3 99.2,97.2 102.1,93.0 105.0,88.5 107.9,83.7 110.8,78.8 113.7,73.7 116.6,68.6 119.5,63.3 122.4,58.1 125.3,52.9 128.2,47.8 131.1,42.9 134.0,38.2 136.9,33.8 139.7,29.7 142.6,26.1 145.5,22.9 148.4,20.2 151.3,18.1 154.2,16.6 157.1,15.6 160.0,15.3 162.9,15.6 165.8,16.6 168.7,18.1 171.6,20.2 174.5,22.9 177.4,26.1 180.3,29.7 183.1,33.8 186.0,38.2 188.9,42.9 191.8,47.8 194.7,52.9 197.6,58.1 200.5,63.3 203.4,68.6 206.3,73.7 209.2,78.8 212.1,83.7 215.0,88.5 217.9,93.0 220.8,97.2 223.7,101.3 226.5,105.0 229.4,108.5 232.3,111.7 235.2,114.6 238.1,117.2 241.0,119.6 243.9,121.7 246.8,123.6 246.8,135.0' fill='#6d4ae0' fill-opacity='.35' stroke='none'/><polyline points='8.0,134.9 10.5,134.9 13.1,134.9 15.6,134.8 18.1,134.8 20.7,134.7 23.2,134.7 25.7,134.6 28.3,134.5 30.8,134.4 33.3,134.2 35.9,134.0 38.4,133.8 40.9,133.6 43.5,133.3 46.0,132.9 48.5,132.5 51.1,132.1 53.6,131.5 56.1,130.9 58.7,130.2 61.2,129.3 63.7,128.4 66.3,127.3 68.8,126.1 71.3,124.7 73.9,123.2 76.4,121.5 78.9,119.6 81.5,117.6 84.0,115.3 86.5,112.8 89.1,110.2 91.6,107.3 94.1,104.2 96.7,100.8 99.2,97.3 101.7,93.6 104.3,89.7 106.8,85.6 109.3,81.3 111.9,77.0 114.4,72.5 116.9,68.0 119.5,63.4 122.0,58.8 124.5,54.2 127.1,49.7 129.6,45.3 132.1,41.1 134.7,37.1 137.2,33.3 139.7,29.7 142.3,26.5 144.8,23.7 147.3,21.2 149.9,19.1 152.4,17.5 154.9,16.3 157.5,15.6 160.0,15.3 162.5,15.6 165.1,16.3 167.6,17.5 170.1,19.1 172.7,21.2 175.2,23.7 177.7,26.5 180.3,29.7 182.8,33.3 185.3,37.1 187.9,41.1 190.4,45.3 192.9,49.7 195.5,54.2 198.0,58.8 200.5,63.4 203.1,68.0 205.6,72.5 208.1,77.0 210.7,81.3 213.2,85.6 215.7,89.7 218.3,93.6 220.8,97.3 223.3,100.8 225.9,104.2 228.4,107.3 230.9,110.2 233.5,112.8 236.0,115.3 238.5,117.6 241.1,119.6 243.6,121.5 246.1,123.2 248.7,124.7 251.2,126.1 253.7,127.3 256.3,128.4 258.8,129.3 261.3,130.2 263.9,130.9 266.4,131.5 268.9,132.1 271.5,132.5 274.0,132.9 276.5,133.3 279.1,133.6 281.6,133.8 284.1,134.0 286.7,134.2 289.2,134.4 291.7,134.5 294.3,134.6 296.8,134.7 299.3,134.7 301.9,134.8 304.4,134.8 306.9,134.9 309.5,134.9 312.0,134.9' fill='none' stroke='#2f6df0' stroke-width='2'/><line x1='4.0' y1='135.0' x2='316.0' y2='135.0' stroke='currentColor' stroke-width='1.2'/><line x1='73.2' y1='139.0' x2='73.2' y2='123.6' stroke='#6d4ae0' stroke-width='1.4' stroke-dasharray='3 2'/><text x='73.2' y='152.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>−z<tspan font-size='8' dy='3'>1−α/2</tspan></text><line x1='246.8' y1='139.0' x2='246.8' y2='123.6' stroke='#6d4ae0' stroke-width='1.4' stroke-dasharray='3 2'/><text x='246.8' y='152.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>z<tspan font-size='8' dy='3'>1−α/2</tspan></text><text x='246.8' y='165.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>= 2,17</text><text x='160.0' y='87.0' text-anchor='middle' font-size='12' font-weight='700'>1 − α = 0,97</text><line x1='63.2' y1='132.1' x2='36.0' y2='105.0' stroke='#c2185b' stroke-width='1'/><text x='8.0' y='102.0' text-anchor='start' font-size='10' fill='#c2185b'>α/2 = 0,015</text><line x1='256.8' y1='132.1' x2='284.0' y2='105.0' stroke='#c2185b' stroke-width='1'/><text x='312.0' y='102.0' text-anchor='end' font-size='10' fill='#c2185b'>α/2 = 0,015</text><text x='160.0' y='148.0' text-anchor='middle' font-size='9.5'>0</text></svg></div><p>Imponemos que el error sea como máximo \\(3\\) y despejamos \\(n\\):</p>\\[2{,}17\\cdot\\frac{12}{\\sqrt n}\\le3\\iff\\sqrt n\\ge\\frac{2{,}17\\cdot12}{3}=8{,}68\\]\\[\\iff n\\ge8{,}68^2=75{,}3424\\]<p>Como \\(n\\) es un número de individuos, tomamos el entero mayor que \\(75{,}3424\\)<i class='n' data-t='err'>El tamaño de una muestra es un número entero y se toma siempre el entero mayor que el valor obtenido.</i>.</p><div class='res'>Tamaño mínimo: \\(n=76\\)</div><p><b>Conclusión:</b> para que el error no sobrepase los 3 cm con una confianza del 97 %, hay que tomar una muestra de al menos 76 soldados.</p></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "muest",
+     "tipo": "media",
+     "apartados": "a"
+    },
+    {
+     "tema": "inf",
+     "tipo": "tam",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT_CCSS_2005_RESERVA_5.pdf",
+    "sha256": "5ad2c8dd12ce55195979871f1355e7664f469690c2f0d664d9d6f5cb8083d7cb",
+    "pagina": 1,
+    "opcion": "A",
+    "ejercicio_original": 3,
+    "parte": "II",
+    "transcripcion": "texto del PDF"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador",
+   "revision_apartados": {
+    "a": "borrador",
+    "b": "borrador"
+   },
+   "dependencias": {
+    "a": [
+     "tabla_N01_oficial"
+    ],
+    "b": [
+     "tabla_N01_oficial"
+    ]
+   },
+   "incidencias": [],
+   "relaciones": []
+  },
+  {
+   "id": "ccss-2005-reserva-5-b1",
+   "n": "B1",
+   "num": 1,
+   "bloque": "Opción B",
+   "puntos": "3",
+   "enunciado": {
+    "intro": "(3 puntos) El estadio del Mediterráneo, construido para la celebración de los “Juegos Mediterráneos Almería 2005”, tiene una capacidad de 20000 espectadores.<br>Para la asistencia a estos juegos se han establecido las siguientes normas:<br>El número de adultos no debe superar al doble del número de niños; el número de adultos menos el número de niños no será superior a 5000.<br>Si el precio de la entrada de niño es de 10 euros y la de adulto 15 euros ¿cuál es la composición de espectadores que proporciona mayores ingresos? ¿A cuánto ascenderán esos ingresos?",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>Llamamos \\(x\\) al número de niños e \\(y\\) al número de adultos que asisten<i class='n' data-t='why'>Las incógnitas son siempre lo que nos piden calcular.</i>.</p><p>Organizamos los datos en una tabla:</p><table class='tb'><tr><th>Condición</th><th>Inecuación</th></tr><tr><th>Capacidad del estadio</th><td>\\(x+y\\le20\\,000\\)</td></tr><tr><th>Adultos no superan el doble de niños</th><td>\\(y\\le2x\\)</td></tr><tr><th>Adultos menos niños no superior a 5000</th><td>\\(y-x\\le5000\\)</td></tr></table><p>Función objetivo (ingresos, a maximizar): \\(F(x,y)=10x+15y\\)</p><p>Restricciones:</p>\\[\\left\\{\\begin{array}{l}x+y\\le20\\,000\\\\y\\le2x\\\\y-x\\le5000\\\\x\\ge0,\\ y\\ge0\\end{array}\\right.\\]<i class='n' data-t='why'>\\(x\\ge0\\) e \\(y\\ge0\\) porque no se pueden producir (o comprar) cantidades negativas.</i></div>"
+    },
+    {
+     "titulo": "Región factible",
+     "html": "<div class='ex'><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(x+y=20\\,000\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(20\\,000\\)</td></tr><tr><th>\\(y\\)</th><td>\\(20\\,000\\)</td><td>\\(0\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(-2x+y=0\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(5000\\)</td></tr><tr><th>\\(y\\)</th><td>\\(0\\)</td><td>\\(10\\,000\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(-x+y=5000\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(-5000\\)</td></tr><tr><th>\\(y\\)</th><td>\\(5000\\)</td><td>\\(0\\)</td></tr></table><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(x+y\\le20\\,000\\): con el origen, \\(0\\le20\\,000\\) se cumple → semiplano que lo contiene.</li><li>\\(-2x+y\\le0\\): con el punto \\((1,0)\\), \\(-2\\le0\\) se cumple → semiplano que lo contiene.</li><li>\\(-x+y\\le5000\\): con el origen, \\(0\\le5000\\) se cumple → semiplano que lo contiene.</li></ul><p>Además, \\(x\\ge0\\) y \\(y\\ge0\\) limitan la región al primer cuadrante.</p><div style='overflow-x:auto'><svg viewBox='0 0 420 300' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><line x1='46.1' y1='266.0' x2='46.1' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='106.5' y1='266.0' x2='106.5' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='166.9' y1='266.0' x2='166.9' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='227.4' y1='266.0' x2='227.4' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='287.8' y1='266.0' x2='287.8' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='348.2' y1='266.0' x2='348.2' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='257.5' x2='386.0' y2='257.5' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='214.9' x2='386.0' y2='214.9' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='172.3' x2='386.0' y2='172.3' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='129.8' x2='386.0' y2='129.8' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='87.2' x2='386.0' y2='87.2' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='44.6' x2='386.0' y2='44.6' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='257.5' x2='386.0' y2='257.5' stroke='#111' stroke-width='1.3'/><line x1='46.1' y1='266.0' x2='46.1' y2='34.0' stroke='#111' stroke-width='1.3'/><text x='106.5' y='270.5' font-size='10' text-anchor='middle' fill='#374151'>4000</text><text x='166.9' y='270.5' font-size='10' text-anchor='middle' fill='#374151'>8000</text><text x='227.4' y='270.5' font-size='10' text-anchor='middle' fill='#374151'>12000</text><text x='287.8' y='270.5' font-size='10' text-anchor='middle' fill='#374151'>16000</text><text x='348.2' y='270.5' font-size='10' text-anchor='middle' fill='#374151'>20000</text><text x='42.1' y='217.9' font-size='10' text-anchor='end' fill='#374151'>4000</text><text x='42.1' y='175.3' font-size='10' text-anchor='end' fill='#374151'>8000</text><text x='42.1' y='132.8' font-size='10' text-anchor='end' fill='#374151'>12000</text><text x='42.1' y='90.2' font-size='10' text-anchor='end' fill='#374151'>16000</text><text x='42.1' y='47.6' font-size='10' text-anchor='end' fill='#374151'>20000</text><text x='384.0' y='252.5' font-size='11' text-anchor='end' font-style='italic'>x (niños)</text><text x='51.1' y='44.0' font-size='11' font-style='italic'>y (adultos)</text><polygon points='46.1,257.5 348.2,257.5 159.4,124.5 121.6,151.1' fill='#fcd34d' fill-opacity='0.55' stroke='none'/><line x1='34.0' y1='36.1' x2='360.3' y2='266.0' stroke='#b45309' stroke-width='2'/><text x='71.6' y='54.1' font-size='10' fill='#b45309' text-anchor='start'>x+y=20,000</text><line x1='40.0' y1='266.0' x2='204.7' y2='34.0' stroke='#2563eb' stroke-width='2'/><text x='193.2' y='52.2' font-size='10' fill='#2563eb' text-anchor='start'>y = 2x</text><line x1='34.0' y1='212.8' x2='287.8' y2='34.0' stroke='#16a34a' stroke-width='2'/><text x='257.4' y='46.9' font-size='10' fill='#16a34a' text-anchor='end'>y − x = 5000</text><text x='182.1' y='219.9' font-size='15' fill='#92400e' text-anchor='middle' font-weight='bold'>R</text><circle cx='46.1' cy='257.5' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='39.1' y='272.5' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>O</text><circle cx='348.2' cy='257.5' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='355.2' y='272.5' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>A</text><circle cx='159.4' cy='124.5' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='152.4' y='117.5' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>B</text><circle cx='121.6' cy='151.1' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='114.6' y='144.1' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>C</text></svg></div><p>La condición \\(x\\ge0\\) no aporta ningún lado<i class='n' data-t='why'>Si \\(y\\ge0\\) e \\(y\\le2x\\), entonces \\(x\\ge0\\).</i>.</p><p>Hallamos sus vértices:</p><ul><li>\\(O:\\;\\left\\{\\begin{array}{l}x=0\\\\y=0\\end{array}\\right.\\) \\(\\Rightarrow \\boxed{O(0,0)}\\)</li><li>\\(A:\\;\\left\\{\\begin{array}{l}x+y=20\\,000\\\\y=0\\end{array}\\right.\\) \\(\\Rightarrow x=20\\,000\\) \\(\\Rightarrow \\boxed{A(20\\,000,0)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}x+y=20\\,000\\\\-x+y=5000\\end{array}\\right.\\) \\(\\Rightarrow y=-x+20\\,000\\) \\(\\Rightarrow -x+(-x+20\\,000)=5000\\) \\(\\Rightarrow x=7500,\\ y=12\\,500\\) \\(\\Rightarrow \\boxed{B(7500,12\\,500)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}-2x+y=0\\\\-x+y=5000\\end{array}\\right.\\) \\(\\Rightarrow y=2x\\) \\(\\Rightarrow -x+(2x)=5000\\) \\(\\Rightarrow x=5000,\\ y=10\\,000\\) \\(\\Rightarrow \\boxed{C(5000,10\\,000)}\\)</li></ul><div class='res'>El recinto es el cuadrilátero de vértices \\(O(0,0)\\), \\(A(20\\,000,0)\\), \\(B(7500,12\\,500)\\) y \\(C(5000,10\\,000)\\)</div></div>"
+    },
+    {
+     "titulo": "Optimización",
+     "html": "<div class='ex'><p>La función \\(F\\) alcanza sus extremos en el recinto, en puntos de su frontera; evaluamos, por tanto, \\(F\\) en los vértices<i class='n' data-t='th'>Teorema fundamental de la programación lineal: si la región factible es un polígono convexo y acotado, la función objetivo alcanza su máximo y su mínimo en alguno de sus vértices.</i>:</p>\\[F(O)=F(0,0)=10\\cdot0+15\\cdot0=0\\]\\[F(A)=F(20\\,000,0)=10\\cdot20\\,000+15\\cdot0=200\\,000\\]\\[F(B)=F(7500,12\\,500)=10\\cdot7500+15\\cdot12\\,500=262\\,500\\]\\[F(C)=F(5000,10\\,000)=10\\cdot5000+15\\cdot10\\,000=200\\,000\\]<p>\\(F\\) alcanza un máximo en \\(B(7500,12\\,500)\\) de valor \\(262\\,500\\).</p><div class='res'>7500 niños y 12 500 adultos; los ingresos máximos son de 262 500 €</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "pl",
+     "tipo": "plan",
+     "apartados": ""
+    },
+    {
+     "tema": "pl",
+     "tipo": "reg",
+     "apartados": ""
+    },
+    {
+     "tema": "pl",
+     "tipo": "opt",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": "MAT_CCSS_2005_RESERVA_5.pdf",
+    "sha256": "5ad2c8dd12ce55195979871f1355e7664f469690c2f0d664d9d6f5cb8083d7cb",
+    "pagina": 2,
+    "opcion": "B",
+    "ejercicio_original": 1,
+    "parte": null,
+    "transcripcion": "texto del PDF"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador",
+   "revision_apartados": {
+    "": "borrador"
+   },
+   "dependencias": {},
+   "incidencias": [],
+   "relaciones": []
+  },
+  {
+   "id": "ccss-2005-reserva-5-b2",
+   "n": "B2",
+   "num": 2,
+   "bloque": "Opción B",
+   "puntos": "3",
+   "enunciado": {
+    "intro": "(3 puntos) Halle \\(f'(2)\\), \\(g'(4)\\) y \\(h'(0)\\) para las funciones definidas de la siguiente forma<br>\\(f(x)=x^2+\\dfrac{16}{x^2}\\); \\(g(x)=\\left(x^2+9\\right)^3\\); \\(h(x)=L\\left(x^2+1\\right)\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p><b>Función \\(f\\).</b> Escribimos \\(\\frac{16}{x^2}=16x^{-2}\\) y derivamos como una potencia:</p>\\[f'(x)=2x-32x^{-3}=2x-\\frac{32}{x^3}\\qquad f'(2)=4-\\frac{32}8=4-4=0\\]<p><b>Función \\(g\\).</b> Aplicamos la regla de la cadena<i class='n' data-t='th'>Regla de la cadena: \\(\\left([u(x)]^n\\right)'=n\\,[u(x)]^{n-1}\\cdot u'(x)\\).</i>:</p>\\[g'(x)=3(x^2+9)^2\\cdot2x=6x(x^2+9)^2\\]\\[g'(4)=24\\cdot25^2=24\\cdot625=15\\,000\\]<p><b>Función \\(h\\)</b> (\\(L\\) es el logaritmo neperiano)<i class='n' data-t='th'>\\(\\left(L\\,u(x)\\right)'=\\dfrac{u'(x)}{u(x)}\\).</i>:</p>\\[h'(x)=\\frac{2x}{x^2+1}\\qquad h'(0)=\\frac01=0\\]<div class='res'>\\(f'(2)=0\\), \\(g'(4)=15\\,000\\) y \\(h'(0)=0\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "deriv",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": "MAT_CCSS_2005_RESERVA_5.pdf",
+    "sha256": "5ad2c8dd12ce55195979871f1355e7664f469690c2f0d664d9d6f5cb8083d7cb",
+    "pagina": 2,
+    "opcion": "B",
+    "ejercicio_original": 2,
+    "parte": null,
+    "transcripcion": "texto del PDF"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador",
+   "revision_apartados": {
+    "": "borrador"
+   },
+   "dependencias": {},
+   "incidencias": [],
+   "relaciones": []
+  },
+  {
+   "id": "ccss-2005-reserva-5-b3-1",
+   "n": "B3-I",
+   "num": "3 · Parte I",
+   "bloque": "Opción B",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "Sean \\(A\\) y \\(B\\) dos sucesos independientes tales que \\(P(A)=0.4\\) y \\(P(A\\cap B)=0.05\\).",
+    "apartados": [
+     "(0.5 puntos) Calcule \\(P(B)\\).",
+     "(0.75 puntos) Calcule \\(P(A\\cap B^C)\\).",
+     "(0.75 puntos) Sabiendo que no ha sucedido \\(B\\), calcule la probabilidad de que suceda \\(A\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(A\\) y \\(B\\) son independientes si \\(P(A\\mid B)=P(A)\\), es decir, \\(P(A\\cap B)=P(A)\\cdot P(B)\\).</p><p>Sustituimos los datos y despejamos \\(P(B)\\):</p>\\[0{,}05=0{,}4\\cdot P(B)\\iff P(B)=\\frac{0{,}05}{0{,}4}=0{,}125\\]<div class='res'>\\(P(B)=0{,}125\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(A\\) es la unión disjunta de \\(A\\cap B\\) y \\(A\\cap B^c\\)<i class='n' data-t='why'>Un resultado de \\(A\\) o está también en \\(B\\) o no lo está, y no puede pasar las dos cosas a la vez.</i>:</p>\\[P(A\\cap B^c)=P(A)-P(A\\cap B)=0{,}4-0{,}05=0{,}35\\]<div class='res'>\\(P(A\\cap B^c)=0{,}35\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Nos piden \\(P(A\\mid B^c)\\)<i class='n' data-t='th'>Definición de probabilidad condicionada: \\(P(A\\mid B)=\\dfrac{P(A\\cap B)}{P(B)}\\).</i>:</p>\\[P(A\\mid B^c)=\\frac{P(A\\cap B^c)}{P(B^c)}=\\frac{0{,}35}{1-0{,}125}=\\frac{0{,}35}{0{,}875}=0{,}4\\]<i class='n' data-t='tp'>Es lógico: como \\(A\\) y \\(B\\) son independientes, también lo son \\(A\\) y \\(B^c\\), y \\(P(A\\mid B^c)=P(A)=0{,}4\\).</i><div class='res'>\\(P(A\\mid B^c)=0{,}4\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "prob",
+     "tipo": "suc",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "prob",
+     "tipo": "cond",
+     "apartados": "c"
+    }
+   ],
+   "origen": {
+    "documento": "MAT_CCSS_2005_RESERVA_5.pdf",
+    "sha256": "5ad2c8dd12ce55195979871f1355e7664f469690c2f0d664d9d6f5cb8083d7cb",
+    "pagina": 2,
+    "opcion": "B",
+    "ejercicio_original": 3,
+    "parte": "I",
+    "transcripcion": "texto del PDF"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador",
+   "revision_apartados": {
+    "a": "borrador",
+    "b": "borrador",
+    "c": "borrador"
+   },
+   "dependencias": {},
+   "incidencias": [],
+   "relaciones": []
+  },
+  {
+   "id": "ccss-2005-reserva-5-b3-2",
+   "n": "B3-II",
+   "num": "3 · Parte II",
+   "bloque": "Opción B",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "El índice de resistencia a la rotura, expresado en kg, de un determinado tipo de cuerda sigue una distribución Normal con desviación típica 15.6 kg. Con una muestra de 5 de estas cuerdas, seleccionadas al azar, se obtuvieron los siguientes índices:<br>280, 240, 270, 285, 270.",
+    "apartados": [
+     "(1 punto) Obtenga un intervalo de confianza para la media del índice de resistencia a la rotura de este tipo de cuerdas, utilizando un nivel de confianza del 95 %.",
+     "(1 punto) Si, con el mismo nivel de confianza, se desea obtener un error máximo en la estimación de la media de 5 kg, ¿será suficiente con elegir una muestra de 30 cuerdas?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento (teoría)",
+     "html": "<div class='ex'><p>Sea \\(X\\) la variable aleatoria «índice de resistencia a la rotura, en kg, de una cuerda». Según el enunciado, \\(X\\) sigue una distribución normal de media \\(\\mu\\) desconocida y desviación típica \\(\\sigma=15{,}6\\):</p>\\[X\\sim N\\left(\\mu,\\ 15{,}6\\right)\\]<p>Tomamos muestras aleatorias simples de tamaño \\(n=5\\) y estudiamos la media muestral \\(\\bar X\\). Aunque \\(n=5\\lt30\\), como la población es normal, la media muestral sigue una distribución normal con la misma media que la población y desviación típica \\(\\dfrac\\sigma{\\sqrt n}\\)<i class='n' data-t='th'>Teorema central del límite: si una población tiene media \\(\\mu\\) y desviación típica \\(\\sigma\\), la media de las muestras de tamaño \\(n\\) se distribuye \\(N\\left(\\mu,\\frac\\sigma{\\sqrt n}\\right)\\), exactamente si la población es normal y de forma aproximada si \\(n\\ge30\\).</i>:</p>\\[\\bar X\\sim N\\left(\\mu,\\ \\frac{\\sigma}{\\sqrt n}\\right)\\]<p>Si tipificamos, obtenemos una normal estándar, \\(Z=\\dfrac{\\bar X-\\mu}{\\sigma/\\sqrt n}\\sim N(0,1)\\). Para un nivel de confianza \\(1-\\alpha\\) buscamos el valor crítico \\(z_{1-\\alpha/2}\\) que deja entre \\(-z_{1-\\alpha/2}\\) y \\(z_{1-\\alpha/2}\\) una probabilidad \\(1-\\alpha\\). Despejando \\(\\mu\\) se obtiene el intervalo de confianza para la media poblacional:</p>\\[IC_{1-\\alpha}(\\mu)=(\\bar x-E,\\ \\bar x+E)\\]\\[E=z_{1-\\alpha/2}\\cdot\\frac\\sigma{\\sqrt n}\\]<p>donde \\(\\bar x\\) es la media de nuestra muestra y \\(E\\) es el error máximo de la estimación.</p></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Primero calculamos la media de los 5 datos de la muestra<i class='n' data-t='tp'>El intervalo se centra en la media de la muestra, así que hay que calcularla antes.</i>:</p>\\[\\bar x=\\frac{\\sum x_i}{n}=\\frac{280+240+270+285+270}{5}=\\frac{1345}{5}=269\\]<p>Nivel de confianza: \\(1-\\alpha=0{,}95\\), luego \\(\\alpha=0{,}05\\) y \\(\\dfrac\\alpha2=0{,}025\\).</p>\\[P\\left(Z\\lt z_{1-\\alpha/2}\\right)=1-\\frac\\alpha2\\]\\[P\\left(Z\\lt z_{1-\\alpha/2}\\right)=1-0{,}025=0{,}975\\]<p>Busco \\(0{,}975\\) en el interior de la tabla \\(N(0,1)\\)<i class='n' data-t='why'>El intervalo deja \\(\\frac\\alpha2\\) en cada cola, así que a la izquierda de \\(z_{1-\\alpha/2}\\) queda \\(1-\\frac\\alpha2\\).</i>: \\(P(Z\\lt1{,}96)=0{,}975\\):</p>\\[\\Rightarrow\\ z_{1-\\alpha/2}=1{,}96\\]<div style='overflow-x:auto'><svg viewBox='0 0 320 170' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='8.0,135.0 8.0,134.9 9.2,134.9 10.5,134.9 11.7,134.9 12.9,134.9 14.1,134.8 15.4,134.8 16.6,134.8 17.8,134.8 19.0,134.8 20.3,134.7 21.5,134.7 22.7,134.7 23.9,134.6 25.2,134.6 26.4,134.5 27.6,134.5 28.9,134.4 30.1,134.4 31.3,134.3 32.5,134.3 33.8,134.2 35.0,134.1 36.2,134.0 37.4,133.9 38.7,133.8 39.9,133.7 41.1,133.6 42.3,133.4 43.6,133.3 44.8,133.1 46.0,132.9 47.3,132.7 48.5,132.5 49.7,132.3 50.9,132.1 52.2,131.8 53.4,131.6 54.6,131.3 55.8,131.0 57.1,130.6 58.3,130.3 59.5,129.9 60.7,129.5 62.0,129.1 63.2,128.6 64.4,128.1 65.7,127.6 66.9,127.0 68.1,126.4 69.3,125.8 70.6,125.2 71.8,124.5 73.0,123.8 74.2,123.0 75.5,122.2 76.7,121.3 77.9,120.4 79.1,119.5 80.4,118.5 81.6,117.5 81.6,135.0' fill='#e8487a' fill-opacity='.28' stroke='none'/><polygon points='238.4,135.0 238.4,117.5 239.6,118.5 240.9,119.5 242.1,120.4 243.3,121.3 244.5,122.2 245.8,123.0 247.0,123.8 248.2,124.5 249.4,125.2 250.7,125.8 251.9,126.4 253.1,127.0 254.3,127.6 255.6,128.1 256.8,128.6 258.0,129.1 259.3,129.5 260.5,129.9 261.7,130.3 262.9,130.6 264.2,131.0 265.4,131.3 266.6,131.6 267.8,131.8 269.1,132.1 270.3,132.3 271.5,132.5 272.7,132.7 274.0,132.9 275.2,133.1 276.4,133.3 277.7,133.4 278.9,133.6 280.1,133.7 281.3,133.8 282.6,133.9 283.8,134.0 285.0,134.1 286.2,134.2 287.5,134.3 288.7,134.3 289.9,134.4 291.1,134.4 292.4,134.5 293.6,134.5 294.8,134.6 296.1,134.6 297.3,134.7 298.5,134.7 299.7,134.7 301.0,134.8 302.2,134.8 303.4,134.8 304.6,134.8 305.9,134.8 307.1,134.9 308.3,134.9 309.5,134.9 310.8,134.9 312.0,134.9 312.0,135.0' fill='#e8487a' fill-opacity='.28' stroke='none'/><polygon points='81.6,135.0 81.6,117.5 84.2,115.1 86.8,112.5 89.4,109.7 92.1,106.7 94.7,103.5 97.3,100.0 99.9,96.3 102.5,92.4 105.1,88.3 107.7,84.0 110.3,79.6 113.0,75.1 115.6,70.4 118.2,65.7 120.8,61.0 123.4,56.2 126.0,51.6 128.6,47.0 131.3,42.6 133.9,38.3 136.5,34.3 139.1,30.6 141.7,27.2 144.3,24.2 146.9,21.5 149.5,19.3 152.2,17.6 154.8,16.3 157.4,15.6 160.0,15.3 162.6,15.6 165.2,16.3 167.8,17.6 170.5,19.3 173.1,21.5 175.7,24.2 178.3,27.2 180.9,30.6 183.5,34.3 186.1,38.3 188.7,42.6 191.4,47.0 194.0,51.6 196.6,56.2 199.2,61.0 201.8,65.7 204.4,70.4 207.0,75.1 209.7,79.6 212.3,84.0 214.9,88.3 217.5,92.4 220.1,96.3 222.7,100.0 225.3,103.5 227.9,106.7 230.6,109.7 233.2,112.5 235.8,115.1 238.4,117.5 238.4,135.0' fill='#6d4ae0' fill-opacity='.35' stroke='none'/><polyline points='8.0,134.9 10.5,134.9 13.1,134.9 15.6,134.8 18.1,134.8 20.7,134.7 23.2,134.7 25.7,134.6 28.3,134.5 30.8,134.4 33.3,134.2 35.9,134.0 38.4,133.8 40.9,133.6 43.5,133.3 46.0,132.9 48.5,132.5 51.1,132.1 53.6,131.5 56.1,130.9 58.7,130.2 61.2,129.3 63.7,128.4 66.3,127.3 68.8,126.1 71.3,124.7 73.9,123.2 76.4,121.5 78.9,119.6 81.5,117.6 84.0,115.3 86.5,112.8 89.1,110.2 91.6,107.3 94.1,104.2 96.7,100.8 99.2,97.3 101.7,93.6 104.3,89.7 106.8,85.6 109.3,81.3 111.9,77.0 114.4,72.5 116.9,68.0 119.5,63.4 122.0,58.8 124.5,54.2 127.1,49.7 129.6,45.3 132.1,41.1 134.7,37.1 137.2,33.3 139.7,29.7 142.3,26.5 144.8,23.7 147.3,21.2 149.9,19.1 152.4,17.5 154.9,16.3 157.5,15.6 160.0,15.3 162.5,15.6 165.1,16.3 167.6,17.5 170.1,19.1 172.7,21.2 175.2,23.7 177.7,26.5 180.3,29.7 182.8,33.3 185.3,37.1 187.9,41.1 190.4,45.3 192.9,49.7 195.5,54.2 198.0,58.8 200.5,63.4 203.1,68.0 205.6,72.5 208.1,77.0 210.7,81.3 213.2,85.6 215.7,89.7 218.3,93.6 220.8,97.3 223.3,100.8 225.9,104.2 228.4,107.3 230.9,110.2 233.5,112.8 236.0,115.3 238.5,117.6 241.1,119.6 243.6,121.5 246.1,123.2 248.7,124.7 251.2,126.1 253.7,127.3 256.3,128.4 258.8,129.3 261.3,130.2 263.9,130.9 266.4,131.5 268.9,132.1 271.5,132.5 274.0,132.9 276.5,133.3 279.1,133.6 281.6,133.8 284.1,134.0 286.7,134.2 289.2,134.4 291.7,134.5 294.3,134.6 296.8,134.7 299.3,134.7 301.9,134.8 304.4,134.8 306.9,134.9 309.5,134.9 312.0,134.9' fill='none' stroke='#2f6df0' stroke-width='2'/><line x1='4.0' y1='135.0' x2='316.0' y2='135.0' stroke='currentColor' stroke-width='1.2'/><line x1='81.6' y1='139.0' x2='81.6' y2='117.5' stroke='#6d4ae0' stroke-width='1.4' stroke-dasharray='3 2'/><text x='81.6' y='152.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>−z<tspan font-size='8' dy='3'>1−α/2</tspan></text><line x1='238.4' y1='139.0' x2='238.4' y2='117.5' stroke='#6d4ae0' stroke-width='1.4' stroke-dasharray='3 2'/><text x='238.4' y='152.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>z<tspan font-size='8' dy='3'>1−α/2</tspan></text><text x='238.4' y='165.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>= 1,96</text><text x='160.0' y='87.0' text-anchor='middle' font-size='12' font-weight='700'>1 − α = 0,95</text><line x1='71.6' y1='130.3' x2='36.0' y2='105.0' stroke='#c2185b' stroke-width='1'/><text x='8.0' y='102.0' text-anchor='start' font-size='10' fill='#c2185b'>α/2 = 0,025</text><line x1='248.4' y1='130.3' x2='284.0' y2='105.0' stroke='#c2185b' stroke-width='1'/><text x='312.0' y='102.0' text-anchor='end' font-size='10' fill='#c2185b'>α/2 = 0,025</text><text x='160.0' y='148.0' text-anchor='middle' font-size='9.5'>0</text></svg></div><p>Calculamos el error máximo con \\(\\sigma=15{,}6\\) y \\(n=5\\):</p>\\[E=z_{1-\\alpha/2}\\cdot\\frac\\sigma{\\sqrt n}=1{,}96\\cdot\\frac{15{,}6}{\\sqrt{5}}\\]\\[E=1{,}96\\cdot6{,}9765=13{,}6739\\]<p>Los extremos del intervalo son la media muestral menos y más el error:</p>\\[\\bar x-E=269-13{,}6739=255{,}3261\\]\\[\\bar x+E=269+13{,}6739=282{,}6739\\]<div class='res'>\\(IC_{0{,}95}(\\mu)=(255{,}3261;\\ 282{,}6739)\\) kg</div><p><b>Conclusión:</b> podemos afirmar, con un nivel de confianza del 95 %, que la media del índice de resistencia a la rotura de este tipo de cuerdas se encuentra entre 255,3261 y 282,6739 kg.</p></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Con el mismo nivel de confianza, \\(z_{1-\\alpha/2}=1{,}96\\). Calculamos el error con \\(n=30\\):</p>\\[E=1{,}96\\cdot\\frac{15{,}6}{\\sqrt{30}}\\]\\[E=1{,}96\\cdot2{,}8482=5{,}5825\\]<p>Es mayor que 5 kg, así que 30 cuerdas no bastan<i class='n' data-t='why'>El error disminuye al aumentar \\(n\\): para bajar de 5,5825 a 5 kg hace falta una muestra mayor.</i>. Veamos cuántas harían falta:</p>\\[1{,}96\\cdot\\frac{15{,}6}{\\sqrt n}\\le5\\iff\\sqrt n\\ge\\frac{1{,}96\\cdot15{,}6}{5}=6{,}1152\\iff n\\ge37{,}3957\\]<div class='res'>No es suficiente: con 30 cuerdas el error sería de 5,5825 kg; hacen falta al menos 38 cuerdas</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "inf",
+     "tipo": "ic",
+     "apartados": "a"
+    },
+    {
+     "tema": "inf",
+     "tipo": "tam",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT_CCSS_2005_RESERVA_5.pdf",
+    "sha256": "5ad2c8dd12ce55195979871f1355e7664f469690c2f0d664d9d6f5cb8083d7cb",
+    "pagina": 2,
+    "opcion": "B",
+    "ejercicio_original": 3,
+    "parte": "II",
+    "transcripcion": "texto del PDF"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador",
+   "revision_apartados": {
+    "a": "borrador",
+    "b": "borrador"
+   },
+   "dependencias": {
+    "a": [
+     "tabla_N01_oficial"
+    ],
+    "b": [
+     "tabla_N01_oficial"
+    ]
+   },
+   "incidencias": [],
+   "relaciones": []
+  }
+ ]
+}

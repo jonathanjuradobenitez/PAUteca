@@ -1,0 +1,275 @@
+{
+ "version": 1,
+ "id": "matematicas-2027-modelo",
+ "asignatura": "matematicas",
+ "anio": 2027,
+ "convocatoria": "Modelo",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2027-modelo-1",
+   "n": 1,
+   "bloque": "obligatorio",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "En un club deportivo, el 55 % de los socios practica natación, el 65 % practica tenis, y el 10 % no practica ni natación ni tenis.",
+    "apartados": [
+     "(1 p.) Si el club tiene 1200 socios, ¿cuántos practicarían ambos deportes?",
+     "(1 p.) Tomando al azar una persona de este club que practique natación, calcula la probabilidad de que no juegue al tenis."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Sean \\(N\\) «natación» y \\(T\\) «tenis»: \\(P(N)=0{,}55\\), \\(P(T)=0{,}65\\), \\(P(\\bar N\\cap\\bar T)=0{,}1\\Rightarrow P(N\\cup T)=0{,}9\\). Por la fórmula de la unión:</p>\\[P(N\\cap T)=0{,}55+0{,}65-0{,}9=0{,}30\\]<div class='res'>\\(0{,}30\\cdot1200=360\\) socios practican ambos deportes</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(P(N\\cap\\bar T)=P(N)-P(N\\cap T)=0{,}55-0{,}30=0{,}25\\). Probabilidad condicionada:</p>\\[P(\\bar T\\mid N)=\\frac{P(N\\cap\\bar T)}{P(N)}=\\frac{0{,}25}{0{,}55}\\]<div class='res'>\\(\\dfrac5{11}\\approx0{,}4545\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "prob",
+     "tipo": "suc",
+     "apartados": "a"
+    },
+    {
+     "tema": "prob",
+     "tipo": "cond",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2027-modelo-2",
+   "n": 2,
+   "bloque": "obligatorio",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "Halla cada uno de los puntos de la recta \\(r\\equiv\\begin{cases}2x-y=0\\\\y-z=0\\end{cases}\\) para los que, junto a los puntos \\(A(1,2,0)\\), \\(B(2,0,1)\\) y \\(C(0,2,1)\\), formen un tetraedro de volumen \\(\\frac23\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>De \\(2x-y=0\\) y \\(y-z=0\\): \\(y=2x\\), \\(z=y=2x\\). Con \\(x=t\\):</p>\\[r\\equiv(t,\\ 2t,\\ 2t),\\qquad X(t,2t,2t)\\]<p>El volumen del tetraedro \\(A,B,C,X\\) es un sexto del valor absoluto del producto mixto<i class='n' data-t='th'>Volumen del tetraedro \\(=\\frac16\\bigl|[\\overrightarrow{AB},\\overrightarrow{AC},\\overrightarrow{AX}]\\bigr|\\).</i>. Con \\(\\overrightarrow{AB}=(1,-2,1)\\), \\(\\overrightarrow{AC}=(-1,0,1)\\) y \\(\\overrightarrow{AX}=(t-1,\\,2t-2,\\,2t)\\):</p>\\[\\begin{vmatrix}1&-2&1\\\\-1&0&1\\\\t-1&2t-2&2t\\end{vmatrix}=-(2t-2)+2(-2t-t+1)+(-2t+2)=6-10t\\]\\[\\frac16|6-10t|=\\frac23\\iff|6-10t|=4\\]</div>"
+    },
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>\\(6-10t=4\\Rightarrow t=\\frac15\\); \\(6-10t=-4\\Rightarrow t=1\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 340 270' width='100%' style='max-width:440px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><defs><marker id='m27n' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#dc2626'/></marker><marker id='m27d' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#16a34a'/></marker><marker id='m27r' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#2563eb'/></marker><marker id='m27a' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#64748b'/></marker></defs><polygon points='217.2,62.7 299.1,132.6 122.8,176.6 40.9,106.7' fill='#8b5cf6' fill-opacity='.28' stroke='#7c3aed' stroke-width='1.3'/><line x1='167.3' y1='158.4' x2='260.1' y2='135.2' stroke='#2563eb' stroke-width='2.2'/><line x1='260.1' y1='135.2' x2='124.3' y2='121.6' stroke='#2563eb' stroke-width='2.2'/><line x1='124.3' y1='121.6' x2='167.3' y2='158.4' stroke='#2563eb' stroke-width='2.2'/><line x1='175.0' y1='220.0' x2='165.3' y2='26.0' stroke='#2563eb' stroke-width='2.2'/><line x1='172.7' y1='173.2' x2='181.8' y2='137.4' stroke='#64748b' stroke-width='1.4' stroke-dasharray='4 3'/><line x1='167.3' y1='66.1' x2='158.2' y2='101.9' stroke='#64748b' stroke-width='1.4' stroke-dasharray='4 3'/><circle cx='167.3' cy='158.4' r='3.8' fill='#e8487a'/><text x='153.3' y='152.4' font-weight='700'>A</text><circle cx='260.1' cy='135.2' r='3.8' fill='#e8487a'/><text x='268.1' y='147.2' font-weight='700'>B</text><circle cx='124.3' cy='121.6' r='3.8' fill='#e8487a'/><text x='132.3' y='115.6' font-weight='700'>C</text><circle cx='172.7' cy='173.2' r='3.8' fill='#e8487a'/><text x='180.7' y='185.2' font-weight='700'>X₁</text><circle cx='167.3' cy='66.1' r='3.8' fill='#e8487a'/><text x='175.3' y='60.1' font-weight='700'>X₂</text><text x='171.3' y='22.0' fill='#2563eb' font-weight='700' font-style='italic'>r</text><g stroke='#64748b' stroke-width='1.2' fill='none'><line x1='30' y1='224' x2='49.1' y2='219.9'/><line x1='30' y1='224' x2='19.0' y2='216.9'/><line x1='30' y1='224' x2='30.0' y2='203.6'/></g><g fill='#64748b' font-size='10'><text x='52.1' y='222.6'>x</text><text x='12.5' y='218.6'>y</text><text x='27.0' y='201.1'>z</text></g><g transform='translate(10.0,258)'><rect x='0' y='-8' width='12' height='9' fill='#8b5cf6' fill-opacity='.4' stroke='#7c3aed'/><text x='18' y='0' font-size='10'>plano</text></g><g transform='translate(63.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#2563eb' stroke-width='2'/><text x='18' y='0' font-size='10'>recta</text></g><g transform='translate(116.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#dc2626' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector normal</text></g><g transform='translate(212.2,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#16a34a' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector director</text></g><g transform='translate(319.2,258)'><circle cx='6' cy='-4' r='3.8' fill='#e8487a'/><text x='18' y='0' font-size='10'>puntos</text></g></svg></div><div class='res'>\\(X_1\\left(\\dfrac15,\\dfrac25,\\dfrac25\\right)\\) y \\(X_2(1,2,2)\\)</div><i class='n' data-t='tp'>El plano \\(ABC\\) es \\(x+y+z=3\\) y \\(r\\) lo corta en \\(t=\\frac35\\). Los dos puntos están a lados opuestos del plano y a la misma distancia \\(\\frac2{\\sqrt3}\\): Área\\((ABC)=\\sqrt3\\) y \\(V=\\frac13\\sqrt3\\cdot\\frac2{\\sqrt3}=\\frac23\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "area",
+     "apartados": ""
+    },
+    {
+     "tema": "geom",
+     "tipo": "ecs",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2027-modelo-3",
+   "n": 3,
+   "bloque": "obligatorio",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "Calcula \\(a\\) y \\(b\\) sabiendo que \\[\\lim_{x\\to0}\\frac{ax^2+bx+1-e^{2x}}{\\operatorname{sen}(x^2)}=1\\]",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Indeterminación y primera aplicación de L'Hôpital",
+     "html": "<div class='ex'><p>Con \\(N(x)=ax^2+bx+1-e^{2x}\\) y \\(D(x)=\\operatorname{sen}(x^2)\\): \\(N(0)=0\\) y \\(D(0)=0\\): indeterminación \\(\\tfrac00\\). Aplico L'Hôpital<i class='n' data-t='th'>Regla de L'Hôpital: si \\(N(x_0)=D(x_0)=0\\) y existe \\(\\lim\\frac{N'}{D'}\\) (finito o infinito), entonces \\(\\lim\\frac ND=\\lim\\frac{N'}{D'}\\).</i>:</p>\\[N'(x)=2ax+b-2e^{2x}\\qquad D'(x)=2x\\cos(x^2)\\qquad N'(0)=b-2,\\ D'(0)=0\\]<p>Si \\(b\\neq2\\), el cociente \\(\\frac{N'}{D'}\\) tendría límite infinito y el límite no sería 1. Luego \\(b=2\\).<i class='n' data-t='why'>El límite original es finito (1). Si tras L'Hôpital el numerador tendiera a un número distinto de 0 y el denominador a 0, el límite sería \\(\\pm\\infty\\). Por eso hace falta \\(N'(0)=0\\).</i></p></div>"
+    },
+    {
+     "titulo": "Segunda aplicación: valor de \\(a\\)",
+     "html": "<div class='ex'><p>Con \\(b=2\\), \\(N'(0)=0\\) y \\(D'(0)=0\\): otra vez \\(\\tfrac00\\). Segunda aplicación:</p>\\[N''(x)=2a-4e^{2x}\\qquad D''(x)=2\\cos(x^2)-4x^2\\operatorname{sen}(x^2)\\qquad\\lim_{x\\to0}\\frac{N''}{D''}=\\frac{2a-4}2=a-2\\]<p>\\(a-2=1\\Rightarrow a=3\\).</p><div class='res'>\\(a=3\\) y \\(b=2\\)</div><i class='n' data-t='tp'>Comprobación con desarrollos: \\(3x^2+2x+1-e^{2x}\\approx3x^2-2x^2=x^2\\), y \\(\\operatorname{sen}x^2\\approx x^2\\): el cociente tiende a 1 ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "lim",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2027-modelo-4-1",
+   "n": "4.1",
+   "bloque": "optativo 1",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "Sean las matrices \\(A=\\begin{pmatrix}a&3\\\\b&1\\end{pmatrix}\\) y \\(B=\\begin{pmatrix}1&1\\\\-1&2\\\\1&1\\end{pmatrix}\\).",
+    "apartados": [
+     "(1,25 p.) Determina \\(a\\) y \\(b\\) para que \\(A^2=4I\\), donde \\(I\\) es la matriz identidad de orden 2.",
+     "(0,75 p.) Para \\(a=-1\\) y \\(b=1\\), calcula, si es posible, la matriz \\(X\\) que cumple \\(A^2X=B^t\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Calculo \\(A^2\\) e igualo a \\(4I\\) elemento a elemento<i class='n' data-t='th'>Dos matrices son iguales si lo son todos sus elementos: cada posición da una ecuación.</i>:</p>\\[A^2=\\begin{pmatrix}a&3\\\\b&1\\end{pmatrix}\\begin{pmatrix}a&3\\\\b&1\\end{pmatrix}=\\begin{pmatrix}a^2+3b&3a+3\\\\ab+b&3b+1\\end{pmatrix}=\\begin{pmatrix}4&0\\\\0&4\\end{pmatrix}\\]\\[\\begin{cases}a^2+3b=4\\\\3a+3=0\\\\ab+b=0\\\\3b+1=4\\end{cases}\\Rightarrow a=-1,\\ b=1\\]<p>(comprobación: \\(a^2+3b=1+3=4\\) ✓ y \\(ab+b=-1+1=0\\) ✓).</p><div class='res'>\\(a=-1\\) y \\(b=1\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Con \\(a=-1\\), \\(b=1\\): \\(A^2=4I\\), con \\(|A^2|=16\\neq0\\): existe \\((A^2)^{-1}=\\frac14I\\). Despejo \\(X\\) multiplicando por la izquierda:</p>\\[X=(A^2)^{-1}B^t=\\frac14\\,B^t=\\frac14\\begin{pmatrix}1&-1&1\\\\1&2&1\\end{pmatrix}\\]<div class='res'>\\(X=\\begin{pmatrix}\\frac14&-\\frac14&\\frac14\\\\\\frac14&\\frac12&\\frac14\\end{pmatrix}\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "ecmat",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2027-modelo-4-2",
+   "n": "4.2",
+   "bloque": "optativo 1",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "En una empresa se fabrican tres tipos de productos plásticos: botellas, garrafas y bidones. Se utiliza como materia prima 10 kg de polietileno cada hora. Se sabe que para fabricar cada botella se necesitan 50 gramos, para cada garrafa 100 gramos y 1 kg para cada bidón. El gerente también nos dice que se debe producir el doble de botellas que de garrafas. Por último, se sabe que por motivos de capacidad de trabajo, en las máquinas se producen en total 52 productos cada hora. ¿Cuántas botellas, garrafas y bidones se producen cada hora?",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>Sean \\(b\\), \\(g\\), \\(d\\) las botellas, garrafas y bidones por hora (polietileno en kg):</p>\\[\\begin{cases}0{,}05b+0{,}1g+d=10\\\\b=2g\\\\b+g+d=52\\end{cases}\\iff\\begin{cases}0{,}05b+0{,}1g+d=10\\\\b-2g=0\\\\b+g+d=52\\end{cases}\\]<p>\\(\\begin{vmatrix}0{,}05&0{,}1&1\\\\1&-2&0\\\\1&1&1\\end{vmatrix}=2{,}8\\neq0\\): por Rouché-Frobenius<i class='n' data-t='th'>Si \\(|M|\\neq0\\), el sistema \\(3\\times3\\) es compatible determinado.</i> la solución es única.</p></div>"
+    },
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>Con \\(b=2g\\): primera ecuación \\(0{,}2g+d=10\\Rightarrow d=10-0{,}2g\\); tercera: \\(3g+d=52\\Rightarrow3g+10-0{,}2g=52\\Rightarrow2{,}8g=42\\Rightarrow g=15\\). Entonces \\(b=30\\) y \\(d=7\\).</p><div class='res'>30 botellas, 15 garrafas y 7 bidones cada hora</div><i class='n' data-t='tp'>Comprobación: \\(30\\cdot0{,}05+15\\cdot0{,}1+7\\cdot1=1{,}5+1{,}5+7=10\\) kg ✓ y \\(30+15+7=52\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "sistemas",
+     "tipo": "plan",
+     "apartados": ""
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2027-modelo-5-1",
+   "n": "5.1",
+   "bloque": "optativo 2",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "Considera la función \\(f:(-\\pi,\\pi)\\to\\mathbb R\\) dada por \\(f(x)=\\dfrac{\\operatorname{sen}(x)}{\\sqrt{1+\\cos(x)}}\\).",
+    "apartados": [
+     "(1,5 p.) Calcula \\(\\displaystyle\\int_0^\\pi f(x)\\,dx\\).",
+     "(0,5 p.) Estudia la simetría de la función \\(f\\) y deduce de ella el valor de \\(\\displaystyle\\int_{-\\pi}^\\pi f(x)\\,dx\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Cambio de variable \\(u=1+\\cos x\\), \\(du=-\\operatorname{sen}x\\,dx\\):</p>\\[\\int\\frac{\\operatorname{sen}x}{\\sqrt{1+\\cos x}}\\,dx=-\\int u^{-1/2}\\,du=-2\\sqrt u=-2\\sqrt{1+\\cos x}\\]<p>Regla de Barrow<i class='n' data-t='th'>Regla de Barrow: \\(\\int_a^bf=F(b)-F(a)\\). El extremo \\(x=\\pi\\) no está en el dominio abierto, pero \\(f\\) tiene límite finito allí (\\(f(x)=\\sqrt2\\operatorname{sen}\\frac x2\\) para \\(x\\in(-\\pi,\\pi)\\)), así que la integral converge.</i>:</p>\\[\\int_0^\\pi f(x)\\,dx=\\bigl[-2\\sqrt{1+\\cos x}\\bigr]_0^\\pi=-2\\sqrt0+2\\sqrt2\\]<div class='res'>\\(\\displaystyle\\int_0^\\pi f(x)\\,dx=2\\sqrt2\\approx2{,}828\\)</div><i class='n' data-t='tp'>Comprobación: \\(1+\\cos x=2\\cos^2\\frac x2\\) y \\(\\operatorname{sen}x=2\\operatorname{sen}\\frac x2\\cos\\frac x2\\), luego \\(f(x)=\\sqrt2\\operatorname{sen}\\frac x2\\) y \\(\\int_0^\\pi\\sqrt2\\operatorname{sen}\\frac x2\\,dx=\\sqrt2\\cdot2=2\\sqrt2\\) ✓.</i></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>El dominio \\((-\\pi,\\pi)\\) es simétrico y \\(f(-x)=\\dfrac{-\\operatorname{sen}x}{\\sqrt{1+\\cos x}}=-f(x)\\): \\(f\\) es <b>impar</b>. La integral de una función impar en un intervalo simétrico es 0:</p><div class='res'>\\(\\displaystyle\\int_{-\\pi}^\\pi f(x)\\,dx=0\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "cambio",
+     "apartados": "a"
+    },
+    {
+     "tema": "integ",
+     "tipo": "def",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2027-modelo-5-2",
+   "n": "5.2",
+   "bloque": "optativo 2",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "Sea \\(f:[0,3]\\to\\mathbb R\\) la función definida por \\[f(x)=\\begin{cases}x^2-2x+5&\\text{si }0\\le x\\le2,\\\\x^2+1&\\text{si }2\\lt x\\le3.\\end{cases}\\] Halla los extremos absolutos de \\(f\\) (abscisas donde se obtienen y valores que se alcanzan).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Continuidad y derivabilidad",
+     "html": "<div class='ex'><p>\\(f\\) es continua en \\(x=2\\): \\(2^2-2\\cdot2+5=5\\) y \\(2^2+1=5\\). Derivadas laterales en \\(x=2\\): \\(f'(2^-)=2\\cdot2-2=2\\) y \\(f'(2^+)=2\\cdot2=4\\): no coinciden, \\(f\\) no es derivable en \\(x=2\\) (punto anguloso).</p><p>Puntos candidatos a extremo absoluto<i class='n' data-t='th'>Teorema de Weierstrass: una función continua en un intervalo cerrado alcanza máximo y mínimo absolutos, en puntos críticos (\\(f'=0\\)), puntos donde no es derivable o en los extremos del intervalo.</i>: \\(f'(x)=2x-2=0\\iff x=1\\) (en \\([0,2)\\)); \\(x=2\\) (no derivable); y los extremos \\(x=0\\), \\(x=3\\).</p></div>"
+    },
+    {
+     "titulo": "Comparación de valores",
+     "html": "<div class='ex'><table class='tb'><tr><th>\\(x\\)</th><th>0</th><th>1</th><th>2</th><th>3</th></tr><tr><td>\\(f(x)\\)</td><td>5</td><td>4</td><td>5</td><td>10</td></tr></table><p>Además \\(f'(x)=2x\\gt0\\) en \\((2,3]\\): \\(f\\) crece hasta \\(x=3\\).</p><div class='res'>Máximo absoluto en \\(x=3\\), de valor 10. Mínimo absoluto en \\(x=1\\), de valor 4</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

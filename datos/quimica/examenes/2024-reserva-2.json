@@ -1,0 +1,556 @@
+{
+ "version": 1,
+ "id": "quimica-2024-reserva-2",
+ "asignatura": "quimica",
+ "anio": 2024,
+ "convocatoria": "Reserva 2",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "quimica-2024-reserva-2-a1",
+   "n": "A1",
+   "bloque": "A · Formulación",
+   "puntos": "1,5",
+   "enunciado": {
+    "intro": "Formule o nombre los siguientes compuestos:",
+    "apartados": [
+     "Óxido de platino(IV)",
+     "Perclorato de potasio",
+     "Nitrobenceno",
+     "\\(\\mathrm{HIO_{3}}\\)",
+     "\\(\\mathrm{HgSO_{3}}\\)",
+     "\\(\\mathrm{CH_{3}COCH_{2}CH_{2}CH_{3}}\\)"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Platino(IV): \\(\\mathrm{Pt^{4+}}\\); óxido: \\(\\mathrm{O^{2-}}\\). Para compensar, dos óxidos por cada platino.</p><div class='res'>\\(\\mathrm{PtO_{2}}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(\\mathrm{K^+}\\) y perclorato \\(\\mathrm{ClO_{4}^-}\\): proporción 1 : 1.</p><div class='res'>\\(\\mathrm{KClO_{4}}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Anillo de benceno con un grupo nitro (–NO₂).</p><div class='res'>\\(\\mathrm{C_{6}H_{5}NO_{2}}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado d",
+     "html": "<div class='ex'><p>Oxoácido del yodo: \\(+1+x-6=0\\Rightarrow x=+5\\). Para el estado de oxidación \\(+5\\) se usa la terminación -ico.</p><div class='res'>Ácido yódico</div></div>"
+    },
+    {
+     "titulo": "Apartado e",
+     "html": "<div class='ex'><p>Sulfito \\(\\mathrm{SO_{3}^{2-}}\\) con un solo catión: el mercurio actúa con \\(+2\\).</p><div class='res'>Sulfito de mercurio(II)</div></div>"
+    },
+    {
+     "titulo": "Apartado f",
+     "html": "<div class='ex'><p>Cadena de 5 carbonos con un grupo carbonilo (C=O) en el C2: cetona.</p><div class='res'>Pentan-2-ona</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "form",
+     "tipo": "inorg",
+     "apartados": "a, b, d, e"
+    },
+    {
+     "tema": "form",
+     "tipo": "orgf",
+     "apartados": "c, f"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "quimica-2024-reserva-2-a2",
+   "n": "A2",
+   "bloque": "A · Formulación",
+   "puntos": "1,5",
+   "enunciado": {
+    "intro": "Formule o nombre los siguientes compuestos:",
+    "apartados": [
+     "Hidróxido de cesio",
+     "Permanganato de litio",
+     "Etanamida",
+     "\\(\\mathrm{(NH_{4})_{2}S}\\)",
+     "\\(\\mathrm{PH_{3}}\\)",
+     "\\(\\mathrm{CH_{2}=CHCH_{2}CH=CH_{2}}\\)"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(\\mathrm{Cs^+}\\) y \\(\\mathrm{OH^-}\\): proporción 1 : 1.</p><div class='res'>\\(\\mathrm{CsOH}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(\\mathrm{Li^+}\\) y permanganato \\(\\mathrm{MnO_{4}^-}\\).</p><div class='res'>\\(\\mathrm{LiMnO_{4}}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Amida de dos carbonos (etano) con el grupo –CONH₂.</p><div class='res'>\\(\\mathrm{CH_{3}CONH_{2}}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado d",
+     "html": "<div class='ex'><p>Dos amonios (\\(\\mathrm{NH_{4}^+}\\)) compensan el sulfuro \\(\\mathrm{S^{2-}}\\).</p><div class='res'>Sulfuro de amonio</div></div>"
+    },
+    {
+     "titulo": "Apartado e",
+     "html": "<div class='ex'><p>Hidruro del fósforo (grupo 15).</p><div class='res'>Fosfano (trihidruro de fósforo, fosfina)</div></div>"
+    },
+    {
+     "titulo": "Apartado f",
+     "html": "<div class='ex'><p>Cadena de 5 carbonos con dos dobles enlaces, en los carbonos 1 y 4 (se numera para dar los menores localizadores).</p><div class='res'>Penta-1,4-dieno</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "form",
+     "tipo": "inorg",
+     "apartados": "a, b, d, e"
+    },
+    {
+     "tema": "form",
+     "tipo": "orgf",
+     "apartados": "c, f"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "quimica-2024-reserva-2-b1",
+   "n": "B1",
+   "bloque": "B · Cuestiones",
+   "puntos": "1,5",
+   "enunciado": {
+    "intro": "Dada la siguiente reacción: \\[\\mathrm{NaCl(s) \\rightarrow  Na^+(ac) + Cl^-(ac)         ΔH^\\circ = 1{,}7 kJ·mol^{-1}}\\] Indique, razonadamente, si las siguientes afirmaciones son verdaderas o falsas:",
+    "apartados": [
+     "La reacción es exotérmica.",
+     "Se produce un aumento de la entropía.",
+     "La reacción es espontánea a cualquier temperatura."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Una reacción es exotérmica si desprende calor, es decir, si \\(\\Delta H\\lt0\\). Aquí \\(\\Delta H^\\circ=+1{,}7\\) kJ/mol \\(\\gt0\\): el proceso absorbe calor.</p><div class='res'>Falso: es endotérmica</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>La entropía mide el desorden. Se pasa de un cristal iónico, con los iones en posiciones fijas, a iones libres y dispersos en disolución: aumenta el número de partículas libres y el número de microestados.</p><div class='res'>Verdadero: \\(\\Delta S\\gt0\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>La espontaneidad depende de \\(\\Delta G=\\Delta H-T\\Delta S\\)<i class='n' data-t='th'>\\(\\Delta G=\\Delta H-T\\Delta S\\). Es espontáneo si \\(\\Delta G\\lt0\\). Con \\(\\Delta H\\gt0\\) y \\(\\Delta S\\gt0\\), lo es solo a temperaturas altas: \\(T\\gt\\Delta H/\\Delta S\\).</i>. Con \\(\\Delta H\\gt0\\) y \\(\\Delta S\\gt0\\), el término \\(-T\\Delta S\\) es negativo y crece con \\(T\\): \\(\\Delta G\\lt0\\) solo si \\(T\\gt\\dfrac{\\Delta H}{\\Delta S}\\). A temperaturas bajas el factor entálpico (desfavorable) domina y no es espontánea.</p><div class='res'>Falso: solo es espontánea por encima de una temperatura mínima (\\(\\Delta H/\\Delta S\\); como \\(\\Delta H\\) es muy pequeño, esa temperatura es muy baja)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "termo",
+     "tipo": "ent",
+     "apartados": "a"
+    },
+    {
+     "tema": "termo",
+     "tipo": "esp",
+     "apartados": "b, c"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "quimica-2024-reserva-2-b2",
+   "n": "B2",
+   "bloque": "B · Cuestiones",
+   "puntos": "1,5",
+   "enunciado": {
+    "intro": "Indique razonadamente:",
+    "apartados": [
+     "Qué elemento de la tabla periódica es isoelectrónico con el catión más estable que forma el átomo de Na.",
+     "Entre los átomos de Ar y P, cuál tiene la energía de ionización más alta.",
+     "Entre el Cl y el \\(\\mathrm{Cl^-}\\), qué especie presenta mayor radio."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Na (\\(Z=11\\)): \\(\\mathrm{1s^2 2s^2 2p^6 3s^1}\\) (período 3, grupo 1; aplico Aufbau y el diagrama de Moeller). El electrón 3s¹ se pierde con facilidad y el ion \\(\\mathrm{Na^+}\\) queda con la configuración de gas noble \\(\\mathrm{1s^2 2s^2 2p^6}\\) (10 electrones). Perder otro electrón exigiría romper la capa 2p completa: es el catión más estable. Un átomo con esa misma configuración es el de \\(Z=10\\).</p><div class='res'>El neón (Ne) es isoelectrónico con el \\(\\mathrm{Na^+}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p><b>Energía de ionización</b>: energía mínima necesaria para arrancar el electrón más débilmente unido de un átomo gaseoso en su estado fundamental. P (grupo 15) y Ar (grupo 18) están en el período 3. En un período aumenta la carga nuclear efectiva hacia la derecha y disminuye el radio: el electrón externo está más atraído. Además, el Ar tiene la capa \\(3s^23p^6\\) completa, muy estable.</p><div class='res'>El Ar tiene mayor energía de ionización que el P</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Cl: \\([\\mathrm{Ne}]\\,3s^23p^5\\) (17 electrones); \\(\\mathrm{Cl^-}\\): \\([\\mathrm{Ne}]\\,3s^23p^6\\) (18 electrones). Ambos tienen 17 protones, la misma carga nuclear. El electrón adicional aumenta la repulsión entre electrones y el apantallamiento: baja la carga nuclear efectiva por electrón y la nube se expande.</p><div class='res'>El \\(\\mathrm{Cl^-}\\) tiene mayor radio que el Cl</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "atom",
+     "tipo": "conf",
+     "apartados": "a"
+    },
+    {
+     "tema": "atom",
+     "tipo": "prop",
+     "apartados": "b, c"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "quimica-2024-reserva-2-b3",
+   "n": "B3",
+   "bloque": "B · Cuestiones",
+   "puntos": "1,5",
+   "enunciado": {
+    "intro": "Dadas las moléculas de \\(\\mathrm{BF_{3}}\\) y \\(\\mathrm{PF_{3}}\\)",
+    "apartados": [
+     "Represente las estructuras de Lewis de cada una de ellas.",
+     "Razone la geometría molecular de cada una de las sustancias a partir de la teoría RPECV.",
+     "Justifique su polaridad."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Electrones de valencia: B (grupo 13) 3; P (grupo 15) 5; F (grupo 17) 7. Cada F comparte un par con el átomo central y completa el octeto con tres pares libres. El B queda con 6 electrones (no completa el octeto) y el P con 3 pares de enlace y 1 par libre:</p><div style='overflow-x:auto'><svg viewBox='0 0 420 192' width='100%' style='max-width:420px' font-family='system-ui,sans-serif' font-size='13' fill='currentColor'><line x1='315.0' y1='59.0' x2='315.0' y2='29.0' stroke='currentColor' stroke-width='1.8'/><line x1='305.5' y1='75.5' x2='279.5' y2='90.5' stroke='currentColor' stroke-width='1.8'/><line x1='324.5' y1='75.5' x2='350.5' y2='90.5' stroke='currentColor' stroke-width='1.8'/><text x='315' y='75' text-anchor='middle' font-weight='700' fill='#e8487a'>B</text><text x='315' y='23' text-anchor='middle' font-weight='700' fill='#17825a'>F</text><circle cx='318.2' cy='3.0' r='1.7'/><circle cx='311.8' cy='3.0' r='1.7'/><circle cx='328.7' cy='25.0' r='1.7'/><circle cx='330.3' cy='18.8' r='1.7'/><circle cx='299.7' cy='18.8' r='1.7'/><circle cx='301.3' cy='25.0' r='1.7'/><text x='270' y='101' text-anchor='middle' font-weight='700' fill='#17825a'>F</text><circle cx='255.4' cy='100.7' r='1.7'/><circle cx='258.6' cy='106.3' r='1.7'/><circle cx='269.2' cy='80.7' r='1.7'/><circle cx='263.0' cy='82.3' r='1.7'/><circle cx='278.3' cy='108.9' r='1.7'/><circle cx='282.9' cy='104.3' r='1.7'/><text x='360' y='101' text-anchor='middle' font-weight='700' fill='#17825a'>F</text><circle cx='371.4' cy='106.3' r='1.7'/><circle cx='374.6' cy='100.7' r='1.7'/><circle cx='347.1' cy='104.3' r='1.7'/><circle cx='351.7' cy='108.9' r='1.7'/><circle cx='367.0' cy='82.3' r='1.7'/><circle cx='360.8' cy='80.7' r='1.7'/><text x='315' y='168' text-anchor='middle' font-size='12'>BF₃: triangular plana</text><text x='315' y='183' text-anchor='middle' font-size='12'>(AX₃) · apolar</text><line x1='96.7' y1='67.2' x2='53.3' y2='104.8' stroke='currentColor' stroke-width='1.8'/><line x1='113.3' y1='67.2' x2='156.7' y2='104.8' stroke='currentColor' stroke-width='1.8'/><line x1='105.0' y1='71.0' x2='105.0' y2='129.0' stroke='currentColor' stroke-width='1.8'/><text x='105' y='65' text-anchor='middle' font-weight='700' fill='#2f6df0'>P</text><circle cx='108.2' cy='45.0' r='1.7'/><circle cx='101.8' cy='45.0' r='1.7'/><text x='45' y='117' text-anchor='middle' font-weight='700' fill='#17825a'>F</text><circle cx='31.6' cy='119.4' r='1.7'/><circle cx='35.8' cy='124.2' r='1.7'/><circle cx='41.3' cy='97.1' r='1.7'/><circle cx='35.6' cy='99.9' r='1.7'/><circle cx='55.6' cy='123.1' r='1.7'/><circle cx='59.2' cy='117.8' r='1.7'/><text x='165' y='117' text-anchor='middle' font-weight='700' fill='#17825a'>F</text><circle cx='174.2' cy='124.2' r='1.7'/><circle cx='178.4' cy='119.4' r='1.7'/><circle cx='150.8' cy='117.8' r='1.7'/><circle cx='154.4' cy='123.1' r='1.7'/><circle cx='174.4' cy='99.9' r='1.7'/><circle cx='168.7' cy='97.1' r='1.7'/><text x='105' y='145' text-anchor='middle' font-weight='700' fill='#17825a'>F</text><circle cx='101.8' cy='155.0' r='1.7'/><circle cx='108.2' cy='155.0' r='1.7'/><circle cx='91.3' cy='133.0' r='1.7'/><circle cx='89.7' cy='139.2' r='1.7'/><circle cx='120.3' cy='139.2' r='1.7'/><circle cx='118.7' cy='133.0' r='1.7'/><text x='105' y='168' text-anchor='middle' font-size='12'>PF₃: pirámide trigonal</text><text x='105' y='183' text-anchor='middle' font-size='12'>(AX₃E) · polar</text></svg></div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Teoría RPECV<i class='n' data-t='th'>RPECV: los pares de electrones de la capa de valencia se repelen y se sitúan lo más separados posible; la geometría molecular describe la posición de los átomos.</i>:</p><p>• \\(\\mathrm{BF_{3}}\\): 3 pares de enlace y ningún par libre (AX₃): <b>triangular plana</b> (120°).</p><p>• \\(\\mathrm{PF_{3}}\\): 3 pares de enlace y 1 par libre (AX₃E): geometría electrónica tetraédrica y molecular <b>pirámide trigonal</b>.</p></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Los enlaces B–F y P–F son polares (el F es muy electronegativo). En el \\(\\mathrm{BF_{3}}\\) los tres momentos dipolares, a 120°, se anulan por simetría: \\(\\vec\\mu=0\\). En el \\(\\mathrm{PF_{3}}\\) la geometría piramidal y el par libre del P impiden que se anulen: \\(\\vec\\mu\\neq0\\).</p><div class='res'>\\(\\mathrm{BF_{3}}\\) es apolar; \\(\\mathrm{PF_{3}}\\) es polar</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "enlace",
+     "tipo": "lewis",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "enlace",
+     "tipo": "pol",
+     "apartados": "c"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "quimica-2024-reserva-2-b4",
+   "n": "B4",
+   "bloque": "B · Cuestiones",
+   "puntos": "1,5",
+   "enunciado": {
+    "intro": "Dada la pila: \\(\\mathrm{Al(s)|Al^{3+}(ac)||Cu^{2+}(ac)|Cu(s)}\\) Datos: \\(E^\\circ(\\mathrm{Al^{3+}/Al})=-1{,}66\\) V; \\(E^\\circ(\\mathrm{Cu^{2+}/Cu})=0{,}34\\) V; \\(E^\\circ(\\mathrm{Ag^+/Ag})=0{,}80\\) V.",
+    "apartados": [
+     "Justifique, escribiendo la semirreacción que tiene lugar en cada uno, cuál es el ánodo y cuál el cátodo.",
+     "Calcule el potencial estándar de la pila.",
+     "Razone qué ocurriría si se sustituyera el electrodo de aluminio por uno de plata."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>En el <b>ánodo</b> ocurre la oxidación (se pierden electrones) y en el <b>cátodo</b> la reducción<i class='n' data-t='th'>Ánodo: oxidación (pierde electrones); cátodo: reducción (gana electrones). Espontáneamente se reduce la especie con mayor potencial de reducción.</i>. El Al (\\(E^\\circ=-1{,}66\\) V) tiene menor potencial de reducción que el Cu (\\(0{,}34\\) V): el aluminio se oxida y el cobre se reduce.</p>\\[\\mathrm{Ánodo (oxidación): Al \\rightarrow  Al^{3+} + 3e^-}\\]\\[\\mathrm{Cátodo (reducción): Cu^{2+} + 2e^- \\rightarrow  Cu}\\]<div class='res'>Ánodo: electrodo de Al. Cátodo: electrodo de Cu</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'>\\[E^\\circ_{\\text{pila}}=E^\\circ_{\\text{cátodo}}-E^\\circ_{\\text{ánodo}}=0{,}34-(-1{,}66)\\]<div class='res'>\\(E^\\circ_{\\text{pila}}=2{,}00\\) V (\\(\\gt0\\): proceso espontáneo)</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Ahora el par de la plata (\\(0{,}80\\) V) tiene mayor potencial de reducción que el del cobre (\\(0{,}34\\) V). Cambian las funciones: la plata se reduce (cátodo) y el cobre se oxida (ánodo): \\(\\mathrm{Cu(s)|Cu^{2+}||Ag^+|Ag(s)}\\). Los electrones van del cobre a la plata y</p>\\[E^\\circ_{\\text{pila}}=0{,}80-0{,}34\\]<div class='res'>El cobre pasaría a ser el ánodo y la plata el cátodo; \\(E^\\circ=0{,}46\\) V</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "redox",
+     "tipo": "pila",
+     "apartados": "a, b, c"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "quimica-2024-reserva-2-b5",
+   "n": "B5",
+   "bloque": "B · Cuestiones",
+   "puntos": "1,5",
+   "enunciado": {
+    "intro": "Se prepara un litro de una disolución saturada de \\(\\mathrm{BaSO_{4}}\\) quedando producto en el fondo sin disolver. Razone qué le ocurre al equilibrio de solubilidad si se añade:",
+    "apartados": [
+     "2 g de \\(\\mathrm{BaSO_{4}}\\)",
+     "1 g de \\(\\mathrm{BaCl_{2}}\\)",
+     "1 L de agua destilada."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Equilibrio",
+     "html": "<div class='ex'>\\[\\mathrm{BaSO_{4}(s) \\rightleftharpoons  Ba^{2+}(ac) + SO_{4}^{2-}(ac)}\\]<p>\\(K_s=[\\mathrm{Ba^{2+}}][\\mathrm{SO_4^{2-}}]\\).</p></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>La disolución ya está saturada y la concentración de un sólido puro no interviene en \\(K_s\\). Los 2 g añadidos quedan sin disolver.</p><div class='res'>No se modifica el equilibrio ni las concentraciones de los iones</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>El \\(\\mathrm{BaCl_{2}}\\) es soluble y aporta \\(\\mathrm{Ba^{2+}}\\), ion común: \\(Q=[\\mathrm{Ba^{2+}}][\\mathrm{SO_4^{2-}}]\\gt K_s\\). El equilibrio se desplaza hacia la izquierda y precipita más \\(\\mathrm{BaSO_{4}}\\).</p><div class='res'>El equilibrio se desplaza hacia el sólido: disminuye la solubilidad (efecto del ion común)</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Al duplicar el volumen se diluyen los iones: \\(Q=\\dfrac{K_s}4\\lt K_s\\). El equilibrio se desplaza hacia la derecha y se disuelve más sólido (queda sólido en el fondo) hasta recuperar \\(Q=K_s\\). La solubilidad molar no cambia, pero se disuelve el doble de masa total.</p><div class='res'>El equilibrio se desplaza hacia la derecha (se disuelve más \\(\\mathrm{BaSO_{4}}\\))</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "equil",
+     "tipo": "solub",
+     "apartados": "a, b, c"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "quimica-2024-reserva-2-b6",
+   "n": "B6",
+   "bloque": "B · Cuestiones",
+   "puntos": "1,5",
+   "enunciado": {
+    "intro": "Escriba las siguientes reacciones:",
+    "apartados": [
+     "Combustión del \\(\\mathrm{CH_{3}CH_{3}}\\)",
+     "Deshidratación del \\(\\mathrm{CH_{3}CH_{2}OH}\\)",
+     "Nitración del benceno (\\(\\mathrm{C_{6}H_{6}}\\))"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Combustión completa: el hidrocarburo reacciona con \\(\\mathrm{O_{2}}\\) y da \\(\\mathrm{CO_{2}}\\) y agua.</p>\\[\\mathrm{2CH_{3}CH_{3} + 7O_{2} \\rightarrow  4CO_{2} + 6H_{2}O}\\]<div class='res'>Reacción de combustión (oxidación)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>El alcohol pierde agua (con \\(\\mathrm{H_{2}SO_{4}}\\) y calor) y forma el alqueno.</p>\\[\\mathrm{CH_{3}CH_{2}OH \\rightarrow  CH_{2}=CH_{2} + H_{2}O}\\]<div class='res'>Eteno. Reacción de eliminación</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Un hidrógeno del anillo se sustituye por el grupo nitro, con mezcla sulfonítrica (\\(\\mathrm{HNO_{3}}\\) y \\(\\mathrm{H_{2}SO_{4}}\\)).</p>\\[\\mathrm{C_{6}H_{6} + HNO_{3} \\rightarrow  C_{6}H_{5}NO_{2} + H_{2}O}\\]<div class='res'>Nitrobenceno. Reacción de sustitución aromática</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "org",
+     "tipo": "reac",
+     "apartados": "a, b, c"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "quimica-2024-reserva-2-c1",
+   "n": "C1",
+   "bloque": "C · Problemas",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "En un recipiente de 10 L se introduce el mismo número de moles de \\(\\mathrm{I_{2}}\\) y \\(\\mathrm{H_{2}}\\). Se calienta a 623 K y se obtienen 2 moles de HI, de acuerdo con el siguiente equilibrio: \\[\\mathrm{H_{2}(g) + I_{2}(g) \\rightleftharpoons  2HI(g)}\\] Calcule: Datos: \\(R=0{,}082\\ \\mathrm{atm\\cdot L\\cdot mol^{-1}\\cdot K^{-1}}\\); \\(K_c=60\\).",
+    "apartados": [
+     "Los moles de \\(\\mathrm{I_{2}}\\) y \\(\\mathrm{H_{2}}\\) que se han introducido y la presión total en el equilibrio.",
+     "El valor de \\(K_p\\) y el porcentaje de \\(\\mathrm{H_{2}}\\) que ha reaccionado."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Sea \\(n_0\\) los moles iniciales de cada reactivo y \\(n\\) los que reaccionan. Se forman \\(2n=2\\) mol de HI, luego \\(n=1\\) mol.</p><table class='tb'><tr><th>Reacción</th><th>\\(\\mathrm{H_{2}(g)}\\) +</th><th>\\(\\mathrm{I_{2}(g)}\\) ⇄</th><th>2 \\(\\mathrm{HI(g)}\\)</th></tr><tr><td>\\(n_0\\) (mol)</td><td>\\(n_0\\)</td><td>\\(n_0\\)</td><td>0</td></tr><tr><td>Reaccionan (mol)</td><td>\\(-n\\)</td><td>\\(-n\\)</td><td>\\(+2n\\)</td></tr><tr><td>\\(n_{eq}\\) (mol)</td><td>\\(n_0-1\\)</td><td>\\(n_0-1\\)</td><td>2</td></tr><tr><td>\\([\\ ]_{eq}\\) (M)</td><td>\\(\\frac{n_0-1}{10}\\)</td><td>\\(\\frac{n_0-1}{10}\\)</td><td>0,2</td></tr></table><p>Como \\(\\Delta n=0\\), el volumen se simplifica en \\(K_c\\):</p>\\[K_c=\\frac{[\\mathrm{HI}]^2}{[\\mathrm{H_2}][\\mathrm{I_2}]}=\\frac{2^2}{(n_0-1)^2}=60\\ \\Rightarrow\\ (n_0-1)^2=\\frac4{60}\\ \\Rightarrow\\ n_0=1+0{,}258\\]<p>Moles totales (no cambian): \\(n_t=2n_0=2{,}52\\) mol.</p>\\[P=\\frac{n_tRT}{V}=\\frac{2{,}52\\cdot0{,}082\\cdot623}{10}\\]<div class='res'>\\(n_0=1{,}26\\) mol de \\(\\mathrm{H_{2}}\\) y 1,26 mol de \\(\\mathrm{I_{2}}\\); \\(P=12{,}9\\) atm</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Con \\(\\Delta n=0\\): \\(K_p=K_c(RT)^0=K_c=60\\). Porcentaje de \\(\\mathrm{H_{2}}\\) que ha reaccionado:</p>\\[\\frac{n}{n_0}\\cdot100=\\frac1{1{,}258}\\cdot100\\]<div class='res'>\\(K_p=60\\); ha reaccionado el \\(79{,}5\\%\\) del \\(\\mathrm{H_{2}}\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "equil",
+     "tipo": "kc",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "quimica-2024-reserva-2-c2",
+   "n": "C2",
+   "bloque": "C · Problemas",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "El producto de solubilidad del \\(\\mathrm{PbI_{2}}\\) es \\(7{,}1\\cdot10^{-9}\\), a la temperatura de 25 ºC.",
+    "apartados": [
+     "A partir del equilibrio correspondiente, calcule las concentraciones molares de los iones presentes en una disolución saturada de \\(\\mathrm{PbI_{2}}\\).",
+     "Si se mezclan 300 mL de una disolución \\(2\\cdot10^{-4}\\) M de NaI con 200 mL de una disolución \\(3\\cdot10^{-3}\\) M de \\(\\mathrm{Pb(NO_{3})_{2}}\\), considerando los volúmenes aditivos, ¿se formará precipitado?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><table class='tb'><tr><th>Reacción</th><th>\\(\\mathrm{PbI_{2}(s)}\\) ⇄</th><th>\\(\\mathrm{Pb^{2+}(ac)}\\) +</th><th>2 \\(\\mathrm{I^-(ac)}\\)</th></tr><tr><td>\\(c_0\\) (M)</td><td>—</td><td>0</td><td>0</td></tr><tr><td>Se disuelven (M)</td><td>\\(-s\\)</td><td>\\(+s\\)</td><td>\\(+2s\\)</td></tr><tr><td>\\(c_{eq}\\) (M)</td><td>—</td><td>\\(s\\)</td><td>\\(2s\\)</td></tr></table>\\[K_s=s(2s)^2=4s^3\\ \\Rightarrow\\ s=\\sqrt[3]{\\frac{7{,}1\\cdot10^{-9}}4}\\]<div class='res'>\\([\\mathrm{Pb^{2+}}]=1{,}21\\cdot10^{-3}\\) M; \\([\\mathrm{I^-}]=2{,}42\\cdot10^{-3}\\) M</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Volumen total \\(0{,}5\\) L. Concentraciones tras mezclar (\\(M_1V_1=M_2V_2\\)):</p>\\[[\\mathrm{I^-}]=\\frac{2\\cdot10^{-4}\\cdot0{,}3}{0{,}5}=1{,}2\\cdot10^{-4}\\ \\mathrm M\\qquad[\\mathrm{Pb^{2+}}]=\\frac{3\\cdot10^{-3}\\cdot0{,}2}{0{,}5}=1{,}2\\cdot10^{-3}\\ \\mathrm M\\]<p>Cociente de reacción: \\(Q=[\\mathrm{Pb^{2+}}][\\mathrm{I^-}]^2=1{,}2\\cdot10^{-3}\\cdot(1{,}2\\cdot10^{-4})^2=1{,}73\\cdot10^{-11}\\). Si \\(Q\\gt K_s\\) precipita; si \\(Q\\lt K_s\\) no.</p><div class='res'>\\(Q=1{,}7\\cdot10^{-11}\\lt K_s=7{,}1\\cdot10^{-9}\\): no se forma precipitado</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "equil",
+     "tipo": "solub",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "quimica-2024-reserva-2-c3",
+   "n": "C3",
+   "bloque": "C · Problemas",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "Una disolución acuosa de KOH para uso industrial tiene una composición del 40% de riqueza en masa y densidad 1,515 g·mL⁻¹. Datos: masas atómicas relativas: K = 39; O = 16; H = 1.",
+    "apartados": [
+     "Calcule el volumen necesario de esta disolución para preparar 5 L de una disolución acuosa de pH 13.",
+     "Si a 50 mL de la disolución de KOH de uso industrial se le adiciona agua hasta un volumen de 250 mL, calcule el volumen de una disolución acuosa de \\(\\mathrm{HClO_{4}}\\) 2 M necesario para neutralizarla."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>pH 13 \\(\\Rightarrow\\mathrm{pOH}=1\\Rightarrow[\\mathrm{OH^-}]=0{,}1\\) M (el KOH es base fuerte y se disocia totalmente: \\(\\mathrm{KOH \\rightarrow  K^+ + OH^-}\\)). En 5 L: \\(n=0{,}1\\cdot5=0{,}5\\) mol de KOH. Con \\(M=39+16+1=56\\) g/mol: 28 g de KOH puro. Como la disolución es del 40%:</p>\\[m_{\\text{disolución}}=\\frac{28}{0{,}40}=70\\ \\mathrm g\\qquad V=\\frac{m}{d}=\\frac{70}{1{,}515}\\]<div class='res'>\\(V=46{,}2\\) mL de la disolución industrial</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>En 50 mL de la disolución industrial: \\(50\\cdot1{,}515=75{,}75\\) g de disolución, y de KOH puro \\(0{,}40\\cdot75{,}75=30{,}3\\) g \\(\\Rightarrow n=\\dfrac{30{,}3}{56}=0{,}541\\) mol (la dilución a 250 mL no cambia los moles). Neutralización:</p>\\[\\mathrm{KOH + HClO_{4} \\rightarrow  KClO_{4} + H_{2}O}\\]<p>Relación 1 : 1: \\(n(\\mathrm{HClO_4})=0{,}541\\) mol, con \\(V=\\dfrac{n}{M}=\\dfrac{0{,}541}{2}\\).</p><div class='res'>\\(V=0{,}271\\ \\mathrm L=271\\) mL de \\(\\mathrm{HClO_{4}}\\) 2 M</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "acbase",
+     "tipo": "prep",
+     "apartados": "a"
+    },
+    {
+     "tema": "acbase",
+     "tipo": "ph",
+     "apartados": "a"
+    },
+    {
+     "tema": "acbase",
+     "tipo": "neut",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "quimica-2024-reserva-2-c4",
+   "n": "C4",
+   "bloque": "C · Problemas",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "El estaño reacciona con ácido nítrico y se forma dióxido de estaño, monóxido de nitrógeno y agua. \\[\\mathrm{Sn + HNO_{3} \\rightarrow  SnO_{2} + NO + H_{2}O}\\] Datos: masa atómica relativa: Sn = 118,7; \\(R=0{,}082\\ \\mathrm{atm\\cdot L\\cdot mol^{-1}\\cdot K^{-1}}\\).",
+    "apartados": [
+     "Ajuste las ecuaciones iónica y molecular por el método del ion-electrón.",
+     "Se dispone de una aleación de estaño empleada para soldar componentes electrónicos. Para determinar su pureza se hacen reaccionar 50 g con ácido nítrico en exceso. Calcule el porcentaje de Sn en la aleación si en el proceso se obtienen 6,75 L de NO a 785 mmHg y 28 ºC."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p><b>1. Reacción con los números de oxidación</b> encima de cada elemento<i class='n' data-t='th'>Reglas: elemento libre, 0; O, \\(-2\\) (salvo peróxidos); H, \\(+1\\) (salvo hidruros); la suma es igual a la carga de la especie.</i>. Marco en color los elementos que cambian y los uno con una flecha:</p><svg class='rxs' data-h='174' viewBox='0 0 295 174' width='100%' style='max-width:640px' font-family='system-ui,-apple-system,Segoe UI,Roboto,sans-serif' fill='currentColor'><defs><marker id='hox' viewBox='0 0 8 8' refX='6' refY='4' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L8 4L0 8z' fill='#dc2626'/></marker><marker id='hred' viewBox='0 0 8 8' refX='6' refY='4' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L8 4L0 8z' fill='#2f6df0'/></marker></defs><g class='rxl'><g data-t='tk' data-id=\"Sn_L\"><text class='o' x='15' y='38' text-anchor='middle' font-size='12' font-weight='700' fill='#dc2626'>0</text><text class='s' x='10' y='62' font-size='18' font-weight='700' fill='#dc2626'>Sn</text></g><text data-t='sep' data-p='8' x='40' y='62' font-size='18'>+</text><g data-t='tk'><text class='o' x='65' y='38' text-anchor='middle' font-size='12' font-weight='400' fill='#7a8399'>+1</text><text class='s' x='60' y='62' font-size='18' font-weight='500' fill='currentColor'>H</text></g><g data-t='tk' data-id=\"N_L\"><text class='o' x='76' y='38' text-anchor='middle' font-size='12' font-weight='700' fill='#2f6df0'>+5</text><text class='s' x='71' y='62' font-size='18' font-weight='700' fill='#2f6df0'>N</text></g><g data-t='tk'><text class='o' x='87' y='38' text-anchor='middle' font-size='12' font-weight='400' fill='#7a8399'>−2</text><text class='s' x='82' y='62' font-size='18' font-weight='500' fill='currentColor'>O</text><text class='b' x='93' y='68' font-size='12' fill='currentColor'>3</text></g><text data-t='sep' data-p='12' x='112' y='62' font-size='18'>→</text><g data-t='tk' data-id=\"Sn_R\"><text class='o' x='141' y='38' text-anchor='middle' font-size='12' font-weight='700' fill='#dc2626'>+4</text><text class='s' x='136' y='62' font-size='18' font-weight='700' fill='#dc2626'>Sn</text></g><g data-t='tk'><text class='o' x='163' y='38' text-anchor='middle' font-size='12' font-weight='400' fill='#7a8399'>−2</text><text class='s' x='158' y='62' font-size='18' font-weight='500' fill='currentColor'>O</text><text class='b' x='169' y='68' font-size='12' fill='currentColor'>2</text></g><text data-t='sep' data-p='8' x='184' y='62' font-size='18'>+</text><g data-t='tk' data-id=\"N_R\"><text class='o' x='209' y='38' text-anchor='middle' font-size='12' font-weight='700' fill='#2f6df0'>+2</text><text class='s' x='204' y='62' font-size='18' font-weight='700' fill='#2f6df0'>N</text></g><g data-t='tk'><text class='o' x='220' y='38' text-anchor='middle' font-size='12' font-weight='400' fill='#7a8399'>−2</text><text class='s' x='215' y='62' font-size='18' font-weight='500' fill='currentColor'>O</text></g><text data-t='sep' data-p='8' x='234' y='62' font-size='18'>+</text><g data-t='tk'><text class='o' x='259' y='38' text-anchor='middle' font-size='12' font-weight='400' fill='#7a8399'>+1</text><text class='s' x='254' y='62' font-size='18' font-weight='500' fill='currentColor'>H</text><text class='b' x='265' y='68' font-size='12' fill='currentColor'>2</text></g><g data-t='tk'><text class='o' x='277' y='38' text-anchor='middle' font-size='12' font-weight='400' fill='#7a8399'>−2</text><text class='s' x='272' y='62' font-size='18' font-weight='500' fill='currentColor'>O</text></g></g><path data-a='Sn_L' data-b='Sn_R' data-y='74' data-d='36' d='M21.0 74 V110 H147.0 V80' fill='none' stroke='#dc2626' stroke-width='1.9' stroke-linejoin='round' marker-end='url(#hox)'/><path data-a='N_L' data-b='N_R' data-y='74' data-d='16' d='M76.5 74 V90 H209.5 V80' fill='none' stroke='#2f6df0' stroke-width='1.9' stroke-linejoin='round' marker-end='url(#hred)'/><text x='12' y='136' font-size='13' font-weight='700' fill='#dc2626'>● Sn: 0 → +4 (se oxida)</text><text x='12' y='154' font-size='13' font-weight='700' fill='#2f6df0'>● N: +5 → +2 (se reduce)</text></svg><p><b>2. Quién se oxida y quién se reduce.</b></p><p>• El <b>estaño</b> pasa de \\(0\\) (\\(\\mathrm{Sn}\\)) a \\(+4\\) (en \\(\\mathrm{SnO_{2}}\\)): aumenta su número de oxidación, por tanto <b>se oxida</b> y pierde electrones. Es el <b>agente reductor</b>.</p><p>• El <b>nitrógeno</b> pasa de \\(+5\\) (en \\(\\mathrm{NO_{3}^-}\\)) a \\(+2\\) (en \\(\\mathrm{NO}\\)): disminuye, por tanto <b>se reduce</b> y gana electrones. El \\(\\mathrm{HNO_{3}}\\) es el <b>agente oxidante</b>.</p><p><b>3. Semirreacciones ajustadas</b> (medio ácido)<i class='n' data-t='th'>Método del ion-electrón en medio ácido: se ajusta el elemento, el O con \\(\\mathrm{H_{2}O}\\), el H con \\(\\mathrm{H^+}\\) y finalmente la carga con electrones.</i>: la oxidación, \\(\\mathrm{Sn + 2H_{2}O \\rightarrow  SnO_{2} + 4H^+ + 4e^-}\\), intercambia 4 electrones y la reducción, \\(\\mathrm{NO_{3}^- + 4H^+ + 3e^- \\rightarrow  NO + 2H_{2}O}\\), intercambia 3. Para igualar los electrones (12) multiplico la oxidación por 3 y la reducción por 4.</p><p><b>4. Suma, espectadores y ecuación molecular.</b> Sumo (se cancelan 12 electrones, 12 \\(\\mathrm{H^+}\\) y 6 \\(\\mathrm{H_{2}O}\\)). No se forma ninguna sal: todo el nitrato se reduce y no hay iones espectadores.</p><div style='overflow-x:auto'>\\[\\begin{array}{lrcl}\\text{Semirreacción de oxidación}\\ (\\times3) & \\mathrm{3Sn+6H_2O} & \\rightarrow & \\mathrm{3SnO_2+12H^++12e^-}\\\\[2pt]\\text{Semirreacción de reducción}\\ (\\times4) & \\mathrm{4NO_3^-+16H^++12e^-} & \\rightarrow & \\mathrm{4NO+8H_2O}\\\\\\hline\\text{Ecuación iónica ajustada} & \\mathrm{3Sn+4NO_3^-+4H^+} & \\rightarrow & \\mathrm{3SnO_2+4NO+2H_2O}\\\\[2pt]\\text{Iones espectadores} & \\text{ninguno} & & \\text{ninguno}\\\\\\hline\\text{Ecuación molecular} & \\mathrm{3Sn+4HNO_3} & \\rightarrow & \\mathrm{3SnO_2+4NO+2H_2O}\\end{array}\\]</div><div class='res'>\\(\\mathrm{3Sn + 4HNO_{3} \\rightarrow  3SnO_{2} + 4NO + 2H_{2}O}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Moles de NO con la ecuación de los gases ideales: \\(P=\\dfrac{785}{760}=1{,}033\\) atm y \\(T=28+273=301\\) K:</p>\\[n(\\mathrm{NO})=\\frac{PV}{RT}=\\frac{1{,}033\\cdot6{,}75}{0{,}082\\cdot301}=0{,}2825\\ \\mathrm{mol}\\]<p>Por la estequiometría (3 mol de Sn por cada 4 de NO): \\(n(\\mathrm{Sn})=0{,}2825\\cdot\\dfrac34=0{,}2119\\) mol, es decir, \\(m=0{,}2119\\cdot118{,}7=25{,}1\\) g de Sn en los 50 g de aleación.</p>\\[\\%\\mathrm{Sn}=\\frac{25{,}1}{50}\\cdot100\\]<div class='res'>La aleación contiene un \\(50{,}3\\%\\) de estaño</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "redox",
+     "tipo": "ajuste",
+     "apartados": "a"
+    },
+    {
+     "tema": "redox",
+     "tipo": "estq",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

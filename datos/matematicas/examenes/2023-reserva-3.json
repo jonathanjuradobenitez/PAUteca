@@ -1,0 +1,319 @@
+{
+ "version": 1,
+ "id": "matematicas-2023-reserva-3",
+ "asignatura": "matematicas",
+ "anio": 2023,
+ "convocatoria": "Reserva 3",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2023-reserva-3-1",
+   "n": 1,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Determina las longitudes de los lados de un rectángulo de área máxima que está inscrito en una semicircunferencia de 6 cm de radio, teniendo uno de sus lados sobre el diámetro de ella.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>El rectángulo tiene la base sobre el diámetro, centrada, con vértices superiores en la semicircunferencia \\(x^2+y^2=36\\) (\\(y\\ge0\\)). Si el vértice superior derecho es \\((x,y)\\), la base mide \\(2x\\) y la altura \\(y=\\sqrt{36-x^2}\\), con \\(x\\in(0,6)\\):</p>\\[A(x)=2x\\sqrt{36-x^2}\\]<i class='n' data-t='why'>Los vértices superiores están en la semicircunferencia: \\(x^2+y^2=6^2\\). Por simetría, la base es \\(2x\\).</i></div>"
+    },
+    {
+     "titulo": "Máximo",
+     "html": "<div class='ex'>\\[A'(x)=2\\sqrt{36-x^2}-\\frac{2x^2}{\\sqrt{36-x^2}}=\\frac{2(36-2x^2)}{\\sqrt{36-x^2}}=0\\iff x^2=18\\iff x=3\\sqrt2\\]<p>\\(A'\\gt0\\) para \\(x\\lt3\\sqrt2\\) y \\(A'\\lt0\\) después: máximo (y \\(A\\to0\\) en los extremos, luego es absoluto). Altura \\(y=\\sqrt{36-18}=3\\sqrt2\\).</p><div class='res'>Base \\(2x=6\\sqrt2\\approx8{,}49\\) cm y altura \\(3\\sqrt2\\approx4{,}24\\) cm (área máxima \\(36\\) cm\\(^2\\))</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "opt",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-reserva-3-2",
+   "n": 2,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sabiendo que \\(\\displaystyle\\lim_{x\\to0}\\frac{\\operatorname{sen}(x)-\\ln(1+x)}{ax^2-x+e^x-\\cos(2x)}=-\\frac17\\), calcula \\(a\\) (\\(\\ln\\) denota la función logaritmo neperiano).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución con L'Hôpital",
+     "html": "<div class='ex'><p>Sean \\(N(x)=\\operatorname{sen}x-\\ln(1+x)\\) y \\(D(x)=ax^2-x+e^x-\\cos2x\\). \\(N(0)=0\\) y \\(D(0)=0-0+1-1=0\\): indeterminación \\(\\tfrac00\\). Aplico L'Hôpital<i class='n' data-t='th'>Regla de L'Hôpital: si \\(N(x_0)=D(x_0)=0\\) y existe \\(\\lim\\frac{N'}{D'}\\), entonces \\(\\lim\\frac ND=\\lim\\frac{N'}{D'}\\).</i>:</p>\\[N'(x)=\\cos x-\\frac1{1+x}\\qquad D'(x)=2ax-1+e^x+2\\operatorname{sen}2x\\qquad N'(0)=0,\\ D'(0)=0\\]<p>Otra vez \\(\\tfrac00\\): segunda aplicación,</p>\\[N''(x)=-\\operatorname{sen}x+\\frac1{(1+x)^2}\\qquad D''(x)=2a+e^x+4\\cos2x\\]\\[\\lim_{x\\to0}\\frac{N''(x)}{D''(x)}=\\frac{1}{2a+1+4}=\\frac1{2a+5}\\]<p>Debe valer \\(-\\frac17\\): \\(2a+5=-7\\iff a=-6\\).</p><div class='res'>\\(a=-6\\)</div><i class='n' data-t='tp'>Comprobación con \\(a=-6\\) y \\(x=0{,}001\\): el cociente vale \\(\\approx-0{,}1429\\approx-\\frac17\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "lim",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-reserva-3-3",
+   "n": 3,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Calcula \\(\\displaystyle\\int_6^{12}\\frac1{9-x^2}\\,dx\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Fracciones simples",
+     "html": "<div class='ex'><p>\\(9-x^2=(3-x)(3+x)\\), raíces simples \\(\\pm3\\) (ninguna en \\([6,12]\\)):</p>\\[\\frac1{9-x^2}=\\frac A{3-x}+\\frac B{3+x}\\iff1=A(3+x)+B(3-x)\\]<p>Con \\(x=3\\): \\(1=6A\\Rightarrow A=\\frac16\\). Con \\(x=-3\\): \\(1=6B\\Rightarrow B=\\frac16\\).</p>\\[\\int\\frac{dx}{9-x^2}=\\frac16\\bigl(-\\ln|3-x|+\\ln|3+x|\\bigr)=\\frac16\\ln\\left|\\frac{3+x}{3-x}\\right|\\]</div>"
+    },
+    {
+     "titulo": "Regla de Barrow",
+     "html": "<div class='ex'>\\[\\int_6^{12}\\frac{dx}{9-x^2}=\\frac16\\left[\\ln\\left|\\frac{3+x}{3-x}\\right|\\right]_6^{12}=\\frac16\\left(\\ln\\frac{15}9-\\ln\\frac93\\right)=\\frac16\\ln\\frac{5/3}{3}\\]<div class='res'>\\(\\dfrac16\\ln\\dfrac59\\approx-0{,}0980\\)</div><i class='n' data-t='tp'>Negativo, como debe ser: en \\([6,12]\\), \\(9-x^2\\lt0\\) y el integrando es negativo.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "racional",
+     "apartados": ""
+    },
+    {
+     "tema": "integ",
+     "tipo": "def",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-reserva-3-4",
+   "n": 4,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(f:\\mathbb R\\to\\mathbb R\\) definida por \\(f(x)=x^2+1\\).",
+    "apartados": [
+     "(0,75 p.) Determina el punto de la gráfica de \\(f\\) en el que la recta tangente es \\(y=4x-3\\).",
+     "(1,75 p.) Haz un esbozo del recinto limitado por la gráfica de \\(f\\), la recta \\(y=4x-3\\) y el eje de ordenadas. Calcula el área del recinto indicado."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>La pendiente de la tangente en \\(x_0\\) es \\(f'(x_0)=2x_0\\); debe ser 4: \\(x_0=2\\). Entonces \\(f(2)=5\\), y la tangente en \\((2,5)\\) es \\(y-5=4(x-2)\\iff y=4x-3\\) ✓.</p><div class='res'>El punto es \\((2,5)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>El recinto está entre el eje de ordenadas (\\(x=0\\)) y el punto de tangencia (\\(x=2\\)). La parábola queda por encima de su tangente (la tangente de una función convexa queda por debajo):</p><div style='overflow-x:auto'><svg viewBox='0 0 300 230' width='100%' style='max-width:380px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='70.0,130.0 80.0,129.2 90.0,126.8 100.0,122.8 110.0,117.2 120.0,110.0 130.0,101.2 140.0,90.8 150.0,78.8 160.0,65.2 170.0,50.0 170.0,50.0 70.0,210.0' fill='#b9a4f5' fill-opacity='.55'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M8 150H292M70 225V8'/></g><polyline points='45.0,125.0 57.5,128.8 70.0,130.0 82.5,128.8 95.0,125.0 107.5,118.8 120.0,110.0 132.5,98.8 145.0,85.0 157.5,68.8 170.0,50.0 182.5,28.8 195.0,5.0' fill='none' stroke='#2f6df0' stroke-width='2'/><line x1='55.0' y1='234.0' x2='192.5' y2='14.0' stroke='#e8487a' stroke-width='2'/><circle cx='170' cy='50' r='3.5' fill='#17825a'/><text x='176' y='46'>(2, 5)</text><text x='76' y='126'>(0, 1)</text><text x='76' y='214'>(0, −3)</text><text x='155.0' y='126.0' fill='#2f6df0'>f</text><text x='145.0' y='126.0' fill='#e8487a'>y = 4x − 3</text></svg></div>\\[A=\\int_0^2\\bigl[(x^2+1)-(4x-3)\\bigr]dx=\\int_0^2(x-2)^2\\,dx=\\left[\\frac{(x-2)^3}3\\right]_0^2=0-\\left(-\\frac83\\right)\\]<div class='res'>Área \\(=\\dfrac83\\ u^2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": "a"
+    },
+    {
+     "tema": "integ",
+     "tipo": "area",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-reserva-3-5",
+   "n": 5,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Una fábrica dispone de tres líquidos \\(L_1\\), \\(L_2\\) y \\(L_3\\), en los que se encuentran disueltas dos sustancias: sodio y magnesio. Cada litro del líquido \\(L_1\\) contiene 120 mg de sodio y 90 mg de magnesio, cada litro del líquido \\(L_2\\) contiene 100 mg de sodio y 90 mg de magnesio y cada litro del líquido \\(L_3\\) contiene 60 mg de sodio y 180 mg de magnesio. ¿Es posible obtener un litro de un líquido mezclando distintas cantidades de \\(L_1\\), \\(L_2\\) y \\(L_3\\) en el que la cantidad de sodio y de magnesio sea de 100 mg cada una? En caso afirmativo, calcula dichas cantidades.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>Sean \\(x\\), \\(y\\), \\(z\\) los litros de \\(L_1\\), \\(L_2\\), \\(L_3\\) en la mezcla:</p>\\[\\begin{cases}x+y+z=1\\\\120x+100y+60z=100\\\\90x+90y+180z=100\\end{cases}\\iff\\begin{cases}x+y+z=1\\\\6x+5y+3z=5\\\\9x+9y+18z=10\\end{cases}\\]<p>\\(\\begin{vmatrix}1&1&1\\\\6&5&3\\\\9&9&18\\end{vmatrix}=1(90-27)-1(108-27)+1(54-45)=-9\\neq0\\): por Rouché-Frobenius<i class='n' data-t='th'>\\(|M|\\neq0\\Rightarrow\\operatorname{rg}M=\\operatorname{rg}M^*=3\\): compatible determinado.</i>, el sistema es compatible determinado: tiene solución única.</p></div>"
+    },
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>De la primera, \\(y=1-x-z\\). En la segunda: \\(6x+5-5x-5z+3z=5\\Rightarrow x=2z\\). En la tercera: \\(9(x+y)+18z=9(1-z)+18z=9+9z=10\\Rightarrow z=\\frac19\\); entonces \\(x=\\frac29\\) y \\(y=1-\\frac39=\\frac23\\). Las tres cantidades son positivas: es posible.</p><div class='res'>Sí es posible: \\(\\frac29\\) L de \\(L_1\\) (\\(\\approx0{,}222\\) L), \\(\\frac23\\) L de \\(L_2\\) (\\(\\approx0{,}667\\) L) y \\(\\frac19\\) L de \\(L_3\\) (\\(\\approx0{,}111\\) L)</div><i class='n' data-t='tp'>Comprobación: sodio \\(\\frac{240+600+60}9=100\\) ✓; magnesio \\(\\frac{90\\cdot2+90\\cdot6+180\\cdot1}9=\\frac{900}9=100\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "sistemas",
+     "tipo": "plan",
+     "apartados": ""
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-reserva-3-6",
+   "n": 6,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las matrices \\(A=\\begin{pmatrix}1&2m&-1\\\\3&0&-2\\\\-3m&1&2\\end{pmatrix}\\) y \\(B=\\begin{pmatrix}1&-1&3\\\\0&2&1\\\\2&5&4\\end{pmatrix}\\).",
+    "apartados": [
+     "(1 p.) Determina los valores de \\(m\\) para que la matriz \\(A\\) tenga inversa.",
+     "(1,5 p.) Calcula para \\(m=1\\), si es posible, la matriz \\(X\\) tal que \\(AX=B^t\\), donde \\(B^t\\) denota la matriz traspuesta de \\(B\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(A\\) tiene inversa si y solo si \\(|A|\\neq0\\)<i class='n' data-t='th'>Una matriz cuadrada es invertible si y solo si su determinante es distinto de 0.</i>:</p>\\[|A|=1\\cdot(0+2)-2m\\cdot(6-6m)+(-1)\\cdot3=12m^2-12m-1\\]<p>\\(|A|=0\\iff12m^2-12m-1=0\\iff m=\\dfrac{12\\pm\\sqrt{144+48}}{24}=\\dfrac{3\\pm2\\sqrt3}6\\).</p><div class='res'>\\(A\\) tiene inversa si y solo si \\(m\\neq\\dfrac{3+2\\sqrt3}6\\) y \\(m\\neq\\dfrac{3-2\\sqrt3}6\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Para \\(m=1\\): \\(|A|=12-12-1=-1\\neq0\\): existe \\(A^{-1}\\), y \\(X=A^{-1}B^t\\) (por la izquierda<i class='n' data-t='err'>\\(A\\) está a la izquierda de \\(X\\): \\(A^{-1}\\) multiplica por la <b>izquierda</b> en ambos miembros.</i>).</p><p>\\(A=\\begin{pmatrix}1&2&-1\\\\3&0&-2\\\\-3&1&2\\end{pmatrix}\\), \\(A^{-1}=\\dfrac1{|A|}(\\operatorname{Adj}A)^t\\) con \\(\\operatorname{Adj}A=\\begin{pmatrix}2&0&3\\\\-5&-1&-7\\\\-4&-1&-6\\end{pmatrix}\\):</p>\\[A^{-1}=-\\begin{pmatrix}2&-5&-4\\\\0&-1&-1\\\\3&-7&-6\\end{pmatrix}=\\begin{pmatrix}-2&5&4\\\\0&1&1\\\\-3&7&6\\end{pmatrix}\\qquad B^t=\\begin{pmatrix}1&0&2\\\\-1&2&5\\\\3&1&4\\end{pmatrix}\\]\\[X=\\begin{pmatrix}-2&5&4\\\\0&1&1\\\\-3&7&6\\end{pmatrix}\\begin{pmatrix}1&0&2\\\\-1&2&5\\\\3&1&4\\end{pmatrix}\\]<div class='res'>\\(X=\\begin{pmatrix}5&14&37\\\\2&3&9\\\\8&20&53\\end{pmatrix}\\)</div><i class='n' data-t='tp'>Comprueba: fila 1 de \\(A\\) por columna 1 de \\(X\\): \\(5+4-8=1\\) ✓ (primer elemento de \\(B^t\\)).</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "ecmat",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-reserva-3-7",
+   "n": 7,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera los puntos \\(A(1,-2,3)\\) y \\(B(2,0,-1)\\).",
+    "apartados": [
+     "(1,5 p.) Halla los puntos que dividen el segmento \\(AB\\) en cuatro partes iguales.",
+     "(1 p.) Determina la ecuación del plano perpendicular al segmento \\(AB\\) que pasa por el punto medio de dicho segmento."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(\\overrightarrow{AB}=(1,2,-4)\\). Los tres puntos que dividen el segmento en cuatro partes iguales son \\(P_k=A+\\frac k4\\overrightarrow{AB}\\), con \\(k=1,2,3\\):</p>\\[P_1=\\left(\\frac54,\\,-\\frac32,\\,2\\right)\\qquad P_2=M=\\left(\\frac32,\\,-1,\\,1\\right)\\qquad P_3=\\left(\\frac74,\\,-\\frac12,\\,0\\right)\\]<div class='res'>\\(P_1\\left(\\frac54,-\\frac32,2\\right)\\), \\(P_2\\left(\\frac32,-1,1\\right)\\) (punto medio) y \\(P_3\\left(\\frac74,-\\frac12,0\\right)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>El plano es perpendicular al segmento: su normal es \\(\\overrightarrow{AB}=(1,2,-4)\\)<i class='n' data-t='th'>Un plano \\(Ax+By+Cz+D=0\\) tiene normal \\((A,B,C)\\); si es perpendicular al segmento, este es paralelo a la normal.</i>. Pasa por \\(M\\left(\\frac32,-1,1\\right)\\):</p>\\[x+2y-4z+D=0:\\ \\frac32-2-4+D=0\\Rightarrow D=\\frac92\\]<div style='overflow-x:auto'><svg viewBox='0 0 340 270' width='100%' style='max-width:440px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><defs><marker id='r3bn' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#dc2626'/></marker><marker id='r3bd' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#16a34a'/></marker><marker id='r3br' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#2563eb'/></marker><marker id='r3ba' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#64748b'/></marker></defs><polygon points='75.8,26.0 218.9,144.8 264.2,220.0 121.1,101.2' fill='#8b5cf6' fill-opacity='.28' stroke='#7c3aed' stroke-width='1.3'/><line x1='222.3' y1='35.9' x2='117.7' y2='210.1' stroke='#2563eb' stroke-width='2.2'/><line x1='147.3' y1='85.4' x2='108.2' y2='150.7' stroke='#dc2626' stroke-width='2.4' marker-end='url(#r3bn)'/><text x='114.2' y='146.7' fill='#dc2626' font-weight='700'>n</text><circle cx='213.6' cy='50.4' r='3.8' fill='#e8487a'/><text x='199.6' y='44.4' font-weight='700'>A</text><circle cx='191.8' cy='86.7' r='3.8' fill='#e8487a'/><text x='199.8' y='80.7' font-weight='700'>P₁</text><circle cx='170.0' cy='123.0' r='3.8' fill='#e8487a'/><text x='178.0' y='135.0' font-weight='700'>M</text><circle cx='148.2' cy='159.3' r='3.8' fill='#e8487a'/><text x='156.2' y='153.3' font-weight='700'>P₃</text><circle cx='126.4' cy='195.6' r='3.8' fill='#e8487a'/><text x='134.4' y='207.6' font-weight='700'>B</text><g stroke='#64748b' stroke-width='1.2' fill='none'><line x1='30' y1='224' x2='13.1' y2='213.8'/><line x1='30' y1='224' x2='15.9' y2='236.1'/><line x1='30' y1='224' x2='30.0' y2='208.7'/></g><g fill='#64748b' font-size='10'><text x='4.8' y='214.6'>x</text><text x='8.4' y='244.0'>y</text><text x='27.0' y='207.9'>z</text></g><g transform='translate(10.0,258)'><rect x='0' y='-8' width='12' height='9' fill='#8b5cf6' fill-opacity='.4' stroke='#7c3aed'/><text x='18' y='0' font-size='10'>plano</text></g><g transform='translate(63.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#2563eb' stroke-width='2'/><text x='18' y='0' font-size='10'>recta</text></g><g transform='translate(116.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#dc2626' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector normal</text></g><g transform='translate(212.2,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#16a34a' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector director</text></g><g transform='translate(319.2,258)'><circle cx='6' cy='-4' r='3.8' fill='#e8487a'/><text x='18' y='0' font-size='10'>puntos</text></g></svg></div><div class='res'>\\(2x+4y-8z+9=0\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "vec",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "ecs",
+     "apartados": "b"
+    },
+    {
+     "tema": "geom",
+     "tipo": "perp",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2023-reserva-3-8",
+   "n": 8,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el plano \\(\\pi\\equiv x+y+z=0\\) y la recta \\(r\\equiv x-1=\\dfrac y2=\\dfrac{z+1}2\\). Halla la ecuación de un plano \\(\\pi'\\), paralelo a \\(\\pi\\), tal que si \\(Q\\) y \\(Q'\\) son respectivamente los puntos de corte de la recta \\(r\\) con los planos \\(\\pi\\) y \\(\\pi'\\), entonces la distancia entre \\(Q\\) y \\(Q'\\) sea de 2 unidades.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Punto \\(Q\\) y puntos \\(Q'\\) posibles",
+     "html": "<div class='ex'><p>\\(r\\equiv(1+t,\\ 2t,\\ -1+2t)\\), con dirección \\(\\vec d=(1,2,2)\\) y \\(|\\vec d|=3\\). Corte con \\(\\pi\\):</p>\\[(1+t)+2t+(-1+2t)=0\\iff5t=0\\iff t=0\\ \\Rightarrow\\ Q(1,0,-1)\\]<p>Un punto \\(Q'\\) de \\(r\\) con parámetro \\(t\\) está a distancia \\(|t|\\cdot|\\vec d|=3|t|\\) de \\(Q\\). Debe ser 2:</p>\\[3|t|=2\\iff t=\\pm\\frac23\\ \\Rightarrow\\ Q'\\left(\\frac53,\\frac43,\\frac13\\right)\\ \\text{o}\\ Q'\\left(\\frac13,-\\frac43,-\\frac73\\right)\\]</div>"
+    },
+    {
+     "titulo": "Plano \\(\\pi'\\)",
+     "html": "<div class='ex'><p>\\(\\pi'\\) es paralelo a \\(\\pi\\): \\(x+y+z=k\\). Para cada \\(Q'\\), \\(k=x+y+z\\) en ese punto (en \\(r\\), \\(x+y+z=5t\\)):</p>\\[t=\\tfrac23:\\ k=\\tfrac{10}3\\qquad t=-\\tfrac23:\\ k=-\\tfrac{10}3\\]<div style='overflow-x:auto'><svg viewBox='0 0 340 270' width='100%' style='max-width:440px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><defs><marker id='r3cn' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#dc2626'/></marker><marker id='r3cd' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#16a34a'/></marker><marker id='r3cr' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#2563eb'/></marker><marker id='r3ca' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#64748b'/></marker></defs><polygon points='170.7,220.0 92.2,125.1 115.9,61.6 194.4,156.5' fill='#8b5cf6' fill-opacity='.28' stroke='#7c3aed' stroke-width='1.3'/><polygon points='224.1,184.4 145.6,89.5 169.3,26.0 247.8,120.9' fill='#94a3b8' fill-opacity='.28' stroke='#64748b' stroke-width='1.3'/><line x1='115.2' y1='159.4' x2='224.8' y2='86.6' stroke='#2563eb' stroke-width='2.2'/><line x1='119.2' y1='156.8' x2='143.3' y2='140.8' stroke='#16a34a' stroke-width='2.4' marker-end='url(#r3cd)'/><text x='149.3' y='136.8' fill='#16a34a' font-weight='700'>d</text><circle cx='143.3' cy='140.8' r='3.8' fill='#e8487a'/><text x='151.3' y='152.8' font-weight='700'>Q</text><circle cx='196.7' cy='105.2' r='3.8' fill='#e8487a'/><text x='204.7' y='99.2' font-weight='700'>Q′</text><text x='137.5' y='168.5' fill='#8b5cf6' font-weight='700' font-style='italic'>π</text><text x='190.9' y='133.0' fill='#64748b' font-weight='700' font-style='italic'>π′</text><g stroke='#64748b' stroke-width='1.2' fill='none'><line x1='30' y1='224' x2='41.0' y2='237.7'/><line x1='30' y1='224' x2='49.1' y2='216.1'/><line x1='30' y1='224' x2='30.0' y2='208.7'/></g><g fill='#64748b' font-size='10'><text x='41.5' y='246.1'>x</text><text x='52.1' y='217.6'>y</text><text x='27.0' y='207.9'>z</text></g><g transform='translate(10.0,258)'><rect x='0' y='-8' width='12' height='9' fill='#8b5cf6' fill-opacity='.4' stroke='#7c3aed'/><text x='18' y='0' font-size='10'>plano</text></g><g transform='translate(63.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#2563eb' stroke-width='2'/><text x='18' y='0' font-size='10'>recta</text></g><g transform='translate(116.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#dc2626' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector normal</text></g><g transform='translate(212.2,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#16a34a' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector director</text></g><g transform='translate(319.2,258)'><circle cx='6' cy='-4' r='3.8' fill='#e8487a'/><text x='18' y='0' font-size='10'>puntos</text></g></svg></div><div class='res'>\\(\\pi'\\equiv x+y+z=\\dfrac{10}3\\) (es decir, \\(3x+3y+3z-10=0\\)); también vale \\(x+y+z=-\\dfrac{10}3\\)</div><i class='n' data-t='tp'>Comprobación: \\(d(\\pi,\\pi')=\\frac{|10/3|}{\\sqrt3}\\) y \\(d(Q,Q')=2\\) a lo largo de \\(r\\), que forma con la normal un ángulo con \\(\\cos=\\frac{(1,2,2)\\cdot(1,1,1)}{3\\sqrt3}=\\frac5{3\\sqrt3}\\): \\(2\\cdot\\frac5{3\\sqrt3}=\\frac{10}{3\\sqrt3}\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "pos",
+     "apartados": ""
+    },
+    {
+     "tema": "geom",
+     "tipo": "dist",
+     "apartados": ""
+    },
+    {
+     "tema": "geom",
+     "tipo": "ecs",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

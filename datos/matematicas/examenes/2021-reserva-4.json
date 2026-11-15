@@ -1,0 +1,315 @@
+{
+ "version": 1,
+ "id": "matematicas-2021-reserva-4",
+ "asignatura": "matematicas",
+ "anio": 2021,
+ "convocatoria": "Reserva 4",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2021-reserva-4-1",
+   "n": 1,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea la función derivable \\(f:\\mathbb R\\to\\mathbb R\\) definida por \\[f(x)=\\begin{cases}\\dfrac{ax+b}{x-1}&\\text{si }x\\le0\\\\\\ln(1+x)&\\text{si }x\\gt0\\end{cases}\\] (\\(\\ln\\) denota la función logaritmo neperiano).",
+    "apartados": [
+     "(1,5 p.) Determina \\(a\\) y \\(b\\).",
+     "(1 p.) Halla las ecuaciones de las rectas tangente y normal a la gráfica de \\(f\\) en el punto de abscisa \\(x=2\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Derivable implica continua y con derivadas laterales iguales en \\(x=0\\)<i class='n' data-t='th'>\\(f\\) derivable en \\(x_0\\Rightarrow\\) continua en \\(x_0\\), y \\(f'(x_0^-)=f'(x_0^+)\\).</i>.</p>\\[\\text{Continuidad: }f(0)=\\frac b{-1}=-b=\\lim_{x\\to0^+}\\ln(1+x)=0\\Rightarrow b=0\\]\\[f'(x)=\\frac{a(x-1)-(ax+b)}{(x-1)^2}=\\frac{-a-b}{(x-1)^2}\\ (x\\lt0)\\Rightarrow f'(0^-)=-a-b\\qquad f'(0^+)=\\frac1{1+0}=1\\]<p>\\(-a-b=1\\) y \\(b=0\\): \\(a=-1\\).</p><div class='res'>\\(a=-1\\) y \\(b=0\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>En \\(x=2\\) (tramo \\(\\ln(1+x)\\)): \\(f(2)=\\ln3\\) y \\(f'(2)=\\frac13\\).</p><div class='res'>Tangente: \\(y-\\ln3=\\dfrac13(x-2)\\). Normal: \\(y-\\ln3=-3(x-2)\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "cont",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-4-2",
+   "n": 2,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Halla \\(a\\), \\(b\\) y \\(c\\) sabiendo que la función \\(f:\\mathbb R\\to\\mathbb R\\) dada por \\(f(x)=a+b\\operatorname{sen}(x)+c\\operatorname{sen}(2x)\\) tiene un punto crítico en el punto de abscisa \\(x=\\pi\\) y la recta \\(y=-\\dfrac12x+3\\) es normal a la gráfica de \\(f\\) en el punto de abscisa \\(x=0\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Condiciones",
+     "html": "<div class='ex'><p>\\(f'(x)=b\\cos x+2c\\cos2x\\). Tres condiciones:</p><p>• Punto crítico en \\(x=\\pi\\): \\(f'(\\pi)=-b+2c=0\\Rightarrow b=2c\\).</p><p>• La recta \\(y=-\\frac12x+3\\) es normal en \\(x=0\\): la normal pasa por \\((0,f(0))\\) y su pendiente \\(-\\frac12\\) es \\(-\\frac1{f'(0)}\\)<i class='n' data-t='th'>Normal en \\(x_0\\): pasa por \\((x_0,f(x_0))\\) y tiene pendiente \\(-1/f'(x_0)\\). La tangente tiene pendiente \\(f'(x_0)=2\\).</i>. Así \\(f(0)=3\\) (ordenada de la recta en \\(x=0\\)): \\(a=3\\); y \\(f'(0)=2\\): \\(b+2c=2\\).</p><p>Con \\(b=2c\\): \\(4c=2\\Rightarrow c=\\frac12\\) y \\(b=1\\).</p><div class='res'>\\(a=3\\), \\(b=1\\) y \\(c=\\dfrac12\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-4-3",
+   "n": 3,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(f:(0,+\\infty)\\to\\mathbb R\\) definida por \\(f(x)=(\\ln(x))^2\\) (\\(\\ln\\) denota la función logaritmo neperiano).",
+    "apartados": [
+     "(1 p.) Determina los intervalos de crecimiento y de decrecimiento de \\(f\\), así como sus extremos relativos (abscisas donde se obtienen y valores que se alcanzan).",
+     "(1,5 p.) Calcula el área de la región limitada por la gráfica de la función \\(f\\) y las rectas \\(y=0\\), \\(x=1\\), \\(x=e\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'>\\[f'(x)=\\frac{2\\ln x}x=0\\iff x=1\\]<p>Para \\(x\\gt0\\), el denominador es positivo: \\(f'\\) tiene el signo de \\(\\ln x\\): negativo en \\((0,1)\\), positivo en \\((1,+\\infty)\\)<i class='n' data-t='th'>Si \\(f'\\) pasa de negativa a positiva en \\(x_0\\), hay un mínimo relativo.</i>.</p><div class='res'>Decreciente en \\((0,1)\\) y creciente en \\((1,+\\infty)\\). Mínimo relativo en \\(x=1\\), con \\(f(1)=0\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(f\\ge0\\) en \\([1,e]\\). Integro por partes dos veces (logaritmo antes que polinomio en ALPES): \\(\\int(\\ln x)^2dx=x(\\ln x)^2-2\\int\\ln x\\,dx=x(\\ln x)^2-2(x\\ln x-x)\\).</p>\\[A=\\int_1^e(\\ln x)^2\\,dx=\\bigl[x(\\ln x)^2-2x\\ln x+2x\\bigr]_1^e=(e-2e+2e)-2\\]<div class='res'>Área \\(=e-2\\approx0{,}718\\ u^2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "a"
+    },
+    {
+     "tema": "integ",
+     "tipo": "area",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-4-4",
+   "n": 4,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Calcula \\(\\displaystyle\\int_0^2\\frac1{1+\\sqrt{e^x}}\\,dx\\). (Sugerencia: efectúa el cambio de variable \\(t=\\sqrt{e^x}\\).)",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Cambio de variable",
+     "html": "<div class='ex'><p>Con \\(t=\\sqrt{e^x}=e^{x/2}\\): \\(x=2\\ln t\\), \\(dx=\\dfrac{2\\,dt}t\\). Límites: \\(x=0\\Rightarrow t=1\\); \\(x=2\\Rightarrow t=e\\).</p>\\[\\int_0^2\\frac{dx}{1+\\sqrt{e^x}}=\\int_1^e\\frac2{t(1+t)}\\,dt\\]<p>Fracciones simples: \\(\\dfrac1{t(1+t)}=\\dfrac1t-\\dfrac1{1+t}\\).</p></div>"
+    },
+    {
+     "titulo": "Integración",
+     "html": "<div class='ex'>\\[2\\int_1^e\\left(\\frac1t-\\frac1{1+t}\\right)dt=2\\bigl[\\ln t-\\ln(1+t)\\bigr]_1^e=2\\left[(1-\\ln(1+e))-(0-\\ln2)\\right]\\]<div class='res'>\\(2+2\\ln\\dfrac2{1+e}\\approx0{,}2923\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "cambio",
+     "apartados": ""
+    },
+    {
+     "tema": "integ",
+     "tipo": "racional",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-4-5",
+   "n": 5,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el sistema de ecuaciones \\[\\begin{cases}x+y+2z=0\\\\3x-y-2z=0\\\\-x+2y+mz=0\\end{cases}\\]",
+    "apartados": [
+     "(1,5 p.) Calcula \\(m\\) para que el sistema tenga infinitas soluciones y hállalas.",
+     "(1 p.) Para \\(m=2\\), ¿existe alguna solución tal que \\(z=1\\)? En caso afirmativo, calcúlala. En caso negativo, justifica la respuesta."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Sistema homogéneo: tiene infinitas soluciones si \\(|M|=0\\)<i class='n' data-t='th'>Un sistema homogéneo es indeterminado si y solo si \\(\\operatorname{rg}M\\lt n\\), es decir, \\(|M|=0\\).</i>:</p>\\[|M|=\\begin{vmatrix}1&1&2\\\\3&-1&-2\\\\-1&2&m\\end{vmatrix}=(4-m)-(3m-2)+2\\cdot5=16-4m=0\\iff m=4\\]<p>Con \\(m=4\\): sumando las dos primeras, \\(4x=0\\Rightarrow x=0\\), y \\(y=-2z\\) (la tercera: \\(2y+4z=0\\) ✓).</p><div class='res'>\\(m=4\\); soluciones: \\((0,\\ -2\\lambda,\\ \\lambda)\\), con \\(\\lambda\\in\\mathbb R\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Para \\(m=2\\): \\(|M|=16-8=8\\neq0\\): sistema homogéneo compatible determinado, con solo la solución trivial \\((0,0,0)\\), en la que \\(z=0\\).</p><div class='res'>No existe: la única solución es \\((0,0,0)\\), que no tiene \\(z=1\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "sistemas",
+     "tipo": "disc",
+     "apartados": "a"
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-4-6",
+   "n": 6,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la matriz \\(A=\\begin{pmatrix}a&b&c\\\\d&e&f\\\\1&2&3\\end{pmatrix}\\), con determinante igual a 2.",
+    "apartados": [
+     "(0,5 p.) Calcula razonadamente \\(\\left|\\frac13A^{-1}A^t\\right|\\).",
+     "(2 p.) Calcula razonadamente los determinantes \\(\\begin{vmatrix}6c&2b&2a\\\\3f&e&d\\\\9&2&1\\end{vmatrix}\\) y \\(\\begin{vmatrix}2a-2b&c&b\\\\2d-2e&f&e\\\\-2&3&2\\end{vmatrix}\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Propiedades<i class='n' data-t='th'>\\(|MN|=|M||N|\\), \\(|M^{-1}|=\\frac1{|M|}\\), \\(|M^t|=|M|\\) y \\(|kM|=k^n|M|\\) para una matriz \\(n\\times n\\) (aquí \\(n=3\\)).</i>:</p>\\[\\left|\\tfrac13A^{-1}A^t\\right|=\\left(\\tfrac13\\right)^3|A^{-1}|\\,|A^t|=\\frac1{27}\\cdot\\frac1{|A|}\\cdot|A|\\]<div class='res'>\\(\\dfrac1{27}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Las columnas de \\(A\\) son \\(\\alpha=(a,d,1)^t\\), \\(\\beta=(b,e,2)^t\\), \\(\\gamma=(c,f,3)^t\\), con \\(|\\alpha\\ \\beta\\ \\gamma|=2\\).</p><p><b>Primero.</b> Intercambio las columnas 1 y 3 (cambia el signo): \\(\\begin{vmatrix}2a&2b&6c\\\\d&e&3f\\\\1&2&9\\end{vmatrix}\\); saco el 2 de la fila 1 y el 3 de la columna 3: queda \\(2\\cdot3\\,|\\alpha\\ \\beta\\ \\gamma|\\):</p>\\[\\begin{vmatrix}6c&2b&2a\\\\3f&e&d\\\\9&2&1\\end{vmatrix}=-(2\\cdot3\\cdot|A|)=-12\\]<p><b>Segundo.</b> Columnas: \\(2(\\alpha-\\beta)\\), \\(\\gamma\\) y \\(\\beta\\) (porque \\((a-b,d-e,-1)=\\alpha-\\beta\\)). Saco el 2; sumo la 3.ª columna a la 1.ª (\\(\\alpha-\\beta+\\beta=\\alpha\\), no cambia el determinante) e intercambio las columnas 2 y 3 (cambia el signo):</p>\\[2\\,|\\alpha-\\beta\\ \\ \\gamma\\ \\ \\beta|=2\\,|\\alpha\\ \\ \\gamma\\ \\ \\beta|=-2\\,|\\alpha\\ \\ \\beta\\ \\ \\gamma|=-4\\]<div class='res'>Primer determinante: \\(-12\\). Segundo determinante: \\(-4\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "det",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-4-7",
+   "n": 7,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las rectas \\(r\\equiv\\dfrac x1=\\dfrac{y+2}2=\\dfrac{z-1}1\\) y \\(s\\equiv\\begin{cases}x-y+z=2\\\\3x-y-z=-4\\end{cases}\\) Sabiendo que dos de los lados de un cuadrado están en las rectas \\(r\\) y \\(s\\), calcula su área.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Posición de las rectas",
+     "html": "<div class='ex'><p>\\(r\\): \\(R(0,-2,1)\\), \\(\\vec d_r=(1,2,1)\\). \\(s\\): dirección \\((1,-1,1)\\times(3,-1,-1)=(2,4,2)\\sim(1,2,1)\\): las direcciones son proporcionales, \\(r\\parallel s\\) (si no, dos lados de un cuadrado en ellas no serían paralelos u opuestos). Un punto de \\(s\\) (con \\(z=0\\)): \\(x-y=2\\), \\(3x-y=-4\\Rightarrow S(-3,-5,0)\\). \\(R\\notin s\\) (\\(0+2+1=3\\neq2\\)): paralelas distintas.</p></div>"
+    },
+    {
+     "titulo": "Área del cuadrado",
+     "html": "<div class='ex'><p>Dos lados opuestos del cuadrado están en rectas paralelas: el lado es la distancia entre ellas<i class='n' data-t='th'>Distancia entre rectas paralelas \\(=\\dfrac{|\\overrightarrow{RS}\\times\\vec d|}{|\\vec d|}\\).</i>:</p>\\[\\overrightarrow{RS}=(-3,-3,-1)\\qquad\\overrightarrow{RS}\\times\\vec d_r=(-1,2,-3)\\qquad\\text{lado}=\\frac{\\sqrt{14}}{\\sqrt6}=\\sqrt{\\frac73}\\]<div class='res'>Área \\(=\\text{lado}^2=\\dfrac73\\ u^2\\approx2{,}333\\ u^2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "dist",
+     "apartados": ""
+    },
+    {
+     "tema": "geom",
+     "tipo": "area",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-4-8",
+   "n": 8,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las rectas \\(r\\equiv\\begin{cases}x=1+\\lambda\\\\y=1+\\lambda\\\\z=2+m\\lambda\\end{cases}\\) y \\(s\\equiv\\begin{cases}x-y+2z=3\\\\x+z=2\\end{cases}\\)",
+    "apartados": [
+     "(1,5 p.) Estudia la posición relativa de \\(r\\) y \\(s\\) según los valores de \\(m\\).",
+     "(1 p.) Para \\(m=1\\), calcula el coseno del ángulo que forman las rectas \\(r\\) y \\(s\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(r\\): \\(R(1,1,2)\\), \\(\\vec d_r=(1,1,m)\\). \\(s\\): dirección \\((1,-1,2)\\times(1,0,1)=(-1,1,1)\\sim(1,-1,-1)\\); un punto (con \\(z=0\\)): \\(x=2\\), \\(y=-1\\): \\(S(2,-1,0)\\). Nunca son paralelas (\\((1,1,m)\\) no es proporcional a \\((1,-1,-1)\\), pues \\(1\\neq-1\\)). Coplanaridad con \\(\\overrightarrow{RS}=(1,-2,-2)\\)<i class='n' data-t='th'>Direcciones no proporcionales: se cortan si \\([\\overrightarrow{RS},\\vec d_r,\\vec d_s]=0\\) y se cruzan si no.</i>:</p>\\[\\begin{vmatrix}1&-2&-2\\\\1&1&m\\\\1&-1&-1\\end{vmatrix}=(-1+m)+2(-1-m)-2(-1-1)=1-m\\]<div class='res'>\\(m=1\\): las rectas se cortan. \\(m\\neq1\\): las rectas se cruzan</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Para \\(m=1\\): \\(\\vec d_r=(1,1,1)\\) y \\(\\vec d_s=(1,-1,-1)\\). El ángulo entre dos rectas cumple<i class='n' data-t='th'>\\(\\cos\\theta=\\dfrac{|\\vec d_r\\cdot\\vec d_s|}{|\\vec d_r||\\vec d_s|}\\), con \\(\\theta\\in[0^\\circ,90^\\circ]\\).</i> \\(\\cos\\theta=\\dfrac{|\\vec d_r\\cdot\\vec d_s|}{|\\vec d_r||\\vec d_s|}\\):</p>\\[\\vec d_r\\cdot\\vec d_s=1-1-1=-1\\qquad\\cos\\theta=\\frac{|-1|}{\\sqrt3\\cdot\\sqrt3}\\]<div class='res'>\\(\\cos\\theta=\\dfrac13\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "pos",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "vec",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

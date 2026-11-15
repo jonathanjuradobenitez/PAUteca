@@ -1,0 +1,316 @@
+{
+ "version": 1,
+ "id": "matematicas-2022-reserva-4",
+ "asignatura": "matematicas",
+ "anio": 2022,
+ "convocatoria": "Reserva 4",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2022-reserva-4-1",
+   "n": 1,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Calcula \\(a\\) y \\(b\\) sabiendo que \\(\\displaystyle\\lim_{x\\to0}\\frac{a\\operatorname{sen}(x)+x\\ln(x+1)+bx^2}{x^3+x^2}=2\\) (donde \\(\\ln\\) denota la función logaritmo neperiano).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Primera aplicación: valor de \\(a\\)",
+     "html": "<div class='ex'><p>Con \\(N(x)=a\\operatorname{sen}x+x\\ln(x+1)+bx^2\\) y \\(D(x)=x^3+x^2\\): \\(N(0)=0\\) y \\(D(0)=0\\): \\(\\tfrac00\\). L'Hôpital<i class='n' data-t='th'>Regla de L'Hôpital: si \\(N(x_0)=D(x_0)=0\\) y existe \\(\\lim\\frac{N'}{D'}\\) (finito o infinito), entonces \\(\\lim\\frac ND=\\lim\\frac{N'}{D'}\\).</i>:</p>\\[N'(x)=a\\cos x+\\ln(x+1)+\\frac x{x+1}+2bx\\qquad D'(x)=3x^2+2x\\qquad N'(0)=a,\\ D'(0)=0\\]<p>Si \\(a\\neq0\\) el límite sería infinito. Luego \\(a=0\\).</p></div>"
+    },
+    {
+     "titulo": "Segunda aplicación: valor de \\(b\\)",
+     "html": "<div class='ex'><p>Con \\(a=0\\): \\(N'(0)=0\\) y \\(D'(0)=0\\): otra vez \\(\\tfrac00\\).</p>\\[N''(x)=\\frac1{x+1}+\\frac1{(x+1)^2}+2b\\qquad D''(x)=6x+2\\qquad\\lim_{x\\to0}\\frac{N''}{D''}=\\frac{2+2b}2=1+b\\]<p>\\(1+b=2\\Rightarrow b=1\\).</p><div class='res'>\\(a=0\\) y \\(b=1\\)</div><i class='n' data-t='tp'>Comprobación: \\(x\\ln(1+x)+x^2\\approx2x^2-\\frac{x^3}2\\) y \\(x^3+x^2=x^2(1+x)\\): el cociente tiende a 2 ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "lim",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-4-2",
+   "n": 2,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea \\(f:[0,2\\pi]\\to\\mathbb R\\) la función definida por \\(f(x)=e^x\\bigl(\\cos(x)+\\operatorname{sen}(x)\\bigr)\\).",
+    "apartados": [
+     "(2 p.) Halla los extremos absolutos de \\(f\\) (abscisas donde se obtienen y valores que se alcanzan).",
+     "(0,5 p.) Determina la ecuación de la recta tangente y la ecuación de la recta normal a la gráfica de \\(f\\) en el punto de abscisa \\(x=\\dfrac{3\\pi}2\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'>\\[f'(x)=e^x(\\cos x+\\operatorname{sen}x)+e^x(-\\operatorname{sen}x+\\cos x)=2e^x\\cos x=0\\iff x=\\tfrac\\pi2\\ \\text{o}\\ x=\\tfrac{3\\pi}2\\]<p>Como \\(e^x\\gt0\\), el signo de \\(f'\\) es el de \\(\\cos x\\): \\(f'\\gt0\\) en \\((0,\\frac\\pi2)\\) y en \\((\\frac{3\\pi}2,2\\pi)\\), \\(f'\\lt0\\) en \\((\\frac\\pi2,\\frac{3\\pi}2)\\). Función continua en un intervalo cerrado: comparo valores<i class='n' data-t='th'>Teorema de Weierstrass: una función continua en un intervalo cerrado alcanza máximo y mínimo absolutos, en puntos críticos o en los extremos.</i>:</p><table class='tb'><tr><th>\\(x\\)</th><th>0</th><th>\\(\\frac\\pi2\\)</th><th>\\(\\frac{3\\pi}2\\)</th><th>\\(2\\pi\\)</th></tr><tr><td>\\(f(x)\\)</td><td>1</td><td>\\(e^{\\pi/2}\\approx4{,}81\\)</td><td>\\(-e^{3\\pi/2}\\approx-111{,}3\\)</td><td>\\(e^{2\\pi}\\approx535{,}5\\)</td></tr></table><div class='res'>Máximo absoluto en \\(x=2\\pi\\), de valor \\(e^{2\\pi}\\). Mínimo absoluto en \\(x=\\frac{3\\pi}2\\), de valor \\(-e^{3\\pi/2}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(f\\left(\\frac{3\\pi}2\\right)=-e^{3\\pi/2}\\) y \\(f'\\left(\\frac{3\\pi}2\\right)=0\\): la tangente es horizontal y la normal, vertical.</p><div class='res'>Tangente: \\(y=-e^{3\\pi/2}\\). Normal: \\(x=\\dfrac{3\\pi}2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-4-3",
+   "n": 3,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(f:\\mathbb R\\to\\mathbb R\\) definida por \\(f(x)=x^3-x\\). Calcula el área total de los recintos limitados por la gráfica de la función \\(f\\) y la recta normal a dicha gráfica en el punto de abscisa \\(x=0\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Recta normal y puntos de corte",
+     "html": "<div class='ex'><p>\\(f(0)=0\\) y \\(f'(x)=3x^2-1\\Rightarrow f'(0)=-1\\). La normal tiene pendiente \\(-\\frac1{f'(0)}=1\\): \\(y=x\\). Corte con \\(f\\):</p>\\[x^3-x=x\\iff x(x^2-2)=0\\iff x=0,\\ \\pm\\sqrt2\\]</div>"
+    },
+    {
+     "titulo": "Área total",
+     "html": "<div class='ex'><p>Hay dos recintos: en \\([-\\sqrt2,0]\\), \\(f\\) queda por encima de la recta (\\(x^3-2x\\gt0\\), por ejemplo en \\(x=-1\\)); en \\([0,\\sqrt2]\\), la recta queda por encima. Como \\(x^3-2x\\) es impar, los dos recintos tienen la misma área:</p>\\[A=2\\int_0^{\\sqrt2}\\bigl[x-(x^3-x)\\bigr]dx=2\\int_0^{\\sqrt2}(2x-x^3)\\,dx=2\\left[x^2-\\frac{x^4}4\\right]_0^{\\sqrt2}=2(2-1)\\]<div class='res'>Área total \\(=2\\ u^2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "area",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-4-4",
+   "n": 4,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Calcula \\(\\displaystyle\\int_0^3\\frac x{\\sqrt{1+x}}\\,dx\\). (Sugerencia: efectúa el cambio de variable \\(t=\\sqrt{1+x}\\).)",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Cambio de variable",
+     "html": "<div class='ex'><p>Con \\(t=\\sqrt{1+x}\\): \\(x=t^2-1\\), \\(dx=2t\\,dt\\). Límites: \\(x=0\\Rightarrow t=1\\); \\(x=3\\Rightarrow t=2\\).</p><i class='n' data-t='why'>En una integral definida con cambio de variable se cambian también los límites.</i>\\[\\int_0^3\\frac x{\\sqrt{1+x}}\\,dx=\\int_1^2\\frac{t^2-1}t\\cdot2t\\,dt=2\\int_1^2(t^2-1)\\,dt=2\\left[\\frac{t^3}3-t\\right]_1^2\\]<div class='res'>\\(=2\\left[\\left(\\dfrac83-2\\right)-\\left(\\dfrac13-1\\right)\\right]=2\\cdot\\dfrac43=\\dfrac83\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "cambio",
+     "apartados": ""
+    },
+    {
+     "tema": "integ",
+     "tipo": "def",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-4-5",
+   "n": 5,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "La suma de los seguidores en una determinada red social de Alberto, Begoña y Carlos es de 13000 personas. Aunque Carlos perdiera una tercera parte de sus seguidores, todavía seguiría teniendo el doble de seguidores que tiene Alberto. Por otro lado, los seguidores de Alberto más la quinta parte de los seguidores de Begoña, son tantos como la mitad de los de Carlos. Calcula cuántos seguidores tiene cada uno.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>Sean \\(x\\), \\(y\\), \\(z\\) los seguidores de Alberto, Begoña y Carlos:</p>\\[\\begin{cases}x+y+z=13000\\\\z-\\frac z3=2x\\\\x+\\frac y5=\\frac z2\\end{cases}\\iff\\begin{cases}x+y+z=13000\\\\3x-z=0\\\\10x+2y-5z=0\\end{cases}\\]<p>\\(\\begin{vmatrix}1&1&1\\\\3&0&-1\\\\10&2&-5\\end{vmatrix}=13\\neq0\\): por Rouché-Frobenius<i class='n' data-t='th'>Si \\(|M|\\neq0\\), el sistema \\(3\\times3\\) es compatible determinado.</i> la solución es única.</p></div>"
+    },
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>De la segunda, \\(z=3x\\). En la tercera: \\(10x+2y-15x=0\\Rightarrow y=\\frac52x\\). En la primera: \\(x+\\frac52x+3x=13000\\Rightarrow6{,}5x=13000\\Rightarrow x=2000\\).</p><div class='res'>Alberto: 2000 seguidores; Begoña: 5000; Carlos: 6000</div><i class='n' data-t='tp'>Comprobación: \\(6000-2000=4000=2\\cdot2000\\) ✓ y \\(2000+1000=3000=\\frac{6000}2\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "sistemas",
+     "tipo": "plan",
+     "apartados": ""
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-4-6",
+   "n": 6,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las matrices \\(A=\\begin{pmatrix}m&1&3\\\\1&m&2\\\\1&m&3\\end{pmatrix}\\) y \\(B=\\begin{pmatrix}2&2\\\\1&0\\\\-1&2\\end{pmatrix}\\).",
+    "apartados": [
+     "(1 p.) Calcula el rango de la matriz \\(A\\) según los valores de \\(m\\).",
+     "(1,5 p.) Para \\(m=0\\) resuelve la ecuación \\(AX=B\\), si es posible."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'>\\[|A|=m(3m-2m)-1\\cdot(3-2)+3(m-m)=m^2-1\\]<p>\\(|A|=0\\iff m=\\pm1\\). Si \\(m\\neq\\pm1\\): \\(\\operatorname{rg}A=3\\)<i class='n' data-t='th'>El rango de una matriz \\(3\\times3\\) es 3 si y solo si su determinante es distinto de 0; si es 0, el rango es 2 cuando hay algún menor \\(2\\times2\\) no nulo.</i>.</p><p>• \\(m=1\\): \\(A=\\begin{pmatrix}1&1&3\\\\1&1&2\\\\1&1&3\\end{pmatrix}\\): menor \\(\\begin{vmatrix}1&3\\\\1&2\\end{vmatrix}=-1\\neq0\\): rango 2.</p><p>• \\(m=-1\\): \\(A=\\begin{pmatrix}-1&1&3\\\\1&-1&2\\\\1&-1&3\\end{pmatrix}\\): menor \\(\\begin{vmatrix}-1&3\\\\1&2\\end{vmatrix}=-5\\neq0\\): rango 2.</p><div class='res'>\\(\\operatorname{rg}A=3\\) si \\(m\\neq\\pm1\\); \\(\\operatorname{rg}A=2\\) si \\(m=1\\) o \\(m=-1\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Para \\(m=0\\): \\(|A|=-1\\neq0\\), existe \\(A^{-1}\\) y \\(X=A^{-1}B\\) (por la izquierda<i class='n' data-t='err'>\\(A\\) está a la izquierda de \\(X\\): \\(AX=B\\Rightarrow X=A^{-1}B\\).</i>). \\(A=\\begin{pmatrix}0&1&3\\\\1&0&2\\\\1&0&3\\end{pmatrix}\\), \\(\\operatorname{Adj}A=\\begin{pmatrix}0&-1&0\\\\-3&-3&1\\\\2&3&-1\\end{pmatrix}\\):</p>\\[A^{-1}=\\frac1{-1}(\\operatorname{Adj}A)^t=\\begin{pmatrix}0&3&-2\\\\1&3&-3\\\\0&-1&1\\end{pmatrix}\\qquad X=\\begin{pmatrix}0&3&-2\\\\1&3&-3\\\\0&-1&1\\end{pmatrix}\\begin{pmatrix}2&2\\\\1&0\\\\-1&2\\end{pmatrix}\\]<div class='res'>\\(X=\\begin{pmatrix}5&-4\\\\8&-4\\\\-2&2\\end{pmatrix}\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "rango",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "ecmat",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-4-7",
+   "n": 7,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el triángulo cuyos vértices son los puntos \\(A(0,2,3)\\), \\(B(m,0,1)\\) y \\(C(2,1,2)\\).",
+    "apartados": [
+     "(1,5 p.) Halla los valores de \\(m\\), sabiendo que el área del triángulo es \\(\\dfrac{\\sqrt{18}}2\\) unidades cuadradas.",
+     "(1 p.) Para \\(m=0\\), calcula el coseno del ángulo en el vértice \\(A\\) de dicho triángulo."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(\\overrightarrow{AB}=(m,-2,-2)\\), \\(\\overrightarrow{AC}=(2,-1,-1)\\). Área \\(=\\frac12|\\overrightarrow{AB}\\times\\overrightarrow{AC}|\\)<i class='n' data-t='th'>El área del paralelogramo de lados \\(\\vec u,\\vec v\\) es \\(|\\vec u\\times\\vec v|\\); el triángulo, la mitad.</i>:</p>\\[\\overrightarrow{AB}\\times\\overrightarrow{AC}=\\begin{vmatrix}\\vec i&\\vec j&\\vec k\\\\m&-2&-2\\\\2&-1&-1\\end{vmatrix}=(0,\\,m-4,\\,4-m)\\qquad\\text{Área}=\\frac12\\sqrt2\\,|m-4|=\\frac{\\sqrt{18}}2\\]\\[\\sqrt2|m-4|=\\sqrt{18}\\iff|m-4|=3\\iff m=7\\ \\text{o}\\ m=1\\]<div class='res'>\\(m=1\\) o \\(m=7\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Con \\(m=0\\): \\(\\overrightarrow{AB}=(0,-2,-2)\\), \\(\\overrightarrow{AC}=(2,-1,-1)\\). El ángulo en \\(A\\) es el que forman \\(\\overrightarrow{AB}\\) y \\(\\overrightarrow{AC}\\)<i class='n' data-t='th'>\\(\\cos\\theta=\\dfrac{\\vec u\\cdot\\vec v}{|\\vec u||\\vec v|}\\).</i>:</p>\\[\\cos\\hat A=\\frac{0+2+2}{\\sqrt8\\cdot\\sqrt6}=\\frac4{\\sqrt{48}}=\\frac1{\\sqrt3}\\]<div class='res'>\\(\\cos\\hat A=\\dfrac{\\sqrt3}3\\approx0{,}5774\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "area",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "vec",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-4-8",
+   "n": 8,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el punto \\(P(2,0,-4)\\) y el plano \\(\\pi\\equiv\\begin{cases}x=9\\alpha+3\\beta\\\\y=-1+2\\alpha\\\\z=3+4\\alpha+\\beta\\end{cases}\\)",
+    "apartados": [
+     "(1,75 p.) Halla el punto simétrico del punto \\(P\\) respecto del plano \\(\\pi\\).",
+     "(0,75 p.) Calcula la distancia del punto \\(P\\) al plano \\(\\pi\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Ecuación general del plano",
+     "html": "<div class='ex'><p>\\(\\pi\\) pasa por \\(Q_0(0,-1,3)\\) con vectores directores \\(\\vec u=(9,2,4)\\) y \\(\\vec w=(3,0,1)\\). Normal: \\(\\vec n=\\vec u\\times\\vec w=(2,\\,3,\\,-6)\\):</p>\\[2x+3y-6z+D=0\\ \\text{por }Q_0:\\ -3-18+D=0\\Rightarrow D=21\\ \\Rightarrow\\ \\pi\\equiv2x+3y-6z+21=0\\]</div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Recta perpendicular a \\(\\pi\\) por \\(P\\) (dirección \\(\\vec n\\)): \\((2+2t,\\ 3t,\\ -4-6t)\\). Corte con \\(\\pi\\):</p>\\[2(2+2t)+3(3t)-6(-4-6t)+21=0\\iff49t+49=0\\iff t=-1\\ \\Rightarrow\\ M(0,-3,2)\\]<p>\\(M\\) es el punto medio de \\(P\\) y \\(P'\\): \\(P'=2M-P\\):</p><div style='overflow-x:auto'><svg viewBox='0 0 340 270' width='100%' style='max-width:440px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><defs><marker id='r4gn' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#dc2626'/></marker><marker id='r4gd' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#16a34a'/></marker><marker id='r4gr' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#2563eb'/></marker><marker id='r4ga' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#64748b'/></marker></defs><polygon points='306.0,65.8 197.2,99.4 34.0,180.2 142.8,146.6' fill='#8b5cf6' fill-opacity='.28' stroke='#7c3aed' stroke-width='1.3'/><line x1='206.3' y1='203.5' x2='133.7' y2='42.5' stroke='#64748b' stroke-width='1.6' stroke-dasharray='4 3'/><line x1='219.0' y1='107.9' x2='237.1' y2='148.1' stroke='#dc2626' stroke-width='2.4' marker-end='url(#r4gn)'/><text x='243.1' y='144.1' fill='#dc2626' font-weight='700'>n</text><circle cx='206.3' cy='203.5' r='3.8' fill='#e8487a'/><text x='192.3' y='197.5' font-weight='700'>P</text><circle cx='133.7' cy='42.5' r='3.8' fill='#e8487a'/><text x='141.7' y='54.5' font-weight='700'>P′</text><circle cx='170.0' cy='123.0' r='3.8' fill='#e8487a'/><text x='178.0' y='135.0' font-weight='700'>M</text><g stroke='#64748b' stroke-width='1.2' fill='none'><line x1='30' y1='224' x2='52.0' y2='224.0'/><line x1='30' y1='224' x2='30.0' y2='215.8'/><line x1='30' y1='224' x2='30.0' y2='203.6'/></g><g fill='#64748b' font-size='10'><text x='56.0' y='228.0'>x</text><text x='27.0' y='217.1'>y</text><text x='27.0' y='201.1'>z</text></g><g transform='translate(10.0,258)'><rect x='0' y='-8' width='12' height='9' fill='#8b5cf6' fill-opacity='.4' stroke='#7c3aed'/><text x='18' y='0' font-size='10'>plano</text></g><g transform='translate(63.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#2563eb' stroke-width='2'/><text x='18' y='0' font-size='10'>recta</text></g><g transform='translate(116.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#dc2626' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector normal</text></g><g transform='translate(212.2,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#16a34a' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector director</text></g><g transform='translate(319.2,258)'><circle cx='6' cy='-4' r='3.8' fill='#e8487a'/><text x='18' y='0' font-size='10'>puntos</text></g></svg></div><div class='res'>\\(P'=(0,-6,4)-(2,0,-4)=(-2,\\,-6,\\,8)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'>\\[d(P,\\pi)=\\frac{|2\\cdot2+3\\cdot0-6\\cdot(-4)+21|}{\\sqrt{4+9+36}}=\\frac{49}7\\]<div class='res'>\\(d(P,\\pi)=7\\) unidades</div><i class='n' data-t='tp'>Comprobación: \\(|PM|=|(-2,-3,6)|=\\sqrt{4+9+36}=7\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "simet",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "dist",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

@@ -1,0 +1,191 @@
+{
+ "version": 1,
+ "id": "fisica-2014-junio",
+ "asignatura": "fisica",
+ "anio": 2014,
+ "convocatoria": "Junio",
+ "documento": null,
+ "revision": "borrador",
+ "ejercicios": [
+  {
+   "id": "fisica-2014-junio-a1",
+   "n": "A.1",
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "",
+    "apartados": [
+     "Explique las características del campo gravitatorio de una masa puntual.",
+     "Dos partículas de masas \\(m\\) y \\(2m\\) están separadas una cierta distancia. Explique qué fuerza actúa sobre cada una de ellas y cuál es la aceleración de dichas partículas."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Interpretamos la pregunta como referida a la intensidad del campo gravitatorio \\(\\vec g\\) creado por una masa puntual<i class='n' data-t='err'>La cuestión es muy general y un tanto ambigua: también podría entenderse como todo el epígrafe «campo gravitatorio» (potencial, energía potencial, superficies equipotenciales…), lo que sería excesivo para un apartado de 1,25 puntos.</i>. Una partícula de masa \\(M\\) «crea» una nueva propiedad en el espacio a la que llamamos gravedad o campo gravitatorio, \\(\\vec g\\). Al colocar una masa \\(m\\) a cierta distancia de \\(M\\) surge una interacción entre ellas, que cumple las leyes de Newton (ley de gravitación y principio de acción-reacción).</p>\\[\\vec g=-G\\,\\frac{M}{r^2}\\,\\vec u_r\\]\\[g=G\\,\\frac{M}{r^2}\\]<p>Características del campo gravitatorio creado por M:</p><p>– Es un campo vectorial. – Es un campo central. – Es un campo conservativo. – Es directamente proporcional a la masa \\(M\\) que crea el campo. – Disminuye con el cuadrado de la distancia a \\(M\\). – Indica la fuerza gravitatoria ejercida por unidad de masa sobre cualquier partícula colocada a cierta distancia de \\(M\\). Unidades en el SI: \\(\\mathrm{N\\,kg^{-1}}=\\mathrm{m\\,s^{-2}}\\).</p><p>La constante de gravitación universal vale \\(G=6{,}67\\cdot10^{-11}\\ \\mathrm{N\\,m^2\\,kg^{-2}}\\).</p></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Entre ambas partículas, separadas una distancia \\(r\\), surge una interacción gravitatoria mutua, dada por la ley de gravitación universal de Newton:</p>\\[\\vec F_g=-G\\,\\frac{m_1m_2}{r^2}\\,\\vec u_r\\]\\[F_g=G\\,\\frac{m_1m_2}{r^2}\\]\\[m_1=m,\\ m_2=2m\\]\\[\\Rightarrow\\ F_{g12} =F_{g21} =G\\,\\frac{m\\cdot2m}{r^2}\\]\\[=\\frac{2Gm^2}{r^2}\\]<div style='overflow-x:auto'><svg viewBox='0 0 330 110' width='100%' style='max-width:320px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><circle cx='70.0' cy='55.0' r='8.0' fill='#475569'/><text x='70.0' y='35.0' fill='currentColor' font-size='10' text-anchor='middle' font-weight='700'>m₁ = m</text><circle cx='260.0' cy='55.0' r='12.0' fill='#475569'/><text x='260.0' y='31.0' fill='currentColor' font-size='10' text-anchor='middle' font-weight='700'>m₂ = 2m</text><line x1='80.0' y1='55.0' x2='142.0' y2='55.0' stroke='#ea580c' stroke-width='2'/><polygon points='150.0,55.0 142.0,58.6 142.0,51.4' fill='#ea580c'/><text x='130.0' y='47.0' fill='#ea580c' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>F₂₁</text><line x1='248.0' y1='55.0' x2='208.0' y2='55.0' stroke='#ea580c' stroke-width='2'/><polygon points='200.0,55.0 208.0,51.4 208.0,58.6' fill='#ea580c'/><text x='215.0' y='47.0' fill='#ea580c' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>F₁₂</text><line x1='80.0' y1='80.0' x2='132.0' y2='80.0' stroke='#7c3aed' stroke-width='1.6'/><polygon points='140.0,80.0 132.0,83.6 132.0,76.4' fill='#7c3aed'/><text x='130.0' y='96.0' fill='#7c3aed' font-size='10' text-anchor='middle' font-weight='700'>a₁ = 2a₂</text><line x1='248.0' y1='80.0' x2='226.0' y2='80.0' stroke='#7c3aed' stroke-width='1.6'/><polygon points='218.0,80.0 226.0,76.4 226.0,83.6' fill='#7c3aed'/><text x='230.0' y='96.0' fill='#7c3aed' font-size='10' text-anchor='middle' font-weight='700'>a₂</text></svg></div><p>Ambas partículas sufren fuerzas de la misma intensidad, igual dirección y sentidos contrarios (principio de acción-reacción). La aceleración de cada una viene dada por la segunda ley de Newton:</p>\\[a_1=\\frac{F_{g21}}{m_1}=\\frac{2Gm^2}{r^2\\,m}=\\frac{2Gm}{r^2}\\]\\[a_2=\\frac{F_{g12}}{m_2}=\\frac{2Gm^2}{r^2\\,2m}=\\frac{Gm}{r^2}\\]<div class='res'>Fuerzas iguales y opuestas; la partícula de masa m sufre una aceleración doble que la de masa 2m</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "grav",
+     "tipo": null,
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "02_Interacción gravitatoria. PEvAU resueltos.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "fisica-2014-junio-a3",
+   "n": "A.3",
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Por el conductor A de la figura circula una corriente de intensidad 200 A. El conductor B, de 1 m de longitud y situado a 10 mm del conductor A, es libre de moverse en la dirección vertical.<div style='overflow-x:auto'><svg viewBox='0 0 300 130' width='100%' style='max-width:280px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><line x1='30.0' y1='105.0' x2='270.0' y2='105.0' stroke='currentColor' stroke-width='3'/><text x='150.0' y='124.0' fill='currentColor' font-size='10' text-anchor='middle'>conductor A (fijo)</text><line x1='70.0' y1='15.0' x2='70.0' y2='105.0' stroke='#94a3b8' stroke-width='1.4'/><line x1='230.0' y1='15.0' x2='230.0' y2='105.0' stroke='#94a3b8' stroke-width='1.4'/><line x1='70.0' y1='75.0' x2='230.0' y2='75.0' stroke='currentColor' stroke-width='3'/><text x='150.0' y='66.0' fill='currentColor' font-size='10' text-anchor='middle'>conductor B (móvil, 1 m)</text><line x1='250.0' y1='75.0' x2='250.0' y2='105.0' stroke='#94a3b8' stroke-width='1'/><text x='256.0' y='94.0' fill='currentColor' font-size='9' text-anchor='start'>d = 10 mm</text></svg></div>",
+    "apartados": [
+     "Dibuje las líneas de campo magnético y calcule su valor para un punto situado en la vertical del conductor A y a 10 cm de él.",
+     "Si la masa del conductor B es de 10 g, determine el sentido de la corriente y el valor de la intensidad que debe circular por el conductor B para que permanezca suspendido en equilibrio en esa posición. \\(g=9{,}8\\ \\mathrm{m\\,s^{-2}}\\); \\(\\mu_0=4\\pi\\cdot10^{-7}\\ \\mathrm{T\\,m\\,A^{-1}}\\)"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Un conductor rectilíneo por el que circula corriente eléctrica crea a su alrededor un campo magnético debido al movimiento de las cargas eléctricas. Según la ley de Biot-Savart, dicho campo \\(\\vec B\\) tiene como características:</p><p>– Módulo: \\(B=\\dfrac{\\mu_0 I}{2\\pi r}\\) (aplicando la ley de Ampère o la de Biot-Savart).</p><p>– Dirección: perpendicular al movimiento de las cargas eléctricas (corriente) y perpendicular al vector \\(\\vec r\\) (distancia desde la corriente al punto considerado).</p><p>– Sentido: dado por la regla del sacacorchos (o de la mano derecha) al girar el sentido de la corriente sobre el vector \\(\\vec r\\). Las líneas de campo son circunferencias concéntricas al conductor.</p>\\[B=\\frac{\\mu_0 I}{2\\pi r}=\\frac{4\\pi\\cdot10^{-7}\\cdot200}{2\\pi\\cdot0{,}1}\\]<div class='res'>\\(B=4\\cdot10^{-4}\\ \\mathrm T\\); con la corriente en +x y el punto encima del conductor, \\(\\vec B=4\\cdot10^{-4}\\,\\vec k\\ \\mathrm T\\)</div><p>Las líneas de campo son circunferencias concéntricas alrededor del conductor. En el papel se dibujan con aspas y puntos, indicando en qué zonas el campo entra o sale del plano: con la corriente hacia la derecha, encima del conductor el campo sale (⊙) y debajo entra (⊗)<i class='n' data-t='tp'>También valdría un punto por debajo del conductor (sigue estando en su vertical); lo importante es que el dibujo coincida con lo que se escribe.</i>.</p><div style='overflow-x:auto'><svg viewBox='0 0 320 130' width='100%' style='max-width:300px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><line x1='30.0' y1='70.0' x2='290.0' y2='70.0' stroke='currentColor' stroke-width='3'/><line x1='120.0' y1='70.0' x2='192.0' y2='70.0' stroke='#dc2626' stroke-width='2.4'/><polygon points='200.0,70.0 192.0,73.6 192.0,66.4' fill='#dc2626'/><text x='160.0' y='62.0' fill='#dc2626' font-size='12' text-anchor='middle' font-weight='700' font-style='italic'>I</text><circle cx='60.0' cy='35.0' r='6.0' fill='none' stroke='#2563eb' stroke-width='1.2'/><circle cx='60.0' cy='35.0' r='1.8' fill='#2563eb'/><circle cx='120.0' cy='35.0' r='6.0' fill='none' stroke='#2563eb' stroke-width='1.2'/><circle cx='120.0' cy='35.0' r='1.8' fill='#2563eb'/><circle cx='180.0' cy='35.0' r='6.0' fill='none' stroke='#2563eb' stroke-width='1.2'/><circle cx='180.0' cy='35.0' r='1.8' fill='#2563eb'/><circle cx='240.0' cy='35.0' r='6.0' fill='none' stroke='#2563eb' stroke-width='1.2'/><circle cx='240.0' cy='35.0' r='1.8' fill='#2563eb'/><circle cx='60.0' cy='105.0' r='6.0' fill='none' stroke='#2563eb' stroke-width='1.2'/><line x1='55.8' y1='100.8' x2='64.2' y2='109.2' stroke='#2563eb' stroke-width='1.2'/><line x1='55.8' y1='109.2' x2='64.2' y2='100.8' stroke='#2563eb' stroke-width='1.2'/><circle cx='120.0' cy='105.0' r='6.0' fill='none' stroke='#2563eb' stroke-width='1.2'/><line x1='115.8' y1='100.8' x2='124.2' y2='109.2' stroke='#2563eb' stroke-width='1.2'/><line x1='115.8' y1='109.2' x2='124.2' y2='100.8' stroke='#2563eb' stroke-width='1.2'/><circle cx='180.0' cy='105.0' r='6.0' fill='none' stroke='#2563eb' stroke-width='1.2'/><line x1='175.8' y1='100.8' x2='184.2' y2='109.2' stroke='#2563eb' stroke-width='1.2'/><line x1='175.8' y1='109.2' x2='184.2' y2='100.8' stroke='#2563eb' stroke-width='1.2'/><circle cx='240.0' cy='105.0' r='6.0' fill='none' stroke='#2563eb' stroke-width='1.2'/><line x1='235.8' y1='100.8' x2='244.2' y2='109.2' stroke='#2563eb' stroke-width='1.2'/><line x1='235.8' y1='109.2' x2='244.2' y2='100.8' stroke='#2563eb' stroke-width='1.2'/></svg></div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Ahora circula corriente por el conductor móvil, que también produce campo magnético. Entre los dos conductores paralelos se ejercen fuerzas magnéticas cuyo valor por unidad de longitud es \\(f_{12}=f_{21}=\\dfrac{\\mu_0 I_1 I_2}{2\\pi d}\\), con \\(I_1=200\\ \\mathrm A\\) y \\(d=10\\ \\mathrm{mm}=0{,}01\\ \\mathrm m\\). Como el conductor mide 1 m, la fuerza total coincide con la fuerza por unidad de longitud.</p><p>Para que el conductor esté en equilibrio, la fuerza neta debe ser nula (1.ª ley de Newton): la fuerza gravitatoria debe compensarse con una fuerza magnética <b>repulsiva</b>:</p><div style='overflow-x:auto'><svg viewBox='0 0 300 150' width='100%' style='max-width:280px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><line x1='30.0' y1='120.0' x2='270.0' y2='120.0' stroke='currentColor' stroke-width='3'/><line x1='110.0' y1='120.0' x2='182.0' y2='120.0' stroke='#dc2626' stroke-width='2.2'/><polygon points='190.0,120.0 182.0,123.6 182.0,116.4' fill='#dc2626'/><text x='150.0' y='140.0' fill='#dc2626' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>I₁</text><line x1='30.0' y1='70.0' x2='270.0' y2='70.0' stroke='currentColor' stroke-width='3'/><line x1='190.0' y1='70.0' x2='118.0' y2='70.0' stroke='#dc2626' stroke-width='2.2'/><polygon points='110.0,70.0 118.0,66.4 118.0,73.6' fill='#dc2626'/><text x='150.0' y='90.0' fill='#dc2626' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>I₂</text><line x1='230.0' y1='70.0' x2='230.0' y2='28.0' stroke='#7c3aed' stroke-width='2.2'/><polygon points='230.0,20.0 233.6,28.0 226.4,28.0' fill='#7c3aed'/><text x='240.0' y='28.0' fill='#7c3aed' font-size='11' text-anchor='start' font-weight='700' font-style='italic'>Fm</text><line x1='230.0' y1='70.0' x2='230.0' y2='104.0' stroke='#ea580c' stroke-width='2.2'/><polygon points='230.0,112.0 226.4,104.0 233.6,104.0' fill='#ea580c'/><text x='240.0' y='104.0' fill='#ea580c' font-size='11' text-anchor='start' font-weight='700' font-style='italic'>Fg</text></svg></div>\\[F_g=F_m\\]\\[\\Rightarrow\\ m\\,g=\\frac{\\mu_0 I_1 I_2}{2\\pi d}\\,L\\]\\[\\Rightarrow\\ I_2 =\\frac{m\\,g\\,2\\pi d}{\\mu_0 I_1 L}\\]\\[=\\frac{0{,}01\\cdot9{,}8\\cdot2\\pi\\cdot0{,}01}{4\\pi\\cdot10^{-7}\\cdot200\\cdot1}\\]<div class='res'>\\(I_2=24{,}5\\ \\mathrm A\\), en sentido contrario a la corriente del conductor A</div><p>Para que la fuerza magnética sea repulsiva, ambas corrientes deben ir en sentidos opuestos<i class='n' data-t='err'>El dibujo que proponía el enunciado no era muy claro; aquí se ha rehecho, con el conductor móvil recibiendo la corriente a través de unos raíles verticales.</i>.</p></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "emag",
+     "tipo": null,
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "04_Electromagnetismo. Inducción electromagnética. PEvAU resueltos.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "fisica-2014-junio-b1",
+   "n": "B.1",
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "",
+    "apartados": [
+     "Explique los fenómenos de inducción electromagnética y enuncie la ley de Faraday-Lenz.",
+     "Dos espiras circulares «a» y «b» se hallan enfrentadas con sus planos paralelos. <b>i)</b> Por la espira «a» comienza a circular una corriente en sentido horario. Explique con la ayuda de un esquema el sentido de la corriente inducida en la espira «b». <b>ii)</b> Cuando la corriente en la espira «a» alcance un valor constante, ¿qué ocurrirá en la espira «b»? Justifique la respuesta."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Llamamos <b>inducción electromagnética</b> a la generación de corriente eléctrica en un circuito por efecto de un campo magnético. Este fenómeno fue observado en el siglo XIX por Faraday, Henry y otros científicos.</p><p><b>Experiencias de Faraday:</b> colocando un imán frente a una espira conductora, no se observa corriente mientras ambos están en reposo, pero sí cuando los acercamos o alejamos; el sentido de la corriente depende de si acercamos o alejamos y de qué polo enfrentemos a la espira. Faraday también observa que, con dos bobinas, una arrollada alrededor de la otra, al circular corriente variable por una de ellas (por ejemplo, al conectar el interruptor) se induce corriente en la otra; la inducción se interrumpe al estabilizarse la corriente en el primer circuito.</p><p><b>Experiencia de Henry:</b> coloca un conductor entre dos imanes y cierra el circuito con un amperímetro; al mover el conductor se origina corriente en él.</p><p>Faraday y Lenz explican las características del fenómeno: el origen de la corriente inducida está en la variación del campo magnético que atraviesa la superficie delimitada por la espira (Lenz), es decir, en la variación del flujo magnético (Faraday). El sentido de la corriente es tal que origina un campo magnético inducido que se opone a la variación del campo existente (Lenz), es decir, a la variación del flujo (Faraday).</p><p><b>Ley de Faraday-Lenz:</b> «La corriente inducida en un circuito es originada por la variación del flujo magnético que atraviesa dicho circuito. Su sentido es tal que se opone a dicha variación»:</p>\\[\\varepsilon=-\\frac{d\\phi_m}{dt}\\]</div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>La situación es muy semejante a una de las experiencias de Faraday descritas arriba.</p><p><b>i)</b> Cuando comienza a circular corriente por la espira «a», durante breves instantes la intensidad aumenta desde cero hasta cierto valor \\(I_a\\). El campo magnético que produce, \\(\\vec B_a\\), también aumenta, y con él el flujo que atraviesa la espira «b»: se genera corriente inducida en «b». Su sentido es tal que genera un campo \\(\\vec B_{IND}\\) que se opone a la variación de flujo (se «resta» al campo de «a»): la corriente inducida en «b» circula en <b>sentido contrario</b> a la de «a»<i class='n' data-t='err'>Lo de «sentido horario» es arbitrario: depende del punto de vista del observador (mirando desde la otra espira o desde detrás de «a»). Se dibuje como se dibuje, debería ser válido siempre que se explique.</i>.</p><div style='overflow-x:auto'><svg viewBox='0 0 330 170' width='100%' style='max-width:320px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><ellipse cx='110' cy='85' rx='18' ry='55' fill='none' stroke='currentColor' stroke-width='2.4'/><ellipse cx='220' cy='85' rx='18' ry='55' fill='none' stroke='currentColor' stroke-width='2.4'/><text x='110.0' y='160.0' fill='currentColor' font-size='12' text-anchor='middle' font-weight='700'>a</text><text x='220.0' y='160.0' fill='currentColor' font-size='12' text-anchor='middle' font-weight='700'>b</text><line x1='110.0' y1='85.0' x2='167.0' y2='85.0' stroke='#2563eb' stroke-width='2.2'/><polygon points='175.0,85.0 167.0,88.6 167.0,81.4' fill='#2563eb'/><text x='150.0' y='77.0' fill='#2563eb' font-size='10' text-anchor='middle' font-weight='700' font-style='italic'>Ba ↑</text><line x1='260.0' y1='95.0' x2='208.0' y2='95.0' stroke='#dc2626' stroke-width='2.2'/><polygon points='200.0,95.0 208.0,91.4 208.0,98.6' fill='#dc2626'/><text x='270.0' y='110.0' fill='#dc2626' font-size='10' text-anchor='start' font-weight='700' font-style='italic'>B ind.</text><line x1='92.0' y1='60.0' x2='92.0' y2='102.0' stroke='#16a34a' stroke-width='2'/><polygon points='92.0,110.0 88.4,102.0 95.6,102.0' fill='#16a34a'/><text x='70.0' y='85.0' fill='#16a34a' font-size='10' text-anchor='end' font-weight='700' font-style='italic'>Ia</text><line x1='238.0' y1='110.0' x2='238.0' y2='68.0' stroke='#16a34a' stroke-width='2'/><polygon points='238.0,60.0 241.6,68.0 234.4,68.0' fill='#16a34a'/><text x='250.0' y='70.0' fill='#16a34a' font-size='10' text-anchor='start' font-weight='700' font-style='italic'>I ind.</text></svg></div><p><b>ii)</b> Cuando la corriente en «a» alcanza un valor constante, también se vuelven constantes el campo magnético que produce y el flujo que atraviesa la espira «b». Aplicando la ley de Faraday-Lenz, ya no se induce corriente en «b».</p><div class='res'>i) Corriente inducida en «b» de sentido contrario a la de «a». ii) Deja de haber corriente inducida</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "emag",
+     "tipo": null,
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "04_Electromagnetismo. Inducción electromagnética. PEvAU resueltos.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "fisica-2014-junio-b3",
+   "n": "B.3",
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Dos masas puntuales de 5 y 10 kg, respectivamente, están situadas en los puntos (0,0) y (1,0) m, respectivamente.",
+    "apartados": [
+     "Determine el punto entre las dos masas donde el campo gravitatorio es cero.",
+     "Calcule el potencial gravitatorio en los puntos A (−2,0) m y B (3,0) m y el trabajo realizado al trasladar desde B hasta A una masa de 1,5 kg. Comente el significado del signo del trabajo. \\(G=6{,}67\\cdot10^{-11}\\ \\mathrm{N\\,m^2\\,kg^{-2}}\\)"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Nos encontramos ante dos masas puntuales que crean campo gravitatorio a su alrededor. El campo total en un punto se calcula aplicando el principio de superposición: \\(\\vec g_P =\\vec g_{1P}+\\vec g_{2P}\\) \\(=-\\dfrac{GM_1}{r_1^2}\\vec u_{r1}-\\dfrac{GM_2}{r_2^2}\\vec u_{r2}\\).</p><p>Para que el campo total sea cero, ambos vectores deben tener igual módulo, igual dirección y sentidos opuestos. El punto debe estar en la línea que une ambas masas, en la zona intermedia, y más cerca de la masa menor (la de 5 kg).</p><div style='overflow-x:auto'><svg viewBox='0 0 340 172' width='100%' style='max-width:320px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><line x1='20.0' y1='90.0' x2='320.0' y2='90.0' stroke='#94a3b8' stroke-width='1'/><circle cx='50.0' cy='90.0' r='8.0' fill='#475569'/><circle cx='290.0' cy='90.0' r='12.0' fill='#475569'/><text x='50.0' y='70.0' fill='currentColor' font-size='11' text-anchor='middle' font-weight='700'>5 kg</text><text x='290.0' y='66.0' fill='currentColor' font-size='11' text-anchor='middle' font-weight='700'>10 kg</text><circle cx='149.4' cy='90.0' r='3.5' fill='currentColor'/><text x='149.4' y='112.0' fill='currentColor' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>P</text><line x1='149.4' y1='90.0' x2='107.4' y2='90.0' stroke='#2563eb' stroke-width='2'/><polygon points='99.4,90.0 107.4,86.4 107.4,93.6' fill='#2563eb'/><text x='109.4' y='82.0' fill='#2563eb' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>g₁</text><line x1='149.4' y1='90.0' x2='191.4' y2='90.0' stroke='#2563eb' stroke-width='2'/><polygon points='199.4,90.0 191.4,93.6 191.4,86.4' fill='#2563eb'/><text x='189.4' y='82.0' fill='#2563eb' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>g₂</text><line x1='50.0' y1='130.0' x2='149.4' y2='130.0' stroke='#94a3b8' stroke-width='1'/><text x='99.7' y='145.0' fill='currentColor' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>r₁</text><line x1='149.4' y1='130.0' x2='290.0' y2='130.0' stroke='#94a3b8' stroke-width='1'/><text x='219.7' y='145.0' fill='currentColor' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>r₂</text><text x='170.0' y='165.0' fill='currentColor' font-size='10' text-anchor='middle'>r₁ + r₂ = 1 m</text></svg></div>\\[\\frac{G\\cdot5}{r_1^2}=\\frac{G\\cdot10}{r_2^2}\\]\\[\\Rightarrow\\ r_2^2=2\\,r_1^2\\]\\[\\Rightarrow\\ r_2=\\sqrt2\\,r_1\\]\\[r_1+r_2=1\\ \\mathrm m\\]\\[\\Rightarrow\\ r_1+\\sqrt2\\,r_1=1\\]\\[\\Rightarrow\\ r_1=0{,}414\\ \\mathrm m,\\ r_2=0{,}586\\ \\mathrm m\\]<div class='res'>El campo se anula en el punto (0,414 ; 0) m</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>El campo gravitatorio es conservativo: tiene una función potencial asociada (potencial gravitatorio, \\(V\\)), y el trabajo realizado por la fuerza gravitatoria entre dos puntos es independiente del camino: \\(W_{F_g}=-\\Delta E_{pg}=E_{pgi}-E_{pgf}\\). El potencial se calcula aplicando el principio de superposición, \\(V=-\\dfrac{GM_1}{r_1}-\\dfrac{GM_2}{r_2}\\).</p>\\[V_A =-\\frac{6{,}67\\cdot10^{-11}\\cdot5}{2}\\]\\[-\\frac{6{,}67\\cdot10^{-11}\\cdot10}{3}\\]\\[=-3{,}891\\cdot10^{-10}\\ \\mathrm{J\\,kg^{-1}}\\]\\[V_B =-\\frac{6{,}67\\cdot10^{-11}\\cdot5}{3}\\]\\[-\\frac{6{,}67\\cdot10^{-11}\\cdot10}{2}\\]\\[=-4{,}447\\cdot10^{-10}\\ \\mathrm{J\\,kg^{-1}}\\]\\[W_{F_g} =E_{pgB}-E_{pgA}\\]\\[=m\\,(V_B-V_A)\\]\\[W_{F_g}=1{,}5\\cdot(-5{,}56\\cdot10^{-11})\\]<div class='res'>\\(W_{F_g}=-8{,}34\\cdot10^{-11}\\ \\mathrm J\\)</div><p>El signo del trabajo es negativo, ya que la variación de energía potencial es positiva (el potencial es mayor en el punto final A que en el inicial B). Un trabajo negativo significa que el desplazamiento, globalmente, se realiza en contra de la fuerza gravitatoria: debemos realizar un trabajo externo de, al menos, \\(8{,}34\\cdot10^{-11}\\ \\mathrm J\\) para trasladar la masa de B a A.</p></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "grav",
+     "tipo": null,
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "02_Interacción gravitatoria. PEvAU resueltos.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "fisica-2014-junio-b4",
+   "n": "B.4",
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "La energía mecánica de una partícula que realiza un movimiento armónico simple a lo largo del eje X y en torno al origen vale \\(3\\cdot10^{-5}\\) J y la fuerza máxima que actúa sobre ella es de \\(1{,}5\\cdot10^{-3}\\) N.",
+    "apartados": [
+     "Obtenga la amplitud del movimiento.",
+     "Si el periodo de oscilación es de 2 s y en el instante inicial la partícula se encuentra en la posición \\(x_0=2\\) cm, escriba la ecuación de movimiento."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Nos encontramos ante una partícula que describe un m.a.s., un movimiento oscilatorio periódico en el que la aceleración es proporcional y de signo contrario a la elongación. Las fuerzas que lo originan pueden ser muy variadas (un muelle, un péndulo con oscilaciones pequeñas, un corcho que flota…), pero matemáticamente todas se estudian como una fuerza elástica: \\(\\vec F_{el}=-K\\,\\vec x\\); en módulo \\(F_{el}=K\\,x\\).</p><p>La fuerza máxima se ejerce cuando la elongación es máxima (\\(x=A\\)): \\(F_{el\\,m\\acute ax}=K\\,A\\). La energía mecánica del m.a.s. coincide con la energía potencial elástica máxima (en ese momento \\(E_c=0\\)): \\(E_M=\\tfrac12 K A^2\\). Tenemos un sistema de dos ecuaciones:</p>\\[K\\,A=1{,}5\\cdot10^{-3}\\ \\mathrm N\\]\\[\\tfrac12 K A^2=3\\cdot10^{-5}\\ \\mathrm J\\]<p>Dividimos la segunda entre la primera:</p>\\[\\frac{0{,}5\\,K A^2}{K A}=\\frac{3\\cdot10^{-5}}{1{,}5\\cdot10^{-3}}\\]\\[\\Rightarrow\\ 0{,}5\\,A=0{,}02\\]<div class='res'>\\(A=0{,}04\\ \\mathrm m=4\\ \\mathrm{cm}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>La ecuación de movimiento de un m.a.s. a lo largo del eje x es \\(x(t)=A\\,\\operatorname{sen}(\\omega t+\\varphi_0)\\), donde \\(x\\) es la elongación, \\(A\\) la amplitud, \\(\\omega\\) la frecuencia angular y \\(\\varphi_0\\) la fase inicial, que indica el estado del movimiento para \\(t=0\\): \\(x(0)=A\\,\\operatorname{sen}\\varphi_0\\).</p>\\[\\omega=\\frac{2\\pi}{T}=\\frac{2\\pi}{2}=\\pi\\ \\mathrm{rad\\,s^{-1}}\\]\\[\\varphi_0 =\\\\operatorname{arcsen}\\frac{x(0)}{A}\\]\\[=\\\\operatorname{arcsen}\\frac{0{,}02}{0{,}04}\\]\\[=\\\\operatorname{arcsen}(0{,}5)\\]\\[=\\frac{\\pi}{6}\\ \\mathrm{rad}\\]<div class='res'>\\(x(t)=0{,}04\\,\\operatorname{sen}\\left(\\pi t+\\frac{\\pi}{6}\\right)\\ \\mathrm m\\)</div><p>También sería válida \\(\\varphi_0=\\dfrac{5\\pi}{6}\\), si en el instante inicial la partícula se mueve hacia el origen<i class='n' data-t='tp'>\\(\\operatorname{sen}(\\pi/6)=\\operatorname{sen}(5\\pi/6)=0{,}5\\). El enunciado no dice hacia dónde se mueve al principio, así que las dos fases son compatibles con los datos.</i>.</p></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "ondas",
+     "tipo": null,
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "05_Fenómenos ondulatorios. PEvAU resueltos.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  }
+ ]
+}

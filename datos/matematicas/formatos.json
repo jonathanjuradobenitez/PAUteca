@@ -1,0 +1,33 @@
+{
+ "version": 1,
+ "reglas": [
+  {
+   "convocatoria": "Ponencia",
+   "texto": "Ejercicios de ejemplo de Estadística y Probabilidad elaborados por la ponencia de profesores para explicar los criterios de selectividad (anexo de las directrices)."
+  },
+  {
+   "hasta": 2020,
+   "texto": "Examen de 8 ejercicios (sin bloques): se resuelven solo cuatro ejercicios cualesquiera."
+  },
+  {
+   "hasta": 2023,
+   "texto": "Examen de 8 ejercicios en 2 bloques (A y B) de 4 ejercicios cada uno: se resuelven solo cuatro ejercicios cualesquiera, sin importar el bloque."
+  },
+  {
+   "desde": 2027,
+   "texto": "Examen de 7 ejercicios de 2 puntos: tres obligatorios y dos bloques con dos ejercicios optativos cada uno; se resuelven los tres obligatorios y uno de cada bloque optativo. Se facilita la tabla de la normal."
+  },
+  {
+   "desde": 2026,
+   "hasta": 2026,
+   "texto": "Examen de 6 ejercicios: dos obligatorios y dos bloques con dos ejercicios optativos cada uno; se resuelven los dos obligatorios y uno de cada bloque optativo. Se facilita la tabla de la normal."
+  },
+  {
+   "desde": 2025,
+   "texto": "Examen de 7 ejercicios: un ejercicio obligatorio y tres bloques con dos ejercicios optativos; se resuelve el obligatorio y uno de cada bloque optativo. Se facilita la tabla de la normal."
+  },
+  {
+   "texto": "Examen de 8 ejercicios en 4 bloques (A, B, C y D): se resuelve solo un ejercicio de cada bloque."
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "version": 1,
+ "reglas": [
+  {
+   "desde": 2025,
+   "texto": "Examen de 4 ejercicios (bloques A, B, C y D) de 2,5 puntos: cada ejercicio tiene un apartado a) obligatorio (hasta 1 punto) y dos apartados b) de los que se elige uno (hasta 1,5 puntos)."
+  },
+  {
+   "desde": 2021,
+   "hasta": 2024,
+   "texto": "Examen de 8 ejercicios en 4 bloques (A, B, C y D), dos por bloque: se responde un ejercicio de cada bloque. Cada ejercicio vale 2,5 puntos."
+  },
+  {
+   "desde": 2020,
+   "hasta": 2020,
+   "texto": "Examen de 8 ejercicios de 2,5 puntos: se responden cuatro cualesquiera."
+  },
+  {
+   "hasta": 2019,
+   "texto": "Examen con dos opciones (A y B) de cuatro ejercicios cada una (dos cuestiones y dos problemas, de 2,5 puntos): se elige una opción completa."
+  }
+ ]
+}

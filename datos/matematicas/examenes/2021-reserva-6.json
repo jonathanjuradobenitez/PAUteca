@@ -1,0 +1,323 @@
+{
+ "version": 1,
+ "id": "matematicas-2021-reserva-6",
+ "asignatura": "matematicas",
+ "anio": 2021,
+ "convocatoria": "Reserva 6",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2021-reserva-6-1",
+   "n": 1,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea la función continua \\(f:\\mathbb R\\to\\mathbb R\\) definida por \\[f(x)=\\begin{cases}\\dfrac{\\ln(e^x+x^3)}x&\\text{si }x\\lt0\\\\4x^2+a&\\text{si }0\\le x\\lt1\\\\b+\\operatorname{sen}(\\pi x)&\\text{si }1\\le x\\end{cases}\\] (\\(\\ln\\) denota la función logaritmo neperiano). Determina \\(a\\) y \\(b\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Continuidad en \\(x=0\\)",
+     "html": "<div class='ex'><p>\\(f(0)=a\\) y \\(\\lim_{x\\to0^-}\\dfrac{\\ln(e^x+x^3)}x\\): \\(N(0)=\\ln1=0\\) y \\(D(0)=0\\): \\(\\tfrac00\\). L'Hôpital<i class='n' data-t='th'>Regla de L'Hôpital: si \\(N(x_0)=D(x_0)=0\\) y existe \\(\\lim\\frac{N'}{D'}\\), entonces \\(\\lim\\frac ND=\\lim\\frac{N'}{D'}\\).</i>:</p>\\[\\lim_{x\\to0^-}\\frac{\\frac{e^x+3x^2}{e^x+x^3}}1=\\frac{1+0}{1+0}=1\\ \\Rightarrow\\ a=1\\]</div>"
+    },
+    {
+     "titulo": "Continuidad en \\(x=1\\)",
+     "html": "<div class='ex'><p>\\(f(1)=b+\\operatorname{sen}\\pi=b\\) y \\(\\lim_{x\\to1^-}(4x^2+a)=4+a=5\\). Continuidad: \\(b=5\\).</p><div class='res'>\\(a=1\\) y \\(b=5\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "cont",
+     "apartados": ""
+    },
+    {
+     "tema": "funciones",
+     "tipo": "lim",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-6-2",
+   "n": 2,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea \\(f:\\mathbb R\\to\\mathbb R\\) la función definida por \\(f(x)=\\dfrac{e^{2x}-1}{e^{2x}+1}\\).",
+    "apartados": [
+     "(1,25 p.) Estudia y halla las asíntotas de la gráfica de \\(f\\).",
+     "(1,25 p.) Determina los intervalos de crecimiento y de decrecimiento de \\(f\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(e^{2x}+1\\gt0\\): \\(f\\) está definida en \\(\\mathbb R\\) (no hay asíntotas verticales). Límites en el infinito:</p>\\[\\lim_{x\\to+\\infty}\\frac{e^{2x}-1}{e^{2x}+1}=1\\qquad\\lim_{x\\to-\\infty}\\frac{e^{2x}-1}{e^{2x}+1}=\\frac{0-1}{0+1}=-1\\]<div class='res'>Asíntota horizontal \\(y=1\\) en \\(+\\infty\\) y asíntota horizontal \\(y=-1\\) en \\(-\\infty\\); no hay verticales ni oblicuas</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'>\\[f'(x)=\\frac{2e^{2x}(e^{2x}+1)-(e^{2x}-1)2e^{2x}}{(e^{2x}+1)^2}=\\frac{4e^{2x}}{(e^{2x}+1)^2}\\gt0\\ \\ \\forall x\\]<div class='res'>\\(f\\) es estrictamente creciente en todo \\(\\mathbb R\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "asint",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-6-3",
+   "n": 3,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Calcula \\(\\displaystyle\\int_0^{\\pi/2}\\left(2\\operatorname{sen}^2(x)-\\cos^2(x)\\right)dx\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>Uso las fórmulas del ángulo doble<i class='n' data-t='th'>\\(\\operatorname{sen}^2x=\\frac{1-\\cos2x}2\\) y \\(\\cos^2x=\\frac{1+\\cos2x}2\\).</i>:</p>\\[2\\operatorname{sen}^2x-\\cos^2x=(1-\\cos2x)-\\frac{1+\\cos2x}2=\\frac12-\\frac32\\cos2x\\]\\[\\int_0^{\\pi/2}\\left(\\frac12-\\frac32\\cos2x\\right)dx=\\left[\\frac x2-\\frac34\\operatorname{sen}2x\\right]_0^{\\pi/2}=\\frac\\pi4-0\\]<div class='res'>\\(\\dfrac\\pi4\\approx0{,}7854\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "def",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-6-4",
+   "n": 4,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las funciones \\(f,g:\\mathbb R\\to\\mathbb R\\) definidas por \\(f(x)=|x|-2\\) y por \\(g(x)=4-x^2\\).",
+    "apartados": [
+     "(1 p.) Halla los puntos de corte de las gráficas de ambas funciones y esboza el recinto que delimitan.",
+     "(1,5 p.) Determina el área del recinto anterior."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(|x|-2=4-x^2\\iff x^2+|x|-6=0\\iff|x|=2\\) (la otra raíz, \\(|x|=-3\\), no vale): \\(x=\\pm2\\), con \\(y=0\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 300 155' width='100%' style='max-width:380px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='50.0,100.0 60.0,83.3 70.0,68.3 80.0,55.1 90.0,43.7 100.0,34.0 110.0,26.1 120.0,19.9 130.0,15.5 140.0,12.9 150.0,12.0 160.0,12.9 170.0,15.5 180.0,19.9 190.0,26.1 200.0,34.0 210.0,43.7 220.0,55.1 230.0,68.3 240.0,83.3 250.0,100.0 150.0,144.0' fill='#b9a4f5' fill-opacity='.55'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M8 100H292M150 150V6'/></g><polyline points='30.0,91.2 150.0,144.0' fill='none' stroke='#e8487a' stroke-width='2'/><polyline points='150.0,144.0 270.0,91.2' fill='none' stroke='#e8487a' stroke-width='2'/><polyline points='30.0,138.7 40.0,118.5 50.0,100.0 60.0,83.3 70.0,68.3 80.0,55.1 90.0,43.7 100.0,34.0 110.0,26.1 120.0,19.9 130.0,15.5 140.0,12.9 150.0,12.0 160.0,12.9 170.0,15.5 180.0,19.9 190.0,26.1 200.0,34.0 210.0,43.7 220.0,55.1 230.0,68.3 240.0,83.3 250.0,100.0 260.0,118.5 270.0,138.7' fill='none' stroke='#2f6df0' stroke-width='2'/><circle cx='250' cy='100' r='3.5' fill='#17825a'/><circle cx='50' cy='100' r='3.5' fill='#17825a'/><circle cx='150' cy='144' r='3.5' fill='#e8487a'/><text x='255' y='95'>(2, 0)</text><text x='12' y='95'>(−2, 0)</text><text x='156' y='148'>(0, −2)</text><text x='195.0' y='25.200000000000003' fill='#2f6df0'>g</text><text x='245.0' y='86.2' fill='#e8487a'>f</text></svg></div><div class='res'>Puntos de corte: \\((-2,0)\\) y \\((2,0)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>En \\([-2,2]\\), \\(g\\) queda por encima de \\(f\\) (en \\(x=0\\): \\(4\\gt-2\\)). Ambas funciones son pares:</p>\\[A=2\\int_0^2\\bigl[(4-x^2)-(x-2)\\bigr]dx=2\\int_0^2(6-x-x^2)\\,dx=2\\left[6x-\\frac{x^2}2-\\frac{x^3}3\\right]_0^2=2\\left(12-2-\\frac83\\right)\\]<div class='res'>Área \\(=\\dfrac{44}3\\approx14{,}67\\ u^2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "area",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "rep",
+     "apartados": "a"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-6-5",
+   "n": 5,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la matriz \\(A=\\begin{pmatrix}2&0&2\\\\-1&2&1\\\\0&1&4\\end{pmatrix}\\).",
+    "apartados": [
+     "(1,75 p.) Estudia, según los valores de \\(\\lambda\\), el rango de la matriz \\(A-\\lambda I\\), siendo \\(I\\) la matriz identidad de orden tres.",
+     "(0,75 p.) Resuelve el sistema \\((A-I)\\begin{pmatrix}x\\\\y\\\\z\\end{pmatrix}=\\begin{pmatrix}0\\\\0\\\\0\\end{pmatrix}\\) y halla, si existe, una solución en la que \\(x=2\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(|A-\\lambda I|=\\begin{vmatrix}2-\\lambda&0&2\\\\-1&2-\\lambda&1\\\\0&1&4-\\lambda\\end{vmatrix}=(2-\\lambda)\\bigl[(2-\\lambda)(4-\\lambda)-1\\bigr]-2=-\\lambda^3+8\\lambda^2-19\\lambda+12=-(\\lambda-1)(\\lambda-3)(\\lambda-4)\\)</p><p>Si \\(\\lambda\\neq1,3,4\\): \\(|A-\\lambda I|\\neq0\\Rightarrow\\operatorname{rg}=3\\). Si \\(\\lambda\\in\\{1,3,4\\}\\): el determinante es 0 y el rango es 2: hay un menor \\(2\\times2\\) no nulo para cualquier \\(\\lambda\\), el de las filas 2 y 3 y las columnas 1 y 2: \\(\\begin{vmatrix}-1&2-\\lambda\\\\0&1\\end{vmatrix}=-1\\neq0\\).</p><div class='res'>\\(\\operatorname{rg}(A-\\lambda I)=3\\) si \\(\\lambda\\neq1,3,4\\); \\(\\operatorname{rg}(A-\\lambda I)=2\\) si \\(\\lambda=1,3\\) o \\(4\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(A-I=\\begin{pmatrix}1&0&2\\\\-1&1&1\\\\0&1&3\\end{pmatrix}\\) (rango 2, \\(\\lambda=1\\)): sistema homogéneo indeterminado. \\(x+2z=0\\), \\(-x+y+z=0\\), \\(y+3z=0\\): \\(x=-2z\\), \\(y=x-z=-3z\\) (la tercera: \\(-3z+3z=0\\) ✓).</p><div class='res'>Soluciones: \\((-2\\lambda,\\ -3\\lambda,\\ \\lambda)\\). Con \\(x=2\\): \\(\\lambda=-1\\), es decir, \\((2,\\,3,\\,-1)\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "rango",
+     "apartados": "a"
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-6-6",
+   "n": 6,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las matrices \\(A=\\begin{pmatrix}1&-1&0\\\\1&m&1\\end{pmatrix}\\) y \\(B=\\begin{pmatrix}1&1\\\\0&2\\\\m&-1\\end{pmatrix}\\).",
+    "apartados": [
+     "(1 p.) Calcula \\(m\\) para que \\(AB\\) no tenga inversa.",
+     "(1,5 p.) Estudia el rango de la matriz \\(BA\\) según los valores de \\(m\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(AB\\) es \\(2\\times2\\): \\(AB=\\begin{pmatrix}1&-1\\\\1+m&2m\\end{pmatrix}\\). No tiene inversa si y solo si \\(|AB|=0\\)<i class='n' data-t='th'>Una matriz cuadrada es invertible si y solo si su determinante es distinto de 0.</i>:</p>\\[|AB|=2m+(1+m)=3m+1=0\\]<div class='res'>\\(AB\\) no tiene inversa si y solo si \\(m=-\\dfrac13\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(BA\\) es \\(3\\times3\\): \\(BA=\\begin{pmatrix}2&m-1&1\\\\2&2m&2\\\\m-1&-2m&-1\\end{pmatrix}\\). Como \\(\\operatorname{rg}(BA)\\le\\operatorname{rg}B\\le2\\)<i class='n' data-t='th'>\\(\\operatorname{rg}(MN)\\le\\min(\\operatorname{rg}M,\\operatorname{rg}N)\\). Una matriz \\(3\\times2\\) tiene rango como máximo 2.</i>, se tiene \\(|BA|=0\\) y el rango es 2 como mucho. Y el menor de las filas 1 y 2 y columnas 1 y 3 es \\(\\begin{vmatrix}2&1\\\\2&2\\end{vmatrix}=2\\neq0\\) para todo \\(m\\): el rango es al menos 2.</p><div class='res'>\\(\\operatorname{rg}(BA)=2\\) para todo \\(m\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "rango",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-6-7",
+   "n": 7,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las rectas \\(r\\equiv\\begin{cases}x=2+3\\lambda\\\\y=-1+2\\lambda\\\\z=3+\\lambda\\end{cases}\\) y \\(s\\equiv\\begin{cases}2x-y-2=0\\\\y+2z-4=0\\end{cases}\\)",
+    "apartados": [
+     "(1,5 p.) Halla el plano que contiene a \\(r\\) y es paralelo a \\(s\\).",
+     "(1 p.) Deduce razonadamente que ningún plano perpendicular a \\(s\\) contiene a \\(r\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(r\\): \\(R(2,-1,3)\\), \\(\\vec d_r=(3,2,1)\\). \\(s\\): \\(\\vec d_s=(2,-1,0)\\times(0,1,2)=(-2,-4,2)\\sim(1,2,-1)\\). El plano contiene a \\(\\vec d_r\\) y es paralelo a \\(\\vec d_s\\): su normal es perpendicular a ambos<i class='n' data-t='th'>Un plano paralelo a una recta contiene su dirección; si además contiene otra recta, su normal es el producto vectorial de las dos direcciones.</i>:</p>\\[\\vec n=\\vec d_r\\times\\vec d_s=(3,2,1)\\times(1,2,-1)=(-4,4,4)\\sim(1,-1,-1)\\]\\[x-y-z+D=0\\ \\text{por }R:\\ 2+1-3+D=0\\Rightarrow D=0\\]<div class='res'>\\(x-y-z=0\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Un plano perpendicular a \\(s\\) tiene por normal \\(\\vec d_s\\). Si contuviera a \\(r\\), la dirección \\(\\vec d_r\\) estaría en el plano, es decir, \\(\\vec d_r\\perp\\vec n=\\vec d_s\\)<i class='n' data-t='why'>Una recta está contenida en un plano solo si su dirección es perpendicular a la normal del plano.</i>. Pero</p>\\[\\vec d_r\\cdot\\vec d_s=3+4-1=6\\neq0\\]<div class='res'>\\(r\\) no es perpendicular a \\(s\\): ningún plano perpendicular a \\(s\\) puede contener a \\(r\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "ecs",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "pos",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-6-8",
+   "n": 8,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera los puntos \\(A(1,2,3)\\), \\(B(-2,4,-3)\\) y \\(C(-10,1,0)\\).",
+    "apartados": [
+     "(1,25 p.) Halla el área del triángulo de vértices \\(A\\), \\(B\\) y \\(C\\).",
+     "(1,25 p.) Halla el plano que equidista de \\(A\\) y \\(B\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(\\overrightarrow{AB}=(-3,2,-6)\\), \\(\\overrightarrow{AC}=(-11,-1,-3)\\). Área \\(=\\frac12|\\overrightarrow{AB}\\times\\overrightarrow{AC}|\\)<i class='n' data-t='th'>El área del triángulo es la mitad del módulo del producto vectorial de dos de sus lados.</i>:</p>\\[\\overrightarrow{AB}\\times\\overrightarrow{AC}=(-12,\\,57,\\,25)\\qquad|\\cdot|=\\sqrt{144+3249+625}=\\sqrt{4018}=7\\sqrt{82}\\]<div class='res'>Área \\(=\\dfrac{7\\sqrt{82}}2\\approx31{,}69\\ u^2\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>El plano que equidista de \\(A\\) y \\(B\\) (plano mediador) es perpendicular a \\(AB\\) por su punto medio \\(M\\left(-\\frac12,3,0\\right)\\): normal \\(\\overrightarrow{AB}=(-3,2,-6)\\):</p>\\[-3x+2y-6z+D=0:\\ \\tfrac32+6+D=0\\Rightarrow D=-\\tfrac{15}2\\]<div class='res'>\\(6x-4y+12z+15=0\\)</div><i class='n' data-t='tp'>Comprobación: \\(A\\): \\(6-8+36+15=49\\) y \\(B\\): \\(-12-16-36+15=-49\\): valores opuestos ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "area",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "lug",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

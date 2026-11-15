@@ -1,0 +1,49 @@
+{
+ "version": 1,
+ "anios": {
+  "desde": 2001,
+  "hasta": 2027
+ },
+ "asignaturas": [
+  {
+   "id": "ccss",
+   "nombre": "Matemáticas Aplicadas",
+   "icono": "📈",
+   "color": "#6d4ae0",
+   "activa": true,
+   "carpeta": "datos/ccss/"
+  },
+  {
+   "id": "matematicas",
+   "nombre": "Matemáticas II",
+   "icono": "√x",
+   "color": "#17a673",
+   "activa": true,
+   "carpeta": "datos/matematicas/"
+  },
+  {
+   "id": "fisica",
+   "nombre": "Física",
+   "icono": "⚛️",
+   "color": "#2f6df0",
+   "activa": true,
+   "carpeta": "datos/fisica/"
+  },
+  {
+   "id": "quimica",
+   "nombre": "Química",
+   "icono": "🧪",
+   "color": "#f0a30a",
+   "activa": true,
+   "carpeta": "datos/quimica/"
+  },
+  {
+   "id": "ciencias-generales",
+   "nombre": "Ciencias Generales",
+   "icono": "🌍",
+   "color": "#e8487a",
+   "activa": false,
+   "carpeta": "datos/ciencias-generales/"
+  }
+ ]
+}

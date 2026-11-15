@@ -1,0 +1,12 @@
+{
+ "version": 1,
+ "reglas": [
+  {
+   "desde": 2025,
+   "texto": "Examen de 5 preguntas: las preguntas 1, 2 y 3 (2 puntos cada una) tienen dos opciones y se elige una; la pregunta 4 (1,5 puntos) incluye la formulación (4A) y dos apartados a elegir de 4B; la pregunta 5 (2,5 puntos) es de respuesta única."
+  },
+  {
+   "texto": "Examen de 3 bloques: A (formulación, 1,5 puntos): 2 preguntas y se responde 1; B (cuestiones, 1,5 puntos cada una): 6 cuestiones de tres apartados y se responden 3; C (problemas, 2 puntos cada uno): 4 problemas de dos apartados y se responden 2."
+  }
+ ]
+}

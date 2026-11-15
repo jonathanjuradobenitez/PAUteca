@@ -1,0 +1,245 @@
+{
+ "version": 1,
+ "id": "matematicas-2026-reserva-4",
+ "asignatura": "matematicas",
+ "anio": 2026,
+ "convocatoria": "Reserva 4",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2026-reserva-4-1",
+   "n": 1,
+   "bloque": "obligatorio",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Un jardinero quiere vallar un campo rectangular que tiene un lado junto a un camino. La valla del lado del camino cuesta 80 euros por metro y el precio de la valla de los tres lados restantes es de 10 euros por metro. Halla las dimensiones del campo de mayor área que puede cercarse con 28800 euros. ¿Qué área tiene el campo?",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>Sea \\(x\\) el lado junto al camino (y su opuesto) e \\(y\\) cada uno de los otros dos lados. Coste:</p>\\[80x+10x+2\\cdot10y=28800\\iff9x+2y=2880\\iff y=\\frac{2880-9x}2\\]<p>Área a maximizar:</p>\\[A(x)=xy=\\frac{2880x-9x^2}2=1440x-\\frac92x^2,\\qquad0\\lt x\\lt320\\]</div>"
+    },
+    {
+     "titulo": "Máximo",
+     "html": "<div class='ex'>\\[A'(x)=1440-9x=0\\iff x=160\\qquad A''(x)=-9\\lt0\\]<p>Es un máximo<i class='n' data-t='th'>\\(A'(x_0)=0\\) y \\(A''(x_0)\\lt0\\): máximo relativo; al ser una parábola abierta hacia abajo, es el máximo absoluto.</i>. Entonces \\(y=\\frac{2880-1440}2=720\\).</p><div class='res'>El campo mide 160 m en el lado del camino y 720 m en los otros lados; área máxima \\(160\\cdot720=115\\,200\\) m\\(^2\\)</div><i class='n' data-t='tp'>Comprobación del coste: \\(80\\cdot160+10\\cdot160+2\\cdot10\\cdot720=12800+1600+14400=28800\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "opt",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2026-reserva-4-2",
+   "n": 2,
+   "bloque": "obligatorio",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(f:[0,\\pi]\\to\\mathbb R\\) definida por \\(f(x)=a\\operatorname{sen}(x)+\\cos(bx)\\). Determina \\(a\\) y \\(b\\) (\\(0\\lt b\\lt3\\)), sabiendo que \\(x=\\dfrac\\pi2\\) es un punto crítico de \\(f\\) y que \\(\\displaystyle\\int_0^\\pi f(x)\\,dx=4\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Punto crítico: valor de \\(b\\)",
+     "html": "<div class='ex'><p>\\(f'(x)=a\\cos x-b\\operatorname{sen}(bx)\\). Punto crítico en \\(x=\\frac\\pi2\\):</p>\\[f'\\!\\left(\\tfrac\\pi2\\right)=a\\cos\\tfrac\\pi2-b\\operatorname{sen}\\!\\left(\\tfrac{b\\pi}2\\right)=-b\\operatorname{sen}\\!\\left(\\tfrac{b\\pi}2\\right)=0\\]<p>Como \\(b\\neq0\\): \\(\\operatorname{sen}\\left(\\frac{b\\pi}2\\right)=0\\iff\\frac{b\\pi}2=k\\pi\\iff b=2k\\), con \\(k\\) entero. Con \\(0\\lt b\\lt3\\): \\(b=2\\).</p></div>"
+    },
+    {
+     "titulo": "Integral: valor de \\(a\\)",
+     "html": "<div class='ex'><p>Con \\(b=2\\):</p>\\[\\int_0^\\pi\\bigl(a\\operatorname{sen}x+\\cos2x\\bigr)dx=\\left[-a\\cos x+\\frac{\\operatorname{sen}2x}2\\right]_0^\\pi=(a+0)-(-a+0)=2a\\]<p>\\(2a=4\\Rightarrow a=2\\).</p><div class='res'>\\(a=2\\) y \\(b=2\\)</div><i class='n' data-t='tp'>Comprobación: \\(f'(x)=2\\cos x-2\\operatorname{sen}2x\\) y \\(f'\\left(\\frac\\pi2\\right)=0-2\\operatorname{sen}\\pi=0\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "a"
+    },
+    {
+     "tema": "integ",
+     "tipo": "def",
+     "apartados": "a"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2026-reserva-4-3-1",
+   "n": "3.1",
+   "bloque": "optativo 1",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera los vectores \\(\\vec u=(2,0,1)\\) y \\(\\vec v=(1,m,2)\\).",
+    "apartados": [
+     "(1,25 p.) Calcula \\(m\\) para que el área del triángulo que definen \\(\\vec u\\) y \\(\\vec v\\) sea \\(\\dfrac{\\sqrt{29}}2\\).",
+     "(1,25 p.) Para \\(m=0\\), halla los vectores que sean perpendiculares a \\(\\vec u\\) y \\(\\vec v\\), y tengan módulo \\(\\sqrt{20}\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>El área del triángulo es \\(\\frac12|\\vec u\\times\\vec v|\\)<i class='n' data-t='th'>El área del paralelogramo de lados \\(\\vec u,\\vec v\\) es \\(|\\vec u\\times\\vec v|\\); el triángulo, la mitad.</i>:</p>\\[\\vec u\\times\\vec v=\\begin{vmatrix}\\vec i&\\vec j&\\vec k\\\\2&0&1\\\\1&m&2\\end{vmatrix}=(-m,\\,-3,\\,2m)\\qquad|\\vec u\\times\\vec v|=\\sqrt{5m^2+9}\\]\\[\\frac12\\sqrt{5m^2+9}=\\frac{\\sqrt{29}}2\\iff5m^2+9=29\\iff m^2=4\\]<div class='res'>\\(m=2\\) o \\(m=-2\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Para \\(m=0\\): \\(\\vec u\\times\\vec v=(0,-3,0)\\), perpendicular a ambos. Los vectores perpendiculares a \\(\\vec u\\) y \\(\\vec v\\) son los paralelos a \\((0,1,0)\\): \\(\\vec w=\\lambda(0,1,0)\\), con \\(|\\vec w|=|\\lambda|=\\sqrt{20}\\).</p><div class='res'>\\(\\vec w=(0,\\,2\\sqrt5,\\,0)\\) y \\(\\vec w'=(0,\\,-2\\sqrt5,\\,0)\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "area",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "vec",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2026-reserva-4-3-2",
+   "n": "3.2",
+   "bloque": "optativo 1",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el plano \\(\\pi\\equiv2x-y+2z-3=0\\) y la recta \\(r\\equiv\\dfrac{x-1}2=\\dfrac y1=\\dfrac{z-2}{m-2}\\).",
+    "apartados": [
+     "(1,5 p.) Halla la posición relativa de \\(\\pi\\) y \\(r\\) según los valores de \\(m\\).",
+     "(1 p.) Para \\(m=1\\), determina la ecuación del plano que contiene a \\(r\\) y corta perpendicularmente a \\(\\pi\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(r\\) tiene dirección \\(\\vec d=(2,1,m-2)\\) y pasa por \\(R(1,0,2)\\); \\(\\pi\\) tiene normal \\(\\vec n=(2,-1,2)\\). Recta y plano son secantes si \\(\\vec d\\cdot\\vec n\\neq0\\)<i class='n' data-t='th'>Posición recta-plano: si \\(\\vec d\\cdot\\vec n\\neq0\\), la recta corta al plano en un punto. Si \\(\\vec d\\cdot\\vec n=0\\), la recta es paralela al plano o está contenida; se decide mirando si un punto de la recta está en el plano.</i>:</p>\\[\\vec d\\cdot\\vec n=4-1+2(m-2)=2m-1\\]<p>• \\(m\\neq\\frac12\\): \\(\\vec d\\cdot\\vec n\\neq0\\): la recta y el plano son <b>secantes</b> (para \\(m=2\\), la recta es \\(\\frac{x-1}2=y\\), \\(z=2\\), con \\(\\vec d=(2,1,0)\\), y también corta a \\(\\pi\\)).</p><p>• \\(m=\\frac12\\): \\(\\vec d\\cdot\\vec n=0\\). \\(R(1,0,2)\\) cumple \\(2-0+4-3=3\\neq0\\): \\(R\\notin\\pi\\), luego la recta es <b>paralela</b> al plano (y no está contenida).</p><div class='res'>\\(m\\neq\\frac12\\): secantes. \\(m=\\frac12\\): recta paralela al plano</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Para \\(m=1\\): \\(\\vec d=(2,1,-1)\\), \\(R(1,0,2)\\). El plano contiene a \\(r\\) (contiene a \\(\\vec d\\) y a \\(R\\)) y es perpendicular a \\(\\pi\\) (contiene a \\(\\vec n\\)): su normal es perpendicular a ambos<i class='n' data-t='th'>Un plano perpendicular a otro contiene la dirección de la normal del otro. La normal es \\(\\vec d\\times\\vec n\\).</i>:</p>\\[\\vec N=\\vec d\\times\\vec n=\\begin{vmatrix}\\vec i&\\vec j&\\vec k\\\\2&1&-1\\\\2&-1&2\\end{vmatrix}=(1,\\,-6,\\,-4)\\]\\[x-6y-4z+D=0\\ \\text{por }R(1,0,2):\\ 1-8+D=0\\Rightarrow D=7\\]<div class='res'>\\(x-6y-4z+7=0\\)</div><i class='n' data-t='tp'>Comprobación: \\(\\vec N\\cdot\\vec d=2-6+4=0\\) ✓ y \\(\\vec N\\cdot\\vec n=2+6-8=0\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "pos",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "perp",
+     "apartados": "b"
+    },
+    {
+     "tema": "geom",
+     "tipo": "ecs",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2026-reserva-4-4-1",
+   "n": "4.1",
+   "bloque": "optativo 2",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el sistema de ecuaciones \\[\\begin{cases}x+y+z=1\\\\7x+3y+3z=15\\\\x-y-z=5\\end{cases}\\]",
+    "apartados": [
+     "(1,5 p.) Clasifícalo y resuélvelo, si es posible.",
+     "(1 p.) ¿Existe alguna solución del sistema que verifique \\(y+z+2=0\\)? Razona la respuesta."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Matrices del sistema:</p>\\[M=\\begin{pmatrix}1&1&1\\\\7&3&3\\\\1&-1&-1\\end{pmatrix}\\qquad M^*=\\left(\\begin{array}{ccc|c}1&1&1&1\\\\7&3&3&15\\\\1&-1&-1&5\\end{array}\\right)\\]<p>Las columnas 2 y 3 de \\(M\\) son iguales: \\(\\operatorname{rg}M\\le2\\), y el menor \\(\\begin{vmatrix}1&1\\\\7&3\\end{vmatrix}=-4\\neq0\\): \\(\\operatorname{rg}M=2\\). En \\(M^*\\), el determinante de las columnas 1, 2 y 4 es \\(\\begin{vmatrix}1&1&1\\\\7&3&15\\\\1&-1&5\\end{vmatrix}=0\\) (y las columnas 2 y 3 son iguales): \\(\\operatorname{rg}M^*=2\\). Por el teorema de Rouché-Frobenius<i class='n' data-t='th'>\\(\\operatorname{rg}M=\\operatorname{rg}M^*=2\\lt3=n\\): sistema compatible indeterminado, con \\(3-2=1\\) parámetro.</i>, es <b>compatible indeterminado</b>.</p><p>Resolución: en todas las ecuaciones \\(y\\) y \\(z\\) aparecen en la combinación \\(y+z\\). Con \\(s=y+z\\): \\(x+s=1\\), \\(7x+3s=15\\), \\(x-s=5\\). De la primera y la tercera: \\(x=3\\), \\(s=-2\\) (la segunda: \\(21-6=15\\) ✓).</p><div class='res'>Compatible indeterminado: \\((x,y,z)=(3,\\ \\lambda,\\ -2-\\lambda)\\), con \\(\\lambda\\in\\mathbb R\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Toda solución cumple \\(y+z=-2\\), es decir, \\(y+z+2=0\\): lo verifican <b>todas</b> las soluciones del sistema (por ejemplo, \\((3,0,-2)\\)).</p><div class='res'>Sí: todas las soluciones del sistema verifican \\(y+z+2=0\\)</div><i class='n' data-t='why'>De \\(x+y+z=1\\) y \\(x-y-z=5\\) se obtiene \\(x=3\\) y \\(y+z=-2\\): la condición pedida ya está implícita en el sistema.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "sistemas",
+     "tipo": "disc",
+     "apartados": "a"
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2026-reserva-4-4-2",
+   "n": "4.2",
+   "bloque": "optativo 2",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "La estatura de los alumnos de un centro de Educación Secundaria sigue una distribución normal de media 172 cm y desviación típica 7 cm.",
+    "apartados": [
+     "(1,25 p.) Calcula la probabilidad de que un alumno elegido al azar mida entre 168 y 180 cm.",
+     "(1,25 p.) ¿Cuánto mide al menos un alumno que está en el grupo del 5 % de alumnos más altos?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(X\\sim N(172;\\,7)\\). Tipifico con \\(Z=\\dfrac{X-172}7\\)<i class='n' data-t='th'>Tipificación: \\(Z=\\frac{X-\\mu}\\sigma\\sim N(0;1)\\). Además \\(P(Z\\le-z)=1-\\Phi(z)\\).</i>:</p>\\[P(168\\lt X\\lt180)=P\\!\\left(\\frac{168-172}7\\lt Z\\lt\\frac{180-172}7\\right)=P(-0{,}57\\lt Z\\lt1{,}14)\\]\\[=\\Phi(1{,}14)-\\bigl[1-\\Phi(0{,}57)\\bigr]=0{,}8729-0{,}2843\\]<div class='res'>0,5886</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Busco \\(x\\) con \\(P(X\\ge x)=0{,}05\\), es decir, \\(P(X\\le x)=0{,}95\\). En la tabla, \\(\\Phi(1{,}64)=0{,}9495\\) y \\(\\Phi(1{,}65)=0{,}9505\\): 0,95 queda justo en medio y se toma \\(z=1{,}645\\):</p>\\[x=\\mu+z\\sigma=172+1{,}645\\cdot7=183{,}515\\]<div class='res'>Mide al menos \\(183{,}52\\) cm (aproximadamente 183,5 cm)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "dist",
+     "tipo": "normal",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

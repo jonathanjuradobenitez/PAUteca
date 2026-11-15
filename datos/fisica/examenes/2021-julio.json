@@ -1,0 +1,200 @@
+{
+ "version": 1,
+ "id": "fisica-2021-julio",
+ "asignatura": "fisica",
+ "anio": 2021,
+ "convocatoria": "Julio",
+ "documento": null,
+ "revision": "borrador",
+ "ejercicios": [
+  {
+   "id": "fisica-2021-julio-a1",
+   "n": "A.1",
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "",
+    "apartados": [
+     "Razone si la siguiente afirmación es verdadera o falsa: «Si un planeta tiene el doble de masa y la mitad del radio que otro planeta, su velocidad de escape será el doble».",
+     "Conociendo la gravedad y la velocidad de escape en la superficie de Marte, calcule: <b>i)</b> El radio de Marte. <b>ii)</b> La masa de Marte. \\(g_{Marte}=3{,}7\\ \\mathrm{m\\,s^{-2}}\\); \\(v_{escape}=5\\cdot10^{3}\\ \\mathrm{m\\,s^{-1}}\\); \\(G=6{,}67\\cdot10^{-11}\\ \\mathrm{N\\,m^2\\,kg^{-2}}\\)"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>La velocidad de escape es la velocidad mínima con la que hay que lanzar un cuerpo desde su superficie para que escape de la atracción gravitatoria de el planeta, alejándose indefinidamente. La deducimos aplicando la conservación de la energía mecánica, ya que, despreciando el rozamiento con la atmósfera, la única fuerza que actúa es la gravitatoria, que es conservativa. Tomamos el origen de energía potencial en el infinito, \\(E_{pg}=-\\dfrac{GMm}{r}\\).</p><p>Situación inicial: el cuerpo en su superficie (\\(r=R\\)) con velocidad \\(v_e\\). Situación final: en el infinito, donde en el caso límite llega con velocidad nula; allí \\(E_c=0\\) y \\(E_{pg}=0\\).</p>\\[E_{M1}=\\tfrac12 m v_e^2-\\frac{G\\,M\\,m}{R}\\]\\[E_{M\\infty}=0+0=0\\]\\[E_{M1}=E_{M\\infty}\\]\\[\\Rightarrow\\ \\tfrac12 m v_e^2-\\frac{G\\,M\\,m}{R}=0\\]\\[\\Rightarrow\\ v_e=\\sqrt{\\frac{2G\\,M}{R}}\\]<p>La velocidad de escape tampoco depende de la masa del cuerpo lanzado.</p><p>Siendo \\(M\\) la masa del planeta y \\(R\\) su radio. Comparamos ahora los dos planetas: el segundo tiene \\(M_2=2M_1\\) y \\(R_2=\\tfrac12R_1\\):</p>\\[\\text{Planeta 1: }v_{e1}=\\sqrt{\\frac{2GM_1}{R_1}}\\]\\[\\text{Planeta 2: }v_{e2} =\\sqrt{\\frac{2G\\cdot2M_1}{\\tfrac12R_1}}\\]\\[=\\sqrt{4\\cdot\\frac{2GM_1}{R_1}} =2\\,v_{e1}\\]<p>Al duplicar la masa, el cociente M/R se duplica, y al reducir el radio a la mitad se vuelve a duplicar: en total se multiplica por 4, y la velocidad de escape, que depende de su raíz cuadrada, por 2.</p><div class='res'>La afirmación es cierta</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Disponemos de dos datos del planeta, la gravedad superficial y la velocidad de escape, y queremos dos incógnitas, su radio y su masa. La gravedad superficial es el valor del campo gravitatorio en la superficie del planeta, considerado como una esfera, a una distancia \\(R\\) de su centro: \\(g_0=\\dfrac{GM}{R^2}\\Rightarrow M=\\dfrac{g_0R^2}{G}\\).</p><p>Sustituimos esta masa en la expresión de la velocidad de escape deducida en el apartado anterior:</p>\\[v_e =\\sqrt{\\frac{2GM}{R}} =\\sqrt{\\frac{2G\\,g_0R^2}{R\\,G}}\\]\\[=\\sqrt{2\\,g_0R}\\]\\[\\Rightarrow\\ R=\\frac{v_e^2}{2g_0}\\]<p><b>i)</b> Sustituimos los datos (\\(g_0=3{,}7\\ \\mathrm{m\\,s^{-2}}\\); \\(v_e=5\\cdot10^3\\ \\mathrm{m\\,s^{-1}}\\)):</p>\\[R=\\frac{(5\\cdot10^{3})^2}{2\\cdot3{,}7}\\]<div class='res'>\\(R=3{,}378\\cdot10^{6}\\ \\mathrm m\\)</div><p><b>ii)</b> Sustituimos en la expresión de la masa:</p>\\[M =\\frac{g_0R^2}{G} =\\frac{3{,}7\\cdot(3{,}378\\cdot10^{6})^2}{6{,}67\\cdot10^{-11}}\\]<div class='res'>\\(M=6{,}33\\cdot10^{23}\\ \\mathrm{kg}\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "grav",
+     "tipo": null,
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "02_Interacción gravitatoria. PEvAU resueltos.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "fisica-2021-julio-a2",
+   "n": "A.2",
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "",
+    "apartados": [
+     "Discuta razonadamente la veracidad de las siguientes frases: <b>i)</b> El trabajo realizado por una fuerza conservativa para desplazar un cuerpo es nulo si la trayectoria es cerrada. <b>ii)</b> En el descenso de un objeto por un plano inclinado con rozamiento, la diminución de su energía potencial se corresponde con el aumento de su energía cinética.",
+     "Un objeto de 2 kg, inicialmente en reposo, asciende por un plano inclinado de 30º respecto a la horizontal debido a la acción de una fuerza de 30 N paralela a dicho plano. El coeficiente de rozamiento entre el bloque y el plano es 0,1. <b>i)</b> Dibuje todas las fuerzas que actúan sobre el objeto y calcule sus módulos. <b>ii)</b> Mediante consideraciones energéticas, determine la variación de energía cinética, potencial y mecánica cuando el objeto ha ascendido una altura de 1,5 m. \\(g=9{,}8\\ \\mathrm{m\\,s^{-2}}\\)"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p><b>i)</b> La afirmación es <b>correcta</b>, ya que esa es precisamente una de las definiciones de fuerza conservativa: «aquella fuerza tal que el trabajo que realiza a lo largo de cualquier camino cerrado es nulo».</p>\\[\\oint\\vec F\\cdot d\\vec r=0\\]<p>También es válido razonarlo a partir de la energía potencial: \\(W_{F_C}=-\\Delta E_p\\), y como la variación de \\(E_p\\) no depende del camino, sólo de los puntos inicial y final, que en un camino cerrado son el mismo punto, \\(\\Delta E_p=0\\Rightarrow W_{F_C}=0\\).</p><p><b>ii)</b> Al existir rozamiento, existe una fuerza no conservativa que hace variar la energía mecánica del objeto:</p>\\[\\Delta E_M=W_{F_R}\\]\\[\\Rightarrow\\ \\Delta E_c+\\Delta E_p=W_{F_R}\\]\\[\\Rightarrow\\ \\Delta E_c=-\\Delta E_p+W_{F_R}\\]<p>No coinciden ambas variaciones. La afirmación es <b>falsa</b>, ya que hay una parte de la energía que se disipa en forma de calor al medio (\\(W_{F_R}\\lt0\\)). Sólo sería cierta si la energía mecánica se mantuviera constante.</p><div class='res'>i) Verdadera. ii) Falsa</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Realizamos en primer lugar un esquema con todas las fuerzas que intervienen sobre el objeto:</p><div style='overflow-x:auto'><svg viewBox='0 0 330 215' width='100%' style='max-width:330px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='20.0,195.0 262.5,195.0 262.5,55.0' fill='#cbd5e1' fill-opacity='0.35' stroke='currentColor' stroke-width='1.2'/><path d='M54.0 195.0 A34.0 34.0 0 0 0 49.4 178.0' stroke='currentColor' stroke-width='1' fill='none'/><text x='64.0' y='189.0' fill='currentColor' font-size='10' text-anchor='start'>30°</text><polygon points='130.0,131.5 152.5,118.5 139.5,96.0 117.0,109.0' fill='#475569' stroke='#475569' stroke-width='1'/><line x1='134.7' y1='113.7' x2='134.7' y2='167.7' stroke='#ea580c' stroke-width='2'/><polygon points='134.7,175.7 131.1,167.7 138.3,167.7' fill='#ea580c'/><text x='140.7' y='177.7' fill='#ea580c' font-size='11' text-anchor='start' font-weight='700' font-style='italic'>Fg</text><line x1='134.7' y1='113.7' x2='114.0' y2='125.7' stroke='#ea580c' stroke-width='1.3' stroke-dasharray='4 3'/><polygon points='107.9,129.2 112.4,123.0 115.5,128.5' fill='#ea580c'/><text x='103.9' y='141.2' fill='#ea580c' font-size='10' text-anchor='end' font-style='italic'>Fgx</text><line x1='134.7' y1='113.7' x2='158.1' y2='154.2' stroke='#ea580c' stroke-width='1.3' stroke-dasharray='4 3'/><polygon points='161.6,160.2 155.4,155.8 160.8,152.6' fill='#ea580c'/><text x='167.6' y='164.2' fill='#ea580c' font-size='10' text-anchor='start' font-style='italic'>Fgy</text><line x1='134.7' y1='113.7' x2='112.7' y2='75.6' stroke='#2563eb' stroke-width='2'/><polygon points='108.7,68.7 115.9,73.8 109.6,77.4' fill='#2563eb'/><text x='104.7' y='61.8' fill='#2563eb' font-size='12' text-anchor='middle' font-weight='700' font-style='italic'>N</text><line x1='130.0' y1='131.5' x2='102.3' y2='147.5' stroke='#dc2626' stroke-width='2'/><polygon points='95.3,151.5 100.5,144.4 104.1,150.6' fill='#dc2626'/><text x='93.4' y='164.2' fill='#dc2626' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>FR</text><line x1='134.7' y1='113.7' x2='178.0' y2='88.7' stroke='#7c3aed' stroke-width='2.2'/><polygon points='185.0,84.7 179.8,91.9 176.2,85.6' fill='#7c3aed'/><text x='191.9' y='76.7' fill='#7c3aed' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>F = 30 N</text><line x1='119.7' y1='87.8' x2='144.0' y2='73.8' stroke='#16a34a' stroke-width='1.6'/><polygon points='150.9,69.8 145.8,76.9 142.2,70.6' fill='#16a34a'/><text x='153.8' y='58.8' fill='#16a34a' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>v</text></svg></div><p>Teniendo en cuenta consideraciones energéticas, podemos decir que:</p><ul><li><b>Peso: \\(F_g=m\\cdot g=19{,}6\\ \\mathrm N\\); \\(F_{gx}=mg\\,\\operatorname{sen}30^\\circ=9{,}8\\ \\mathrm N\\); \\(F_{gy}=mg\\cos30^\\circ=16{,}97\\ \\mathrm N\\)</b>: fuerza conservativa. Realiza trabajo negativo (forma 120° con el desplazamiento).</li><li><b>Normal: \\(\\Sigma F_y =0\\Rightarrow N =F_{gy} =16{,}97\\ \\mathrm N\\)</b>: fuerza no conservativa. No realiza trabajo, ya que es perpendicular al desplazamiento en todo momento (\\(\\cos90^\\circ=0\\)).</li><li><b>Rozamiento: \\(F_R=\\mu\\cdot N=1{,}697\\ \\mathrm N\\)</b>: fuerza no conservativa. Realiza trabajo negativo: se opone al desplazamiento (180°).</li><li><b>Fuerza aplicada: \\(F=30\\ \\mathrm N\\)</b>: fuerza no conservativa. Realiza trabajo positivo: tiene el sentido del desplazamiento (0°).</li></ul><p><b>i)</b> Los módulos de las fuerzas son los indicados en la lista anterior.</p><p><b>ii)</b> Calculamos el trabajo de cada fuerza con \\(W=F\\cdot\\Delta r\\cdot\\cos\\alpha\\). El desplazamiento sobre el plano es:</p>\\[\\Delta r=\\frac{h}{\\operatorname{sen}30^\\circ}=\\frac{1{,}5\\ \\mathrm m}{\\operatorname{sen}30^\\circ}=3\\ \\mathrm m\\]\\[W_{F_g} =19{,}6\\cdot3\\cdot\\cos120^\\circ\\]\\[=-29{,}4\\ \\mathrm J\\]\\[W_N=16{,}97\\cdot3\\cdot\\cos90^\\circ=0\\ \\mathrm J\\]\\[W_{F_R} =1{,}697\\cdot3\\cdot\\cos180^\\circ\\]\\[=-5{,}091\\ \\mathrm J\\]\\[W_F=30\\cdot3\\cdot\\cos0^\\circ=90\\ \\mathrm J\\]<p>Aplicamos ahora los teoremas que relacionan trabajo y energía:</p><p>– Teorema de las fuerzas vivas: el trabajo total es la variación de energía cinética.</p>\\[\\Delta E_c =W_{tot}\\]\\[=-29{,}4+0-5{,}091+90\\]<div class='res'>\\(\\Delta E_c=55{,}51\\ \\mathrm J\\)</div><p>– Teorema de la energía potencial: el trabajo de la fuerza conservativa (el peso) es igual a menos la variación de energía potencial.</p>\\[\\Delta E_{pg}=-W_{F_g}=29{,}4\\ \\mathrm J\\]<div class='res'>\\(\\Delta E_{pg}=29{,}4\\ \\mathrm J\\)</div><p>– Conservación de la energía mecánica: la variación de energía mecánica es el trabajo de las fuerzas no conservativas.</p>\\[\\Delta E_M =W_{FNC}\\]\\[=W_F+W_N+W_{F_R}\\]\\[=90+0-5{,}091\\]<div class='res'>\\(\\Delta E_M=84{,}91\\ \\mathrm J\\)</div><p>Interpretación: de los 90 J que aporta la fuerza aplicada, 29,4 J se almacenan como energía potencial gravitatoria, 5,091 J se disipan en forma de calor por el rozamiento y el resto, 55,51 J, aumenta la energía cinética<i class='n' data-t='err'>Recordemos que NO debe calcularse la energía cinética por cinemática (con la ecuación de un MRUA): el enunciado pide consideraciones energéticas.</i>.</p></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "din",
+     "tipo": null,
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "01_Dinámica de la partícula. PEvAU resueltos.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "fisica-2021-julio-b1",
+   "n": "B.1",
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "",
+    "apartados": [
+     "Dos partículas idénticas con carga \\(q\\) y masa \\(m\\) se encuentran separadas por una distancia \\(d\\). A continuación, se mantiene fija una de las partículas y se deja que la otra se aleje hasta duplicar la distancia inicial con la primera. i) Determine el módulo de la velocidad que adquiere la partícula en el punto final. ii) Determine cómo cambiaría el módulo de la velocidad obtenida en el apartado anterior si se duplica el valor de las cargas.",
+     "Dos partículas idénticas con carga \\(q=+5\\cdot10^{-6}\\ \\mathrm C\\) están fijas en los puntos (0,−3) m y (0,3) m del plano XY. Si, manteniendo fijas las dos partículas, se suelta una tercera partícula con carga \\(Q=-2\\cdot10^{-8}\\ \\mathrm C\\) y masa \\(m=8\\cdot10^{-6}\\ \\mathrm{kg}\\) en el punto (4,0) m, calcule el módulo de la velocidad con la que llega al punto (0,0). \\(K=9\\cdot10^9\\ \\mathrm{N\\,m^2\\,C^{-2}}\\)"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a-i",
+     "html": "<div class='ex'><p>Despreciamos la interacción gravitatoria entre las partículas (es muchísimo menor). Solo actúa la fuerza electrostática, que es <b>conservativa</b>: la energía mecánica se conserva y \\(\\Delta E_c=-\\Delta E_{pe}\\). Como las cargas son del mismo signo, la fuerza es repulsiva y la partícula, que parte del reposo, se aleja.</p>\\[E_{pe}=K\\frac{q\\cdot q}{r}\\qquad v_1=0,\\ r_1=d\\qquad r_2=2d\\]\\[\\tfrac12 m v_2^2-0=K\\frac{q^2}{d}-K\\frac{q^2}{2d}=K\\frac{q^2}{2d}\\ \\Rightarrow\\ v_2=\\sqrt{\\frac{K\\,q^2}{m\\,d}}\\]<div class='res'>\\(v_2=q\\sqrt{\\dfrac{K}{m\\,d}}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado a-ii",
+     "html": "<div class='ex'><p>Con cargas \\(2q\\):</p>\\[v'_2=\\sqrt{\\frac{K\\,(2q)^2}{m\\,d}}=2\\sqrt{\\frac{K\\,q^2}{m\\,d}}=2\\,v_2\\]<div class='res'>La velocidad se duplica</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><div style='overflow-x:auto'><svg viewBox='0 0 330 210' width='100%' style='max-width:360px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><line x1='20.0' y1='105.0' x2='303.0' y2='105.0' stroke='currentColor' stroke-width='1.2'/><polygon points='310.0,105.0 303.0,101.8 303.0,108.2' fill='currentColor'/><line x1='150.0' y1='195.0' x2='150.0' y2='22.0' stroke='currentColor' stroke-width='1.2'/><polygon points='150.0,15.0 146.8,22.0 153.2,22.0' fill='currentColor'/><text x='306.0' y='119.0' fill='currentColor' font-size='10' text-anchor='middle'>+x</text><text x='164.0' y='19.0' fill='currentColor' font-size='10' text-anchor='middle'>+y</text><circle cx='150.0' cy='30.0' r='9' fill='#dc2626'/><text x='150.0' y='34.0' fill='#fff' font-size='12' text-anchor='middle' font-weight='700'>+</text><text x='184.0' y='34.0' fill='currentColor' font-size='11' text-anchor='middle' font-weight='700'>q (0,3)</text><circle cx='150.0' cy='180.0' r='9' fill='#dc2626'/><text x='150.0' y='184.0' fill='#fff' font-size='12' text-anchor='middle' font-weight='700'>+</text><text x='186.0' y='184.0' fill='currentColor' font-size='11' text-anchor='middle' font-weight='700'>q (0,−3)</text><circle cx='270.0' cy='105.0' r='7' fill='#2563eb'/><text x='270.0' y='109.0' fill='#fff' font-size='12' text-anchor='middle' font-weight='700'>−</text><text x='270.0' y='93.0' fill='currentColor' font-size='11' text-anchor='middle' font-weight='700'>Q</text><text x='270.0' y='127.0' fill='currentColor' font-size='10' text-anchor='middle'>(4,0)</text><line x1='260.0' y1='97.0' x2='167.0' y2='97.0' stroke='#ea580c' stroke-width='1.6'/><polygon points='158.0,97.0 167.0,101.0 167.0,93.0' fill='#ea580c'/><text x='210.0' y='91.0' fill='currentColor' font-size='10' text-anchor='middle' font-style='italic' font-weight='700'>v ?</text><line x1='150.0' y1='30.0' x2='270.0' y2='105.0' stroke='#94a3b8' stroke-width='1.0' stroke-dasharray='3 3'/><line x1='150.0' y1='180.0' x2='270.0' y2='105.0' stroke='#94a3b8' stroke-width='1.0' stroke-dasharray='3 3'/><text x='222.0' y='55.0' fill='currentColor' font-size='10' text-anchor='middle'>5 m</text></svg></div><p>Las cargas fijas crean un campo conservativo: \\(E_M\\) de la partícula \\(Q\\) se conserva (despreciamos la gravedad), y \\(\\Delta E_c=-\\Delta E_{pe}=-Q\\,(V_O-V_P)\\)<i class='n' data-t='th'>La fuerza eléctrica es conservativa: \\(W_{F_e}=-\\Delta E_{pe}=q\\,(V_i-V_f)\\). Si \\(W_{F_e}\\gt0\\) el desplazamiento es espontáneo; si es negativo, hay que hacer un trabajo externo \\(W_{ext}=-W_{F_e}\\) (a velocidad constante).</i>. Calculamos los potenciales por superposición<i class='n' data-t='th'>Potencial eléctrico de una carga puntual (origen en el infinito): \\(V=K\\dfrac{Q}{r}\\), con el signo de \\(Q\\). Energía potencial de una carga \\(q\\) en ese punto: \\(E_{pe}=q\\,V\\). Unidades: voltio, \\(\\mathrm V=\\mathrm{J\\,C^{-1}}\\).</i>:</p>\\[V_P=V_{(4,0)}=2\\cdot K\\frac{q}{5}=2\\cdot\\frac{9\\cdot10^9\\cdot5\\cdot10^{-6}}{5}=1{,}8\\cdot10^4\\ \\mathrm V\\]\\[V_O=V_{(0,0)}=2\\cdot K\\frac{q}{3}=2\\cdot\\frac{9\\cdot10^9\\cdot5\\cdot10^{-6}}{3}=3\\cdot10^4\\ \\mathrm V\\]\\[\\tfrac12 m v^2=-Q\\,(V_O-V_P)=-(-2\\cdot10^{-8})\\cdot(3\\cdot10^4-1{,}8\\cdot10^4)=2{,}4\\cdot10^{-4}\\ \\mathrm J\\]\\[v=\\sqrt{\\frac{2\\cdot2{,}4\\cdot10^{-4}}{8\\cdot10^{-6}}}\\]<div class='res'>\\(v=7{,}75\\ \\mathrm{m\\,s^{-1}}\\)</div><i class='n' data-t='tp'>Tiene sentido: \\(Q\\) es negativa y se mueve espontáneamente hacia potenciales mayores (hacia las cargas positivas), ganando energía cinética.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "elec",
+     "tipo": "trab",
+     "apartados": "a-i, a-ii, b"
+    },
+    {
+     "tema": "elec",
+     "tipo": "sup",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": "03_Interacción electrostática. PEvAU resueltos.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "fisica-2021-julio-b2",
+   "n": "B.2",
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "",
+    "apartados": [
+     "Suponga dos conductores rectilíneos, muy largos, paralelos y separados por una distancia «d» por los que circulan corrientes eléctricas de igual intensidad y sentido. Razone cómo se modifica la fuerza por unidad de longitud entre los conductores si duplicamos ambas intensidades y a la vez reducimos «d» a la mitad.",
+     "Un protón que ha sido acelerado desde el reposo por una diferencia de potencial de 6000 V describe una órbita circular en un campo magnético uniforme de 0,8 T. Calcule razonadamente: <b>i)</b> El módulo de la fuerza magnética que actúa sobre el protón. <b>ii)</b> El radio de la trayectoria descrita. \\(m_p=1{,}7\\cdot10^{-27}\\ \\mathrm{kg}\\); \\(e=1{,}6\\cdot10^{-19}\\ \\mathrm C\\)"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>La fuerza por unidad de longitud entre dos conductores rectilíneos paralelos y muy largos viene dada por \\(f=\\dfrac FL=\\dfrac{\\mu_0 I_1 I_2}{2\\pi d}\\). En este caso es atractiva, ya que las corrientes van en el mismo sentido. Al ser \\(I_1=I_2=I\\), \\(f=\\dfrac{\\mu_0 I^2}{2\\pi d}\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 330 198' width='100%' style='max-width:320px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><line x1='90.0' y1='15.0' x2='90.0' y2='175.0' stroke='currentColor' stroke-width='3'/><line x1='240.0' y1='15.0' x2='240.0' y2='175.0' stroke='currentColor' stroke-width='3'/><line x1='90.0' y1='130.0' x2='90.0' y2='70.0' stroke='#dc2626' stroke-width='2.4'/><polygon points='90.0,60.0 94.5,70.0 85.5,70.0' fill='#dc2626'/><text x='76.0' y='100.0' fill='#dc2626' font-size='12' text-anchor='end' font-weight='700' font-style='italic'>I₁</text><line x1='240.0' y1='130.0' x2='240.0' y2='70.0' stroke='#dc2626' stroke-width='2.4'/><polygon points='240.0,60.0 244.5,70.0 235.5,70.0' fill='#dc2626'/><text x='254.0' y='100.0' fill='#dc2626' font-size='12' text-anchor='start' font-weight='700' font-style='italic'>I₂</text><circle cx='240.0' cy='35.0' r='7.0' fill='none' stroke='#2563eb' stroke-width='1.2'/><line x1='235.1' y1='30.1' x2='244.9' y2='39.9' stroke='#2563eb' stroke-width='1.2'/><line x1='235.1' y1='39.9' x2='244.9' y2='30.1' stroke='#2563eb' stroke-width='1.2'/><text x='252.0' y='39.0' fill='#2563eb' font-size='10' text-anchor='start' font-weight='700' font-style='italic'>B₁₂</text><circle cx='90.0' cy='35.0' r='7.0' fill='none' stroke='#2563eb' stroke-width='1.2'/><circle cx='90.0' cy='35.0' r='1.8' fill='#2563eb'/><text x='102.0' y='39.0' fill='#2563eb' font-size='10' text-anchor='start' font-weight='700' font-style='italic'>B₂₁</text><line x1='236.0' y1='150.0' x2='194.0' y2='150.0' stroke='#ea580c' stroke-width='2.2'/><polygon points='186.0,150.0 194.0,146.4 194.0,153.6' fill='#ea580c'/><text x='206.0' y='142.0' fill='#ea580c' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>F₁₂</text><line x1='94.0' y1='150.0' x2='136.0' y2='150.0' stroke='#ea580c' stroke-width='2.2'/><polygon points='144.0,150.0 136.0,153.6 136.0,146.4' fill='#ea580c'/><text x='124.0' y='142.0' fill='#ea580c' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>F₂₁</text><text x='165.0' y='192.0' fill='currentColor' font-size='10' text-anchor='middle'>atracción (mismo sentido)</text></svg></div><p>Si se duplican las intensidades y se reduce d a la mitad:</p>\\[f'=\\frac{\\mu_0\\,(2I)^2}{2\\pi\\,\\frac d2}=\\frac{8\\,\\mu_0 I^2}{2\\pi d}=8\\,f\\]<div class='res'>La fuerza por unidad de longitud se multiplica por 8</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p><b>i)</b> Al acelerar el protón (\\(q=e\\)) desde el reposo mediante un campo eléctrico, que es conservativo, la energía mecánica se mantiene constante:</p>\\[E_M=\\mathrm{cte}\\]\\[\\Rightarrow\\ \\Delta E_c=-\\Delta E_{pe}=-q\\,\\Delta V\\]\\[\\Rightarrow\\ E_c=e\\,|\\Delta V|\\]\\[E_c=\\tfrac12 m v^2\\]\\[\\Rightarrow\\ v =\\sqrt{\\frac{2\\,e\\,\\Delta V}{m}}\\]\\[=\\sqrt{\\frac{2\\cdot1{,}6\\cdot10^{-19}\\cdot6000}{1{,}7\\cdot10^{-27}}}\\]\\[v=1{,}063\\cdot10^{6}\\ \\mathrm{m\\,s^{-1}}\\]<p>Al moverse dentro del campo magnético, actúa sobre el protón una fuerza magnética dada por la ley de Lorentz, \\(\\vec F_m=q\\,\\vec v\\times\\vec B\\). Para que describa una trayectoria circular, la velocidad debe ser perpendicular al campo (si no, habría una componente paralela al campo y la trayectoria sería una hélice): \\(\\alpha=90^\\circ\\).</p>\\[F_m =|q|\\,v\\,B\\,\\operatorname{sen}90^\\circ\\]\\[=1{,}6\\cdot10^{-19}\\cdot1{,}063\\cdot10^{6}\\cdot0{,}8\\]<div class='res'>\\(F_m=1{,}36\\cdot10^{-13}\\ \\mathrm N\\)</div><p><b>ii)</b> La fuerza magnética es perpendicular a la velocidad: sólo produce aceleración normal y el movimiento es circular uniforme. Aplicando la segunda ley de Newton<i class='n' data-t='err'>En el PDF original aparece \\(F_m=2{,}086\\cdot10^{-13}\\) «m». Con los datos, \\(F_m\\) \\(=1{,}6\\cdot10^{-19}\\cdot1{,}063\\cdot10^{6}\\cdot0{,}8\\) \\(=1{,}36\\cdot10^{-13}\\ \\mathrm N\\). El radio no cambia.</i>:</p>\\[|q|\\,v\\,B=m\\,\\frac{v^2}{R}\\]\\[\\Rightarrow\\ R =\\frac{m\\,v}{|q|\\,B}\\]\\[=\\frac{1{,}7\\cdot10^{-27}\\cdot1{,}063\\cdot10^{6}}{1{,}6\\cdot10^{-19}\\cdot0{,}8}\\]<div class='res'>\\(R=0{,}014\\ \\mathrm m\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "emag",
+     "tipo": null,
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "04_Electromagnetismo. Inducción electromagnética. PEvAU resueltos.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "fisica-2021-julio-c1",
+   "n": "C.1",
+   "bloque": "C",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "",
+    "apartados": [
+     "<b>i)</b> Justifique que en una onda estacionaria la amplitud varía en cada punto. <b>ii)</b> Realice una representación gráfica de una onda estacionaria en función del espacio, y explique qué se entiende por un nodo en este tipo de ondas.",
+     "Una onda estacionaria queda descrita mediante la ecuación: \\(y(x,t)\\) \\(=0{,}5\\,\\operatorname{sen}\\left(\\frac{\\pi}{3}x\\right)\\cos(40\\pi t)\\) (S.I.). Determine razonadamente: <b>i)</b> Amplitud, longitud de onda y velocidad de propagación de las ondas armónicas cuya superposición da lugar a esta onda estacionaria. <b>ii)</b> Posición de los vientres y amplitud de los mismos."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p><b>i)</b> Una onda estacionaria es la superposición (interferencia) de dos ondas de las mismas características que se propagan en la misma dirección y en sentidos opuestos. Como en toda interferencia, según la diferencia de fase con que lleguen las ondas a cada punto, habrá puntos con interferencia constructiva (amplitud máxima, suma de las amplitudes), puntos con interferencia destructiva (amplitud nula, ya que se restan dos amplitudes iguales) y puntos con amplitud intermedia. Queda probado que la amplitud varía en cada punto.</p><p>De otra forma: en una onda estacionaria, por ejemplo \\(y(x,t)=2A\\,\\operatorname{sen}(kx)\\cos(\\omega t)\\), la amplitud en cada punto es \\(A(x)=2A\\,\\operatorname{sen}(kx)\\), que depende de \\(x\\).</p><p><b>ii)</b> Representación (las líneas discontinuas indican la amplitud que alcanza la oscilación en cada punto; N: nodos, V: vientres):</p><div style='overflow-x:auto'><svg viewBox='0 0 330 170' width='100%' style='max-width:330px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><line x1='35.0' y1='85.0' x2='315.0' y2='85.0' stroke='currentColor' stroke-width='1.1'/><polygon points='322.0,85.0 315.0,88.2 315.0,81.8' fill='currentColor'/><line x1='45.0' y1='164.0' x2='45.0' y2='15.0' stroke='currentColor' stroke-width='1.1'/><polygon points='45.0,8.0 48.1,15.0 41.9,15.0' fill='currentColor'/><text x='318.0' y='99.0' fill='currentColor' font-size='10' text-anchor='middle'>x (m)</text><text x='55.0' y='12.0' fill='currentColor' font-size='10' text-anchor='middle'>y</text><polyline points='45.0,85.0 46.3,81.8 47.5,78.7 48.8,75.6 50.1,72.5 51.4,69.4 52.6,66.4 53.9,63.5 55.2,60.7 56.5,58.0 57.8,55.4 59.0,52.9 60.3,50.5 61.6,48.3 62.9,46.2 64.1,44.2 65.4,42.4 66.7,40.8 68.0,39.4 69.2,38.1 70.5,37.1 71.8,36.2 73.0,35.5 74.3,35.0 75.6,34.7 76.9,34.6 78.2,34.7 79.4,35.0 80.7,35.5 82.0,36.2 83.2,37.1 84.5,38.1 85.8,39.4 87.1,40.8 88.3,42.4 89.6,44.2 90.9,46.2 92.2,48.3 93.5,50.5 94.7,52.9 96.0,55.4 97.3,58.0 98.5,60.7 99.8,63.5 101.1,66.4 102.4,69.4 103.7,72.5 104.9,75.6 106.2,78.7 107.5,81.8 108.8,85.0 110.0,88.2 111.3,91.3 112.6,94.4 113.9,97.5 115.1,100.6 116.4,103.6 117.7,106.5 118.9,109.3 120.2,112.0 121.5,114.6 122.8,117.1 124.0,119.5 125.3,121.7 126.6,123.8 127.9,125.8 129.2,127.6 130.4,129.2 131.7,130.6 133.0,131.9 134.2,132.9 135.5,133.8 136.8,134.5 138.1,135.0 139.3,135.3 140.6,135.4 141.9,135.3 143.2,135.0 144.4,134.5 145.7,133.8 147.0,132.9 148.3,131.9 149.6,130.6 150.8,129.2 152.1,127.6 153.4,125.8 154.6,123.8 155.9,121.7 157.2,119.5 158.5,117.1 159.8,114.6 161.0,112.0 162.3,109.3 163.6,106.5 164.8,103.6 166.1,100.6 167.4,97.5 168.7,94.4 169.9,91.3 171.2,88.2 172.5,85.0 173.8,81.8 175.1,78.7 176.3,75.6 177.6,72.5 178.9,69.4 180.2,66.4 181.4,63.5 182.7,60.7 184.0,58.0 185.2,55.4 186.5,52.9 187.8,50.5 189.1,48.3 190.3,46.2 191.6,44.2 192.9,42.4 194.2,40.8 195.4,39.4 196.7,38.1 198.0,37.1 199.3,36.2 200.5,35.5 201.8,35.0 203.1,34.7 204.4,34.6 205.7,34.7 206.9,35.0 208.2,35.5 209.5,36.2 210.8,37.1 212.0,38.1 213.3,39.4 214.6,40.8 215.9,42.4 217.1,44.2 218.4,46.2 219.7,48.3 220.9,50.5 222.2,52.9 223.5,55.4 224.8,58.0 226.0,60.7 227.3,63.5 228.6,66.4 229.9,69.4 231.2,72.5 232.4,75.6 233.7,78.7 235.0,81.8 236.2,85.0 237.5,88.2 238.8,91.3 240.1,94.4 241.3,97.5 242.6,100.6 243.9,103.6 245.2,106.5 246.5,109.3 247.7,112.0 249.0,114.6 250.3,117.1 251.6,119.5 252.8,121.7 254.1,123.8 255.4,125.8 256.6,127.6 257.9,129.2 259.2,130.6 260.5,131.9 261.8,132.9 263.0,133.8 264.3,134.5 265.6,135.0 266.9,135.3 268.1,135.4 269.4,135.3 270.7,135.0 272.0,134.5 273.2,133.8 274.5,132.9 275.8,131.9 277.1,130.6 278.3,129.2 279.6,127.6 280.9,125.8 282.1,123.8 283.4,121.7 284.7,119.5 286.0,117.1 287.2,114.6 288.5,112.0 289.8,109.3 291.1,106.5 292.4,103.6 293.6,100.6 294.9,97.5 296.2,94.4 297.4,91.3 298.7,88.2 300.0,85.0' fill='none' stroke='#94a3b8' stroke-width='1.4' stroke-dasharray='5 4'/><polyline points='45.0,85.0 46.3,88.2 47.5,91.3 48.8,94.4 50.1,97.5 51.4,100.6 52.6,103.6 53.9,106.5 55.2,109.3 56.5,112.0 57.8,114.6 59.0,117.1 60.3,119.5 61.6,121.7 62.9,123.8 64.1,125.8 65.4,127.6 66.7,129.2 68.0,130.6 69.2,131.9 70.5,132.9 71.8,133.8 73.0,134.5 74.3,135.0 75.6,135.3 76.9,135.4 78.2,135.3 79.4,135.0 80.7,134.5 82.0,133.8 83.2,132.9 84.5,131.9 85.8,130.6 87.1,129.2 88.3,127.6 89.6,125.8 90.9,123.8 92.2,121.7 93.5,119.5 94.7,117.1 96.0,114.6 97.3,112.0 98.5,109.3 99.8,106.5 101.1,103.6 102.4,100.6 103.7,97.5 104.9,94.4 106.2,91.3 107.5,88.2 108.8,85.0 110.0,81.8 111.3,78.7 112.6,75.6 113.9,72.5 115.1,69.4 116.4,66.4 117.7,63.5 118.9,60.7 120.2,58.0 121.5,55.4 122.8,52.9 124.0,50.5 125.3,48.3 126.6,46.2 127.9,44.2 129.2,42.4 130.4,40.8 131.7,39.4 133.0,38.1 134.2,37.1 135.5,36.2 136.8,35.5 138.1,35.0 139.3,34.7 140.6,34.6 141.9,34.7 143.2,35.0 144.4,35.5 145.7,36.2 147.0,37.1 148.3,38.1 149.6,39.4 150.8,40.8 152.1,42.4 153.4,44.2 154.6,46.2 155.9,48.3 157.2,50.5 158.5,52.9 159.8,55.4 161.0,58.0 162.3,60.7 163.6,63.5 164.8,66.4 166.1,69.4 167.4,72.5 168.7,75.6 169.9,78.7 171.2,81.8 172.5,85.0 173.8,88.2 175.1,91.3 176.3,94.4 177.6,97.5 178.9,100.6 180.2,103.6 181.4,106.5 182.7,109.3 184.0,112.0 185.2,114.6 186.5,117.1 187.8,119.5 189.1,121.7 190.3,123.8 191.6,125.8 192.9,127.6 194.2,129.2 195.4,130.6 196.7,131.9 198.0,132.9 199.3,133.8 200.5,134.5 201.8,135.0 203.1,135.3 204.4,135.4 205.7,135.3 206.9,135.0 208.2,134.5 209.5,133.8 210.8,132.9 212.0,131.9 213.3,130.6 214.6,129.2 215.9,127.6 217.1,125.8 218.4,123.8 219.7,121.7 220.9,119.5 222.2,117.1 223.5,114.6 224.8,112.0 226.0,109.3 227.3,106.5 228.6,103.6 229.9,100.6 231.2,97.5 232.4,94.4 233.7,91.3 235.0,88.2 236.2,85.0 237.5,81.8 238.8,78.7 240.1,75.6 241.3,72.5 242.6,69.4 243.9,66.4 245.2,63.5 246.5,60.7 247.7,58.0 249.0,55.4 250.3,52.9 251.6,50.5 252.8,48.3 254.1,46.2 255.4,44.2 256.6,42.4 257.9,40.8 259.2,39.4 260.5,38.1 261.8,37.1 263.0,36.2 264.3,35.5 265.6,35.0 266.9,34.7 268.1,34.6 269.4,34.7 270.7,35.0 272.0,35.5 273.2,36.2 274.5,37.1 275.8,38.1 277.1,39.4 278.3,40.8 279.6,42.4 280.9,44.2 282.1,46.2 283.4,48.3 284.7,50.5 286.0,52.9 287.2,55.4 288.5,58.0 289.8,60.7 291.1,63.5 292.4,66.4 293.6,69.4 294.9,72.5 296.2,75.6 297.4,78.7 298.7,81.8 300.0,85.0' fill='none' stroke='#94a3b8' stroke-width='1.4' stroke-dasharray='5 4'/><polyline points='45.0,85.0 46.3,82.8 47.5,80.6 48.8,78.4 50.1,76.2 51.4,74.1 52.6,72.0 53.9,70.0 55.2,68.0 56.5,66.1 57.8,64.3 59.0,62.5 60.3,60.8 61.6,59.3 62.9,57.8 64.1,56.5 65.4,55.2 66.7,54.1 68.0,53.1 69.2,52.2 70.5,51.4 71.8,50.8 73.0,50.3 74.3,50.0 75.6,49.8 76.9,49.7 78.2,49.8 79.4,50.0 80.7,50.3 82.0,50.8 83.2,51.4 84.5,52.2 85.8,53.1 87.1,54.1 88.3,55.2 89.6,56.5 90.9,57.8 92.2,59.3 93.5,60.8 94.7,62.5 96.0,64.3 97.3,66.1 98.5,68.0 99.8,70.0 101.1,72.0 102.4,74.1 103.7,76.2 104.9,78.4 106.2,80.6 107.5,82.8 108.8,85.0 110.0,87.2 111.3,89.4 112.6,91.6 113.9,93.8 115.1,95.9 116.4,98.0 117.7,100.0 118.9,102.0 120.2,103.9 121.5,105.7 122.8,107.5 124.0,109.2 125.3,110.7 126.6,112.2 127.9,113.5 129.2,114.8 130.4,115.9 131.7,116.9 133.0,117.8 134.2,118.6 135.5,119.2 136.8,119.7 138.1,120.0 139.3,120.2 140.6,120.3 141.9,120.2 143.2,120.0 144.4,119.7 145.7,119.2 147.0,118.6 148.3,117.8 149.6,116.9 150.8,115.9 152.1,114.8 153.4,113.5 154.6,112.2 155.9,110.7 157.2,109.2 158.5,107.5 159.8,105.7 161.0,103.9 162.3,102.0 163.6,100.0 164.8,98.0 166.1,95.9 167.4,93.8 168.7,91.6 169.9,89.4 171.2,87.2 172.5,85.0 173.8,82.8 175.1,80.6 176.3,78.4 177.6,76.2 178.9,74.1 180.2,72.0 181.4,70.0 182.7,68.0 184.0,66.1 185.2,64.3 186.5,62.5 187.8,60.8 189.1,59.3 190.3,57.8 191.6,56.5 192.9,55.2 194.2,54.1 195.4,53.1 196.7,52.2 198.0,51.4 199.3,50.8 200.5,50.3 201.8,50.0 203.1,49.8 204.4,49.7 205.7,49.8 206.9,50.0 208.2,50.3 209.5,50.8 210.8,51.4 212.0,52.2 213.3,53.1 214.6,54.1 215.9,55.2 217.1,56.5 218.4,57.8 219.7,59.3 220.9,60.8 222.2,62.5 223.5,64.3 224.8,66.1 226.0,68.0 227.3,70.0 228.6,72.0 229.9,74.1 231.2,76.2 232.4,78.4 233.7,80.6 235.0,82.8 236.2,85.0 237.5,87.2 238.8,89.4 240.1,91.6 241.3,93.8 242.6,95.9 243.9,98.0 245.2,100.0 246.5,102.0 247.7,103.9 249.0,105.7 250.3,107.5 251.6,109.2 252.8,110.7 254.1,112.2 255.4,113.5 256.6,114.8 257.9,115.9 259.2,116.9 260.5,117.8 261.8,118.6 263.0,119.2 264.3,119.7 265.6,120.0 266.9,120.2 268.1,120.3 269.4,120.2 270.7,120.0 272.0,119.7 273.2,119.2 274.5,118.6 275.8,117.8 277.1,116.9 278.3,115.9 279.6,114.8 280.9,113.5 282.1,112.2 283.4,110.7 284.7,109.2 286.0,107.5 287.2,105.7 288.5,103.9 289.8,102.0 291.1,100.0 292.4,98.0 293.6,95.9 294.9,93.8 296.2,91.6 297.4,89.4 298.7,87.2 300.0,85.0' fill='none' stroke='#2563eb' stroke-width='2'/><polyline points='45.0,85.0 46.3,86.3 47.5,87.5 48.8,88.8 50.1,90.0 51.4,91.2 52.6,92.4 53.9,93.6 55.2,94.7 56.5,95.8 57.8,96.8 59.0,97.9 60.3,98.8 61.6,99.7 62.9,100.5 64.1,101.3 65.4,102.0 66.7,102.7 68.0,103.2 69.2,103.7 70.5,104.2 71.8,104.5 73.0,104.8 74.3,105.0 75.6,105.1 76.9,105.2 78.2,105.1 79.4,105.0 80.7,104.8 82.0,104.5 83.2,104.2 84.5,103.7 85.8,103.2 87.1,102.7 88.3,102.0 89.6,101.3 90.9,100.5 92.2,99.7 93.5,98.8 94.7,97.9 96.0,96.8 97.3,95.8 98.5,94.7 99.8,93.6 101.1,92.4 102.4,91.2 103.7,90.0 104.9,88.8 106.2,87.5 107.5,86.3 108.8,85.0 110.0,83.7 111.3,82.5 112.6,81.2 113.9,80.0 115.1,78.8 116.4,77.6 117.7,76.4 118.9,75.3 120.2,74.2 121.5,73.2 122.8,72.1 124.0,71.2 125.3,70.3 126.6,69.5 127.9,68.7 129.2,68.0 130.4,67.3 131.7,66.8 133.0,66.3 134.2,65.8 135.5,65.5 136.8,65.2 138.1,65.0 139.3,64.9 140.6,64.8 141.9,64.9 143.2,65.0 144.4,65.2 145.7,65.5 147.0,65.8 148.3,66.3 149.6,66.8 150.8,67.3 152.1,68.0 153.4,68.7 154.6,69.5 155.9,70.3 157.2,71.2 158.5,72.1 159.8,73.2 161.0,74.2 162.3,75.3 163.6,76.4 164.8,77.6 166.1,78.8 167.4,80.0 168.7,81.2 169.9,82.5 171.2,83.7 172.5,85.0 173.8,86.3 175.1,87.5 176.3,88.8 177.6,90.0 178.9,91.2 180.2,92.4 181.4,93.6 182.7,94.7 184.0,95.8 185.2,96.8 186.5,97.9 187.8,98.8 189.1,99.7 190.3,100.5 191.6,101.3 192.9,102.0 194.2,102.7 195.4,103.2 196.7,103.7 198.0,104.2 199.3,104.5 200.5,104.8 201.8,105.0 203.1,105.1 204.4,105.2 205.7,105.1 206.9,105.0 208.2,104.8 209.5,104.5 210.8,104.2 212.0,103.7 213.3,103.2 214.6,102.7 215.9,102.0 217.1,101.3 218.4,100.5 219.7,99.7 220.9,98.8 222.2,97.9 223.5,96.8 224.8,95.8 226.0,94.7 227.3,93.6 228.6,92.4 229.9,91.2 231.2,90.0 232.4,88.8 233.7,87.5 235.0,86.3 236.2,85.0 237.5,83.7 238.8,82.5 240.1,81.2 241.3,80.0 242.6,78.8 243.9,77.6 245.2,76.4 246.5,75.3 247.7,74.2 249.0,73.2 250.3,72.1 251.6,71.2 252.8,70.3 254.1,69.5 255.4,68.7 256.6,68.0 257.9,67.3 259.2,66.8 260.5,66.3 261.8,65.8 263.0,65.5 264.3,65.2 265.6,65.0 266.9,64.9 268.1,64.8 269.4,64.9 270.7,65.0 272.0,65.2 273.2,65.5 274.5,65.8 275.8,66.3 277.1,66.8 278.3,67.3 279.6,68.0 280.9,68.7 282.1,69.5 283.4,70.3 284.7,71.2 286.0,72.1 287.2,73.2 288.5,74.2 289.8,75.3 291.1,76.4 292.4,77.6 293.6,78.8 294.9,80.0 296.2,81.2 297.4,82.5 298.7,83.7 300.0,85.0' fill='none' stroke='#7c3aed' stroke-width='2'/><text x='45.0' y='97.6' fill='#dc2626' font-size='10' text-anchor='middle' font-weight='700' font-style='italic'>N</text><text x='108.8' y='97.6' fill='#dc2626' font-size='10' text-anchor='middle' font-weight='700' font-style='italic'>N</text><text x='172.5' y='97.6' fill='#dc2626' font-size='10' text-anchor='middle' font-weight='700' font-style='italic'>N</text><text x='236.2' y='97.6' fill='#dc2626' font-size='10' text-anchor='middle' font-weight='700' font-style='italic'>N</text><text x='300.0' y='97.6' fill='#dc2626' font-size='10' text-anchor='middle' font-weight='700' font-style='italic'>N</text><text x='76.9' y='28.6' fill='#16a34a' font-size='10' text-anchor='middle' font-weight='700'>V</text><text x='140.6' y='28.6' fill='#16a34a' font-size='10' text-anchor='middle' font-weight='700'>V</text><text x='204.4' y='28.6' fill='#16a34a' font-size='10' text-anchor='middle' font-weight='700'>V</text><text x='268.1' y='28.6' fill='#16a34a' font-size='10' text-anchor='middle' font-weight='700'>V</text></svg></div><p>Un <b>nodo</b> es un punto donde se da interferencia destructiva: las ondas interfieren en oposición de fase y la amplitud de la oscilación es nula. Ese punto no oscila, está en reposo. La posición de los nodos depende del tipo de onda estacionaria (extremo libre o fijo) y de la longitud de onda de las ondas que se superponen.</p></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p><b>i)</b> Se trata de una onda estacionaria de extremo fijo (nodo en \\(x=0\\)). Su expresión general es \\(y(x,t)=2A\\,\\operatorname{sen}(kx)\\cos(\\omega t)\\), donde \\(A\\), \\(k\\) y \\(\\omega\\) corresponden a las ondas armónicas superpuestas. Comparando:</p>\\[2A=0{,}5\\ \\mathrm m\\]\\[\\Rightarrow\\ A=0{,}25\\ \\mathrm m\\]\\[k=\\frac{\\pi}{3}\\ \\mathrm{rad\\,m^{-1}}\\]\\[\\Rightarrow\\ \\lambda=\\frac{2\\pi}{k}=6\\ \\mathrm m\\]\\[\\omega=40\\pi\\ \\mathrm{rad\\,s^{-1}}\\]\\[\\Rightarrow\\ v=\\frac{\\omega}{k}=\\frac{40\\pi}{\\pi/3}=120\\ \\mathrm{m\\,s^{-1}}\\]<div class='res'>\\(A=0{,}25\\ \\mathrm m\\); \\(\\lambda=6\\ \\mathrm m\\); \\(v=120\\ \\mathrm{m\\,s^{-1}}\\)</div><p><b>ii)</b> Un vientre es un punto de amplitud máxima (interferencia constructiva):</p>\\[\\left|\\operatorname{sen}\\left(\\tfrac{\\pi}{3}x\\right)\\right|=1\\]\\[\\Rightarrow\\ \\frac{\\pi}{3}x=\\frac{\\pi}{2}+n\\pi\\]\\[\\Rightarrow\\ x=\\frac32+3n,\\ n=0,1,2\\dots\\]<div class='res'>Vientres en \\(x=1{,}5\\ \\mathrm m,\\ 4{,}5\\ \\mathrm m,\\ 7{,}5\\ \\mathrm m\\dots\\), con amplitud \\(2A=0{,}5\\ \\mathrm m\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "ondas",
+     "tipo": null,
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "05_Fenómenos ondulatorios. PEvAU resueltos.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  }
+ ]
+}

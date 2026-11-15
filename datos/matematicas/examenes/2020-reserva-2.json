@@ -1,0 +1,314 @@
+{
+ "version": 1,
+ "id": "matematicas-2020-reserva-2",
+ "asignatura": "matematicas",
+ "anio": 2020,
+ "convocatoria": "Reserva 2",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2020-reserva-2-1",
+   "n": 1,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sabiendo que \\(\\displaystyle\\lim_{x\\to0}\\frac{xe^x-\\ln(1+x)-(a+1)x}{x^2}\\) es finito, calcula \\(a\\) y el valor del límite (\\(\\ln\\) denota la función logaritmo neperiano).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución con L'Hôpital",
+     "html": "<div class='ex'><p>\\(N(x)=xe^x-\\ln(1+x)-(a+1)x\\) y \\(D(x)=x^2\\): \\(N(0)=0\\), \\(D(0)=0\\). L'Hôpital<i class='n' data-t='th'>Regla de L'Hôpital: si \\(N(x_0)=D(x_0)=0\\) y existe \\(\\lim\\frac{N'}{D'}\\), entonces \\(\\lim\\frac ND=\\lim\\frac{N'}{D'}\\).</i>:</p>\\[N'(x)=e^x+xe^x-\\frac1{1+x}-(a+1)\\ \\Rightarrow\\ N'(0)=-(a+1)\\qquad D'(x)=2x\\]<p>Para que el límite sea finito: \\(a=-1\\). Entonces otra vez \\(\\tfrac00\\):</p>\\[N''(x)=2e^x+xe^x+\\frac1{(1+x)^2}\\ \\Rightarrow\\ N''(0)=3\\qquad D''=2\\]<div class='res'>\\(a=-1\\) y el límite vale \\(\\dfrac32\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "lim",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-2-2",
+   "n": 2,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Determina la función \\(f:(-1,+\\infty)\\to\\mathbb R\\), sabiendo que es dos veces derivable, su gráfica pasa por el punto \\((0,1)\\), \\(f'(0)=0\\) y \\(f''(x)=\\dfrac1{x+1}\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Integrar dos veces",
+     "html": "<div class='ex'><p>\\(f'(x)=\\displaystyle\\int\\frac{dx}{x+1}=\\ln(x+1)+C_1\\); \\(f'(0)=C_1=0\\). Luego \\(f'(x)=\\ln(x+1)\\). Integro por partes (\\(u=\\ln(x+1)\\), \\(dv=dx\\))<i class='n' data-t='th'>ALPES: el logaritmo (L) va antes que el polinomio (P). Con \\(v=x+1\\), la integral que queda es inmediata.</i>:</p>\\[f(x)=\\int\\ln(x+1)\\,dx=(x+1)\\ln(x+1)-x+C_2\\]<p>\\(f(0)=0-0+C_2=1\\Rightarrow C_2=1\\).</p><div class='res'>\\(f(x)=(x+1)\\ln(x+1)-x+1\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "pcond",
+     "apartados": ""
+    },
+    {
+     "tema": "integ",
+     "tipo": "part",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-2-3",
+   "n": 3,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el sistema de ecuaciones \\[\\begin{cases}ax+y+z=1\\\\x+ay+z=a\\\\x+y+az=a^2\\end{cases}\\]",
+    "apartados": [
+     "(1,75 p.) Discútelo según los valores de \\(a\\).",
+     "(0,75 p.) Resuelve, si es posible, el sistema para \\(a=1\\) y \\(a=-2\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(|M|=\\begin{vmatrix}a&1&1\\\\1&a&1\\\\1&1&a\\end{vmatrix}=(a+2)(a-1)^2\\). Por Rouché-Frobenius<i class='n' data-t='th'>\\(\\operatorname{rg}M=\\operatorname{rg}M^*=3\\): SCD; \\(\\operatorname{rg}M=\\operatorname{rg}M^*\\lt3\\): SCI; \\(\\operatorname{rg}M\\lt\\operatorname{rg}M^*\\): SI.</i>:</p><p>• \\(a\\neq1,-2\\): compatible determinado.</p><p>• \\(a=1\\): las tres ecuaciones son \\(x+y+z=1\\): \\(\\operatorname{rg}M=\\operatorname{rg}M^*=1\\lt3\\): compatible indeterminado (2 parámetros).</p><p>• \\(a=-2\\): \\(M=\\begin{pmatrix}-2&1&1\\\\1&-2&1\\\\1&1&-2\\end{pmatrix}\\), \\(\\operatorname{rg}M=2\\); al sumar las tres ecuaciones queda \\(0=1-2+4=3\\): \\(\\operatorname{rg}M^*=3\\). Incompatible.</p><div class='res'>\\(a\\neq1,-2\\): SCD. \\(a=1\\): SCI. \\(a=-2\\): SI</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(a=1\\): \\(x+y+z=1\\), con \\(y=\\lambda\\), \\(z=\\mu\\): \\(x=1-\\lambda-\\mu\\). \\(a=-2\\): incompatible, sin solución.</p><div class='res'>\\(a=1\\): \\((1-\\lambda-\\mu,\\ \\lambda,\\ \\mu)\\). \\(a=-2\\): no tiene solución</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "sistemas",
+     "tipo": "disc",
+     "apartados": "a"
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-2-4",
+   "n": 4,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el punto \\(P(1,0,-1)\\) y la recta \\(r\\equiv\\begin{cases}x-y+2z=5\\\\x-z=1\\end{cases}\\)",
+    "apartados": [
+     "(1,5 p.) Determina el punto simétrico de \\(P\\) respecto de la recta \\(r\\).",
+     "(1 p.) Calcula el punto de la recta \\(r\\) que dista \\(\\sqrt6\\) unidades de \\(P\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Dirección de \\(r\\): \\(\\vec d=(1,-1,2)\\times(1,0,-1)=(1,3,1)\\). Un punto (\\(z=0\\)): \\(x=1\\), \\(y=-4\\): \\(R(1,-4,0)\\), y \\(r\\equiv(1+t,\\,-4+3t,\\,t)\\).</p><p>Método: plano perpendicular a \\(r\\) por \\(P\\), corte con \\(r\\) (punto medio) y simétrico. Plano: \\(x+3y+z+D=0\\) por \\(P\\): \\(1-1+D=0\\Rightarrow D=0\\). Corte con \\(r\\):</p>\\[(1+t)+3(-4+3t)+t=0\\iff11t-11=0\\iff t=1\\ \\Rightarrow\\ M(2,-1,1)\\]<div class='res'>\\(P'=2M-P=(4,-2,2)-(1,0,-1)=(3,\\,-2,\\,3)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Un punto \\(X(1+t,-4+3t,t)\\) de \\(r\\) cumple \\(|PX|^2=6\\):</p>\\[|PX|^2=t^2+(3t-4)^2+(t+1)^2=11t^2-22t+17=6\\iff11(t-1)^2=0\\iff t=1\\]<div class='res'>El único punto es \\(M(2,-1,1)\\), el pie de la perpendicular: \\(|PM|=\\sqrt6\\) es justo la distancia de \\(P\\) a \\(r\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "simet",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "dist",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-2-5",
+   "n": 5,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea \\(f\\) la función definida por \\(f(x)=\\dfrac{|x|}{2-x}\\) para \\(x\\neq2\\).",
+    "apartados": [
+     "(1,25 p.) Estudia la derivabilidad de \\(f\\).",
+     "(1,25 p.) Determina los intervalos de crecimiento y de decrecimiento de \\(f\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(f(x)=\\dfrac x{2-x}\\) si \\(x\\ge0\\) y \\(f(x)=\\dfrac{-x}{2-x}\\) si \\(x\\lt0\\). Derivadas:</p>\\[x\\gt0:\\ f'(x)=\\frac{(2-x)+x}{(2-x)^2}=\\frac2{(2-x)^2}\\qquad x\\lt0:\\ f'(x)=\\frac{-(2-x)-x}{(2-x)^2}=\\frac{-2}{(2-x)^2}\\]<p>En \\(x=0\\) (continua): \\(f'(0^+)=\\frac12\\) y \\(f'(0^-)=-\\frac12\\).</p><div class='res'>\\(f\\) es derivable en \\(\\mathbb R\\setminus\\{0,2\\}\\); en \\(x=0\\) no es derivable (punto anguloso)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Para \\(x\\lt0\\): \\(f'\\lt0\\); para \\(x\\gt0\\) (\\(x\\neq2\\)): \\(f'\\gt0\\).</p><div class='res'>Decreciente en \\((-\\infty,0)\\); creciente en \\((0,2)\\) y en \\((2,+\\infty)\\) (mínimo en \\(x=0\\), \\(f(0)=0\\))</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "cont",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-2-6",
+   "n": 6,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las funciones \\(f,g:\\mathbb R\\to\\mathbb R\\) definidas por \\(f(x)=-4x+2\\) y \\(g(x)=-x^2+2x+c\\).",
+    "apartados": [
+     "(1 p.) Halla el valor de \\(c\\) para que sus gráficas se cortan en el punto en el que \\(g\\) alcanza su máximo.",
+     "(1,5 p.) Para \\(c=-3\\), calcula el área de la región limitada por ambas gráficas."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(g'(x)=-2x+2=0\\iff x=1\\) (máximo, \\(g''=-2\\lt0\\)), con \\(g(1)=1+c\\). Las gráficas se cortan ahí: \\(f(1)=-2=g(1)=1+c\\).</p><div class='res'>\\(c=-3\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(g(x)=-x^2+2x-3\\). Corte: \\(-4x+2=-x^2+2x-3\\iff x^2-6x+5=0\\iff x=1,\\ x=5\\). Entre 1 y 5, \\(g\\) queda por encima de \\(f\\) (en \\(x=3\\): \\(g=-6\\gt f=-10\\)):</p>\\[A=\\int_1^5(g-f)\\,dx=\\int_1^5(-x^2+6x-5)\\,dx=\\left[-\\frac{x^3}3+3x^2-5x\\right]_1^5=\\frac{25}3-\\left(-\\frac73\\right)\\]<div class='res'>Área \\(=\\dfrac{32}3\\ u^2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "area",
+     "apartados": "b"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": "a"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-2-7",
+   "n": 7,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la matriz \\(A=\\begin{pmatrix}-\\frac12&-\\frac{\\sqrt3}2\\\\\\frac{\\sqrt3}2&-\\frac12\\end{pmatrix}\\).",
+    "apartados": [
+     "(1,5 p.) Calcula \\(A^{37}\\) y \\(A^{41}\\).",
+     "(1 p.) Halla el determinante de la matriz \\(3A^{52}(A^t)^4\\), donde \\(A^t\\) es la matriz traspuesta de \\(A\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(A\\) es la matriz de un giro de \\(120^\\circ\\): \\(\\cos120^\\circ=-\\frac12\\), \\(\\operatorname{sen}120^\\circ=\\frac{\\sqrt3}2\\)<i class='n' data-t='why'>Basta calcular las primeras potencias para ver el patrón: \\(A^3=I\\), así que las potencias se repiten cada 3.</i>. Compruebo:</p>\\[A^2=\\begin{pmatrix}-\\frac12&\\frac{\\sqrt3}2\\\\-\\frac{\\sqrt3}2&-\\frac12\\end{pmatrix}\\qquad A^3=A^2A=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}=I\\]<p>\\(37=3\\cdot12+1\\) y \\(41=3\\cdot13+2\\):</p><div class='res'>\\(A^{37}=(A^3)^{12}A=A=\\begin{pmatrix}-\\frac12&-\\frac{\\sqrt3}2\\\\\\frac{\\sqrt3}2&-\\frac12\\end{pmatrix}\\) y \\(A^{41}=(A^3)^{13}A^2=A^2=\\begin{pmatrix}-\\frac12&\\frac{\\sqrt3}2\\\\-\\frac{\\sqrt3}2&-\\frac12\\end{pmatrix}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(|A|=\\frac14+\\frac34=1\\). Propiedades<i class='n' data-t='th'>\\(|kM|=k^n|M|\\) (aquí \\(n=2\\)), \\(|MN|=|M||N|\\), \\(|M^t|=|M|\\) y \\(|M^n|=|M|^n\\).</i>:</p>\\[|3A^{52}(A^t)^4|=3^2\\,|A|^{52}\\,|A|^4=9\\cdot1\\]<div class='res'>9</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "pot",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "det",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-2-8",
+   "n": 8,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera los vectores \\(\\vec u=(2,1,0)\\), \\(\\vec v=(1,0,-1)\\) y \\(\\vec w=(a,b,1)\\).",
+    "apartados": [
+     "(1,5 p.) Halla \\(a\\) y \\(b\\) sabiendo que los tres vectores son linealmente dependientes y que \\(\\vec w\\) es ortogonal a \\(\\vec u\\).",
+     "(1 p.) Para \\(a=1\\), calcula el valor o valores de \\(b\\) para que el volumen del paralelepípedo formado por dichos vectores sea de 6 unidades cúbicas."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Linealmente dependientes \\(\\iff[\\vec u,\\vec v,\\vec w]=0\\)<i class='n' data-t='th'>Tres vectores son linealmente dependientes (coplanarios) si y solo si su producto mixto es 0. El volumen del paralelepípedo es \\(|[\\vec u,\\vec v,\\vec w]|\\).</i>; ortogonal: \\(\\vec w\\cdot\\vec u=0\\):</p>\\[\\begin{vmatrix}2&1&0\\\\1&0&-1\\\\a&b&1\\end{vmatrix}=2b-1-a=0\\qquad\\vec w\\cdot\\vec u=2a+b=0\\]<p>De la segunda, \\(b=-2a\\); en la primera: \\(-4a-1-a=0\\Rightarrow a=-\\frac15\\), \\(b=\\frac25\\).</p><div class='res'>\\(a=-\\dfrac15\\) y \\(b=\\dfrac25\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Con \\(a=1\\): \\([\\vec u,\\vec v,\\vec w]=2b-1-1=2b-2\\). Volumen \\(=|2b-2|=6\\):</p><div class='res'>\\(2b-2=6\\Rightarrow b=4\\) o \\(2b-2=-6\\Rightarrow b=-2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "vec",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

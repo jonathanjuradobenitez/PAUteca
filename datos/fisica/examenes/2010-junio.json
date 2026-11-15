@@ -1,0 +1,191 @@
+{
+ "version": 1,
+ "id": "fisica-2010-junio",
+ "asignatura": "fisica",
+ "anio": 2010,
+ "convocatoria": "Junio",
+ "documento": null,
+ "revision": "borrador",
+ "ejercicios": [
+  {
+   "id": "fisica-2010-junio-a1",
+   "n": "A.1",
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "",
+    "apartados": [
+     "Explique qué se entiende por velocidad de escape y deduzca razonadamente su expresión.",
+     "Razone qué energía habría que comunicar a un objeto de masa \\(m\\), situado a una altura \\(h\\) sobre la superficie de la Tierra, para que se alejara indefinidamente de ella."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>La velocidad de escape de un planeta se define como la velocidad a la que habría que lanzar un cuerpo desde la superficie del planeta para que escapara de su atracción gravitatoria, alejándose indefinidamente. En este cálculo se desprecia el rozamiento con la atmósfera.</p><p>Resolvemos empleando conceptos energéticos. Al no tener en cuenta el rozamiento, la única fuerza que actúa sobre el cuerpo es la gravitatoria, que es conservativa: la energía mecánica se mantiene constante.</p><p>Datos: \\(M\\), \\(R\\): masa y radio del planeta; \\(m\\): masa del proyectil. Medimos las distancias desde el centro del planeta y colocamos el origen de energía potencial a una distancia infinita, así que \\(E_{pg}=-\\dfrac{GMm}{r}\\).</p><p><b>Situación inicial:</b> lanzamiento desde la superficie con velocidad \\(v_e\\):</p>\\[E_{M1} =E_{c1}+E_{pg1}\\]\\[=\\tfrac12 m v_e^2-\\frac{GMm}{R}\\]<p><b>Situación final:</b> el cuerpo se aleja indefinidamente. En el límite, cuando \\(r\\to\\infty\\), la velocidad (y la \\(E_c\\)) tiende a cero, al igual que la energía potencial:</p>\\[E_{M2}=\\lim_{r\\to\\infty}(E_c+E_{pg})=0\\]<p>Aplicando la conservación de la energía mecánica:</p>\\[\\tfrac12 m v_e^2-\\frac{GMm}{R}=0\\]\\[\\Rightarrow\\ v_e=\\sqrt{\\frac{2GM}{R}}\\]<p>Si el lanzamiento se realiza desde una altura \\(h\\) sobre la superficie, la expresión queda \\(v_e=\\sqrt{\\dfrac{2GM}{R+h}}\\).</p><div class='res'>\\(v_e=\\sqrt{\\dfrac{2GM}{R}}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Suponemos que la energía se suministra en un solo impulso inicial, en forma de energía cinética. Aplicamos de nuevo la conservación de la energía mecánica (sólo actúa la fuerza gravitatoria, conservativa), ahora desde una altura \\(h\\): situación inicial, \\(r=R+h\\) con velocidad \\(v_e\\); situación final, en el infinito con velocidad nula (caso límite).</p>\\[\\tfrac12 m v_e^2-\\frac{GMm}{R+h}=0\\]\\[\\Rightarrow\\ v_e=\\sqrt{\\frac{2GM}{R+h}}\\]<p>La energía cinética que hay que comunicarle es:</p>\\[E_c =\\tfrac12 m v_e^2 =\\tfrac12 m\\,\\frac{2GM}{R+h}\\]\\[=\\frac{GMm}{R+h}\\]<div class='res'>\\(E_c=\\dfrac{GMm}{R+h}\\)</div><p>Coincide con el valor de la energía potencial gravitatoria en ese punto, pero con signo positivo. Debe ser así: conforme se aleja, la \\(E_c\\) disminuye y se transforma en \\(E_{pg}\\), ambas tendiendo a cero. Como la energía mecánica se conserva y es nula, \\(E_c=-E_{pg}\\).</p></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "grav",
+     "tipo": null,
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "02_Interacción gravitatoria. PEvAU resueltos.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "fisica-2010-junio-a3",
+   "n": "A.3",
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Una espira circular de 5 cm de radio, inicialmente horizontal, gira a 60 rpm en torno a uno de sus diámetros en un campo magnético vertical de 0,2 T.",
+    "apartados": [
+     "Dibuje en una gráfica el flujo magnético a través de la espira en función del tiempo entre los instantes \\(t=0\\) s y \\(t=2\\) s e indique el valor máximo de dicho flujo.",
+     "Escriba la expresión de la fuerza electromotriz inducida en la espira en función del tiempo e indique su valor en el instante \\(t=1\\) s."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><div style='overflow-x:auto'><svg viewBox='0 0 330 210' width='100%' style='max-width:320px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><line x1='40.0' y1='190.0' x2='40.0' y2='33.0' stroke='#93c5fd' stroke-width='1.4'/><polygon points='40.0,25.0 43.6,33.0 36.4,33.0' fill='#93c5fd'/><line x1='80.0' y1='190.0' x2='80.0' y2='33.0' stroke='#93c5fd' stroke-width='1.4'/><polygon points='80.0,25.0 83.6,33.0 76.4,33.0' fill='#93c5fd'/><line x1='250.0' y1='190.0' x2='250.0' y2='33.0' stroke='#93c5fd' stroke-width='1.4'/><polygon points='250.0,25.0 253.6,33.0 246.4,33.0' fill='#93c5fd'/><line x1='290.0' y1='190.0' x2='290.0' y2='33.0' stroke='#93c5fd' stroke-width='1.4'/><polygon points='290.0,25.0 293.6,33.0 286.4,33.0' fill='#93c5fd'/><text x='300.0' y='20.0' fill='#2563eb' font-size='12' text-anchor='middle' font-weight='700' font-style='italic'>B</text><ellipse cx='165' cy='110' rx='70' ry='28' fill='none' stroke='currentColor' stroke-width='2.4'/><line x1='80.0' y1='110.0' x2='250.0' y2='110.0' stroke='#94a3b8' stroke-width='1' stroke-dasharray='5 3'/><text x='262.0' y='114.0' fill='currentColor' font-size='9' text-anchor='start'>eje de giro</text><line x1='165.0' y1='110.0' x2='196.2' y2='52.0' stroke='#16a34a' stroke-width='2'/><polygon points='200.0,45.0 199.4,53.8 193.0,50.3' fill='#16a34a'/><text x='208.0' y='48.0' fill='#16a34a' font-size='12' text-anchor='start' font-weight='700'>S</text><path d='M181.5 80.3 A34.0 34.0 0 0 0 165.0 76.0' stroke='#7c3aed' stroke-width='1' fill='none'/><text x='176.0' y='66.0' fill='#7c3aed' font-size='10' text-anchor='start'>α = ωt</text><path d='M120 160 A50 14 0 0 0 210 160' stroke='currentColor' stroke-width='1.4' fill='none'/><polygon points='210.0,160.0 200.0,154.0 202.0,165.0' fill='currentColor' stroke='currentColor' stroke-width='1'/><text x='165.0' y='185.0' fill='currentColor' font-size='12' text-anchor='middle' font-weight='700'>ω</text></svg></div><p>Estamos ante una cuestión de inducción electromagnética. El flujo se calcula \\(\\phi_m=\\int\\vec B\\cdot d\\vec s=B\\,S\\cos\\alpha\\), con campo uniforme y circuito plano; \\(\\alpha\\) es el ángulo entre el vector superficie y el campo. Inicialmente es cero (espira horizontal, campo vertical), pero cambia con el tiempo, ya que la espira gira con movimiento circular uniforme:</p>\\[\\omega =60\\ \\mathrm{rpm} =60\\cdot\\frac{2\\pi\\ \\mathrm{rad}}{60\\ \\mathrm s}\\]\\[=2\\pi\\ \\mathrm{rad\\,s^{-1}}\\]\\[\\Rightarrow\\ \\alpha=\\alpha_0+\\omega t=2\\pi t\\ (\\mathrm{rad})\\]\\[\\phi_m =B\\cdot\\pi R^2\\cdot\\cos(2\\pi t)\\]\\[=0{,}2\\cdot\\pi\\cdot0{,}05^2\\cdot\\cos(2\\pi t)\\]<div class='res'>\\(\\phi_m =1{,}57\\cdot10^{-3}\\cos(2\\pi t)\\ \\mathrm{Wb}\\); valor máximo \\(1{,}57\\cdot10^{-3}\\ \\mathrm{Wb}\\)</div><div style='overflow-x:auto'><svg viewBox='0 0 330 170' width='100%' style='max-width:330px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><line x1='40.0' y1='85.0' x2='313.0' y2='85.0' stroke='currentColor' stroke-width='1.1'/><polygon points='320.0,85.0 313.0,88.2 313.0,81.8' fill='currentColor'/><line x1='50.0' y1='162.0' x2='50.0' y2='17.0' stroke='currentColor' stroke-width='1.1'/><polygon points='50.0,10.0 53.1,17.0 46.9,17.0' fill='currentColor'/><text x='316.0' y='99.0' fill='currentColor' font-size='10' text-anchor='middle'>t (s)</text><text x='60.0' y='14.0' fill='currentColor' font-size='10' text-anchor='middle'>Φ (Wb)</text><polyline points='50.0,20.0 51.6,20.2 53.1,20.8 54.7,21.8 56.2,23.2 57.8,24.9 59.4,27.1 60.9,29.6 62.5,32.4 64.1,35.6 65.6,39.0 67.2,42.8 68.8,46.8 70.3,51.0 71.9,55.5 73.4,60.1 75.0,64.9 76.6,69.8 78.1,74.8 79.7,79.9 81.2,85.0 82.8,90.1 84.4,95.2 85.9,100.2 87.5,105.1 89.1,109.9 90.6,114.5 92.2,119.0 93.8,123.2 95.3,127.2 96.9,131.0 98.4,134.4 100.0,137.6 101.6,140.4 103.1,142.9 104.7,145.1 106.2,146.8 107.8,148.2 109.4,149.2 110.9,149.8 112.5,150.0 114.1,149.8 115.6,149.2 117.2,148.2 118.8,146.8 120.3,145.1 121.9,142.9 123.4,140.4 125.0,137.6 126.6,134.4 128.1,131.0 129.7,127.2 131.2,123.2 132.8,119.0 134.4,114.5 135.9,109.9 137.5,105.1 139.1,100.2 140.6,95.2 142.2,90.1 143.8,85.0 145.3,79.9 146.9,74.8 148.4,69.8 150.0,64.9 151.6,60.1 153.1,55.5 154.7,51.0 156.2,46.8 157.8,42.8 159.4,39.0 160.9,35.6 162.5,32.4 164.1,29.6 165.6,27.1 167.2,24.9 168.8,23.2 170.3,21.8 171.9,20.8 173.4,20.2 175.0,20.0 176.6,20.2 178.1,20.8 179.7,21.8 181.2,23.2 182.8,24.9 184.4,27.1 185.9,29.6 187.5,32.4 189.1,35.6 190.6,39.0 192.2,42.8 193.8,46.8 195.3,51.0 196.9,55.5 198.4,60.1 200.0,64.9 201.6,69.8 203.1,74.8 204.7,79.9 206.2,85.0 207.8,90.1 209.4,95.2 210.9,100.2 212.5,105.1 214.1,109.9 215.6,114.5 217.2,119.0 218.8,123.2 220.3,127.2 221.9,131.0 223.4,134.4 225.0,137.6 226.6,140.4 228.1,142.9 229.7,145.1 231.2,146.8 232.8,148.2 234.4,149.2 235.9,149.8 237.5,150.0 239.1,149.8 240.6,149.2 242.2,148.2 243.8,146.8 245.3,145.1 246.9,142.9 248.4,140.4 250.0,137.6 251.6,134.4 253.1,131.0 254.7,127.2 256.2,123.2 257.8,119.0 259.4,114.5 260.9,109.9 262.5,105.1 264.1,100.2 265.6,95.2 267.2,90.1 268.8,85.0 270.3,79.9 271.9,74.8 273.4,69.8 275.0,64.9 276.6,60.1 278.1,55.5 279.7,51.0 281.2,46.8 282.8,42.8 284.4,39.0 285.9,35.6 287.5,32.4 289.1,29.6 290.6,27.1 292.2,24.9 293.8,23.2 295.3,21.8 296.9,20.8 298.4,20.2 300.0,20.0' fill='none' stroke='#2563eb' stroke-width='2'/><line x1='47.0' y1='20.0' x2='53.0' y2='20.0' stroke='currentColor' stroke-width='1'/><text x='44.0' y='24.0' fill='currentColor' font-size='9' text-anchor='end'>1,57·10⁻³</text><line x1='47.0' y1='150.0' x2='53.0' y2='150.0' stroke='currentColor' stroke-width='1'/><text x='44.0' y='154.0' fill='currentColor' font-size='9' text-anchor='end'>−1,57·10⁻³</text><line x1='175.0' y1='82.0' x2='175.0' y2='88.0' stroke='currentColor' stroke-width='1'/><text x='175.0' y='100.0' fill='currentColor' font-size='9' text-anchor='middle'>1</text><line x1='300.0' y1='82.0' x2='300.0' y2='88.0' stroke='currentColor' stroke-width='1'/><text x='300.0' y='100.0' fill='currentColor' font-size='9' text-anchor='middle'>2</text></svg></div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>La fuerza electromotriz inducida, energía que se suministra a cada culombio de carga, se obtiene aplicando la ley de Faraday-Lenz. Según la <b>ley de Faraday-Lenz</b>, «la corriente inducida en un circuito es originada por la variación del flujo magnético que atraviesa dicho circuito. Su sentido es tal que se opone a dicha variación». Su expresión es \\(\\varepsilon=-\\dfrac{d\\phi_m}{dt}\\).</p>\\[\\varepsilon =-\\frac{d\\phi_m}{dt}\\]\\[=-\\frac{d\\left[1{,}57\\cdot10^{-3}\\cos(2\\pi t)\\right]}{dt}\\]<div class='res'>\\(\\varepsilon=9{,}86\\cdot10^{-3}\\,\\operatorname{sen}(2\\pi t)\\ (\\mathrm V)\\)</div>\\[\\varepsilon(1\\ \\mathrm s)=9{,}86\\cdot10^{-3}\\,\\operatorname{sen}(2\\pi)\\]<div class='res'>\\(\\varepsilon(1\\ \\mathrm s)=0\\ \\mathrm V\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "emag",
+     "tipo": null,
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "04_Electromagnetismo. Inducción electromagnética. PEvAU resueltos.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "fisica-2010-junio-b1",
+   "n": "B.1",
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "",
+    "apartados": [
+     "Explique la relación entre campo y potencial electrostáticos.",
+     "Una partícula cargada se mueve espontáneamente hacia puntos en los que el potencial electrostático es mayor. Razone si, de ese comportamiento, puede deducirse el signo de la carga."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>El <b>campo electrostático</b> \\(\\vec E\\) es la fuerza por unidad de carga; el <b>potencial</b> \\(V\\) es la energía potencial por unidad de carga. Como el campo es conservativo, ambos están relacionados:</p>\\[\\Delta V=V_B-V_A=-\\int_A^B\\vec E\\cdot d\\vec r\\qquad\\vec E=-\\vec\\nabla V\\ \\ \\left(E=-\\frac{dV}{dr}\\ \\text{en una dimensión}\\right)\\]<p>Consecuencias:</p><p>• El campo apunta en el sentido en que el potencial <b>disminuye</b> más rápidamente.</p><p>• Las líneas de campo son perpendiculares a las superficies equipotenciales.</p><p>• En un campo uniforme, \\(\\Delta V=-E\\,d\\) (siendo \\(d\\) el desplazamiento en la dirección del campo).</p><p>• Para una carga puntual: \\(V=K\\dfrac{Q}{r}\\Rightarrow E=-\\dfrac{dV}{dr}=K\\dfrac{Q}{r^2}\\).</p></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Si el movimiento es espontáneo, lo produce la fuerza eléctrica, que realiza trabajo positivo<i class='n' data-t='th'>La fuerza eléctrica es conservativa: \\(W_{F_e}=-\\Delta E_{pe}=q\\,(V_i-V_f)\\). Si \\(W_{F_e}\\gt0\\) el desplazamiento es espontáneo; si es negativo, hay que hacer un trabajo externo \\(W_{ext}=-W_{F_e}\\) (a velocidad constante).</i>:</p>\\[W_{F_e}=-\\Delta E_{pe}=-q\\,\\Delta V\\gt0\\]<p>Como la partícula va hacia potenciales mayores, \\(\\Delta V\\gt0\\). Para que \\(-q\\,\\Delta V\\gt0\\) debe ser \\(q\\lt0\\).</p><div class='res'>Sí: la carga es negativa (las cargas negativas se mueven espontáneamente hacia potenciales crecientes)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "elec",
+     "tipo": "teo",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "03_Interacción electrostática. PEvAU resueltos.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "fisica-2010-junio-b3",
+   "n": "B.3",
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Por un plano inclinado que forma un ángulo de 30º con la horizontal se lanza hacia arriba un bloque de 10 kg con una velocidad inicial de \\(5\\ \\mathrm{m\\,s^{-1}}\\). Tras su ascenso por el plano inclinado, el bloque desciende y regresa al punto de partida con cierta velocidad. El coeficiente de rozamiento entre el bloque y el plano es 0,1.",
+    "apartados": [
+     "Dibuje en dos esquemas distintos las fuerzas que actúan sobre el bloque durante el ascenso y durante el descenso e indique sus respectivos valores. Razone si se verifica el principio de conservación de la energía en este proceso.",
+     "Calcule el trabajo de la fuerza de rozamiento en el ascenso y en el descenso del bloque. Comente el signo del resultado obtenido. \\(g=10\\ \\mathrm{m\\,s^{-2}}\\)"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Realizamos en primer lugar un esquema con todas las fuerzas que intervienen sobre el bloque:</p><div style='overflow-x:auto'><svg viewBox='0 0 330 215' width='100%' style='max-width:330px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='20.0,195.0 262.5,195.0 262.5,55.0' fill='#cbd5e1' fill-opacity='0.35' stroke='currentColor' stroke-width='1.2'/><path d='M54.0 195.0 A34.0 34.0 0 0 0 49.4 178.0' stroke='currentColor' stroke-width='1' fill='none'/><text x='64.0' y='189.0' fill='currentColor' font-size='10' text-anchor='start'>30°</text><polygon points='130.0,131.5 152.5,118.5 139.5,96.0 117.0,109.0' fill='#475569' stroke='#475569' stroke-width='1'/><line x1='134.7' y1='113.7' x2='134.7' y2='167.7' stroke='#ea580c' stroke-width='2'/><polygon points='134.7,175.7 131.1,167.7 138.3,167.7' fill='#ea580c'/><text x='140.7' y='177.7' fill='#ea580c' font-size='11' text-anchor='start' font-weight='700' font-style='italic'>Fg</text><line x1='134.7' y1='113.7' x2='114.0' y2='125.7' stroke='#ea580c' stroke-width='1.3' stroke-dasharray='4 3'/><polygon points='107.9,129.2 112.4,123.0 115.5,128.5' fill='#ea580c'/><text x='103.9' y='141.2' fill='#ea580c' font-size='10' text-anchor='end' font-style='italic'>Fgx</text><line x1='134.7' y1='113.7' x2='158.1' y2='154.2' stroke='#ea580c' stroke-width='1.3' stroke-dasharray='4 3'/><polygon points='161.6,160.2 155.4,155.8 160.8,152.6' fill='#ea580c'/><text x='167.6' y='164.2' fill='#ea580c' font-size='10' text-anchor='start' font-style='italic'>Fgy</text><line x1='134.7' y1='113.7' x2='112.7' y2='75.6' stroke='#2563eb' stroke-width='2'/><polygon points='108.7,68.7 115.9,73.8 109.6,77.4' fill='#2563eb'/><text x='104.7' y='61.8' fill='#2563eb' font-size='12' text-anchor='middle' font-weight='700' font-style='italic'>N</text><line x1='130.0' y1='131.5' x2='102.3' y2='147.5' stroke='#dc2626' stroke-width='2'/><polygon points='95.3,151.5 100.5,144.4 104.1,150.6' fill='#dc2626'/><text x='93.4' y='164.2' fill='#dc2626' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>FR</text><line x1='119.7' y1='87.8' x2='144.0' y2='73.8' stroke='#16a34a' stroke-width='1.6'/><polygon points='150.9,69.8 145.8,76.9 142.2,70.6' fill='#16a34a'/><text x='153.8' y='58.8' fill='#16a34a' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>v</text><text x='12.0' y='16.0' fill='currentColor' font-size='11' text-anchor='start' font-weight='700'>Ascenso</text></svg></div><p>Teniendo en cuenta consideraciones energéticas, podemos decir que:</p><ul><li><b>Peso: \\(F_g=m g=100\\ \\mathrm N\\), vertical y hacia abajo</b>: fuerza conservativa. Realiza trabajo: negativo en el ascenso y positivo en el descenso.</li><li><b>Normal: perpendicular al plano; \\(\\Sigma F_y =0\\Rightarrow N =F_{gy}\\) \\(=mg\\cos30^\\circ =86{,}6\\ \\mathrm N\\)</b>: fuerza no conservativa. No realiza trabajo, ya que es perpendicular al desplazamiento en todo momento (\\(\\cos90^\\circ=0\\)).</li><li><b>Rozamiento dinámico: \\(F_R =\\mu N =0{,}1\\cdot86{,}6 =8{,}66\\ \\mathrm N\\), se opone al deslizamiento</b>: fuerza no conservativa. Realiza trabajo negativo en el ascenso y en el descenso.</li></ul><div style='overflow-x:auto'><svg viewBox='0 0 330 215' width='100%' style='max-width:330px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='20.0,195.0 262.5,195.0 262.5,55.0' fill='#cbd5e1' fill-opacity='0.35' stroke='currentColor' stroke-width='1.2'/><path d='M54.0 195.0 A34.0 34.0 0 0 0 49.4 178.0' stroke='currentColor' stroke-width='1' fill='none'/><text x='64.0' y='189.0' fill='currentColor' font-size='10' text-anchor='start'>30°</text><polygon points='130.0,131.5 152.5,118.5 139.5,96.0 117.0,109.0' fill='#475569' stroke='#475569' stroke-width='1'/><line x1='134.7' y1='113.7' x2='134.7' y2='167.7' stroke='#ea580c' stroke-width='2'/><polygon points='134.7,175.7 131.1,167.7 138.3,167.7' fill='#ea580c'/><text x='140.7' y='177.7' fill='#ea580c' font-size='11' text-anchor='start' font-weight='700' font-style='italic'>Fg</text><line x1='134.7' y1='113.7' x2='114.0' y2='125.7' stroke='#ea580c' stroke-width='1.3' stroke-dasharray='4 3'/><polygon points='107.9,129.2 112.4,123.0 115.5,128.5' fill='#ea580c'/><text x='103.9' y='141.2' fill='#ea580c' font-size='10' text-anchor='end' font-style='italic'>Fgx</text><line x1='134.7' y1='113.7' x2='158.1' y2='154.2' stroke='#ea580c' stroke-width='1.3' stroke-dasharray='4 3'/><polygon points='161.6,160.2 155.4,155.8 160.8,152.6' fill='#ea580c'/><text x='167.6' y='164.2' fill='#ea580c' font-size='10' text-anchor='start' font-style='italic'>Fgy</text><line x1='134.7' y1='113.7' x2='112.7' y2='75.6' stroke='#2563eb' stroke-width='2'/><polygon points='108.7,68.7 115.9,73.8 109.6,77.4' fill='#2563eb'/><text x='104.7' y='61.8' fill='#2563eb' font-size='12' text-anchor='middle' font-weight='700' font-style='italic'>N</text><line x1='152.5' y1='118.5' x2='180.2' y2='102.5' stroke='#dc2626' stroke-width='2'/><polygon points='187.1,98.5 182.0,105.6 178.4,99.4' fill='#dc2626'/><text x='199.1' y='103.2' fill='#dc2626' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>FR</text><line x1='119.7' y1='87.8' x2='95.5' y2='101.8' stroke='#16a34a' stroke-width='1.6'/><polygon points='88.6,105.8 93.7,98.6 97.3,104.9' fill='#16a34a'/><text x='77.6' y='102.8' fill='#16a34a' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>v</text><text x='12.0' y='16.0' fill='currentColor' font-size='11' text-anchor='start' font-weight='700'>Descenso</text></svg></div><p>El principio de conservación de la <b>energía</b> es universal y se cumple en todo proceso: la energía total se mantiene constante, aunque se transforma entre formas y cuerpos. Al subir, la energía cinética del bloque se transforma en potencial gravitatoria y parte pasa al medio como calor por el rozamiento; al bajar, la potencial vuelve a transformarse en cinética, de nuevo con pérdidas por calor.</p><p>Lo que <b>no se conserva es la energía mecánica</b> del bloque, ya que el rozamiento (fuerza no conservativa) realiza trabajo: \\(\\Delta E_M=W_{F_R}\\lt0\\).</p><div class='res'>Se conserva la energía total, pero no la energía mecánica del bloque</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>El trabajo del rozamiento es \\(W_{F_R} =F_R\\cdot\\Delta r\\cdot\\cos180^\\circ\\) \\(=-F_R\\,\\Delta r\\). Necesitamos el desplazamiento, que obtenemos con \\(\\Delta E_M=W_{F_R}\\) en la subida (origen de \\(E_{pg}\\) en el punto de lanzamiento):</p><div style='overflow-x:auto'><svg viewBox='0 0 360 170' width='100%' style='max-width:360px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><path d='M20.0 150.0 L330.0 30.0' stroke='currentColor' stroke-width='1.6' fill='none'/><rect x='51.0' y='116.0' width='18.0' height='18.0' fill='#475569' stroke='#475569' stroke-width='1'/><circle cx='60.0' cy='104.0' r='8.0' fill='none' stroke='currentColor' stroke-width='1'/><text x='60.0' y='108.0' fill='currentColor' font-size='10' text-anchor='middle' font-weight='700'>1</text><text x='60.0' y='90.0' fill='currentColor' font-size='9' text-anchor='middle' font-style='italic'>v₁ = 5 m/s</text><rect x='261.0' y='35.0' width='18.0' height='18.0' fill='#475569' stroke='#475569' stroke-width='1'/><circle cx='270.0' cy='23.0' r='8.0' fill='none' stroke='currentColor' stroke-width='1'/><text x='270.0' y='27.0' fill='currentColor' font-size='10' text-anchor='middle' font-weight='700'>2</text><text x='270.0' y='9.0' fill='currentColor' font-size='9' text-anchor='middle' font-style='italic'>v₂ = 0</text><line x1='338.0' y1='30.0' x2='338.0' y2='150.0' stroke='#94a3b8' stroke-width='1' stroke-dasharray='3 3'/><text x='333.0' y='90.0' fill='currentColor' font-size='10' text-anchor='end'>h₂</text><text x='70.0' y='165.0' fill='currentColor' font-size='9' text-anchor='middle' font-style='italic'>Epg = 0</text><text x='200.0' y='140.0' fill='currentColor' font-size='9' text-anchor='middle'>Δr</text></svg></div>\\[E_{M1}=\\tfrac12 m v_1^2=125\\ \\mathrm J\\]\\[E_{M2}=m g\\,\\Delta r\\,\\operatorname{sen}30^\\circ=50\\,\\Delta r\\]\\[-8{,}66\\,\\Delta r=50\\,\\Delta r-125\\]\\[\\Rightarrow\\ \\Delta r=2{,}13\\ \\mathrm m\\]<div class='res'>Subida: \\(W_{F_R} =-8{,}66\\cdot2{,}13\\) \\(=-18{,}45\\ \\mathrm J\\)</div><p>En la bajada el rozamiento vale lo mismo, el desplazamiento es el mismo (2,13 m) y vuelve a formar 180° con él<i class='n' data-t='err'>En el PDF original se lee «de 2,53 m» en este punto; es una errata: el desplazamiento de bajada es el mismo que el de subida, 2,13 m.</i>.</p><div class='res'>Bajada: \\(W_{F_R}=-18{,}45\\ \\mathrm J\\)</div><p>El signo negativo indica que el rozamiento disipa energía, que pasa al medio en forma de calor: la energía mecánica del bloque disminuye.</p></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "din",
+     "tipo": null,
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "01_Dinámica de la partícula. PEvAU resueltos.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "fisica-2010-junio-b4",
+   "n": "B.4",
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "En una cuerda tensa se genera una onda viajera de 10 cm de amplitud mediante un oscilador de 20 Hz. La onda se propaga a \\(2\\ \\mathrm{m\\,s^{-1}}\\).",
+    "apartados": [
+     "Escriba la ecuación de la onda suponiendo que se propaga de derecha a izquierda y que en el instante inicial la elongación en el foco es nula.",
+     "Determine la velocidad de una partícula de la cuerda situada a 1 m del foco emisor en el instante 3 s."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Una onda armónica (u onda viajera) consiste en la propagación de una perturbación (descrita por un m.a.s.) a través de un medio. La elongación de un punto del medio respecto a su posición de equilibrio viene dada por \\(y(x,t) =A\\,\\operatorname{sen}(\\omega t\\pm kx+\\varphi_0)\\), donde:</p><p>– \\(A\\), amplitud: valor máximo de la elongación, \\(A=10\\ \\mathrm{cm}=0{,}1\\ \\mathrm m\\).</p><p>– \\(f\\), frecuencia: oscilaciones por segundo de un punto del medio, \\(f=20\\ \\mathrm{Hz}\\). \\(\\omega\\), frecuencia angular: \\(\\omega=2\\pi f=125{,}66\\ \\mathrm{rad\\,s^{-1}}\\).</p><p>– \\(k\\), número de onda: \\(k =\\dfrac{\\omega}{v} =\\dfrac{125{,}66}{2}\\) \\(=62{,}83\\ \\mathrm{rad\\,m^{-1}}\\).</p><p>– \\(\\varphi_0\\), fase inicial: estado del foco en el instante inicial. \\(y(0,0) =A\\,\\operatorname{sen}\\varphi_0 =0\\Rightarrow\\varphi_0\\) \\(=0\\).</p><p>Como se mueve de derecha a izquierda (sentido negativo del eje x, con el criterio positivo hacia la derecha), las partes espacial y temporal aparecen sumadas.</p><div class='res'>\\(y(x,t) =0{,}1\\,\\operatorname{sen}(125{,}66\\,t\\) \\(+62{,}83\\,x)\\ \\mathrm m\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>La velocidad de vibración indica cómo varía la elongación de las partículas de la cuerda respecto al tiempo:</p>\\[v_y =\\frac{\\partial y}{\\partial t}\\]\\[=0{,}1\\cdot125{,}66\\cos(125{,}66\\,t\\]\\[+62{,}83\\,x) =12{,}566\\cos(125{,}66\\,t\\]\\[+62{,}83\\,x)\\ \\mathrm{m\\,s^{-1}}\\]<p>Sustituimos \\(x=1\\ \\mathrm m\\) y \\(t=3\\ \\mathrm s\\) (la fase vale \\(120\\pi+20\\pi=140\\pi\\), y \\(\\cos140\\pi=1\\)):</p><div class='res'>\\(v_y=12{,}57\\ \\mathrm{m\\,s^{-1}}\\)</div><p>No es el único resultado válido<i class='n' data-t='tp'>Con el criterio de signos contrario (positivo a la izquierda) la ecuación sería \\(y\\) \\(=0{,}1\\,\\operatorname{sen}(125{,}66\\,t-62{,}83\\,x)\\); y con la función coseno, \\(y =0{,}1\\cos(125{,}66\\,t+62{,}83\\,x)\\), la velocidad de la partícula sería diferente.</i>: depende del criterio de signos y de si se usa seno o coseno.</p></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "ondas",
+     "tipo": null,
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "05_Fenómenos ondulatorios. PEvAU resueltos.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  }
+ ]
+}

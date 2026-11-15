@@ -1,0 +1,345 @@
+{
+ "version": 1,
+ "id": "ccss-2026-reserva-2",
+ "asignatura": "ccss",
+ "anio": 2026,
+ "convocatoria": "Reserva 2",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "ccss-2026-reserva-2-1a",
+   "n": "1A",
+   "bloque": "",
+   "puntos": "3",
+   "enunciado": {
+    "intro": "<b>Opción A.</b> Se consideran las matrices \\(A=\\begin{pmatrix}m&0&1\\\\0&1&0\\\\2&0&m+1\\end{pmatrix}\\), \\(B=\\begin{pmatrix}3\\\\2\\\\6\\end{pmatrix}\\), \\(C=\\begin{pmatrix}1&0&2\\\\0&1&3\\end{pmatrix}\\), siendo \\(m\\) un número real.",
+    "apartados": [
+     "(0,75 p.) Halle los valores de \\(m\\) para que el rango de \\(A\\) sea 3.",
+     "(0,25 p.) Calcule los valores de \\(m\\) para los que \\(A\\) no tiene inversa.",
+     "(1,25 p.) Para \\(m=2\\), calcule \\(A^{-1}\\) y resuelva la ecuación \\(X\\cdot A=C\\).",
+     "(0,75 p.) Para \\(m=1\\), clasifique el sistema \\(A\\cdot Y=B\\) atendiendo al número de soluciones que tiene."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartados a y b",
+     "html": "<div class='ex'><p>\\(A\\) es cuadrada de orden 3. Calculo \\(|A|\\) desarrollando por la segunda fila<i class='n' data-t='why'>La fila \\((0,1,0)\\) tiene dos ceros: solo sobrevive un término.</i>:</p>\\[|A|=\\begin{vmatrix}m&0&1\\\\0&1&0\\\\2&0&m+1\\end{vmatrix}\\]\\[=1\\cdot\\bigl[m(m+1)-2\\bigr]\\]\\[=m^2+m-2\\]\\[=(m+2)(m-1)\\]<p>\\(|A|=0\\iff m=-2\\) o \\(m=1\\).</p><p><b>a)</b> Una matriz cuadrada de orden 3 tiene rango 3 si y solo si su determinante es distinto de 0<i class='n' data-t='th'>\\(\\operatorname{rg}(A)=3\\iff|A|\\neq0\\) (el rango es el orden del mayor menor no nulo).</i>.</p><div class='res'>\\(\\operatorname{rg}A=3\\) para todo \\(m\\neq-2\\) y \\(m\\neq1\\)</div><p><b>b)</b> \\(A\\) no tiene inversa si y solo si \\(|A|=0\\).</p><div class='res'>\\(A\\) no tiene inversa para \\(m=-2\\) y \\(m=1\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado c: inversa",
+     "html": "<div class='ex'><p>Para \\(m=2\\): \\(A=\\begin{pmatrix}2&0&1\\\\0&1&0\\\\2&0&3\\end{pmatrix}\\) y \\(|A|=(2+2)(2-1)=4\\) \\(\\neq0\\), luego existe \\(A^{-1}\\).</p><p>Calculo la inversa con la fórmula<i class='n' data-t='th'>\\(A^{-1}=\\dfrac{1}{|A|}\\,(\\operatorname{Adj}A)^t\\), donde \\(\\operatorname{Adj}A\\) es la matriz de adjuntos \\(A_{ij}=(-1)^{i+j}M_{ij}\\).</i>:</p>\\[\\operatorname{Adj}A=\\begin{pmatrix}3&0&-2\\\\0&4&0\\\\-1&0&2\\end{pmatrix}\\ \\]\\[\\Rightarrow\\ A^{-1}=\\frac14\\begin{pmatrix}3&0&-1\\\\0&4&0\\\\-2&0&2\\end{pmatrix}\\]\\[=\\begin{pmatrix}\\frac34&0&-\\frac14\\\\0&1&0\\\\-\\frac12&0&\\frac12\\end{pmatrix}\\]<i class='n' data-t='tp'>Comprueba siempre que \\(A\\cdot A^{-1}=I\\). Por ejemplo, fila 1 por columna 1: \\(2\\cdot\\frac34+1\\cdot(-\\frac12)=1\\) ✓.</i></div>"
+    },
+    {
+     "titulo": "Apartado c: ecuación",
+     "html": "<div class='ex'><p>Como \\(A\\) es invertible, multiplico por \\(A^{-1}\\) <b>por la derecha</b> en \\(X\\cdot A=C\\)<i class='n' data-t='err'>El producto de matrices no es conmutativo: \\(X\\) está a la izquierda de \\(A\\), así que \\(A^{-1}\\) se pone a la derecha en los dos miembros. Sería \\(X=C\\cdot A^{-1}\\), no \\(A^{-1}\\cdot C\\) (de hecho ese producto ni se puede hacer: \\(3\\times3\\) por \\(2\\times3\\)).</i>:</p>\\[X\\cdot A\\cdot A^{-1}=C\\cdot A^{-1}\\]\\[\\Rightarrow X=C\\cdot A^{-1}\\]\\[=\\begin{pmatrix}1&0&2\\\\0&1&3\\end{pmatrix}\\begin{pmatrix}\\frac34&0&-\\frac14\\\\0&1&0\\\\-\\frac12&0&\\frac12\\end{pmatrix}\\]\\[=\\begin{pmatrix}-\\frac14&0&\\frac34\\\\-\\frac32&1&\\frac32\\end{pmatrix}\\]<div class='res'>\\(X=\\begin{pmatrix}-\\frac14&0&\\frac34\\\\-\\frac32&1&\\frac32\\end{pmatrix}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado d",
+     "html": "<div class='ex'><p>Para \\(m=1\\), \\(A=\\begin{pmatrix}1&0&1\\\\0&1&0\\\\2&0&2\\end{pmatrix}\\) y \\(|A|=0\\). La matriz ampliada es \\(A^*=\\left(\\begin{array}{ccc|c}1&0&1&3\\\\0&1&0&2\\\\2&0&2&6\\end{array}\\right)\\).</p><p>La tercera fila es el doble de la primera en \\(A\\) y en \\(A^*\\). Luego \\(\\operatorname{rg}A=\\operatorname{rg}A^*=2\\), con \\(3\\) incógnitas.<i class='n' data-t='th'>Teorema de Rouché-Frobenius: si \\(\\operatorname{rg}A=\\operatorname{rg}A^*=r\\) el sistema es compatible; es determinado si \\(r=\\) n.º de incógnitas e indeterminado si \\(r<\\) n.º de incógnitas.</i></p><div class='res'>Sistema compatible indeterminado: infinitas soluciones, \\(Y=(3-\\lambda,\\ 2,\\ \\lambda)\\) con \\(\\lambda\\in\\mathbb R\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "rango",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "invpar",
+     "apartados": "b"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "c"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "ecmat",
+     "apartados": "c"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "sismat",
+     "apartados": "d"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2026-reserva-2-1b",
+   "n": "1B",
+   "bloque": "",
+   "puntos": "3",
+   "enunciado": {
+    "intro": "<b>Opción B.</b> Se considera la función \\(f(x,y)=2x+y\\) cuando \\((x,y)\\) pertenece a la región factible delimitada por las inecuaciones \\[4x+2y\\ge5;\\quad2x+5y\\le9;\\quad x+y\\le3;\\quad y\\ge0\\]",
+    "apartados": [
+     "(1,5 p.) Dibuje la región factible y obtenga sus vértices.",
+     "(0,5 p.) Obtenga algún punto de la región factible con abscisa \\(x=1\\).",
+     "(1 p.) ¿Para qué valores de \\(x\\) e \\(y\\) se alcanza el máximo de la función \\(f\\)? ¿Cuánto vale dicho máximo? Análogamente para el mínimo."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(4x+2y=5\\)</th></tr><tr><th>\\(x\\)</th><td>\\(\\frac{5}{4}\\)</td><td>\\(0\\)</td></tr><tr><th>\\(y\\)</th><td>\\(0\\)</td><td>\\(\\frac{5}{2}\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(2x+5y=9\\)</th></tr><tr><th>\\(x\\)</th><td>\\(2\\)</td><td>\\(-3\\)</td></tr><tr><th>\\(y\\)</th><td>\\(1\\)</td><td>\\(3\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(x+y=3\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(3\\)</td></tr><tr><th>\\(y\\)</th><td>\\(3\\)</td><td>\\(0\\)</td></tr></table><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(4x+2y\\ge5\\): con el origen, \\(0\\ge5\\) no se cumple → semiplano que <b>no</b> lo contiene.</li><li>\\(2x+5y\\le9\\): con el origen, \\(0\\le9\\) se cumple → semiplano que lo contiene.</li><li>\\(x+y\\le3\\): con el origen, \\(0\\le3\\) se cumple → semiplano que lo contiene.</li></ul><p>Además, \\(y\\ge0\\) deja la región por encima del eje de abscisas.</p><div style='overflow-x:auto'><svg viewBox='0 0 340 180' width='100%' style='max-width:420px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='125,150 230,150 170,90 76,52' fill='#b9a4f5' fill-opacity='.5' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M20 150H330M50 170V10'/><path d='M125 150L65 30M50 42L320 150M230 150L110 30' stroke-dasharray='4 3' stroke-opacity='.6'/></g><g><text x='334' y='154'>x</text><text x='56' y='14'>y</text><text x='112' y='166' font-weight='700'>A(5/4, 0)</text><text x='226' y='166' font-weight='700'>B(3, 0)</text><text x='176' y='86' font-weight='700'>C(2, 1)</text><text x='84' y='48' font-weight='700'>D(7/16, 13/8)</text><text x='56' y='108'>r₁: 4x + 2y = 5</text><text x='214' y='60'>r₃: x + y = 3</text><text x='250' y='128'>r₂: 2x + 5y = 9</text></g></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(A:\\;\\left\\{\\begin{array}{l}4x+2y=5\\\\y=0\\end{array}\\right.\\Rightarrow x=\\frac{5}{4}\\Rightarrow \\boxed{A(\\frac{5}{4},0)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}x+y=3\\\\y=0\\end{array}\\right.\\Rightarrow x=3\\Rightarrow \\boxed{B(3,0)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}2x+5y=9\\\\x+y=3\\end{array}\\right.\\Rightarrow y=-x+3\\Rightarrow 2x+5(-x+3)=9\\Rightarrow x=2,\\ y=1\\Rightarrow \\boxed{C(2,1)}\\)</li><li>\\(D:\\;\\left\\{\\begin{array}{l}4x+2y=5\\\\2x+5y=9\\end{array}\\right.\\Rightarrow -16y=-26\\Rightarrow y=\\frac{13}{8},\\ x=\\frac{7}{16}\\ \\text{(reducción)}\\Rightarrow \\boxed{D(\\frac{7}{16},\\frac{13}{8})}\\)</li></ul><div class='res'>Vértices: \\(A\\left(\\frac54,0\\right)\\), \\(B(3,0)\\), \\(C(2,1)\\) y \\(D\\left(\\frac7{16},\\frac{13}8\\right)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Con \\(x=1\\) las restricciones dan \\(y\\ge\\frac12\\), \\(y\\le\\frac75\\), \\(y\\le2\\) e \\(y\\ge0\\): vale cualquier \\(y\\in[\\frac12,\\frac75]\\). Tomo \\(y=1\\) y compruebo el punto \\((1,1)\\)<i class='n' data-t='tp'>Al escoger el punto, verifícalo en <b>todas</b> las restricciones, una a una.</i>:</p>\\[\\begin{aligned}4+2&=6\\ge5\\ \\checkmark\\\\2+5&=7\\le9\\ \\checkmark\\\\1+1&=2\\le3\\ \\checkmark\\\\&1\\ge0\\ \\checkmark\\end{aligned}\\]<div class='res'>El punto \\((1,1)\\) pertenece a la región factible</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>La función \\(f\\) alcanza sus extremos en el recinto, en puntos de su frontera; evaluamos, por tanto, \\(f\\) en los vértices<i class='n' data-t='th'>Teorema fundamental de la programación lineal: si la región factible es un polígono convexo y acotado, la función objetivo alcanza su máximo y su mínimo en alguno de sus vértices.</i>:</p>\\[\\begin{aligned}f(A)&=f(\\frac{5}{4},0)=2\\cdot\\frac{5}{4}+0\\\\&=\\frac{5}{2}\\end{aligned}\\]\\[\\begin{aligned}f(B)&=f(3,0)=2\\cdot3+0\\\\&=6\\end{aligned}\\]\\[\\begin{aligned}f(C)&=f(2,1)=2\\cdot2+1\\\\&=5\\end{aligned}\\]\\[\\begin{aligned}f(D)&=f(\\frac{7}{16},\\frac{13}{8})\\\\&=2\\cdot\\frac{7}{16}+\\frac{13}{8}=\\frac{5}{2}\\end{aligned}\\]<p>\\(f\\) alcanza un máximo en \\(B(3,0)\\) de valor \\(6\\) y un mínimo de valor \\(\\frac{5}{2}\\) en todos los puntos del segmento de extremos \\(A\\) y \\(D\\).</p><p>El valor se repite en dos vértices consecutivos, \\(A\\) y \\(D\\)<i class='n' data-t='th'>Si la función objetivo toma el mismo valor óptimo en dos vértices consecutivos, lo toma en todo el lado que los une: hay infinitas soluciones.</i>, así que se alcanza en todo el segmento \\(AD\\), sobre la recta \\(4x+2y=5\\).</p><div class='res'>\\(f\\) alcanza un máximo en \\(B(3,0)\\) de valor 6, y un mínimo de valor \\(\\frac52\\) en todos los puntos del segmento \\(AD\\): \\(\\bigl(x,\\ \\frac{5-4x}{2}\\bigr)\\) con \\(\\frac7{16}\\le x\\le\\frac54\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "pl",
+     "tipo": "reg",
+     "apartados": "a"
+    },
+    {
+     "tema": "pl",
+     "tipo": "pert",
+     "apartados": "b"
+    },
+    {
+     "tema": "pl",
+     "tipo": "opt",
+     "apartados": "c"
+    },
+    {
+     "tema": "pl",
+     "tipo": "interp",
+     "apartados": "c"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2026-reserva-2-2",
+   "n": 2,
+   "bloque": "",
+   "puntos": "3",
+   "enunciado": {
+    "intro": "El peso en kilogramos de una persona que inicia un determinado régimen alimenticio viene dado por la función \\[P(t)=75-\\frac{15t}{t+120},\\qquad t\\ge0\\] siendo \\(t\\) el tiempo, en días, que lleva haciendo la dieta.",
+    "apartados": [
+     "(1 p.) Compruebe que, si la persona sigue de manera continuada el régimen alimenticio, irá reduciendo peso paulatinamente. ¿Cuál es el peso mínimo que podría llegar a alcanzar si pudiera seguir la dieta indefinidamente?",
+     "(0,75 p.) ¿Cuántos días debe hacer de régimen para llegar a un peso de 64 kg?",
+     "(1,25 p.) El índice de masa corporal viene dado por \\(i(t)=\\dfrac{P(t)}{h^2}\\), siendo \\(h\\) la estatura, en metros, de la persona. Se considera que la persona tiene sobrepeso si el índice de masa corporal es superior a \\(25\\ \\text{kg/m}^2\\). Si la persona mide 1,68 m, determine si ha tenido sobrepeso durante la dieta, y en caso afirmativo, calcule los días que han de transcurrir para dejar de tenerlo."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Al ser \\(P\\) una función racional, el punto «problemático» sería \\(t=-120\\), que anula el denominador, pero no está en el dominio. Su dominio es \\([0,+\\infty)\\)<i class='n' data-t='why'>Rayamos la parte de la recta que queda fuera del dominio: ahí la función no está definida y no se estudia.</i>.</p><p>Estudiamos el signo de \\(P'\\)<i class='n' data-t='tp'>Dentro de cada intervalo la derivada no cambia de signo, así que basta sustituir un valor cualquiera del intervalo para conocer su signo.</i>.</p>\\[P'(t)=-\\dfrac{15(t+120)-15t}{(t+120)^2}\\]\\[P'(t)=-\\dfrac{1800}{(t+120)^2}\\]<p>\\(P'\\) no se anula nunca.</p><div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 136 108' width='100%' style='max-width:163px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H122' stroke='currentColor' stroke-width='1.6'/><path d='M14 56L18 48M18 56L22 48M22 56L26 48M26 56L30 48M30 56L34 48M34 56L38 48' stroke='currentColor' stroke-width='1.1'/><path d='M40 46V58' stroke='currentColor' stroke-width='1.6'/><text x='40' y='76' text-anchor='middle' font-weight='700'>0</text><text x='55.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#e8487a'>−</text><path d='M69.0 10L105.0 40' stroke='#e8487a' stroke-width='2' fill='none'/><path d='M96.0 39L105.0 40L103.0 31' stroke='#e8487a' stroke-width='2' fill='none'/><text x='81.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>P</tspan>′(1) &lt; 0</text></svg></div><p>Luego \\(P\\) decrece en \\((0,+\\infty)\\)<i class='n' data-t='th'>Si \\(f'\\gt0\\) en un intervalo, \\(f\\) crece en él; si \\(f'\\lt0\\), decrece.</i>.</p><p>No tiene extremos relativos.</p><p>Luego la persona pierde peso poco a poco.</p><p>Como \\(P\\) siempre decrece, el peso al que se acerca con el tiempo es el límite cuando \\(t\\to+\\infty\\)<i class='n' data-t='th'>En un cociente de polinomios del mismo grado, el límite en el infinito es el cociente de los coeficientes principales: \\(\\frac{15t}{t+120}\\to15\\).</i>:</p>\\[\\begin{aligned}\\lim_{t\\to+\\infty}\\left(75-\\frac{15t}{t+120}\\right)&=75-15\\\\&=60\\end{aligned}\\]<div class='res'>Es decreciente y el peso se aproxima a 60 kg (asíntota \\(y=60\\)) sin llegar a alcanzarlo</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Planteamos \\(P(t)=64\\) y despejamos \\(t\\):</p>\\[\\begin{aligned}75-\\frac{15t}{t+120}&=64\\\\&\\iff\\frac{15t}{t+120}=11\\\\&\\iff15t=11t+1320\\\\&\\iff4t=1320\\\\&\\iff t=330\\end{aligned}\\]<div class='res'>Debe hacer el régimen 330 días</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Con \\(h=1{,}68\\): \\(h^2=2{,}8224\\) y \\(i(t)=\\dfrac{P(t)}{2{,}8224}\\). Al empezar, \\(P(0)=75\\):</p>\\[\\begin{aligned}i(0)&=\\frac{75}{2{,}8224}\\\\&\\approx26{,}57\\gt25\\end{aligned}\\]<p>Luego sí tuvo sobrepeso al comenzar. Deja de tenerlo cuando \\(i(t)=25\\), es decir, \\(P(t)=25\\cdot2{,}8224=70{,}56\\):<i class='n' data-t='why'>Como \\(P\\) es decreciente, el índice baja continuamente; basta encontrar el instante en que cruza el valor 25.</i></p>\\[\\begin{aligned}75-\\frac{15t}{t+120}&=70{,}56\\\\&\\iff\\frac{15t}{t+120}=4{,}44\\\\&\\iff10{,}56\\,t=532{,}8\\\\&\\iff t\\approx50{,}45\\end{aligned}\\]<div class='res'>Sí tuvo sobrepeso; deja de tenerlo transcurridos unos 50,45 días (a partir del día 51)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "asint",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "modelo",
+     "apartados": "b, c"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2026-reserva-2-3a",
+   "n": "3A",
+   "bloque": "",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "<b>Opción A.</b> De dos sucesos \\(A\\) y \\(B\\) de un mismo espacio muestral se sabe que: la probabilidad de que ocurra alguno de ellos es 0,82; la probabilidad de que ocurran simultáneamente es 0,38; la probabilidad de que no ocurra \\(A\\) es 0,35.",
+    "apartados": [
+     "(0,75 p.) Calcule la probabilidad de que ocurra \\(B\\) sabiendo que no ocurre \\(A\\).",
+     "(0,5 p.) Calcule la probabilidad de que ocurra solo uno de los dos sucesos.",
+     "(0,75 p.) Si repetimos el experimento en 10 ocasiones, halle la probabilidad de que el suceso \\(A\\) ocurra al menos 2 veces."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Datos previos",
+     "html": "<div class='ex'><p>Datos: «alguno de ellos» es la unión y «simultáneamente», la intersección: \\(P(A\\cup B)=0{,}82\\), \\(P(A\\cap B)=0{,}38\\) y \\(P(A^c)=0{,}35\\Rightarrow P(A)\\) \\(=1-0{,}35=0{,}65\\).</p><p>De la probabilidad de la unión<i class='n' data-t='th'>\\(P(A\\cup B)\\) \\(=P(A)+P(B)-P(A\\cap B)\\).</i>: \\(P(B)=0{,}82-0{,}65+0{,}38\\) \\(=0{,}55\\).</p></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Sabemos que no ocurre \\(A\\): es una probabilidad condicionada. Por su definición<i class='n' data-t='th'>Definición de probabilidad condicionada: \\(P(A\\mid B)=\\dfrac{P(A\\cap B)}{P(B)}\\).</i>:</p>\\[\\begin{aligned}P(B\\mid A^c)&=\\frac{P(B\\cap A^c)}{P(A^c)}\\\\&=\\frac{P(B)-P(A\\cap B)}{P(A^c)}\\\\&=\\frac{0{,}55-0{,}38}{0{,}35}=\\frac{17}{35}\\end{aligned}\\]<i class='n' data-t='why'>\\(B=(B\\cap A)\\cup(B\\cap A^c)\\), por eso \\(P(B\\cap A^c)\\) \\(=P(B)-P(A\\cap B)\\).</i><div class='res'>\\(P(B\\mid A^c)=\\dfrac{17}{35}\\approx0{,}4857\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>«Solo uno de los dos» es la unión menos la intersección<i class='n' data-t='why'>La unión es «ocurre al menos uno»; si quitamos «ocurren los dos», queda «ocurre exactamente uno».</i>:</p>\\[\\begin{aligned}P(A\\cup B)-P(A\\cap B)&=0{,}82-0{,}38\\\\&=0{,}44\\end{aligned}\\]<div class='res'>\\(P(\\text{solo uno})=0{,}44\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Sea \\(X\\) el número de veces que ocurre \\(A\\) en 10 repeticiones independientes: \\(X\\sim B(10;\\ 0{,}65)\\).<i class='n' data-t='err'>Aquí \\(n=10\\lt30\\): no se puede aproximar por la normal; hay que usar la binomial exacta.</i></p><p>«Al menos 2» es el contrario de «0 o 1»<i class='n' data-t='why'>En cada nudo del árbol las ramas suman 1.</i>; aplicamos la fórmula de la binomial<i class='n' data-t='th'>Si \\(X\\sim B(n,p)\\), \\(P(X=k)=\\binom nk\\,p^k\\,q^{n-k}\\), con \\(q=1-p\\).</i>:</p>\\[\\begin{aligned}P(X\\ge2)&=1-P(X=0)-P(X=1)\\\\&=1-0{,}35^{10}-10\\cdot0{,}65\\cdot0{,}35^{9}\\\\&\\approx1-0{,}00003-0{,}00051\\end{aligned}\\]<div class='res'>\\(P(X\\ge2)\\approx0{,}9995\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "prob",
+     "tipo": "suc",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "prob",
+     "tipo": "cond",
+     "apartados": "a"
+    },
+    {
+     "tema": "dist",
+     "tipo": "binomial",
+     "apartados": "c"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2026-reserva-2-3b",
+   "n": "3B",
+   "bloque": "",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "<b>Opción B.</b> Sea \\(X\\) una variable aleatoria que sigue una distribución Normal de media 16 y varianza 4.",
+    "apartados": [
+     "(0,75 p.) Calcule la probabilidad de que la variable aleatoria tome valores comprendidos entre 14,5 y 16,2.",
+     "(0,5 p.) Halle el valor de \\(a\\) para el que \\(P[X\\ge a]=0{,}25\\).",
+     "(0,75 p.) Se consideran muestras de tamaño 64, ¿qué distribución sigue la variable media muestral? ¿Qué probabilidad hay de que, elegida una muestra al azar, la media sea superior a 16,3?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(X\\sim N(16,\\ \\sigma=2)\\) (la desviación típica es \\(\\sqrt4=2\\)<i class='n' data-t='err'>El enunciado da la <b>varianza</b> 4, no la desviación típica: \\(\\sigma=\\sqrt4=2\\).</i>). Tipifico con \\(Z=\\dfrac{X-16}{2}\\):</p>\\[\\begin{aligned}P(14{,}5\\le X\\le16{,}2)&=P(-0{,}75\\le Z\\le0{,}1)\\\\&=\\Phi(0{,}1)-\\bigl[1-\\Phi(0{,}75)\\bigr]\\\\&=0{,}5398-0{,}2266\\end{aligned}\\]<div class='res'>0,3132</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'>\\[\\begin{aligned}P(X\\ge a)&=0{,}25\\\\&\\iff P\\!\\left(Z\\ge\\frac{a-16}{2}\\right)=0{,}25\\\\&\\iff\\Phi\\!\\left(\\frac{a-16}{2}\\right)=0{,}75\\end{aligned}\\]<p>En la tabla, \\(\\Phi(0{,}67)\\approx0{,}7486\\), luego \\(\\dfrac{a-16}{2}=0{,}67\\).<i class='n' data-t='why'>Buscamos \\(z\\) tal que \\(P(Z\\le z)=0{,}75\\): se mira en el interior de la tabla el valor más próximo a 0,75.</i></p><div class='res'>\\(a=16+2\\cdot0{,}67=17{,}34\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Para muestras de tamaño \\(n=64\\) de una población normal<i class='n' data-t='th'>La media muestral de una normal es normal: \\(\\bar X\\sim N(\\mu,\\ \\sigma/\\sqrt n)\\). (Con \\(n\\ge30\\) también se cumpliría por el teorema central del límite aunque \\(X\\) no fuera normal.)</i>:</p>\\[\\bar X\\sim N\\!\\left(16,\\ \\frac{2}{\\sqrt{64}}\\right)=N(16;\\ 0{,}25)\\]\\[\\begin{aligned}P(\\bar X\\gt16{,}3)&=P\\!\\left(Z\\gt\\frac{16{,}3-16}{0{,}25}\\right)\\\\&=P(Z\\gt1{,}2)\\\\&=1-\\Phi(1{,}2)\\\\&=1-0{,}8849\\end{aligned}\\]<div class='res'>\\(P(\\bar X\\gt16{,}3)=0{,}1151\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "dist",
+     "tipo": "normal",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "muest",
+     "tipo": "media",
+     "apartados": "c"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2026-reserva-2-4",
+   "n": 4,
+   "bloque": "",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "Una comunidad autónoma analiza el rendimiento de sus estudiantes en la última convocatoria de la PAU en una determinada materia. De los 20 000 estudiantes presentados, 12 000 cursaron bachillerato en un centro público, 6000 en un centro concertado y el resto en un centro privado no concertado. Para estimar la proporción de estudiantes que suspenden la materia, se extrae una muestra aleatoria de 500 estudiantes que han realizado el examen.",
+    "apartados": [
+     "(0,4 p.) Determine el tamaño de la muestra que se debe tomar de cada tipo de centro para realizar un muestreo con afijación proporcional.",
+     "Tras realizar el muestreo se obtuvo que 200 de los 500 estudiantes seleccionados suspendieron la asignatura.",
+     "b-i) (1 p.) Calcule un intervalo de confianza al 99 %, para determinar la proporción de estudiantes que suspenden la materia entre todos los presentados. Basándonos en este intervalo, ¿puede afirmarse que el porcentaje de estudiantes que suspenden el examen de esta materia en la PAU no es del 43 %?",
+     "b-ii) (0,6 p.) Con el mismo nivel de confianza y la misma proporción muestral, ¿cuántos estudiantes, como mínimo, habría que seleccionar de forma aleatoria para que el error de estimación fuese inferior al 4 %?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>El número de estudiantes de centros privados no concertados es \\(20\\,000-12\\,000-6000\\) \\(=2000\\).</p><p>En la afijación proporcional, el tamaño de la muestra en cada estrato es proporcional al tamaño del estrato<i class='n' data-t='th'>Afijación proporcional: \\(n_i=n\\cdot\\dfrac{N_i}{N}\\). Cada estrato aparece en la muestra con el mismo peso que en la población.</i>:</p>\\[\\begin{aligned}n_{pub}&=500\\cdot\\tfrac{12000}{20000}\\\\&=300\\\\ n_{conc}&=500\\cdot\\tfrac{6000}{20000}\\\\&=150\\\\ n_{priv}&=500\\cdot\\tfrac{2000}{20000}\\\\&=50\\end{aligned}\\]<div class='res'>300 de centros públicos, 150 de concertados y 50 de privados no concertados (suman 500)</div></div>"
+    },
+    {
+     "titulo": "Planteamiento (teoría)",
+     "html": "<div class='ex'><p>Sea \\(p\\) la proporción de estudiantes presentados que suspenden la materia en la población, que es desconocida. Para estimarla consideramos la variable aleatoria \\(\\hat p\\), «proporción de estudiantes presentados que suspenden la materia en una muestra aleatoria de tamaño \\(n\\)», y llamamos \\(\\hat q=1-\\hat p\\). Según el enunciado, la muestra tiene \\(n=500\\) elementos y en ella</p>\\[\\hat p=\\dfrac{200}{500}=0{,}4\\]\\[\\hat q=1-0{,}4=0{,}6\\]<p>Según el teorema central del límite, como \\(n=500\\ge30\\), \\(n\\hat p=200\\ge5\\) y \\(n\\hat q=300\\ge5\\), la proporción muestral sigue aproximadamente una distribución normal de media \\(p\\) y desviación típica \\(\\sqrt{p(1-p)/n}\\)<i class='n' data-t='th'>Teorema central del límite para proporciones: si \\(n\\ge30\\), \\(n\\hat p\\ge5\\) y \\(n\\hat q\\ge5\\), la proporción muestral se aproxima por \\(N\\left(p,\\sqrt{\\frac{p(1-p)}n}\\right)\\).</i>:</p>\\[\\hat p\\sim N\\left(p,\\ \\sqrt{\\frac{p(1-p)}n}\\right)\\]<p>Si tipificamos, obtenemos una normal estándar, \\(Z=\\dfrac{\\hat p-p}{\\sqrt{p(1-p)/n}}\\sim N(0,1)\\). Para un nivel de confianza \\(1-\\alpha\\) buscamos el valor crítico \\(z_{1-\\alpha/2}\\) que deja entre \\(-z_{1-\\alpha/2}\\) y \\(z_{1-\\alpha/2}\\) una probabilidad \\(1-\\alpha\\). Despejando \\(p\\) se obtiene el intervalo de confianza para la proporción poblacional; como \\(p\\) es desconocida, en el error se sustituye por \\(\\hat p\\):</p>\\[IC_{1-\\alpha}(p)=(\\hat p-E,\\ \\hat p+E)\\]\\[E=z_{1-\\alpha/2}\\sqrt{\\frac{\\hat p\\,\\hat q}n}\\]<p>donde \\(E\\) es el error máximo de la estimación. Si se exige que el error sea menor que una cantidad \\(E_0\\), despejamos \\(n\\):</p>\\[z_{1-\\alpha/2}\\sqrt{\\frac{\\hat p\\,\\hat q}n}\\lt E_0\\]\\[\\begin{aligned}&\\\\&\\iff n\\gt\\frac{z_{1-\\alpha/2}^2\\,\\hat p\\,\\hat q}{E_0^2}\\end{aligned}\\]<p>y, como \\(n\\) es un número de individuos, se redondea siempre hacia arriba.</p></div>"
+    },
+    {
+     "titulo": "Apartado b-i",
+     "html": "<div class='ex'><p>Nivel de confianza: \\(1-\\alpha=0{,}99\\), luego \\(\\alpha=0{,}01\\) y \\(\\dfrac\\alpha2=0{,}005\\).</p>\\[P\\left(Z\\lt z_{1-\\alpha/2}\\right)=1-\\frac\\alpha2\\]\\[\\begin{aligned}P\\left(Z\\lt z_{1-\\alpha/2}\\right)&=1-0{,}005\\\\&=0{,}995\\end{aligned}\\]<p>Busco \\(0{,}995\\) en el interior de la tabla \\(N(0,1)\\): queda justo en el punto medio entre \\(P(Z\\lt2{,}57)=0{,}9949\\) y \\(P(Z\\lt2{,}58)=0{,}9951\\), así que se interpola:</p>\\[\\Rightarrow\\ z_{1-\\alpha/2}=2{,}575\\]<div style='overflow-x:auto'><svg viewBox='0 0 320 170' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='8.0,135.0 8.0,134.9 8.8,134.9 9.6,134.9 10.4,134.9 11.3,134.9 12.1,134.9 12.9,134.9 13.7,134.9 14.5,134.8 15.3,134.8 16.2,134.8 17.0,134.8 17.8,134.8 18.6,134.8 19.4,134.8 20.2,134.7 21.1,134.7 21.9,134.7 22.7,134.7 23.5,134.6 24.3,134.6 25.2,134.6 26.0,134.6 26.8,134.5 27.6,134.5 28.4,134.5 29.2,134.4 30.0,134.4 30.9,134.3 31.7,134.3 32.5,134.3 33.3,134.2 34.1,134.2 35.0,134.1 35.8,134.0 36.6,134.0 37.4,133.9 38.2,133.8 39.0,133.8 39.8,133.7 40.7,133.6 41.5,133.5 42.3,133.4 43.1,133.3 43.9,133.2 44.8,133.1 45.6,133.0 46.4,132.9 47.2,132.8 48.0,132.6 48.8,132.5 49.7,132.3 50.5,132.2 51.3,132.0 52.1,131.9 52.9,131.7 53.7,131.5 54.5,131.3 55.4,131.1 56.2,130.9 57.0,130.7 57.0,135.0' fill='#e8487a' fill-opacity='.28' stroke='none'/><polygon points='263.0,135.0 263.0,130.7 263.8,130.9 264.6,131.1 265.4,131.3 266.3,131.5 267.1,131.7 267.9,131.9 268.7,132.0 269.5,132.2 270.4,132.3 271.2,132.5 272.0,132.6 272.8,132.8 273.6,132.9 274.4,133.0 275.2,133.1 276.1,133.2 276.9,133.3 277.7,133.4 278.5,133.5 279.3,133.6 280.1,133.7 281.0,133.8 281.8,133.8 282.6,133.9 283.4,134.0 284.2,134.0 285.0,134.1 285.9,134.2 286.7,134.2 287.5,134.3 288.3,134.3 289.1,134.3 290.0,134.4 290.8,134.4 291.6,134.5 292.4,134.5 293.2,134.5 294.0,134.6 294.9,134.6 295.7,134.6 296.5,134.6 297.3,134.7 298.1,134.7 298.9,134.7 299.8,134.7 300.6,134.8 301.4,134.8 302.2,134.8 303.0,134.8 303.8,134.8 304.6,134.8 305.5,134.8 306.3,134.9 307.1,134.9 307.9,134.9 308.7,134.9 309.5,134.9 310.4,134.9 311.2,134.9 312.0,134.9 312.0,135.0' fill='#e8487a' fill-opacity='.28' stroke='none'/><polygon points='57.0,135.0 57.0,130.7 60.4,129.6 63.9,128.3 67.3,126.8 70.7,125.1 74.2,123.0 77.6,120.7 81.0,117.9 84.5,114.9 87.9,111.4 91.3,107.6 94.8,103.3 98.2,98.7 101.6,93.7 105.1,88.4 108.5,82.8 111.9,76.9 115.4,70.8 118.8,64.6 122.2,58.4 125.7,52.2 129.1,46.2 132.5,40.5 136.0,35.1 139.4,30.2 142.8,25.8 146.3,22.2 149.7,19.2 153.1,17.1 156.6,15.8 160.0,15.3 163.4,15.8 166.9,17.1 170.3,19.2 173.7,22.2 177.2,25.8 180.6,30.2 184.0,35.1 187.5,40.5 190.9,46.2 194.3,52.2 197.8,58.4 201.2,64.6 204.6,70.8 208.1,76.9 211.5,82.8 214.9,88.4 218.4,93.7 221.8,98.7 225.2,103.3 228.7,107.6 232.1,111.4 235.5,114.9 239.0,117.9 242.4,120.7 245.8,123.0 249.3,125.1 252.7,126.8 256.1,128.3 259.6,129.6 263.0,130.7 263.0,135.0' fill='#6d4ae0' fill-opacity='.35' stroke='none'/><polyline points='8.0,134.9 10.5,134.9 13.1,134.9 15.6,134.8 18.1,134.8 20.7,134.7 23.2,134.7 25.7,134.6 28.3,134.5 30.8,134.4 33.3,134.2 35.9,134.0 38.4,133.8 40.9,133.6 43.5,133.3 46.0,132.9 48.5,132.5 51.1,132.1 53.6,131.5 56.1,130.9 58.7,130.2 61.2,129.3 63.7,128.4 66.3,127.3 68.8,126.1 71.3,124.7 73.9,123.2 76.4,121.5 78.9,119.6 81.5,117.6 84.0,115.3 86.5,112.8 89.1,110.2 91.6,107.3 94.1,104.2 96.7,100.8 99.2,97.3 101.7,93.6 104.3,89.7 106.8,85.6 109.3,81.3 111.9,77.0 114.4,72.5 116.9,68.0 119.5,63.4 122.0,58.8 124.5,54.2 127.1,49.7 129.6,45.3 132.1,41.1 134.7,37.1 137.2,33.3 139.7,29.7 142.3,26.5 144.8,23.7 147.3,21.2 149.9,19.1 152.4,17.5 154.9,16.3 157.5,15.6 160.0,15.3 162.5,15.6 165.1,16.3 167.6,17.5 170.1,19.1 172.7,21.2 175.2,23.7 177.7,26.5 180.3,29.7 182.8,33.3 185.3,37.1 187.9,41.1 190.4,45.3 192.9,49.7 195.5,54.2 198.0,58.8 200.5,63.4 203.1,68.0 205.6,72.5 208.1,77.0 210.7,81.3 213.2,85.6 215.7,89.7 218.3,93.6 220.8,97.3 223.3,100.8 225.9,104.2 228.4,107.3 230.9,110.2 233.5,112.8 236.0,115.3 238.5,117.6 241.1,119.6 243.6,121.5 246.1,123.2 248.7,124.7 251.2,126.1 253.7,127.3 256.3,128.4 258.8,129.3 261.3,130.2 263.9,130.9 266.4,131.5 268.9,132.1 271.5,132.5 274.0,132.9 276.5,133.3 279.1,133.6 281.6,133.8 284.1,134.0 286.7,134.2 289.2,134.4 291.7,134.5 294.3,134.6 296.8,134.7 299.3,134.7 301.9,134.8 304.4,134.8 306.9,134.9 309.5,134.9 312.0,134.9' fill='none' stroke='#2f6df0' stroke-width='2'/><line x1='4.0' y1='135.0' x2='316.0' y2='135.0' stroke='currentColor' stroke-width='1.2'/><line x1='57.0' y1='139.0' x2='57.0' y2='130.7' stroke='#6d4ae0' stroke-width='1.4' stroke-dasharray='3 2'/><text x='57.0' y='152.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>−z<tspan font-size='8' dy='3'>1−α/2</tspan></text><line x1='263.0' y1='139.0' x2='263.0' y2='130.7' stroke='#6d4ae0' stroke-width='1.4' stroke-dasharray='3 2'/><text x='263.0' y='152.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>z<tspan font-size='8' dy='3'>1−α/2</tspan></text><text x='263.0' y='165.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>= 2,575</text><text x='160.0' y='87.0' text-anchor='middle' font-size='12' font-weight='700'>1 − α = 0,99</text><line x1='47.0' y1='134.0' x2='36.0' y2='105.0' stroke='#c2185b' stroke-width='1'/><text x='8.0' y='102.0' text-anchor='start' font-size='10' fill='#c2185b'>α/2 = 0,005</text><line x1='273.0' y1='134.0' x2='284.0' y2='105.0' stroke='#c2185b' stroke-width='1'/><text x='312.0' y='102.0' text-anchor='end' font-size='10' fill='#c2185b'>α/2 = 0,005</text><text x='160.0' y='148.0' text-anchor='middle' font-size='9.5'>0</text></svg></div><p>Calculamos el error máximo de la estimación:</p>\\[\\begin{aligned}E&=2{,}575\\sqrt{\\frac{0{,}4\\cdot0{,}6}{500}}\\\\&=2{,}575\\cdot0{,}0219\\\\&\\approx0{,}0564\\end{aligned}\\]<p>Por tanto, los extremos del intervalo son:</p>\\[\\begin{aligned}IC_{0{,}99}(p)&=(0{,}4-0{,}0564;\\ 0{,}4+0{,}0564)\\\\&=(0{,}3436;\\ 0{,}4564)\\end{aligned}\\]<div class='res'>\\(IC_{0{,}99}(p)\\) \\(=(0{,}3436;\\ 0{,}4564)\\)</div><p><b>Conclusión:</b> podemos afirmar, con un nivel de confianza del 99 %, que la proporción de estudiantes presentados que suspenden la materia se encuentra entre 0,3436 y 0,4564, es decir, entre el 34,36 % y el 45,64 %.</p><p>El valor \\(0{,}43\\) pertenece al intervalo, luego con un 99 % de confianza no puede afirmarse que el porcentaje de suspensos no sea del 43 %.<i class='n' data-t='err'>«Pertenecer al intervalo» no prueba que \\(p=0{,}43\\): solo dice que es un valor compatible. Por eso no se puede <i>descartar</i> el 43 %.</i></p></div>"
+    },
+    {
+     "titulo": "Apartado b-ii",
+     "html": "<div class='ex'><p>Se exige \\(E\\lt0{,}04\\) con \\(z=2{,}575\\) y \\(\\hat p=0{,}4\\):</p>\\[\\begin{aligned}&2{,}575\\sqrt{\\frac{0{,}4\\cdot0{,}6}{n}}\\lt0{,}04\\\\&\\iff n\\gt\\frac{2{,}575^2\\cdot0{,}24}{0{,}04^2}\\\\&=994{,}6\\end{aligned}\\]<i class='n' data-t='err'>Tamaño <b>mínimo</b>: se redondea hacia arriba (995). Con \\(z=2{,}58\\) saldría \\(n=999\\): usa el valor de \\(z\\) de tu tabla.</i><div class='res'>Hay que seleccionar, como mínimo, \\(n=995\\) estudiantes</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "muest",
+     "tipo": "muestreo",
+     "apartados": "a"
+    },
+    {
+     "tema": "inf",
+     "tipo": "prop",
+     "apartados": "b-i, b-ii"
+    },
+    {
+     "tema": "inf",
+     "tipo": "interp",
+     "apartados": "b-i"
+    },
+    {
+     "tema": "inf",
+     "tipo": "tam",
+     "apartados": "b-ii"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  }
+ ]
+}

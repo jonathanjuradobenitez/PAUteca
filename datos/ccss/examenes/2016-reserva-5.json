@@ -1,0 +1,391 @@
+{
+ "version": 1,
+ "id": "ccss-2016-reserva-5",
+ "asignatura": "ccss",
+ "anio": 2016,
+ "convocatoria": "Reserva 5",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "ccss-2016-reserva-5-1",
+   "n": 1,
+   "num": 1,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sean las matrices \\(A=\\begin{pmatrix}1&2\\\\0&-3\\end{pmatrix}\\), \\(B=\\begin{pmatrix}1&-1\\\\0&2\\\\1&-1\\end{pmatrix}\\) y \\(C=\\begin{pmatrix}1&4&0\\\\2&-3&1\\end{pmatrix}\\).",
+    "apartados": [
+     "(1,7 p.) Resuelva la ecuación matricial \\(C\\cdot B\\cdot X-2A\\cdot X=A^t\\).",
+     "(0,8 p.) Analice cuáles de las siguientes operaciones, sin efectuarlas, se pueden realizar y justifique las respuestas: \\(B\\cdot C+2A\\), \\(A\\cdot C+C\\), \\(B^t\\cdot C\\), \\(C\\cdot B-A\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(X\\) está a la derecha en los dos términos, así que la sacamos factor común por la derecha<i class='n' data-t='err'>\\(CBX-2AX=(CB-2A)X\\): el factor común \\(X\\) queda a la derecha.</i>: \\((CB-2A)\\cdot X=A^t\\).</p>\\[CB=\\begin{pmatrix}1&4&0\\\\2&-3&1\\end{pmatrix}\\begin{pmatrix}1&-1\\\\0&2\\\\1&-1\\end{pmatrix}=\\begin{pmatrix}1&7\\\\3&-9\\end{pmatrix}\\qquad M=CB-2A=\\begin{pmatrix}-1&3\\\\3&-3\\end{pmatrix}\\]<p>\\(|M|=3-9=-6\\neq0\\), así que \\(X=M^{-1}A^t\\):</p>\\[M^{-1}=\\frac1{-6}\\begin{pmatrix}-3&-3\\\\-3&-1\\end{pmatrix}=\\begin{pmatrix}\\frac12&\\frac12\\\\\\frac12&\\frac16\\end{pmatrix}\\qquad X=\\begin{pmatrix}\\frac12&\\frac12\\\\\\frac12&\\frac16\\end{pmatrix}\\begin{pmatrix}1&0\\\\2&-3\\end{pmatrix}\\]<div class='res'>\\(X=\\begin{pmatrix}\\frac32&-\\frac32\\\\\\frac56&-\\frac12\\end{pmatrix}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(A\\) es \\(2\\times2\\), \\(B\\) es \\(3\\times2\\), \\(C\\) es \\(2\\times3\\).</p><p>• \\(B\\cdot C+2A\\): \\(BC\\) es \\(3\\times3\\) y \\(2A\\) es \\(2\\times2\\): <b>no</b>.</p><p>• \\(A\\cdot C+C\\): \\(AC\\) es \\(2\\times3\\), igual que \\(C\\): <b>sí</b>.</p><p>• \\(B^t\\cdot C\\): \\((2\\times3)(2\\times3)\\): <b>no</b>.</p><p>• \\(C\\cdot B-A\\): \\(CB\\) es \\(2\\times2\\), igual que \\(A\\): <b>sí</b>.</p><div class='res'>Se pueden hacer \\(A\\cdot C+C\\) y \\(C\\cdot B-A\\); no se pueden \\(B\\cdot C+2A\\) ni \\(B^t\\cdot C\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "ecmat",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "ops",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2016-reserva-5-2",
+   "n": 2,
+   "num": 2,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Una fábrica produce entre 1000 y 6000 bombillas al día. El coste diario de producción, en euros, de \\(x\\) bombillas viene dado por la función \\(C(x)=9000+0{,}08x+\\dfrac{2\\,000\\,000}x\\), con \\(1000\\le x\\le6000\\). ¿Cuántas bombillas deberían producirse diariamente para minimizar costes? ¿Cuál sería dicho coste?",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>Al ser \\(C\\) una función racional, el punto «problemático» sería \\(x=0\\), que anula el denominador, pero no está en el dominio. Su dominio es \\([1000,6000]\\)<i class='n' data-t='why'>Rayamos la parte de la recta que queda fuera del dominio: ahí la función no está definida y no se estudia.</i>.</p><p>Estudiamos el signo de \\(C'\\)<i class='n' data-t='tp'>Dentro de cada intervalo la derivada no cambia de signo, así que basta sustituir un valor cualquiera del intervalo para conocer su signo.</i>.</p>\\[C'(x)=0{,}08-\\dfrac{2\\,000\\,000}{x^2}\\]\\[0{,}08-\\dfrac{2\\,000\\,000}{x^2}=0\\]\\[x^2=\\dfrac{2\\,000\\,000}{0{,}08}=25\\,000\\,000\\]\\[x=\\pm5000\\]<p>Solo \\(x=5000\\) está en el dominio.</p><div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 244 128' width='100%' style='max-width:293px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H230' stroke='currentColor' stroke-width='1.6'/><path d='M14 56L18 48M18 56L22 48M22 56L26 48M26 56L30 48M30 56L34 48M34 56L38 48' stroke='currentColor' stroke-width='1.1'/><path d='M206 56L210 48M210 56L214 48M214 56L218 48M218 56L222 48M222 56L226 48M226 56L230 48' stroke='currentColor' stroke-width='1.1'/><path d='M40 46V58' stroke='currentColor' stroke-width='1.6'/><text x='40' y='76' text-anchor='middle' font-weight='700'>1000</text><path d='M122 46V58' stroke='currentColor' stroke-width='1.6'/><text x='122' y='76' text-anchor='middle' font-weight='700'>5000</text><path d='M204 46V58' stroke='currentColor' stroke-width='1.6'/><text x='204' y='76' text-anchor='middle' font-weight='700'>6000</text><text x='55.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#e8487a'>−</text><path d='M69.0 10L105.0 40' stroke='#e8487a' stroke-width='2' fill='none'/><path d='M96.0 39L105.0 40L103.0 31' stroke='#e8487a' stroke-width='2' fill='none'/><text x='81.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>C</tspan>′(3000) &lt; 0</text><text x='137.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#17a673'>+</text><path d='M151.0 40L187.0 10' stroke='#17a673' stroke-width='2' fill='none'/><path d='M178.0 11L187.0 10L185.0 19' stroke='#17a673' stroke-width='2' fill='none'/><text x='163.0' y='121' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>C</tspan>′(5500) &gt; 0</text></svg></div><p>Luego \\(C\\) decrece en \\((1000,5000)\\) y crece en \\((5000,6000)\\)<i class='n' data-t='th'>Si \\(f'\\gt0\\) en un intervalo, \\(f\\) crece en él; si \\(f'\\lt0\\), decrece.</i>.</p><p>Alcanza un mínimo en \\(x=5000\\) de valor \\(C(5000)=9800\\)<i class='n' data-t='why'>Hay un mínimo donde \\(f\\) pasa de decrecer a crecer y un máximo donde pasa de crecer a decrecer.</i>.</p><p>Evaluamos \\(C\\) en \\(x=1000\\) y \\(x=6000\\)<i class='n' data-t='why'>En un intervalo cerrado, el mayor y el menor valor de la función se alcanzan en los extremos relativos o en los extremos del intervalo, así que basta comparar el valor de la función en todos ellos.</i> y lo comparamos con el mínimo relativo:</p>\\[\\begin{aligned}C(1000)&=11\\,080\\\\C(5000)&=9000+400+400=9800\\\\C(6000)&\\approx9813{,}33\\end{aligned}\\]<div class='res'>Deben producirse 5000 bombillas al día, con un coste mínimo de 9800 €</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "modelo",
+     "apartados": ""
+    },
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2016-reserva-5-3",
+   "n": 3,
+   "num": 3,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "El 60 % de los jóvenes de una ciudad usa Facebook, el 80 % usa WhatsApp y el 4 % usa Facebook pero no WhatsApp.",
+    "apartados": [
+     "(0,5 p.) Halle el porcentaje de jóvenes de esa ciudad que usa ambas aplicaciones.",
+     "(0,75 p.) Calcule el porcentaje de esos jóvenes que usa WhatsApp pero no Facebook.",
+     "(0,75 p.) Entre los jóvenes que usan WhatsApp, ¿qué porcentaje usa también Facebook?",
+     "(0,5 p.) Los sucesos «usar Facebook» y «usar WhatsApp», ¿son independientes?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Tabla de datos",
+     "html": "<div class='ex'><p>Sean \\(F\\): «usa Facebook» y \\(W\\): «usa WhatsApp». Datos: \\(P(F)=0{,}6\\), \\(P(W)=0{,}8\\) y \\(P(F\\cap W^c)=0{,}04\\). Con ellos completamos la tabla de contingencia<i class='n' data-t='tp'>Cada fila y cada columna suman su total; se rellena primero lo que dan los datos y después se completa por diferencias.</i>:</p><table class='tb'><tr><th></th><th>\\(W\\)</th><th>\\(W^c\\)</th><th>Total</th></tr><tr><td>\\(F\\)</td><td>0,56</td><td>0,04</td><td>0,60</td></tr><tr><td>\\(F^c\\)</td><td>0,24</td><td>0,16</td><td>0,40</td></tr><tr><th>Total</th><th>0,80</th><th>0,20</th><th>1</th></tr></table></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(F\\) se divide en dos partes incompatibles, la que usa WhatsApp y la que no:</p>\\[P(F)=P(F\\cap W)+P(F\\cap W^c)\\]\\[\\begin{aligned}P(F\\cap W)&=0{,}6-0{,}04\\\\&=0{,}56\\end{aligned}\\]<div class='res'>\\(P(F\\cap W)=0{,}56\\): el 56 % usa ambas</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Del mismo modo, \\(W\\) se divide en \\(W\\cap F\\) y \\(W\\cap F^c\\):</p>\\[P(W\\cap F^c)=P(W)-P(F\\cap W)\\]\\[\\begin{aligned}P(W\\cap F^c)&=0{,}8-0{,}56\\\\&=0{,}24\\end{aligned}\\]<div class='res'>\\(P(W\\cap F^c)=0{,}24\\): el 24 %</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Por la definición de probabilidad condicionada<i class='n' data-t='th'>Definición de probabilidad condicionada: \\(P(A\\mid B)=\\dfrac{P(A\\cap B)}{P(B)}\\).</i>:</p>\\[P(F\\mid W)=\\frac{P(F\\cap W)}{P(W)}\\]\\[P(F\\mid W)=\\frac{0{,}56}{0{,}8}=0{,}7\\]<div class='res'>\\(P(F\\mid W)=0{,}7\\): el 70 %</div></div>"
+    },
+    {
+     "titulo": "Apartado d",
+     "html": "<div class='ex'><p>\\(F\\) y \\(W\\) son independientes si \\(P(F\\mid W)=P(F)\\), es decir, \\(P(F\\cap W)=P(F)\\cdot P(W)\\).</p>\\[\\begin{aligned}P(F)\\cdot P(W)&=0{,}6\\cdot0{,}8\\\\&=0{,}48\\neq0{,}56\\\\&=P(F\\cap W)\\end{aligned}\\]<p>Como no coinciden, no son independientes.</p><div class='res'>No son independientes</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "prob",
+     "tipo": "tabla",
+     "apartados": "a, b, c, d"
+    },
+    {
+     "tema": "prob",
+     "tipo": "suc",
+     "apartados": "d"
+    },
+    {
+     "tema": "prob",
+     "tipo": "cond",
+     "apartados": "c"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2016-reserva-5-4",
+   "n": 4,
+   "num": 4,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "",
+    "apartados": [
+     "(1,5 p.) La talla de los individuos de una población sigue una distribución Normal con desviación típica 8 cm y media desconocida. A partir de una muestra aleatoria se ha obtenido un intervalo de confianza al 95 % para estimar la talla media poblacional, que ha resultado ser \\((164{,}86;\\ 171{,}14)\\) cm. Calcule la talla media de la muestra y el tamaño muestral mínimo necesario para reducir a la mitad el error máximo de estimación anterior.",
+     "(1 p.) En un club privado con 243 usuarios se ha seleccionado una muestra para hacer un sondeo, según la actividad realizada y por muestreo aleatorio estratificado. En esa muestra, 5 usuarios practican Yoga, 7 Pilates y 15 Mantenimiento, ¿cuántos usuarios están inscritos en cada actividad en ese club?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Sea \\(X\\) la variable aleatoria «talla, en cm, de un individuo de la población». Según el enunciado, \\(X\\sim N(\\mu,\\,8)\\) con \\(\\mu\\) desconocida.</p><p>Como \\(X\\) es normal, la media de las muestras de tamaño \\(n\\) también lo es<i class='n' data-t='th'>Si \\(X\\sim N(\\mu,\\sigma)\\), entonces \\(\\bar X\\sim N\\!\\left(\\mu,\\dfrac{\\sigma}{\\sqrt n}\\right)\\) para cualquier \\(n\\).</i>:</p>\\[\\bar X\\sim N\\!\\left(\\mu,\\frac{8}{\\sqrt n}\\right)\\qquad IC_{1-\\alpha}(\\mu)=(\\bar x-E,\\;\\bar x+E),\\quad E=z_{1-\\alpha/2}\\cdot\\frac{\\sigma}{\\sqrt n}\\]<p>El intervalo está centrado en la media muestral y su semiamplitud es el error<i class='n' data-t='why'>El intervalo es \\((\\bar x-E,\\;\\bar x+E)\\): su punto medio es \\(\\bar x\\) y su radio, \\(E\\).</i>:</p>\\[\\bar x=\\frac{164{,}86+171{,}14}2=168\\qquad E=\\frac{171{,}14-164{,}86}2=3{,}14\\]<p>Nivel de confianza: \\(1-\\alpha=0{,}95\\), luego \\(\\alpha=0{,}05\\) y \\(\\dfrac\\alpha2=0{,}025\\).</p>\\[P\\left(Z\\lt z_{1-\\alpha/2}\\right)=1-\\frac\\alpha2=0{,}975\\;\\Rightarrow\\;z_{1-\\alpha/2}=1{,}96\\]<svg viewBox='0 0 420 210' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><polygon points='114.2,157.2 114.2,141.6 117.4,139.5 120.6,137.2 123.8,134.7 127.0,132.0 130.1,129.1 133.3,126.0 136.5,122.7 139.7,119.2 142.9,115.5 146.1,111.7 149.3,107.8 152.5,103.7 155.7,99.6 158.9,95.4 162.1,91.1 165.3,86.9 168.5,82.7 171.7,78.6 174.9,74.7 178.1,70.9 181.3,67.3 184.4,64.0 187.6,61.0 190.8,58.3 194.0,55.9 197.2,53.9 200.4,52.4 203.6,51.3 206.8,50.6 210.0,50.4 213.2,50.6 216.4,51.3 219.6,52.4 222.8,53.9 226.0,55.9 229.2,58.3 232.4,61.0 235.6,64.0 238.7,67.3 241.9,70.9 245.1,74.7 248.3,78.6 251.5,82.7 254.7,86.9 257.9,91.1 261.1,95.4 264.3,99.6 267.5,103.7 270.7,107.8 273.9,111.7 277.1,115.5 280.3,119.2 283.5,122.7 286.7,126.0 289.9,129.1 293.0,132.0 296.2,134.7 299.4,137.2 302.6,139.5 305.8,141.6 305.8,157.2' fill='#5eead4' fill-opacity='0.55' stroke='none'/><line x1='34.0' y1='157.2' x2='386.0' y2='157.2' stroke='#111' stroke-width='1.3'/><polyline points='34.0,157.1 36.9,157.0 39.9,157.0 42.8,156.9 45.7,156.9 48.7,156.8 51.6,156.7 54.5,156.6 57.5,156.4 60.4,156.3 63.3,156.1 66.3,155.8 69.2,155.6 72.1,155.2 75.1,154.9 78.0,154.5 80.9,154.0 83.9,153.4 86.8,152.8 89.7,152.1 92.7,151.2 95.6,150.3 98.5,149.3 101.5,148.2 104.4,146.9 107.3,145.5 110.3,143.9 113.2,142.2 116.1,140.3 119.1,138.3 122.0,136.1 124.9,133.7 127.9,131.2 130.8,128.5 133.7,125.6 136.7,122.5 139.6,119.3 142.5,116.0 145.5,112.5 148.4,108.9 151.3,105.2 154.3,101.4 157.2,97.6 160.1,93.7 163.1,89.8 166.0,86.0 168.9,82.1 171.9,78.4 174.8,74.8 177.7,71.3 180.7,68.0 183.6,64.9 186.5,62.0 189.5,59.4 192.4,57.1 195.3,55.1 198.3,53.4 201.2,52.1 204.1,51.1 207.1,50.6 210.0,50.4 212.9,50.6 215.9,51.1 218.8,52.1 221.7,53.4 224.7,55.1 227.6,57.1 230.5,59.4 233.5,62.0 236.4,64.9 239.3,68.0 242.3,71.3 245.2,74.8 248.1,78.4 251.1,82.1 254.0,86.0 256.9,89.8 259.9,93.7 262.8,97.6 265.7,101.4 268.7,105.2 271.6,108.9 274.5,112.5 277.5,116.0 280.4,119.3 283.3,122.5 286.3,125.6 289.2,128.5 292.1,131.2 295.1,133.7 298.0,136.1 300.9,138.3 303.9,140.3 306.8,142.2 309.7,143.9 312.7,145.5 315.6,146.9 318.5,148.2 321.5,149.3 324.4,150.3 327.3,151.2 330.3,152.1 333.2,152.8 336.1,153.4 339.1,154.0 342.0,154.5 344.9,154.9 347.9,155.2 350.8,155.6 353.7,155.8 356.7,156.1 359.6,156.3 362.5,156.4 365.5,156.6 368.4,156.7 371.3,156.8 374.3,156.9 377.2,156.9 380.1,157.0 383.1,157.0 386.0,157.1' fill='none' stroke='#0f766e' stroke-width='2.2'/><line x1='114.2' y1='157.2' x2='114.2' y2='141.6' stroke='#0f766e' stroke-width='1.2' stroke-dasharray='4 3'/><line x1='305.8' y1='157.2' x2='305.8' y2='141.6' stroke='#0f766e' stroke-width='1.2' stroke-dasharray='4 3'/><text x='210.0' y='125.1' font-size='12' fill='#134e4a' text-anchor='middle' font-weight='bold'>0,95</text><text x='114.2' y='172.2' font-size='11' fill='#111' text-anchor='middle'>−1,96</text><text x='305.8' y='172.2' font-size='11' fill='#111' text-anchor='middle'>1,96</text><text x='210.0' y='172.2' font-size='10' fill='#6b7280' text-anchor='middle'>0</text></svg><p>Queremos un error de la mitad, \\(E'=\\dfrac{3{,}14}2=1{,}57\\), con el mismo nivel de confianza:</p>\\[1{,}96\\cdot\\frac8{\\sqrt n}\\le1{,}57\\iff n\\ge\\left(\\frac{1{,}96\\cdot8}{1{,}57}\\right)^2=9{,}9873^2=99{,}7462\\]<i class='n' data-t='why'>El tamaño de una muestra es un número entero y se redondea siempre hacia arriba: con 99 el error superaría 1,57.</i><div class='res'>La talla media de la muestra es 168 cm; para reducir el error a la mitad hacen falta al menos 100 individuos.</div><i class='n' data-t='tp'>Para reducir el error a la mitad hay que multiplicar el tamaño muestral por 4 (la muestra original tenía unos 25 individuos).</i></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>En el muestreo estratificado con afijación proporcional, la muestra tiene la misma composición que la población. La muestra tiene \\(5+7+15=27\\) usuarios de 243, es decir, \\(\\frac{27}{243}=\\frac19\\) de la población. Cada estrato del club es 9 veces su parte de la muestra:</p><div class='res'>Yoga: \\(5\\cdot9=45\\); Pilates: \\(7\\cdot9=63\\); Mantenimiento: \\(15\\cdot9=135\\) usuarios</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "inf",
+     "tipo": "error",
+     "apartados": "a"
+    },
+    {
+     "tema": "inf",
+     "tipo": "tam",
+     "apartados": "a"
+    },
+    {
+     "tema": "muest",
+     "tipo": "muestreo",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2016-reserva-5-5",
+   "n": 5,
+   "num": 1,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Una empresa fabrica dos tipos de agua de colonia, A y B. La colonia A contiene un 5 % de extracto de rosas y un 10 % de alcohol, mientras que la B se fabrica con un 10 % de extracto de rosas y un 15 % de alcohol. El precio de venta de la colonia A es de 24 €/litro y el de la B es de 40 €/litro. Se dispone de 70 litros de extracto de rosas y de 120 litros de alcohol. ¿Cuántos litros de cada colonia convendría fabricar para que el importe de la venta de la producción sea máximo?",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>Llamamos \\(x\\) a los litros de colonia A e \\(y\\) a los de colonia B.</p><table class='tb'><tr><th></th><th>Extracto de rosas (l)</th><th>Alcohol (l)</th><th>Precio (€/l)</th></tr><tr><td>\\(x\\) (colonia A)</td><td>0,05</td><td>0,10</td><td>24</td></tr><tr><td>\\(y\\) (colonia B)</td><td>0,10</td><td>0,15</td><td>40</td></tr><tr><td>Disponible</td><td>70</td><td>120</td><td></td></tr></table>\\[\\begin{cases}0{,}05x+0{,}1y\\le70\\iff x+2y\\le1400\\\\0{,}1x+0{,}15y\\le120\\iff2x+3y\\le2400\\\\x\\ge0,\\ y\\ge0\\end{cases}\\qquad I(x,y)=24x+40y\\ \\text{(a maximizar)}\\]</div>"
+    },
+    {
+     "titulo": "Región factible y vértices",
+     "html": "<div class='ex'><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th>\\(x+2y=1400\\)</th><td>\\(x\\)</td><td>0</td><td>1400</td></tr><tr><th></th><td>\\(y\\)</td><td>700</td><td>0</td></tr></table><table class='tb'><tr><th>\\(2x+3y=2400\\)</th><td>\\(x\\)</td><td>0</td><td>1200</td></tr><tr><th></th><td>\\(y\\)</td><td>800</td><td>0</td></tr></table><p>Probamos el origen \\((0,0)\\): \\(0\\le1400\\) y \\(0\\le2400\\) se cumplen, así que los semiplanos son los que contienen al origen<i class='n' data-t='why'>Si el origen cumple la inecuación, el semiplano solución es el que lo contiene.</i>; además \\(x\\ge0\\), \\(y\\ge0\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 330 210' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='40.0,195.0 280.0,195.0 160.0,107.0 40.0,41.0' fill='#b9a4f5' fill-opacity='.5' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M28 195H320M40 204V19'/></g><text x='314' y='190'>x</text><text x='45' y='27'>y</text><g font-size='10' fill='currentColor'><line x1='120.0' y1='192.0' x2='120.0' y2='198.0' stroke='currentColor'/><text x='120.0' y='209.0' text-anchor='middle'>400</text><line x1='200.0' y1='192.0' x2='200.0' y2='198.0' stroke='currentColor'/><text x='200.0' y='209.0' text-anchor='middle'>800</text><line x1='280.0' y1='192.0' x2='280.0' y2='198.0' stroke='currentColor'/><text x='280.0' y='209.0' text-anchor='middle'>1200</text><line x1='37.0' y1='151.0' x2='43.0' y2='151.0' stroke='currentColor'/><text x='34.0' y='154.0' text-anchor='end'>200</text><line x1='37.0' y1='107.0' x2='43.0' y2='107.0' stroke='currentColor'/><text x='34.0' y='110.0' text-anchor='end'>400</text><line x1='37.0' y1='63.0' x2='43.0' y2='63.0' stroke='currentColor'/><text x='34.0' y='66.0' text-anchor='end'>600</text></g><circle cx='40.0' cy='195.0' r='3.3' fill='#e8487a'/><text x='26.0' y='209.0' font-weight='700'>O</text><circle cx='280.0' cy='195.0' r='3.3' fill='#e8487a'/><text x='240.0' y='187.0' font-weight='700'>C(1200,0)</text><circle cx='160.0' cy='107.0' r='3.3' fill='#e8487a'/><text x='166.0' y='101.0' font-weight='700'>B(600,400)</text><circle cx='40.0' cy='41.0' r='3.3' fill='#e8487a'/><text x='46.0' y='37.0' font-weight='700'>A(0,700)</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(O=(0,0)\\)</li><li>\\(A:\\;\\left\\{\\begin{array}{l}x=0\\\\x+2y=1400\\end{array}\\right.\\Rightarrow\\boxed{A(0,700)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}x+2y=1400\\\\2x+3y=2400\\end{array}\\right.\\Rightarrow2800-4y+3y=2400\\Rightarrow\\boxed{B(600,400)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}y=0\\\\2x+3y=2400\\end{array}\\right.\\Rightarrow\\boxed{C(1200,0)}\\)</li></ul></div>"
+    },
+    {
+     "titulo": "Optimización",
+     "html": "<div class='ex'><p>La función \\(I\\) alcanza sus extremos en el recinto, en puntos de su frontera; evaluamos, por tanto, \\(I\\) en los vértices<i class='n' data-t='th'>Teorema fundamental de la programación lineal: si la región factible es un polígono acotado, la función objetivo alcanza su máximo y su mínimo en vértices; si los alcanza en dos vértices consecutivos, también en todo el lado que los une.</i>.</p>\\[\\begin{array}{l}I(O)=I(0,0)=0\\\\I(A)=I(0,700)=40\\cdot700=28\\,000\\\\I(B)=I(600,400)=14\\,400+16\\,000=30\\,400\\\\I(C)=I(1200,0)=24\\cdot1200=28\\,800\\end{array}\\]<div class='res'>\\(I\\) alcanza un máximo en \\(B(600,400)\\) de valor 30 400 €: conviene fabricar 600 litros de colonia A y 400 de colonia B.</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "pl",
+     "tipo": "plan",
+     "apartados": ""
+    },
+    {
+     "tema": "pl",
+     "tipo": "reg",
+     "apartados": ""
+    },
+    {
+     "tema": "pl",
+     "tipo": "opt",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "ccss-2016-reserva-5-6",
+   "n": 6,
+   "num": 2,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Los beneficios de una empresa, en miles de euros, han evolucionado en los 25 años de su existencia según una función del tiempo, en años, dada por la siguiente expresión: \\(B(t)=\\begin{cases}4t&\\text{si }0\\le t\\lt10\\\\-\\frac15t^2+8t-20&\\text{si }10\\le t\\le25\\end{cases}\\)",
+    "apartados": [
+     "(1 p.) Estudie la continuidad y derivabilidad de \\(B\\) en el intervalo \\([0,25]\\).",
+     "(1 p.) Estudie la monotonía de esta función y determine en qué año fueron mayores los beneficios de esta empresa y cuál fue su beneficio máximo.",
+     "(0,5 p.) Represente gráficamente esta función."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Los dos trozos son polinomios.<i class='n' data-t='th'>Las funciones polinómicas son continuas y derivables en todo \\(\\mathbb R\\); las racionales, en todos los puntos donde no se anula el denominador.</i> En \\(t=10\\):</p>\\[\\lim_{t\\to10^-}4t=40\\qquad B(10)=-20+80-20=40\\ \\Rightarrow\\ \\text{continua}\\]\\[B'(10^-)=4\\qquad B'(10^+)=-\\frac{2\\cdot10}5+8=4\\ \\Rightarrow\\ \\text{derivable}\\]<i class='n' data-t='th'>\\(f\\) es derivable en \\(a\\) si es continua en \\(a\\) y las derivadas laterales existen y coinciden.</i><div class='res'>\\(B\\) es continua y derivable en \\([0,25]\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Al ser \\(B\\) una función definida a trozos por polinomios, el único punto «problemático» es \\(t=10\\), donde cambia la expresión<i class='n' data-t='why'>Los puntos «problemáticos» son los que no pertenecen al dominio (por ejemplo, los que anulan un denominador) y los puntos donde cambia la expresión de una función a trozos. Hay que marcarlos en la recta porque en ellos también puede cambiar el signo de la derivada.</i>. Su dominio es \\([0,25]\\)<i class='n' data-t='why'>Rayamos la parte de la recta que queda fuera del dominio: ahí la función no está definida y no se estudia.</i>.</p><p>Estudiamos el signo de \\(B'\\)<i class='n' data-t='tp'>Dentro de cada intervalo la derivada no cambia de signo, así que basta sustituir un valor cualquiera del intervalo para conocer su signo.</i>.</p>\\[B'(t)=\\begin{cases}4&\\text{si }0\\lt t\\lt10\\\\-\\frac25t+8&\\text{si }10\\lt t\\lt25\\end{cases}\\]\\[\\begin{aligned}-\\tfrac25t+8&=0\\\\&\\Rightarrow\\boxed{t=20}\\end{aligned}\\]<div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 326 108' width='100%' style='max-width:391px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H312' stroke='currentColor' stroke-width='1.6'/><path d='M14 56L18 48M18 56L22 48M22 56L26 48M26 56L30 48M30 56L34 48M34 56L38 48' stroke='currentColor' stroke-width='1.1'/><path d='M288 56L292 48M292 56L296 48M296 56L300 48M300 56L304 48M304 56L308 48M308 56L312 48' stroke='currentColor' stroke-width='1.1'/><path d='M40 46V58' stroke='currentColor' stroke-width='1.6'/><text x='40' y='76' text-anchor='middle' font-weight='700'>0</text><path d='M122 46V58' stroke='currentColor' stroke-width='1.6'/><text x='122' y='76' text-anchor='middle' font-weight='700'>10</text><path d='M204 46V58' stroke='currentColor' stroke-width='1.6'/><text x='204' y='76' text-anchor='middle' font-weight='700'>20</text><path d='M286 46V58' stroke='currentColor' stroke-width='1.6'/><text x='286' y='76' text-anchor='middle' font-weight='700'>25</text><text x='55.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#17a673'>+</text><path d='M69.0 40L105.0 10' stroke='#17a673' stroke-width='2' fill='none'/><path d='M96.0 11L105.0 10L103.0 19' stroke='#17a673' stroke-width='2' fill='none'/><text x='81.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>B</tspan>′(5) &gt; 0</text><text x='137.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#17a673'>+</text><path d='M151.0 40L187.0 10' stroke='#17a673' stroke-width='2' fill='none'/><path d='M178.0 11L187.0 10L185.0 19' stroke='#17a673' stroke-width='2' fill='none'/><text x='163.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>B</tspan>′(15) &gt; 0</text><text x='219.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#e8487a'>−</text><path d='M233.0 10L269.0 40' stroke='#e8487a' stroke-width='2' fill='none'/><path d='M260.0 39L269.0 40L267.0 31' stroke='#e8487a' stroke-width='2' fill='none'/><text x='245.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>B</tspan>′(22) &lt; 0</text></svg></div><p>Luego \\(B\\) crece en \\((0,20)\\) y decrece en \\((20,25)\\)<i class='n' data-t='th'>Si \\(f'\\gt0\\) en un intervalo, \\(f\\) crece en él; si \\(f'\\lt0\\), decrece.</i><i class='n' data-t='why'>Como \\(B\\) es continua en \\(t=10\\) y tiene el mismo comportamiento a ambos lados, los dos intervalos se unen en uno solo.</i>.</p><p>Alcanza un máximo en \\(t=20\\) de valor \\(B(20)=60\\)<i class='n' data-t='why'>Hay un mínimo donde \\(f\\) pasa de decrecer a crecer y un máximo donde pasa de crecer a decrecer.</i>.</p><p>Evaluamos \\(B\\) en \\(t=0\\) y \\(t=25\\)<i class='n' data-t='why'>En un intervalo cerrado, el mayor y el menor valor de la función se alcanzan en los extremos relativos o en los extremos del intervalo, así que basta comparar el valor de la función en todos ellos.</i> y lo comparamos con el máximo relativo:</p>\\[\\begin{aligned}B(0)&=0\\\\B(20)&=60\\\\B(25)&=55\\end{aligned}\\]<div class='res'>Creciente en \\((0,20)\\) y decreciente en \\((20,25)\\). Los beneficios fueron mayores en el año 20, con 60 000 €</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Primer trozo: la recta \\(B=4t\\), de \\((0,0)\\) a \\((10,40)\\). Segundo trozo: arco de parábola con las ramas hacia abajo y vértice \\((20,60)\\)<i class='n' data-t='why'>El vértice está en \\(t=-\\dfrac{8}{2\\cdot(-1/5)}=20\\).</i>, que termina en \\((25,55)\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 320 210' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M25 190H314M30 195V18'/></g><text x='308' y='185'>x</text><text x='35' y='26'>y</text><g font-size='10' fill='currentColor'><line x1='82.5' y1='187.0' x2='82.5' y2='193.0' stroke='currentColor'/><text x='82.5' y='204.0' text-anchor='middle'>5</text><line x1='135.0' y1='187.0' x2='135.0' y2='193.0' stroke='currentColor'/><text x='135.0' y='204.0' text-anchor='middle'>10</text><line x1='187.5' y1='187.0' x2='187.5' y2='193.0' stroke='currentColor'/><text x='187.5' y='204.0' text-anchor='middle'>15</text><line x1='240.0' y1='187.0' x2='240.0' y2='193.0' stroke='currentColor'/><text x='240.0' y='204.0' text-anchor='middle'>20</text><line x1='292.5' y1='187.0' x2='292.5' y2='193.0' stroke='currentColor'/><text x='292.5' y='204.0' text-anchor='middle'>25</text><line x1='27.0' y1='138.0' x2='33.0' y2='138.0' stroke='currentColor'/><text x='24.0' y='141.0' text-anchor='end'>20</text><line x1='27.0' y1='86.0' x2='33.0' y2='86.0' stroke='currentColor'/><text x='24.0' y='89.0' text-anchor='end'>40</text><line x1='27.0' y1='34.0' x2='33.0' y2='34.0' stroke='currentColor'/><text x='24.0' y='37.0' text-anchor='end'>60</text></g><polyline points='30.0,190.0 34.4,185.7 38.8,181.3 43.1,177.0 47.5,172.7 51.9,168.3 56.2,164.0 60.6,159.7 65.0,155.3 69.4,151.0 73.8,146.7 78.1,142.3 82.5,138.0 86.9,133.7 91.2,129.3 95.6,125.0 100.0,120.7 104.4,116.3 108.8,112.0 113.1,107.7 117.5,103.3 121.9,99.0 126.2,94.7 130.6,90.3 135.0,86.0 139.4,81.8 143.8,77.7 148.1,73.8 152.5,70.1 156.9,66.6 161.2,63.2 165.6,60.1 170.0,57.1 174.4,54.3 178.8,51.7 183.1,49.3 187.5,47.0 191.9,44.9 196.2,43.0 200.6,41.3 205.0,39.8 209.4,38.4 213.8,37.2 218.1,36.3 222.5,35.4 226.9,34.8 231.2,34.4 235.6,34.1 240.0,34.0 244.4,34.1 248.8,34.4 253.1,34.8 257.5,35.4 261.9,36.3 266.2,37.2 270.6,38.4 275.0,39.8 279.4,41.3 283.8,43.0 288.1,44.9 292.5,47.0' fill='none' stroke='#2f6df0' stroke-width='2'/><circle cx='135.0' cy='86.0' r='3.3' fill='#e8487a'/><text x='141.0' y='100.0' font-weight='700'>(10, 40)</text><circle cx='240.0' cy='34.0' r='3.3' fill='#e8487a'/><text x='200.0' y='26.0' font-weight='700'>máximo (20, 60)</text><circle cx='292.5' cy='47.0' r='3.3' fill='#e8487a'/><text x='272.5' y='63.0' font-weight='700'>(25, 55)</text></svg></div><div class='res'>Segmento de \\((0,0)\\) a \\((10,40)\\) y arco de parábola con máximo en \\((20,60)\\) que termina en \\((25,55)\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "cont",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "b"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "modelo",
+     "apartados": "b"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "rep",
+     "apartados": "c"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2016-reserva-5-7",
+   "n": 7,
+   "num": 3,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "De los sucesos \\(A\\) y \\(B\\) de un experimento aleatorio se conocen las siguientes probabilidades: \\(P(A)=0{,}4\\), \\(P(B)=0{,}5\\), \\(P\\bigl((A\\cup B)^c\\bigr)=0{,}1\\).",
+    "apartados": [
+     "(0,75 p.) Razone si \\(A\\) y \\(B\\) son sucesos compatibles.",
+     "(0,75 p.) Razone si \\(A\\) y \\(B\\) son sucesos independientes.",
+     "(0,5 p.) Calcule \\(P(A\\cap B^c)\\).",
+     "(0,5 p.) Calcule \\(P(A/B^c)\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(A\\) y \\(B\\) son incompatibles si y solo si \\(P(A\\cap B)=0\\).</p><p>\\(P(A\\cup B)=1-0{,}1=0{,}9\\), así que \\(P(A\\cap B)\\) \\(=0{,}4+0{,}5-0{,}9=0\\).</p><div class='res'>No son compatibles: son incompatibles, porque \\(P(A\\cap B)=0\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(A\\) y \\(B\\) son independientes si \\(P(A\\mid B)=P(A)\\), es decir, \\(P(A\\cap B)=P(A)\\cdot P(B)\\).</p><p>\\(P(A)P(B)=0{,}2\\neq0\\) \\(=P(A\\cap B)\\)<i class='n' data-t='err'>Dos sucesos incompatibles con probabilidades no nulas nunca son independientes.</i>.</p><div class='res'>No son independientes</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>\\(A\\) se divide en dos partes incompatibles, \\(A\\cap B\\) y \\(A\\cap B^c\\). Como \\(P(A\\cap B)=0\\) (apartado a):</p>\\[P(A\\cap B^c)=P(A)-P(A\\cap B)\\]\\[P(A\\cap B^c)=0{,}4-0=0{,}4\\]<div class='res'>\\(P(A\\cap B^c)=0{,}4\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado d",
+     "html": "<div class='ex'><p>Por la definición de probabilidad condicionada<i class='n' data-t='th'>Definición de probabilidad condicionada: \\(P(A\\mid B)=\\dfrac{P(A\\cap B)}{P(B)}\\).</i>, con \\(P(B^c)=1-0{,}5=0{,}5\\):</p>\\[P(A\\mid B^c)=\\frac{P(A\\cap B^c)}{P(B^c)}\\]\\[P(A\\mid B^c)=\\frac{0{,}4}{0{,}5}=0{,}8\\]<div class='res'>\\(P(A\\mid B^c)=0{,}8\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "prob",
+     "tipo": "suc",
+     "apartados": "a, b, c, d"
+    },
+    {
+     "tema": "prob",
+     "tipo": "cond",
+     "apartados": "d"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2016-reserva-5-8",
+   "n": 8,
+   "num": 4,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "En un artículo de internet se afirma que el número medio de mensajes de WhatsApp que mandan los jóvenes al día no es inferior a 40. Para contrastar dicha información se elige una muestra aleatoria de 100 jóvenes y se observa que envían una media de 38 mensajes al día. Se sabe que el número de mensajes enviados diariamente sigue una distribución Normal de desviación típica 2. Con un nivel de significación del 5 % plantee un contraste, (\\(H_0:\\ \\mu\\ge40\\)), determine la región de rechazo y concluya ¿se puede aceptar la afirmación del artículo de internet?",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento (teoría)",
+     "html": "<div class='ex'><p>Sea \\(X\\) la variable aleatoria «número de mensajes de WhatsApp que envía un joven al día». Según el enunciado, \\(X\\sim N(\\mu,\\ \\sigma=2)\\). El artículo afirma que \\(\\mu\\ge40\\). Planteamos el contraste<i class='n' data-t='th'>Contraste de hipótesis: se supone cierta \\(H_0\\) y se mira si lo observado en la muestra es «demasiado raro» bajo esa suposición. Si el estadístico cae en la región de rechazo (la zona de probabilidad \\(\\alpha\\)), se rechaza \\(H_0\\); si no, no hay evidencia suficiente para rechazarla y se acepta.</i>:</p>\\[H_0:\\ \\mu\\ge40\\qquad H_1:\\ \\mu\\lt40\\]<p>Es unilateral por la izquierda. Si \\(H_0\\) es cierta (caso límite \\(\\mu_0=40\\)), la media de las muestras de tamaño \\(n=100\\) sigue</p>\\[\\bar X\\sim N\\left(40,\\ \\frac2{\\sqrt{100}}\\right)=N(40;\\ 0{,}2)\\]</div>"
+    },
+    {
+     "titulo": "Región de rechazo y decisión",
+     "html": "<div class='ex'><p>Nivel de significación: \\(\\alpha=0{,}05\\). Como el contraste es unilateral por la izquierda, toda la región de rechazo está en la cola izquierda; por la simetría de la normal, su frontera es \\(-z_{1-\\alpha}\\), con</p>\\[P\\left(Z\\lt z_{1-\\alpha}\\right)=1-\\alpha=0{,}95\\]<p>Busco \\(0{,}95\\) en el interior de la tabla \\(N(0,1)\\): queda justo en el punto medio entre \\(P(Z\\lt1{,}64)=0{,}9495\\) y \\(P(Z\\lt1{,}65)=0{,}9505\\), así que se interpola:</p>\\[\\Rightarrow\\ z_{1-\\alpha}=1{,}645\\quad\\text{y la frontera es }-z_{1-\\alpha}=-1{,}645\\]<div style='overflow-x:auto'><svg viewBox='0 0 320 170' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='8.0,135.0 8.0,134.9 9.4,134.9 10.9,134.9 12.3,134.9 13.7,134.9 15.2,134.8 16.6,134.8 18.1,134.8 19.5,134.7 20.9,134.7 22.4,134.7 23.8,134.6 25.2,134.6 26.7,134.5 28.1,134.5 29.6,134.4 31.0,134.3 32.4,134.3 33.9,134.2 35.3,134.1 36.7,134.0 38.2,133.8 39.6,133.7 41.0,133.6 42.5,133.4 43.9,133.2 45.4,133.0 46.8,132.8 48.2,132.6 49.7,132.3 51.1,132.1 52.5,131.8 54.0,131.4 55.4,131.1 56.8,130.7 58.3,130.3 59.7,129.8 61.2,129.3 62.6,128.8 64.0,128.3 65.5,127.7 66.9,127.0 68.3,126.3 69.8,125.6 71.2,124.8 72.7,124.0 74.1,123.1 75.5,122.1 77.0,121.1 78.4,120.1 79.8,118.9 81.3,117.7 82.7,116.5 84.1,115.2 85.6,113.8 87.0,112.3 88.5,110.8 89.9,109.2 91.3,107.6 92.8,105.9 94.2,104.1 94.2,135.0' fill='#e8487a' fill-opacity='.35' stroke='none'/><polygon points='94.2,135.0 94.2,104.1 97.8,99.2 101.5,94.0 105.1,88.4 108.7,82.4 112.3,76.1 116.0,69.7 119.6,63.1 123.2,56.5 126.9,50.1 130.5,43.8 134.1,37.9 137.8,32.5 141.4,27.6 145.0,23.4 148.7,20.0 152.3,17.5 155.9,15.9 159.5,15.3 163.2,15.7 166.8,17.0 170.4,19.3 174.1,22.5 177.7,26.5 181.3,31.2 184.9,36.5 188.6,42.3 192.2,48.5 195.8,54.9 199.5,61.4 203.1,68.0 206.7,74.5 210.4,80.8 214.0,86.9 217.6,92.6 221.2,97.9 224.9,102.9 228.5,107.4 232.1,111.5 235.8,115.1 239.4,118.3 243.0,121.1 246.7,123.6 250.3,125.6 253.9,127.4 257.6,128.9 261.2,130.1 264.8,131.1 268.4,132.0 272.1,132.6 275.7,133.2 279.3,133.6 283.0,133.9 286.6,134.2 290.2,134.4 293.9,134.6 297.5,134.7 301.1,134.8 304.7,134.8 308.4,134.9 312.0,134.9 312.0,135.0' fill='#6d4ae0' fill-opacity='.35' stroke='none'/><polyline points='8.0,134.9 10.5,134.9 13.1,134.9 15.6,134.8 18.1,134.8 20.7,134.7 23.2,134.7 25.7,134.6 28.3,134.5 30.8,134.4 33.3,134.2 35.9,134.0 38.4,133.8 40.9,133.6 43.5,133.3 46.0,132.9 48.5,132.5 51.1,132.1 53.6,131.5 56.1,130.9 58.7,130.2 61.2,129.3 63.7,128.4 66.3,127.3 68.8,126.1 71.3,124.7 73.9,123.2 76.4,121.5 78.9,119.6 81.5,117.6 84.0,115.3 86.5,112.8 89.1,110.2 91.6,107.3 94.1,104.2 96.7,100.8 99.2,97.3 101.7,93.6 104.3,89.7 106.8,85.6 109.3,81.3 111.9,77.0 114.4,72.5 116.9,68.0 119.5,63.4 122.0,58.8 124.5,54.2 127.1,49.7 129.6,45.3 132.1,41.1 134.7,37.1 137.2,33.3 139.7,29.7 142.3,26.5 144.8,23.7 147.3,21.2 149.9,19.1 152.4,17.5 154.9,16.3 157.5,15.6 160.0,15.3 162.5,15.6 165.1,16.3 167.6,17.5 170.1,19.1 172.7,21.2 175.2,23.7 177.7,26.5 180.3,29.7 182.8,33.3 185.3,37.1 187.9,41.1 190.4,45.3 192.9,49.7 195.5,54.2 198.0,58.8 200.5,63.4 203.1,68.0 205.6,72.5 208.1,77.0 210.7,81.3 213.2,85.6 215.7,89.7 218.3,93.6 220.8,97.3 223.3,100.8 225.9,104.2 228.4,107.3 230.9,110.2 233.5,112.8 236.0,115.3 238.5,117.6 241.1,119.6 243.6,121.5 246.1,123.2 248.7,124.7 251.2,126.1 253.7,127.3 256.3,128.4 258.8,129.3 261.3,130.2 263.9,130.9 266.4,131.5 268.9,132.1 271.5,132.5 274.0,132.9 276.5,133.3 279.1,133.6 281.6,133.8 284.1,134.0 286.7,134.2 289.2,134.4 291.7,134.5 294.3,134.6 296.8,134.7 299.3,134.7 301.9,134.8 304.4,134.8 306.9,134.9 309.5,134.9 312.0,134.9' fill='none' stroke='#2f6df0' stroke-width='2'/><line x1='4.0' y1='135.0' x2='316.0' y2='135.0' stroke='currentColor' stroke-width='1.2'/><line x1='94.2' y1='139.0' x2='94.2' y2='104.1' stroke='#c2185b' stroke-width='1.4' stroke-dasharray='3 2'/><text x='94.2' y='152.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#c2185b'>−z<tspan font-size='8' dy='3'>1−α</tspan><tspan dy='-3'> = −1,645</tspan></text><text x='176.0' y='84.0' text-anchor='middle' font-size='11' font-weight='700'>aceptación: 1 − α = 0,95</text><line x1='82.2' y1='127.8' x2='36.0' y2='102.0' stroke='#c2185b' stroke-width='1'/><text x='8' y='99.0' text-anchor='start' font-size='10' fill='#c2185b'>rechazo: α = 0,05</text></svg></div><p>La región de rechazo, para la media muestral, son los valores menores que</p>\\[\\mu_0-z_{1-\\alpha}\\frac\\sigma{\\sqrt n}=40-1{,}645\\cdot0{,}2=39{,}671\\]<div class='res'>Región de rechazo: \\(\\bar x\\lt39{,}671\\)</div><p>La media de la muestra es \\(\\bar x=38\\lt39{,}671\\): cae en la región de rechazo (\\(z=\\dfrac{38-40}{0{,}2}=-10\\)).</p><div class='res'>Se rechaza \\(H_0\\): no se puede aceptar la afirmación del artículo</div><p><b>Conclusión:</b> con un nivel de significación del 5 %, los datos indican que los jóvenes envían de media menos de 40 mensajes al día.</p></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "contr",
+     "tipo": "media",
+     "apartados": ""
+    },
+    {
+     "tema": "contr",
+     "tipo": "uni",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

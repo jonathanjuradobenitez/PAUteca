@@ -1,0 +1,370 @@
+{
+ "version": 1,
+ "id": "ccss-2024-reserva-1",
+ "asignatura": "ccss",
+ "anio": 2024,
+ "convocatoria": "Reserva 1",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "ccss-2024-reserva-1-1",
+   "n": 1,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Se consideran las matrices \\[P=\\begin{pmatrix}1&0&1\\\\0&1&0\\\\1&-1&-1\\end{pmatrix}\\qquad J=\\begin{pmatrix}2&1&0\\\\0&2&0\\\\0&0&-1\\end{pmatrix}\\]",
+    "apartados": [
+     "(1,5 p.) Halle la matriz \\(A\\) que satisface la ecuación \\(P^{-1}\\cdot A\\cdot P=J\\).",
+     "(1 p.) Compruebe que \\(A^3=P\\cdot J^3\\cdot P^{-1}\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Despejo \\(A\\) multiplicando por \\(P\\) a la izquierda y por \\(P^{-1}\\) a la derecha<i class='n' data-t='err'>El orden importa: \\(P\\cdot(P^{-1}AP)\\cdot P^{-1}=A\\). Si se multiplica al revés (\\(P^{-1}JP\\)) sale una matriz distinta.</i>:</p>\\[\\begin{aligned}P^{-1}AP&=J\\\\&\\Rightarrow A=P\\,J\\,P^{-1}\\end{aligned}\\]<p>\\(|P|=-2\\neq0\\). Calculo \\(P^{-1}=\\dfrac1{|P|}(\\operatorname{Adj}P)^t\\):</p>\\[P^{-1}=-\\frac12\\begin{pmatrix}-1&-1&-1\\\\0&-2&0\\\\-1&1&1\\end{pmatrix}\\]\\[=\\begin{pmatrix}\\frac12&\\frac12&\\frac12\\\\0&1&0\\\\\\frac12&-\\frac12&-\\frac12\\end{pmatrix}\\]\\[P\\,J=\\begin{pmatrix}2&1&-1\\\\0&2&0\\\\2&-1&1\\end{pmatrix}\\]\\[ A=(PJ)\\,P^{-1}\\]\\[=\\begin{pmatrix}\\frac12&\\frac52&\\frac32\\\\0&2&0\\\\\\frac32&-\\frac12&\\frac12\\end{pmatrix}\\]<div class='res'>\\(A=\\begin{pmatrix}\\frac12&\\frac52&\\frac32\\\\0&2&0\\\\\\frac32&-\\frac12&\\frac12\\end{pmatrix}\\)</div><i class='n' data-t='tp'>Comprueba \\(P\\cdot P^{-1}=I\\): fila 1 por columna 1: \\(1\\cdot\\frac12+0+1\\cdot\\frac12=1\\) ✓.</i></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Como \\(A=PJP^{-1}\\), al elevar al cubo los factores \\(P^{-1}P\\) se simplifican<i class='n' data-t='why'>\\(P^{-1}P=I\\) aparece entre cada dos factores: por eso \\(A^n=PJ^nP^{-1}\\) para cualquier \\(n\\). Es el truco que hace sencillas las potencias de matrices «diagonalizables».</i>:</p>\\[\\begin{aligned}A^3&=(PJP^{-1})(PJP^{-1})(PJP^{-1})\\\\&=PJ\\underbrace{(P^{-1}P)}_{I}J\\underbrace{(P^{-1}P)}_{I}JP^{-1}\\\\&=P\\,J^3\\,P^{-1}\\end{aligned}\\]<div class='res'>Queda comprobado: \\(A^3=P\\cdot J^3\\cdot P^{-1}\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "ecmat",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "a"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2024-reserva-1-2",
+   "n": 2,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "A una tienda de decoración le han encargado decorar las mesas de un salón de celebraciones con centros florales y candelabros. En el salón se montan siempre entre 12 y 40 mesas. En cada mesa solo se puede colocar un centro floral o un candelabro y, además, el número de candelabros no puede ser superior a una tercera parte de los centros florales. Si el precio de cada centro floral es de 32 € y el de cada candelabro de 35 €, ¿cuántos artículos de cada tipo debe seleccionar la tienda para maximizar sus ingresos? ¿A cuánto ascenderán dichos ingresos?",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>Sean \\(x\\) los centros florales e \\(y\\) los candelabros.</p><table class='tb'><tr><th>Variables</th><th>Mesas ocupadas</th><th>Precio (€)</th></tr><tr><td>\\(x\\): centros florales</td><td>1</td><td>32</td></tr><tr><td>\\(y\\): candelabros</td><td>1</td><td>35</td></tr><tr><th>Límite</th><td>\\(12\\le\\cdot\\le40\\)</td><td></td></tr></table><p>Cada mesa lleva un solo artículo, luego el número de mesas es \\(x+y\\). «Candelabros \\(\\le\\) una tercera parte de los centros»: \\(y\\le\\frac x3\\).<i class='n' data-t='tp'>«Entre 12 y 40» son dos restricciones: \\(x+y\\ge12\\) y \\(x+y\\le40\\).</i></p>\\[\\begin{cases}x+y\\ge12\\\\x+y\\le40\\\\x\\ge3y\\\\x\\ge0,\\ y\\ge0\\end{cases}\\qquad I(x,y)=32x+35y\\]</div>"
+    },
+    {
+     "titulo": "Región factible y vértices",
+     "html": "<div class='ex'><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(x+y=12\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(12\\)</td></tr><tr><th>\\(y\\)</th><td>\\(12\\)</td><td>\\(0\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(x+y=40\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(40\\)</td></tr><tr><th>\\(y\\)</th><td>\\(40\\)</td><td>\\(0\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(x-3y=0\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(30\\)</td></tr><tr><th>\\(y\\)</th><td>\\(0\\)</td><td>\\(10\\)</td></tr></table><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(x+y\\ge12\\): con el origen, \\(0\\ge12\\) no se cumple → semiplano que <b>no</b> lo contiene.</li><li>\\(x+y\\le40\\): con el origen, \\(0\\le40\\) se cumple → semiplano que lo contiene.</li><li>\\(x-3y\\ge0\\): con el punto \\((1,0)\\), \\(1\\ge0\\) se cumple → semiplano que lo contiene.</li></ul><p>Además, \\(x\\ge0\\) y \\(y\\ge0\\) limitan la región al primer cuadrante.</p><div style='overflow-x:auto'><svg viewBox='0 0 290 215' width='100%' style='max-width:380px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='42,190 230,190 180,150 41,170' fill='#b9a4f5' fill-opacity='.5' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M20 190H285M30 200V10'/></g><g><text x='280' y='186'>x</text><text x='36' y='14'>y</text><text x='34' y='206' font-weight='700'>(12,0)</text><text x='218' y='206' font-weight='700'>B(40,0)</text><text x='172' y='144' font-weight='700'>C(30,10)</text><text x='4' y='168' font-weight='700'>D(9,3)</text><text x='4' y='212' font-size='10'>x+y=12 · x+y=40 · x=3y</text></g></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(A:\\;\\left\\{\\begin{array}{l}x+y=12\\\\y=0\\end{array}\\right.\\Rightarrow x=12\\Rightarrow \\boxed{A(12,0)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}x+y=40\\\\y=0\\end{array}\\right.\\Rightarrow x=40\\Rightarrow \\boxed{B(40,0)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}x+y=40\\\\x-3y=0\\end{array}\\right.\\Rightarrow y=-x+40\\Rightarrow x-3(-x+40)=0\\Rightarrow x=30,\\ y=10\\Rightarrow \\boxed{C(30,10)}\\)</li><li>\\(D:\\;\\left\\{\\begin{array}{l}x+y=12\\\\x-3y=0\\end{array}\\right.\\Rightarrow y=-x+12\\Rightarrow x-3(-x+12)=0\\Rightarrow x=9,\\ y=3\\Rightarrow \\boxed{D(9,3)}\\)</li></ul></div>"
+    },
+    {
+     "titulo": "Optimización",
+     "html": "<div class='ex'><p>La función \\(I\\) alcanza sus extremos en el recinto, en puntos de su frontera; evaluamos, por tanto, \\(I\\) en los vértices<i class='n' data-t='th'>Teorema fundamental de la programación lineal: si la región factible es un polígono convexo y acotado, la función objetivo alcanza su máximo y su mínimo en alguno de sus vértices.</i>:</p>\\[\\begin{aligned}I(A)&=I(12,0)\\\\&=32\\cdot12+35\\cdot0=384\\end{aligned}\\]\\[\\begin{aligned}I(B)&=I(40,0)\\\\&=32\\cdot40+35\\cdot0=1280\\end{aligned}\\]\\[\\begin{aligned}I(C)&=I(30,10)\\\\&=32\\cdot30+35\\cdot10=1310\\end{aligned}\\]\\[\\begin{aligned}I(D)&=I(9,3)\\\\&=32\\cdot9+35\\cdot3=393\\end{aligned}\\]<p>\\(I\\) alcanza un máximo en \\(C(30,10)\\) de valor \\(1310\\).</p><div class='res'>Los ingresos máximos son 1310 € y se obtienen con 30 centros florales y 10 candelabros</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "pl",
+     "tipo": "plan",
+     "apartados": ""
+    },
+    {
+     "tema": "pl",
+     "tipo": "reg",
+     "apartados": ""
+    },
+    {
+     "tema": "pl",
+     "tipo": "opt",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2024-reserva-1-3",
+   "n": 3,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "La superficie de ampliación de un parque de atracciones, en decámetros cuadrados, coincide con el área de la región delimitada por las gráficas de las funciones \\(f(x)=-x^2+6x\\) y \\(g(x)=\\dfrac{x^2}{5}\\).",
+    "apartados": [
+     "(1 p.) Represente gráficamente la superficie de ampliación del parque de atracciones.",
+     "(1,5 p.) Si el coste para acondicionar el nuevo suelo es de 75 €/\\(m^2\\), calcule el área de ampliación del parque y el coste total del acondicionamiento."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(f\\) es una parábola hacia abajo con vértice \\((3,9)\\) y cortes \\((0,0)\\) y \\((6,0)\\); \\(g\\) es una parábola hacia arriba con vértice \\((0,0)\\). La superficie es la región comprendida entre las dos parábolas; sus límites son los puntos de corte, que obtenemos igualando las funciones:</p>\\[\\begin{aligned}-x^2+6x&=\\frac{x^2}{5}\\\\&\\iff x\\left(6-\\frac65x\\right)=0\\\\&\\iff x=0\\ \\text{ o }\\ x=5\\end{aligned}\\]<p>Los puntos son \\((0,0)\\) y \\((5,5)\\).<i class='n' data-t='why'>Los puntos de corte son los límites de integración del área entre las dos curvas.</i></p><div style='overflow-x:auto'><svg viewBox='0 0 280 230' width='100%' style='max-width:380px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='30,210 65,110 100,50 135,30 170,50 205,110 170,146 135,174 100,194 65,206' fill='#b9a4f5' fill-opacity='.5' stroke='none'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M20 210H270M30 220V10'/></g><polyline points='30,210 65,110 100,50 135,30 170,50 205,110 240,210' fill='none' stroke='#2f6df0' stroke-width='2'/><polyline points='30,210 65,206 100,194 135,174 170,146 205,110' fill='none' stroke='#e8487a' stroke-width='2'/><g><text x='140' y='26'>f(x)=−x²+6x</text><text x='176' y='160'>g(x)=x²/5</text><text x='196' y='104'>(5, 5)</text><text x='230' y='224'>6</text><text x='264' y='206'>x</text></g></svg></div><div class='res'>La región está entre la parábola \\(f\\) (por encima) y la parábola \\(g\\) (por debajo), para \\(0\\le x\\le5\\), con vértices de la región en \\((0,0)\\) y \\((5,5)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>En \\([0,5]\\), \\(f\\) queda por encima de \\(g\\) (por ejemplo, en \\(x=1\\): \\(5\\gt0{,}2\\)). Área entre dos curvas<i class='n' data-t='th'>\\(\\text{Área}=\\int_a^b[f(x)-g(x)]\\,dx\\), con \\(f\\ge g\\) en \\([a,b]\\): curva superior menos curva inferior.</i>:</p>\\[\\begin{aligned}A&=\\int_0^5\\left(-x^2+6x-\\frac{x^2}5\\right)dx\\\\&=\\int_0^5\\left(-\\frac65x^2+6x\\right)dx\\\\&=\\left[-\\frac25x^3+3x^2\\right]_0^5\\\\&=-50+75=25\\end{aligned}\\]<p>El área es 25 decámetros cuadrados. Como \\(1\\ dam=10\\ m\\), \\(1\\ dam^2=100\\ m^2\\): \\(25\\ dam^2=2500\\ m^2\\).<i class='n' data-t='err'>Hay que convertir unidades: el enunciado da el área en \\(dam^2\\) y el coste por \\(m^2\\).</i></p><div class='res'>Área \\(=25\\ dam^2=2500\\ m^2\\). Coste total \\(=2500\\cdot75=187\\,500\\) €</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "area2",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2024-reserva-1-4",
+   "n": 4,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Se consideran las funciones \\[f(x)=\\begin{cases}2-x^2&\\text{si }-1\\le x\\le1\\\\(x-2)^2&\\text{si }1\\lt x\\le3\\end{cases}\\qquad g(x)=1\\ \\text{ si }-1\\le x\\le3\\]",
+    "apartados": [
+     "(1 p.) Estudie la continuidad y la derivabilidad de \\(f\\) y \\(g\\) en sus dominios.",
+     "(1,5 p.) Represente el recinto limitado por las gráficas de ambas funciones y calcule su área."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(g\\) es constante: continua y derivable en \\([-1,3]\\) (\\(g'=0\\)).</p><p>\\(f\\) está formada por polinomios, continuos y derivables en el interior de cada trozo. Estudio \\(x=1\\):<i class='n' data-t='th'>Para ser derivable en \\(x_0\\), \\(f\\) debe ser continua y coincidir las derivadas laterales.</i></p>\\[\\begin{aligned}f(1)&=1\\\\\\lim_{x\\to1^-}(2-x^2)&=1\\\\\\lim_{x\\to1^+}(x-2)^2&=1\\end{aligned}\\]\\[\\begin{aligned}f'(1^-)&=-2x\\big|_{x=1}\\\\&=-2\\\\& f'(1^+)\\\\&=2(x-2)\\big|_{x=1}\\\\&=-2\\end{aligned}\\]<div class='res'>\\(g\\) y \\(f\\) son continuas y derivables en sus dominios (en \\(x=1\\), \\(f'(1)=-2\\))</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Cortes de \\(f\\) con \\(g=1\\): \\(2-x^2=1\\Rightarrow x=\\pm1\\) y \\((x-2)^2=1\\Rightarrow x=1,\\ x=3\\). Luego se cortan en \\(x=-1\\), \\(x=1\\) y \\(x=3\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 260 220' width='100%' style='max-width:360px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='20,140 45,95 70,80 95,95 120,140' fill='#b9a4f5' fill-opacity='.5' stroke='none'/><polygon points='120,140 145,185 170,200 195,185 220,140' fill='#f6c76a' fill-opacity='.55' stroke='none'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M5 200H250M70 215V40'/></g><polyline points='20,140 45,95 70,80 95,95 120,140 145,185 170,200 195,185 220,140' fill='none' stroke='#2f6df0' stroke-width='2'/><path d='M10 140H235' stroke='#e8487a' stroke-width='2' fill='none'/><g><text x='74' y='76'>(0, 2)</text><text x='150' y='214'>(2, 0)</text><text x='10' y='134'>(−1, 1)</text><text x='196' y='134'>(3, 1)</text><text x='236' y='136'>g=1</text></g></svg></div><p>En \\([-1,1]\\), \\(f\\ge g\\); en \\([1,3]\\), \\(g\\ge f\\). El área es la suma de dos recintos:</p>\\[\\begin{aligned}A&=\\int_{-1}^{1}\\bigl[(2-x^2)-1\\bigr]dx\\\\&\\quad+\\int_1^3\\bigl[1-(x-2)^2\\bigr]dx\\\\&=\\left[x-\\frac{x^3}3\\right]_{-1}^{1}\\\\&\\quad+\\left[x-\\frac{(x-2)^3}3\\right]_1^3\\\\&=\\frac43+\\frac43\\end{aligned}\\]<div class='res'>Área \\(=\\dfrac83\\ u^2\\)</div><i class='n' data-t='tp'>Aquí la curva superior cambia en \\(x=1\\): hay que partir la integral donde se cortan las funciones.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "cont",
+     "apartados": "a"
+    },
+    {
+     "tema": "integ",
+     "tipo": "area2",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2024-reserva-1-5",
+   "n": 5,
+   "bloque": "C",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "En una encuesta realizada en una librería se ha determinado que el 45 % de sus clientes compran novelas históricas, mientras que el 40 % no compra novelas de fantasía. Además, de los clientes que compran novelas de fantasía, solo el 30 % compran también novelas históricas. Elegido un cliente al azar, calcule la probabilidad de que:",
+    "apartados": [
+     "(0,75 p.) Compre novelas históricas y de fantasía.",
+     "(1 p.) No compre novelas históricas y tampoco de fantasía.",
+     "(0,75 p.) Compre una novela de fantasía, sabiendo que no ha comprado ninguna novela histórica."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Datos previos",
+     "html": "<div class='ex'><p>Sean \\(H\\): «compra novelas históricas» y \\(F\\): «compra novelas de fantasía». Datos: \\(P(H)=0{,}45\\), \\(P(F)=1-0{,}4=0{,}6\\), \\(P(H\\mid F)=0{,}3\\).<i class='n' data-t='why'>«No compra fantasía» es el 40 %, luego \\(P(F)=0{,}6\\).</i> Con ellos completamos la tabla de contingencia (la casilla \\(H\\cap F\\) se calcula en el apartado a):</p><table class='tb'><tr><th></th><th>\\(F\\)</th><th>\\(F^c\\)</th><th>Total</th></tr><tr><td>\\(H\\)</td><td>0,18</td><td>0,27</td><td>0,45</td></tr><tr><td>\\(H^c\\)</td><td>0,42</td><td>0,13</td><td>0,55</td></tr><tr><th>Total</th><th>0,6</th><th>0,4</th><th>1</th></tr></table></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Despejamos la intersección de la definición de probabilidad condicionada<i class='n' data-t='th'>Definición de probabilidad condicionada: \\(P(A\\mid B)=\\dfrac{P(A\\cap B)}{P(B)}\\).</i>, \\(P(H\\cap F)=P(F)\\cdot P(H\\mid F)\\)<i class='n' data-t='th'>\\(P(H\\cap F)=P(F)\\,P(H\\mid F)\\).</i>:</p>\\[P(H\\cap F)=0{,}6\\cdot0{,}3\\]<div class='res'>\\(P(H\\cap F)=0{,}1800\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>«Ni históricas ni de fantasía» es el contrario de la unión, por las leyes de De Morgan<i class='n' data-t='th'>Leyes de De Morgan: \\(A^c\\cap B^c=(A\\cup B)^c\\) y \\(A^c\\cup B^c=(A\\cap B)^c\\).</i>, y la unión se calcula con su fórmula<i class='n' data-t='th'>\\(P(A\\cup B)\\) \\(=P(A)+P(B)-P(A\\cap B)\\): se resta la intersección porque se ha sumado dos veces.</i>:</p>\\[\\begin{aligned}P(H^c\\cap F^c)&=1-P(H\\cup F)\\\\&=1-\\bigl(0{,}45+0{,}6-0{,}18\\bigr)\\\\&=1-0{,}87\\end{aligned}\\]<div class='res'>\\(P(H^c\\cap F^c)=0{,}13\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Sabemos que no ha comprado novela histórica: es una probabilidad condicionada. Por su definición<i class='n' data-t='th'>Definición de probabilidad condicionada: \\(P(A\\mid B)=\\dfrac{P(A\\cap B)}{P(B)}\\).</i>:</p>\\[\\begin{aligned}P(F\\mid H^c)&=\\frac{P(F\\cap H^c)}{P(H^c)}\\\\&=\\frac{0{,}6-0{,}18}{0{,}55}=\\frac{0{,}42}{0{,}55}\\end{aligned}\\]<div class='res'>\\(P(F\\mid H^c)\\approx0{,}7636\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "prob",
+     "tipo": "suc",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "prob",
+     "tipo": "cond",
+     "apartados": "c"
+    },
+    {
+     "tema": "prob",
+     "tipo": "tabla",
+     "apartados": "alternativa"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2024-reserva-1-6",
+   "n": 6,
+   "bloque": "C",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Una fábrica dispone de 3 máquinas \\(A\\), \\(B\\) y \\(C\\) para la fabricación de una cierta pieza. El 25 % de las piezas son fabricadas por la máquina \\(A\\), el 35 % por \\(B\\) y el resto por \\(C\\). Tras un estudio se determina que el 2,05 % del total de las piezas fabricadas son defectuosas y que el 1 % de las piezas fabricadas por \\(B\\) son defectuosas.",
+    "apartados": [
+     "(1,25 p.) Se selecciona una pieza al azar y resulta no ser defectuosa, ¿qué probabilidad hay de que fuera fabricada por la máquina \\(B\\)?",
+     "(1,25 p.) Si \\(A\\) y \\(C\\) tienen la misma probabilidad de fabricar una pieza defectuosa, ¿cuál es la probabilidad de que una pieza sea fabricada por \\(A\\) sabiendo que es defectuosa?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Diagrama de árbol",
+     "html": "<div class='ex'><p>Sean \\(A\\), \\(B\\), \\(C\\): «la pieza la fabrica la máquina A, B, C» y \\(D\\): «es defectuosa». Datos<i class='n' data-t='why'>C fabrica el resto: \\(1-0{,}25-0{,}35=0{,}40\\). Las probabilidades de defecto de A y C (\\(q\\), \\(q'\\)) no se conocen.</i>: \\(P(D)=0{,}0205\\) y \\(P(D\\mid B)=0{,}01\\).</p><svg viewBox='0 0 420 260' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><circle cx='18' cy='130.0' r='4' fill='#9d174d'/><line x1='26' y1='130.0' x2='146' y2='40.0' stroke='#9d174d' stroke-width='1.5'/><text x='84.0' y='80.0' font-size='11' text-anchor='middle' fill='#9d174d'>0,25</text><text x='150' y='44.0' font-size='12' font-weight='bold'>A</text><line x1='167' y1='40.0' x2='366' y2='20.0' stroke='#9d174d' stroke-width='1.3'/><text x='310.3' y='21.6' font-size='11' text-anchor='middle' fill='#9d174d'>q</text><text x='370' y='24.0' font-size='12' font-weight='bold'>D</text><line x1='167' y1='40.0' x2='366' y2='60.0' stroke='#9d174d' stroke-width='1.3'/><text x='310.3' y='50.4' font-size='11' text-anchor='middle' fill='#9d174d'>1−q</text><text x='370' y='64.0' font-size='12' font-weight='bold'>Dᶜ</text><line x1='26' y1='130.0' x2='146' y2='120.0' stroke='#9d174d' stroke-width='1.5'/><text x='84.0' y='120.0' font-size='11' text-anchor='middle' fill='#9d174d'>0,35</text><text x='150' y='124.0' font-size='12' font-weight='bold'>B</text><line x1='167' y1='120.0' x2='366' y2='100.0' stroke='#9d174d' stroke-width='1.3'/><text x='310.3' y='101.6' font-size='11' text-anchor='middle' fill='#9d174d'>0,01</text><text x='370' y='104.0' font-size='12' font-weight='bold'>D</text><line x1='167' y1='120.0' x2='366' y2='140.0' stroke='#9d174d' stroke-width='1.3'/><text x='310.3' y='130.4' font-size='11' text-anchor='middle' fill='#9d174d'>0,99</text><text x='370' y='144.0' font-size='12' font-weight='bold'>Dᶜ</text><line x1='26' y1='130.0' x2='146' y2='200.0' stroke='#9d174d' stroke-width='1.5'/><text x='84.0' y='160.0' font-size='11' text-anchor='middle' fill='#9d174d'>0,40</text><text x='150' y='204.0' font-size='12' font-weight='bold'>C</text><line x1='167' y1='200.0' x2='366' y2='180.0' stroke='#9d174d' stroke-width='1.3'/><text x='310.3' y='181.6' font-size='11' text-anchor='middle' fill='#9d174d'>q'</text><text x='370' y='184.0' font-size='12' font-weight='bold'>D</text><line x1='167' y1='200.0' x2='366' y2='220.0' stroke='#9d174d' stroke-width='1.3'/><text x='310.3' y='210.4' font-size='11' text-anchor='middle' fill='#9d174d'>1−q'</text><text x='370' y='224.0' font-size='12' font-weight='bold'>Dᶜ</text></svg></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Por el teorema de Bayes<i class='n' data-t='th'>Teorema de Bayes: se parte de la definición de probabilidad condicionada, \\(P(A\\mid B)=\\dfrac{P(A\\cap B)}{P(B)}\\), y el numerador es la rama del árbol que llega a \\(A\\cap B\\).</i>:</p>\\[\\begin{aligned}P(B\\mid D^c)&=\\frac{P(B\\cap D^c)}{P(D^c)}\\\\&=\\frac{P(B)\\cdot P(D^c\\mid B)}{1-P(D)}\\end{aligned}\\]\\[=\\frac{0{,}35\\cdot0{,}99}{0{,}9795}\\]<div class='res'>\\(P(B\\mid D^c)=\\dfrac{0{,}3465}{0{,}9795}\\) \\(\\approx0{,}3538\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Ahora \\(q=q'=P(D\\mid A)\\) \\(=P(D\\mid C)\\). Planteamos el teorema de la probabilidad total<i class='n' data-t='th'>Teorema de la probabilidad total: la probabilidad de un suceso es la suma de las probabilidades de todas las ramas del árbol que llegan a él.</i>:</p>\\[\\begin{aligned}P(D)&=0{,}25\\,q\\\\&\\quad+0{,}35\\cdot0{,}01+0{,}40\\,q\\\\&=0{,}0205\\\\&\\iff0{,}65\\,q=0{,}017\\\\&\\iff q=\\frac{0{,}017}{0{,}65}\\\\&\\approx0{,}02615\\end{aligned}\\]<p>Por el teorema de Bayes<i class='n' data-t='th'>Teorema de Bayes: se parte de la definición de probabilidad condicionada, \\(P(A\\mid B)=\\dfrac{P(A\\cap B)}{P(B)}\\), y el numerador es la rama del árbol que llega a \\(A\\cap B\\).</i>:</p>\\[\\begin{aligned}P(A\\mid D)&=\\frac{P(A\\cap D)}{P(D)}\\\\&=\\frac{P(A)\\cdot P(D\\mid A)}{P(D)}\\\\&=\\frac{0{,}25\\cdot\\frac{0{,}017}{0{,}65}}{0{,}0205}\\end{aligned}\\]<div class='res'>\\(P(A\\mid D)\\approx0{,}3189\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "prob",
+     "tipo": "arbol",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "prob",
+     "tipo": "cond",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2024-reserva-1-7",
+   "n": 7,
+   "bloque": "D",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Se ha administrado un determinado medicamento a una muestra de 220 enfermos de una población que padece una cierta enfermedad y se ha observado una respuesta positiva en 165 de ellos.",
+    "apartados": [
+     "(1,5 p.) Estime, mediante un intervalo de confianza del 97,5 %, la proporción de enfermos que responderían positivamente si este medicamento se administrase a la población de la que se ha extraído la muestra. Según el intervalo obtenido, razone si puede admitirse que el porcentaje de enfermos que responderían positivamente al medicamento administrado es del 70 %.",
+     "(1 p.) Con el mismo nivel de confianza y la misma proporción muestral, ¿cuál debe ser el tamaño mínimo de una nueva muestra para que el error de estimación sea menor que el 2,5 %?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento (teoría)",
+     "html": "<div class='ex'><p>Sea \\(p\\) la proporción de enfermos que responderían positivamente al medicamento en la población, que es desconocida. Para estimarla consideramos la variable aleatoria \\(\\hat p\\), «proporción de enfermos que responderían positivamente al medicamento en una muestra aleatoria de tamaño \\(n\\)», y llamamos \\(\\hat q=1-\\hat p\\). Según el enunciado, la muestra tiene \\(n=220\\) elementos y en ella</p>\\[\\hat p=\\dfrac{165}{220}=0{,}75\\]\\[\\hat q=1-0{,}75=0{,}25\\]<p>Según el teorema central del límite, como \\(n=220\\ge30\\), \\(n\\hat p=165\\ge5\\) y \\(n\\hat q=55\\ge5\\), la proporción muestral sigue aproximadamente una distribución normal de media \\(p\\) y desviación típica \\(\\sqrt{p(1-p)/n}\\)<i class='n' data-t='th'>Teorema central del límite para proporciones: si \\(n\\ge30\\), \\(n\\hat p\\ge5\\) y \\(n\\hat q\\ge5\\), la proporción muestral se aproxima por \\(N\\left(p,\\sqrt{\\frac{p(1-p)}n}\\right)\\).</i>:</p>\\[\\hat p\\sim N\\left(p,\\ \\sqrt{\\frac{p(1-p)}n}\\right)\\]<p>Si tipificamos, obtenemos una normal estándar, \\(Z=\\dfrac{\\hat p-p}{\\sqrt{p(1-p)/n}}\\sim N(0,1)\\). Para un nivel de confianza \\(1-\\alpha\\) buscamos el valor crítico \\(z_{1-\\alpha/2}\\) que deja entre \\(-z_{1-\\alpha/2}\\) y \\(z_{1-\\alpha/2}\\) una probabilidad \\(1-\\alpha\\). Despejando \\(p\\) se obtiene el intervalo de confianza para la proporción poblacional; como \\(p\\) es desconocida, en el error se sustituye por \\(\\hat p\\):</p>\\[IC_{1-\\alpha}(p)=(\\hat p-E,\\ \\hat p+E)\\]\\[E=z_{1-\\alpha/2}\\sqrt{\\frac{\\hat p\\,\\hat q}n}\\]<p>donde \\(E\\) es el error máximo de la estimación. Si se exige que el error sea menor que una cantidad \\(E_0\\), despejamos \\(n\\):</p>\\[z_{1-\\alpha/2}\\sqrt{\\frac{\\hat p\\,\\hat q}n}\\lt E_0\\]\\[\\begin{aligned}&\\\\&\\iff n\\gt\\frac{z_{1-\\alpha/2}^2\\,\\hat p\\,\\hat q}{E_0^2}\\end{aligned}\\]<p>y, como \\(n\\) es un número de individuos, se redondea siempre hacia arriba.</p></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Nivel de confianza: \\(1-\\alpha=0{,}975\\), luego \\(\\alpha=0{,}025\\) y \\(\\dfrac\\alpha2=0{,}0125\\).</p>\\[P\\left(Z\\lt z_{1-\\alpha/2}\\right)=1-\\frac\\alpha2\\]\\[\\begin{aligned}P\\left(Z\\lt z_{1-\\alpha/2}\\right)&=1-0{,}0125\\\\&=0{,}9875\\end{aligned}\\]<p>Busco \\(0{,}9875\\) en el interior de la tabla \\(N(0,1)\\): \\(P(Z\\lt2{,}24)=0{,}9875\\):</p>\\[\\Rightarrow\\ z_{1-\\alpha/2}=2{,}24\\]<div style='overflow-x:auto'><svg viewBox='0 0 320 170' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='8.0,135.0 8.0,134.9 9.0,134.9 10.1,134.9 11.1,134.9 12.2,134.9 13.2,134.9 14.2,134.8 15.3,134.8 16.3,134.8 17.4,134.8 18.4,134.8 19.4,134.8 20.5,134.7 21.5,134.7 22.6,134.7 23.6,134.6 24.6,134.6 25.7,134.6 26.7,134.5 27.8,134.5 28.8,134.4 29.8,134.4 30.9,134.3 31.9,134.3 33.0,134.2 34.0,134.2 35.0,134.1 36.1,134.0 37.1,133.9 38.2,133.8 39.2,133.7 40.2,133.6 41.3,133.5 42.3,133.4 43.4,133.3 44.4,133.2 45.4,133.0 46.5,132.9 47.5,132.7 48.6,132.5 49.6,132.3 50.6,132.1 51.7,131.9 52.7,131.7 53.8,131.5 54.8,131.2 55.8,131.0 56.9,130.7 57.9,130.4 59.0,130.1 60.0,129.7 61.0,129.4 62.1,129.0 63.1,128.6 64.2,128.2 65.2,127.8 66.2,127.3 67.3,126.8 68.3,126.3 69.4,125.8 70.4,125.3 70.4,135.0' fill='#e8487a' fill-opacity='.28' stroke='none'/><polygon points='249.6,135.0 249.6,125.3 250.6,125.8 251.7,126.3 252.7,126.8 253.8,127.3 254.8,127.8 255.8,128.2 256.9,128.6 257.9,129.0 259.0,129.4 260.0,129.7 261.0,130.1 262.1,130.4 263.1,130.7 264.2,131.0 265.2,131.2 266.2,131.5 267.3,131.7 268.3,131.9 269.4,132.1 270.4,132.3 271.4,132.5 272.5,132.7 273.5,132.9 274.6,133.0 275.6,133.2 276.6,133.3 277.7,133.4 278.7,133.5 279.8,133.6 280.8,133.7 281.8,133.8 282.9,133.9 283.9,134.0 285.0,134.1 286.0,134.2 287.0,134.2 288.1,134.3 289.1,134.3 290.2,134.4 291.2,134.4 292.2,134.5 293.3,134.5 294.3,134.6 295.4,134.6 296.4,134.6 297.4,134.7 298.5,134.7 299.5,134.7 300.6,134.8 301.6,134.8 302.6,134.8 303.7,134.8 304.7,134.8 305.8,134.8 306.8,134.9 307.8,134.9 308.9,134.9 309.9,134.9 311.0,134.9 312.0,134.9 312.0,135.0' fill='#e8487a' fill-opacity='.28' stroke='none'/><polygon points='70.4,135.0 70.4,125.3 73.4,123.5 76.4,121.5 79.4,119.3 82.3,116.8 85.3,114.0 88.3,111.0 91.3,107.6 94.3,103.9 97.3,100.0 100.3,95.8 103.3,91.2 106.2,86.5 109.2,81.5 112.2,76.4 115.2,71.1 118.2,65.7 121.2,60.3 124.2,54.9 127.1,49.6 130.1,44.4 133.1,39.5 136.1,34.9 139.1,30.6 142.1,26.7 145.1,23.4 148.1,20.5 151.0,18.3 154.0,16.6 157.0,15.7 160.0,15.3 163.0,15.7 166.0,16.6 169.0,18.3 171.9,20.5 174.9,23.4 177.9,26.7 180.9,30.6 183.9,34.9 186.9,39.5 189.9,44.4 192.9,49.6 195.8,54.9 198.8,60.3 201.8,65.7 204.8,71.1 207.8,76.4 210.8,81.5 213.8,86.5 216.7,91.2 219.7,95.8 222.7,100.0 225.7,103.9 228.7,107.6 231.7,111.0 234.7,114.0 237.7,116.8 240.6,119.3 243.6,121.5 246.6,123.5 249.6,125.3 249.6,135.0' fill='#6d4ae0' fill-opacity='.35' stroke='none'/><polyline points='8.0,134.9 10.5,134.9 13.1,134.9 15.6,134.8 18.1,134.8 20.7,134.7 23.2,134.7 25.7,134.6 28.3,134.5 30.8,134.4 33.3,134.2 35.9,134.0 38.4,133.8 40.9,133.6 43.5,133.3 46.0,132.9 48.5,132.5 51.1,132.1 53.6,131.5 56.1,130.9 58.7,130.2 61.2,129.3 63.7,128.4 66.3,127.3 68.8,126.1 71.3,124.7 73.9,123.2 76.4,121.5 78.9,119.6 81.5,117.6 84.0,115.3 86.5,112.8 89.1,110.2 91.6,107.3 94.1,104.2 96.7,100.8 99.2,97.3 101.7,93.6 104.3,89.7 106.8,85.6 109.3,81.3 111.9,77.0 114.4,72.5 116.9,68.0 119.5,63.4 122.0,58.8 124.5,54.2 127.1,49.7 129.6,45.3 132.1,41.1 134.7,37.1 137.2,33.3 139.7,29.7 142.3,26.5 144.8,23.7 147.3,21.2 149.9,19.1 152.4,17.5 154.9,16.3 157.5,15.6 160.0,15.3 162.5,15.6 165.1,16.3 167.6,17.5 170.1,19.1 172.7,21.2 175.2,23.7 177.7,26.5 180.3,29.7 182.8,33.3 185.3,37.1 187.9,41.1 190.4,45.3 192.9,49.7 195.5,54.2 198.0,58.8 200.5,63.4 203.1,68.0 205.6,72.5 208.1,77.0 210.7,81.3 213.2,85.6 215.7,89.7 218.3,93.6 220.8,97.3 223.3,100.8 225.9,104.2 228.4,107.3 230.9,110.2 233.5,112.8 236.0,115.3 238.5,117.6 241.1,119.6 243.6,121.5 246.1,123.2 248.7,124.7 251.2,126.1 253.7,127.3 256.3,128.4 258.8,129.3 261.3,130.2 263.9,130.9 266.4,131.5 268.9,132.1 271.5,132.5 274.0,132.9 276.5,133.3 279.1,133.6 281.6,133.8 284.1,134.0 286.7,134.2 289.2,134.4 291.7,134.5 294.3,134.6 296.8,134.7 299.3,134.7 301.9,134.8 304.4,134.8 306.9,134.9 309.5,134.9 312.0,134.9' fill='none' stroke='#2f6df0' stroke-width='2'/><line x1='4.0' y1='135.0' x2='316.0' y2='135.0' stroke='currentColor' stroke-width='1.2'/><line x1='70.4' y1='139.0' x2='70.4' y2='125.3' stroke='#6d4ae0' stroke-width='1.4' stroke-dasharray='3 2'/><text x='70.4' y='152.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>−z<tspan font-size='8' dy='3'>1−α/2</tspan></text><line x1='249.6' y1='139.0' x2='249.6' y2='125.3' stroke='#6d4ae0' stroke-width='1.4' stroke-dasharray='3 2'/><text x='249.6' y='152.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>z<tspan font-size='8' dy='3'>1−α/2</tspan></text><text x='249.6' y='165.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>= 2,24</text><text x='160.0' y='87.0' text-anchor='middle' font-size='12' font-weight='700'>1 − α = 0,975</text><line x1='60.4' y1='132.6' x2='36.0' y2='105.0' stroke='#c2185b' stroke-width='1'/><text x='8.0' y='102.0' text-anchor='start' font-size='10' fill='#c2185b'>α/2 = 0,0125</text><line x1='259.6' y1='132.6' x2='284.0' y2='105.0' stroke='#c2185b' stroke-width='1'/><text x='312.0' y='102.0' text-anchor='end' font-size='10' fill='#c2185b'>α/2 = 0,0125</text><text x='160.0' y='148.0' text-anchor='middle' font-size='9.5'>0</text></svg></div><p>Calculamos el error máximo de la estimación:</p>\\[\\begin{aligned}E&=2{,}24\\sqrt{\\frac{0{,}75\\cdot0{,}25}{220}}\\\\&=2{,}24\\cdot0{,}0292\\\\&\\approx0{,}0654\\end{aligned}\\]<p>Por tanto, los extremos del intervalo son:</p>\\[\\begin{aligned}IC_{0{,}975}(p)&=(0{,}75-0{,}0654;\\ 0{,}75+0{,}0654)\\\\&=(0{,}6846;\\ 0{,}8154)\\end{aligned}\\]<p>El valor \\(0{,}70\\) pertenece al intervalo.</p><div class='res'>\\(IC_{0{,}975}(p)\\) \\(=(0{,}6846;\\ 0{,}8154)\\). Sí puede admitirse que el porcentaje sea el 70 %</div><p><b>Conclusión:</b> podemos afirmar, con un nivel de confianza del 97,5 %, que la proporción de enfermos que responderían positivamente al medicamento se encuentra entre 0,6846 y 0,8154, es decir, entre el 68,46 % y el 81,54 %.</p></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'>\\[\\begin{aligned}&2{,}24\\sqrt{\\frac{0{,}1875}{n}}\\lt0{,}025\\\\&\\iff n\\gt\\frac{2{,}24^2\\cdot0{,}1875}{0{,}025^2}\\\\&\\approx1505{,}3\\end{aligned}\\]<i class='n' data-t='err'>Tamaño mínimo: se redondea hacia arriba.</i><div class='res'>Hacen falta, como mínimo, 1506 enfermos</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "inf",
+     "tipo": "prop",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "inf",
+     "tipo": "interp",
+     "apartados": "a"
+    },
+    {
+     "tema": "inf",
+     "tipo": "tam",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2024-reserva-1-8",
+   "n": 8,
+   "bloque": "D",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Un atleta obtiene los siguientes tiempos, en minutos, de 10 repeticiones cronometradas de una prueba: \\[2{,}71\\ \\ 3{,}84\\ \\ 3{,}26\\ \\ 2{,}28\\ \\ 2{,}86\\ \\ 3{,}08\\ \\ 3{,}07\\ \\ 2{,}46\\ \\ 2{,}54\\ \\ 2{,}58\\] Por experiencias anteriores se sabe que el tiempo en cada repetición sigue una ley Normal de media desconocida y desviación típica 0,36 minutos.",
+    "apartados": [
+     "(1,25 p.) Calcule un intervalo de confianza para el tiempo medio de estas repeticiones con un 93,5 % de confianza.",
+     "(1,25 p.) ¿Cuántas repeticiones como mínimo se tendrán que cronometrar si se quiere obtener un error en la estimación del tiempo medio inferior a 0,05 minutos manteniendo el mismo nivel de confianza?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento (teoría)",
+     "html": "<div class='ex'><p>Sea \\(X\\) la variable aleatoria «tiempo, en minutos, que tarda el atleta en una repetición de la prueba». Según el enunciado, \\(X\\) sigue una distribución normal de media \\(\\mu\\) desconocida y desviación típica \\(\\sigma=0{,}36\\):</p>\\[X\\sim N\\left(\\mu,\\ 0{,}36\\right)\\]<p>Tomamos muestras aleatorias simples de tamaño \\(n=10\\) y estudiamos la media muestral \\(\\bar X\\). Aunque \\(n=10\\lt30\\), como la población es normal, la media muestral también sigue una distribución normal (el teorema central del límite garantiza esto para cualquier población cuando \\(n\\ge30\\)), con la misma media que la población y desviación típica \\(\\dfrac\\sigma{\\sqrt n}\\)<i class='n' data-t='th'>Teorema central del límite: si una población tiene media \\(\\mu\\) y desviación típica \\(\\sigma\\), la media de las muestras de tamaño \\(n\\) se distribuye \\(N\\left(\\mu,\\frac\\sigma{\\sqrt n}\\right)\\), exactamente si la población es normal y de forma aproximada si \\(n\\ge30\\).</i>:</p>\\[\\bar X\\sim N\\left(\\mu,\\ \\frac{\\sigma}{\\sqrt n}\\right)\\]<p>Si tipificamos, obtenemos una normal estándar, \\(Z=\\dfrac{\\bar X-\\mu}{\\sigma/\\sqrt n}\\sim N(0,1)\\). Para un nivel de confianza \\(1-\\alpha\\) buscamos el valor crítico \\(z_{1-\\alpha/2}\\) que deja entre \\(-z_{1-\\alpha/2}\\) y \\(z_{1-\\alpha/2}\\) una probabilidad \\(1-\\alpha\\). Despejando \\(\\mu\\) se obtiene el intervalo de confianza para la media poblacional:</p>\\[IC_{1-\\alpha}(\\mu)=(\\bar x-E,\\ \\bar x+E)\\]\\[E=z_{1-\\alpha/2}\\cdot\\frac\\sigma{\\sqrt n}\\]<p>donde \\(\\bar x\\) es la media de nuestra muestra y \\(E\\) es el error máximo de la estimación. Si se exige que el error sea menor que una cantidad \\(E_0\\), despejamos \\(n\\):</p>\\[z_{1-\\alpha/2}\\frac\\sigma{\\sqrt n}\\lt E_0\\]\\[\\iff n\\gt\\left(\\frac{z_{1-\\alpha/2}\\,\\sigma}{E_0}\\right)^2\\]<p>y, como \\(n\\) es un número de individuos, se redondea siempre hacia arriba.</p></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Media muestral: \\(\\bar x=\\dfrac{28{,}68}{10}=2{,}868\\).</p><p>Nivel de confianza: \\(1-\\alpha=0{,}935\\), luego \\(\\alpha=0{,}065\\) y \\(\\dfrac\\alpha2=0{,}0325\\).</p>\\[P\\left(Z\\lt z_{1-\\alpha/2}\\right)=1-\\frac\\alpha2\\]\\[\\begin{aligned}P\\left(Z\\lt z_{1-\\alpha/2}\\right)&=1-0{,}0325\\\\&=0{,}9675\\end{aligned}\\]<p>Busco \\(0{,}9675\\) en el interior de la tabla \\(N(0,1)\\): no aparece exacto; está entre \\(P(Z\\lt1{,}84)=0{,}9671\\) y \\(P(Z\\lt1{,}85)=0{,}9678\\), y el más próximo es \\(0{,}9678\\)<i class='n' data-t='tp'>Las directrices del examen aceptan interpolar o tomar el valor más cercano de la tabla.</i>:</p>\\[\\Rightarrow\\ z_{1-\\alpha/2}=1{,}85\\]<div style='overflow-x:auto'><svg viewBox='0 0 320 170' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='8.0,135.0 8.0,134.9 9.3,134.9 10.6,134.9 11.9,134.9 13.2,134.9 14.5,134.8 15.8,134.8 17.1,134.8 18.4,134.8 19.7,134.7 21.0,134.7 22.3,134.7 23.6,134.6 24.9,134.6 26.2,134.6 27.5,134.5 28.8,134.4 30.1,134.4 31.4,134.3 32.7,134.2 34.0,134.2 35.3,134.1 36.6,134.0 37.9,133.9 39.2,133.7 40.5,133.6 41.8,133.5 43.1,133.3 44.4,133.2 45.7,133.0 47.0,132.8 48.3,132.6 49.6,132.3 50.9,132.1 52.2,131.8 53.5,131.5 54.8,131.2 56.1,130.9 57.4,130.5 58.7,130.2 60.0,129.7 61.3,129.3 62.6,128.8 63.9,128.3 65.2,127.8 66.5,127.2 67.8,126.6 69.1,126.0 70.4,125.3 71.7,124.5 73.0,123.8 74.3,122.9 75.6,122.1 76.9,121.2 78.2,120.2 79.5,119.2 80.8,118.1 82.1,117.0 83.4,115.9 84.7,114.7 86.0,113.4 86.0,135.0' fill='#e8487a' fill-opacity='.28' stroke='none'/><polygon points='234.0,135.0 234.0,113.4 235.3,114.7 236.6,115.9 237.9,117.0 239.2,118.1 240.5,119.2 241.8,120.2 243.1,121.2 244.4,122.1 245.7,122.9 247.0,123.8 248.3,124.5 249.6,125.3 250.9,126.0 252.2,126.6 253.5,127.2 254.8,127.8 256.1,128.3 257.4,128.8 258.7,129.3 260.0,129.7 261.3,130.2 262.6,130.5 263.9,130.9 265.2,131.2 266.5,131.5 267.8,131.8 269.1,132.1 270.4,132.3 271.7,132.6 273.0,132.8 274.3,133.0 275.6,133.2 276.9,133.3 278.2,133.5 279.5,133.6 280.8,133.7 282.1,133.9 283.4,134.0 284.7,134.1 286.0,134.2 287.3,134.2 288.6,134.3 289.9,134.4 291.2,134.4 292.5,134.5 293.8,134.6 295.1,134.6 296.4,134.6 297.7,134.7 299.0,134.7 300.3,134.7 301.6,134.8 302.9,134.8 304.2,134.8 305.5,134.8 306.8,134.9 308.1,134.9 309.4,134.9 310.7,134.9 312.0,134.9 312.0,135.0' fill='#e8487a' fill-opacity='.28' stroke='none'/><polygon points='86.0,135.0 86.0,113.4 88.5,110.8 90.9,108.0 93.4,105.1 95.9,101.9 98.3,98.5 100.8,95.0 103.3,91.2 105.7,87.3 108.2,83.3 110.7,79.1 113.1,74.8 115.6,70.4 118.1,65.9 120.5,61.4 123.0,57.0 125.5,52.6 127.9,48.2 130.4,44.0 132.9,39.9 135.3,36.0 137.8,32.4 140.3,29.0 142.7,26.0 145.2,23.2 147.7,20.9 150.1,18.9 152.6,17.3 155.1,16.2 157.5,15.5 160.0,15.3 162.5,15.5 164.9,16.2 167.4,17.3 169.9,18.9 172.3,20.9 174.8,23.2 177.3,26.0 179.7,29.0 182.2,32.4 184.7,36.0 187.1,39.9 189.6,44.0 192.1,48.2 194.5,52.6 197.0,57.0 199.5,61.4 201.9,65.9 204.4,70.4 206.9,74.8 209.3,79.1 211.8,83.3 214.3,87.3 216.7,91.2 219.2,95.0 221.7,98.5 224.1,101.9 226.6,105.1 229.1,108.0 231.5,110.8 234.0,113.4 234.0,135.0' fill='#6d4ae0' fill-opacity='.35' stroke='none'/><polyline points='8.0,134.9 10.5,134.9 13.1,134.9 15.6,134.8 18.1,134.8 20.7,134.7 23.2,134.7 25.7,134.6 28.3,134.5 30.8,134.4 33.3,134.2 35.9,134.0 38.4,133.8 40.9,133.6 43.5,133.3 46.0,132.9 48.5,132.5 51.1,132.1 53.6,131.5 56.1,130.9 58.7,130.2 61.2,129.3 63.7,128.4 66.3,127.3 68.8,126.1 71.3,124.7 73.9,123.2 76.4,121.5 78.9,119.6 81.5,117.6 84.0,115.3 86.5,112.8 89.1,110.2 91.6,107.3 94.1,104.2 96.7,100.8 99.2,97.3 101.7,93.6 104.3,89.7 106.8,85.6 109.3,81.3 111.9,77.0 114.4,72.5 116.9,68.0 119.5,63.4 122.0,58.8 124.5,54.2 127.1,49.7 129.6,45.3 132.1,41.1 134.7,37.1 137.2,33.3 139.7,29.7 142.3,26.5 144.8,23.7 147.3,21.2 149.9,19.1 152.4,17.5 154.9,16.3 157.5,15.6 160.0,15.3 162.5,15.6 165.1,16.3 167.6,17.5 170.1,19.1 172.7,21.2 175.2,23.7 177.7,26.5 180.3,29.7 182.8,33.3 185.3,37.1 187.9,41.1 190.4,45.3 192.9,49.7 195.5,54.2 198.0,58.8 200.5,63.4 203.1,68.0 205.6,72.5 208.1,77.0 210.7,81.3 213.2,85.6 215.7,89.7 218.3,93.6 220.8,97.3 223.3,100.8 225.9,104.2 228.4,107.3 230.9,110.2 233.5,112.8 236.0,115.3 238.5,117.6 241.1,119.6 243.6,121.5 246.1,123.2 248.7,124.7 251.2,126.1 253.7,127.3 256.3,128.4 258.8,129.3 261.3,130.2 263.9,130.9 266.4,131.5 268.9,132.1 271.5,132.5 274.0,132.9 276.5,133.3 279.1,133.6 281.6,133.8 284.1,134.0 286.7,134.2 289.2,134.4 291.7,134.5 294.3,134.6 296.8,134.7 299.3,134.7 301.9,134.8 304.4,134.8 306.9,134.9 309.5,134.9 312.0,134.9' fill='none' stroke='#2f6df0' stroke-width='2'/><line x1='4.0' y1='135.0' x2='316.0' y2='135.0' stroke='currentColor' stroke-width='1.2'/><line x1='86.0' y1='139.0' x2='86.0' y2='113.4' stroke='#6d4ae0' stroke-width='1.4' stroke-dasharray='3 2'/><text x='86.0' y='152.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>−z<tspan font-size='8' dy='3'>1−α/2</tspan></text><line x1='234.0' y1='139.0' x2='234.0' y2='113.4' stroke='#6d4ae0' stroke-width='1.4' stroke-dasharray='3 2'/><text x='234.0' y='152.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>z<tspan font-size='8' dy='3'>1−α/2</tspan></text><text x='234.0' y='165.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>= 1,85</text><text x='160.0' y='87.0' text-anchor='middle' font-size='12' font-weight='700'>1 − α = 0,935</text><line x1='76.0' y1='129.1' x2='36.0' y2='105.0' stroke='#c2185b' stroke-width='1'/><text x='8.0' y='102.0' text-anchor='start' font-size='10' fill='#c2185b'>α/2 = 0,0325</text><line x1='244.0' y1='129.1' x2='284.0' y2='105.0' stroke='#c2185b' stroke-width='1'/><text x='312.0' y='102.0' text-anchor='end' font-size='10' fill='#c2185b'>α/2 = 0,0325</text><text x='160.0' y='148.0' text-anchor='middle' font-size='9.5'>0</text></svg></div><p>Calculamos el error máximo de la estimación:</p>\\[\\begin{aligned}E&=1{,}85\\cdot\\frac{0{,}36}{\\sqrt{10}}\\\\&\\approx0{,}2106\\end{aligned}\\]<p>Por tanto, los extremos del intervalo son:</p>\\[\\begin{aligned}IC_{0{,}935}(\\mu)&=(2{,}868-0{,}2106;\\ 2{,}868+0{,}2106)\\\\&=(2{,}6574;\\ 3{,}0786)\\end{aligned}\\]<div class='res'>\\(IC_{0{,}935}(\\mu)\\) \\(=(2{,}6574;\\ 3{,}0786)\\) minutos</div><p><b>Conclusión:</b> podemos afirmar, con un nivel de confianza del 93,5 %, que el tiempo medio del atleta en cada repetición se encuentra entre 2,6574 y 3,0786 minutos.</p></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'>\\[\\begin{aligned}&1{,}85\\cdot\\frac{0{,}36}{\\sqrt n}\\lt0{,}05\\\\&\\iff\\sqrt n\\gt\\frac{0{,}666}{0{,}05}=13{,}32\\\\&\\iff n\\gt177{,}42\\end{aligned}\\]<i class='n' data-t='err'>Tamaño mínimo: se redondea hacia arriba.</i><div class='res'>Hay que cronometrar, como mínimo, 178 repeticiones</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "inf",
+     "tipo": "ic",
+     "apartados": "a"
+    },
+    {
+     "tema": "inf",
+     "tipo": "tam",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  }
+ ]
+}

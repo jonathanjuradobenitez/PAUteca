@@ -1,0 +1,302 @@
+{
+ "version": 1,
+ "id": "matematicas-2020-reserva-1",
+ "asignatura": "matematicas",
+ "anio": 2020,
+ "convocatoria": "Reserva 1",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2020-reserva-1-1",
+   "n": 1,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Calcula \\(a\\) sabiendo que \\(\\displaystyle\\lim_{x\\to0}\\left(\\frac1{\\ln(1-x)}-\\frac{ax-1}x\\right)=\\frac72\\) (\\(\\ln\\) denota la función logaritmo neperiano).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Reducir a un cociente",
+     "html": "<div class='ex'><p>\\(\\dfrac1{\\ln(1-x)}-\\dfrac{ax-1}x=\\dfrac{x-(ax-1)\\ln(1-x)}{x\\ln(1-x)}=\\dfrac{N(x)}{D(x)}\\), con \\(N(0)=0\\) y \\(D(0)=0\\): \\(\\tfrac00\\). L'Hôpital<i class='n' data-t='th'>Regla de L'Hôpital: si \\(N(x_0)=D(x_0)=0\\) y existe \\(\\lim\\frac{N'}{D'}\\), entonces \\(\\lim\\frac ND=\\lim\\frac{N'}{D'}\\).</i>:</p>\\[N'(x)=1-a\\ln(1-x)-\\frac{1-ax}{1-x}\\ \\Rightarrow\\ N'(0)=0\\qquad D'(x)=\\ln(1-x)-\\frac x{1-x}\\ \\Rightarrow\\ D'(0)=0\\]</div>"
+    },
+    {
+     "titulo": "Segunda aplicación",
+     "html": "<div class='ex'><p>De nuevo \\(\\tfrac00\\):</p>\\[N''(x)=\\frac a{1-x}-\\frac{1-a}{(1-x)^2}\\ \\Rightarrow\\ N''(0)=2a-1\\qquad D''(x)=-\\frac1{1-x}-\\frac1{(1-x)^2}\\ \\Rightarrow\\ D''(0)=-2\\]\\[\\frac{2a-1}{-2}=\\frac72\\iff2a-1=-7\\iff a=-3\\]<div class='res'>\\(a=-3\\)</div><i class='n' data-t='tp'>Comprobación con desarrollos: \\(\\frac1{\\ln(1-x)}=-\\frac1x+\\frac12+\\dots\\), y \\(-\\frac{ax-1}x=-a+\\frac1x\\); el límite es \\(\\frac12-a=\\frac72\\Rightarrow a=-3\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "lim",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-1-2",
+   "n": 2,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea \\(f\\) la función definida por \\(f(x)=\\dfrac{-x^3+2x-3}{x^2-x}\\) para \\(x\\neq0\\), \\(x\\neq1\\). Halla la primitiva de \\(f\\) cuya gráfica pasa por el punto \\((2,3\\ln2)\\), donde \\(\\ln\\) denota la función logaritmo neperiano.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "División y fracciones simples",
+     "html": "<div class='ex'><p>Grado 3 sobre grado 2: divido<i class='n' data-t='why'>Con grado(numerador) \\(\\ge\\) grado(denominador) se divide primero.</i>: \\(-x^3+2x-3=(x^2-x)(-x-1)+(x-3)\\), luego</p>\\[f(x)=-x-1+\\frac{x-3}{x(x-1)}\\qquad\\frac{x-3}{x(x-1)}=\\frac Ax+\\frac B{x-1}\\iff x-3=A(x-1)+Bx\\Rightarrow A=3,\\ B=-2\\]</div>"
+    },
+    {
+     "titulo": "Integración y condición",
+     "html": "<div class='ex'>\\[F(x)=-\\frac{x^2}2-x+3\\ln|x|-2\\ln|x-1|+C\\]<p>Por \\((2,3\\ln2)\\): \\(F(2)=-2-2+3\\ln2-0+C=3\\ln2\\Rightarrow C=4\\).</p><div class='res'>\\(F(x)=-\\dfrac{x^2}2-x+3\\ln|x|-2\\ln|x-1|+4\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "racional",
+     "apartados": ""
+    },
+    {
+     "tema": "integ",
+     "tipo": "pcond",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-1-3",
+   "n": 3,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera \\(A=\\begin{pmatrix}1&1&1\\\\1&a&b\\\\c&1&4\\end{pmatrix}\\), \\(B=\\begin{pmatrix}1\\\\1\\\\1\\end{pmatrix}\\) y \\(C=\\begin{pmatrix}3\\\\2\\\\1\\end{pmatrix}\\). Determina \\(a\\), \\(b\\) y \\(c\\), sabiendo que \\(AB=C\\) y la matriz \\(A\\) tiene rango 2.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>\\(AB\\) es la suma de cada fila de \\(A\\): \\(\\begin{pmatrix}3\\\\1+a+b\\\\c+5\\end{pmatrix}=\\begin{pmatrix}3\\\\2\\\\1\\end{pmatrix}\\Rightarrow a+b=1\\) y \\(c=-4\\).</p><p>\\(\\operatorname{rg}A=2\\) exige \\(|A|=0\\)<i class='n' data-t='th'>Una matriz \\(3\\times3\\) de rango 2 tiene determinante 0 (y algún menor \\(2\\times2\\) no nulo).</i>:</p>\\[|A|=\\begin{vmatrix}1&1&1\\\\1&a&b\\\\-4&1&4\\end{vmatrix}=(4a-b)-(4+4b)+(1+4a)=8a-5b-3=0\\]<p>Con \\(b=1-a\\): \\(8a-5+5a-3=0\\Rightarrow13a=8\\Rightarrow a=\\frac8{13}\\), \\(b=\\frac5{13}\\). El rango es 2 (las filas 1 y 2 no son proporcionales).</p><div class='res'>\\(a=\\dfrac8{13}\\), \\(b=\\dfrac5{13}\\) y \\(c=-4\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "ecmat",
+     "apartados": ""
+    },
+    {
+     "tema": "matrices",
+     "tipo": "rango",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-1-4",
+   "n": 4,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el tetraedro de vértices \\(A(0,0,0)\\), \\(B(1,1,0)\\), \\(C(0,1,3)\\) y \\(D(1,0,3)\\).",
+    "apartados": [
+     "(1 p.) Calcula el volumen de dicho tetraedro.",
+     "(1,5 p.) Calcula la medida de la altura trazada desde el vértice \\(A\\) de dicho tetraedro."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'>\\[V=\\frac16\\bigl|[\\overrightarrow{AB},\\overrightarrow{AC},\\overrightarrow{AD}]\\bigr|=\\frac16\\left|\\begin{vmatrix}1&1&0\\\\0&1&3\\\\1&0&3\\end{vmatrix}\\right|=\\frac16\\cdot6\\]<div class='res'>\\(V=1\\ u^3\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(V=\\frac13\\,\\text{Área}(BCD)\\cdot h\\)<i class='n' data-t='th'>Volumen del tetraedro \\(=\\frac13\\)(área de la base)\\(\\cdot\\)(altura). La altura desde \\(A\\) es la distancia de \\(A\\) al plano \\(BCD\\).</i>. Con \\(\\overrightarrow{BC}=(-1,0,3)\\) y \\(\\overrightarrow{BD}=(0,-1,3)\\):</p>\\[\\overrightarrow{BC}\\times\\overrightarrow{BD}=(3,3,1)\\qquad\\text{Área}(BCD)=\\frac{\\sqrt{19}}2\\qquad h=\\frac{3V}{\\text{Área}}=\\frac3{\\sqrt{19}/2}\\]<div class='res'>\\(h=\\dfrac6{\\sqrt{19}}=\\dfrac{6\\sqrt{19}}{19}\\approx1{,}376\\) unidades</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "area",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "dist",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-1-5",
+   "n": 5,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Una familia desea acotar una zona rectangular en el jardín de su casa para dedicarla al cultivo ecológico. Para ello dispone de 96 metros de valla, pero necesita dejar una abertura de 4 metros en uno de los laterales para instalar una puerta. Determina las dimensiones de la zona rectangular de área máxima que puede acotarse de esta manera y el valor de dicha área.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>Sean \\(x\\) e \\(y\\) los lados del rectángulo. El perímetro es \\(2x+2y\\); como hay una abertura de 4 m sin valla, la valla es \\(2x+2y-4=96\\Rightarrow x+y=50\\Rightarrow y=50-x\\). Área:</p>\\[A(x)=x(50-x)=50x-x^2,\\qquad0\\lt x\\lt50\\]</div>"
+    },
+    {
+     "titulo": "Máximo",
+     "html": "<div class='ex'>\\[A'(x)=50-2x=0\\iff x=25\\qquad A''(x)=-2\\lt0\\]<p>Es un máximo<i class='n' data-t='th'>\\(A'(x_0)=0\\) y \\(A''(x_0)\\lt0\\): máximo relativo; la parábola es abierta hacia abajo, luego es absoluto.</i>. Entonces \\(y=25\\).</p><div class='res'>Zona cuadrada de \\(25\\times25\\) m, con área máxima de \\(625\\) m\\(^2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "opt",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-1-6",
+   "n": 6,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Calcula \\(\\displaystyle\\int\\ln(x^2+2x+2)\\,dx\\), donde \\(\\ln\\) denota la función logaritmo neperiano. (Sugerencia: efectúa el cambio de variable \\(t=x+1\\).)",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Cambio y partes",
+     "html": "<div class='ex'><p>\\(x^2+2x+2=(x+1)^2+1\\). Con \\(t=x+1\\), \\(dt=dx\\): \\(\\displaystyle\\int\\ln(t^2+1)\\,dt\\). Por partes: logaritmo (L) con \\(u=\\ln(t^2+1)\\), \\(dv=dt\\)<i class='n' data-t='th'>Regla ALPES: el logaritmo (L) va antes que el polinomio (P): \\(u=\\ln(t^2+1)\\), \\(dv=dt\\Rightarrow du=\\frac{2t}{t^2+1}dt\\), \\(v=t\\).</i>:</p>\\[\\int\\ln(t^2+1)\\,dt=t\\ln(t^2+1)-\\int\\frac{2t^2}{t^2+1}\\,dt=t\\ln(t^2+1)-2\\int\\left(1-\\frac1{t^2+1}\\right)dt\\]\\[=t\\ln(t^2+1)-2t+2\\operatorname{arctg}t\\]<div class='res'>\\(\\displaystyle\\int\\ln(x^2+2x+2)\\,dx=(x+1)\\ln(x^2+2x+2)-2(x+1)+2\\operatorname{arctg}(x+1)+C\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "part",
+     "apartados": ""
+    },
+    {
+     "tema": "integ",
+     "tipo": "cambio",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-1-7",
+   "n": 7,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Siendo \\(\\lambda\\) un número real, considera el siguiente sistema de ecuaciones lineales con dos incógnitas \\[\\begin{cases}x+\\lambda y=2\\\\2x+4y=1\\\\\\lambda x+y=2\\lambda\\end{cases}\\] Discútelo según los valores de \\(\\lambda\\) y resuélvelo cuando sea posible.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Discusión",
+     "html": "<div class='ex'><p>\\(M=\\begin{pmatrix}1&\\lambda\\\\2&4\\\\\\lambda&1\\end{pmatrix}\\) tiene rango 2 para cualquier \\(\\lambda\\) (por ejemplo, el menor de las filas 1 y 2, \\(4-2\\lambda\\), o el de las filas 2 y 3, \\(2-4\\lambda\\), no se anulan a la vez). \\(M^*\\) es \\(3\\times3\\):</p>\\[|M^*|=\\begin{vmatrix}1&\\lambda&2\\\\2&4&1\\\\\\lambda&1&2\\lambda\\end{vmatrix}=(8\\lambda-1)-\\lambda(4\\lambda-\\lambda)+2(2-4\\lambda)=3-3\\lambda^2=3(1-\\lambda)(1+\\lambda)\\]<p>Por Rouché-Frobenius<i class='n' data-t='th'>Con 2 incógnitas: compatible determinado si \\(\\operatorname{rg}M=\\operatorname{rg}M^*=2\\); incompatible si \\(\\operatorname{rg}M^*=3\\).</i>: si \\(\\lambda\\neq\\pm1\\), \\(\\operatorname{rg}M^*=3\\gt2\\): incompatible. Si \\(\\lambda=\\pm1\\), \\(\\operatorname{rg}M^*=2\\): compatible determinado.</p></div>"
+    },
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>\\(\\lambda=1\\): \\(x+y=2\\), \\(2x+4y=1\\): \\(x=2-y\\), \\(4-2y+4y=1\\Rightarrow y=-\\frac32\\), \\(x=\\frac72\\) (la 3.ª, \\(x+y=2\\), se cumple).</p><p>\\(\\lambda=-1\\): \\(x-y=2\\), \\(2x+4y=1\\): \\(x=2+y\\), \\(4+6y=1\\Rightarrow y=-\\frac12\\), \\(x=\\frac32\\) (la 3.ª: \\(-x+y=-2=2\\lambda\\) ✓).</p><div class='res'>\\(\\lambda\\neq\\pm1\\): incompatible. \\(\\lambda=1\\): \\((x,y)=\\left(\\frac72,-\\frac32\\right)\\). \\(\\lambda=-1\\): \\((x,y)=\\left(\\frac32,-\\frac12\\right)\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "sistemas",
+     "tipo": "disc",
+     "apartados": ""
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-1-8",
+   "n": 8,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera los puntos \\(A(-1,3,2)\\), \\(B(2,-1,-1)\\) y \\(C(a-2,7,b)\\).",
+    "apartados": [
+     "(1,25 p.) Determina \\(a\\) y \\(b\\) para que los puntos \\(A\\), \\(B\\) y \\(C\\) estén alineados.",
+     "(1,25 p.) En el caso \\(a=b=1\\), halla la recta que pasa por el origen de coordenadas y es perpendicular al plano que contiene a los puntos \\(A\\), \\(B\\) y \\(C\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Alineados \\(\\iff\\overrightarrow{AC}\\parallel\\overrightarrow{AB}\\)<i class='n' data-t='th'>Tres puntos están alineados si \\(\\overrightarrow{AB}\\) y \\(\\overrightarrow{AC}\\) son proporcionales (producto vectorial nulo).</i>. \\(\\overrightarrow{AB}=(3,-4,-3)\\), \\(\\overrightarrow{AC}=(a-1,4,b-2)\\): \\(\\frac{a-1}3=\\frac4{-4}=\\frac{b-2}{-3}\\):</p><div class='res'>\\(a-1=-3\\Rightarrow a=-2\\) y \\(b-2=3\\Rightarrow b=5\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Con \\(a=b=1\\): \\(C(-1,7,1)\\), \\(\\overrightarrow{AC}=(0,4,-1)\\). Normal del plano: \\(\\overrightarrow{AB}\\times\\overrightarrow{AC}\\):</p>\\[(3,-4,-3)\\times(0,4,-1)=(16,\\,3,\\,12)\\]<p>La recta por el origen perpendicular al plano tiene esa dirección:</p><div class='res'>\\((x,y,z)=\\lambda\\,(16,3,12)\\), es decir, \\(\\dfrac x{16}=\\dfrac y3=\\dfrac z{12}\\)</div><i class='n' data-t='tp'>Comprobación: \\((16,3,12)\\cdot(3,-4,-3)=48-12-36=0\\) ✓ y \\((16,3,12)\\cdot(0,4,-1)=12-12=0\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "pos",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "perp",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

@@ -1,0 +1,201 @@
+{
+ "version": 1,
+ "id": "fisica-2006-junio",
+ "asignatura": "fisica",
+ "anio": 2006,
+ "convocatoria": "Junio",
+ "documento": null,
+ "revision": "borrador",
+ "ejercicios": [
+  {
+   "id": "fisica-2006-junio-a1",
+   "n": "A.1",
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sean dos conductores rectilíneos paralelos por los que circulan corrientes eléctricas de igual intensidad y sentido.",
+    "apartados": [
+     "Explique qué fuerzas ejercen entre sí ambos conductores.",
+     "Represente gráficamente la situación en la que las fuerzas son repulsivas, dibujando el campo magnético y la fuerza sobre cada conductor."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Un conductor rectilíneo por el que circula corriente eléctrica crea a su alrededor un campo magnético debido al movimiento de las cargas eléctricas. Según la ley de Biot-Savart, dicho campo \\(\\vec B\\) tiene como características:</p><p>– Módulo: \\(B=\\dfrac{\\mu_0 I}{2\\pi r}\\) (aplicando la ley de Ampère o la de Biot-Savart).</p><p>– Dirección: perpendicular al movimiento de las cargas eléctricas (corriente) y perpendicular al vector \\(\\vec r\\) (distancia desde la corriente al punto considerado).</p><p>– Sentido: dado por la regla del sacacorchos (o de la mano derecha) al girar el sentido de la corriente sobre el vector \\(\\vec r\\). Las líneas de campo son circunferencias concéntricas al conductor.</p><p>Los dos conductores, con corrientes del mismo sentido, se ejercen fuerzas magnéticas de <b>atracción</b>, dadas por la ley de Laplace.</p><p>La corriente \\(I_1\\) crea un campo \\(\\vec B_{12}\\) en la zona donde está el conductor 2, y la corriente \\(I_2\\) crea un campo \\(\\vec B_{21}\\) donde está el conductor 1. Por la ley de Laplace:</p>\\[\\vec F_{12}=I_2\\,\\vec L_2\\times\\vec B_{12}\\]\\[\\vec F_{21}=I_1\\,\\vec L_1\\times\\vec B_{21}\\]<p>Las direcciones y sentidos vienen dados por la regla de la mano derecha. En módulo, por unidad de longitud:</p>\\[f_{12}=\\frac{F_{12}}{L}=\\frac{\\mu_0 I_1 I_2}{2\\pi d}=f_{21}\\]<div style='overflow-x:auto'><svg viewBox='0 0 330 198' width='100%' style='max-width:320px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><line x1='90.0' y1='15.0' x2='90.0' y2='175.0' stroke='currentColor' stroke-width='3'/><line x1='240.0' y1='15.0' x2='240.0' y2='175.0' stroke='currentColor' stroke-width='3'/><line x1='90.0' y1='130.0' x2='90.0' y2='70.0' stroke='#dc2626' stroke-width='2.4'/><polygon points='90.0,60.0 94.5,70.0 85.5,70.0' fill='#dc2626'/><text x='76.0' y='100.0' fill='#dc2626' font-size='12' text-anchor='end' font-weight='700' font-style='italic'>I₁</text><line x1='240.0' y1='130.0' x2='240.0' y2='70.0' stroke='#dc2626' stroke-width='2.4'/><polygon points='240.0,60.0 244.5,70.0 235.5,70.0' fill='#dc2626'/><text x='254.0' y='100.0' fill='#dc2626' font-size='12' text-anchor='start' font-weight='700' font-style='italic'>I₂</text><circle cx='240.0' cy='35.0' r='7.0' fill='none' stroke='#2563eb' stroke-width='1.2'/><line x1='235.1' y1='30.1' x2='244.9' y2='39.9' stroke='#2563eb' stroke-width='1.2'/><line x1='235.1' y1='39.9' x2='244.9' y2='30.1' stroke='#2563eb' stroke-width='1.2'/><text x='252.0' y='39.0' fill='#2563eb' font-size='10' text-anchor='start' font-weight='700' font-style='italic'>B₁₂</text><circle cx='90.0' cy='35.0' r='7.0' fill='none' stroke='#2563eb' stroke-width='1.2'/><circle cx='90.0' cy='35.0' r='1.8' fill='#2563eb'/><text x='102.0' y='39.0' fill='#2563eb' font-size='10' text-anchor='start' font-weight='700' font-style='italic'>B₂₁</text><line x1='236.0' y1='150.0' x2='194.0' y2='150.0' stroke='#ea580c' stroke-width='2.2'/><polygon points='186.0,150.0 194.0,146.4 194.0,153.6' fill='#ea580c'/><text x='206.0' y='142.0' fill='#ea580c' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>F₁₂</text><line x1='94.0' y1='150.0' x2='136.0' y2='150.0' stroke='#ea580c' stroke-width='2.2'/><polygon points='144.0,150.0 136.0,153.6 136.0,146.4' fill='#ea580c'/><text x='124.0' y='142.0' fill='#ea580c' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>F₂₁</text><text x='165.0' y='192.0' fill='currentColor' font-size='10' text-anchor='middle'>atracción (mismo sentido)</text></svg></div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Las fuerzas son repulsivas cuando las corrientes circulan en sentidos contrarios, como indica el dibujo. Se explica análogamente al apartado anterior; el módulo de las fuerzas es el mismo.</p><div style='overflow-x:auto'><svg viewBox='0 0 330 198' width='100%' style='max-width:320px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><line x1='90.0' y1='15.0' x2='90.0' y2='175.0' stroke='currentColor' stroke-width='3'/><line x1='240.0' y1='15.0' x2='240.0' y2='175.0' stroke='currentColor' stroke-width='3'/><line x1='90.0' y1='130.0' x2='90.0' y2='70.0' stroke='#dc2626' stroke-width='2.4'/><polygon points='90.0,60.0 94.5,70.0 85.5,70.0' fill='#dc2626'/><text x='76.0' y='100.0' fill='#dc2626' font-size='12' text-anchor='end' font-weight='700' font-style='italic'>I₁</text><line x1='240.0' y1='60.0' x2='240.0' y2='120.0' stroke='#dc2626' stroke-width='2.4'/><polygon points='240.0,130.0 235.5,120.0 244.5,120.0' fill='#dc2626'/><text x='254.0' y='100.0' fill='#dc2626' font-size='12' text-anchor='start' font-weight='700' font-style='italic'>I₂</text><circle cx='240.0' cy='35.0' r='7.0' fill='none' stroke='#2563eb' stroke-width='1.2'/><line x1='235.1' y1='30.1' x2='244.9' y2='39.9' stroke='#2563eb' stroke-width='1.2'/><line x1='235.1' y1='39.9' x2='244.9' y2='30.1' stroke='#2563eb' stroke-width='1.2'/><text x='252.0' y='39.0' fill='#2563eb' font-size='10' text-anchor='start' font-weight='700' font-style='italic'>B₁₂</text><circle cx='90.0' cy='35.0' r='7.0' fill='none' stroke='#2563eb' stroke-width='1.2'/><circle cx='90.0' cy='35.0' r='1.8' fill='#2563eb'/><circle cx='90.0' cy='35.0' r='7.0' fill='none' stroke='#2563eb' stroke-width='1.2'/><line x1='85.1' y1='30.1' x2='94.9' y2='39.9' stroke='#2563eb' stroke-width='1.2'/><line x1='85.1' y1='39.9' x2='94.9' y2='30.1' stroke='#2563eb' stroke-width='1.2'/><line x1='244.0' y1='150.0' x2='286.0' y2='150.0' stroke='#ea580c' stroke-width='2.2'/><polygon points='294.0,150.0 286.0,153.6 286.0,146.4' fill='#ea580c'/><text x='280.0' y='142.0' fill='#ea580c' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>F₁₂</text><line x1='86.0' y1='150.0' x2='44.0' y2='150.0' stroke='#ea580c' stroke-width='2.2'/><polygon points='36.0,150.0 44.0,146.4 44.0,153.6' fill='#ea580c'/><text x='48.0' y='142.0' fill='#ea580c' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>F₂₁</text><text x='165.0' y='192.0' fill='currentColor' font-size='10' text-anchor='middle'>repulsión (sentidos opuestos)</text></svg></div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "emag",
+     "tipo": null,
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "04_Electromagnetismo. Inducción electromagnética. PEvAU resueltos.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "fisica-2006-junio-a3",
+   "n": "A.3",
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Un bloque de 2 kg está situado en el extremo de un muelle, de constante elástica \\(500\\ \\mathrm{N\\,m^{-1}}\\), comprimido 20 cm. Al liberar el muelle el bloque se desplaza por un plano horizontal y, tras recorrer una distancia de 1 m, asciende por un plano inclinado 30° con la horizontal. Calcule la distancia recorrida por el bloque sobre el plano inclinado.",
+    "apartados": [
+     "Supuesto nulo el rozamiento.",
+     "Si el coeficiente de rozamiento entre el cuerpo y los planos es 0,1. \\(g=10\\ \\mathrm{m\\,s^{-2}}\\)"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Realizamos en primer lugar un esquema de la situación y de las fuerzas que intervienen sobre el bloque en cada tramo:</p><div style='overflow-x:auto'><svg viewBox='0 0 360 170' width='100%' style='max-width:360px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><line x1='20.0' y1='140.0' x2='200.0' y2='140.0' stroke='currentColor' stroke-width='1.6'/><line x1='200.0' y1='140.0' x2='340.0' y2='50.0' stroke='currentColor' stroke-width='1.6'/><line x1='20.0' y1='100.0' x2='20.0' y2='140.0' stroke='currentColor' stroke-width='3'/><path d='M20 125 l8 -10 l8 20 l8 -20 l8 20 l8 -20 l8 20 l8 -10' stroke='#64748b' stroke-width='1.6' fill='none'/><rect x='84.0' y='117.0' width='22.0' height='22.0' fill='#475569' stroke='#475569' stroke-width='1.2'/><circle cx='95.0' cy='95.0' r='8.0' fill='none' stroke='currentColor' stroke-width='1'/><text x='95.0' y='99.0' fill='currentColor' font-size='10' text-anchor='middle' font-weight='700'>1</text><text x='95.0' y='80.0' fill='currentColor' font-size='9' text-anchor='middle' font-style='italic'>v₁ = 0, x₁ = 0,2 m</text><text x='110.0' y='158.0' fill='currentColor' font-size='9' text-anchor='middle'>Δr = 1 m (horizontal)</text><rect x='300.0' y='56.0' width='18.0' height='18.0' fill='#475569' stroke='#475569' stroke-width='1.2'/><circle cx='309.0' cy='40.0' r='8.0' fill='none' stroke='currentColor' stroke-width='1'/><text x='309.0' y='44.0' fill='currentColor' font-size='10' text-anchor='middle' font-weight='700'>2</text><text x='290.0' y='24.0' fill='currentColor' font-size='9' text-anchor='middle' font-style='italic'>v₂ = 0</text><line x1='348.0' y1='50.0' x2='348.0' y2='140.0' stroke='#94a3b8' stroke-width='1' stroke-dasharray='3 3'/><text x='343.0' y='98.0' fill='currentColor' font-size='10' text-anchor='end'>h₂</text><text x='215.0' y='158.0' fill='currentColor' font-size='9' text-anchor='middle'>30°</text><text x='40.0' y='158.0' fill='currentColor' font-size='9' text-anchor='middle' font-style='italic'>Epg = 0</text></svg></div><p>Realizamos en primer lugar un esquema con todas las fuerzas que intervienen sobre el bloque:</p><p>Teniendo en cuenta consideraciones energéticas, podemos decir que:</p><ul><li><b>Fuerza elástica del muelle (\\(F_{el}=K\\,x\\))</b>: fuerza conservativa. Realiza trabajo positivo mientras el muelle se descomprime: \\(W_{F_{el}} =-\\Delta E_{pel} =\\tfrac12Kx_1^2\\) \\(=10\\ \\mathrm J\\).</li><li><b>Peso (\\(F_g=mg=20\\ \\mathrm N\\))</b>: fuerza conservativa. En el tramo horizontal es perpendicular al desplazamiento y no realiza trabajo; en la subida realiza trabajo negativo.</li><li><b>Normal</b>: fuerza no conservativa. No realiza trabajo, ya que es perpendicular al desplazamiento en todo momento (\\(\\cos90^\\circ=0\\)).</li></ul><p>En el apartado a) no hay rozamiento: ninguna fuerza no conservativa realiza trabajo y la energía mecánica se conserva. La energía mecánica incluye la potencial gravitatoria y la elástica:</p>\\[E_M =E_c+E_{pg}+E_{pel}\\]\\[=\\tfrac12mv^2+mgh+\\tfrac12Kx^2\\]<p>Origen de \\(E_{pg}\\) en el tramo horizontal; origen de \\(E_{pel}\\) en la posición de equilibrio del muelle. Situación 1: muelle comprimido, bloque en reposo. Situación 2: altura máxima sobre el plano, en reposo.</p>\\[E_{M1} =\\tfrac12K\\,x_1^2 =\\tfrac12\\cdot500\\cdot0{,}2^2\\]\\[=10\\ \\mathrm J\\]\\[E_{M2}=m\\,g\\,h_2\\]\\[E_{M1}=E_{M2}\\]\\[\\Rightarrow\\ h_2=\\frac{K\\,x_1^2}{2mg}=0{,}5\\ \\mathrm m\\]\\[\\Rightarrow\\ \\Delta r=\\frac{h_2}{\\operatorname{sen}30^\\circ}\\]<div class='res'>\\(\\Delta r=1\\ \\mathrm m\\) sobre el plano inclinado</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Con rozamiento (\\(\\mu=0{,}1\\)) aparece una fuerza no conservativa más:</p><ul><li><b>Rozamiento en el tramo horizontal</b> (\\(F_{R1}=\\mu\\,m\\,g=2\\ \\mathrm N\\)): fuerza no conservativa. Realiza trabajo negativo: \\(W_{F_{R1}} =2\\cdot1\\cdot\\cos180^\\circ =-2\\ \\mathrm J\\).</li><li><b>Rozamiento en la subida</b> (\\(F_{R2} =\\mu\\,m\\,g\\cos30^\\circ =1{,}732\\ \\mathrm N\\)): fuerza no conservativa. Realiza trabajo negativo: \\(W_{F_{R2}}=-1{,}732\\,\\Delta r\\).</li></ul><div style='overflow-x:auto'><svg viewBox='0 0 330 215' width='100%' style='max-width:330px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='20.0,195.0 262.5,195.0 262.5,55.0' fill='#cbd5e1' fill-opacity='0.35' stroke='currentColor' stroke-width='1.2'/><path d='M54.0 195.0 A34.0 34.0 0 0 0 49.4 178.0' stroke='currentColor' stroke-width='1' fill='none'/><text x='64.0' y='189.0' fill='currentColor' font-size='10' text-anchor='start'>30°</text><polygon points='130.0,131.5 152.5,118.5 139.5,96.0 117.0,109.0' fill='#475569' stroke='#475569' stroke-width='1'/><line x1='134.7' y1='113.7' x2='134.7' y2='167.7' stroke='#ea580c' stroke-width='2'/><polygon points='134.7,175.7 131.1,167.7 138.3,167.7' fill='#ea580c'/><text x='140.7' y='177.7' fill='#ea580c' font-size='11' text-anchor='start' font-weight='700' font-style='italic'>Fg</text><line x1='134.7' y1='113.7' x2='114.0' y2='125.7' stroke='#ea580c' stroke-width='1.3' stroke-dasharray='4 3'/><polygon points='107.9,129.2 112.4,123.0 115.5,128.5' fill='#ea580c'/><text x='103.9' y='141.2' fill='#ea580c' font-size='10' text-anchor='end' font-style='italic'>Fgx</text><line x1='134.7' y1='113.7' x2='158.1' y2='154.2' stroke='#ea580c' stroke-width='1.3' stroke-dasharray='4 3'/><polygon points='161.6,160.2 155.4,155.8 160.8,152.6' fill='#ea580c'/><text x='167.6' y='164.2' fill='#ea580c' font-size='10' text-anchor='start' font-style='italic'>Fgy</text><line x1='134.7' y1='113.7' x2='112.7' y2='75.6' stroke='#2563eb' stroke-width='2'/><polygon points='108.7,68.7 115.9,73.8 109.6,77.4' fill='#2563eb'/><text x='104.7' y='61.8' fill='#2563eb' font-size='12' text-anchor='middle' font-weight='700' font-style='italic'>N</text><line x1='130.0' y1='131.5' x2='102.3' y2='147.5' stroke='#dc2626' stroke-width='2'/><polygon points='95.3,151.5 100.5,144.4 104.1,150.6' fill='#dc2626'/><text x='93.4' y='164.2' fill='#dc2626' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>FR</text><line x1='119.7' y1='87.8' x2='144.0' y2='73.8' stroke='#16a34a' stroke-width='1.6'/><polygon points='150.9,69.8 145.8,76.9 142.2,70.6' fill='#16a34a'/><text x='153.8' y='58.8' fill='#16a34a' font-size='11' text-anchor='middle' font-weight='700' font-style='italic'>v</text></svg></div><p>Ahora la energía mecánica no se conserva: \\(\\Delta E_M =W_{FNC}\\) \\(=W_{F_{R1}}+W_{F_{R2}}\\). La altura se relaciona con el desplazamiento: \\(h_2=\\Delta r\\,\\operatorname{sen}30^\\circ=\\dfrac{\\Delta r}{2}\\).</p>\\[m\\,g\\,h_2-\\tfrac12K\\,x_1^2=W_{F_R}\\]\\[\\Rightarrow\\ 10\\,\\Delta r-10=-2-1{,}732\\,\\Delta r\\]<div class='res'>\\(\\Delta r=0{,}68\\ \\mathrm m\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "din",
+     "tipo": null,
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "01_Dinámica de la partícula. PEvAU resueltos.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "fisica-2006-junio-b1",
+   "n": "B.1",
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Razone si son verdaderas o falsas las siguientes afirmaciones:",
+    "apartados": [
+     "Según la ley de la gravitación la fuerza que ejerce la Tierra sobre un cuerpo es directamente proporcional a la masa de éste. Sin embargo, dos cuerpos de diferente masa que se sueltan desde la misma altura llegan al suelo simultáneamente.",
+     "El trabajo realizado por una fuerza conservativa en el desplazamiento de una partícula entre dos puntos es menor si la trayectoria seguida es el segmento que une dichos puntos."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>La afirmación es <b>correcta</b>, siempre que despreciemos el rozamiento con el aire. Según la ley de gravitación universal de Newton, la fuerza gravitatoria es proporcional a la masa del cuerpo: \\(\\vec F_g=m\\cdot\\vec g\\), donde \\(\\vec g\\) es el campo gravitatorio creado por la Tierra.</p><p>Ahora bien, el tiempo que tarda en caer depende de la aceleración, que se calcula con la segunda ley de Newton:</p>\\[\\vec F=m\\cdot\\vec a\\]\\[\\Rightarrow\\ \\vec a=\\frac{\\vec F_g}{m}=\\frac{m\\cdot\\vec g}{m}=\\vec g\\]<p>Independientemente de la masa, todos los cuerpos sufren la misma aceleración. Dejándolos caer desde la misma altura, tardarán el mismo tiempo en caer.</p><div class='res'>Verdadera (despreciando el rozamiento con el aire)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Una fuerza conservativa se caracteriza porque el trabajo que realiza durante un desplazamiento entre dos puntos es independiente de la trayectoria seguida: sólo depende de los puntos inicial y final, \\(W_{FC}=-\\Delta E_p\\).</p><p>Así, la afirmación es falsa, ya que el trabajo realizado por la fuerza entre los dos puntos siempre tendrá el mismo valor, sea cual sea la trayectoria.</p><div class='res'>Falsa</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "grav",
+     "tipo": null,
+     "apartados": "a"
+    },
+    {
+     "tema": "din",
+     "tipo": null,
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": "01_Dinámica de la partícula. PEvAU resueltos.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "fisica-2006-junio-b2",
+   "n": "B.2",
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "",
+    "apartados": [
+     "Demuestre que en un oscilador armónico simple la aceleración es proporcional al desplazamiento pero de sentido contrario.",
+     "Una partícula realiza un movimiento armónico simple sobre el eje OX y en el instante inicial pasa por la posición de equilibrio. Escriba la ecuación del movimiento y razone cuándo es máxima la aceleración."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Un movimiento armónico simple es un movimiento oscilatorio periódico cuya elongación respecto a la posición de equilibrio viene dada por una función sinusoidal, donde \\(A\\) es la amplitud, \\(\\omega\\) la frecuencia angular y \\(\\varphi_0\\) la fase inicial:</p>\\[y=A\\,\\operatorname{sen}(\\omega t+\\varphi_0)\\]<p>La velocidad la obtenemos derivando la posición respecto al tiempo, y la aceleración derivando la velocidad:</p>\\[v_y=\\frac{dy}{dt}=A\\,\\omega\\cos(\\omega t+\\varphi_0)\\]\\[a_y=\\frac{dv_y}{dt}=-A\\,\\omega^2\\,\\operatorname{sen}(\\omega t+\\varphi_0)\\]<p>Comparando las expresiones de la elongación y de la aceleración:</p>\\[a_y=-\\omega^2\\,y\\]<p>La aceleración es proporcional al desplazamiento respecto a la posición de equilibrio, pero de sentido contrario; la constante de proporcionalidad es el cuadrado de la frecuencia angular.</p></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>La fase inicial depende del estado inicial del movimiento. Para \\(t=0\\) pasa por la posición de equilibrio, \\(y=0\\):</p>\\[0=A\\,\\operatorname{sen}(\\omega\\cdot0+\\varphi_0)\\]\\[\\Rightarrow\\ \\operatorname{sen}\\varphi_0=0\\]\\[\\Rightarrow\\ \\varphi_0=0\\]<div class='res'>\\(x(t)=A\\,\\operatorname{sen}(\\omega t)\\)</div><p>Por la relación demostrada en el apartado anterior, \\(a=-\\omega^2x\\), la aceleración es máxima (en valor absoluto) cuando el desplazamiento es máximo, es decir, cuando la elongación es igual a la amplitud: \\(x=\\pm A\\), en los extremos de la oscilación.</p></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "ondas",
+     "tipo": null,
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "05_Fenómenos ondulatorios. PEvAU resueltos.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "fisica-2006-junio-b3",
+   "n": "B.3",
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Una partícula con carga \\(2\\cdot10^{-6}\\ \\mathrm C\\) se encuentra en reposo en el punto (0,0). Se aplica un campo eléctrico uniforme de \\(500\\ \\mathrm{N\\,C^{-1}}\\) en el sentido positivo del eje OY.",
+    "apartados": [
+     "Describa el movimiento seguido por la partícula y la transformación de energía que tiene lugar a lo largo del mismo.",
+     "Calcule la diferencia de potencial entre los puntos (0,0) y (0,2) m y el trabajo realizado para desplazar la partícula entre dichos puntos."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><div style='overflow-x:auto'><svg viewBox='0 0 260 170' width='100%' style='max-width:360px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><line x1='50.0' y1='160.0' x2='50.0' y2='22.0' stroke='#0891b2' stroke-width='1.2'/><polygon points='50.0,15.0 46.9,22.0 53.1,22.0' fill='#0891b2'/><line x1='85.0' y1='160.0' x2='85.0' y2='22.0' stroke='#0891b2' stroke-width='1.2'/><polygon points='85.0,15.0 81.8,22.0 88.2,22.0' fill='#0891b2'/><line x1='155.0' y1='160.0' x2='155.0' y2='22.0' stroke='#0891b2' stroke-width='1.2'/><polygon points='155.0,15.0 151.8,22.0 158.2,22.0' fill='#0891b2'/><line x1='190.0' y1='160.0' x2='190.0' y2='22.0' stroke='#0891b2' stroke-width='1.2'/><polygon points='190.0,15.0 186.8,22.0 193.2,22.0' fill='#0891b2'/><line x1='225.0' y1='160.0' x2='225.0' y2='22.0' stroke='#0891b2' stroke-width='1.2'/><polygon points='225.0,15.0 221.8,22.0 228.2,22.0' fill='#0891b2'/><line x1='40.0' y1='150.0' x2='233.0' y2='150.0' stroke='currentColor' stroke-width='1.2'/><polygon points='240.0,150.0 233.0,146.8 233.0,153.2' fill='currentColor'/><line x1='120.0' y1='165.0' x2='120.0' y2='22.0' stroke='currentColor' stroke-width='1.2'/><polygon points='120.0,15.0 116.8,22.0 123.2,22.0' fill='currentColor'/><text x='236.0' y='164.0' fill='currentColor' font-size='10' text-anchor='middle'>+x</text><text x='134.0' y='19.0' fill='currentColor' font-size='10' text-anchor='middle'>+y</text><circle cx='120.0' cy='150.0' r='7' fill='#dc2626'/><text x='120.0' y='154.0' fill='#fff' font-size='12' text-anchor='middle' font-weight='700'>+</text><text x='104.0' y='154.0' fill='currentColor' font-size='11' text-anchor='middle' font-weight='700'>q</text><circle cx='120.0' cy='60.0' r='3' fill='currentColor'/><text x='128.0' y='60.0' fill='currentColor' font-size='11' text-anchor='start' font-weight='700'>A(0,2)</text><line x1='127.0' y1='140.0' x2='127.0' y2='109.0' stroke='#dc2626' stroke-width='2.2'/><polygon points='127.0,100.0 123.0,109.0 131.1,109.0' fill='#dc2626'/><text x='141.0' y='106.0' fill='#dc2626' font-size='12' text-anchor='middle' font-weight='700'>F<tspan baseline-shift='sub' font-size='9'>e</tspan></text><text x='232.0' y='28.0' fill='#0891b2' font-size='12' text-anchor='middle' font-weight='700'>E</text></svg></div><p>El campo indica la fuerza por unidad de carga: \\(\\vec F_e=q\\vec E=2\\cdot10^{-6}\\cdot500\\,\\vec\\jmath=10^{-3}\\,\\vec\\jmath\\ \\mathrm N\\). Al ser la carga positiva, la fuerza tiene el sentido del campo (\\(+y\\)) y es constante. Partiendo del reposo, la partícula describe un <b>MRUA</b> a lo largo del eje \\(y\\), en sentido positivo (despreciamos el peso).</p><p><b>Energía:</b> la fuerza eléctrica es conservativa y \\(E_M\\) se conserva. La partícula se mueve hacia potenciales menores, su energía potencial eléctrica disminuye y se transforma en energía cinética: \\(\\Delta E_c=-\\Delta E_{pe}\\).</p></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>En un campo uniforme, la diferencia de potencial entre dos puntos separados una distancia \\(d\\) en la dirección del campo es \\(\\Delta V=-E\\,d\\):</p>\\[V_{(0,0)}-V_{(0,2)}=E\\cdot d=500\\cdot2=1000\\ \\mathrm V\\]<p>Trabajo de la fuerza eléctrica<i class='n' data-t='th'>La fuerza eléctrica es conservativa: \\(W_{F_e}=-\\Delta E_{pe}=q\\,(V_i-V_f)\\). Si \\(W_{F_e}\\gt0\\) el desplazamiento es espontáneo; si es negativo, hay que hacer un trabajo externo \\(W_{ext}=-W_{F_e}\\) (a velocidad constante).</i>:</p>\\[W_{F_e}=q\\,(V_{(0,0)}-V_{(0,2)})=2\\cdot10^{-6}\\cdot1000\\]<div class='res'>\\(V_{(0,0)}-V_{(0,2)}=1000\\ \\mathrm V\\); \\(W_{F_e}=2\\cdot10^{-3}\\ \\mathrm J\\), realizado por el propio campo (desplazamiento espontáneo)</div><i class='n' data-t='tp'>También: \\(W=F\\,d=10^{-3}\\cdot2=2\\cdot10^{-3}\\ \\mathrm J\\), pues la fuerza es constante y paralela al desplazamiento.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "elec",
+     "tipo": "unif",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "elec",
+     "tipo": "trab",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": "03_Interacción electrostática. PEvAU resueltos.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  }
+ ]
+}

@@ -1,0 +1,327 @@
+{
+ "version": 1,
+ "id": "matematicas-2024-reserva-2",
+ "asignatura": "matematicas",
+ "anio": 2024,
+ "convocatoria": "Reserva 2",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2024-reserva-2-1",
+   "n": 1,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea la función \\(f:(0,+\\infty)\\to\\mathbb R\\), definida por \\(f(x)=\\ln\\left(\\dfrac{x^2+1}x\\right)\\), donde \\(\\ln\\) denota la función logaritmo neperiano.",
+    "apartados": [
+     "(1 p.) Calcula los intervalos de crecimiento y de decrecimiento.",
+     "(1,5 p.) Estudia y halla los extremos relativos y absolutos de \\(f\\) (abscisas donde se obtienen y valores que alcanzan)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Por las propiedades del logaritmo, \\(f(x)=\\ln(x^2+1)-\\ln x\\), definida y derivable para \\(x\\gt0\\). La monotonía se estudia con el signo de \\(f'\\)<i class='n' data-t='th'>Si \\(f'\\gt0\\) en un intervalo, \\(f\\) es estrictamente creciente en él; si \\(f'\\lt0\\), estrictamente decreciente.</i>:</p>\\[f'(x)=\\frac{2x}{x^2+1}-\\frac1x=\\frac{2x^2-(x^2+1)}{x(x^2+1)}=\\frac{x^2-1}{x(x^2+1)}\\]<p>Para \\(x\\gt0\\), el denominador \\(x(x^2+1)\\) es positivo, así que el signo de \\(f'\\) es el de \\(x^2-1=(x-1)(x+1)\\), y \\(x+1\\gt0\\): es el signo de \\(x-1\\).</p><table class='tb'><tr><th>Intervalo</th><th>\\((0,1)\\)</th><th>\\((1,+\\infty)\\)</th></tr><tr><td>Signo de \\(f'\\)</td><td>\\(-\\) (en \\(x=\\frac12\\): \\(x^2-1=-\\frac34\\lt0\\))</td><td>\\(+\\) (en \\(x=2\\): \\(x^2-1=3\\gt0\\))</td></tr><tr><td>\\(f\\)</td><td>decreciente</td><td>creciente</td></tr></table><div class='res'>\\(f\\) es decreciente en \\((0,1)\\) y creciente en \\((1,+\\infty)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p><b>Extremo relativo.</b> \\(f'(1)=0\\) y \\(f'\\) pasa de negativa a positiva en \\(x=1\\): mínimo relativo en \\(x=1\\), con \\(f(1)=\\ln\\dfrac21=\\ln2\\).</p><p><b>Extremos absolutos.</b> El dominio es \\((0,+\\infty)\\), un intervalo abierto: hay que mirar los límites en sus extremos<i class='n' data-t='why'>En un intervalo abierto no hay valores en los extremos del dominio. Para decidir si un extremo relativo es absoluto se estudia qué hace \\(f\\) cerca de cada extremo del intervalo.</i>:</p>\\[\\lim_{x\\to0^+}\\frac{x^2+1}x=+\\infty\\ \\Rightarrow\\ \\lim_{x\\to0^+}f(x)=+\\infty\\qquad\\lim_{x\\to+\\infty}\\frac{x^2+1}x=+\\infty\\ \\Rightarrow\\ \\lim_{x\\to+\\infty}f(x)=+\\infty\\]<p><b>Máximo absoluto:</b> \\(f\\) no está acotada superiormente (tiende a \\(+\\infty\\) en los dos extremos), luego no tiene máximo absoluto ni relativo.</p><p><b>Mínimo absoluto:</b> \\(f\\) decrece hasta \\(x=1\\) y crece desde \\(x=1\\), así que \\(f(x)\\ge f(1)=\\ln2\\) para todo \\(x\\gt0\\).</p><div class='res'>Mínimo (relativo y absoluto) en \\(x=1\\), de valor \\(\\ln2\\approx0{,}693\\). No tiene máximos relativos ni absoluto</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2024-reserva-2-2",
+   "n": 2,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Calcula \\(a\\) y \\(b\\) sabiendo que \\[\\lim_{x\\to0}\\frac{a\\bigl(\\ln(1+x)-x\\bigr)+b\\,(e^x-1)+1-\\cos(x)}{\\operatorname{sen}^2(x)}=5\\] donde \\(\\ln\\) denota la función logaritmo neperiano.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>Sean \\(N(x)=a\\bigl(\\ln(1+x)-x\\bigr)+b(e^x-1)+1-\\cos x\\) y \\(D(x)=\\operatorname{sen}^2x\\). Para cualquier \\(a\\) y \\(b\\), \\(N(0)=0\\) y \\(D(0)=0\\): indeterminación \\(\\tfrac00\\). Aplico la regla de L'Hôpital<i class='n' data-t='th'>Regla de L'Hôpital: si \\(N\\) y \\(D\\) son derivables cerca de \\(x_0\\), \\(N(x_0)=D(x_0)=0\\) y existe \\(\\lim\\dfrac{N'}{D'}\\) (finito o infinito), entonces \\(\\lim\\dfrac ND=\\lim\\dfrac{N'}{D'}\\).</i>.</p></div>"
+    },
+    {
+     "titulo": "Primera aplicación: \\(b=0\\)",
+     "html": "<div class='ex'>\\[N'(x)=a\\left(\\frac1{1+x}-1\\right)+b\\,e^x+\\operatorname{sen}x\\qquad D'(x)=2\\operatorname{sen}x\\cos x\\]\\[\\lim_{x\\to0}\\frac{N'(x)}{D'(x)}:\\ \\ N'(0)=b,\\ \\ D'(0)=0\\]<p>Si \\(b\\neq0\\), el cociente \\(\\dfrac{N'}{D'}\\) tendría límite infinito (numerador tendiendo a \\(b\\neq0\\) y denominador a 0), y entonces el límite pedido no sería 5.<i class='n' data-t='why'>El límite del enunciado es un número finito (5). Si tras L'Hôpital saliera \\(\\pm\\infty\\), el límite original también lo sería. Por eso se exige que el numerador se anule: \\(b=0\\).</i> Por tanto, \\(b=0\\).</p></div>"
+    },
+    {
+     "titulo": "Segunda aplicación: valor de \\(a\\)",
+     "html": "<div class='ex'><p>Con \\(b=0\\): \\(N'(x)=a\\left(\\dfrac1{1+x}-1\\right)+\\operatorname{sen}x\\), \\(N'(0)=0\\) y \\(D'(0)=0\\): otra vez \\(\\tfrac00\\). Aplico L'Hôpital de nuevo:</p>\\[N''(x)=-\\frac a{(1+x)^2}+\\cos x\\qquad D''(x)=2\\bigl(\\cos^2x-\\operatorname{sen}^2x\\bigr)=2\\cos2x\\]\\[\\lim_{x\\to0}\\frac{N''(x)}{D''(x)}=\\frac{-a+1}{2}\\]<p>Este límite existe, luego el límite original vale lo mismo, y debe ser 5:</p>\\[\\frac{1-a}2=5\\iff a=-9\\]<div class='res'>\\(a=-9\\) y \\(b=0\\)</div><i class='n' data-t='tp'>Comprobación numérica: con \\(a=-9\\), \\(b=0\\) y \\(x=0{,}001\\), el cociente vale \\(\\approx5{,}0\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "lim",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2024-reserva-2-3",
+   "n": 3,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(f:\\mathbb R\\to\\mathbb R\\) definida por \\[f(x)=\\int_0^x\\cos(t)\\operatorname{sen}^2(t)\\,dt.\\] Determina las ecuaciones de la recta tangente y de la recta normal a la gráfica de \\(f\\) en el punto de abscisa \\(x=\\dfrac\\pi4\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Pendiente: teorema fundamental del cálculo",
+     "html": "<div class='ex'><p>La recta tangente en \\(x_0=\\frac\\pi4\\) es \\(y-f(x_0)=f'(x_0)(x-x_0)\\). La derivada de una función integral se obtiene con el teorema fundamental del cálculo<i class='n' data-t='th'>Teorema fundamental del cálculo: si \\(g\\) es continua en un intervalo que contiene a \\(a\\), la función \\(F(x)=\\int_a^xg(t)\\,dt\\) es derivable y \\(F'(x)=g(x)\\).</i>: el integrando \\(\\cos t\\operatorname{sen}^2t\\) es continuo en \\(\\mathbb R\\), luego</p>\\[f'(x)=\\cos x\\operatorname{sen}^2x\\qquad f'\\!\\left(\\tfrac\\pi4\\right)=\\frac{\\sqrt2}2\\cdot\\left(\\frac{\\sqrt2}2\\right)^2=\\frac{\\sqrt2}2\\cdot\\frac12=\\frac{\\sqrt2}4\\]</div>"
+    },
+    {
+     "titulo": "Ordenada: \\(f(\\pi/4)\\)",
+     "html": "<div class='ex'><p>Calculo la integral con el cambio \\(u=\\operatorname{sen}t\\), \\(du=\\cos t\\,dt\\):</p>\\[\\int\\cos t\\operatorname{sen}^2t\\,dt=\\frac{\\operatorname{sen}^3t}3\\ \\Rightarrow\\ f\\!\\left(\\tfrac\\pi4\\right)=\\left[\\frac{\\operatorname{sen}^3t}3\\right]_0^{\\pi/4}=\\frac13\\left(\\frac{\\sqrt2}2\\right)^3=\\frac13\\cdot\\frac{\\sqrt2}4=\\frac{\\sqrt2}{12}\\]</div>"
+    },
+    {
+     "titulo": "Recta tangente y recta normal",
+     "html": "<div class='ex'><p><b>Tangente</b> (pendiente \\(\\frac{\\sqrt2}4\\)):</p>\\[y-\\frac{\\sqrt2}{12}=\\frac{\\sqrt2}4\\left(x-\\frac\\pi4\\right)\\]<p><b>Normal:</b> es perpendicular a la tangente, con pendiente \\(-\\dfrac1{f'(\\pi/4)}=-\\dfrac4{\\sqrt2}=-2\\sqrt2\\)<i class='n' data-t='th'>Rectas perpendiculares: \\(m\\cdot m'=-1\\). La normal a la gráfica en un punto tiene pendiente \\(-1/f'(x_0)\\) si \\(f'(x_0)\\neq0\\).</i>:</p>\\[y-\\frac{\\sqrt2}{12}=-2\\sqrt2\\left(x-\\frac\\pi4\\right)\\]<div class='res'>Tangente: \\(y=\\dfrac{\\sqrt2}4\\left(x-\\dfrac\\pi4\\right)+\\dfrac{\\sqrt2}{12}\\). Normal: \\(y=-2\\sqrt2\\left(x-\\dfrac\\pi4\\right)+\\dfrac{\\sqrt2}{12}\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "tfc",
+     "apartados": ""
+    },
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2024-reserva-2-4",
+   "n": 4,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Calcula \\(\\displaystyle\\int\\frac{dx}{\\sqrt{4+4e^x}}\\). (Sugerencia: efectúa el cambio de variable \\(t=\\sqrt{1+e^x}\\)).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Cambio de variable",
+     "html": "<div class='ex'><p>Simplifico el radical: \\(\\sqrt{4+4e^x}=2\\sqrt{1+e^x}\\). Con \\(t=\\sqrt{1+e^x}\\) (\\(t\\gt1\\)):</p>\\[t^2=1+e^x\\Rightarrow e^x=t^2-1\\Rightarrow x=\\ln(t^2-1)\\Rightarrow dx=\\frac{2t}{t^2-1}\\,dt\\]<p>La integral queda<i class='n' data-t='why'>En un cambio de variable hay que sustituir todo: la función, el diferencial \\(dx\\) y los límites si es definida. Aquí \\(dx\\) se obtiene derivando \\(x=\\ln(t^2-1)\\).</i>:</p>\\[\\int\\frac{dx}{2\\sqrt{1+e^x}}=\\int\\frac1{2t}\\cdot\\frac{2t}{t^2-1}\\,dt=\\int\\frac{dt}{t^2-1}\\]</div>"
+    },
+    {
+     "titulo": "Fracciones simples y deshacer el cambio",
+     "html": "<div class='ex'><p>\\(t^2-1=(t-1)(t+1)\\), con raíces simples:</p>\\[\\frac1{t^2-1}=\\frac A{t-1}+\\frac B{t+1}\\iff1=A(t+1)+B(t-1)\\Rightarrow A=\\tfrac12,\\ B=-\\tfrac12\\]\\[\\int\\frac{dt}{t^2-1}=\\frac12\\ln|t-1|-\\frac12\\ln|t+1|+C=\\frac12\\ln\\left|\\frac{t-1}{t+1}\\right|+C\\]<p>Deshago el cambio. Como \\(t=\\sqrt{1+e^x}\\gt1\\), \\(\\dfrac{t-1}{t+1}\\gt0\\) y no hacen falta valores absolutos:</p><div class='res'>\\(\\displaystyle\\int\\frac{dx}{\\sqrt{4+4e^x}}=\\frac12\\ln\\!\\left(\\frac{\\sqrt{1+e^x}-1}{\\sqrt{1+e^x}+1}\\right)+C\\)</div><i class='n' data-t='tp'>Comprueba derivando: la derivada de \\(\\frac12\\ln\\frac{t-1}{t+1}\\) respecto de \\(t\\) es \\(\\frac1{t^2-1}\\), y \\(\\frac{dt}{dx}=\\frac{e^x}{2t}=\\frac{t^2-1}{2t}\\), luego la derivada total es \\(\\frac1{2t}=\\frac1{2\\sqrt{1+e^x}}\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "cambio",
+     "apartados": ""
+    },
+    {
+     "tema": "integ",
+     "tipo": "racional",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2024-reserva-2-5",
+   "n": 5,
+   "bloque": "C",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el sistema de ecuaciones lineales \\[\\begin{cases}ax+y+z=1+a\\\\x+2y-z=1-a\\\\x+(1+a)y-az=0\\end{cases}\\]",
+    "apartados": [
+     "(1,5 p.) Calcula \\(a\\) para que el sistema sea compatible indeterminado.",
+     "(1 p.) Resuelve el sistema, si es posible, para \\(a=0\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Matriz de coeficientes \\(M\\) y ampliada \\(M^*\\):</p>\\[M=\\begin{pmatrix}a&1&1\\\\1&2&-1\\\\1&1+a&-a\\end{pmatrix}\\qquad M^*=\\left(\\begin{array}{ccc|c}a&1&1&1+a\\\\1&2&-1&1-a\\\\1&1+a&-a&0\\end{array}\\right)\\]<p>Por el teorema de Rouché-Frobenius<i class='n' data-t='th'>Un sistema de \\(n\\) incógnitas es compatible \\(\\iff\\operatorname{rg}M=\\operatorname{rg}M^*\\). Si ese rango es \\(n\\), compatible determinado; si es menor que \\(n\\), compatible indeterminado. Si \\(\\operatorname{rg}M\\lt\\operatorname{rg}M^*\\), incompatible.</i>, empiezo por \\(|M|\\):</p>\\[|M|=a\\begin{vmatrix}2&-1\\\\1+a&-a\\end{vmatrix}-1\\begin{vmatrix}1&-1\\\\1&-a\\end{vmatrix}+1\\begin{vmatrix}1&2\\\\1&1+a\\end{vmatrix}=a(1-a)-(1-a)+(a-1)=(1-a)(a-2)\\]<p>\\(|M|=0\\iff a=1\\) o \\(a=2\\). Para \\(a\\neq1,2\\): \\(\\operatorname{rg}M=\\operatorname{rg}M^*=3\\), compatible determinado.</p><p><b>Caso \\(a=1\\).</b> \\(M=\\begin{pmatrix}1&1&1\\\\1&2&-1\\\\1&2&-1\\end{pmatrix}\\) y \\(M^*=\\left(\\begin{array}{ccc|c}1&1&1&2\\\\1&2&-1&0\\\\1&2&-1&0\\end{array}\\right)\\). Las filas 2 y 3 son iguales en ambas matrices, y el menor \\(\\begin{vmatrix}1&1\\\\1&2\\end{vmatrix}=1\\neq0\\): \\(\\operatorname{rg}M=\\operatorname{rg}M^*=2\\lt3\\). Compatible indeterminado.</p><p><b>Caso \\(a=2\\).</b> \\(M=\\begin{pmatrix}2&1&1\\\\1&2&-1\\\\1&3&-2\\end{pmatrix}\\): \\(\\operatorname{rg}M=2\\) (el menor \\(\\begin{vmatrix}2&1\\\\1&2\\end{vmatrix}=3\\neq0\\) y \\(|M|=0\\)). En \\(M^*\\) (columna de términos independientes \\((3,-1,0)\\)), el menor de las columnas 1, 2 y 4 vale \\(\\begin{vmatrix}2&1&3\\\\1&2&-1\\\\1&3&0\\end{vmatrix}=8\\neq0\\): \\(\\operatorname{rg}M^*=3\\neq\\operatorname{rg}M\\). Incompatible.</p><div class='res'>El sistema es compatible indeterminado únicamente para \\(a=1\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Para \\(a=0\\): \\(|M|=(1-0)(0-2)=-2\\neq0\\), luego es compatible determinado. El sistema queda</p>\\[\\begin{cases}y+z=1\\\\x+2y-z=1\\\\x+y=0\\end{cases}\\]<p>De la tercera, \\(x=-y\\). En la segunda: \\(-y+2y-z=1\\Rightarrow y-z=1\\). Sumando con la primera: \\(2y=2\\Rightarrow y=1\\); entonces \\(z=0\\) y \\(x=-1\\).</p><div class='res'>\\((x,y,z)=(-1,\\ 1,\\ 0)\\)</div><i class='n' data-t='tp'>Comprobación: \\(1+0=1\\) ✓, \\(-1+2-0=1\\) ✓, \\(-1+1=0\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "sistemas",
+     "tipo": "disc",
+     "apartados": "a"
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2024-reserva-2-6",
+   "n": 6,
+   "bloque": "C",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las matrices \\(A=\\begin{pmatrix}1&3\\\\-2&5\\end{pmatrix}\\), \\(M=\\begin{pmatrix}0&1\\\\1&1\\end{pmatrix}\\) e \\(I\\) la matriz identidad de orden 2.",
+    "apartados": [
+     "(1,5 p.) Sabiendo que \\(A\\) verifica la identidad \\((A+aI)^2=bI\\), halla \\(a\\) y \\(b\\).",
+     "(1 p.) Resuelve la ecuación \\(MX+M^2=I\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(A+aI=\\begin{pmatrix}1+a&3\\\\-2&5+a\\end{pmatrix}\\). Elevo al cuadrado:</p>\\[(A+aI)^2=\\begin{pmatrix}(1+a)^2-6&3(1+a)+3(5+a)\\\\-2(1+a)-2(5+a)&-6+(5+a)^2\\end{pmatrix}=\\begin{pmatrix}a^2+2a-5&6a+18\\\\-4a-12&a^2+10a+19\\end{pmatrix}\\]<p>Debe ser igual a \\(bI=\\begin{pmatrix}b&0\\\\0&b\\end{pmatrix}\\). Igualando elemento a elemento<i class='n' data-t='th'>Dos matrices son iguales si lo son todos sus elementos: cada posición da una ecuación.</i>:</p>\\[6a+18=0\\Rightarrow a=-3\\qquad-4a-12=0\\Rightarrow a=-3\\ (\\text{coincide})\\]\\[a^2+2a-5=b\\Rightarrow b=9-6-5=-2\\qquad a^2+10a+19=b\\Rightarrow b=9-30+19=-2\\ (\\text{coincide})\\]<div class='res'>\\(a=-3\\) y \\(b=-2\\)</div><i class='n' data-t='tp'>Comprobación: \\(A-3I=\\begin{pmatrix}-2&3\\\\-2&2\\end{pmatrix}\\) y su cuadrado es \\(\\begin{pmatrix}4-6&-6+6\\\\4-4&-6+4\\end{pmatrix}=-2I\\) ✓.</i></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p><b>Condición de existencia de la inversa:</b> existe \\(M^{-1}\\) si y solo si \\(|M|\\neq0\\)<i class='n' data-t='th'>\\(M\\) es invertible \\(\\iff|M|\\neq0\\). Para \\(2\\times2\\): \\(M^{-1}=\\dfrac1{|M|}\\begin{pmatrix}d&-b\\\\-c&a\\end{pmatrix}\\) si \\(M=\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}\\).</i>. Calculo \\(|M|=0\\cdot1-1\\cdot1=-1\\neq0\\): \\(M\\) tiene inversa.</p><p><b>Despejo \\(X\\).</b> \\(MX=I-M^2\\); multiplico por \\(M^{-1}\\) por la izquierda<i class='n' data-t='err'>\\(M\\) está a la izquierda de \\(X\\): \\(M^{-1}\\) se multiplica por la <b>izquierda</b>. Además \\(M^{-1}M^2=M\\).</i>:</p>\\[X=M^{-1}(I-M^2)=M^{-1}-M\\]<p>Con \\(M^{-1}=\\dfrac1{-1}\\begin{pmatrix}1&-1\\\\-1&0\\end{pmatrix}=\\begin{pmatrix}-1&1\\\\1&0\\end{pmatrix}\\):</p>\\[X=\\begin{pmatrix}-1&1\\\\1&0\\end{pmatrix}-\\begin{pmatrix}0&1\\\\1&1\\end{pmatrix}=\\begin{pmatrix}-1&0\\\\0&-1\\end{pmatrix}\\]<div class='res'>\\(X=-I=\\begin{pmatrix}-1&0\\\\0&-1\\end{pmatrix}\\)</div><i class='n' data-t='tp'>Comprobación: \\(M^2=\\begin{pmatrix}1&1\\\\1&2\\end{pmatrix}\\) y \\(MX+M^2=-M+M^2=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}=I\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "ecmat",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2024-reserva-2-7",
+   "n": 7,
+   "bloque": "D",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el plano \\(\\pi\\equiv x-y=0\\) y la recta \\(r\\equiv\\dfrac{x-1}2=\\dfrac y3=z-2\\).",
+    "apartados": [
+     "(1,25 p.) Calcula, si es posible, el plano perpendicular a \\(\\pi\\) que contiene a \\(r\\).",
+     "(1,25 p.) Calcula, si es posible, la recta perpendicular a \\(r\\), contenida en \\(\\pi\\) y que pasa por el origen."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p><b>Datos.</b> Normal de \\(\\pi\\): \\(\\vec n_\\pi=(1,-1,0)\\). Recta \\(r\\): dirección \\(\\vec d=(2,3,1)\\) y punto \\(R(1,0,2)\\).</p><p><b>Condiciones del plano \\(\\sigma\\).</b> Contiene a \\(r\\): su normal \\(\\vec n_\\sigma\\) es perpendicular a \\(\\vec d\\). Es perpendicular a \\(\\pi\\): sus normales son perpendiculares, \\(\\vec n_\\sigma\\perp\\vec n_\\pi\\)<i class='n' data-t='th'>Dos planos son perpendiculares si y solo si sus vectores normales lo son. Si la recta no es perpendicular a \\(\\pi\\) (\\(\\vec d\\) no es paralelo a \\(\\vec n_\\pi\\)), el plano buscado es único.</i>. Es posible y único porque \\(\\vec d\\) y \\(\\vec n_\\pi\\) no son paralelos.</p>\\[\\vec n_\\sigma=\\vec d\\times\\vec n_\\pi=\\begin{vmatrix}\\vec i&\\vec j&\\vec k\\\\2&3&1\\\\1&-1&0\\end{vmatrix}=(1,\\,1,\\,-5)\\]<p>\\(\\sigma\\equiv x+y-5z+D=0\\) por \\(R(1,0,2)\\): \\(1+0-10+D=0\\Rightarrow D=9\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 340 270' width='100%' style='max-width:440px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><defs><marker id='r2an' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#dc2626'/></marker><marker id='r2ad' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#16a34a'/></marker><marker id='r2ar' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#2563eb'/></marker><marker id='r2aa' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#64748b'/></marker></defs><polygon points='243.3,121.2 243.3,196.8 100.3,124.8 100.3,49.2' fill='#94a3b8' fill-opacity='.28' stroke='#64748b' stroke-width='1.3'/><polygon points='205.9,196.6 306.0,93.8 137.8,49.4 37.7,152.2' fill='#8b5cf6' fill-opacity='.28' stroke='#7c3aed' stroke-width='1.3'/><line x1='34.0' y1='108.5' x2='273.7' y2='133.7' stroke='#2563eb' stroke-width='2.2'/><line x1='87.9' y1='114.2' x2='207.8' y2='126.8' stroke='#16a34a' stroke-width='2.4' marker-end='url(#r2ad)'/><text x='213.8' y='138.8' fill='#16a34a' font-weight='700'>d</text><line x1='108.8' y1='106.4' x2='79.3' y2='136.6' stroke='#dc2626' stroke-width='2.4' marker-end='url(#r2an)'/><text x='85.3' y='132.6' fill='#dc2626' font-weight='700'>nπ</text><line x1='121.4' y1='109.7' x2='136.1' y2='161.2' stroke='#dc2626' stroke-width='2.4' marker-end='url(#r2an)'/><text x='142.1' y='171.2' fill='#dc2626' font-weight='700'>nσ</text><circle cx='171.8' cy='123.0' r='3.8' fill='#e8487a'/><text x='179.8' y='117.0' font-weight='700'>T</text><text x='104.8' y='105.2' fill='#64748b' font-weight='700' font-style='italic'>π</text><text x='247.1' y='138.8' fill='#8b5cf6' font-weight='700' font-style='italic'>σ</text><g stroke='#64748b' stroke-width='1.2' fill='none'><line x1='30' y1='224' x2='33.8' y2='239.6'/><line x1='30' y1='224' x2='51.7' y2='221.3'/><line x1='30' y1='224' x2='30.0' y2='208.7'/></g><g fill='#64748b' font-size='10'><text x='32.0' y='248.5'>x</text><text x='55.6' y='224.4'>y</text><text x='27.0' y='207.9'>z</text></g><g transform='translate(10.0,258)'><rect x='0' y='-8' width='12' height='9' fill='#8b5cf6' fill-opacity='.4' stroke='#7c3aed'/><text x='18' y='0' font-size='10'>plano</text></g><g transform='translate(63.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#2563eb' stroke-width='2'/><text x='18' y='0' font-size='10'>recta</text></g><g transform='translate(116.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#dc2626' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector normal</text></g><g transform='translate(212.2,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#16a34a' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector director</text></g><g transform='translate(319.2,258)'><circle cx='6' cy='-4' r='3.8' fill='#e8487a'/><text x='18' y='0' font-size='10'>puntos</text></g></svg></div><div class='res'>\\(\\sigma\\equiv x+y-5z+9=0\\)</div><i class='n' data-t='tp'>Comprobación: \\(\\vec n_\\sigma\\cdot\\vec n_\\pi=1-1+0=0\\) ✓ y \\(\\vec n_\\sigma\\cdot\\vec d=2+3-5=0\\) ✓. En la figura, \\(r\\) está en \\(\\sigma\\) y corta a \\(\\pi\\) en \\(T(3,3,3)\\); el vector \\(\\vec n_\\pi\\) (rojo) está contenido en \\(\\sigma\\) porque los planos son perpendiculares.</i></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p><b>Comprobación previa.</b> El origen está en \\(\\pi\\) (\\(0-0=0\\)), luego puede haber una recta por \\(O\\) contenida en \\(\\pi\\).</p><p><b>Dirección buscada \\(\\vec u\\).</b> Contenida en \\(\\pi\\): \\(\\vec u\\perp\\vec n_\\pi\\). Perpendicular a \\(r\\): \\(\\vec u\\perp\\vec d\\). Es el producto vectorial:</p>\\[\\vec u=\\vec d\\times\\vec n_\\pi=(1,\\,1,\\,-5)\\]<p><b>Recta</b> (forma paramétrica):</p>\\[s\\equiv\\begin{cases}x=t\\\\y=t\\\\z=-5t\\end{cases}\\]<div style='overflow-x:auto'><svg viewBox='0 0 340 270' width='100%' style='max-width:440px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><defs><marker id='r2bn' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#dc2626'/></marker><marker id='r2bd' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#16a34a'/></marker><marker id='r2br' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#2563eb'/></marker><marker id='r2ba' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#64748b'/></marker></defs><polygon points='216.0,91.0 216.0,220.0 86.9,155.0 86.9,26.0' fill='#8b5cf6' fill-opacity='.28' stroke='#7c3aed' stroke-width='1.3'/><line x1='103.0' y1='98.6' x2='124.6' y2='174.0' stroke='#2563eb' stroke-width='2.2'/><line x1='130.5' y1='112.7' x2='253.1' y2='125.6' stroke='#2563eb' stroke-width='2.2'/><line x1='199.4' y1='119.9' x2='245.4' y2='124.8' stroke='#16a34a' stroke-width='2.4' marker-end='url(#r2bd)'/><text x='251.4' y='124.8' fill='#16a34a' font-weight='700'>d</text><line x1='113.8' y1='136.3' x2='121.9' y2='164.5' stroke='#16a34a' stroke-width='2.4' marker-end='url(#r2bd)'/><text x='129.9' y='170.5' fill='#16a34a' font-weight='700'>u</text><line x1='151.4' y1='84.3' x2='132.6' y2='103.6' stroke='#dc2626' stroke-width='2.4' marker-end='url(#r2bn)'/><text x='138.6' y='99.6' fill='#dc2626' font-weight='700'>nπ</text><circle cx='111.1' cy='126.9' r='3.8' fill='#e8487a'/><text x='97.1' y='138.9' font-weight='700'>O</text><circle cx='191.8' cy='119.1' r='3.8' fill='#e8487a'/><text x='199.8' y='113.1' font-weight='700'>T</text><text x='132.6' y='180.0' fill='#2563eb' font-weight='700' font-style='italic'>s</text><text x='261.1' y='121.6' fill='#2563eb' font-weight='700' font-style='italic'>r</text><g stroke='#64748b' stroke-width='1.2' fill='none'><line x1='30' y1='224' x2='33.8' y2='239.6'/><line x1='30' y1='224' x2='51.7' y2='221.3'/><line x1='30' y1='224' x2='30.0' y2='208.7'/></g><g fill='#64748b' font-size='10'><text x='32.0' y='248.5'>x</text><text x='55.6' y='224.4'>y</text><text x='27.0' y='207.9'>z</text></g><g transform='translate(10.0,258)'><rect x='0' y='-8' width='12' height='9' fill='#8b5cf6' fill-opacity='.4' stroke='#7c3aed'/><text x='18' y='0' font-size='10'>plano</text></g><g transform='translate(63.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#2563eb' stroke-width='2'/><text x='18' y='0' font-size='10'>recta</text></g><g transform='translate(116.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#dc2626' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector normal</text></g><g transform='translate(212.2,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#16a34a' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector director</text></g><g transform='translate(319.2,258)'><circle cx='6' cy='-4' r='3.8' fill='#e8487a'/><text x='18' y='0' font-size='10'>puntos</text></g></svg></div><div class='res'>\\(s\\equiv(x,y,z)=t\\,(1,1,-5)\\)</div><i class='n' data-t='tp'>Comprobación: \\(\\vec u\\cdot\\vec d=2+3-5=0\\) ✓ y \\(\\vec u\\cdot\\vec n_\\pi=1-1=0\\) ✓. Estas dos rectas son perpendiculares pero no se cortan (se cruzan): \\(r\\) corta a \\(\\pi\\) solo en \\(T(3,3,3)\\), que no está en \\(s\\).</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "ecs",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "geom",
+     "tipo": "perp",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2024-reserva-2-8",
+   "n": 8,
+   "bloque": "D",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera los puntos \\(O(0,0,0)\\), \\(A(a,-1,2)\\) y \\(B(a,1,0)\\).",
+    "apartados": [
+     "(1,5 p.) Determina \\(a\\) para que el triángulo \\(OAB\\) tenga área 3 unidades cuadradas.",
+     "(1 p.) Calcula \\(a\\) para que \\(O\\), \\(A\\) y \\(B\\) sean coplanarios con el punto \\(C(1,1,0)\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>El área del triángulo es la mitad del módulo del producto vectorial de dos de sus lados<i class='n' data-t='th'>Deducción: el área del paralelogramo de lados \\(\\vec u,\\vec v\\) es base \\(\\cdot\\) altura \\(=|\\vec u||\\vec v|\\operatorname{sen}\\theta=|\\vec u\\times\\vec v|\\); el triángulo es la mitad.</i>:</p>\\[\\overrightarrow{OA}=(a,-1,2)\\qquad\\overrightarrow{OB}=(a,1,0)\\qquad\\overrightarrow{OA}\\times\\overrightarrow{OB}=\\begin{vmatrix}\\vec i&\\vec j&\\vec k\\\\a&-1&2\\\\a&1&0\\end{vmatrix}=(-2,\\,2a,\\,2a)\\]\\[\\text{Área}=\\tfrac12\\sqrt{4+4a^2+4a^2}=\\sqrt{1+2a^2}=3\\iff1+2a^2=9\\iff a^2=4\\iff a=\\pm2\\]<div style='overflow-x:auto'><svg viewBox='0 0 340 270' width='100%' style='max-width:440px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><defs><marker id='r2cn' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#dc2626'/></marker><marker id='r2cd' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#16a34a'/></marker><marker id='r2cr' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#2563eb'/></marker><marker id='r2ca' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#64748b'/></marker></defs><polygon points='306.0,93.5 188.3,107.8 80.5,195.0 198.2,180.6' fill='#8b5cf6' fill-opacity='.28' stroke='#7c3aed' stroke-width='1.3'/><line x1='80.5' y1='195.0' x2='188.3' y2='107.8' stroke='#2563eb' stroke-width='2.2'/><line x1='80.5' y1='195.0' x2='198.2' y2='180.6' stroke='#2563eb' stroke-width='2.2'/><line x1='188.3' y1='107.8' x2='198.2' y2='180.6' stroke='#2563eb' stroke-width='2.2'/><line x1='80.5' y1='195.0' x2='188.3' y2='107.8' stroke='#16a34a' stroke-width='2.4' marker-end='url(#r2cd)'/><line x1='80.5' y1='195.0' x2='198.2' y2='180.6' stroke='#16a34a' stroke-width='2.4' marker-end='url(#r2cd)'/><line x1='80.5' y1='195.0' x2='34.0' y2='51.0' stroke='#dc2626' stroke-width='2.4' marker-end='url(#r2cn)'/><text x='40.0' y='45.0' fill='#dc2626' font-weight='700'>OA×OB</text><circle cx='80.5' cy='195.0' r='3.8' fill='#e8487a'/><text x='66.5' y='207.0' font-weight='700'>O</text><circle cx='188.3' cy='107.8' r='3.8' fill='#e8487a'/><text x='196.3' y='101.8' font-weight='700'>A</text><circle cx='198.2' cy='180.6' r='3.8' fill='#e8487a'/><text x='206.2' y='192.6' font-weight='700'>B</text><text x='128.4' y='143.4' fill='#16a34a' font-weight='700' font-style='italic'>OA</text><text x='145.3' y='199.8' fill='#16a34a' font-weight='700' font-style='italic'>OB</text><g stroke='#64748b' stroke-width='1.2' fill='none'><line x1='30' y1='224' x2='51.9' y2='224.6'/><line x1='30' y1='224' x2='31.9' y2='217.2'/><line x1='30' y1='224' x2='30.0' y2='203.1'/></g><g fill='#64748b' font-size='10'><text x='55.9' y='228.8'>x</text><text x='29.5' y='219.1'>y</text><text x='27.0' y='200.4'>z</text></g><g transform='translate(10.0,258)'><rect x='0' y='-8' width='12' height='9' fill='#8b5cf6' fill-opacity='.4' stroke='#7c3aed'/><text x='18' y='0' font-size='10'>plano</text></g><g transform='translate(63.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#2563eb' stroke-width='2'/><text x='18' y='0' font-size='10'>recta</text></g><g transform='translate(116.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#dc2626' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector normal</text></g><g transform='translate(212.2,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#16a34a' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector director</text></g><g transform='translate(319.2,258)'><circle cx='6' cy='-4' r='3.8' fill='#e8487a'/><text x='18' y='0' font-size='10'>puntos</text></g></svg></div><div class='res'>\\(a=2\\) o \\(a=-2\\)</div><i class='n' data-t='tp'>En la figura (\\(a=2\\)): \\(\\overrightarrow{OA}\\times\\overrightarrow{OB}=(-2,4,4)\\) (rojo) es perpendicular al plano del triángulo y su módulo es 6, el doble del área 3 ✓.</i></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Cuatro puntos \\(O,A,B,C\\) son coplanarios si los vectores \\(\\overrightarrow{OA}\\), \\(\\overrightarrow{OB}\\) y \\(\\overrightarrow{OC}\\) son linealmente dependientes, es decir, si su determinante (producto mixto) es 0<i class='n' data-t='th'>Coplanaridad: \\(O,A,B,C\\) son coplanarios \\(\\iff[\\overrightarrow{OA},\\overrightarrow{OB},\\overrightarrow{OC}]=0\\). El valor absoluto del determinante es el volumen del paralelepípedo.</i>:</p>\\[\\begin{vmatrix}a&-1&2\\\\a&1&0\\\\1&1&0\\end{vmatrix}=2\\cdot\\begin{vmatrix}a&1\\\\1&1\\end{vmatrix}=2\\,(a-1)=0\\iff a=1\\]<div class='res'>\\(a=1\\)</div><i class='n' data-t='why'>Con \\(a=1\\), \\(B(1,1,0)\\) coincide con \\(C(1,1,0)\\), por lo que los cuatro puntos son trivialmente coplanarios (en realidad solo son tres puntos distintos).</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "vec",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "area",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

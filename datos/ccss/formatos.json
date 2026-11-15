@@ -1,0 +1,12 @@
+{
+ "version": 1,
+ "nota": "Texto que se muestra sobre las pestañas en «Exámenes completos por año». Se aplica la primera regla que coincida (desde/hasta = año, convocatoria = nombre exacto).",
+ "reglas": [
+  {
+   "hasta": 2019,
+   "activo": false,
+   "texto": "Examen con dos opciones (A y B) de cuatro ejercicios cada una: se elige una opción y se resuelven sus cuatro ejercicios.",
+   "comentario": "En la versión anterior esta regla nunca llegaba a mostrarse (condición !S.sj siempre falsa). Se conserva desactivada para no cambiar la app."
+  }
+ ]
+}

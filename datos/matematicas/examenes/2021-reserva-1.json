@@ -1,0 +1,324 @@
+{
+ "version": 1,
+ "id": "matematicas-2021-reserva-1",
+ "asignatura": "matematicas",
+ "anio": 2021,
+ "convocatoria": "Reserva 1",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2021-reserva-1-1",
+   "n": 1,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sabiendo que \\(\\displaystyle\\lim_{x\\to0}\\left(\\frac{x+1}{\\ln(x+1)}-\\frac ax\\right)\\) es finito, calcula \\(a\\) y el valor del límite (\\(\\ln\\) denota la función logaritmo neperiano).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Reducir a un cociente y L'Hôpital",
+     "html": "<div class='ex'><p>Resto las fracciones: \\(\\dfrac{x+1}{\\ln(x+1)}-\\dfrac ax=\\dfrac{x(x+1)-a\\ln(x+1)}{x\\ln(x+1)}\\). \\(N(0)=0\\) y \\(D(0)=0\\): indeterminación \\(\\tfrac00\\). L'Hôpital<i class='n' data-t='th'>Regla de L'Hôpital: si \\(N(x_0)=D(x_0)=0\\) y existe \\(\\lim\\frac{N'}{D'}\\), entonces \\(\\lim\\frac ND=\\lim\\frac{N'}{D'}\\).</i>:</p>\\[N'(x)=2x+1-\\frac a{x+1}\\qquad D'(x)=\\ln(x+1)+\\frac x{x+1}\\qquad N'(0)=1-a,\\ D'(0)=0\\]<p>Para que el límite sea finito: \\(a=1\\).</p></div>"
+    },
+    {
+     "titulo": "Segunda aplicación y valor del límite",
+     "html": "<div class='ex'><p>Con \\(a=1\\): \\(N'(0)=0\\), \\(D'(0)=0\\). Segunda aplicación:</p>\\[N''(x)=2+\\frac1{(x+1)^2}\\ \\Rightarrow\\ N''(0)=3\\qquad D''(x)=\\frac1{x+1}+\\frac1{(x+1)^2}\\ \\Rightarrow\\ D''(0)=2\\]<div class='res'>\\(a=1\\) y el límite vale \\(\\dfrac32\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "lim",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-1-2",
+   "n": 2,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea \\(f\\) la función definida por \\(f(x)=\\dfrac{ax^2+b}{a-x}\\) (para \\(x\\neq a\\)).",
+    "apartados": [
+     "(1,25 p.) Halla \\(a\\) y \\(b\\) sabiendo que la gráfica de \\(f\\) pasa por el punto \\((2,3)\\) y tiene una asíntota oblicua cuya pendiente vale \\(-4\\).",
+     "(1,25 p.) Para \\(a=2\\) y \\(b=3\\), calcula las ecuaciones de las rectas tangente y normal a la gráfica de \\(f\\) en el punto de abscisa \\(x=1\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Pasa por \\((2,3)\\): \\(\\dfrac{4a+b}{a-2}=3\\Rightarrow4a+b=3a-6\\Rightarrow a+b=-6\\). Asíntota oblicua: divido \\(ax^2+b=(a-x)(-ax-a^2)+(a^3+b)\\):</p>\\[f(x)=-ax-a^2+\\frac{a^3+b}{a-x}\\]<p>La pendiente de la asíntota es \\(-a\\)<i class='n' data-t='th'>Asíntota oblicua \\(y=mx+n\\): \\(m=\\lim\\frac{f(x)}x\\). Aquí \\(m=-a\\).</i>: \\(-a=-4\\Rightarrow a=4\\), y \\(b=-6-4=-10\\).</p><div class='res'>\\(a=4\\) y \\(b=-10\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Con \\(a=2\\), \\(b=3\\): \\(f(x)=\\dfrac{2x^2+3}{2-x}\\):</p>\\[f(1)=5\\qquad f'(x)=\\frac{4x(2-x)+(2x^2+3)}{(2-x)^2}=\\frac{-2x^2+8x+3}{(2-x)^2}\\ \\Rightarrow\\ f'(1)=9\\]<div class='res'>Tangente: \\(y-5=9(x-1)\\), es decir, \\(y=9x-4\\). Normal: \\(y-5=-\\dfrac19(x-1)\\), es decir, \\(y=-\\dfrac x9+\\dfrac{46}9\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "asint",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-1-3",
+   "n": 3,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(f:\\mathbb R\\to\\mathbb R\\) definida por \\(f(x)=x^2+|x-1|\\).",
+    "apartados": [
+     "(1,25 p.) Determina los intervalos de crecimiento y de decrecimiento de \\(f\\).",
+     "(1,25 p.) Calcula \\(\\displaystyle\\int_0^2f(x)\\,dx\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(f(x)=x^2-x+1\\) si \\(x\\lt1\\) y \\(f(x)=x^2+x-1\\) si \\(x\\ge1\\). Derivadas: \\(f'(x)=2x-1\\) (\\(x\\lt1\\)) y \\(f'(x)=2x+1\\) (\\(x\\gt1\\)). En \\(x=1\\) hay un punto anguloso (\\(f'(1^-)=1\\), \\(f'(1^+)=3\\)), pero \\(f\\) es continua y crece a ambos lados.</p><table class='tb'><tr><th>Intervalo</th><th>\\((-\\infty,\\frac12)\\)</th><th>\\((\\frac12,1)\\)</th><th>\\((1,+\\infty)\\)</th></tr><tr><td>\\(f'\\)</td><td>\\(-\\)</td><td>\\(+\\)</td><td>\\(+\\)</td></tr><tr><td>\\(f\\)</td><td>decrece</td><td>crece</td><td>crece</td></tr></table><div class='res'>Decreciente en \\((-\\infty,\\frac12)\\) y creciente en \\((\\frac12,+\\infty)\\) (mínimo en \\(x=\\frac12\\))</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Parto la integral en \\(x=1\\)<i class='n' data-t='th'>Aditividad de la integral: con una función a trozos se parte donde cambia la expresión.</i>:</p>\\[\\int_0^1(x^2-x+1)\\,dx=\\frac13-\\frac12+1=\\frac56\\qquad\\int_1^2(x^2+x-1)\\,dx=\\left[\\frac{x^3}3+\\frac{x^2}2-x\\right]_1^2=\\frac83-\\left(-\\frac16\\right)=\\frac{17}6\\]<div class='res'>\\(\\displaystyle\\int_0^2f(x)\\,dx=\\frac56+\\frac{17}6=\\frac{11}3\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "a"
+    },
+    {
+     "tema": "integ",
+     "tipo": "def",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-1-4",
+   "n": 4,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(f:[0,+\\infty)\\to\\mathbb R\\) definida por \\(f(x)=xe^x\\).",
+    "apartados": [
+     "(1 p.) Esboza el recinto limitado por la gráfica de \\(f\\) y las rectas \\(x=2\\), \\(y=x\\).",
+     "(1,5 p.) Determina el área del recinto anterior."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(f(x)=x\\iff x(e^x-1)=0\\iff x=0\\) (en \\(x\\ge0\\)). Para \\(x\\gt0\\), \\(e^x\\gt1\\) y \\(f(x)\\gt x\\): la gráfica queda por encima de la recta. El recinto está entre \\(x=0\\) y \\(x=2\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 230 190' width='100%' style='max-width:300px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='40.0,170.0 150.0,150.0 150.0,22.2 144.5,43.0 139.0,61.1 133.5,76.9 128.0,90.8 122.5,102.8 117.0,113.2 111.5,122.3 106.0,130.2 100.5,137.0 95.0,142.8 89.5,147.9 84.0,152.2 78.5,155.9 73.0,159.1 67.5,161.8 62.0,164.0 56.5,166.0 51.0,167.6 45.5,168.9 40.0,170.0' fill='#b9a4f5' fill-opacity='.55'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M8 170H225M40 182V6'/></g><line x1='40' y1='170' x2='161.0' y2='148.0' stroke='#e8487a' stroke-width='2'/><line x1='150' y1='170' x2='150' y2='0' stroke='currentColor' stroke-width='1.5' stroke-dasharray='4 3'/><polyline points='40.0,170.0 45.5,168.9 51.0,167.6 56.5,166.0 62.0,164.0 67.5,161.8 73.0,159.1 78.5,155.9 84.0,152.2 89.5,147.9 95.0,142.8 100.5,137.0 106.0,130.2 111.5,122.3 117.0,113.2 122.5,102.8 128.0,90.8 133.5,76.9 139.0,61.1 144.5,43.0 150.0,22.2 155.5,-1.5' fill='none' stroke='#2f6df0' stroke-width='2'/><text x='155.5' y='162.0' fill='#e8487a'>y = x</text><text x='111.5' y='115.0' fill='#2f6df0'>f</text><text x='154' y='184'>x = 2</text><text x='44' y='184'>0</text></svg></div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Integro \\(xe^x\\) por partes (polinomio antes que exponencial en ALPES<i class='n' data-t='th'>Regla ALPES: Arcos, Logaritmos, Polinomios, Exponenciales, Senos/cosenos. \\(u=x\\), \\(dv=e^xdx\\).</i>): \\(\\int xe^x\\,dx=xe^x-e^x\\).</p>\\[A=\\int_0^2(xe^x-x)\\,dx=\\left[xe^x-e^x-\\frac{x^2}2\\right]_0^2=(2e^2-e^2-2)-(0-1-0)\\]<div class='res'>Área \\(=e^2-1\\approx6{,}389\\ u^2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "area",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "rep",
+     "apartados": "a"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-1-5",
+   "n": 5,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la matriz \\(A=\\begin{pmatrix}m&m&m\\\\m&m+1&m\\\\m&m&m+2\\end{pmatrix}\\).",
+    "apartados": [
+     "(1,5 p.) ¿Para qué valores de \\(m\\) existe la inversa de la matriz \\(A\\)? Razona la respuesta.",
+     "(1 p.) Para \\(m=1\\), halla \\(\\left(\\dfrac12A\\right)^{-1}\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Existe \\(A^{-1}\\) si y solo si \\(|A|\\neq0\\)<i class='n' data-t='th'>Una matriz cuadrada es invertible si y solo si su determinante es distinto de 0.</i>. Resto la fila 1 a las filas 2 y 3 (no cambia el determinante):</p>\\[|A|=\\begin{vmatrix}m&m&m\\\\0&1&0\\\\0&0&2\\end{vmatrix}=2m\\]<div class='res'>Existe \\(A^{-1}\\) si y solo si \\(m\\neq0\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(\\left(\\frac12A\\right)^{-1}=2A^{-1}\\). Para \\(m=1\\): \\(A=\\begin{pmatrix}1&1&1\\\\1&2&1\\\\1&1&3\\end{pmatrix}\\), \\(|A|=2\\), \\(\\operatorname{Adj}A=\\begin{pmatrix}5&-2&-1\\\\-2&2&0\\\\-1&0&1\\end{pmatrix}\\) (simétrica), \\(A^{-1}=\\frac12(\\operatorname{Adj}A)^t\\):</p><div class='res'>\\(\\left(\\dfrac12A\\right)^{-1}=2A^{-1}=\\begin{pmatrix}5&-2&-1\\\\-2&2&0\\\\-1&0&1\\end{pmatrix}\\)</div><i class='n' data-t='tp'>Comprobación: \\(A\\cdot\\operatorname{Adj}A=|A|\\,I=2I\\), luego \\(\\frac12A\\cdot\\operatorname{Adj}A=I\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-1-6",
+   "n": 6,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "En una cafetería, tres cafés, una tostada y dos zumos de naranja cuestan 7,50 €. Cuatro cafés, una tostada y un zumo de naranja cuestan 7,20 €.",
+    "apartados": [
+     "(1,5 p.) Calcula, de forma razonada, el precio total de dos cafés, una tostada y tres zumos de naranja.",
+     "(1 p.) ¿El precio de un zumo de naranja podría ser de 2 €? Razona la respuesta."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>Sean \\(c\\), \\(t\\), \\(z\\) los precios del café, la tostada y el zumo:</p>\\[\\begin{cases}3c+t+2z=7{,}5\\\\4c+t+z=7{,}2\\end{cases}\\]<p>Dos ecuaciones con tres incógnitas: compatible indeterminado, pero el precio pedido puede determinarse.</p></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Busco \\(\\alpha,\\beta\\) con \\(\\alpha(3,1,2)+\\beta(4,1,1)=(2,1,3)\\) (coeficientes de \\(c\\), \\(t\\), \\(z\\) del conjunto pedido): \\(\\alpha+\\beta=1\\) y \\(3\\alpha+4\\beta=2\\Rightarrow\\beta=-1\\), \\(\\alpha=2\\); y \\(2\\alpha+\\beta=3\\) ✓. Entonces</p>\\[2c+t+3z=2(3c+t+2z)-(4c+t+z)=2\\cdot7{,}5-7{,}2\\]<div class='res'>7,80 €</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Restando las ecuaciones: \\(-c+z=0{,}3\\Rightarrow c=z-0{,}3\\). Si \\(z=2\\): \\(c=1{,}7\\) y \\(t=7{,}5-3\\cdot1{,}7-2\\cdot2=-1{,}6\\), un precio negativo.</p><div class='res'>No: con el zumo a 2 € la tostada saldría a \\(-1{,}60\\) €, imposible</div><i class='n' data-t='why'>Los precios deben ser positivos. De \\(t=7{,}5-3(z-0{,}3)-2z=8{,}4-5z\\gt0\\) se obtiene \\(z\\lt1{,}68\\) €: el zumo debe costar menos de 1,68 €.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "sistemas",
+     "tipo": "disc",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-1-7",
+   "n": 7,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el punto \\(P(1,0,1)\\) y el plano \\(\\pi\\equiv x-y+z+1=0\\).",
+    "apartados": [
+     "(1,25 p.) Halla el simétrico del punto \\(P\\) respecto al plano \\(\\pi\\).",
+     "(1,25 p.) Halla la distancia del punto \\(P\\) al plano \\(\\pi\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Recta perpendicular a \\(\\pi\\) por \\(P\\) (dirección \\(\\vec n=(1,-1,1)\\)): \\((1+t,\\,-t,\\,1+t)\\). Corte con \\(\\pi\\):</p>\\[(1+t)+t+(1+t)+1=0\\iff3t+3=0\\iff t=-1\\ \\Rightarrow\\ M(0,1,0)\\]<p>\\(M\\) es el punto medio de \\(P\\) y \\(P'\\): \\(P'=2M-P\\).</p><div class='res'>\\(P'=(0,2,0)-(1,0,1)=(-1,\\,2,\\,-1)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'>\\[d(P,\\pi)=\\frac{|1-0+1+1|}{\\sqrt{1+1+1}}=\\frac3{\\sqrt3}\\]<div class='res'>\\(d(P,\\pi)=\\sqrt3\\approx1{,}732\\) unidades</div><i class='n' data-t='tp'>Comprobación: \\(|PM|=|(-1,1,-1)|=\\sqrt3\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "simet",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "dist",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2021-reserva-1-8",
+   "n": 8,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las rectas \\(r\\equiv\\dfrac{x-2}{-2}=y-1=\\dfrac z{-2}\\) y \\(s\\equiv\\begin{cases}x+2y=3\\\\2y+z=2\\end{cases}\\)",
+    "apartados": [
+     "(1,25 p.) Estudia la posición relativa de \\(r\\) y \\(s\\).",
+     "(1,25 p.) Calcula, si es posible, el plano que contiene a \\(r\\) y a \\(s\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(r\\): \\(R(2,1,0)\\), \\(\\vec d_r=(-2,1,-2)\\). \\(s\\): dirección \\((1,2,0)\\times(0,2,1)=(2,-1,2)=-\\vec d_r\\): las direcciones son proporcionales, luego \\(r\\) y \\(s\\) son paralelas o coincidentes. ¿\\(R\\in s\\)? \\(2+2\\cdot1=4\\neq3\\): no.</p><div class='res'>Las rectas son paralelas (distintas)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Dos rectas paralelas distintas determinan un plano. Punto de \\(s\\) (con \\(y=1\\)): \\(S(1,1,0)\\). Vectores del plano: \\(\\vec d_r=(-2,1,-2)\\) y \\(\\overrightarrow{RS}=(-1,0,0)\\):</p>\\[\\vec n=\\vec d_r\\times\\overrightarrow{RS}=\\begin{vmatrix}\\vec i&\\vec j&\\vec k\\\\-2&1&-2\\\\-1&0&0\\end{vmatrix}=(0,\\,2,\\,1)\\]\\[2y+z+D=0\\ \\text{por }R(2,1,0):\\ 2+D=0\\Rightarrow D=-2\\]<div class='res'>\\(2y+z-2=0\\)</div><i class='n' data-t='tp'>Comprobación: \\(S\\): \\(2+0-2=0\\) ✓ y es una de las ecuaciones de \\(s\\).</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "pos",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "ecs",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

@@ -1,0 +1,327 @@
+{
+ "version": 1,
+ "id": "matematicas-2022-junio",
+ "asignatura": "matematicas",
+ "anio": 2022,
+ "convocatoria": "Junio",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2022-junio-1",
+   "n": 1,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función continua \\(f\\) definida por \\[f(x)=\\begin{cases}\\dfrac1x&\\text{si }x\\lt-1\\\\ax+b&\\text{si }-1\\le x\\lt1\\\\\\dfrac{x^2}{x+1}&\\text{si }x\\ge1\\end{cases}\\]",
+    "apartados": [
+     "(1 p.) Calcula \\(a\\) y \\(b\\).",
+     "(1,5 p.) Estudia y halla las asíntotas de la gráfica de \\(f\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(f\\) es continua en \\(x=-1\\) y en \\(x=1\\) (puntos donde cambia la expresión)<i class='n' data-t='th'>\\(f\\) continua en \\(x_0\\) \\(\\iff\\lim_{x\\to x_0^-}f=\\lim_{x\\to x_0^+}f=f(x_0)\\).</i>:</p>\\[x=-1:\\ \\lim_{x\\to-1^-}\\frac1x=-1=f(-1)=-a+b\\qquad x=1:\\ f(1^-)=a+b=\\lim_{x\\to1^+}\\frac{x^2}{x+1}=\\frac12\\]\\[\\begin{cases}-a+b=-1\\\\a+b=\\frac12\\end{cases}\\ \\Rightarrow\\ 2b=-\\frac12\\ \\Rightarrow\\ b=-\\frac14,\\ a=\\frac34\\]<div class='res'>\\(a=\\dfrac34\\) y \\(b=-\\dfrac14\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p><b>Verticales.</b> Ninguna: \\(\\frac1x\\) solo se usa para \\(x\\lt-1\\) (no se anula el denominador), el tramo central es un polinomio y \\(\\frac{x^2}{x+1}\\) se usa para \\(x\\ge1\\) (\\(x+1\\neq0\\)).</p><p><b>En \\(-\\infty\\)</b> (tramo \\(\\frac1x\\)): \\(\\displaystyle\\lim_{x\\to-\\infty}\\frac1x=0\\Rightarrow\\) asíntota horizontal \\(y=0\\).</p><p><b>En \\(+\\infty\\)</b> (tramo \\(\\frac{x^2}{x+1}\\)): \\(\\displaystyle\\lim_{x\\to+\\infty}f=+\\infty\\), no hay horizontal. Oblicua \\(y=mx+n\\)<i class='n' data-t='th'>Asíntota oblicua: \\(m=\\lim\\frac{f(x)}x\\) finito y no nulo; \\(n=\\lim(f(x)-mx)\\) finito.</i>:</p>\\[m=\\lim_{x\\to+\\infty}\\frac{x^2}{x(x+1)}=1\\qquad n=\\lim_{x\\to+\\infty}\\left(\\frac{x^2}{x+1}-x\\right)=\\lim\\frac{-x}{x+1}=-1\\]<div class='res'>Asíntota horizontal \\(y=0\\) en \\(-\\infty\\), asíntota oblicua \\(y=x-1\\) en \\(+\\infty\\); no hay asíntotas verticales</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "cont",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "asint",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-junio-2",
+   "n": 2,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "De entre todos los rectángulos con lados paralelos a los ejes de coordenadas, determina las dimensiones de aquel de área máxima que puede inscribirse en la región limitada por las gráficas de las funciones \\(f,g:\\mathbb R\\to\\mathbb R\\), definidas por \\(f(x)=4-\\dfrac{x^2}3\\) y \\(g(x)=\\dfrac{x^2}6-2\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Región y planteamiento",
+     "html": "<div class='ex'><p>Corte de las gráficas: \\(4-\\frac{x^2}3=\\frac{x^2}6-2\\iff x^2=12\\iff x=\\pm2\\sqrt3\\). La región queda entre \\(g\\) (abajo) y \\(f\\) (arriba) y es simétrica respecto del eje \\(Y\\). El rectángulo de área máxima es simétrico respecto del eje \\(Y\\)<i class='n' data-t='why'>Como \\(f\\) y \\(g\\) son pares, la altura disponible en \\(x\\) es \\(f(x)-g(x)\\), decreciente en \\(|x|\\): lo mejor es un rectángulo centrado en el eje \\(Y\\), con los cuatro vértices en las gráficas.</i>, con vértices \\((\\pm x,f(x))\\) y \\((\\pm x,g(x))\\), \\(x\\in(0,2\\sqrt3)\\):</p>\\[A(x)=2x\\bigl[f(x)-g(x)\\bigr]=2x\\left(6-\\frac{x^2}2\\right)=12x-x^3\\]</div>"
+    },
+    {
+     "titulo": "Máximo",
+     "html": "<div class='ex'>\\[A'(x)=12-3x^2=0\\iff x=2\\ (x\\gt0)\\qquad A''(x)=-6x\\lt0\\]<p>Máximo en \\(x=2\\)<i class='n' data-t='th'>\\(A'(x_0)=0\\) y \\(A''(x_0)\\lt0\\): máximo relativo; como \\(A\\to0\\) en los extremos del dominio, es absoluto.</i>. Base \\(2x=4\\) y altura \\(f(2)-g(2)=\\frac83-\\left(-\\frac43\\right)=4\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 300 160' width='100%' style='max-width:380px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='28.8,100.0 46.1,78.8 63.4,60.8 80.7,46.1 98.0,34.7 115.4,26.5 132.7,21.6 150.0,20.0 167.3,21.6 184.6,26.5 202.0,34.7 219.3,46.1 236.6,60.8 253.9,78.8 271.2,100.0 271.2,100.0 253.9,110.6 236.6,119.6 219.3,126.9 202.0,132.7 184.6,136.7 167.3,139.2 150.0,140.0 132.7,139.2 115.4,136.7 98.0,132.7 80.7,126.9 63.4,119.6 46.1,110.6 28.8,100.0' fill='#b9a4f5' fill-opacity='.35'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M8 100H292M150 150V6'/></g><polyline points='28.8,100.0 46.1,78.8 63.4,60.8 80.7,46.1 98.0,34.7 115.4,26.5 132.7,21.6 150.0,20.0 167.3,21.6 184.6,26.5 202.0,34.7 219.3,46.1 236.6,60.8 253.9,78.8 271.2,100.0' fill='none' stroke='#2f6df0' stroke-width='2'/><polyline points='28.8,100.0 46.1,110.6 63.4,119.6 80.7,126.9 98.0,132.7 115.4,136.7 132.7,139.2 150.0,140.0 167.3,139.2 184.6,136.7 202.0,132.7 219.3,126.9 236.6,119.6 253.9,110.6 271.2,100.0' fill='none' stroke='#e8487a' stroke-width='2'/><rect x='80' y='46.66666666666667' width='140' height='79.99999999999999' fill='#f6c76a' fill-opacity='.6' stroke='#c77d00' stroke-width='2'/><text x='224' y='43.66666666666667'>(2, 8/3)</text><text x='224' y='139.66666666666666'>(2, −4/3)</text><text x='31.0' y='36.0' fill='#2f6df0'>f</text><text x='31.0' y='132.0' fill='#e8487a'>g</text></svg></div><div class='res'>El rectángulo de mayor área es un cuadrado de \\(4\\times4\\) (área 16), con vértices \\(\\left(\\pm2,\\frac83\\right)\\) y \\(\\left(\\pm2,-\\frac43\\right)\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "opt",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-junio-3",
+   "n": 3,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea \\(f\\) la función definida por \\(f(x)=\\begin{cases}2x+4&\\text{si }x\\lt0\\\\(x-2)^2&\\text{si }x\\ge0\\end{cases}\\)",
+    "apartados": [
+     "(1 p.) Calcula los puntos de corte de la gráfica de \\(f\\) con el eje de abscisas y esboza la gráfica de la función.",
+     "(1,5 p.) Halla el área del recinto limitado por la gráfica de \\(f\\) y por el eje de abscisas."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(x\\lt0\\): \\(2x+4=0\\iff x=-2\\) (válido, \\(-2\\lt0\\)). \\(x\\ge0\\): \\((x-2)^2=0\\iff x=2\\) (la parábola toca al eje, que es tangente en su vértice). Además \\(f(0)=4\\) en las dos expresiones: \\(f\\) es continua en 0, con un punto anguloso (pendientes 2 y \\(-4\\)).</p><div style='overflow-x:auto'><svg viewBox='0 0 300 175' width='100%' style='max-width:380px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='20.0,150.0 110.0,38.0 110.0,38.0 119.0,59.3 128.0,78.3 137.0,95.1 146.0,109.7 155.0,122.0 164.0,132.1 173.0,139.9 182.0,145.5 191.0,148.9 200.0,150.0' fill='#b9a4f5' fill-opacity='.55'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M10 150H285M110 165V10'/></g><polyline points='2.0,172.4 110.0,38.0' fill='none' stroke='#2f6df0' stroke-width='2'/><polyline points='110.0,38.0 119.0,59.3 128.0,78.3 137.0,95.1 146.0,109.7 155.0,122.0 164.0,132.1 173.0,139.9 182.0,145.5 191.0,148.9 200.0,150.0 209.0,148.9 218.0,145.5' fill='none' stroke='#2f6df0' stroke-width='2'/><circle cx='20' cy='150' r='3.5' fill='#e8487a'/><circle cx='200' cy='150' r='3.5' fill='#e8487a'/><circle cx='110' cy='38' r='3.5' fill='#17825a'/><text x='14' y='164'>−2</text><text x='197' y='164'>2</text><text x='116' y='42'>4</text></svg></div><div class='res'>Cortes con el eje de abscisas: \\((-2,0)\\) y \\((2,0)\\) (y con el eje de ordenadas: \\((0,4)\\))</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>El recinto va de \\(x=-2\\) a \\(x=2\\), con \\(f\\ge0\\). Parto la integral en \\(x=0\\)<i class='n' data-t='th'>Aditividad: \\(\\int_a^bf=\\int_a^cf+\\int_c^bf\\). Con una función a trozos se parte donde cambia la expresión.</i>:</p>\\[A=\\int_{-2}^0(2x+4)\\,dx+\\int_0^2(x-2)^2\\,dx=\\bigl[x^2+4x\\bigr]_{-2}^0+\\left[\\frac{(x-2)^3}3\\right]_0^2=4+\\frac83\\]<div class='res'>Área \\(=\\dfrac{20}3\\ u^2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "area",
+     "apartados": "b"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "rep",
+     "apartados": "a"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-junio-4",
+   "n": 4,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(f\\) definida por \\(f(x)=\\dfrac{x^3}{x^2-2x+1}\\) para \\(x\\neq1\\). Halla una primitiva de \\(f\\) que pase por el punto \\((2,6)\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "División y fracciones simples",
+     "html": "<div class='ex'><p>\\(x^2-2x+1=(x-1)^2\\). El grado del numerador (3) supera al del denominador (2): divido<i class='n' data-t='why'>Con grado(numerador) \\(\\ge\\) grado(denominador) se divide primero; queda un polinomio más una fracción propia.</i>: \\(x^3=(x^2-2x+1)(x+2)+(3x-2)\\), luego</p>\\[f(x)=x+2+\\frac{3x-2}{(x-1)^2}\\]<p>Raíz doble \\(x=1\\):</p>\\[\\frac{3x-2}{(x-1)^2}=\\frac A{x-1}+\\frac B{(x-1)^2}\\iff3x-2=A(x-1)+B\\]<p>Con \\(x=1\\): \\(B=1\\); coeficiente de \\(x\\): \\(A=3\\).</p>\\[f(x)=x+2+\\frac3{x-1}+\\frac1{(x-1)^2}\\]</div>"
+    },
+    {
+     "titulo": "Integración y condición",
+     "html": "<div class='ex'>\\[F(x)=\\int f=\\frac{x^2}2+2x+3\\ln|x-1|-\\frac1{x-1}+C\\]<p>La primitiva debe pasar por \\((2,6)\\) (donde \\(x-1=1\\gt0\\)): \\(F(2)=2+4+3\\ln1-1+C=5+C=6\\Rightarrow C=1\\).</p><div class='res'>\\(F(x)=\\dfrac{x^2}2+2x+3\\ln(x-1)-\\dfrac1{x-1}+1\\), para \\(x\\gt1\\)</div><i class='n' data-t='tp'>Comprueba derivando: \\(F'(x)=x+2+\\frac3{x-1}+\\frac1{(x-1)^2}=f(x)\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "racional",
+     "apartados": ""
+    },
+    {
+     "tema": "integ",
+     "tipo": "pcond",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-junio-5",
+   "n": 5,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el sistema: \\[\\begin{cases}x-y+mz=-3\\\\-mx+3y-z=1\\\\x-4y+mz=-6\\end{cases}\\]",
+    "apartados": [
+     "(1,75 p.) Discute el sistema según los valores de \\(m\\).",
+     "(0,75 p.) Para \\(m=2\\) resuelve el sistema, si es posible."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Matriz de coeficientes \\(M\\) y su determinante:</p>\\[|M|=\\begin{vmatrix}1&-1&m\\\\-m&3&-1\\\\1&-4&m\\end{vmatrix}=(3m-4)+(1-m^2)+(4m^2-3m)=3m^2-3=3(m-1)(m+1)\\]<p>Por Rouché-Frobenius<i class='n' data-t='th'>\\(\\operatorname{rg}M=\\operatorname{rg}M^*=3\\): SCD; \\(\\operatorname{rg}M=\\operatorname{rg}M^*\\lt3\\): SCI; \\(\\operatorname{rg}M\\lt\\operatorname{rg}M^*\\): SI.</i>:</p><p>• \\(m\\neq\\pm1\\): \\(\\operatorname{rg}M=\\operatorname{rg}M^*=3\\): compatible determinado.</p><p>• \\(m=1\\): \\(M=\\begin{pmatrix}1&-1&1\\\\-1&3&-1\\\\1&-4&1\\end{pmatrix}\\), \\(\\operatorname{rg}M=2\\) (menor \\(\\begin{vmatrix}1&-1\\\\-1&3\\end{vmatrix}=2\\neq0\\) y \\(|M|=0\\)). El menor de las columnas 1, 2 y 4 de \\(M^*\\) vale \\(\\begin{vmatrix}1&-1&-3\\\\-1&3&1\\\\1&-4&-6\\end{vmatrix}=-12\\neq0\\): \\(\\operatorname{rg}M^*=3\\). Incompatible.</p><p>• \\(m=-1\\): \\(M=\\begin{pmatrix}1&-1&-1\\\\1&3&-1\\\\1&-4&-1\\end{pmatrix}\\), \\(\\operatorname{rg}M=2\\) (la columna 3 es la opuesta de la 1; menor \\(\\begin{vmatrix}1&-1\\\\1&3\\end{vmatrix}=4\\neq0\\)). El menor de las columnas 1, 2 y 4 de \\(M^*\\) vale \\(\\begin{vmatrix}1&-1&-3\\\\1&3&1\\\\1&-4&-6\\end{vmatrix}=0\\): \\(\\operatorname{rg}M^*=2\\). Compatible indeterminado.</p><div class='res'>\\(m\\neq\\pm1\\): SCD. \\(m=1\\): SI. \\(m=-1\\): SCI</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Para \\(m=2\\) es SCD. Restando la 1.ª ecuación de la 3.ª: \\(-3y=-3\\Rightarrow y=1\\). La 1.ª queda \\(x+2z=-2\\) y la 2.ª, \\(-2x-z=-2\\Rightarrow z=2-2x\\); entonces \\(x+4-4x=-2\\Rightarrow x=2\\), \\(z=-2\\).</p><div class='res'>\\((x,y,z)=(2,\\ 1,\\ -2)\\)</div><i class='n' data-t='tp'>Comprobación: \\(2-1-4=-3\\) ✓, \\(-4+3+2=1\\) ✓, \\(2-4-4=-6\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "sistemas",
+     "tipo": "disc",
+     "apartados": "a"
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-junio-6",
+   "n": 6,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la matriz \\(A=\\begin{pmatrix}m&\\sqrt m&\\sqrt m\\\\\\sqrt m&m&1\\\\\\sqrt m&1&m\\end{pmatrix}\\), donde \\(m\\ge0\\).",
+    "apartados": [
+     "(1 p.) ¿Para qué valores de \\(m\\) tiene inversa la matriz \\(A\\)?",
+     "(1,5 p.) Para \\(m=4\\) resuelve, si es posible, la ecuación matricial \\(AX=12I\\), donde \\(I\\) es la matriz identidad de orden 3."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(A\\) tiene inversa si y solo si \\(|A|\\neq0\\)<i class='n' data-t='th'>Una matriz cuadrada es invertible si y solo si su determinante es distinto de 0.</i>. Con \\(s=\\sqrt m\\) (\\(m=s^2\\)):</p>\\[|A|=\\begin{vmatrix}s^2&s&s\\\\s&s^2&1\\\\s&1&s^2\\end{vmatrix}=s^2(s^4-1)-s(s^3-s)+s(s-s^3)=s^6-2s^4+s^2=s^2(s^2-1)^2=m\\,(m-1)^2\\]<div class='res'>\\(A\\) tiene inversa si y solo si \\(m\\neq0\\) y \\(m\\neq1\\) (con \\(m\\ge0\\))</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Para \\(m=4\\): \\(|A|=4\\cdot9=36\\neq0\\), existe \\(A^{-1}\\), y \\(X=12A^{-1}\\) (por la izquierda<i class='n' data-t='err'>\\(A\\) está a la izquierda de \\(X\\): \\(AX=12I\\Rightarrow X=A^{-1}\\cdot12I=12A^{-1}\\).</i>).</p><p>\\(A=\\begin{pmatrix}4&2&2\\\\2&4&1\\\\2&1&4\\end{pmatrix}\\), \\(\\operatorname{Adj}A=\\begin{pmatrix}15&-6&-6\\\\-6&12&0\\\\-6&0&12\\end{pmatrix}\\) (simétrica), \\(A^{-1}=\\dfrac1{36}(\\operatorname{Adj}A)^t\\):</p>\\[X=12A^{-1}=\\frac{12}{36}\\begin{pmatrix}15&-6&-6\\\\-6&12&0\\\\-6&0&12\\end{pmatrix}\\]<div class='res'>\\(X=\\begin{pmatrix}5&-2&-2\\\\-2&4&0\\\\-2&0&4\\end{pmatrix}\\)</div><i class='n' data-t='tp'>Comprobación: fila 1 de \\(A\\) por columna 1 de \\(X\\): \\(20-4-4=12\\) ✓; por la columna 2: \\(-8+8+0=0\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "ecmat",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-junio-7",
+   "n": 7,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Se consideran los vectores \\(\\vec u=(-1,2,3)\\) y \\(\\vec v=(2,0,-1)\\), así como el punto \\(A(-4,4,7)\\).",
+    "apartados": [
+     "(0,75 p.) Calcula \\(a\\) y \\(b\\) para que el vector \\(\\vec w=(1,a,b)\\) sea ortogonal a \\(\\vec u\\) y \\(\\vec v\\).",
+     "(1,75 p.) Determina los cuatro vértices de un paralelogramo cuyos lados tienen las direcciones de los vectores \\(\\vec u\\) y \\(\\vec v\\), y que tiene al vector \\(\\overrightarrow{OA}\\) como una de sus diagonales, siendo \\(O\\) el origen de coordenadas."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(\\vec w\\perp\\vec u\\) y \\(\\vec w\\perp\\vec v\\) significan producto escalar nulo<i class='n' data-t='th'>\\(\\vec x\\perp\\vec y\\iff\\vec x\\cdot\\vec y=0\\).</i>:</p>\\[\\vec w\\cdot\\vec u=-1+2a+3b=0\\qquad\\vec w\\cdot\\vec v=2-b=0\\ \\Rightarrow\\ b=2,\\ \\ -1+2a+6=0\\Rightarrow a=-\\tfrac52\\]<div class='res'>\\(a=-\\dfrac52\\) y \\(b=2\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Los lados del paralelogramo son paralelos a \\(\\vec u\\) y \\(\\vec v\\) y \\(\\overrightarrow{OA}\\) es una diagonal: \\(\\overrightarrow{OA}\\) es suma de un múltiplo de \\(\\vec u\\) y otro de \\(\\vec v\\)<i class='n' data-t='why'>La diagonal que sale de \\(O\\) es la suma de los dos lados que salen de \\(O\\): \\(\\overrightarrow{OA}=\\lambda\\vec u+\\mu\\vec v\\). Entonces los vértices son \\(O\\), \\(\\lambda\\vec u\\), \\(\\mu\\vec v\\) y \\(A\\).</i>:</p>\\[(-4,4,7)=\\lambda(-1,2,3)+\\mu(2,0,-1)\\iff\\begin{cases}-\\lambda+2\\mu=-4\\\\2\\lambda=4\\\\3\\lambda-\\mu=7\\end{cases}\\Rightarrow\\lambda=2,\\ \\mu=-1\\]<p>(la 1.ª ecuación: \\(-2-2=-4\\) ✓). Los lados desde \\(O\\) son \\(2\\vec u=(-2,4,6)\\) y \\(-\\vec v=(-2,0,1)\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 340 270' width='100%' style='max-width:440px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><defs><marker id='j7n' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#dc2626'/></marker><marker id='j7d' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#16a34a'/></marker><marker id='j7r' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#2563eb'/></marker><marker id='j7a' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#64748b'/></marker></defs><polygon points='148.1,182.5 204.4,63.5 191.9,26.0 135.6,145.1' fill='#8b5cf6' fill-opacity='.28' stroke='#7c3aed' stroke-width='1.3'/><line x1='148.1' y1='182.5' x2='204.4' y2='63.5' stroke='#2563eb' stroke-width='2.2'/><line x1='204.4' y1='63.5' x2='191.9' y2='26.0' stroke='#2563eb' stroke-width='2.2'/><line x1='191.9' y1='26.0' x2='135.6' y2='145.1' stroke='#2563eb' stroke-width='2.2'/><line x1='135.6' y1='145.1' x2='148.1' y2='182.5' stroke='#2563eb' stroke-width='2.2'/><line x1='148.1' y1='182.5' x2='191.9' y2='26.0' stroke='#64748b' stroke-width='1.6' stroke-dasharray='4 3'/><line x1='148.1' y1='182.5' x2='176.3' y2='123.0' stroke='#16a34a' stroke-width='2.4' marker-end='url(#j7d)'/><text x='182.3' y='119.0' fill='#16a34a' font-weight='700'>u</text><line x1='148.1' y1='182.5' x2='160.6' y2='220.0' stroke='#16a34a' stroke-width='2.4' marker-end='url(#j7d)'/><text x='166.6' y='230.0' fill='#16a34a' font-weight='700'>v</text><circle cx='148.1' cy='182.5' r='3.8' fill='#e8487a'/><text x='134.1' y='194.5' font-weight='700'>O</text><circle cx='204.4' cy='63.5' r='3.8' fill='#e8487a'/><text x='212.4' y='57.5' font-weight='700'>B</text><circle cx='191.9' cy='26.0' r='3.8' fill='#e8487a'/><text x='199.9' y='20.0' font-weight='700'>A</text><circle cx='135.6' cy='145.1' r='3.8' fill='#e8487a'/><text x='121.6' y='157.1' font-weight='700'>D</text><g stroke='#64748b' stroke-width='1.2' fill='none'><line x1='30' y1='224' x2='37.5' y2='238.9'/><line x1='30' y1='224' x2='50.7' y2='218.6'/><line x1='30' y1='224' x2='30.0' y2='208.7'/></g><g fill='#64748b' font-size='10'><text x='36.9' y='247.6'>x</text><text x='54.3' y='220.9'>y</text><text x='27.0' y='207.9'>z</text></g><g transform='translate(10.0,258)'><rect x='0' y='-8' width='12' height='9' fill='#8b5cf6' fill-opacity='.4' stroke='#7c3aed'/><text x='18' y='0' font-size='10'>plano</text></g><g transform='translate(63.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#2563eb' stroke-width='2'/><text x='18' y='0' font-size='10'>recta</text></g><g transform='translate(116.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#dc2626' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector normal</text></g><g transform='translate(212.2,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#16a34a' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector director</text></g><g transform='translate(319.2,258)'><circle cx='6' cy='-4' r='3.8' fill='#e8487a'/><text x='18' y='0' font-size='10'>puntos</text></g></svg></div><div class='res'>Vértices: \\(O(0,0,0)\\), \\(B(-2,4,6)\\), \\(A(-4,4,7)\\) y \\(D(-2,0,1)\\)</div><i class='n' data-t='tp'>Comprobación: \\(B+D-O=(-4,4,7)=A\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "vec",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "geom",
+     "tipo": "ecs",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-junio-8",
+   "n": 8,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la recta \\(r\\equiv x-2=\\dfrac y{-1}=\\dfrac{z-1}2\\), así como la recta \\(s\\) determinada por el punto \\(P(1,2,3)\\) y el vector director \\(\\vec v=(1+a,-a,3a)\\).",
+    "apartados": [
+     "(1,5 p.) Calcula \\(a\\) para que las rectas \\(r\\) y \\(s\\) se corten.",
+     "(1 p.) Calcula \\(a\\) para que las rectas \\(r\\) y \\(s\\) sean perpendiculares."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(r\\): punto \\(R(2,0,1)\\) y dirección \\(\\vec d=(1,-1,2)\\). Dos rectas se cortan si son coplanarias y no paralelas<i class='n' data-t='th'>Rectas que se cortan: \\([\\overrightarrow{RP},\\vec d,\\vec v]=0\\) (coplanarias) y \\(\\vec d\\), \\(\\vec v\\) no proporcionales.</i>. Con \\(\\overrightarrow{RP}=(-1,2,2)\\):</p>\\[\\begin{vmatrix}-1&2&2\\\\1&-1&2\\\\1+a&-a&3a\\end{vmatrix}=a+(-2a+4)+2=6-a=0\\iff a=6\\]<p>Con \\(a=6\\): \\(\\vec v=(7,-6,18)\\), no proporcional a \\((1,-1,2)\\): no son paralelas.</p><div class='res'>\\(a=6\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Rectas perpendiculares (direcciones ortogonales): \\(\\vec d\\cdot\\vec v=0\\):</p>\\[1\\cdot(1+a)+(-1)(-a)+2\\cdot3a=1+8a=0\\]<div class='res'>\\(a=-\\dfrac18\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "pos",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "perp",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

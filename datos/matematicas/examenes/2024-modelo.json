@@ -1,0 +1,338 @@
+{
+ "version": 1,
+ "id": "matematicas-2024-modelo",
+ "asignatura": "matematicas",
+ "anio": 2024,
+ "convocatoria": "Modelo",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2024-modelo-1",
+   "n": 1,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Halla dos números mayores o iguales que 0, cuya suma sea 1, y el producto de uno de ellos por la raíz cuadrada del otro sea máximo.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento: función a maximizar",
+     "html": "<div class='ex'><p>Sean \\(x\\) e \\(y\\) los números, con \\(x,y\\ge0\\) y \\(x+y=1\\). Llamo \\(x\\) al que se multiplica y \\(y=1-x\\) al que se le hace la raíz, con \\(x\\in[0,1]\\). Hay que maximizar</p>\\[P(x)=x\\sqrt{1-x},\\qquad x\\in[0,1]\\]<i class='n' data-t='why'>Se escribe la función objetivo en una sola variable usando la condición \\(x+y=1\\). El dominio \\([0,1]\\) viene de \\(x\\ge0\\) e \\(y=1-x\\ge0\\).</i></div>"
+    },
+    {
+     "titulo": "Puntos críticos y máximo absoluto",
+     "html": "<div class='ex'><p>\\(P\\) es continua en el intervalo cerrado \\([0,1]\\), luego alcanza su máximo absoluto<i class='n' data-t='th'>Teorema de Weierstrass: una función continua en un intervalo cerrado y acotado alcanza en él un máximo y un mínimo absolutos, que están en puntos críticos, en puntos donde no es derivable o en los extremos.</i>. Derivo (regla del producto) para \\(x\\in(0,1)\\):</p>\\[P'(x)=\\sqrt{1-x}-\\frac x{2\\sqrt{1-x}}=\\frac{2(1-x)-x}{2\\sqrt{1-x}}=\\frac{2-3x}{2\\sqrt{1-x}}\\]<p>\\(P'(x)=0\\iff x=\\tfrac23\\). Comparo los candidatos:</p>\\[P(0)=0\\qquad P(1)=0\\qquad P\\!\\left(\\tfrac23\\right)=\\frac23\\sqrt{\\frac13}=\\frac{2}{3\\sqrt3}=\\frac{2\\sqrt3}9\\approx0{,}385\\]<p>\\(P'\\gt0\\) en \\((0,\\frac23)\\) y \\(P'\\lt0\\) en \\((\\frac23,1)\\): confirma que \\(x=\\frac23\\) es un máximo.</p><div class='res'>Los números son \\(\\dfrac23\\) (el que se multiplica) y \\(\\dfrac13\\) (al que se le hace la raíz); el producto máximo es \\(\\dfrac{2\\sqrt3}9\\approx0{,}385\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "opt",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2024-modelo-2",
+   "n": 2,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(f(x)=\\dfrac{x^2+a}{x-b}\\), para \\(x\\neq b\\).",
+    "apartados": [
+     "(1,5 p.) Calcula \\(a\\) y \\(b\\) para que la gráfica de \\(f\\) pase por el punto \\((1,-2)\\) y tenga a la recta \\(y=x+4\\) como asíntota oblicua.",
+     "(1 p.) En el caso \\(a=5\\) y \\(b=4\\), calcula la ecuación de la recta normal a la gráfica de \\(f\\) que pasa por el punto de abscisa \\(x=0\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p><b>Pasa por \\((1,-2)\\):</b></p>\\[f(1)=\\frac{1+a}{1-b}=-2\\iff1+a=-2+2b\\iff a=2b-3\\]<p><b>Asíntota oblicua.</b> Divido los polinomios:<i class='n' data-t='th'>Asíntota oblicua \\(y=mx+n\\) de una función racional con grado del numerador una unidad mayor que el del denominador: se obtiene dividiendo; el cociente es \\(mx+n\\) y el resto da una fracción que tiende a 0 en \\(\\pm\\infty\\).</i> \\(x^2+a=(x-b)(x+b)+(a+b^2)\\), luego</p>\\[f(x)=x+b+\\frac{a+b^2}{x-b}\\]<p>La fracción tiende a 0 en \\(\\pm\\infty\\), así que la asíntota oblicua es \\(y=x+b\\). Debe ser \\(y=x+4\\): \\(b=4\\).</p><p>Con \\(b=4\\): \\(a=2\\cdot4-3=5\\).</p><div class='res'>\\(a=5\\) y \\(b=4\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Con \\(a=5\\) y \\(b=4\\): \\(f(x)=\\dfrac{x^2+5}{x-4}\\), definida en \\(x=0\\) (\\(0\\neq4\\)):</p>\\[f(0)=-\\frac54\\qquad f'(x)=\\frac{2x(x-4)-(x^2+5)}{(x-4)^2}=\\frac{x^2-8x-5}{(x-4)^2}\\ \\Rightarrow\\ f'(0)=-\\frac5{16}\\]<p>La normal es perpendicular a la tangente: pendiente \\(-\\dfrac1{f'(0)}=\\dfrac{16}5\\)<i class='n' data-t='th'>Rectas perpendiculares: \\(m\\cdot m'=-1\\). Normal en \\(x_0\\): \\(y-f(x_0)=-\\frac1{f'(x_0)}(x-x_0)\\).</i>:</p>\\[y+\\frac54=\\frac{16}5\\,x\\]<div class='res'>Normal: \\(y=\\dfrac{16}5x-\\dfrac54\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "asint",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2024-modelo-3",
+   "n": 3,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sabiendo que \\(F:\\mathbb R\\to\\mathbb R\\) definida por \\(F(x)=e^{x^2}\\) es una primitiva de \\(f\\):",
+    "apartados": [
+     "(1,25 p.) Comprueba que \\(f\\) es creciente.",
+     "(1,25 p.) Calcula el área del recinto limitado por la gráfica de la función \\(f\\), el eje de abscisas y la recta \\(x=1\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Si \\(F\\) es una primitiva de \\(f\\), entonces \\(F'=f\\)<i class='n' data-t='th'>Definición de primitiva: \\(F\\) es primitiva de \\(f\\) si \\(F'(x)=f(x)\\) para todo \\(x\\).</i>:</p>\\[f(x)=F'(x)=2x\\,e^{x^2}\\]<p>\\(f\\) es creciente si \\(f'\\gt0\\):</p>\\[f'(x)=2e^{x^2}+2x\\cdot2x\\,e^{x^2}=2e^{x^2}\\bigl(1+2x^2\\bigr)\\gt0\\ \\ \\forall x\\in\\mathbb R\\]<p>porque \\(e^{x^2}\\gt0\\) y \\(1+2x^2\\gt0\\).</p><div class='res'>\\(f'(x)\\gt0\\) para todo \\(x\\): \\(f\\) es estrictamente creciente en \\(\\mathbb R\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(f(x)=2xe^{x^2}\\) se anula solo en \\(x=0\\), y es negativa si \\(x\\lt0\\) y positiva si \\(x\\gt0\\). El recinto limitado por la gráfica, el eje \\(X\\) y la recta \\(x=1\\) es el que queda entre \\(x=0\\) (donde la gráfica corta al eje) y \\(x=1\\), con \\(f\\ge0\\):</p>\\[A=\\int_0^1 f(x)\\,dx=\\bigl[F(x)\\bigr]_0^1=F(1)-F(0)=e^{1}-e^{0}\\]<p>(regla de Barrow<i class='n' data-t='th'>Regla de Barrow: si \\(F\\) es una primitiva de \\(f\\), \\(\\int_a^bf=F(b)-F(a)\\).</i>, usando directamente la primitiva \\(F\\) del enunciado).</p><div class='res'>Área \\(=e-1\\ u^2\\approx1{,}718\\ u^2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "a"
+    },
+    {
+     "tema": "integ",
+     "tipo": "area",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2024-modelo-4",
+   "n": 4,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(f:[0,+\\infty)\\to\\mathbb R\\) definida por \\(f(x)=\\cos\\!\\left(\\sqrt x\\right)\\). Calcula, si es posible, una primitiva de \\(f\\) cuya gráfica pase por el punto \\((0,5)\\). Sugerencia: haz el cambio \\(t=\\sqrt x\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Cambio de variable",
+     "html": "<div class='ex'><p>Con \\(t=\\sqrt x\\) (\\(t\\ge0\\)): \\(x=t^2\\), \\(dx=2t\\,dt\\):</p>\\[\\int\\cos\\!\\left(\\sqrt x\\right)dx=\\int\\cos t\\cdot2t\\,dt=2\\int t\\cos t\\,dt\\]</div>"
+    },
+    {
+     "titulo": "Integración por partes",
+     "html": "<div class='ex'><p>Polinomio (P) y coseno (S): P va antes en ALPES, \\(u=t\\)<i class='n' data-t='th'>Regla ALPES: Arcos, Logaritmos, Polinomios, Exponenciales, Senos/cosenos. \\(u\\) es el que aparece antes: aquí \\(u=t\\), \\(dv=\\cos t\\,dt\\).</i>:</p>\\[u=t,\\ dv=\\cos t\\,dt\\Rightarrow du=dt,\\ v=\\operatorname{sen}t\\qquad\\int t\\cos t\\,dt=t\\operatorname{sen}t-\\int\\operatorname{sen}t\\,dt=t\\operatorname{sen}t+\\cos t\\]\\[F(x)=2\\left(\\sqrt x\\operatorname{sen}\\sqrt x+\\cos\\sqrt x\\right)+C\\]</div>"
+    },
+    {
+     "titulo": "Condición: la gráfica pasa por \\((0,5)\\)",
+     "html": "<div class='ex'><p>\\(F(0)=2\\,(0+\\cos0)+C=2+C=5\\Rightarrow C=3\\). Es posible (y única).</p><div class='res'>\\(F(x)=2\\sqrt x\\operatorname{sen}\\sqrt x+2\\cos\\sqrt x+3\\)</div><i class='n' data-t='tp'>Comprueba derivando: \\(\\frac d{dx}\\left(2\\sqrt x\\operatorname{sen}\\sqrt x+2\\cos\\sqrt x\\right)=\\frac{\\operatorname{sen}\\sqrt x}{\\sqrt x}+\\cos\\sqrt x-\\frac{\\operatorname{sen}\\sqrt x}{\\sqrt x}=\\cos\\sqrt x\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "cambio",
+     "apartados": ""
+    },
+    {
+     "tema": "integ",
+     "tipo": "part",
+     "apartados": ""
+    },
+    {
+     "tema": "integ",
+     "tipo": "pcond",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2024-modelo-5",
+   "n": 5,
+   "bloque": "C",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la matriz \\(A=\\begin{pmatrix}0&a&-b\\\\0&0&b\\\\0&0&0\\end{pmatrix}\\).",
+    "apartados": [
+     "(0,75 p.) Calcula \\(A^{10}\\).",
+     "(1,75 p.) Calcula, si es posible, la matriz inversa de \\(I+A+A^2\\), donde \\(I\\) denota la matriz identidad de orden 3."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Calculo las primeras potencias<i class='n' data-t='why'>Para una potencia grande se calculan \\(A^2\\), \\(A^3\\) hasta ver un patrón. Aquí \\(A\\) es triangular con diagonal nula: sus potencias «se van anulando».</i>:</p>\\[A^2=A\\cdot A=\\begin{pmatrix}0&0&ab\\\\0&0&0\\\\0&0&0\\end{pmatrix}\\qquad A^3=A^2\\cdot A=\\begin{pmatrix}0&0&0\\\\0&0&0\\\\0&0&0\\end{pmatrix}=O\\]<p>Como \\(A^3=O\\), todas las potencias posteriores son nulas: \\(A^{10}=A^3\\cdot A^7=O\\).</p><div class='res'>\\(A^{10}=O\\) (la matriz nula de orden 3)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p><b>Condición de existencia de la inversa:</b> existe si y solo si el determinante es distinto de 0<i class='n' data-t='th'>\\(M\\) es invertible \\(\\iff|M|\\neq0\\).</i>. Sea \\(M=I+A+A^2=\\begin{pmatrix}1&a&-b+ab\\\\0&1&b\\\\0&0&1\\end{pmatrix}\\); es triangular superior con unos en la diagonal: \\(|M|=1\\neq0\\). Existe \\(M^{-1}\\).</p><p><b>Cálculo.</b> Como \\(A^3=O\\):<i class='n' data-t='why'>Truco: \\((I-A)(I+A+A^2)=I-A^3=I\\), igual que \\((1-x)(1+x+x^2)=1-x^3\\). Por eso la inversa de \\(I+A+A^2\\) es \\(I-A\\).</i></p>\\[(I-A)(I+A+A^2)=I+A+A^2-A-A^2-A^3=I-A^3=I\\]<p>Por tanto \\(M^{-1}=I-A\\):</p><div class='res'>\\((I+A+A^2)^{-1}=I-A=\\begin{pmatrix}1&-a&b\\\\0&1&-b\\\\0&0&1\\end{pmatrix}\\)</div><i class='n' data-t='tp'>Comprueba: fila 1 de \\(M\\) por columna 3 de \\(I-A\\): \\(1\\cdot b+a\\cdot(-b)+(-b+ab)\\cdot1=0\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "pot",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2024-modelo-6",
+   "n": 6,
+   "bloque": "C",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Dadas las matrices \\(A=\\begin{pmatrix}1&1&0\\\\1&0&1\\\\0&1&1\\end{pmatrix}\\) y \\(B=\\begin{pmatrix}0&0&1\\\\0&1&0\\\\1&0&0\\end{pmatrix}\\), se define la matriz \\(M=A+(\\lambda-1)B\\).",
+    "apartados": [
+     "(1,5 p.) Halla los valores de \\(\\lambda\\) para los que la matriz \\(M\\) tiene rango menor que 3.",
+     "(1 p.) Para \\(\\lambda=-1\\), resuelve el sistema lineal homogéneo cuya matriz de coeficientes es \\(M\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Con \\(\\mu=\\lambda-1\\): \\(M=\\begin{pmatrix}1&1&\\mu\\\\1&\\mu&1\\\\\\mu&1&1\\end{pmatrix}\\). El rango es menor que 3 si y solo si \\(|M|=0\\)<i class='n' data-t='th'>Una matriz cuadrada \\(3\\times3\\) tiene rango menor que 3 si y solo si su determinante es 0.</i>:</p>\\[|M|=1(\\mu-1)-1(1-\\mu)+\\mu(1-\\mu^2)=2(\\mu-1)-\\mu(\\mu-1)(\\mu+1)=(\\mu-1)\\bigl(2-\\mu^2-\\mu\\bigr)=-(\\mu-1)^2(\\mu+2)\\]<p>\\(|M|=0\\iff\\mu=1\\) o \\(\\mu=-2\\), es decir, \\(\\lambda=2\\) o \\(\\lambda=-1\\).</p><p>• \\(\\lambda=2\\) (\\(\\mu=1\\)): \\(M\\) tiene todos sus elementos iguales a 1: rango 1.</p><p>• \\(\\lambda=-1\\) (\\(\\mu=-2\\)): \\(M=\\begin{pmatrix}1&1&-2\\\\1&-2&1\\\\-2&1&1\\end{pmatrix}\\); menor \\(\\begin{vmatrix}1&1\\\\1&-2\\end{vmatrix}=-3\\neq0\\): rango 2.</p><div class='res'>\\(\\operatorname{rg}M\\lt3\\) para \\(\\lambda=2\\) (rango 1) y \\(\\lambda=-1\\) (rango 2)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Para \\(\\lambda=-1\\): \\(\\operatorname{rg}M=2\\lt3\\), luego el sistema homogéneo es compatible indeterminado (\\(3-2=1\\) parámetro):</p>\\[\\begin{cases}x+y-2z=0\\\\x-2y+z=0\\\\-2x+y+z=0\\end{cases}\\]<p>Restando las dos primeras: \\(3y-3z=0\\Rightarrow y=z\\). En la primera: \\(x+z-2z=0\\Rightarrow x=z\\). La tercera se cumple: \\(-2z+z+z=0\\).</p><div class='res'>\\((x,y,z)=(t,\\,t,\\,t)\\), con \\(t\\in\\mathbb R\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "rango",
+     "apartados": "a"
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2024-modelo-7",
+   "n": 7,
+   "bloque": "D",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el plano \\(\\pi\\), determinado por los puntos \\(A(-1,0,0)\\), \\(B(0,1,1)\\) y \\(C(2,1,0)\\), y la recta \\(r\\equiv\\begin{cases}x-2z-3=0\\\\y-z-2=0\\end{cases}\\). Halla los puntos de \\(r\\) cuya distancia a \\(\\pi\\) es \\(\\sqrt{14}\\) unidades.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Ecuación del plano y de la recta",
+     "html": "<div class='ex'><p><b>Plano \\(\\pi\\).</b> Vectores \\(\\overrightarrow{AB}=(1,1,1)\\) y \\(\\overrightarrow{AC}=(3,1,0)\\); normal \\(\\vec n=\\overrightarrow{AB}\\times\\overrightarrow{AC}=(-1,3,-2)\\sim(1,-3,2)\\):</p>\\[\\pi\\equiv x-3y+2z+D=0\\ \\text{por }A(-1,0,0):\\ -1+D=0\\Rightarrow\\pi\\equiv x-3y+2z+1=0\\]<p>(comprobación: \\(B\\): \\(0-3+2+1=0\\) ✓; \\(C\\): \\(2-3+0+1=0\\) ✓).</p><p><b>Recta \\(r\\) en paramétricas.</b> Con \\(z=t\\): \\(y=2+t\\), \\(x=3+2t\\):</p>\\[r\\equiv(3+2t,\\ 2+t,\\ t)\\]</div>"
+    },
+    {
+     "titulo": "Condición de distancia",
+     "html": "<div class='ex'><p>La distancia de un punto \\(X(x_0,y_0,z_0)\\) a \\(\\pi\\) es<i class='n' data-t='th'>Deducción: si \\(Q\\in\\pi\\), \\(d(X,\\pi)\\) es la longitud de la proyección de \\(\\overrightarrow{QX}\\) sobre \\(\\vec n\\): \\(\\dfrac{|\\overrightarrow{QX}\\cdot\\vec n|}{|\\vec n|}=\\dfrac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}\\).</i> \\(\\dfrac{|x_0-3y_0+2z_0+1|}{\\sqrt{1+9+4}}=\\dfrac{|x_0-3y_0+2z_0+1|}{\\sqrt{14}}\\). Para \\(X\\in r\\):</p>\\[d(X,\\pi)=\\frac{|(3+2t)-3(2+t)+2t+1|}{\\sqrt{14}}=\\frac{|t-2|}{\\sqrt{14}}=\\sqrt{14}\\iff|t-2|=14\\iff t=16\\ \\text{o}\\ t=-12\\]<div style='overflow-x:auto'><svg viewBox='0 0 340 270' width='100%' style='max-width:440px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><defs><marker id='m7n' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#dc2626'/></marker><marker id='m7d' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#16a34a'/></marker><marker id='m7r' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#2563eb'/></marker><marker id='m7a' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#64748b'/></marker></defs><polygon points='306.0,127.3 203.4,181.0 34.0,118.7 136.6,65.0' fill='#8b5cf6' fill-opacity='.28' stroke='#7c3aed' stroke-width='1.3'/><line x1='79.8' y1='203.0' x2='260.2' y2='43.0' stroke='#2563eb' stroke-width='2.2'/><line x1='246.8' y1='54.9' x2='246.8' y2='131.0' stroke='#64748b' stroke-width='1.4' stroke-dasharray='4 3'/><line x1='93.2' y1='191.1' x2='93.2' y2='115.0' stroke='#64748b' stroke-width='1.4' stroke-dasharray='4 3'/><line x1='196.7' y1='99.3' x2='230.1' y2='69.7' stroke='#16a34a' stroke-width='2.4' marker-end='url(#m7d)'/><text x='236.1' y='65.7' fill='#16a34a' font-weight='700'>d</text><line x1='199.6' y1='162.0' x2='199.6' y2='112.3' stroke='#dc2626' stroke-width='2.4' marker-end='url(#m7n)'/><text x='205.6' y='108.3' fill='#dc2626' font-weight='700'>n</text><circle cx='246.8' cy='54.9' r='3.8' fill='#e8487a'/><text x='254.8' y='48.9' font-weight='700'>X₁</text><circle cx='93.2' cy='191.1' r='3.8' fill='#e8487a'/><text x='101.2' y='203.1' font-weight='700'>X₂</text><circle cx='170.0' cy='123.0' r='3.8' fill='#e8487a'/><text x='178.0' y='137.0' font-weight='700'>I</text><text x='254.8' y='145.0' fill='#64748b' font-weight='700' font-style='italic'>d(X₁,π)=√14</text><text x='-2.8' y='111.0' fill='#64748b' font-weight='700' font-style='italic'>d(X₂,π)=√14</text><g stroke='#64748b' stroke-width='1.2' fill='none'><line x1='30' y1='224' x2='46.9' y2='230.2'/><line x1='30' y1='224' x2='44.1' y2='216.6'/><line x1='30' y1='224' x2='30.0' y2='204.2'/></g><g fill='#64748b' font-size='10'><text x='49.2' y='236.2'>x</text><text x='45.6' y='218.3'>y</text><text x='27.0' y='201.9'>z</text></g><g transform='translate(10.0,258)'><rect x='0' y='-8' width='12' height='9' fill='#8b5cf6' fill-opacity='.4' stroke='#7c3aed'/><text x='18' y='0' font-size='10'>plano</text></g><g transform='translate(63.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#2563eb' stroke-width='2'/><text x='18' y='0' font-size='10'>recta</text></g><g transform='translate(116.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#dc2626' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector normal</text></g><g transform='translate(212.2,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#16a34a' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector director</text></g><g transform='translate(319.2,258)'><circle cx='6' cy='-4' r='3.8' fill='#e8487a'/><text x='18' y='0' font-size='10'>puntos</text></g></svg></div><p>Sustituyo en la paramétrica de \\(r\\):</p><div class='res'>\\(X_1(35,\\,18,\\,16)\\) (\\(t=16\\)) y \\(X_2(-21,\\,-10,\\,-12)\\) (\\(t=-12\\))</div><i class='n' data-t='tp'>Comprobación: \\(X_1\\): \\(35-54+32+1=14\\Rightarrow d=\\frac{14}{\\sqrt{14}}=\\sqrt{14}\\) ✓. \\(X_2\\): \\(-21+30-24+1=-14\\Rightarrow d=\\sqrt{14}\\) ✓ (al otro lado del plano). La figura es un esquema (no está a escala): el plano, la recta que lo atraviesa en \\(t=2\\) y los dos puntos a distancia \\(\\sqrt{14}\\) a lados opuestos.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "dist",
+     "apartados": ""
+    },
+    {
+     "tema": "geom",
+     "tipo": "ecs",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2024-modelo-8",
+   "n": 8,
+   "bloque": "D",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el paralelogramo cuyos vértices consecutivos son los puntos \\(P(-1,2,3)\\), \\(Q(-2,1,0)\\), \\(R(0,5,1)\\) y \\(S\\).",
+    "apartados": [
+     "(1 p.) Halla las coordenadas del punto \\(S\\).",
+     "(1,5 p.) Calcula la ecuación de la recta que pasa por el origen de coordenadas y es perpendicular al plano que contiene a los puntos \\(P\\), \\(Q\\) y \\(R\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>En un paralelogramo \\(PQRS\\) con vértices consecutivos, los lados opuestos son iguales como vectores: \\(\\overrightarrow{PQ}=\\overrightarrow{SR}\\)<i class='n' data-t='why'>Equivale a que las diagonales \\(PR\\) y \\(QS\\) se cortan en su punto medio: \\(\\frac{P+R}2=\\frac{Q+S}2\\).</i>. Entonces \\(S=R-\\overrightarrow{PQ}\\) con \\(\\overrightarrow{PQ}=(-1,-1,-3)\\):</p>\\[S=(0,5,1)-(-1,-1,-3)=(1,\\,6,\\,4)\\]<div class='res'>\\(S(1,\\,6,\\,4)\\)</div><i class='n' data-t='tp'>Comprobación: punto medio de \\(PR\\): \\((-\\frac12,\\frac72,2)\\); punto medio de \\(QS\\): \\((-\\frac12,\\frac72,2)\\) ✓.</i></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>La recta es perpendicular al plano \\(PQR\\): su dirección es la normal del plano, \\(\\vec n=\\overrightarrow{PQ}\\times\\overrightarrow{PR}\\)<i class='n' data-t='th'>Una recta es perpendicular a un plano si su dirección es paralela al vector normal del plano. Para un plano que pasa por \\(P,Q,R\\), la normal es \\(\\overrightarrow{PQ}\\times\\overrightarrow{PR}\\).</i>:</p>\\[\\overrightarrow{PQ}=(-1,-1,-3)\\quad\\overrightarrow{PR}=(1,3,-2)\\quad\\vec n=\\begin{vmatrix}\\vec i&\\vec j&\\vec k\\\\-1&-1&-3\\\\1&3&-2\\end{vmatrix}=(11,\\,-5,\\,-2)\\]<p>Recta por \\(O(0,0,0)\\) con dirección \\(\\vec n\\):</p>\\[r\\equiv\\begin{cases}x=11\\lambda\\\\y=-5\\lambda\\\\z=-2\\lambda\\end{cases}\\]<div style='overflow-x:auto'><svg viewBox='0 0 340 270' width='100%' style='max-width:440px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><defs><marker id='m8n' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#dc2626'/></marker><marker id='m8d' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#16a34a'/></marker><marker id='m8r' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#2563eb'/></marker><marker id='m8a' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#64748b'/></marker></defs><polygon points='179.4,39.6 226.6,184.6 152.5,206.4 105.3,61.4' fill='#8b5cf6' fill-opacity='.28' stroke='#7c3aed' stroke-width='1.3'/><line x1='179.4' y1='39.6' x2='226.6' y2='184.6' stroke='#2563eb' stroke-width='2.2'/><line x1='226.6' y1='184.6' x2='152.5' y2='206.4' stroke='#2563eb' stroke-width='2.2'/><line x1='152.5' y1='206.4' x2='105.3' y2='61.4' stroke='#2563eb' stroke-width='2.2'/><line x1='105.3' y1='61.4' x2='179.4' y2='39.6' stroke='#2563eb' stroke-width='2.2'/><line x1='34.0' y1='178.8' x2='306.0' y2='156.3' stroke='#2563eb' stroke-width='2.2'/><line x1='102.0' y1='173.2' x2='34.0' y2='178.8' stroke='#16a34a' stroke-width='2.4' marker-end='url(#m8d)'/><text x='40.0' y='170.8' fill='#16a34a' font-weight='700'>u</text><line x1='165.9' y1='123.0' x2='77.5' y2='130.3' stroke='#dc2626' stroke-width='2.4' marker-end='url(#m8n)'/><text x='83.5' y='122.3' fill='#dc2626' font-weight='700'>n</text><circle cx='179.4' cy='39.6' r='3.8' fill='#e8487a'/><text x='165.4' y='33.6' font-weight='700'>P</text><circle cx='226.6' cy='184.6' r='3.8' fill='#e8487a'/><text x='212.6' y='196.6' font-weight='700'>Q</text><circle cx='152.5' cy='206.4' r='3.8' fill='#e8487a'/><text x='160.5' y='218.4' font-weight='700'>R</text><circle cx='105.3' cy='61.4' r='3.8' fill='#e8487a'/><text x='113.3' y='55.4' font-weight='700'>S</text><circle cx='102.0' cy='173.2' r='3.8' fill='#e8487a'/><text x='110.0' y='185.2' font-weight='700'>O</text><text x='40.0' y='174.8' fill='#2563eb' font-weight='700' font-style='italic'>r</text><g stroke='#64748b' stroke-width='1.2' fill='none'><line x1='30' y1='224' x2='8.3' y2='225.2'/><line x1='30' y1='224' x2='33.8' y2='230.7'/><line x1='30' y1='224' x2='30.0' y2='203.1'/></g><g fill='#64748b' font-size='10'><text x='-1.6' y='229.6'>x</text><text x='32.0' y='236.8'>y</text><text x='27.0' y='200.4'>z</text></g><g transform='translate(10.0,258)'><rect x='0' y='-8' width='12' height='9' fill='#8b5cf6' fill-opacity='.4' stroke='#7c3aed'/><text x='18' y='0' font-size='10'>plano</text></g><g transform='translate(63.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#2563eb' stroke-width='2'/><text x='18' y='0' font-size='10'>recta</text></g><g transform='translate(116.0,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#dc2626' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector normal</text></g><g transform='translate(212.2,258)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#16a34a' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector director</text></g><g transform='translate(319.2,258)'><circle cx='6' cy='-4' r='3.8' fill='#e8487a'/><text x='18' y='0' font-size='10'>puntos</text></g></svg></div><div class='res'>\\(r\\equiv(x,y,z)=\\lambda\\,(11,-5,-2)\\)</div><i class='n' data-t='tp'>Comprobación: \\(\\vec n\\cdot\\overrightarrow{PQ}=-11+5+6=0\\) ✓ y \\(\\vec n\\cdot\\overrightarrow{PR}=11-15+4=0\\) ✓. En la figura, la recta por \\(O\\) (con su director en verde) es paralela al vector normal del plano (rojo).</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "vec",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "perp",
+     "apartados": "b"
+    },
+    {
+     "tema": "geom",
+     "tipo": "ecs",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

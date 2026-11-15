@@ -1,0 +1,335 @@
+{
+ "version": 1,
+ "id": "matematicas-2022-reserva-2",
+ "asignatura": "matematicas",
+ "anio": 2022,
+ "convocatoria": "Reserva 2",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2022-reserva-2-1",
+   "n": 1,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea \\(f\\) la función continua definida por \\[f(x)=\\begin{cases}x^2+2&\\text{si }x\\le0\\\\\\sqrt{ax+b}&\\text{si }0\\lt x\\le2\\\\\\dfrac{-x}{2\\sqrt2}+\\dfrac3{\\sqrt2}&\\text{si }2\\lt x\\end{cases}\\]",
+    "apartados": [
+     "(1,25 p.) Calcula \\(a\\) y \\(b\\).",
+     "(1,25 p.) Para \\(a=-1\\) y \\(b=4\\), estudia si existe la derivada de \\(f\\) en \\(x=2\\). En caso afirmativo, calcula la ecuación de la recta tangente a la gráfica de \\(f\\) en dicho punto."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Continuidad en \\(x=0\\) y en \\(x=2\\)<i class='n' data-t='th'>\\(f\\) continua en \\(x_0\\iff\\lim_{x\\to x_0^-}f=\\lim_{x\\to x_0^+}f=f(x_0)\\).</i>:</p>\\[x=0:\\ f(0)=2=\\sqrt{b}\\Rightarrow b=4\\qquad x=2:\\ \\sqrt{2a+b}=\\frac{-2}{2\\sqrt2}+\\frac3{\\sqrt2}=\\frac2{\\sqrt2}=\\sqrt2\\Rightarrow2a+4=2\\Rightarrow a=-1\\]<div class='res'>\\(a=-1\\) y \\(b=4\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Con \\(a=-1\\), \\(b=4\\): \\(f(x)=\\sqrt{4-x}\\) en \\((0,2]\\) y \\(f'(x)=-\\dfrac1{2\\sqrt{4-x}}\\). Derivadas laterales en \\(x=2\\):</p>\\[f'(2^-)=-\\frac1{2\\sqrt2}\\qquad f'(2^+)=-\\frac1{2\\sqrt2}\\ (\\text{pendiente del tercer tramo})\\]<p>Coinciden: \\(f\\) es derivable en \\(x=2\\), con \\(f(2)=\\sqrt2\\) y \\(f'(2)=-\\frac1{2\\sqrt2}=-\\frac{\\sqrt2}4\\).</p><div class='res'>Sí existe: \\(f'(2)=-\\dfrac{\\sqrt2}4\\). Tangente: \\(y-\\sqrt2=-\\dfrac{\\sqrt2}4(x-2)\\), es decir, \\(y=-\\dfrac x{2\\sqrt2}+\\dfrac3{\\sqrt2}\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "cont",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-2-2",
+   "n": 2,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(f:\\mathbb R\\to\\mathbb R\\) definida por \\(f(x)=\\ln(x^2+1)\\) (donde \\(\\ln\\) denota la función logaritmo neperiano).",
+    "apartados": [
+     "(1 p.) Determina los intervalos de crecimiento y de decrecimiento de \\(f\\).",
+     "(1,5 p.) Determina los intervalos de convexidad y de concavidad de \\(f\\) y los puntos de inflexión de su gráfica."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'>\\[f'(x)=\\frac{2x}{x^2+1}\\]<p>El denominador es positivo: \\(f'\\gt0\\iff x\\gt0\\) y \\(f'\\lt0\\iff x\\lt0\\)<i class='n' data-t='th'>Si \\(f'\\gt0\\) en un intervalo, \\(f\\) crece; si \\(f'\\lt0\\), decrece.</i>.</p><div class='res'>Decreciente en \\((-\\infty,0)\\) y creciente en \\((0,+\\infty)\\) (mínimo en \\(x=0\\), \\(f(0)=0\\))</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'>\\[f''(x)=\\frac{2(x^2+1)-2x\\cdot2x}{(x^2+1)^2}=\\frac{2(1-x^2)}{(x^2+1)^2}\\]<p>El signo de \\(f''\\) es el de \\(1-x^2\\): positivo en \\((-1,1)\\) y negativo fuera. \\(f''\\) cambia de signo en \\(x=\\pm1\\)<i class='n' data-t='th'>Si \\(f''\\gt0\\), \\(f\\) es convexa; si \\(f''\\lt0\\), cóncava. Un punto donde \\(f''\\) cambia de signo y \\(f\\) es continua es de inflexión.</i>, con \\(f(\\pm1)=\\ln2\\).</p><div class='res'>Convexa en \\((-1,1)\\); cóncava en \\((-\\infty,-1)\\) y en \\((1,+\\infty)\\). Puntos de inflexión: \\((-1,\\ln2)\\) y \\((1,\\ln2)\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "curv",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-2-3",
+   "n": 3,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(F:[0,2\\pi]\\to\\mathbb R\\) definida por \\(F(x)=\\displaystyle\\int_0^x2t\\cos(t)\\,dt\\).",
+    "apartados": [
+     "(1 p.) Determina los intervalos de crecimiento y de decrecimiento de \\(F\\).",
+     "(1,5 p.) Halla la ecuación de la recta tangente a la gráfica de \\(F\\) en el punto de abscisa \\(x=\\pi\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Por el teorema fundamental del cálculo<i class='n' data-t='th'>Teorema fundamental del cálculo: si \\(g\\) es continua, \\(F(x)=\\int_0^xg(t)\\,dt\\) es derivable y \\(F'(x)=g(x)\\).</i>, \\(F'(x)=2x\\cos x\\). Para \\(x\\in(0,2\\pi)\\), \\(2x\\gt0\\) y el signo es el de \\(\\cos x\\):</p><table class='tb'><tr><th>Intervalo</th><th>\\((0,\\frac\\pi2)\\)</th><th>\\((\\frac\\pi2,\\frac{3\\pi}2)\\)</th><th>\\((\\frac{3\\pi}2,2\\pi)\\)</th></tr><tr><td>\\(F'\\)</td><td>\\(+\\)</td><td>\\(-\\)</td><td>\\(+\\)</td></tr><tr><td>\\(F\\)</td><td>crece</td><td>decrece</td><td>crece</td></tr></table><div class='res'>Crece en \\((0,\\frac\\pi2)\\) y en \\((\\frac{3\\pi}2,2\\pi)\\); decrece en \\((\\frac\\pi2,\\frac{3\\pi}2)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(F'(\\pi)=2\\pi\\cos\\pi=-2\\pi\\). Y \\(F(\\pi)=\\int_0^\\pi2t\\cos t\\,dt\\), por partes (\\(u=2t\\), \\(dv=\\cos t\\,dt\\); polinomio antes que coseno en ALPES<i class='n' data-t='th'>Regla ALPES: Arcos, Logaritmos, Polinomios, Exponenciales, Senos/cosenos: \\(u\\) es lo que aparece antes.</i>):</p>\\[\\int2t\\cos t\\,dt=2t\\operatorname{sen}t-\\int2\\operatorname{sen}t\\,dt=2t\\operatorname{sen}t+2\\cos t\\ \\Rightarrow\\ F(\\pi)=\\bigl[2t\\operatorname{sen}t+2\\cos t\\bigr]_0^\\pi=-2-2=-4\\]<div class='res'>\\(y+4=-2\\pi(x-\\pi)\\), es decir, \\(y=-2\\pi x+2\\pi^2-4\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "tfc",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-2-4",
+   "n": 4,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Calcula \\(\\displaystyle\\int_0^1x\\operatorname{arctg}(x)\\,dx\\) (donde \\(\\operatorname{arctg}\\) denota la función arcotangente).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Integración por partes",
+     "html": "<div class='ex'><p>Arcos (A) antes que polinomios (P) en ALPES<i class='n' data-t='th'>Regla ALPES: Arcos, Logaritmos, Polinomios, Exponenciales, Senos/cosenos. Aquí \\(u=\\operatorname{arctg}x\\) y \\(dv=x\\,dx\\).</i>: \\(u=\\operatorname{arctg}x\\), \\(dv=x\\,dx\\Rightarrow du=\\dfrac{dx}{1+x^2}\\), \\(v=\\dfrac{x^2}2\\):</p>\\[\\int x\\operatorname{arctg}x\\,dx=\\frac{x^2}2\\operatorname{arctg}x-\\frac12\\int\\frac{x^2}{1+x^2}\\,dx=\\frac{x^2}2\\operatorname{arctg}x-\\frac12\\int\\left(1-\\frac1{1+x^2}\\right)dx\\]\\[=\\frac{x^2}2\\operatorname{arctg}x-\\frac x2+\\frac12\\operatorname{arctg}x\\]</div>"
+    },
+    {
+     "titulo": "Regla de Barrow",
+     "html": "<div class='ex'>\\[\\int_0^1x\\operatorname{arctg}x\\,dx=\\left[\\frac{x^2+1}2\\operatorname{arctg}x-\\frac x2\\right]_0^1=\\left(\\operatorname{arctg}1-\\frac12\\right)-0\\]<div class='res'>\\(\\dfrac\\pi4-\\dfrac12\\approx0{,}2854\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "part",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-2-5",
+   "n": 5,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el sistema: \\[\\begin{cases}2x+3y+mz=3\\\\x+my-z=-1\\\\3x+y-3z=-m\\end{cases}\\]",
+    "apartados": [
+     "(1,75 p.) Discute el sistema según los valores de \\(m\\).",
+     "(0,75 p.) Para \\(m=-2\\) encuentra, si es posible, \\(y_0\\) para que la solución del sistema sea \\(x=\\lambda\\), \\(y=y_0\\), \\(z=\\lambda-\\dfrac37\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(|M|=\\begin{vmatrix}2&3&m\\\\1&m&-1\\\\3&1&-3\\end{vmatrix}=2(-3m+1)-3(0)+m(1-3m)=-3m^2-5m+2=-(3m-1)(m+2)\\). Por Rouché-Frobenius<i class='n' data-t='th'>\\(\\operatorname{rg}M=\\operatorname{rg}M^*=3\\): SCD; \\(\\operatorname{rg}M=\\operatorname{rg}M^*\\lt3\\): SCI; \\(\\operatorname{rg}M\\lt\\operatorname{rg}M^*\\): SI.</i>:</p><p>• \\(m\\neq\\frac13,-2\\): compatible determinado.</p><p>• \\(m=-2\\): \\(\\operatorname{rg}M=2\\) (menor \\(\\begin{vmatrix}2&3\\\\1&-2\\end{vmatrix}=-7\\neq0\\)). En \\(M^*\\) (términos \\(3,-1,2\\)), el menor de las columnas 1, 2 y 4 vale \\(\\begin{vmatrix}2&3&3\\\\1&-2&-1\\\\3&1&2\\end{vmatrix}=0\\): \\(\\operatorname{rg}M^*=2\\). Compatible indeterminado.</p><p>• \\(m=\\frac13\\): \\(\\operatorname{rg}M=2\\) (menor \\(\\begin{vmatrix}2&3\\\\1&\\frac13\\end{vmatrix}=-\\frac73\\)). En \\(M^*\\) (términos \\(3,-1,-\\frac13\\)), el menor de las columnas 1, 2 y 4 vale \\(\\begin{vmatrix}2&3&3\\\\1&\\frac13&-1\\\\3&1&-\\frac13\\end{vmatrix}=-\\frac{56}9\\neq0\\): \\(\\operatorname{rg}M^*=3\\). Incompatible.</p><div class='res'>\\(m\\neq\\frac13,-2\\): SCD. \\(m=-2\\): SCI. \\(m=\\frac13\\): SI</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Para \\(m=-2\\): \\(2x+3y-2z=3\\), \\(x-2y-z=-1\\), \\(3x+y-3z=2\\). Sustituyo \\(x=\\lambda\\), \\(y=y_0\\), \\(z=\\lambda-\\frac37\\) en la 2.ª ecuación:</p>\\[\\lambda-2y_0-\\lambda+\\frac37=-1\\iff-2y_0=-\\frac{10}7\\iff y_0=\\frac57\\]<p>Se comprueba en las otras: \\(2\\lambda+\\frac{15}7-2\\lambda+\\frac67=3\\) ✓ y \\(3\\lambda+\\frac57-3\\lambda+\\frac97=2\\) ✓.</p><div class='res'>\\(y_0=\\dfrac57\\): la solución es \\(\\left(\\lambda,\\ \\dfrac57,\\ \\lambda-\\dfrac37\\right)\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "sistemas",
+     "tipo": "disc",
+     "apartados": "a"
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-2-6",
+   "n": 6,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Dado \\(a\\neq0\\), considera las matrices \\(A=\\begin{pmatrix}-a&3\\\\a&1\\end{pmatrix}\\) y \\(B=\\begin{pmatrix}1&-1\\\\3&4\\\\1&2\\end{pmatrix}\\).",
+    "apartados": [
+     "(1,25 p.) Determina para qué valores de \\(a\\) se cumple que \\(A^{-1}=\\dfrac14A\\).",
+     "(1,25 p.) Para \\(a=1\\) calcula, si es posible, la matriz \\(X\\) tal que \\(AX=B^t\\), donde \\(B^t\\) denota la matriz traspuesta de \\(B\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(A^{-1}=\\frac14A\\iff A\\cdot\\frac14A=I\\iff A^2=4I\\)<i class='n' data-t='th'>\\(A^{-1}\\) es la matriz que cumple \\(AA^{-1}=I\\).</i>:</p>\\[A^2=\\begin{pmatrix}-a&3\\\\a&1\\end{pmatrix}\\begin{pmatrix}-a&3\\\\a&1\\end{pmatrix}=\\begin{pmatrix}a^2+3a&-3a+3\\\\-a^2+a&3a+1\\end{pmatrix}=\\begin{pmatrix}4&0\\\\0&4\\end{pmatrix}\\]<p>De \\(-3a+3=0\\): \\(a=1\\); comprobación: \\(1+3=4\\) ✓, \\(-1+1=0\\) ✓, \\(3+1=4\\) ✓.</p><div class='res'>\\(a=1\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Existe \\(A^{-1}\\) si y solo si \\(|A|\\neq0\\)<i class='n' data-t='th'>Una matriz cuadrada es invertible si y solo si su determinante es distinto de 0.</i>: con \\(a=1\\), \\(|A|=-1-3=-4\\neq0\\). Además, por el apartado a, \\(A^{-1}=\\frac14A\\). Entonces \\(X=A^{-1}B^t=\\frac14AB^t\\) (por la izquierda), con \\(B^t=\\begin{pmatrix}1&3&1\\\\-1&4&2\\end{pmatrix}\\):</p>\\[X=\\frac14\\begin{pmatrix}-1&3\\\\1&1\\end{pmatrix}\\begin{pmatrix}1&3&1\\\\-1&4&2\\end{pmatrix}=\\frac14\\begin{pmatrix}-4&9&5\\\\0&7&3\\end{pmatrix}\\]<div class='res'>\\(X=\\begin{pmatrix}-1&\\frac94&\\frac54\\\\0&\\frac74&\\frac34\\end{pmatrix}\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "ecmat",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-2-7",
+   "n": 7,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el plano \\(\\pi\\equiv x+y+z=0\\) y la recta \\(r\\equiv\\begin{cases}x=\\lambda\\\\y=1-\\lambda\\\\z=0\\end{cases}\\)",
+    "apartados": [
+     "(1,25 p.) Determina la ecuación del plano perpendicular a \\(\\pi\\) que contiene a \\(r\\).",
+     "(1,25 p.) Calcula la distancia entre \\(r\\) y \\(\\pi\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(r\\): punto \\(R(0,1,0)\\) y dirección \\(\\vec d=(1,-1,0)\\); normal de \\(\\pi\\): \\(\\vec n=(1,1,1)\\). El plano buscado contiene a \\(\\vec d\\) y, al ser perpendicular a \\(\\pi\\), contiene a \\(\\vec n\\)<i class='n' data-t='th'>Un plano es perpendicular a otro si sus normales son perpendiculares: contiene la dirección de la normal del otro.</i>. Su normal:</p>\\[\\vec N=\\vec d\\times\\vec n=\\begin{vmatrix}\\vec i&\\vec j&\\vec k\\\\1&-1&0\\\\1&1&1\\end{vmatrix}=(-1,-1,2)\\sim(1,1,-2)\\]\\[x+y-2z+D=0\\ \\text{por }R:\\ 1+D=0\\Rightarrow D=-1\\]<div class='res'>\\(x+y-2z-1=0\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(\\vec d\\cdot\\vec n=1-1+0=0\\): \\(r\\) es paralela a \\(\\pi\\). \\(R(0,1,0)\\notin\\pi\\) (\\(0+1+0=1\\neq0\\)): no está contenida. La distancia entre \\(r\\) y \\(\\pi\\) es la de cualquier punto de \\(r\\) a \\(\\pi\\):</p>\\[d(r,\\pi)=d(R,\\pi)=\\frac{|0+1+0|}{\\sqrt3}\\]<div class='res'>\\(\\dfrac1{\\sqrt3}=\\dfrac{\\sqrt3}3\\approx0{,}5774\\) unidades</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "perp",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "dist",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-2-8",
+   "n": 8,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sean los planos \\(\\pi_1\\equiv2x+y+z-3=0\\), \\(\\pi_2\\equiv x+2y-z+5=0\\) y la recta \\(r\\equiv x-1=\\dfrac y2=\\dfrac{z+1}5\\).",
+    "apartados": [
+     "(2 p.) Halla los puntos de \\(r\\) que equidistan de \\(\\pi_1\\) y \\(\\pi_2\\).",
+     "(0,5 p.) Halla el seno del ángulo que forma el plano \\(\\pi_1\\) con la recta \\(r\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(r\\equiv(1+t,\\ 2t,\\ -1+5t)\\). Distancias de un punto de \\(r\\) a cada plano<i class='n' data-t='th'>\\(d(P,\\pi)=\\dfrac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}\\). Ambos planos tienen \\(\\sqrt6\\) en el denominador: basta igualar los numeradores.</i>:</p>\\[|2(1+t)+2t+(-1+5t)-3|=|9t-2|\\qquad|(1+t)+4t-(-1+5t)+5|=|7|\\]\\[|9t-2|=7\\iff9t-2=7\\ \\text{o}\\ 9t-2=-7\\iff t=1\\ \\text{o}\\ t=-\\tfrac59\\]<div class='res'>\\((2,\\,2,\\,4)\\) (\\(t=1\\)) y \\(\\left(\\dfrac49,\\,-\\dfrac{10}9,\\,-\\dfrac{34}9\\right)\\) (\\(t=-\\frac59\\))</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(\\operatorname{sen}\\varphi=\\dfrac{|\\vec d\\cdot\\vec n_1|}{|\\vec d||\\vec n_1|}\\)<i class='n' data-t='th'>Ángulo recta-plano: \\(\\operatorname{sen}\\varphi=\\frac{|\\vec d\\cdot\\vec n|}{|\\vec d||\\vec n|}\\).</i>, con \\(\\vec d=(1,2,5)\\) y \\(\\vec n_1=(2,1,1)\\): \\(\\vec d\\cdot\\vec n_1=2+2+5=9\\), \\(|\\vec d|=\\sqrt{30}\\), \\(|\\vec n_1|=\\sqrt6\\):</p><div class='res'>\\(\\operatorname{sen}\\varphi=\\dfrac9{\\sqrt{180}}=\\dfrac{3\\sqrt5}{10}\\approx0{,}6708\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "lug",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "pos",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

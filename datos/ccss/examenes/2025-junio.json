@@ -1,0 +1,388 @@
+{
+ "version": 1,
+ "id": "ccss-2025-junio",
+ "asignatura": "ccss",
+ "anio": 2025,
+ "convocatoria": "Junio",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "ccss-2025-junio-1",
+   "n": 1,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "",
+    "apartados": [
+     "(1,75 p.) Plantee y resuelva de forma matricial: un gerente contrata a 3 vendedores (zonas A, B y C). A: 40 h, 10 demostraciones y 5 viajes. B: el doble de horas que A, 15 demostraciones y 8 viajes. C: 100 h, 25 demostraciones y 10 viajes. Pago: 75 €/h, 300 €/demostración y 250 €/viaje. Retención de IRPF: 15 % si la cantidad es menor de 10 000 € y 18 % en caso contrario. Halle la cantidad final de cada vendedor.",
+     "(0,75 p.) Sea \\(A=\\begin{pmatrix}-2&2&1\\\\3&a-1&2\\\\4&0&3\\end{pmatrix}\\). ¿Para qué valores de \\(a\\) es invertible la matriz \\(A\\)?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Ordenamos los datos en una tabla<i class='n' data-t='tp'>Antes de operar, ordena los datos en una tabla: así la matriz sale sola y no se te olvida ningún dato.</i>:</p><table class='tb'><tr><th></th><th>Horas</th><th>Demostr.</th><th>Viajes</th></tr><tr><td>Zona A</td><td>40</td><td>10</td><td>5</td></tr><tr><td>Zona B</td><td>80</td><td>15</td><td>8</td></tr><tr><td>Zona C</td><td>100</td><td>25</td><td>10</td></tr><tr><td>€ por unidad</td><td>75</td><td>300</td><td>250</td></tr></table><p>Sea \\(M\\) la matriz de actividad y \\(P\\) el vector de pagos:</p>\\[M=\\begin{pmatrix}40&10&5\\\\80&15&8\\\\100&25&10\\end{pmatrix},\\]\\[ P=\\begin{pmatrix}75\\\\300\\\\250\\end{pmatrix}\\]<p>La cantidad bruta es \\(M\\cdot P\\)<i class='n' data-t='why'>Cada fila de \\(M\\) por la columna \\(P\\) calcula «horas·75 + demostraciones·300 + viajes·250», que es exactamente lo que cobra cada vendedor. Por eso un único producto matricial resuelve el problema (y es lo que piden con «de forma matricial»).</i>:</p>\\[M\\cdot P=\\begin{pmatrix}40\\cdot75+10\\cdot300+5\\cdot250\\\\80\\cdot75+15\\cdot300+8\\cdot250\\\\100\\cdot75+25\\cdot300+10\\cdot250\\end{pmatrix}\\]\\[=\\begin{pmatrix}7250\\\\12500\\\\17500\\end{pmatrix}\\text{ €}\\]<p>Retención: A cobra menos de 10 000 € (15 %), luego conserva el 85 %. B y C superan los 10 000 € (18 %), conservan el 82 %<i class='n' data-t='err'>El porcentaje depende de la cantidad <b>bruta de cada vendedor</b>: no apliques el mismo a todos. Comprueba siempre el umbral de 10 000 € con cada uno.</i>:</p>\\[\\begin{pmatrix}0{,}85&0&0\\\\0&0{,}82&0\\\\0&0&0{,}82\\end{pmatrix}\\begin{pmatrix}7250\\\\12500\\\\17500\\end{pmatrix}\\]\\[=\\begin{pmatrix}6162{,}5\\\\10250\\\\14350\\end{pmatrix}\\text{ €}\\]<div class='res'>A cobra 6162,50 €, B cobra 10 250 € y C cobra 14 350 €</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Una matriz cuadrada tiene inversa si y solo si su determinante es distinto de 0<i class='n' data-t='tp'>Hay que concluir con esa condición: no basta con calcular el determinante.</i>. \\(A\\) es cuadrada de orden 3; calculamos su determinante por la regla de Sarrus:</p>\\[|A|=\\begin{vmatrix}-2&2&1\\\\3&a-1&2\\\\4&0&3\\end{vmatrix}\\]\\[=-6(a-1)+16+0-\\bigl[4(a-1)+0+18\\bigr]\\]\\[=-10(a-1)-2\\]\\[=8-10a\\]<p>Buscamos cuándo se anula<i class='n' data-t='why'>Calculamos cuándo el determinante <i>vale cero</i> porque es el único valor que lo impide; para todos los demás, \\(A^{-1}\\) existe.</i>: \\(|A|=0\\iff 8-10a=0\\) \\(\\iff a=\\dfrac45\\).</p><div class='res'>\\(A\\) es invertible (\\(|A|\\neq0\\)) para todo \\(a\\neq\\dfrac45\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "ctx",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "invpar",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2025-junio-2",
+   "n": 2,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "El número de personas que han visto una noticia \\(t\\) horas después de su lanzamiento viene dado por \\[N(t)=500\\,000\\,\\bigl(1-e^{-0{,}2t}\\bigr),\\qquad t\\gt0.\\]",
+    "apartados": [
+     "(0,8 p.) Estudie la monotonía y la curvatura de la función \\(N\\).",
+     "(0,7 p.) Represente gráficamente \\(N\\) y describa su tendencia a lo largo del tiempo.",
+     "(0,5 p.) ¿Cuánto tiempo debe pasar para que la hayan visto 450 000 personas?",
+     "(0,5 p.) La velocidad de difusión es \\(N'(t)\\). ¿Qué conclusión se obtiene al comparar \\(N'(1)\\) y \\(N'(10)\\)?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(N\\) es una exponencial: no presenta puntos «problemáticos». Su dominio es \\((0,+\\infty)\\)<i class='n' data-t='why'>Rayamos la parte de la recta que queda fuera del dominio: ahí la función no está definida y no se estudia.</i>.</p><p>Estudiamos el signo de \\(N'\\)<i class='n' data-t='tp'>Dentro de cada intervalo la derivada no cambia de signo, así que basta sustituir un valor cualquiera del intervalo para conocer su signo.</i>.</p>\\[N'(t)=500\\,000\\cdot0{,}2\\,e^{-0{,}2t}\\]\\[N'(t)=100\\,000\\,e^{-0{,}2t}\\]<p>\\(N'\\) no se anula nunca, porque \\(e^{-0{,}2t}\\gt0\\)<i class='n' data-t='th'>La derivada de \\(e^{u}\\) es \\(e^{u}u'\\).</i>.</p><div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 136 108' width='100%' style='max-width:163px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H122' stroke='currentColor' stroke-width='1.6'/><path d='M14 56L18 48M18 56L22 48M22 56L26 48M26 56L30 48M30 56L34 48M34 56L38 48' stroke='currentColor' stroke-width='1.1'/><path d='M40 46V58' stroke='currentColor' stroke-width='1.6'/><text x='40' y='76' text-anchor='middle' font-weight='700'>0</text><text x='55.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#17a673'>+</text><path d='M69.0 40L105.0 10' stroke='#17a673' stroke-width='2' fill='none'/><path d='M96.0 11L105.0 10L103.0 19' stroke='#17a673' stroke-width='2' fill='none'/><text x='81.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>N</tspan>′(1) &gt; 0</text></svg></div><p>Luego \\(N\\) crece en \\((0,+\\infty)\\)<i class='n' data-t='th'>Si \\(f'\\gt0\\) en un intervalo, \\(f\\) crece en él; si \\(f'\\lt0\\), decrece.</i>.</p><p>No tiene extremos relativos.</p><p>Estudiamos su curvatura<i class='n' data-t='th'>Si \\(f''\\gt0\\) en un intervalo, \\(f\\) es convexa (\\(\\cup\\)) en él; si \\(f''\\lt0\\), es cóncava (\\(\\cap\\)).</i>.</p>\\[N''(t)=-20\\,000\\,e^{-0{,}2t}\\]<p>\\(N''\\) tampoco se anula.</p><p>Estudiamos el signo de \\(N''\\).</p><div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 136 108' width='100%' style='max-width:163px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H122' stroke='currentColor' stroke-width='1.6'/><path d='M14 56L18 48M18 56L22 48M22 56L26 48M26 56L30 48M30 56L34 48M34 56L38 48' stroke='currentColor' stroke-width='1.1'/><path d='M40 46V58' stroke='currentColor' stroke-width='1.6'/><text x='40' y='76' text-anchor='middle' font-weight='700'>0</text><path d='M63.0 42Q81.0 -4 99.0 42' stroke='#e8487a' stroke-width='2' fill='none'/><text x='81.0' y='36' text-anchor='middle' font-size='18' font-weight='700' fill='#e8487a'>−</text><text x='81.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>N</tspan>″(1) &lt; 0</text></svg></div><p>\\(N\\) es cóncava en \\((0,+\\infty)\\).</p><p>No tiene puntos de inflexión.</p><div class='res'>\\(N\\) es creciente y cóncava en todo \\((0,+\\infty)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Con \\(N(0)=0\\): al principio nadie ha visto la noticia. Por la derecha, cuando \\(t\\to+\\infty\\):<i class='n' data-t='th'>La asíntota horizontal describe la tendencia a largo plazo: \\(\\lim_{t\\to+\\infty}N(t)=L\\) da \\(y=L\\).</i></p>\\[\\lim_{t\\to+\\infty}500\\,000\\bigl(1-e^{-0{,}2t}\\bigr)=500\\,000\\]<p>Tabla de valores: \\(N(2)\\approx164\\,800\\), \\(N(5)\\approx316\\,000\\), \\(N(10)\\approx432\\,300\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 300 235' width='100%' style='max-width:400px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M20 210H295M30 220V10'/><path d='M30 20H290' stroke-dasharray='5 3' stroke-opacity='.6'/></g><polyline points='30,210 54,147.4 78,105.4 102,77.2 126,58.4 150,45.7 210,29.5 270,23.5' fill='none' stroke='#2f6df0' stroke-width='2'/><circle cx='168' cy='39' r='3.5' fill='#e8487a'/><g><text x='34' y='16'>y = 500 000</text><text x='172' y='56'>(11,51; 450 000)</text><text x='34' y='204'>0</text><text x='284' y='226'>t</text></g></svg></div><i class='n' data-t='tp'>Dibuja siempre la asíntota \\(y=500\\,000\\) (discontinua) y que la curva se acerca a ella por debajo sin tocarla.</i><div class='res'>La noticia se acerca a las 500 000 personas sin superarlas nunca (asíntota horizontal \\(y=500\\,000\\))</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Planteo \\(N(t)=450\\,000\\) y despejo<i class='n' data-t='why'>Para despejar \\(t\\) del exponente se aplica el logaritmo neperiano: \\(\\ln e^{u}=u\\).</i>:</p>\\[\\begin{aligned}500\\,000\\bigl(1-e^{-0{,}2t}\\bigr)&=450\\,000\\\\&\\iff1-e^{-0{,}2t}=0{,}9\\\\&\\iff e^{-0{,}2t}=0{,}1\\end{aligned}\\]\\[\\begin{aligned}-0{,}2\\,t&=\\ln0{,}1=-\\ln10\\\\&\\iff t=\\frac{\\ln10}{0{,}2}=5\\ln10\\\\&\\approx11{,}51\\end{aligned}\\]<div class='res'>Han de pasar unas 11,51 horas</div></div>"
+    },
+    {
+     "titulo": "Apartado d",
+     "html": "<div class='ex'><p>Calculo la velocidad de difusión en cada instante:</p>\\[\\begin{aligned}N'(1)&=100\\,000\\,e^{-0{,}2}\\\\&\\approx81\\,873\\ \\text{personas/hora}\\\\ N'(10)&=100\\,000\\,e^{-2}\\\\&\\approx13\\,534\\ \\text{personas/hora}\\end{aligned}\\]<p>\\(N'(1)\\gt N'(10)\\), y el cociente es \\(\\dfrac{N'(1)}{N'(10)}=e^{1{,}8}\\approx6{,}05\\).<i class='n' data-t='why'>La derivada \\(N'\\) es decreciente (porque \\(N''\\lt0\\)): la noticia se difunde cada vez más despacio.</i></p><div class='res'>La difusión se ralentiza: a las 10 horas aumenta unas 6 veces más despacio que en la primera hora</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "rep",
+     "apartados": "b"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "modelo",
+     "apartados": "c, d"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2025-junio-3",
+   "n": 3,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "La cantidad de glucosa en sangre (mg/dl) de un paciente en el instante \\(t\\) (horas) viene dada por \\[f(t)=\\begin{cases}\\dfrac56\\left(\\dfrac{t^3}{3}-12t^2+108t+108\\right)&0\\le t\\le12\\\\ t^2-40t+546&12\\lt t\\le24\\end{cases}\\]",
+    "apartados": [
+     "(0,75 p.) ¿En qué periodos de tiempo aumenta el nivel de glucosa?",
+     "(1 p.) ¿En qué momentos tiene los niveles más alto y más bajo de glucosa, y cuánto valen?",
+     "(0,75 p.) ¿En qué momentos, después del mediodía, tiene 155 mg/dl?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Al ser \\(f\\) una función definida a trozos por polinomios, el único punto «problemático» es \\(t=12\\), donde cambia la expresión<i class='n' data-t='why'>Los puntos «problemáticos» son los que no pertenecen al dominio (por ejemplo, los que anulan un denominador) y los puntos donde cambia la expresión de una función a trozos. Hay que marcarlos en la recta porque en ellos también puede cambiar el signo de la derivada.</i>. Su dominio es \\([0,24]\\)<i class='n' data-t='why'>Rayamos la parte de la recta que queda fuera del dominio: ahí la función no está definida y no se estudia.</i>.</p><p>Estudiamos el signo de \\(f'\\)<i class='n' data-t='tp'>Dentro de cada intervalo la derivada no cambia de signo, así que basta sustituir un valor cualquiera del intervalo para conocer su signo.</i>.</p>\\[f'(t)=\\begin{cases}\\frac56\\,(t^2-24t+108)&\\text{si }0\\lt t\\lt12\\\\2t-40&\\text{si }12\\lt t\\lt24\\end{cases}\\]\\[t^2-24t+108=0\\]\\[t=\\dfrac{24\\pm\\sqrt{24^2-4\\cdot108}}{2}\\]\\[t=\\dfrac{24\\pm12}{2}=\\begin{cases}t=6\\\\t=18\\end{cases}\\]\\[2t-40=0\\Rightarrow\\boxed{t=20}\\]<p>\\(t=18\\) no está en el primer tramo<i class='n' data-t='err'>\\(t=18\\) es raíz de \\(f'\\) pero <b>no está en el primer tramo</b> (solo vale en \\([0,12]\\)). Si lo incluyes, pierdes puntos.</i>.</p><div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 376 108' width='100%' style='max-width:451px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H362' stroke='currentColor' stroke-width='1.6'/><path d='M14 56L18 48M18 56L22 48M22 56L26 48M26 56L30 48M30 56L34 48M34 56L38 48' stroke='currentColor' stroke-width='1.1'/><path d='M338 56L342 48M342 56L346 48M346 56L350 48M350 56L354 48M354 56L358 48M358 56L362 48' stroke='currentColor' stroke-width='1.1'/><path d='M40 46V58' stroke='currentColor' stroke-width='1.6'/><text x='40' y='76' text-anchor='middle' font-weight='700'>0</text><path d='M114 46V58' stroke='currentColor' stroke-width='1.6'/><text x='114' y='76' text-anchor='middle' font-weight='700'>6</text><path d='M188 46V58' stroke='currentColor' stroke-width='1.6'/><text x='188' y='76' text-anchor='middle' font-weight='700'>12</text><path d='M262 46V58' stroke='currentColor' stroke-width='1.6'/><text x='262' y='76' text-anchor='middle' font-weight='700'>20</text><path d='M336 46V58' stroke='currentColor' stroke-width='1.6'/><text x='336' y='76' text-anchor='middle' font-weight='700'>24</text><text x='51.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#17a673'>+</text><path d='M65.0 40L101.0 10' stroke='#17a673' stroke-width='2' fill='none'/><path d='M92.0 11L101.0 10L99.0 19' stroke='#17a673' stroke-width='2' fill='none'/><text x='77.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(3) &gt; 0</text><text x='125.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#e8487a'>−</text><path d='M139.0 10L175.0 40' stroke='#e8487a' stroke-width='2' fill='none'/><path d='M166.0 39L175.0 40L173.0 31' stroke='#e8487a' stroke-width='2' fill='none'/><text x='151.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(10) &lt; 0</text><text x='199.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#e8487a'>−</text><path d='M213.0 10L249.0 40' stroke='#e8487a' stroke-width='2' fill='none'/><path d='M240.0 39L249.0 40L247.0 31' stroke='#e8487a' stroke-width='2' fill='none'/><text x='225.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(16) &lt; 0</text><text x='273.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#17a673'>+</text><path d='M287.0 40L323.0 10' stroke='#17a673' stroke-width='2' fill='none'/><path d='M314.0 11L323.0 10L321.0 19' stroke='#17a673' stroke-width='2' fill='none'/><text x='299.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(22) &gt; 0</text></svg></div><p>Luego \\(f\\) crece en \\((0,6)\\) y \\((20,24)\\) y decrece en \\((6,20)\\)<i class='n' data-t='th'>Si \\(f'\\gt0\\) en un intervalo, \\(f\\) crece en él; si \\(f'\\lt0\\), decrece.</i><i class='n' data-t='why'>Como \\(f\\) es continua en \\(t=12\\) y tiene el mismo comportamiento a ambos lados, los dos intervalos se unen en uno solo.</i>.</p><p>Alcanza un máximo en \\(t=6\\) de valor \\(f(6)=330\\) y un mínimo en \\(t=20\\) de valor \\(f(20)=146\\)<i class='n' data-t='why'>Hay un mínimo donde \\(f\\) pasa de decrecer a crecer y un máximo donde pasa de crecer a decrecer.</i>.</p><p>\\(f\\) es continua en \\(t=12\\) (\\(f(12^-)=f(12^+)\\) \\(=210\\))<i class='n' data-t='why'>Hay que comprobar la <b>continuidad en \\(t=12\\)</b> porque el estudio del signo de la derivada solo vale si la función es continua al unir los tramos. Aquí lo es, y por eso decrece sin interrupción de \\(t=6\\) a \\(t=20\\).</i>.</p><div class='res'>La glucosa aumenta en \\((0,6)\\) y en \\((20,24)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Por la recta de signos del apartado a, hay un máximo relativo en \\(t=6\\) y un mínimo relativo en \\(t=20\\).</p><p>Evaluamos \\(f\\) en \\(t=0\\) y \\(t=24\\)<i class='n' data-t='why'>En un intervalo cerrado, el mayor y el menor valor de la función se alcanzan en los extremos relativos o en los extremos del intervalo, así que basta comparar el valor de la función en todos ellos.</i> y lo comparamos con los extremos relativos:</p>\\[\\begin{aligned}f(0)&=90\\\\f(6)&=330\\\\f(20)&=146\\\\f(24)&=162\\end{aligned}\\]<p>Luego el máximo está en \\(t=6\\) y el mínimo en \\(t=0\\)<i class='n' data-t='tp'>Comprueba <b>también los extremos del intervalo</b>: aquí el mínimo está en \\(t=0\\), no en el punto crítico \\(t=20\\).</i>.</p><div class='res'>Máximo: 330 mg/dl en \\(t=6\\) h. Mínimo: 90 mg/dl en \\(t=0\\) h</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Después del mediodía \\(f(t)=t^2-40t+546\\)<i class='n' data-t='why'>Usamos solo el segundo tramo porque el enunciado dice «después del mediodía» (\\(t\\gt12\\)). Ambas soluciones están en \\((12,24]\\), así que las dos valen.</i>:</p>\\[\\begin{aligned}t^2-40t+546&=155\\\\&\\iff t^2-40t+391=0\\\\&\\iff t\\\\&=\\frac{40\\pm\\sqrt{1600-1564}}{2}\\\\&=\\frac{40\\pm6}{2}\\end{aligned}\\]<div class='res'>\\(t=17\\) y \\(t=23\\): a las 17:00 y a las 23:00</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "modelo",
+     "apartados": "c"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2025-junio-4",
+   "n": 4,
+   "bloque": "C",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Tres personas tienen un llavero con las llaves de la casa: el 1.º con 7 llaves, el 2.º con 8 y el 3.º con 5. En cada llavero hay una única llave que abre el trastero. Se elige un llavero al azar y de él una llave al azar. Calcule la probabilidad de que:",
+    "apartados": [
+     "(1 p.) No haya acertado con la llave seleccionada.",
+     "(0,5 p.) El llavero sea el tercero y la llave abra el trastero.",
+     "(0,5 p.) Sabiendo que la llave abre el trastero, pertenezca al primer o al tercer llavero.",
+     "(0,5 p.) Si la llave no abre el trastero, no pertenezca al primer llavero."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>Defino los sucesos<i class='n' data-t='why'>Se elige un llavero y después una llave de él: son dos pasos seguidos. Por eso lo organizamos en un diagrama de árbol.</i></p><p>\\(L_i\\): «se elige el llavero \\(i\\)», con \\(i=1,2,3\\) · \\(A\\): «la llave elegida abre el trastero»</p><p>Datos del problema<i class='n' data-t='th'>En cada llavero solo una llave abre y se elige al azar: por la regla de Laplace, \\(P(A\\mid L_i)=\\frac1{n_i}\\), siendo \\(n_i\\) el número de llaves del llavero.</i></p>\\[P(L_1)=P(L_2)=P(L_3)=\\tfrac13\\qquad P(A\\mid L_1)=\\tfrac17,\\ \\ P(A\\mid L_2)=\\tfrac18,\\ \\ P(A\\mid L_3)=\\tfrac15\\]<p>Diagrama de árbol<i class='n' data-t='tp'>Escribe en cada rama su probabilidad y, al final, el producto de las ramas del camino. Aunque falles una cuenta, el corrector ve que el planteamiento es correcto.</i></p><div style='overflow-x:auto'><svg viewBox='0 0 400 292' width='100%' style='max-width:440px' font-family='system-ui,sans-serif' font-size='12' fill='currentColor'><g stroke='currentColor' fill='none' stroke-width='1.3'><path d='M20 146L128 46M20 146L128 146M20 146L128 246'/><path d='M150 46L236 22M150 46L236 70M150 146L236 122M150 146L236 170M150 246L236 222M150 246L236 270'/></g><g><text x='56' y='84'>1/3</text><text x='62' y='140'>1/3</text><text x='56' y='206'>1/3</text><text x='132' y='50' font-weight='700'>L₁</text><text x='132' y='150' font-weight='700'>L₂</text><text x='132' y='250' font-weight='700'>L₃</text><text x='176' y='28'>1/7</text><text x='176' y='72'>6/7</text><text x='176' y='128'>1/8</text><text x='176' y='172'>7/8</text><text x='176' y='228'>1/5</text><text x='176' y='272'>4/5</text><text x='240' y='26' font-weight='700'>A</text><text x='240' y='74' font-weight='700'>Ā</text><text x='240' y='126' font-weight='700'>A</text><text x='240' y='174' font-weight='700'>Ā</text><text x='240' y='226' font-weight='700'>A</text><text x='240' y='274' font-weight='700'>Ā</text><text x='262' y='26'>1/3·1/7 = 1/21</text><text x='262' y='74'>1/3·6/7 = 2/7</text><text x='262' y='126'>1/3·1/8 = 1/24</text><text x='262' y='174'>1/3·7/8 = 7/24</text><text x='262' y='226'>1/3·1/5 = 1/15</text><text x='262' y='274'>1/3·4/5 = 4/15</text></g></svg></div></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(L_1,L_2,L_3\\) forman un sistema completo de sucesos, luego aplico el teorema de la probabilidad total<i class='n' data-t='th'>Si \\(L_1,L_2,L_3\\) son incompatibles y cubren todos los casos, \\(P(A)=\\sum P(L_i)\\,P(A\\mid L_i)\\). Primero se escribe la fórmula y después se sustituye: es lo que puntúa.</i></p>\\[P(A)=P(L_1)\\,P(A\\mid L_1)+P(L_2)\\,P(A\\mid L_2)+P(L_3)\\,P(A\\mid L_3)\\]<p>Sustituyo:</p>\\[\\begin{aligned}P(A)&=\\tfrac13\\cdot\\tfrac17\\\\&\\quad+\\tfrac13\\cdot\\tfrac18+\\tfrac13\\cdot\\tfrac15\\\\&=\\tfrac1{21}+\\tfrac1{24}+\\tfrac1{15}\\\\&=\\tfrac{131}{840}\\end{aligned}\\]<p>Me piden el suceso contrario<i class='n' data-t='why'>«No acertar con la llave» es lo contrario de «la llave abre», así que se calcula como \\(1-P(A)\\).</i></p>\\[\\begin{aligned}P(\\bar A)&=1-P(A)\\\\&=1-\\tfrac{131}{840}\\\\&=\\tfrac{709}{840}\\end{aligned}\\]<div class='res'>\\(P(\\bar A)=\\dfrac{709}{840}\\approx0{,}8440\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Por la probabilidad compuesta<i class='n' data-t='th'>\\(P(B\\cap A)=P(B)\\cdot P(A\\mid B)\\): es multiplicar las dos ramas del camino en el árbol.</i></p>\\[\\begin{aligned}P(L_3\\cap A)&=P(L_3)\\,P(A\\mid L_3)\\\\&=\\tfrac13\\cdot\\tfrac15=\\tfrac1{15}\\end{aligned}\\]<div class='res'>\\(P(L_3\\cap A)=\\dfrac1{15}\\) \\(\\approx0{,}0667\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Aplico la definición de probabilidad condicionada<i class='n' data-t='th'>\\(P(B\\mid A)=\\frac{P(B\\cap A)}{P(A)}\\). Sabemos que ya abrió, así que el «universo» pasa a ser \\(A\\), y por eso se divide entre \\(P(A)\\).</i>. Como \\(L_1\\) y \\(L_3\\) son incompatibles:</p>\\[\\begin{aligned}P(L_1\\cup L_3\\mid A)&=\\frac{P(L_1\\cap A)+P(L_3\\cap A)}{P(A)}\\\\&=\\frac{P(L_1)P(A\\mid L_1)+P(L_3)P(A\\mid L_3)}{P(A)}\\end{aligned}\\]<p>Sustituyo:</p>\\[\\begin{aligned}P(L_1\\cup L_3\\mid A)&=\\frac{\\frac13\\cdot\\frac17+\\frac13\\cdot\\frac15}{\\frac{131}{840}}\\\\&=\\frac{\\frac1{21}+\\frac1{15}}{\\frac{131}{840}}\\\\&=\\frac{96/840}{131/840}=\\frac{96}{131}\\end{aligned}\\]<div class='res'>\\(P(L_1\\cup L_3\\mid A)=\\dfrac{96}{131}\\) \\(\\approx0{,}7328\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado d",
+     "html": "<div class='ex'><p>Primero calculo la probabilidad de que la llave sea del primer llavero, sabiendo que no abre, con el teorema de Bayes<i class='n' data-t='th'>\\(P(L_1\\mid\\bar A)\\) \\(=\\frac{P(L_1)\\,P(\\bar A\\mid L_1)}{P(\\bar A)}\\), donde \\(P(\\bar A)\\) ya la tenemos por el teorema de la probabilidad total.</i>:</p>\\[\\begin{aligned}P(L_1\\mid\\bar A)&=\\frac{P(L_1)\\,P(\\bar A\\mid L_1)}{P(\\bar A)}\\\\&=\\frac{\\frac13\\cdot\\frac67}{\\frac{709}{840}}=\\frac{240/840}{709/840}\\\\&=\\frac{240}{709}\\end{aligned}\\]<p>Piden que <b>no</b> sea del primero<i class='n' data-t='err'>El complementario se calcula sobre lo que ya sabemos (\\(\\bar A\\)): \\(P(\\bar L_1\\mid\\bar A)\\) \\(=1-P(L_1\\mid\\bar A)\\). No es \\(1-P(L_1\\mid A)\\).</i></p>\\[\\begin{aligned}P(\\bar L_1\\mid\\bar A)&=1-P(L_1\\mid\\bar A)\\\\&=1-\\tfrac{240}{709}\\\\&=\\tfrac{469}{709}\\end{aligned}\\]<div class='res'>\\(P(\\bar L_1\\mid\\bar A)=\\dfrac{469}{709}\\) \\(\\approx0{,}6615\\)</div></div>"
+    },
+    {
+     "titulo": "Con tabla de contingencia",
+     "html": "<div class='ex'><p>Tabla con los productos del árbol (denominador común 840)<i class='n' data-t='tp'>Cada probabilidad condicionada se lee como «celda ÷ total de lo que sabes». Por ejemplo, en el apartado c: \\(\\frac{40+56}{131}=\\frac{96}{131}\\), mirando solo la columna \\(A\\).</i></p><table class='tb'><tr><th></th><th>\\(A\\)</th><th>\\(\\bar A\\)</th><th>Total</th></tr><tr><td>\\(L_1\\)</td><td>40/840</td><td>240/840</td><td>280/840</td></tr><tr><td>\\(L_2\\)</td><td>35/840</td><td>245/840</td><td>280/840</td></tr><tr><td>\\(L_3\\)</td><td>56/840</td><td>224/840</td><td>280/840</td></tr><tr><th>Total</th><th>131/840</th><th>709/840</th><th>1</th></tr></table></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "prob",
+     "tipo": "arbol",
+     "apartados": "a, b, c, d"
+    },
+    {
+     "tema": "prob",
+     "tipo": "tabla",
+     "apartados": "alternativa"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2025-junio-5",
+   "n": 5,
+   "bloque": "C",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Se estima que el 20 % de las personas que ven un anuncio terminan contratando el servicio. Se seleccionan al azar 20 personas que han visto el anuncio.",
+    "apartados": [
+     "(0,75 p.) Probabilidad de que exactamente 10 contraten el servicio.",
+     "(0,75 p.) Probabilidad de que al menos 2 personas contraten el servicio.",
+     "(0,5 p.) Valor esperado del número de personas que contratarán el servicio.",
+     "(0,5 p.) ¿Cuántas personas habría que seleccionar para que el valor esperado sea mayor o igual que 13?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Modelo",
+     "html": "<div class='ex'><p>Sea \\(X\\) el número de personas que contratan el servicio de entre las 20 seleccionadas. Hay 20 pruebas independientes con la misma probabilidad de éxito \\(p=0{,}2\\):</p>\\[X\\sim B(20;\\ 0{,}2),\\qquad q=0{,}8\\]<i class='n' data-t='why'>Con \\(n=20\\lt30\\) no se puede aproximar por la normal: se usa la fórmula exacta de la binomial \\(P(X=k)=\\binom nk p^kq^{n-k}\\).</i></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>«Exactamente 10» es \\(X=10\\). Aplicamos la fórmula de la binomial con \\(n=20\\), \\(k=10\\), \\(p=0{,}2\\) y \\(q=0{,}8\\)<i class='n' data-t='th'>\\(P(X=k)=\\binom nk\\,p^k\\,q^{n-k}\\), con \\(\\binom nk=\\dfrac{n!}{k!\\,(n-k)!}\\).</i>:</p>\\[\\begin{aligned}P(X=10)&=\\binom{20}{10}\\,0{,}2^{10}\\,0{,}8^{10}\\\\&=184\\,756\\cdot0{,}2^{10}\\cdot0{,}8^{10}\\end{aligned}\\]<div class='res'>\\(P(X=10)\\approx0{,}0020\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>«Al menos 2» es el contrario de «ninguna o una»:<i class='n' data-t='why'>Calcular \\(P(X\\ge2)\\) sumando de 2 a 20 sería larguísimo; con el suceso contrario solo hay dos términos.</i></p>\\[\\begin{aligned}P(X\\ge2)&=1-P(X=0)-P(X=1)\\\\&=1-0{,}8^{20}-20\\cdot0{,}2\\cdot0{,}8^{19}\\end{aligned}\\]\\[=1-0{,}0115-0{,}0576\\]<div class='res'>\\(P(X\\ge2)\\approx0{,}9308\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>El valor esperado de una binomial es \\(E(X)=n\\,p\\)<i class='n' data-t='th'>En una binomial \\(B(n,p)\\): media \\(\\mu=np\\) y varianza \\(\\sigma^2=npq\\).</i>:</p>\\[E(X)=20\\cdot0{,}2=4\\]<div class='res'>Se espera que contraten el servicio 4 personas</div></div>"
+    },
+    {
+     "titulo": "Apartado d",
+     "html": "<div class='ex'><p>Ahora el tamaño \\(n\\) es la incógnita. Se exige \\(E(X)=n\\cdot0{,}2\\ge13\\):</p>\\[0{,}2\\,n\\ge13\\iff n\\ge65\\]<div class='res'>Se deberían seleccionar, como mínimo, 65 personas</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "dist",
+     "tipo": "binomial",
+     "apartados": "a, b, c, d"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2025-junio-6",
+   "n": 6,
+   "bloque": "D",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "El tiempo de estudio semanal (horas) de los estudiantes andaluces sigue una Normal de media desconocida y desviación típica \\(\\sigma=5\\) horas. Con una muestra de 81 estudiantes, el intervalo de confianza para la media poblacional, al 97 %, es \\((10{,}794;\\ 13{,}206)\\).",
+    "apartados": [
+     "(0,5 p.) Obtenga el tiempo medio de esa muestra de estudiantes.",
+     "(0,5 p.) Si se amplía el tamaño de la muestra manteniendo el nivel de confianza, razone si la amplitud del intervalo aumenta o disminuye.",
+     "(0,75 p.) Si se desea reducir la amplitud manteniendo el tamaño muestral, razone si se ha de reducir o aumentar el nivel de confianza.",
+     "(0,75 p.) Si la media poblacional es 10,2 horas y la media muestral es 12 horas, calcule el tamaño máximo de la muestra para que el intervalo al 97 % contenga la media poblacional."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento (teoría)",
+     "html": "<div class='ex'><p>Sea \\(X\\) la variable aleatoria «tiempo de estudio semanal, en horas, de un estudiante andaluz». Según el enunciado,\\[X\\sim N(\\mu,\\ \\sigma=5),\\mu\\text{ desconocida.}\\]<i class='n' data-t='why'>El enunciado nos da la desviación típica de la población (\\(\\sigma=5\\)) pero no la media \\(\\mu\\): precisamente \\(\\mu\\) es el parámetro que queremos estimar.</i></p><p>Se toma una muestra aleatoria de \\(n=81\\) estudiantes. La media muestral \\(\\bar X\\) es otra variable aleatoria. Como \\(X\\) es normal,\\[\\bar X\\sim N\\!\\left(\\mu,\\ \\frac{\\sigma}{\\sqrt n}\\right)\\]<i class='n' data-t='th'>Teorema central del límite: la media de una muestra grande (\\(n\\ge30\\)) sigue aproximadamente una normal \\(N(\\mu,\\sigma/\\sqrt n)\\) sea cual sea la distribución de \\(X\\). Aquí, además, \\(X\\) ya es normal, así que la distribución de \\(\\bar X\\) es exacta para cualquier \\(n\\).</i></p><p>Tipificando,\\[Z=\\frac{\\bar X-\\mu}{\\sigma/\\sqrt n}\\sim N(0,1)\\]<i class='n' data-t='why'>Tipificar nos permite usar la tabla de la \\(N(0,1)\\), que es la única que tenemos.</i></p><p>Para un nivel de confianza \\(1-\\alpha\\), llamamos \\(z_{1-\\alpha/2}\\) al valor que cumple \\(P\\bigl(-z_{1-\\alpha/2}\\le Z\\le z_{1-\\alpha/2}\\bigr)\\) \\(=1-\\alpha\\). Despejando \\(\\mu\\) en esa desigualdad se obtiene el intervalo de confianza:</p>\\[IC_{1-\\alpha}(\\mu)=\\bigl(\\bar x-E,\\ \\bar x+E\\bigr),\\qquad  E=z_{1-\\alpha/2}\\cdot\\frac{\\sigma}{\\sqrt n}\\]<p>donde \\(\\bar x\\) es la media de la muestra obtenida y \\(E\\) es el error máximo admisible.<i class='n' data-t='tp'>En el examen escribe siempre estos tres pasos: variable aleatoria y distribución, distribución de la media muestral (TCL) y la fórmula del intervalo. Es donde se reparte buena parte de la puntuación.</i></p></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>El intervalo es \\(IC_{0{,}97}(\\mu)=(\\bar x-E,\\ \\bar x+E)=(10{,}794;\\ 13{,}206)\\). La media muestral es el punto medio de los extremos<i class='n' data-t='why'>Al ser \\(\\bar x-E\\) y \\(\\bar x+E\\) simétricos respecto de \\(\\bar x\\), sumarlos y dividir entre 2 elimina el error.</i>:</p>\\[\\begin{aligned}\\bar x&=\\frac{10{,}794+13{,}206}{2}\\\\&=\\frac{24}{2}=12\\end{aligned}\\]<p>Comprobación: \\(E=\\dfrac{13{,}206-10{,}794}{2}\\) \\(=1{,}206\\) y, con \\(1-\\alpha=0{,}97\\Rightarrow\\alpha=0{,}03\\) \\(\\Rightarrow1-\\tfrac\\alpha2=0{,}985\\) \\(\\Rightarrow z_{0{,}985}=2{,}17\\),\\[\\begin{aligned}E&=z_{1-\\alpha/2}\\frac{\\sigma}{\\sqrt n}\\\\&=2{,}17\\cdot\\frac{5}{\\sqrt{81}}\\\\&=2{,}17\\cdot\\frac59\\approx1{,}206\\ \\checkmark\\end{aligned}\\]</p><div class='res'>El tiempo medio de estudio de la muestra es \\(\\bar x=12\\) horas</div><p><b>Conclusión:</b> podemos afirmar, con un nivel de confianza del 97 %, que el tiempo medio de estudio semanal de los estudiantes andaluces está entre 10,794 y 13,206 horas.</p></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>La amplitud del intervalo es \\(A=2E=2\\,z_{1-\\alpha/2}\\dfrac{\\sigma}{\\sqrt n}\\).</p><p>Si el nivel de confianza se mantiene, \\(z_{1-\\alpha/2}\\) no cambia, y \\(\\sigma\\) tampoco. Al aumentar \\(n\\), \\(\\sqrt n\\) aumenta y \\(\\dfrac{\\sigma}{\\sqrt n}\\) disminuye.<i class='n' data-t='why'>Con más datos la media muestral fluctúa menos: su desviación típica \\(\\sigma/\\sqrt n\\) se reduce.</i></p><div class='res'>Al ampliar la muestra, la amplitud del intervalo disminuye</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Con \\(n\\) y \\(\\sigma\\) fijos, \\(A=2\\,z_{1-\\alpha/2}\\dfrac{\\sigma}{\\sqrt n}\\) solo depende de \\(z_{1-\\alpha/2}\\). Para reducir \\(A\\) hay que reducir \\(z_{1-\\alpha/2}\\). Como \\(z_{1-\\alpha/2}\\) crece con el nivel de confianza (la función de distribución \\(\\Phi\\) es creciente), eso significa reducir \\(1-\\alpha\\).<i class='n' data-t='why'>Intuición: un intervalo más estrecho es más preciso, pero «acierta» menos veces. Precisión y confianza van en sentidos contrarios.</i></p><div class='res'>Hay que reducir el nivel de confianza</div></div>"
+    },
+    {
+     "titulo": "Apartado d",
+     "html": "<div class='ex'><p>Queremos que \\(\\mu=10{,}2\\) pertenezca a \\(IC_{0{,}97}(\\mu)=(\\bar x-E,\\ \\bar x+E)\\), con \\(\\bar x=12\\):\\[\\begin{aligned}&\\bar x-E\\le\\mu\\le\\bar x+E\\\\&\\iff|\\bar x-\\mu|\\le E\\\\&\\iff12-10{,}2\\le2{,}17\\cdot\\frac{5}{\\sqrt n}\\end{aligned}\\]<i class='n' data-t='why'>\\(\\mu\\) está dentro del intervalo si y solo si su distancia a \\(\\bar x\\) no supera el error máximo \\(E\\).</i></p>\\[\\begin{aligned}&1{,}8\\le\\frac{10{,}85}{\\sqrt n}\\\\&\\iff\\sqrt n\\le\\frac{10{,}85}{1{,}8}\\approx6{,}03\\\\&\\iff n\\le36{,}33\\end{aligned}\\]<p>Comprobación: con \\(n=36\\), \\(E=2{,}17\\cdot\\frac56\\) \\(\\approx1{,}808\\ge1{,}8\\) ✓; con \\(n=37\\), \\(E\\approx1{,}784\\lt1{,}8\\) ✗.<i class='n' data-t='err'>Al ser un tamaño máximo no se redondea al más cercano: se toma el mayor entero que cumple la condición (\\(n=36\\)).</i></p><div class='res'>El tamaño máximo de la muestra es \\(n=36\\) estudiantes</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "inf",
+     "tipo": "ic",
+     "apartados": "a"
+    },
+    {
+     "tema": "inf",
+     "tipo": "error",
+     "apartados": "b, c"
+    },
+    {
+     "tema": "inf",
+     "tipo": "tam",
+     "apartados": "d"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  },
+  {
+   "id": "ccss-2025-junio-7",
+   "n": 7,
+   "bloque": "D",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Los desajustes (en minutos) sobre el horario de llegada de los trenes de alta velocidad siguen una ley Normal de media 0 y desviación típica \\(2{,}2\\).",
+    "apartados": [
+     "(0,5 p.) Calcule el porcentaje de trenes que tienen un desajuste máximo de un minuto.",
+     "Elegidos al azar 15 trenes, los desajustes han sido: 0; 1,3; −2,1; −1,5; 2; 0,8; 5; 2,1; −3; 1,8; 3,1; 4; −0,7; 1,6; −5,4.",
+     "b1) (1,25 p.) Calcule un intervalo de confianza, con un nivel del 96 %, para la media poblacional. ¿Cuál es el error máximo? ¿Puede afirmarse que un tren tenga un retraso de 2 minutos?",
+     "b2) (0,75 p.) Con un nivel de confianza del 98 %, ¿cuántos trenes deberían elegirse, como mínimo, para que la diferencia entre la media poblacional y su estimación muestral sea como máximo 1,1 minutos?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento (teoría)",
+     "html": "<div class='ex'><p>Sea \\(X\\) la variable aleatoria «desajuste de un tren de alta velocidad, en minutos». Por el enunciado,\\[X\\sim N(\\mu=0,\\ \\sigma=2{,}2)\\]<i class='n' data-t='why'>Para el apartado a) conocemos la distribución completa de \\(X\\): podemos calcular probabilidades directamente tipificando.</i></p></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Un desajuste máximo de un minuto significa \\(|X|\\le1\\), es decir, \\(-1\\le X\\le1\\). Tipifico con \\(Z=\\dfrac{X-0}{2{,}2}\\sim N(0,1)\\):</p>\\[\\begin{aligned}P(|X|\\le1)&=P\\!\\left(-\\frac{1}{2{,}2}\\le Z\\le\\frac{1}{2{,}2}\\right)\\\\&\\approx P(-0{,}45\\le Z\\le0{,}45)\\end{aligned}\\]\\[\\begin{aligned}=\\Phi(0{,}45)-\\Phi(-0{,}45)&=2\\,\\Phi(0{,}45)-1\\\\&=2\\cdot0{,}6736-1\\\\&=0{,}3472\\end{aligned}\\]<i class='n' data-t='th'>Por la simetría de la normal, \\(\\Phi(-z)=1-\\Phi(z)\\); así solo hace falta mirar la tabla para valores positivos. Aquí \\(\\frac1{2{,}2}=0{,}4545\\) se redondea a 0,45 porque la tabla tiene dos decimales.</i><div class='res'>El 34,72 % de los trenes tiene un desajuste máximo de un minuto</div></div>"
+    },
+    {
+     "titulo": "Apartado b1",
+     "html": "<div class='ex'><p>Ahora se toma una muestra de \\(n=15\\) trenes. Como \\(X\\) es normal con \\(\\sigma=2{,}2\\) conocida, la media muestral cumple\\[\\bar X\\sim N\\!\\left(\\mu,\\ \\frac{\\sigma}{\\sqrt n}\\right)=N\\!\\left(\\mu,\\ \\frac{2{,}2}{\\sqrt{15}}\\right)\\]<i class='n' data-t='th'>Teorema central del límite: aquí es exacto porque \\(X\\) ya es normal. Si no lo fuera, con \\(n=15\\lt30\\) no podríamos aplicarlo con garantías.</i></p><p>El intervalo de confianza para la media poblacional es\\[IC_{1-\\alpha}(\\mu)=\\bigl(\\bar x-E,\\ \\bar x+E\\bigr),\\qquad  E=z_{1-\\alpha/2}\\cdot\\frac{\\sigma}{\\sqrt n}\\]</p><p>Media de la muestra:\\[\\begin{aligned}\\bar x&=\\frac{0+1{,}3-2{,}1-1{,}5+2+0{,}8+5+2{,}1-3+1{,}8+3{,}1+4-0{,}7+1{,}6-5{,}4}{15}\\\\&=\\frac{9}{15}=0{,}6\\end{aligned}\\]</p><p>Nivel de confianza \\(96\\,\\%\\): \\(1-\\alpha=0{,}96\\Rightarrow\\alpha=0{,}04\\) \\(\\Rightarrow1-\\tfrac\\alpha2=0{,}98\\) \\(\\Rightarrow z_{0{,}98}=2{,}05\\).<i class='n' data-t='why'>Buscamos en la tabla el valor de \\(z\\) cuya probabilidad acumulada es \\(1-\\alpha/2=0{,}98\\), no \\(0{,}96\\): el área que dejamos fuera se reparte en las dos colas.</i></p>\\[\\begin{aligned}E&=2{,}05\\cdot\\frac{2{,}2}{\\sqrt{15}}\\\\&=2{,}05\\cdot0{,}568\\approx1{,}16\\end{aligned}\\]\\[\\begin{aligned}IC_{0{,}96}(\\mu)&=(0{,}6-1{,}16;\\ 0{,}6+1{,}16)\\\\&=(-0{,}56;\\ 1{,}76)\\end{aligned}\\]<div class='res'>\\(IC_{0{,}96}(\\mu)\\) \\(=(-0{,}56;\\ 1{,}76)\\). El error máximo es \\(E\\approx1{,}16\\) minutos</div><p>El valor 2 no pertenece al intervalo (\\(2\\gt1{,}76\\)), luego con un nivel de confianza del 96 % no puede afirmarse que el desajuste medio de los trenes sea de 2 minutos: es inferior.<i class='n' data-t='err'>El intervalo se refiere a la <b>media</b> poblacional. Un tren concreto sí puede llegar con 2 minutos de desajuste: no confundas la media con un valor individual.</i></p><p><b>Conclusión:</b> podemos afirmar, con un nivel de confianza del 96 %, que el desajuste medio de los trenes de alta velocidad está entre −0,56 y 1,76 minutos.</p></div>"
+    },
+    {
+     "titulo": "Apartado b2",
+     "html": "<div class='ex'><p>Nivel de confianza \\(98\\,\\%\\): \\(1-\\alpha=0{,}98\\Rightarrow\\alpha=0{,}02\\) \\(\\Rightarrow1-\\tfrac\\alpha2=0{,}99\\) \\(\\Rightarrow z_{0{,}99}=2{,}33\\).</p><p>«La diferencia entre la media poblacional y su estimación muestral» es el error \\(E=|\\bar x-\\mu|\\), que debe ser a lo sumo 1,1:\\[\\begin{aligned}&E\\le1{,}1\\\\&\\iff2{,}33\\cdot\\frac{2{,}2}{\\sqrt n}\\le1{,}1\\\\&\\iff\\sqrt n\\ge\\frac{2{,}33\\cdot2{,}2}{1{,}1}=4{,}66\\\\&\\iff n\\ge21{,}7\\end{aligned}\\]<i class='n' data-t='why'>Cuanto menor sea el error permitido, más datos necesitamos: por eso aparece una desigualdad hacia arriba en \\(n\\).</i></p><p>Como \\(n\\) es un número entero, se toma el menor entero que cumple la condición.<i class='n' data-t='err'>Aquí se redondea <b>hacia arriba</b> (22, no 21): con 21 trenes el error sería ligeramente mayor que 1,1 minutos.</i></p><div class='res'>Hay que elegir como mínimo \\(n=22\\) trenes</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "dist",
+     "tipo": "normal",
+     "apartados": "a"
+    },
+    {
+     "tema": "inf",
+     "tipo": "ic",
+     "apartados": "b1"
+    },
+    {
+     "tema": "inf",
+     "tipo": "error",
+     "apartados": "b1"
+    },
+    {
+     "tema": "inf",
+     "tipo": "interp",
+     "apartados": "b1"
+    },
+    {
+     "tema": "inf",
+     "tipo": "tam",
+     "apartados": "b2"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "requiere_revision"
+  }
+ ]
+}

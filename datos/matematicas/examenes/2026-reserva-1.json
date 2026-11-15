@@ -1,0 +1,243 @@
+{
+ "version": 1,
+ "id": "matematicas-2026-reserva-1",
+ "asignatura": "matematicas",
+ "anio": 2026,
+ "convocatoria": "Reserva 1",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2026-reserva-1-1",
+   "n": 1,
+   "bloque": "obligatorio",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "La potencia de pérdida \\(P(t)\\) (en vatios) en una máquina, debido a la fricción, depende del tiempo de uso \\(t\\) (en años) según la función \\(P(t)=\\dfrac{4t}{1+t^2}\\), siendo \\(t\\ge0\\).",
+    "apartados": [
+     "(1,25 p.) Calcula en qué momento la potencia de pérdida es máxima.",
+     "(1,25 p.) La energía total perdida en los \\(t\\) primeros años viene dada por la expresión \\(E(t)=\\displaystyle\\int_0^tP(x)\\,dx\\) (vatios por año). Calcula la energía total perdida en los tres primeros años."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'>\\[P'(t)=\\frac{4(1+t^2)-4t\\cdot2t}{(1+t^2)^2}=\\frac{4(1-t^2)}{(1+t^2)^2}=0\\iff t=1\\ (t\\ge0)\\]<p>\\(P'\\gt0\\) en \\((0,1)\\) y \\(P'\\lt0\\) en \\((1,+\\infty)\\): máximo en \\(t=1\\)<i class='n' data-t='why'>Con \\(P(0)=0\\) y \\(\\lim_{t\\to+\\infty}P(t)=0\\), el máximo relativo en \\(t=1\\) es también el máximo absoluto.</i>, con \\(P(1)=\\frac42=2\\) vatios.</p><div class='res'>La potencia de pérdida es máxima al cabo de 1 año (2 vatios)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Integral inmediata (logarítmica)<i class='n' data-t='th'>\\(\\int\\dfrac{f'(x)}{f(x)}dx=\\ln|f(x)|\\). Aquí \\(f=1+x^2\\), \\(f'=2x\\): \\(\\frac{4x}{1+x^2}=2\\cdot\\frac{2x}{1+x^2}\\).</i>:</p>\\[E(3)=\\int_0^3\\frac{4x}{1+x^2}\\,dx=\\bigl[2\\ln(1+x^2)\\bigr]_0^3=2\\ln10-2\\ln1\\]<div class='res'>\\(E(3)=2\\ln10\\approx4{,}605\\) vatios por año</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "a"
+    },
+    {
+     "tema": "integ",
+     "tipo": "def",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2026-reserva-1-2",
+   "n": 2,
+   "bloque": "obligatorio",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Una empresa produce tres tipos de productos, \\(A\\), \\(B\\) y \\(C\\). Si el precio del producto \\(A\\) tuviera un 10 % de descuento y el de los productos \\(B\\) y \\(C\\) tuviera un 20 % de descuento cada uno, la suma de los precios de tres productos, uno de cada tipo, sería 66 €. El precio total sin descuento de 3 productos del tipo \\(A\\) y 4 productos del tipo \\(B\\) es 140 €.",
+    "apartados": [
+     "(1,25 p.) ¿Cuánto valdrán 3 productos de tipo \\(A\\) más 8 productos de tipo \\(C\\)?",
+     "(1,25 p.) Determina el precio, sin descuento, de cada tipo de producto, sabiendo además que el precio del producto de tipo \\(C\\) es el doble que el de tipo \\(A\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>Sean \\(a\\), \\(b\\), \\(c\\) los precios sin descuento de \\(A\\), \\(B\\) y \\(C\\):</p>\\[\\begin{cases}0{,}9a+0{,}8b+0{,}8c=66\\\\3a+4b=140\\end{cases}\\iff\\begin{cases}9a+8b+8c=660\\\\3a+4b=140\\end{cases}\\]</div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Busco \\(3a+8c\\) combinando las dos ecuaciones: multiplico la segunda por 2, \\(6a+8b=280\\), y la resto de la primera:</p>\\[(9a+8b+8c)-(6a+8b)=660-280\\ \\Rightarrow\\ 3a+8c=380\\]<div class='res'>3 productos \\(A\\) más 8 productos \\(C\\) valen 380 €</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Con \\(c=2a\\), el sistema pasa a ser (tres ecuaciones y tres incógnitas):</p>\\[\\begin{cases}9a+8b+8c=660\\\\3a+4b=140\\\\-2a+c=0\\end{cases}\\]<p>Determinante \\(\\begin{vmatrix}9&8&8\\\\3&4&0\\\\-2&0&1\\end{vmatrix}=36-24+64=76\\neq0\\): compatible determinado (Rouché-Frobenius). Sustituyendo \\(c=2a\\) en la primera: \\(25a+8b=660\\). Restando la segunda multiplicada por 2 (\\(6a+8b=280\\)): \\(19a=380\\Rightarrow a=20\\); entonces \\(b=\\frac{140-60}4=20\\) y \\(c=40\\).</p><div class='res'>\\(A\\): 20 €, \\(B\\): 20 € y \\(C\\): 40 €</div><i class='n' data-t='tp'>Comprobación: \\(0{,}9\\cdot20+0{,}8\\cdot20+0{,}8\\cdot40=18+16+32=66\\) ✓ y \\(3\\cdot20+4\\cdot20=140\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "sistemas",
+     "tipo": "plan",
+     "apartados": ""
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2026-reserva-1-3-1",
+   "n": "3.1",
+   "bloque": "optativo 1",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el plano \\(\\pi\\equiv4x+5y-20z+20=0\\).",
+    "apartados": [
+     "(1,25 p.) Halla el área del triángulo cuyos vértices están determinados por la intersección de \\(\\pi\\) con los ejes coordenados.",
+     "(1,25 p.) Halla los planos paralelos a \\(\\pi\\) que distan 2 unidades del punto \\(P(2,2,1)\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Cortes de \\(\\pi\\) con los ejes (se anulan las otras dos coordenadas):</p>\\[X:\\ 4x+20=0\\Rightarrow A(-5,0,0)\\qquad Y:\\ 5y+20=0\\Rightarrow B(0,-4,0)\\qquad Z:\\ -20z+20=0\\Rightarrow C(0,0,1)\\]<p>Área \\(=\\tfrac12|\\overrightarrow{AB}\\times\\overrightarrow{AC}|\\)<i class='n' data-t='th'>El área del triángulo es la mitad del módulo del producto vectorial de dos de sus lados.</i>, con \\(\\overrightarrow{AB}=(5,-4,0)\\) y \\(\\overrightarrow{AC}=(5,0,1)\\):</p>\\[\\overrightarrow{AB}\\times\\overrightarrow{AC}=(-4,\\,-5,\\,20)\\qquad|\\cdot|=\\sqrt{16+25+400}=\\sqrt{441}=21\\]<div class='res'>Área \\(=\\dfrac{21}2=10{,}5\\ u^2\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Los planos paralelos a \\(\\pi\\) son \\(4x+5y-20z+D=0\\). Distancia de \\(P(2,2,1)\\)<i class='n' data-t='th'>\\(d(P,\\pi)=\\dfrac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}\\).</i>:</p>\\[\\frac{|8+10-20+D|}{\\sqrt{16+25+400}}=\\frac{|D-2|}{21}=2\\iff|D-2|=42\\iff D=44\\ \\text{o}\\ D=-40\\]<div class='res'>\\(4x+5y-20z+44=0\\) y \\(4x+5y-20z-40=0\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "area",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "dist",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2026-reserva-1-3-2",
+   "n": "3.2",
+   "bloque": "optativo 1",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera los planos \\(\\pi_1\\equiv2x-y-z=7\\), \\(\\pi_2\\equiv x-2y+z=3\\) y el punto \\(P(1,1,0)\\).",
+    "apartados": [
+     "(1,25 p.) Determina la ecuación de la recta que pasa por el punto \\(P\\) y es paralela a ambos planos.",
+     "(1,25 p.) Halla la ecuación del plano que pasa por el punto \\(P\\) y es perpendicular a \\(\\pi_1\\) y \\(\\pi_2\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Normales: \\(\\vec n_1=(2,-1,-1)\\) y \\(\\vec n_2=(1,-2,1)\\). Una recta es paralela a un plano si su dirección es perpendicular a la normal<i class='n' data-t='th'>Recta paralela a un plano \\(\\iff\\vec d\\cdot\\vec n=0\\). Si es paralela a dos planos, \\(\\vec d\\perp\\vec n_1\\) y \\(\\vec d\\perp\\vec n_2\\): \\(\\vec d=\\vec n_1\\times\\vec n_2\\).</i>:</p>\\[\\vec d=\\vec n_1\\times\\vec n_2=\\begin{vmatrix}\\vec i&\\vec j&\\vec k\\\\2&-1&-1\\\\1&-2&1\\end{vmatrix}=(-3,-3,-3)\\sim(1,1,1)\\]<div class='res'>\\(r\\equiv(x,y,z)=(1,1,0)+t\\,(1,1,1)\\)</div><i class='n' data-t='tp'>\\(P\\) no está en ninguno de los planos (\\(2-1-0=1\\neq7\\) y \\(1-2+0=-1\\neq3\\)), así que la recta es paralela y no está contenida en ellos.</i></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Un plano es perpendicular a otro si sus normales son perpendiculares. El plano buscado tiene normal \\(\\vec n\\perp\\vec n_1\\) y \\(\\vec n\\perp\\vec n_2\\): \\(\\vec n=\\vec n_1\\times\\vec n_2\\sim(1,1,1)\\):</p>\\[x+y+z+D=0\\ \\text{por }P(1,1,0):\\ 2+D=0\\Rightarrow D=-2\\]<div class='res'>\\(x+y+z=2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "ecs",
+     "apartados": ""
+    },
+    {
+     "tema": "geom",
+     "tipo": "perp",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2026-reserva-1-4-1",
+   "n": "4.1",
+   "bloque": "optativo 2",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Determina para qué valores de \\(a\\) el límite \\[\\lim_{x\\to0}\\frac{e^{-ax}-(1-ax)\\cos(2x)}{x^2}\\] vale 6.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Indeterminación y L'Hôpital",
+     "html": "<div class='ex'><p>Sean \\(N(x)=e^{-ax}-(1-ax)\\cos2x\\) y \\(D(x)=x^2\\): \\(N(0)=1-1=0\\) y \\(D(0)=0\\): indeterminación \\(\\tfrac00\\). Aplico L'Hôpital<i class='n' data-t='th'>Regla de L'Hôpital: si \\(N(x_0)=D(x_0)=0\\) y existe \\(\\lim\\frac{N'}{D'}\\), entonces \\(\\lim\\frac ND=\\lim\\frac{N'}{D'}\\).</i>:</p>\\[N'(x)=-a\\,e^{-ax}+a\\cos2x+2(1-ax)\\operatorname{sen}2x\\qquad D'(x)=2x\\qquad N'(0)=-a+a+0=0,\\ D'(0)=0\\]<p>De nuevo \\(\\tfrac00\\): segunda aplicación:</p>\\[N''(x)=a^2e^{-ax}-2a\\operatorname{sen}2x-2a\\operatorname{sen}2x+4(1-ax)\\cos2x\\qquad N''(0)=a^2+4\\qquad D''(x)=2\\]\\[\\lim_{x\\to0}\\frac{N''}{D''}=\\frac{a^2+4}2=6\\iff a^2=8\\iff a=\\pm2\\sqrt2\\]<div class='res'>\\(a=2\\sqrt2\\) o \\(a=-2\\sqrt2\\)</div><i class='n' data-t='tp'>Comprobación con desarrollos: \\(e^{-ax}\\approx1-ax+\\frac{a^2x^2}2\\) y \\((1-ax)\\cos2x\\approx1-ax-2x^2+2ax^3\\); la diferencia es \\(\\left(\\frac{a^2}2+2\\right)x^2\\), luego el límite vale \\(\\frac{a^2}2+2=6\\iff a^2=8\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "lim",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2026-reserva-1-4-2",
+   "n": "4.2",
+   "bloque": "optativo 2",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Las tallas de las niñas al nacer se distribuyen según una distribución normal de media 50 cm y desviación típica 1,8 cm.",
+    "apartados": [
+     "(1 p.) Halla la probabilidad de que una niña al nacer mida más de 54 cm.",
+     "(1,5 p.) Si en un hospital durante un mes han nacido 100 niñas, ¿cuántas tendrán en el momento del nacimiento una talla entre 48,2 y 51,8 cm?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(X\\sim N(50;\\,1{,}8)\\). Tipifico con \\(Z=\\dfrac{X-50}{1{,}8}\\)<i class='n' data-t='th'>Tipificación: si \\(X\\sim N(\\mu;\\sigma)\\), \\(Z=\\frac{X-\\mu}\\sigma\\sim N(0;1)\\), con \\(\\Phi\\) tabulada. \\(P(Z\\gt z)=1-\\Phi(z)\\).</i>:</p>\\[P(X\\gt54)=P\\!\\left(Z\\gt\\frac{54-50}{1{,}8}\\right)=P(Z\\gt2{,}22)=1-\\Phi(2{,}22)=1-0{,}9868\\]<div class='res'>0,0132</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'>\\[P(48{,}2\\lt X\\lt51{,}8)=P\\!\\left(\\frac{48{,}2-50}{1{,}8}\\lt Z\\lt\\frac{51{,}8-50}{1{,}8}\\right)=P(-1\\lt Z\\lt1)=2\\Phi(1)-1=2\\cdot0{,}8413-1=0{,}6826\\]<p>De 100 niñas, se espera \\(100\\cdot0{,}6826\\approx68{,}26\\).</p><div class='res'>Unas 68 niñas (el 68,26 %)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "dist",
+     "tipo": "normal",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

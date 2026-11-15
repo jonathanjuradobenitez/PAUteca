@@ -1,0 +1,333 @@
+{
+ "version": 1,
+ "id": "matematicas-2022-reserva-3",
+ "asignatura": "matematicas",
+ "anio": 2022,
+ "convocatoria": "Reserva 3",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2022-reserva-3-1",
+   "n": 1,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea \\(f\\) la función continua definida por \\[f(x)=\\begin{cases}\\dfrac{x^2+1}{x-1}&\\text{si }x\\le0\\\\\\dfrac{ax+b}{(x+1)^2}&\\text{si }x\\gt0\\end{cases}\\]",
+    "apartados": [
+     "(1,5 p.) Determina \\(a\\) y \\(b\\) sabiendo que \\(f\\) tiene un extremo relativo en el punto de abscisa \\(x=2\\).",
+     "(1 p.) Para \\(a=2\\) y \\(b=-1\\), estudia la derivabilidad de \\(f\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p><b>Continuidad en \\(x=0\\):</b> \\(f(0^-)=\\frac1{-1}=-1\\) y \\(f(0^+)=b\\): \\(b=-1\\).</p><p><b>Extremo en \\(x=2\\)</b> (en el tramo \\(x\\gt0\\)): \\(f'(2)=0\\)<i class='n' data-t='th'>Condición necesaria de extremo relativo en un punto donde \\(f\\) es derivable: \\(f'(x_0)=0\\).</i>:</p>\\[f'(x)=\\frac{a(x+1)^2-2(x+1)(ax+b)}{(x+1)^4}=\\frac{-ax+a-2b}{(x+1)^3}\\ \\Rightarrow\\ f'(2)=\\frac{-a-2b}{27}=0\\Rightarrow a=-2b=2\\]<div class='res'>\\(a=2\\) y \\(b=-1\\)</div><i class='n' data-t='tp'>Con esos valores, \\(f'(x)=\\frac{4-2x}{(x+1)^3}\\), positiva antes de \\(x=2\\) y negativa después: es un máximo relativo ✓.</i></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Para \\(x\\lt0\\): \\(f'(x)=\\dfrac{2x(x-1)-(x^2+1)}{(x-1)^2}=\\dfrac{x^2-2x-1}{(x-1)^2}\\) (denominador no nulo). Para \\(x\\gt0\\): \\(f'(x)=\\dfrac{4-2x}{(x+1)^3}\\). En \\(x=0\\) (donde \\(f\\) es continua) comparo las derivadas laterales:</p>\\[f'(0^-)=\\frac{-1}{1}=-1\\qquad f'(0^+)=\\frac41=4\\]<div class='res'>\\(f\\) es derivable en \\(\\mathbb R\\setminus\\{0\\}\\); en \\(x=0\\) no es derivable (derivadas laterales distintas: \\(-1\\) y \\(4\\))</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "cont",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "cont",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-3-2",
+   "n": 2,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Se quiere cercar un trozo de terreno como el de la figura, de modo que el área del recinto central rectangular sea de \\(\\dfrac{200}\\pi\\) metros cuadrados. Sabiendo que el coste de la cerca que se puede poner en los tramos rectos es de 10 euros por metro lineal, y en los tramos circulares de 20 euros por metro lineal, calcula las dimensiones \\(a\\) y \\(b\\) del terreno para las que se minimiza el coste del cercado.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>El terreno es un rectángulo de lados \\(a\\) y \\(b\\) con dos semicírculos de diámetro \\(b\\) en los extremos.</p><div style='overflow-x:auto'><svg viewBox='0 0 300 115' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><path d='M75 25H225A35 35 0 0 1 225 95H75A35 35 0 0 1 75 25Z' fill='#b9a4f5' fill-opacity='.45' stroke='#2f6df0' stroke-width='2'/><g stroke='currentColor' stroke-dasharray='3 3' stroke-width='1' fill='none'><path d='M75 25V95M225 25V95'/></g><g stroke='currentColor' stroke-width='1' fill='none'><path d='M75 14H225M75 10V18M225 10V18'/><path d='M30 25V95M26 25H34M26 95H34'/></g><text x='145' y='11' font-weight='700'>a</text><text x='14' y='64' font-weight='700'>b</text><text x='100' y='64'>rectángulo</text><text x='42' y='64' font-size='9'>½○</text><text x='232' y='64' font-size='9'>½○</text></svg></div><p>Área del rectángulo: \\(ab=\\dfrac{200}\\pi\\Rightarrow a=\\dfrac{200}{\\pi b}\\). La cerca: dos tramos rectos de longitud \\(a\\) (10 €/m) y los dos semicírculos, que juntos forman una circunferencia de longitud \\(\\pi b\\) (20 €/m):</p>\\[C(b)=10\\cdot2a+20\\cdot\\pi b=20a+20\\pi b=\\frac{4000}{\\pi b}+20\\pi b,\\qquad b\\gt0\\]</div>"
+    },
+    {
+     "titulo": "Mínimo",
+     "html": "<div class='ex'>\\[C'(b)=-\\frac{4000}{\\pi b^2}+20\\pi=0\\iff b^2=\\frac{200}{\\pi^2}\\iff b=\\frac{10\\sqrt2}\\pi\\approx4{,}50\\ \\text{m}\\qquad C''(b)=\\frac{8000}{\\pi b^3}\\gt0\\]<p>Es un mínimo<i class='n' data-t='th'>\\(C'(b_0)=0\\) y \\(C''(b_0)\\gt0\\): mínimo relativo; como \\(C\\to+\\infty\\) en \\(0^+\\) y en \\(+\\infty\\), es absoluto.</i>. Entonces \\(a=\\dfrac{200}{\\pi b}=\\dfrac{200}{10\\sqrt2}=10\\sqrt2\\).</p><div class='res'>\\(a=10\\sqrt2\\approx14{,}14\\) m y \\(b=\\dfrac{10\\sqrt2}\\pi\\approx4{,}50\\) m (coste mínimo \\(400\\sqrt2\\approx565{,}7\\) €)</div><i class='n' data-t='tp'>Comprobación: \\(ab=10\\sqrt2\\cdot\\frac{10\\sqrt2}\\pi=\\frac{200}\\pi\\) ✓ y \\(C=20\\cdot10\\sqrt2+20\\pi\\cdot\\frac{10\\sqrt2}\\pi=400\\sqrt2\\).</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "opt",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-3-3",
+   "n": 3,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(f:\\mathbb R\\to\\mathbb R\\) definida por \\(f(x)=e^x\\operatorname{sen}(2x)\\). Halla la primitiva de \\(f\\) cuya gráfica pase por el punto \\((0,0)\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Integración por partes (cíclica)",
+     "html": "<div class='ex'><p>Sea \\(I=\\displaystyle\\int e^x\\operatorname{sen}2x\\,dx\\). Exponencial (E) antes que seno (S) en ALPES<i class='n' data-t='th'>Regla ALPES: Arcos, Logaritmos, Polinomios, Exponenciales, Senos/cosenos. Aquí \\(u=e^x\\). Al aplicarlo dos veces reaparece la integral de partida: se despeja.</i>: \\(u=e^x\\), \\(dv=\\operatorname{sen}2x\\,dx\\Rightarrow du=e^xdx\\), \\(v=-\\frac{\\cos2x}2\\):</p>\\[I=-\\frac{e^x\\cos2x}2+\\frac12\\int e^x\\cos2x\\,dx\\]<p>Otra vez: \\(u=e^x\\), \\(dv=\\cos2x\\,dx\\Rightarrow v=\\frac{\\operatorname{sen}2x}2\\):</p>\\[\\int e^x\\cos2x\\,dx=\\frac{e^x\\operatorname{sen}2x}2-\\frac12I\\ \\Rightarrow\\ I=-\\frac{e^x\\cos2x}2+\\frac{e^x\\operatorname{sen}2x}4-\\frac I4\\]\\[\\frac54I=\\frac{e^x(\\operatorname{sen}2x-2\\cos2x)}4\\ \\Rightarrow\\ I=\\frac{e^x(\\operatorname{sen}2x-2\\cos2x)}5\\]</div>"
+    },
+    {
+     "titulo": "Condición: la gráfica pasa por \\((0,0)\\)",
+     "html": "<div class='ex'><p>\\(F(x)=\\dfrac{e^x(\\operatorname{sen}2x-2\\cos2x)}5+C\\), con \\(F(0)=-\\dfrac25+C=0\\Rightarrow C=\\dfrac25\\).</p><div class='res'>\\(F(x)=\\dfrac{e^x\\left(\\operatorname{sen}2x-2\\cos2x\\right)+2}5\\)</div><i class='n' data-t='tp'>Comprueba derivando: \\(F'(x)=\\frac{e^x(\\operatorname{sen}2x-2\\cos2x)+e^x(2\\cos2x+4\\operatorname{sen}2x)}5=e^x\\operatorname{sen}2x\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "part",
+     "apartados": ""
+    },
+    {
+     "tema": "integ",
+     "tipo": "pcond",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-3-4",
+   "n": 4,
+   "bloque": "A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las funciones \\(f,g:\\mathbb R\\to\\mathbb R\\) definidas por \\(f(x)=1-x^2\\) y \\(g(x)=2x^2\\).",
+    "apartados": [
+     "(1,25 p.) Calcula los puntos de corte de las gráficas de \\(f\\) y \\(g\\). Esboza el recinto que delimitan.",
+     "(1,25 p.) Determina el área del recinto anterior."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(1-x^2=2x^2\\iff x^2=\\frac13\\iff x=\\pm\\frac{\\sqrt3}3\\), con \\(y=2x^2=\\frac23\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 300 160' width='100%' style='max-width:380px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='74.9,93.3 87.5,86.2 100.0,80.4 112.5,75.8 125.0,72.6 137.5,70.6 150.0,70.0 162.5,70.6 175.0,72.6 187.5,75.8 200.0,80.4 212.5,86.2 225.1,93.3 225.1,93.3 212.5,107.6 200.0,119.3 187.5,128.3 175.0,134.8 162.5,138.7 150.0,140.0 137.5,138.7 125.0,134.8 112.5,128.3 100.0,119.3 87.5,107.6 74.9,93.3' fill='#b9a4f5' fill-opacity='.6'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M8 140H292M150 156V4'/></g><polyline points='20.0,140.0 33.0,126.7 46.0,114.8 59.0,104.3 72.0,95.2 85.0,87.5 98.0,81.2 111.0,76.3 124.0,72.8 137.0,70.7 150.0,70.0 163.0,70.7 176.0,72.8 189.0,76.3 202.0,81.2 215.0,87.5 228.0,95.2 241.0,104.3 254.0,114.8 267.0,126.7 280.0,140.0' fill='none' stroke='#2f6df0' stroke-width='2'/><polyline points='33.0,26.6 46.0,50.4 59.0,71.4 72.0,89.6 85.0,105.0 98.0,117.6 111.0,127.4 124.0,134.4 137.0,138.6 150.0,140.0 163.0,138.6 176.0,134.4 189.0,127.4 202.0,117.6 215.0,105.0 228.0,89.6 241.0,71.4 254.0,50.4 267.0,26.6' fill='none' stroke='#e8487a' stroke-width='2'/><circle cx='225.05553499465134' cy='93.33333333333334' r='3.5' fill='#17825a'/><circle cx='74.94446500534865' cy='93.33333333333334' r='3.5' fill='#17825a'/><text x='230.05553499465134' y='88.33333333333334'>(√3/3, 2/3)</text><text x='2.944465005348647' y='88.33333333333334'>(−√3/3, 2/3)</text><text x='260.5' y='127.0' fill='#2f6df0'>f</text><text x='254.0' y='35.0' fill='#e8487a'>g</text></svg></div><div class='res'>Puntos de corte: \\(\\left(-\\dfrac{\\sqrt3}3,\\dfrac23\\right)\\) y \\(\\left(\\dfrac{\\sqrt3}3,\\dfrac23\\right)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Entre los cortes, \\(f\\) queda por encima de \\(g\\) (en \\(x=0\\): \\(1\\gt0\\)). Por simetría:</p>\\[A=\\int_{-\\sqrt3/3}^{\\sqrt3/3}(1-3x^2)\\,dx=2\\bigl[x-x^3\\bigr]_0^{\\sqrt3/3}=2\\left(\\frac{\\sqrt3}3-\\frac{\\sqrt3}9\\right)\\]<div class='res'>Área \\(=\\dfrac{4\\sqrt3}9\\approx0{,}7698\\ u^2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "area",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "rep",
+     "apartados": "a"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-3-5",
+   "n": 5,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la matriz \\(A=\\begin{pmatrix}1&2&1\\\\1&1&1\\\\1&-1&-1\\end{pmatrix}\\).",
+    "apartados": [
+     "(1 p.) Calcula \\(A^{-1}\\).",
+     "(1,5 p.) Calcula la matriz \\(X\\) de orden tres que verifica \\(AX+(A-X)^2=X^2+I\\), siendo \\(I\\) la matriz identidad de orden tres."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Existe \\(A^{-1}\\) si y solo si \\(|A|\\neq0\\)<i class='n' data-t='th'>Una matriz cuadrada es invertible si y solo si su determinante es distinto de 0; \\(A^{-1}=\\frac1{|A|}(\\operatorname{Adj}A)^t\\).</i>:</p>\\[|A|=1(-1+1)-2(-1-1)+1(-1-1)=0+4-2=2\\neq0\\]\\[\\operatorname{Adj}A=\\begin{pmatrix}0&2&-2\\\\1&-2&3\\\\1&0&-1\\end{pmatrix}\\ \\Rightarrow\\ A^{-1}=\\frac12(\\operatorname{Adj}A)^t=\\frac12\\begin{pmatrix}0&1&1\\\\2&-2&0\\\\-2&3&-1\\end{pmatrix}\\]<div class='res'>\\(A^{-1}=\\begin{pmatrix}0&\\frac12&\\frac12\\\\1&-1&0\\\\-1&\\frac32&-\\frac12\\end{pmatrix}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Desarrollo \\((A-X)^2\\) sin conmutar (\\(AX\\neq XA\\) en general)<i class='n' data-t='err'>\\((A-X)^2=A^2-AX-XA+X^2\\), no \\(A^2-2AX+X^2\\): el producto de matrices no es conmutativo.</i>:</p>\\[AX+A^2-AX-XA+X^2=X^2+I\\iff A^2-XA=I\\iff XA=A^2-I\\]<p>Como existe \\(A^{-1}\\), multiplico por la derecha por \\(A^{-1}\\): \\(X=(A^2-I)A^{-1}=A-A^{-1}\\).</p>\\[X=\\begin{pmatrix}1&2&1\\\\1&1&1\\\\1&-1&-1\\end{pmatrix}-\\begin{pmatrix}0&\\frac12&\\frac12\\\\1&-1&0\\\\-1&\\frac32&-\\frac12\\end{pmatrix}\\]<div class='res'>\\(X=A-A^{-1}=\\begin{pmatrix}1&\\frac32&\\frac12\\\\0&2&1\\\\2&-\\frac52&-\\frac12\\end{pmatrix}\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "ecmat",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-3-6",
+   "n": 6,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "En un estudio del ciclo del sueño se monitoriza la fase NO-REM (es el momento del sueño que el cuerpo utiliza para descansar físicamente). Esta fase se divide a su vez en tres momentos: Fase I (adormecimiento), Fase II (sueño ligero) y Fase III (sueño profundo). Una persona dedica el 75 % de su sueño a la fase NO-REM. Además, el tiempo que dedica a la Fase II es el doble que el de la Fase I y III juntas. Por otro lado, a la Fase III se dedica el cuádruple que a la Fase I. Si una persona ha dormido 8 horas, ¿cuántos minutos dedica a las Fases I, II y III del ciclo del sueño?",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>8 h = 480 min; la fase NO-REM (fases I, II y III) dura \\(0{,}75\\cdot480=360\\) min. Sean \\(x\\), \\(y\\), \\(z\\) los minutos de las fases I, II y III:</p>\\[\\begin{cases}x+y+z=360\\\\y=2(x+z)\\\\z=4x\\end{cases}\\iff\\begin{cases}x+y+z=360\\\\-2x+y-2z=0\\\\-4x+z=0\\end{cases}\\]<p>\\(\\begin{vmatrix}1&1&1\\\\-2&1&-2\\\\-4&0&1\\end{vmatrix}=15\\neq0\\): por Rouché-Frobenius<i class='n' data-t='th'>Si \\(|M|\\neq0\\), el sistema \\(3\\times3\\) es compatible determinado.</i> la solución es única.</p></div>"
+    },
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>Con \\(z=4x\\): \\(y=2(x+4x)=10x\\), y \\(x+10x+4x=360\\Rightarrow15x=360\\Rightarrow x=24\\).</p><div class='res'>Fase I: 24 min; Fase II: 240 min; Fase III: 96 min</div><i class='n' data-t='tp'>Comprobación: \\(24+240+96=360\\) ✓; \\(240=2(24+96)\\) ✓; \\(96=4\\cdot24\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "sistemas",
+     "tipo": "plan",
+     "apartados": ""
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-3-7",
+   "n": 7,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las rectas \\(r\\equiv\\begin{cases}x=0\\\\z=0\\end{cases}\\) y \\(s\\equiv\\begin{cases}x+y=1\\\\x-y=1\\end{cases}\\)",
+    "apartados": [
+     "(1,5 p.) Determina la ecuación del plano que contiene a \\(r\\) y es paralelo a \\(s\\).",
+     "(1 p.) Determina la ecuación del plano que contiene a \\(r\\) y es perpendicular a \\(s\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Datos",
+     "html": "<div class='ex'><p>\\(r\\) es el eje \\(Y\\): punto \\(O(0,0,0)\\) y dirección \\(\\vec d_r=(0,1,0)\\). Para \\(s\\): sumando las ecuaciones, \\(x=1\\); restando, \\(y=0\\): \\(s\\equiv(1,0,t)\\), con punto \\(S(1,0,0)\\) y dirección \\(\\vec d_s=(0,0,1)\\).</p></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>El plano contiene a \\(r\\) (por \\(O\\), con dirección \\(\\vec d_r\\)) y es paralelo a \\(s\\) (con dirección \\(\\vec d_s\\)): su normal es perpendicular a ambas<i class='n' data-t='th'>Un plano paralelo a una recta contiene la dirección de la recta; su normal es perpendicular a ella.</i>:</p>\\[\\vec n=\\vec d_r\\times\\vec d_s=(0,1,0)\\times(0,0,1)=(1,0,0)\\ \\Rightarrow\\ x=0\\]<div class='res'>\\(x=0\\) (el plano \\(YZ\\)); \\(s\\) es paralela a él y no está contenida (\\(x=1\\))</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Un plano perpendicular a la recta \\(s\\) tiene por normal su dirección: \\(\\vec n=\\vec d_s=(0,0,1)\\), es decir, \\(z=D\\). Como contiene a \\(r\\) (que pasa por \\(O\\)): \\(D=0\\).</p><div class='res'>\\(z=0\\) (el plano \\(XY\\))</div><i class='n' data-t='tp'>Comprobación: \\(r\\) (el eje \\(Y\\)) está en \\(z=0\\) ✓ y \\(s\\), de dirección \\((0,0,1)\\), es perpendicular a ese plano ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "ecs",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "geom",
+     "tipo": "perp",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2022-reserva-3-8",
+   "n": 8,
+   "bloque": "B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera los planos \\(\\pi_1\\equiv x+y+2=0\\) y \\(\\pi_2\\equiv x-z-1=0\\), así como la recta \\(r\\equiv\\begin{cases}2x+z=1\\\\y=1\\end{cases}\\)",
+    "apartados": [
+     "(1,5 p.) Calcula los puntos de la recta \\(r\\) que equidistan de los planos \\(\\pi_1\\) y \\(\\pi_2\\).",
+     "(1 p.) Halla el ángulo que forman los planos \\(\\pi_1\\) y \\(\\pi_2\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(r\\equiv(t,\\ 1,\\ 1-2t)\\). Distancias<i class='n' data-t='th'>\\(d(P,\\pi)=\\dfrac{|Ax_0+By_0+Cz_0+D|}{\\sqrt{A^2+B^2+C^2}}\\).</i>: \\(d_1=\\dfrac{|t+1+2|}{\\sqrt2}\\) y \\(d_2=\\dfrac{|t-(1-2t)-1|}{\\sqrt2}=\\dfrac{|3t-2|}{\\sqrt2}\\). Igualo:</p>\\[|t+3|=|3t-2|\\iff t+3=3t-2\\ \\text{o}\\ t+3=-3t+2\\iff t=\\tfrac52\\ \\text{o}\\ t=-\\tfrac14\\]<div class='res'>\\(\\left(\\dfrac52,\\,1,\\,-4\\right)\\) (\\(t=\\frac52\\)) y \\(\\left(-\\dfrac14,\\,1,\\,\\dfrac32\\right)\\) (\\(t=-\\frac14\\))</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>El ángulo entre dos planos es el de sus normales \\(\\vec n_1=(1,1,0)\\) y \\(\\vec n_2=(1,0,-1)\\)<i class='n' data-t='th'>\\(\\cos\\theta=\\dfrac{|\\vec n_1\\cdot\\vec n_2|}{|\\vec n_1||\\vec n_2|}\\), con \\(\\theta\\in[0^\\circ,90^\\circ]\\).</i>:</p>\\[\\cos\\theta=\\frac{|1+0+0|}{\\sqrt2\\cdot\\sqrt2}=\\frac12\\]<div class='res'>\\(\\theta=60^\\circ=\\dfrac\\pi3\\) rad</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "lug",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "vec",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

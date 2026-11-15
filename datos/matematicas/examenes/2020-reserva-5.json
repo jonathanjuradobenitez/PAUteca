@@ -1,0 +1,311 @@
+{
+ "version": 1,
+ "id": "matematicas-2020-reserva-5",
+ "asignatura": "matematicas",
+ "anio": 2020,
+ "convocatoria": "Reserva 5",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "matematicas-2020-reserva-5-1",
+   "n": 1,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea \\(f:\\mathbb R\\to\\mathbb R\\) la función definida por \\(f(x)=(5-x)e^{x-4}\\). Determina los puntos de la gráfica de \\(f\\) cuya recta tangente tiene pendiente máxima.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>La pendiente de la tangente en \\(x\\) es \\(m(x)=f'(x)=-e^{x-4}+(5-x)e^{x-4}=(4-x)e^{x-4}\\). Hay que maximizar \\(m\\).</p></div>"
+    },
+    {
+     "titulo": "Máximo de la pendiente",
+     "html": "<div class='ex'>\\[m'(x)=f''(x)=-e^{x-4}+(4-x)e^{x-4}=(3-x)e^{x-4}=0\\iff x=3\\]<p>\\(m'\\gt0\\) si \\(x\\lt3\\) y \\(m'\\lt0\\) si \\(x\\gt3\\)<i class='n' data-t='th'>Si \\(m'\\) pasa de positiva a negativa en \\(x_0\\), \\(m\\) tiene un máximo relativo; aquí es absoluto (\\(m\\to0\\) en \\(+\\infty\\) y en \\(-\\infty\\)).</i>: máximo en \\(x=3\\), con pendiente \\(m(3)=e^{-1}\\) y \\(f(3)=2e^{-1}\\).</p><div class='res'>El punto es \\(\\left(3,\\ \\dfrac2e\\right)\\), con pendiente máxima \\(\\dfrac1e\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "opt",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-5-2",
+   "n": 2,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(f:\\mathbb R\\to\\mathbb R\\) definida por \\(f(t)=\\dfrac1{1+e^t}\\).",
+    "apartados": [
+     "(1,5 p.) Calcula \\(\\displaystyle\\int f(t)\\,dt\\). (Sugerencia: efectúa el cambio de variable \\(x=1+e^t\\).)",
+     "(1 p.) Se define \\(g(x)=\\displaystyle\\int_0^xf(t)\\,dt\\). Calcula \\(\\displaystyle\\lim_{x\\to0}\\frac{g(x)}x\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Con \\(x=1+e^t\\): \\(dx=e^tdt=(x-1)dt\\Rightarrow dt=\\dfrac{dx}{x-1}\\). Entonces</p>\\[\\int\\frac{dt}{1+e^t}=\\int\\frac{dx}{x(x-1)}=\\int\\left(\\frac1{x-1}-\\frac1x\\right)dx=\\ln|x-1|-\\ln|x|=\\ln\\frac{e^t}{1+e^t}\\]<div class='res'>\\(\\displaystyle\\int\\frac{dt}{1+e^t}=t-\\ln(1+e^t)+C\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(g(0)=0\\): indeterminación \\(\\tfrac00\\). L'Hôpital y teorema fundamental del cálculo<i class='n' data-t='th'>Teorema fundamental del cálculo: si \\(f\\) es continua, \\(g(x)=\\int_0^xf\\) es derivable y \\(g'(x)=f(x)\\).</i>:</p>\\[\\lim_{x\\to0}\\frac{g(x)}x=\\lim_{x\\to0}\\frac{g'(x)}1=f(0)=\\frac1{1+1}\\]<div class='res'>\\(\\dfrac12\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "cambio",
+     "apartados": "a"
+    },
+    {
+     "tema": "integ",
+     "tipo": "racional",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "lim",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-5-3",
+   "n": 3,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el sistema de ecuaciones \\[\\begin{cases}-my+z=1\\\\5x+2y+mz=0\\\\my+(m-3)z=-3\\end{cases}\\]",
+    "apartados": [
+     "(1,25 p.) Discute el sistema en función de \\(m\\).",
+     "(1,25 p.) Para \\(m=0\\), resuelve el sistema. Calcula, si es posible, una solución en la que \\(y=5\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(|M|=\\begin{vmatrix}0&-m&1\\\\5&2&m\\\\0&m&m-3\\end{vmatrix}=-5\\begin{vmatrix}-m&1\\\\m&m-3\\end{vmatrix}=-5(-m^2+3m-m)=5m(m-2)\\) (desarrollo por la 1.ª columna). Por Rouché-Frobenius<i class='n' data-t='th'>\\(\\operatorname{rg}M=\\operatorname{rg}M^*=3\\): SCD; \\(\\operatorname{rg}M=\\operatorname{rg}M^*\\lt3\\): SCI; \\(\\operatorname{rg}M\\lt\\operatorname{rg}M^*\\): SI.</i>:</p><p>• \\(m\\neq0,2\\): compatible determinado.</p><p>• \\(m=0\\): \\(M=\\begin{pmatrix}0&0&1\\\\5&2&0\\\\0&0&-3\\end{pmatrix}\\), \\(\\operatorname{rg}M=2\\). En \\(M^*\\) (términos \\(1,0,-3\\)) la fila 3 es \\(-3\\) por la fila 1: \\(\\operatorname{rg}M^*=2\\). Compatible indeterminado.</p><p>• \\(m=2\\): \\(M=\\begin{pmatrix}0&-2&1\\\\5&2&2\\\\0&2&-1\\end{pmatrix}\\), \\(\\operatorname{rg}M=2\\) (filas 1 y 3 opuestas). En \\(M^*\\) (términos \\(1,0,-3\\)) no: \\((0,-2,1\\mid1)\\) y \\((0,2,-1\\mid-3)\\): \\(\\operatorname{rg}M^*=3\\). Incompatible.</p><div class='res'>\\(m\\neq0,2\\): SCD. \\(m=0\\): SCI. \\(m=2\\): SI</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Para \\(m=0\\): \\(z=1\\) y \\(5x+2y=0\\). Con \\(y=\\lambda\\): \\(x=-\\frac{2\\lambda}5\\).</p><div class='res'>Soluciones: \\(\\left(-\\dfrac{2\\lambda}5,\\ \\lambda,\\ 1\\right)\\). Con \\(y=5\\): \\((-2,\\,5,\\,1)\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "sistemas",
+     "tipo": "disc",
+     "apartados": "a"
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-5-4",
+   "n": 4,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera los puntos \\(A(1,0,1)\\), \\(B(-1,0,2)\\) y \\(O(0,0,0)\\), y la recta \\(r\\equiv\\begin{cases}x=-1-\\lambda\\\\y=\\lambda\\\\z=2\\end{cases}\\)",
+    "apartados": [
+     "(1,5 p.) Calcula la distancia del punto \\(A\\) a la recta \\(r\\).",
+     "(1 p.) Determina el área del triángulo de vértices \\(A\\), \\(B\\) y \\(O\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(r\\): \\(R(-1,0,2)\\), \\(\\vec d=(-1,1,0)\\). \\(\\overrightarrow{RA}=(2,0,-1)\\):</p>\\[d(A,r)=\\frac{|\\overrightarrow{RA}\\times\\vec d|}{|\\vec d|}=\\frac{|(1,1,2)|}{\\sqrt2}=\\frac{\\sqrt6}{\\sqrt2}\\]<i class='n' data-t='th'>Distancia de un punto a una recta: \\(\\frac{|\\overrightarrow{RA}\\times\\vec d|}{|\\vec d|}\\), la altura del paralelogramo de lados \\(\\overrightarrow{RA}\\) y \\(\\vec d\\).</i><div class='res'>\\(\\sqrt3\\approx1{,}732\\) unidades</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(\\overrightarrow{OA}=(1,0,1)\\), \\(\\overrightarrow{OB}=(-1,0,2)\\): \\(\\overrightarrow{OA}\\times\\overrightarrow{OB}=(0,-3,0)\\). Área \\(=\\frac12|\\cdot|\\).</p><div class='res'>Área \\(=\\dfrac32\\ u^2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "dist",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "area",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-5-5",
+   "n": 5,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Se sabe que la función \\(f:\\mathbb R\\to\\mathbb R\\) dada por \\(f(x)=ax^3+bx^2+cx-1\\), tiene un punto crítico en \\(x=2\\) y que la recta normal a su gráfica en el punto de abscisa \\(x=1\\) es \\(y=\\frac12x+\\frac32\\). Calcula \\(a\\), \\(b\\) y \\(c\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Condiciones",
+     "html": "<div class='ex'><p>\\(f'(x)=3ax^2+2bx+c\\). Tres condiciones:</p><p>• Punto crítico en \\(x=2\\): \\(12a+4b+c=0\\).</p><p>• La normal en \\(x=1\\) es \\(y=\\frac12x+\\frac32\\): pasa por \\((1,2)\\) y su pendiente \\(\\frac12\\) es \\(-\\frac1{f'(1)}\\)<i class='n' data-t='th'>Normal en \\(x_0\\): pasa por \\((x_0,f(x_0))\\) y tiene pendiente \\(-1/f'(x_0)\\). Aquí \\(f'(1)=-2\\).</i>: \\(f(1)=2\\Rightarrow a+b+c-1=2\\Rightarrow a+b+c=3\\), y \\(f'(1)=-2\\Rightarrow3a+2b+c=-2\\).</p><p>Restando (1.ª \\(-\\) 2.ª): \\(9a+2b=2\\); (2.ª \\(-\\) 3.ª): \\(2a+b=-5\\Rightarrow b=-5-2a\\); entonces \\(9a-10-4a=2\\Rightarrow a=\\frac{12}5\\), \\(b=-\\frac{49}5\\), \\(c=3-a-b=\\frac{52}5\\).</p><div class='res'>\\(a=\\dfrac{12}5\\), \\(b=-\\dfrac{49}5\\) y \\(c=\\dfrac{52}5\\)</div><i class='n' data-t='tp'>Comprobación: \\(12\\cdot\\frac{12}5+4\\cdot\\left(-\\frac{49}5\\right)+\\frac{52}5=0\\) ✓ y \\(3\\cdot\\frac{12}5-2\\cdot\\frac{49}5+\\frac{52}5=-2\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-5-6",
+   "n": 6,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Calcula \\(\\displaystyle\\int\\cos(\\ln x)\\,dx\\) (\\(\\ln\\) denota la función logaritmo neperiano).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Integración por partes (cíclica)",
+     "html": "<div class='ex'><p>Sea \\(I=\\displaystyle\\int\\cos(\\ln x)\\,dx\\). Por partes con \\(u=\\cos(\\ln x)\\), \\(dv=dx\\)<i class='n' data-t='th'>Al aplicar partes dos veces reaparece la integral inicial: se despeja \\(I\\). Se elige siempre \\(u\\) del mismo tipo (aquí la función trigonométrica) para no deshacer lo hecho.</i>: \\(du=-\\dfrac{\\operatorname{sen}(\\ln x)}x\\,dx\\), \\(v=x\\):</p>\\[I=x\\cos(\\ln x)+\\int\\operatorname{sen}(\\ln x)\\,dx\\]<p>Otra vez, con \\(u=\\operatorname{sen}(\\ln x)\\), \\(dv=dx\\): \\(\\int\\operatorname{sen}(\\ln x)\\,dx=x\\operatorname{sen}(\\ln x)-\\int\\cos(\\ln x)\\,dx=x\\operatorname{sen}(\\ln x)-I\\). Entonces</p>\\[I=x\\cos(\\ln x)+x\\operatorname{sen}(\\ln x)-I\\ \\Rightarrow\\ 2I=x\\bigl[\\cos(\\ln x)+\\operatorname{sen}(\\ln x)\\bigr]\\]<div class='res'>\\(\\displaystyle\\int\\cos(\\ln x)\\,dx=\\dfrac x2\\bigl[\\cos(\\ln x)+\\operatorname{sen}(\\ln x)\\bigr]+C\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "part",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-5-7",
+   "n": 7,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las matrices \\(A=\\begin{pmatrix}1&-1&m\\\\m&2&-3\\\\m-1&0&4\\end{pmatrix}\\), \\(B=\\begin{pmatrix}5\\\\-1\\\\2\\end{pmatrix}\\) y \\(C=\\begin{pmatrix}3\\\\1\\\\0\\end{pmatrix}\\).",
+    "apartados": [
+     "(1 p.) Determina los valores de \\(m\\) para los que la ecuación \\(AX+B=C\\) tiene solución única.",
+     "(1,5 p.) Para \\(m=0\\), halla \\(X\\) tal que \\(AX+B=C\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(AX+B=C\\iff AX=C-B\\): sistema \\(3\\times3\\) con solución única si y solo si \\(|A|\\neq0\\)<i class='n' data-t='th'>Por Rouché-Frobenius, un sistema \\(AX=D\\) con \\(A\\) cuadrada tiene solución única si y solo si \\(|A|\\neq0\\).</i>:</p>\\[|A|=1\\cdot8+(4m+3(m-1))+m\\bigl(0-2(m-1)\\bigr)=-2m^2+9m+5=-(2m+1)(m-5)\\]<div class='res'>Solución única si y solo si \\(m\\neq5\\) y \\(m\\neq-\\frac12\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Para \\(m=0\\): \\(|A|=5\\neq0\\), existe \\(A^{-1}\\) y \\(X=A^{-1}(C-B)\\) (por la izquierda<i class='n' data-t='err'>\\(A\\) está a la izquierda de \\(X\\): \\(AX=C-B\\Rightarrow X=A^{-1}(C-B)\\).</i>), con \\(C-B=\\begin{pmatrix}-2\\\\2\\\\-2\\end{pmatrix}\\). El sistema \\(x-y=-2\\), \\(2y-3z=2\\), \\(-x+4z=-2\\) da \\(x=y-2\\), \\(y=4z+4\\), \\(5z=-6\\):</p><div class='res'>\\(X=\\begin{pmatrix}-\\frac{14}5\\\\-\\frac45\\\\-\\frac65\\end{pmatrix}\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "ecmat",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "a"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "matematicas-2020-reserva-5-8",
+   "n": 8,
+   "bloque": "",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el plano \\(\\pi\\equiv2x-y+z-3=0\\), la recta \\(r\\equiv\\begin{cases}x=3+\\lambda\\\\y=1-2\\lambda\\\\z=-2-\\lambda\\end{cases}\\) y el punto \\(P(1,1,2)\\).",
+    "apartados": [
+     "(1,25 p.) Determina la ecuación general del plano perpendicular a \\(\\pi\\), paralelo a \\(r\\) y que pasa por el punto \\(P\\).",
+     "(1,25 p.) Calcula el punto simétrico de \\(P\\) respecto de la recta \\(r\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>El plano es perpendicular a \\(\\pi\\) (contiene \\(\\vec n_\\pi=(2,-1,1)\\)) y paralelo a \\(r\\) (contiene \\(\\vec d=(1,-2,-1)\\)): su normal es el producto vectorial<i class='n' data-t='th'>Un plano perpendicular a otro contiene la normal del otro; un plano paralelo a una recta contiene su dirección.</i>:</p>\\[\\vec N=\\vec n_\\pi\\times\\vec d=(2,-1,1)\\times(1,-2,-1)=(3,3,-3)\\sim(1,1,-1)\\]\\[x+y-z+D=0\\ \\text{por }P(1,1,2):\\ 1+1-2+D=0\\Rightarrow D=0\\]<div class='res'>\\(x+y-z=0\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Plano perpendicular a \\(r\\) por \\(P\\) (normal \\(\\vec d\\)): \\(x-2y-z+D=0\\): \\(1-2-2+D=0\\Rightarrow D=3\\). Corte con \\(r\\):</p>\\[(3+\\lambda)-2(1-2\\lambda)-(-2-\\lambda)+3=0\\iff6\\lambda+6=0\\iff\\lambda=-1\\ \\Rightarrow\\ M(2,3,-1)\\]<div class='res'>\\(P'=2M-P=(4,6,-2)-(1,1,2)=(3,\\,5,\\,-4)\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "perp",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "simet",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}

@@ -1,0 +1,445 @@
+{
+ "version": 1,
+ "id": "quimica-2025-modelo",
+ "asignatura": "quimica",
+ "anio": 2025,
+ "convocatoria": "Modelo",
+ "documento": null,
+ "ejercicios": [
+  {
+   "id": "quimica-2025-modelo-1a",
+   "n": "1A",
+   "bloque": "Pregunta 1",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "Dados los iones \\(\\mathrm{F^-}\\) y \\(\\mathrm{O^{2-}}\\), justifique la veracidad o falsedad de las siguientes afirmaciones:",
+    "apartados": [
+     "Los dos tienen el mismo número de protones.",
+     "Los dos tienen la misma configuración electrónica.",
+     "Son isótopos entre sí.",
+     "El ion \\(\\mathrm{F^-}\\) tiene electrones desapareados."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento: configuración electrónica",
+     "html": "<div class='ex'><p>Para escribir la configuración electrónica parto de la <b>posición del elemento en la tabla periódica</b> (período = capa de valencia \\(n\\); grupo = electrones de valencia) y utilizo el <b>diagrama de Moeller</b> (orden de llenado: 1s, 2s, 2p, 3s, 3p, 4s, 3d…) junto con el <b>principio de Aufbau</b> (los electrones ocupan los orbitales de menor energía disponibles), el <b>principio de exclusión de Pauli</b><i class='n' data-t='th'>Pauli: en un átomo no puede haber dos electrones con los cuatro números cuánticos iguales; cada orbital admite como máximo 2 electrones, con espines opuestos.</i> (máximo dos electrones por orbital, con espines opuestos) y la <b>regla de máxima multiplicidad de Hund</b><i class='n' data-t='th'>Hund: en orbitales de igual energía (los tres 2p, por ejemplo) los electrones se colocan primero de uno en uno, con espines paralelos, y solo después se aparean.</i> (en orbitales degenerados, los electrones se colocan primero desapareados y con espines paralelos).</p><p><b>Flúor.</b> Está en el <b>período 2</b> y en el <b>grupo 17</b>: capa de valencia \\(n=2\\) con 7 electrones de valencia (\\(2s^22p^5\\)). Por tanto, su configuración electrónica en estado fundamental es</p>\\[\\mathrm{F}\\ (Z=9):\\quad1s^2\\,2s^2\\,2p^5\\qquad(2p:\\ \\uparrow\\downarrow\\ \\ \\uparrow\\downarrow\\ \\ \\uparrow)\\]<p>(9 electrones = 9 protones). Para completar el octeto el flúor capta un electrón, que va al orbital 2p que tenía un solo electrón, así que el ion \\(\\mathrm{F^-}\\) tiene 10 electrones y su configuración es</p>\\[\\mathrm{F^-}:\\quad1s^2\\,2s^2\\,2p^6\\]<p><b>Oxígeno.</b> Está en el <b>período 2</b> y en el <b>grupo 16</b>: seis electrones de valencia (\\(2s^22p^4\\)). Su configuración en estado fundamental es</p>\\[\\mathrm{O}\\ (Z=8):\\quad1s^2\\,2s^2\\,2p^4\\qquad(2p:\\ \\uparrow\\downarrow\\ \\ \\uparrow\\ \\ \\uparrow)\\]<p>(8 electrones = 8 protones). Para completar el octeto capta dos electrones, así que el ion \\(\\mathrm{O^{2-}}\\) tiene 10 electrones:</p>\\[\\mathrm{O^{2-}}:\\quad1s^2\\,2s^2\\,2p^6\\]</div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>El número de protones es el número atómico \\(Z\\), que identifica al elemento y no cambia cuando el átomo gana o pierde electrones para formar un ion. El flúor tiene 9 protones (\\(Z=9\\), de \\(1s^22s^22p^5\\)) y el oxígeno tiene 8 (\\(Z=8\\), de \\(1s^22s^22p^4\\)).</p><div class='res'>Falso: \\(\\mathrm{F^-}\\) tiene 9 protones y \\(\\mathrm{O^{2-}}\\) tiene 8</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Como se ha visto, ambos iones tienen la misma configuración, \\(1s^22s^22p^6\\) (la del neón, con 10 electrones): son <b>isoelectrónicos</b>. Lo que los distingue es el número de protones, que hace que el \\(\\mathrm{F^-}\\) atraiga a sus electrones con una carga nuclear mayor que el \\(\\mathrm{O^{2-}}\\).</p><div class='res'>Verdadero</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Los <b>isótopos</b> son átomos del mismo elemento (igual \\(Z\\)) con distinto número de neutrones, es decir, distinto número másico \\(A\\). El flúor (\\(Z=9\\)) y el oxígeno (\\(Z=8\\)) son elementos distintos: no pueden ser isótopos. Que tengan el mismo número de electrones los hace isoelectrónicos, no isótopos.</p><div class='res'>Falso</div></div>"
+    },
+    {
+     "titulo": "Apartado d",
+     "html": "<div class='ex'><p>La configuración del ion es \\(1s^22s^22p^6\\). Según Aufbau y Moeller, los seis electrones del subnivel 2p ocupan sus tres orbitales; por Pauli, cada orbital lleva dos electrones con espines opuestos (\\(\\uparrow\\downarrow\\ \\ \\uparrow\\downarrow\\ \\ \\uparrow\\downarrow\\)). Con todos los orbitales completos no queda ningún electrón desapareado (a diferencia del átomo de flúor neutro, \\(2p^5\\), que sí tiene uno).</p><div class='res'>Falso: el ion \\(\\mathrm{F^-}\\) tiene todos sus electrones apareados</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "atom",
+     "tipo": "part",
+     "apartados": "a, c"
+    },
+    {
+     "tema": "atom",
+     "tipo": "conf",
+     "apartados": "b, d"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "quimica-2025-modelo-1b",
+   "n": "1B",
+   "bloque": "Pregunta 1",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "Conteste de forma razonada a las cuestiones acerca de los elementos A (Z = 19) y B (Z = 34):",
+    "apartados": [
+     "¿A qué grupo y a qué período pertenecen?",
+     "¿Qué elemento tiene un radio atómico menor?",
+     "¿Qué elemento tiene mayor energía de ionización?",
+     "¿Cuál será el estado de oxidación más estable para el elemento A?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Configuraciones con el <b>principio de Aufbau</b> y el orden del <b>diagrama de Moeller</b> (el 4s se llena antes que el 3d), con Pauli y Hund:</p><p>• A (\\(Z=19\\)): \\(\\mathrm{1s^2 2s^2 2p^6 3s^2 3p^6 4s^1}\\) \\(=[\\mathrm{Ar}]\\,4s^1\\). La capa de valencia es \\(n=4\\): <b>período 4</b>; un electrón de valencia en el subnivel s: <b>grupo 1</b> (potasio, alcalino).</p><p>• B (\\(Z=34\\)): \\(\\mathrm{1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^{10} 4p^4}\\) \\(=[\\mathrm{Ar}]\\,3d^{10}4s^24p^4\\): <b>período 4</b>; seis electrones de valencia (\\(4s^24p^4\\)): <b>grupo 16</b> (selenio, calcógeno).</p><div class='res'>A: grupo 1, período 4. B: grupo 16, período 4</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p><b>Radio atómico</b>: distancia media del núcleo a la capa de valencia. Ambos están en el mismo período, con electrones de valencia en \\(n=4\\). Hacia la derecha en un período aumenta el número de protones sin que crezca de forma apreciable el apantallamiento de los electrones de la misma capa: sube la <b>carga nuclear efectiva</b> y el núcleo atrae más a la capa de valencia, que se contrae.</p><div class='res'>El de menor radio es B (selenio), el que está más a la derecha</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p><b>Energía de ionización</b>: energía mínima para arrancar el electrón más débilmente unido de un átomo gaseoso en su estado fundamental. En un período aumenta hacia la derecha (mayor \\(Z^*\\), menor radio: el electrón está más atraído). B tiene mayor \\(Z^*\\) y menor radio que A, y A es un metal alcalino con un único electrón 4s fácil de arrancar.</p><div class='res'>La mayor energía de ionización es la de B (selenio)</div></div>"
+    },
+    {
+     "titulo": "Apartado d",
+     "html": "<div class='ex'><p>A (\\([\\mathrm{Ar}]\\,4s^1\\)) pierde su electrón 4s con facilidad y pasa a \\(\\mathrm{K^+}\\), con configuración de gas noble \\(1s^22s^22p^63s^23p^6\\). Una segunda ionización obligaría a romper esa capa completa (energía enorme), por lo que no ocurre en condiciones normales.</p><div class='res'>Estado de oxidación más estable de A: \\(+1\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "atom",
+     "tipo": "conf",
+     "apartados": "a, d"
+    },
+    {
+     "tema": "atom",
+     "tipo": "prop",
+     "apartados": "b, c"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "quimica-2025-modelo-2a",
+   "n": "2A",
+   "bloque": "Pregunta 2",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "Indique, razonadamente, si las siguientes afirmaciones son verdaderas o falsas:",
+    "apartados": [
+     "Toda reacción exotérmica es espontánea.",
+     "En toda reacción química espontánea la variación de entropía es positiva.",
+     "En el cambio de estado \\(\\mathrm{H_{2}O(l) \\rightleftharpoons  H_{2}O(g)}\\) se produce un aumento de entropía.",
+     "En un proceso exotérmico la entalpía de los reactivos es siempre mayor que la de los productos."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Criterio",
+     "html": "<div class='ex'><p>La espontaneidad la decide la <b>energía libre de Gibbs</b><i class='n' data-t='th'>\\(\\Delta G=\\Delta H-T\\Delta S\\). Es espontáneo a \\(P\\) y \\(T\\) constantes si \\(\\Delta G\\lt0\\); depende de \\(\\Delta H\\), de \\(\\Delta S\\) y de la temperatura.</i>: \\(\\Delta G=\\Delta H-T\\Delta S\\lt0\\).</p></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Una reacción exotérmica (\\(\\Delta H\\lt0\\)) con \\(\\Delta S\\lt0\\) tiene \\(\\Delta G\\gt0\\) a temperaturas altas (\\(-T\\Delta S\\) positivo y grande): no es espontánea.</p><div class='res'>Falso</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Una reacción con \\(\\Delta S\\lt0\\) puede ser espontánea si es muy exotérmica y la temperatura es baja (\\(|\\Delta H|\\gt T|\\Delta S|\\)). Lo que debe aumentar es la entropía del universo (sistema + entorno).</p><div class='res'>Falso</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>La entropía mide el desorden. El gas tiene mayor número de microestados que el líquido.</p><div class='res'>Verdadero: \\(\\Delta S\\gt0\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado d",
+     "html": "<div class='ex'><p>\\(\\Delta H=H_{\\text{productos}}-H_{\\text{reactivos}}\\). En un proceso exotérmico a presión constante \\(\\Delta H\\lt0\\), luego \\(H_{\\text{reactivos}}\\gt H_{\\text{productos}}\\) (el sistema desprende calor).</p><div class='res'>Verdadero</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "termo",
+     "tipo": "esp",
+     "apartados": "a, b, c"
+    },
+    {
+     "tema": "termo",
+     "tipo": "ent",
+     "apartados": "d"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "quimica-2025-modelo-2b",
+   "n": "2B",
+   "bloque": "Pregunta 2",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "El metanol se prepara industrialmente según el proceso siguiente: \\[\\mathrm{CO(g) + 2H_{2}(g) \\rightleftharpoons  CH_{3}OH(g)      ΔH \\lt 0}\\] Razone cómo afectaría al rendimiento de la reacción:",
+    "apartados": [
+     "Aumentar la temperatura.",
+     "Retirar del reactor el \\(\\mathrm{CH_{3}OH}\\) a medida que se vaya produciendo.",
+     "Aumentar la presión del sistema a temperatura constante.",
+     "Añadir un catalizador."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Criterio",
+     "html": "<div class='ex'><p>El rendimiento aumenta si el equilibrio se desplaza hacia la derecha (más metanol). Uso el <b>principio de Le Châtelier</b><i class='n' data-t='th'>Principio de Le Châtelier: si se perturba un equilibrio, el sistema evoluciona en el sentido que contrarresta la perturbación.</i>.</p></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>La reacción directa es exotérmica (\\(\\Delta H\\lt0\\)). Al subir la temperatura el sistema absorbe calor desplazándose en el sentido endotérmico (hacia la izquierda) y \\(K\\) disminuye.</p><div class='res'>Disminuye el rendimiento</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Al retirar \\(\\mathrm{CH_{3}OH}\\), \\(Q_c\\lt K_c\\): el sistema produce más metanol para recuperar el equilibrio (hacia la derecha).</p><div class='res'>Aumenta el rendimiento</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Hay 3 mol de gas a la izquierda (1 de CO y 2 de \\(\\mathrm{H_{2}}\\)) y 1 mol a la derecha. Al aumentar la presión el equilibrio se desplaza hacia donde hay menos moles de gas (derecha). \\(K\\) no cambia (la temperatura es constante).</p><div class='res'>Aumenta el rendimiento</div></div>"
+    },
+    {
+     "titulo": "Apartado d",
+     "html": "<div class='ex'><p>El catalizador disminuye la energía de activación de la reacción directa y de la inversa por igual: acelera la llegada al equilibrio pero no desplaza el equilibrio ni cambia \\(K\\).</p><div class='res'>No modifica el rendimiento en el equilibrio (solo la velocidad)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "equil",
+     "tipo": "lech",
+     "apartados": "a, b, c, d"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "quimica-2025-modelo-3a",
+   "n": "3A",
+   "bloque": "Pregunta 3",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "Se preparan 10 L de una disolución de ácido metanoico (\\(\\mathrm{HCOOH}\\)) disolviendo 23 g del ácido en agua. Teniendo en cuenta que el pH de la disolución es 3, calcule: Datos: masas atómicas relativas: C = 12; O = 16; H = 1.",
+    "apartados": [
+     "El grado de disociación del ácido.",
+     "El valor de la constante de disociación."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Datos y tabla del equilibrio",
+     "html": "<div class='ex'><p>\\(M(\\mathrm{HCOOH})=12+2\\cdot16+2\\cdot1=46\\) g/mol: \\(n=\\dfrac{23}{46}=0{,}5\\) mol y \\(c_0=\\dfrac{0{,}5}{10}=0{,}05\\) M. Como \\(\\mathrm{pH}=3\\): \\([\\mathrm{H_3O^+}]=10^{-3}\\) M. Es un ácido débil y planteo la tabla (\\(x\\) = concentración que se disocia):</p><table class='tb'><tr><th>Reacción</th><th>\\(\\mathrm{HCOOH(ac)}\\) + \\(\\mathrm{H_{2}O}\\) ⇄</th><th>\\(\\mathrm{HCOO^-(ac)}\\) +</th><th>\\(\\mathrm{H_{3}O^+(ac)}\\)</th></tr><tr><td>\\(c_0\\) (M)</td><td>0,05</td><td>0</td><td>≈ 0</td></tr><tr><td>Reaccionan (M)</td><td>\\(-x\\)</td><td>\\(+x\\)</td><td>\\(+x\\)</td></tr><tr><td>\\(c_{eq}\\) (M)</td><td>\\(0{,}05-x\\)</td><td>\\(x\\)</td><td>\\(x\\)</td></tr></table><p>Del pH: \\(x=[\\mathrm{H_3O^+}]=10^{-3}\\) M.</p></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>El grado de disociación es la fracción de ácido disociado: \\(\\alpha=\\dfrac{x}{c_0}=\\dfrac{10^{-3}}{0{,}05}\\).</p><div class='res'>\\(\\alpha=0{,}02\\) (2%)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Con la última fila de la tabla: \\([\\mathrm{HCOO^-}]=[\\mathrm{H_3O^+}]=10^{-3}\\) M y \\([\\mathrm{HCOOH}]=0{,}05-10^{-3}=0{,}049\\) M.</p>\\[K_a=\\frac{[\\mathrm{HCOO^-}][\\mathrm{H_3O^+}]}{[\\mathrm{HCOOH}]}=\\frac{(10^{-3})^2}{0{,}049}\\]<div class='res'>\\(K_a=2{,}04\\cdot10^{-5}\\)</div><i class='n' data-t='tp'>Con la aproximación \\(K_a\\approx c_0\\alpha^2=0{,}05\\cdot0{,}02^2=2{,}0\\cdot10^{-5}\\) se obtiene prácticamente el mismo valor.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "acbase",
+     "tipo": "ph",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "quimica-2025-modelo-3b",
+   "n": "3B",
+   "bloque": "Pregunta 3",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "El \\(\\mathrm{Cl_{2}}\\) es un gas corrosivo por lo que se sintetiza en el laboratorio a través de la siguiente reacción: \\[\\mathrm{KMnO_{4}(ac) + HCl(ac) \\rightarrow  KCl(ac) + MnCl_{2}(ac) + H_{2}O(l) + Cl_{2}(g)}\\] Dato: \\(R=0{,}082\\ \\mathrm{atm\\cdot L\\cdot mol^{-1}\\cdot K^{-1}}\\).",
+    "apartados": [
+     "Ajuste las ecuaciones iónica y molecular por el método del ion-electrón.",
+     "Calcule el volumen de \\(\\mathrm{Cl_{2}}\\) obtenido a 0 ºC y 1 atm de presión a partir de 30 mL de una disolución 0,5 M de \\(\\mathrm{KMnO_{4}}\\) y 50 mL de una disolución 0,25 M de HCl."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p><b>1. Reacción con los números de oxidación</b> encima de cada elemento<i class='n' data-t='th'>Reglas: elemento libre, 0; O, \\(-2\\) (salvo peróxidos); H, \\(+1\\) (salvo hidruros); metales alcalinos, \\(+1\\); la suma de los números de oxidación es igual a la carga de la especie. El manganeso se obtiene por diferencia (\\(+1+x-8=0\\)).</i>. Marco en color los elementos que cambian y los uno con una flecha:</p><svg class='rxs' data-h='174' viewBox='0 0 396 174' width='100%' style='max-width:640px' font-family='system-ui,-apple-system,Segoe UI,Roboto,sans-serif' fill='currentColor'><defs><marker id='hox' viewBox='0 0 8 8' refX='6' refY='4' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L8 4L0 8z' fill='#dc2626'/></marker><marker id='hred' viewBox='0 0 8 8' refX='6' refY='4' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L8 4L0 8z' fill='#2f6df0'/></marker></defs><g class='rxl'><g data-t='tk'><text class='o' x='15' y='38' text-anchor='middle' font-size='12' font-weight='400' fill='#7a8399'>+1</text><text class='s' x='10' y='62' font-size='18' font-weight='500' fill='currentColor'>K</text></g><g data-t='tk' data-id=\"Mn_L\"><text class='o' x='26' y='38' text-anchor='middle' font-size='12' font-weight='700' fill='#2f6df0'>+7</text><text class='s' x='21' y='62' font-size='18' font-weight='700' fill='#2f6df0'>Mn</text></g><g data-t='tk'><text class='o' x='48' y='38' text-anchor='middle' font-size='12' font-weight='400' fill='#7a8399'>−2</text><text class='s' x='43' y='62' font-size='18' font-weight='500' fill='currentColor'>O</text><text class='b' x='54' y='68' font-size='12' fill='currentColor'>4</text></g><text data-t='sep' data-p='8' x='69' y='62' font-size='18'>+</text><g data-t='tk'><text class='o' x='94' y='38' text-anchor='middle' font-size='12' font-weight='400' fill='#7a8399'>+1</text><text class='s' x='89' y='62' font-size='18' font-weight='500' fill='currentColor'>H</text></g><g data-t='tk' data-id=\"Cl_L\"><text class='o' x='105' y='38' text-anchor='middle' font-size='12' font-weight='700' fill='#dc2626'>−1</text><text class='s' x='100' y='62' font-size='18' font-weight='700' fill='#dc2626'>Cl</text></g><text data-t='sep' data-p='12' x='134' y='62' font-size='18'>→</text><g data-t='tk'><text class='o' x='163' y='38' text-anchor='middle' font-size='12' font-weight='400' fill='#7a8399'>+1</text><text class='s' x='158' y='62' font-size='18' font-weight='500' fill='currentColor'>K</text></g><g data-t='tk'><text class='o' x='174' y='38' text-anchor='middle' font-size='12' font-weight='400' fill='#7a8399'>−1</text><text class='s' x='169' y='62' font-size='18' font-weight='500' fill='currentColor'>Cl</text></g><text data-t='sep' data-p='8' x='199' y='62' font-size='18'>+</text><g data-t='tk' data-id=\"Mn_R\"><text class='o' x='224' y='38' text-anchor='middle' font-size='12' font-weight='700' fill='#2f6df0'>+2</text><text class='s' x='219' y='62' font-size='18' font-weight='700' fill='#2f6df0'>Mn</text></g><g data-t='tk'><text class='o' x='246' y='38' text-anchor='middle' font-size='12' font-weight='400' fill='#7a8399'>−1</text><text class='s' x='241' y='62' font-size='18' font-weight='500' fill='currentColor'>Cl</text><text class='b' x='263' y='68' font-size='12' fill='currentColor'>2</text></g><text data-t='sep' data-p='8' x='278' y='62' font-size='18'>+</text><g data-t='tk'><text class='o' x='303' y='38' text-anchor='middle' font-size='12' font-weight='400' fill='#7a8399'>+1</text><text class='s' x='298' y='62' font-size='18' font-weight='500' fill='currentColor'>H</text><text class='b' x='309' y='68' font-size='12' fill='currentColor'>2</text></g><g data-t='tk'><text class='o' x='321' y='38' text-anchor='middle' font-size='12' font-weight='400' fill='#7a8399'>−2</text><text class='s' x='316' y='62' font-size='18' font-weight='500' fill='currentColor'>O</text></g><text data-t='sep' data-p='8' x='335' y='62' font-size='18'>+</text><g data-t='tk' data-id=\"Cl_R\"><text class='o' x='360' y='38' text-anchor='middle' font-size='12' font-weight='700' fill='#dc2626'>0</text><text class='s' x='355' y='62' font-size='18' font-weight='700' fill='#dc2626'>Cl</text><text class='b' x='377' y='68' font-size='12' fill='#dc2626'>2</text></g></g><path data-a='Mn_L' data-b='Mn_R' data-y='74' data-d='36' d='M32.0 74 V110 H230.0 V80' fill='none' stroke='#2f6df0' stroke-width='1.9' stroke-linejoin='round' marker-end='url(#hred)'/><path data-a='Cl_L' data-b='Cl_R' data-y='74' data-d='16' d='M111.0 74 V90 H366.0 V80' fill='none' stroke='#dc2626' stroke-width='1.9' stroke-linejoin='round' marker-end='url(#hox)'/><text x='12' y='136' font-size='13' font-weight='700' fill='#2f6df0'>● Mn: +7 → +2 (se reduce)</text><text x='12' y='154' font-size='13' font-weight='700' fill='#dc2626'>● Cl: −1 → 0 (se oxida)</text></svg><p><b>2. Quién se oxida y quién se reduce.</b></p><p>• El <b>manganeso</b> pasa de \\(+7\\) (en \\(\\mathrm{MnO_{4}^-}\\)) a \\(+2\\) (en \\(\\mathrm{Mn^{2+}}\\)): su número de oxidación disminuye, por tanto <b>se reduce</b> y gana electrones. La especie que lo contiene, \\(\\mathrm{KMnO_{4}}\\), es el <b>agente oxidante</b>.</p><p>• El <b>cloro</b> pasa de \\(-1\\) (en \\(\\mathrm{Cl^-}\\)) a \\(0\\) (en \\(\\mathrm{Cl_{2}}\\)): su número de oxidación aumenta, por tanto <b>se oxida</b> y pierde electrones. La especie que lo contiene, el HCl, es el <b>agente reductor</b>.</p><p><b>3. Semirreacciones ajustadas</b> (medio ácido)<i class='n' data-t='th'>Método del ion-electrón en medio ácido: se ajusta el elemento, el O con \\(\\mathrm{H_{2}O}\\), el H con \\(\\mathrm{H^+}\\) y finalmente la carga con electrones.</i>: la oxidación, \\(\\mathrm{2Cl^- \\rightarrow  Cl_{2} + 2e^-}\\), intercambia 2 electrones, y la reducción, \\(\\mathrm{MnO_{4}^- + 8H^+ + 5e^- \\rightarrow  Mn^{2+} + 4H_{2}O}\\), intercambia 5. Para igualar los electrones (10) multiplico la oxidación por 5 y la reducción por 2.</p><p><b>4. Suma, espectadores y ecuación molecular.</b> Sumo las semirreacciones (se cancelan los 10 electrones), añado los espectadores (de los 16 \\(\\mathrm{Cl^-}\\), 10 se oxidan y 6 quedan: 2 con el \\(\\mathrm{K^+}\\) y 4 con el \\(\\mathrm{Mn^{2+}}\\)) y obtengo la ecuación molecular:</p><div style='overflow-x:auto'>\\[\\begin{array}{lrcl}\\text{Semirreacción de oxidación}\\ (\\times5) & \\mathrm{10Cl^-} & \\rightarrow & \\mathrm{5Cl_2+10e^-}\\\\[2pt]\\text{Semirreacción de reducción}\\ (\\times2) & \\mathrm{2MnO_4^-+16H^++10e^-} & \\rightarrow & \\mathrm{2Mn^{2+}+8H_2O}\\\\\\hline\\text{Ecuación iónica ajustada} & \\mathrm{2MnO_4^-+16H^++10Cl^-} & \\rightarrow & \\mathrm{2Mn^{2+}+5Cl_2+8H_2O}\\\\[2pt]\\text{Iones espectadores} & +\\,\\mathrm{2K^++6Cl^-} & & +\\,\\mathrm{2K^++6Cl^-}\\\\\\hline\\text{Ecuación molecular} & \\mathrm{2KMnO_4+16HCl} & \\rightarrow & \\mathrm{2KCl+2MnCl_2+5Cl_2+8H_2O}\\end{array}\\]</div><div class='res'>\\(\\mathrm{2KMnO_{4} + 16HCl \\rightarrow  2KCl + 2MnCl_{2} + 5Cl_{2} + 8H_{2}O}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Hay datos de los dos reactivos: hay que hallar el <b>reactivo limitante</b>. Moles: \\(n(\\mathrm{KMnO_4})=0{,}030\\cdot0{,}5=0{,}015\\) mol; \\(n(\\mathrm{HCl})=0{,}050\\cdot0{,}25=0{,}0125\\) mol. La estequiometría exige 16 mol de HCl por cada 2 de \\(\\mathrm{KMnO_{4}}\\) (8 : 1): para \\(0{,}015\\) mol de \\(\\mathrm{KMnO_{4}}\\) harían falta \\(0{,}12\\) mol de HCl y solo hay \\(0{,}0125\\). El limitante es el HCl.</p><p>\\(n(\\mathrm{Cl_2})=0{,}0125\\ \\mathrm{mol\\ HCl}\\cdot\\dfrac{5\\ \\mathrm{mol\\ Cl_2}}{16\\ \\mathrm{mol\\ HCl}}=3{,}91\\cdot10^{-3}\\) mol. Con la ecuación de los gases ideales a \\(T=273\\) K y \\(P=1\\) atm:</p>\\[V=\\frac{nRT}{P}=\\frac{3{,}91\\cdot10^{-3}\\cdot0{,}082\\cdot273}{1}\\]<div class='res'>\\(V\\approx0{,}0874\\ \\mathrm L\\) (87,4 mL de \\(\\mathrm{Cl_{2}}\\))</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "redox",
+     "tipo": "ajuste",
+     "apartados": "a"
+    },
+    {
+     "tema": "redox",
+     "tipo": "estq",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "quimica-2025-modelo-4a",
+   "n": "4A",
+   "bloque": "Pregunta 4",
+   "puntos": "1,5",
+   "enunciado": {
+    "intro": "Formule o nombre los siguientes compuestos:",
+    "apartados": [
+     "But-3-en-1-ol",
+     "\\(\\mathrm{(CH_{3})_{3}N}\\)",
+     "o-Bromofenol",
+     "\\(\\mathrm{CH_{2}=CHCH_{2}CH_{3}}\\)"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Cadena de 4 C (but-) con un doble enlace en el C3 contado desde el extremo que da el menor localizador al grupo –OH (C1).</p><div class='res'>\\(\\mathrm{CH_{2}=CH–CH_{2}–CH_{2}OH}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Nitrógeno unido a tres grupos metilo: amina terciaria.</p><div class='res'>Trimetilamina (N,N-dimetilmetanamina)</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Anillo bencénico con un –OH (fenol) y un –Br en posición orto (carbonos contiguos).</p><div class='res'>\\(\\mathrm{C_{6}H_{4}(OH)Br}\\), con los dos sustituyentes en carbonos vecinos (2-bromofenol)</div></div>"
+    },
+    {
+     "titulo": "Apartado d",
+     "html": "<div class='ex'><p>Cadena de 4 C con el doble enlace entre el C1 y el C2.</p><div class='res'>But-1-eno</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "form",
+     "tipo": "orgf",
+     "apartados": "a, b, c, d"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "quimica-2025-modelo-4b",
+   "n": "4B",
+   "bloque": "Pregunta 4",
+   "puntos": "1,5",
+   "enunciado": {
+    "intro": "Considerando la molécula \\(\\mathrm{CH_{2}=CHCH_{2}CH_{3}}\\) (se responden solo dos de los tres apartados):",
+    "apartados": [
+     "Indique la hibridación de cada uno de sus átomos de carbono.",
+     "Escriba la fórmula semidesarrollada de un isómero de cadena.",
+     "Escriba la reacción de hidrogenación."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>La hibridación depende del número de átomos unidos y de pares libres (4 enlaces \\(\\sigma\\): sp³; 3: sp²; 2: sp).</p><table class='tb'><tr><th>Carbono</th><th>Enlaces</th><th>Hibridación</th></tr><tr><td>C1 (\\(\\mathrm{CH_{2}=}\\))</td><td>3 \\(\\sigma\\) + 1 \\(\\pi\\)</td><td>sp²</td></tr><tr><td>C2 (\\(\\mathrm{=CH–}\\))</td><td>3 \\(\\sigma\\) + 1 \\(\\pi\\)</td><td>sp²</td></tr><tr><td>C3 (\\(\\mathrm{–CH_{2}–}\\))</td><td>4 \\(\\sigma\\)</td><td>sp³</td></tr><tr><td>C4 (\\(\\mathrm{–CH_{3}}\\))</td><td>4 \\(\\sigma\\)</td><td>sp³</td></tr></table></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Los isómeros de cadena tienen la misma fórmula molecular (\\(\\mathrm{C_{4}H_{8}}\\)) y distinta cadena carbonada. Un ejemplo es la ramificada:</p><div class='res'>\\(\\mathrm{CH_{2}=C(CH_{3})–CH_{3}}\\) (2-metilpropeno)</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Hidrogenación catalítica (Pt, Pd o Ni): adición de \\(\\mathrm{H_{2}}\\) al doble enlace.</p>\\[\\mathrm{CH_{2}=CH–CH_{2}–CH_{3} + H_{2} \\rightarrow  CH_{3}–CH_{2}–CH_{2}–CH_{3}}\\]<div class='res'>Se obtiene butano</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "org",
+     "tipo": "isom",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "org",
+     "tipo": "reac",
+     "apartados": "c"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  },
+  {
+   "id": "quimica-2025-modelo-5",
+   "n": "5",
+   "bloque": "Pregunta 5",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "<b>¿Por qué el coche eléctrico es el futuro de la automoción?</b> Hasta 2001 se permitió el plomo en la gasolina. El plomo está en minerales como la Galena (rica en sulfuro de plomo(II)), el Litargirio (rico en óxido de plomo(II)), la Cerusita (\\(\\mathrm{PbCO_{3}}\\)) y la Anglesita (\\(\\mathrm{PbSO_{4}}\\)). El dióxido de carbono emitido por los coches puede reaccionar con dihidrógeno para dar agua y monóxido de carbono, en un equilibrio con \\(K_c=4{,}4\\). Datos: \\(R=0{,}082\\ \\mathrm{atm\\cdot L\\cdot K^{-1}\\cdot mol^{-1}}\\); \\(F=96500\\) C; Pb = 207.",
+    "apartados": [
+     "En un recipiente de 1 L, en las condiciones a las que hace referencia el texto, se introducen \\(6{,}1\\cdot10^{-3}\\) mol de \\(\\mathrm{CO_{2}(g)}\\) y una cierta cantidad de \\(\\mathrm{H_{2}(g)}\\). Cuando se alcanza el equilibrio, la presión total es de 6 atm. Escriba la ecuación del equilibrio, calcule los moles de \\(\\mathrm{H_{2}}\\) introducidos en el recipiente y el valor de \\(K_p\\).",
+     "El plomo que contenía la gasolina se expulsaba con los gases de escape y contaminaba el aire y la tierra. Se han pesado 25 g de polvo de carretera y se ha extraído todo el plomo en una disolución acuosa de 250 mL. Se ha hecho pasar una corriente de 1,5 A durante 1 hora, depositándose todo el plomo metálico. Calcule los gramos de iones plomo en el polvo de carretera.",
+     "Formule y nombre todos los compuestos de plomo que aparecen en el texto."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p><b>Equilibrio</b> (según el texto):</p>\\[\\mathrm{CO_{2}(g) + H_{2}(g) \\rightleftharpoons  CO(g) + H_{2}O(g)}\\]<p><b>Kp.</b> Hay el mismo número de moles gaseosos en reactivos y productos (\\(\\Delta n=2-2=0\\)), luego \\(K_p=K_c(RT)^{\\Delta n}=K_c\\)<i class='n' data-t='th'>\\(K_p=K_c(RT)^{\\Delta n}\\). Si \\(\\Delta n=0\\), \\(K_p=K_c\\).</i>:</p><div class='res'>\\(K_p=K_c=4{,}4\\)</div><p><b>Moles de \\(\\mathrm{H_{2}}\\) introducidos.</b> Como \\(\\Delta n=0\\), los moles totales no cambian durante la reacción: \\(n_t=6{,}1\\cdot10^{-3}+n(\\mathrm{H_2})\\). Con la ecuación de los gases ideales, \\(PV=n_tRT\\):</p>\\[n(\\mathrm{H_2})=\\frac{PV}{RT}-6{,}1\\cdot10^{-3}=\\frac{6\\cdot1}{0{,}082\\,T}-6{,}1\\cdot10^{-3}=\\frac{73{,}2}{T}-6{,}1\\cdot10^{-3}\\ \\mathrm{mol}\\ (T\\ \\text{en K})\\]<div class='res'>\\(n(\\mathrm{H_2})=\\dfrac{73{,}2}{T}-6{,}1\\cdot10^{-3}\\) mol. Por ejemplo, a 1000 K: \\(0{,}067\\) mol</div><i class='n' data-t='err'>El enunciado tal como aparece en el documento no da la temperatura del equilibrio, necesaria para hallar los moles de \\(\\mathrm{H_{2}}\\) con \\(PV=nRT\\); por eso se deja en función de \\(T\\). \\(K_p\\) sí se obtiene sin ella. (El valor a 1000 K es solo un ejemplo.)</i></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Reducción del plomo en la cuba (leyes de Faraday<i class='n' data-t='th'>Leyes de Faraday: la cantidad de sustancia depositada es proporcional a la carga: \\(n=\\dfrac{I\\,t}{z\\,F}\\), con \\(z\\) los electrones intercambiados por ion.</i>):</p>\\[\\mathrm{Pb^{2+} + 2e^- \\rightarrow  Pb(s)}\\]<p>Carga: \\(Q=It=1{,}5\\ \\mathrm A\\cdot3600\\ \\mathrm s=5400\\) C. Moles de electrones: \\(\\dfrac{5400}{96500}=0{,}05596\\) mol, y como cada \\(\\mathrm{Pb^{2+}}\\) necesita 2 e⁻: \\(n(\\mathrm{Pb^{2+}})=0{,}02798\\) mol.</p>\\[m=n\\cdot M=0{,}02798\\ \\mathrm{mol}\\cdot207\\ \\mathrm{g/mol}\\]<div class='res'>\\(5{,}79\\) g de plomo (iones \\(\\mathrm{Pb^{2+}}\\)) en los 25 g de polvo de carretera</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><table class='tb'><tr><th>Mineral</th><th>Compuesto</th><th>Fórmula</th></tr><tr><td>Galena</td><td>sulfuro de plomo(II)</td><td>\\(\\mathrm{PbS}\\)</td></tr><tr><td>Litargirio</td><td>óxido de plomo(II)</td><td>\\(\\mathrm{PbO}\\)</td></tr><tr><td>Cerusita</td><td>carbonato de plomo(II)</td><td>\\(\\mathrm{PbCO_{3}}\\)</td></tr><tr><td>Anglesita</td><td>sulfato de plomo(II)</td><td>\\(\\mathrm{PbSO_{4}}\\)</td></tr></table><p>En todos el plomo es \\(\\mathrm{Pb^{2+}}\\), que se compensa 1 : 1 con \\(\\mathrm{S^{2-}}\\), \\(\\mathrm{O^{2-}}\\), \\(\\mathrm{CO_{3}^{2-}}\\) y \\(\\mathrm{SO_{4}^{2-}}\\).</p></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "equil",
+     "tipo": "kc",
+     "apartados": "a"
+    },
+    {
+     "tema": "redox",
+     "tipo": "elec",
+     "apartados": "b"
+    },
+    {
+     "tema": "form",
+     "tipo": "inorg",
+     "apartados": "c"
+    }
+   ],
+   "origen": {
+    "documento": null
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado"
+  }
+ ]
+}
