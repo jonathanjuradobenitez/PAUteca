@@ -34,7 +34,7 @@
     "criterio": "regla general fijada por el autor: año y convocatoria del nombre del archivo; un PDF con las dos opciones es el examen completo",
     "incidencias": []
    },
-   "revision": "borrador"
+   "revision": "revisado"
   }
  ],
  "ejercicios": [
@@ -89,10 +89,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -154,11 +154,11 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador",
-    "c": "borrador"
+    "a": "revisado",
+    "b": "revisado",
+    "c": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -209,10 +209,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -268,10 +268,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {
     "a": [
@@ -336,9 +336,9 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "": "borrador"
+    "": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -395,10 +395,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -459,10 +459,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -518,10 +518,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {
     "a": [

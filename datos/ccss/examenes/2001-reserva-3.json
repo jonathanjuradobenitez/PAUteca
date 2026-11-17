@@ -85,11 +85,11 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>Sean \\(a\\), \\(b\\) y \\(c\\) los precios, en pts, de las camisas A, B y C.</p><p>«La razón entre los precios de C y B es 19/18»: \\(\\dfrac{c}{b}=\\dfrac{19}{18}\\Rightarrow18c=19b\\). «La razón entre los de B y A es 6/5»: \\(\\dfrac ba=\\dfrac65\\Rightarrow5b=6a\\). Comprando una de cada clase se pagan 13000 pts: \\(a+b+c=13000\\).</p>\\[\\left\\{\\begin{array}{l}6a-5b=0\\\\19b-18c=0\\\\a+b+c=13000\\end{array}\\right.\\]<i class='n' data-t='tp'>Aunque solo se pide plantearlo, resolviéndolo se obtiene \\(a=3750\\), \\(b=4500\\), \\(c=4750\\) pts, que cumplen las tres condiciones.</i><div class='res'>\\(\\left\\{\\begin{array}{l}6a-5b=0\\\\19b-18c=0\\\\a+b+c=13000\\end{array}\\right.\\)</div></div>"
+     "html": "<div class='ex'><p>Sean \\(a\\), \\(b\\) y \\(c\\) los precios, en pts, de las camisas A, B y C.</p><p>«La razón entre los precios de C y B es 19/18»: \\(\\dfrac{c}{b}=\\dfrac{19}{18}\\) \\(\\Rightarrow18c=19b\\). «La razón entre los de B y A es 6/5»: \\(\\dfrac ba=\\dfrac65\\) \\(\\Rightarrow5b=6a\\). Comprando una de cada clase se pagan 13000 pts: \\(a+b+c=13000\\).</p>\\[\\left\\{\\begin{array}{l}6a-5b=0\\\\19b-18c=0\\\\a+b+c=13000\\end{array}\\right.\\]<i class='n' data-t='tp'>Aunque solo se pide plantearlo, resolviéndolo se obtiene \\(a=3750\\), \\(b=4500\\), \\(c=4750\\) pts, que cumplen las tres condiciones.</i><div class='res'>\\(\\left\\{\\begin{array}{l}6a-5b=0\\\\19b-18c=0\\\\a+b+c=13000\\end{array}\\right.\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
-     "html": "<div class='ex'><p>\\(A\\) es \\(3\\times3\\) y \\(B\\) es \\(3\\times2\\), así que \\(X\\) debe ser \\(3\\times2\\)<i class='n' data-t='why'>Para multiplicar \\(A\\cdot X\\), \\(X\\) debe tener 3 filas; el producto tiene tantas columnas como \\(X\\), y debe tener las 2 de \\(B\\).</i>.</p><p>Si \\(A\\) tiene inversa, la ecuación tiene solución única: \\(X=A^{-1}\\cdot B\\)<i class='n' data-t='th'>Multiplicando por la izquierda por \\(A^{-1}\\): \\(A^{-1}AX=A^{-1}B\\Rightarrow X=A^{-1}B\\).</i>.</p>\\[|A|=\\begin{vmatrix}1&0&0\\\\2&1&0\\\\1&0&1\\end{vmatrix}=1\\neq0\\]<i class='n' data-t='why'>Es una matriz triangular: su determinante es el producto de la diagonal.</i><p>Luego \\(A\\) es invertible y la ecuación tiene solución. Calculamos \\(A^{-1}=\\dfrac{1}{|A|}(\\operatorname{Adj}A)^t\\):</p>\\[\\operatorname{Adj}A=\\begin{pmatrix}1&-2&-1\\\\0&1&0\\\\0&0&1\\end{pmatrix}\\;\\Rightarrow\\;A^{-1}=\\begin{pmatrix}1&0&0\\\\-2&1&0\\\\-1&0&1\\end{pmatrix}\\]\\[X=A^{-1}B=\\begin{pmatrix}1&0&0\\\\-2&1&0\\\\-1&0&1\\end{pmatrix}\\begin{pmatrix}0&1\\\\1&0\\\\1&1\\end{pmatrix}=\\begin{pmatrix}0&1\\\\1&-2\\\\1&0\\end{pmatrix}\\]<i class='n' data-t='tp'>Comprobación: \\(A\\cdot X=\\begin{pmatrix}0&1\\\\0+1&2-2\\\\0+1&1+0\\end{pmatrix}=B\\).</i><div class='res'>Sí tiene solución (única): \\(X=\\begin{pmatrix}0&1\\\\1&-2\\\\1&0\\end{pmatrix}\\)</div></div>"
+     "html": "<div class='ex'><p>\\(A\\) es \\(3\\times3\\) y \\(B\\) es \\(3\\times2\\), así que \\(X\\) debe ser \\(3\\times2\\)<i class='n' data-t='why'>Para multiplicar \\(A\\cdot X\\), \\(X\\) debe tener 3 filas; el producto tiene tantas columnas como \\(X\\), y debe tener las 2 de \\(B\\).</i>.</p><p>Si \\(A\\) tiene inversa, la ecuación tiene solución única: \\(X=A^{-1}\\cdot B\\)<i class='n' data-t='th'>Multiplicando por la izquierda por \\(A^{-1}\\): \\(A^{-1}AX=A^{-1}B\\) \\(\\Rightarrow X=A^{-1}B\\).</i>.</p>\\[|A|=\\begin{vmatrix}1&0&0\\\\2&1&0\\\\1&0&1\\end{vmatrix}=1\\neq0\\]<i class='n' data-t='why'>Es una matriz triangular: su determinante es el producto de la diagonal.</i><p>Luego \\(A\\) es invertible y la ecuación tiene solución. Calculamos \\(A^{-1}=\\dfrac{1}{|A|}(\\operatorname{Adj}A)^t\\):</p>\\[\\begin{aligned}\\operatorname{Adj}A&=\\begin{pmatrix}1&-2&-1\\\\0&1&0\\\\0&0&1\\end{pmatrix}\\\\&\\Rightarrow A^{-1}=\\begin{pmatrix}1&0&0\\\\-2&1&0\\\\-1&0&1\\end{pmatrix}\\end{aligned}\\]\\[\\begin{aligned}X&=A^{-1}B\\\\&=\\begin{pmatrix}1&0&0\\\\-2&1&0\\\\-1&0&1\\end{pmatrix}\\begin{pmatrix}0&1\\\\1&0\\\\1&1\\end{pmatrix}\\\\&=\\begin{pmatrix}0&1\\\\1&-2\\\\1&0\\end{pmatrix}\\end{aligned}\\]<i class='n' data-t='tp'>Comprobación: \\(A\\cdot X=\\begin{pmatrix}0&1\\\\0+1&2-2\\\\0+1&1+0\\end{pmatrix}=B\\).</i><div class='res'>Sí tiene solución (única): \\(X=\\begin{pmatrix}0&1\\\\1&-2\\\\1&0\\end{pmatrix}\\)</div></div>"
     }
    ],
    "clasificacion": [
@@ -190,7 +190,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision",
+   "revision": "revisado",
    "revision_apartados": {
     "a": "revisado",
     "b": "revisado",
@@ -252,7 +252,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision",
+   "revision": "revisado",
    "revision_apartados": {
     "a": "revisado",
     "b": "revisado",
@@ -345,7 +345,7 @@
     },
     {
      "titulo": "Apartado b",
-     "html": "<div class='ex'><p>Hallamos sus vértices:</p><ul><li>\\(O=(0,0)\\)</li><li>\\(A:\\;\\left\\{\\begin{array}{l}y=0\\\\2x+y=18\\end{array}\\right.\\Rightarrow\\boxed{A(9,0)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}2x+y=18\\\\2x+3y=26\\end{array}\\right.\\Rightarrow2y=8\\Rightarrow y=4,\\;x=7\\Rightarrow\\boxed{B(7,4)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}x=0\\\\2x+3y=26\\end{array}\\right.\\Rightarrow\\boxed{C\\left(0,\\tfrac{26}{3}\\right)}\\)</li></ul><div class='res'>Vértices: \\(O(0,0)\\), \\(A(9,0)\\), \\(B(7,4)\\) y \\(C\\left(0,\\frac{26}{3}\\right)\\)</div></div>"
+     "html": "<div class='ex'><p>Hallamos sus vértices:</p><ul><li>\\(O=(0,0)\\)</li><li>\\(A:\\;\\left\\{\\begin{array}{l}y=0\\\\2x+y=18\\end{array}\\right.\\) \\(\\Rightarrow\\boxed{A(9,0)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}2x+y=18\\\\2x+3y=26\\end{array}\\right.\\) \\(\\Rightarrow2y=8\\) \\(\\Rightarrow y=4,\\;x=7\\) \\(\\Rightarrow\\boxed{B(7,4)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}x=0\\\\2x+3y=26\\end{array}\\right.\\) \\(\\Rightarrow\\boxed{C\\left(0,\\tfrac{26}{3}\\right)}\\)</li></ul><div class='res'>Vértices: \\(O(0,0)\\), \\(A(9,0)\\), \\(B(7,4)\\) y \\(C\\left(0,\\frac{26}{3}\\right)\\)</div></div>"
     },
     {
      "titulo": "Apartado c",
@@ -380,7 +380,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision",
+   "revision": "revisado",
    "revision_apartados": {
     "a": "revisado",
     "b": "revisado",
@@ -482,7 +482,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision",
+   "revision": "revisado",
    "revision_apartados": {
     "a": "revisado",
     "b": "revisado"

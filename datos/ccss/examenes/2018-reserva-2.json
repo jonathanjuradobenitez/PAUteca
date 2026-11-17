@@ -19,15 +19,15 @@
    "solucion": [
     {
      "titulo": "Planteamiento",
-     "html": "<div class='ex'><p>Llamamos \\(x\\) al número de pañuelos e \\(y\\) al de corbatas por semana. Las horas de trabajo no pueden superar 60 y el compromiso exige que corbatas más el doble de pañuelos sea al menos 28:</p>\\[\\begin{cases}2x+3y\\le60\\\\2x+y\\ge28\\\\x\\ge0,\\ y\\ge0\\end{cases}\\qquad B(x,y)=4x+6y\\ \\text{(a maximizar)}\\]</div>"
+     "html": "<div class='ex'><p>Llamamos \\(x\\) al número de pañuelos e \\(y\\) al de corbatas por semana. Las horas de trabajo no pueden superar 60 y el compromiso exige que corbatas más el doble de pañuelos sea al menos 28:</p>\\[\\begin{cases}2x+3y\\le60\\\\2x+y\\ge28\\\\x\\ge0,\\ y\\ge0\\end{cases}\\qquad F(x,y)=4x+6y\\ \\text{(a maximizar)}\\]</div>"
     },
     {
      "titulo": "Región factible y vértices",
-     "html": "<div class='ex'><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(2x+3y=60\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(30\\)</td></tr><tr><th>\\(y\\)</th><td>\\(20\\)</td><td>\\(0\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(2x+y=28\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(14\\)</td></tr><tr><th>\\(y\\)</th><td>\\(28\\)</td><td>\\(0\\)</td></tr></table><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(2x+3y\\le60\\): con el origen, \\(0\\le60\\) se cumple → semiplano que lo contiene.</li><li>\\(2x+y\\ge28\\): con el origen, \\(0\\ge28\\) no se cumple → semiplano que <b>no</b> lo contiene.</li></ul><p>Además, \\(x\\ge0\\) y \\(y\\ge0\\) limitan la región al primer cuadrante.</p><div style='overflow-x:auto'><svg viewBox='0 0 330 210' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='148.0,190.0 292.0,190.0 76.0,46.0' fill='#b9a4f5' fill-opacity='.5' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M13 190H319M22 204V10'/></g><text x='313' y='185'>x</text><text x='27' y='18'>y</text><g font-size='10' fill='currentColor'><line x1='112.0' y1='187.0' x2='112.0' y2='193.0' stroke='currentColor'/><text x='112.0' y='204.0' text-anchor='middle'>10</text><line x1='202.0' y1='187.0' x2='202.0' y2='193.0' stroke='currentColor'/><text x='202.0' y='204.0' text-anchor='middle'>20</text><line x1='292.0' y1='187.0' x2='292.0' y2='193.0' stroke='currentColor'/><text x='292.0' y='204.0' text-anchor='middle'>30</text><line x1='19.0' y1='145.0' x2='25.0' y2='145.0' stroke='currentColor'/><text x='16.0' y='148.0' text-anchor='end'>5</text><line x1='19.0' y1='100.0' x2='25.0' y2='100.0' stroke='currentColor'/><text x='16.0' y='103.0' text-anchor='end'>10</text><line x1='19.0' y1='55.0' x2='25.0' y2='55.0' stroke='currentColor'/><text x='16.0' y='58.0' text-anchor='end'>15</text></g><circle cx='148.0' cy='190.0' r='3.3' fill='#e8487a'/><text x='128.0' y='182.0' font-weight='700'>A(14,0)</text><circle cx='292.0' cy='190.0' r='3.3' fill='#e8487a'/><text x='266.0' y='182.0' font-weight='700'>B(30,0)</text><circle cx='76.0' cy='46.0' r='3.3' fill='#e8487a'/><text x='82.0' y='40.0' font-weight='700'>C(6,16)</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(A:\\;\\left\\{\\begin{array}{l}2x+y=28\\\\y=0\\end{array}\\right.\\Rightarrow x=14\\Rightarrow \\boxed{A(14,0)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}2x+3y=60\\\\y=0\\end{array}\\right.\\Rightarrow x=30\\Rightarrow \\boxed{B(30,0)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}2x+3y=60\\\\2x+y=28\\end{array}\\right.\\Rightarrow y=-2x+28\\Rightarrow 2x+3(-2x+28)=60\\Rightarrow x=6,\\ y=16\\Rightarrow \\boxed{C(6,16)}\\)</li></ul><p>En el eje de ordenadas no hay región: con \\(x=0\\) haría falta \\(y\\ge28\\), pero \\(3y\\le60\\) obliga a \\(y\\le20\\).</p></div>"
+     "html": "<div class='ex'><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(2x+3y=60\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(30\\)</td></tr><tr><th>\\(y\\)</th><td>\\(20\\)</td><td>\\(0\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(2x+y=28\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(14\\)</td></tr><tr><th>\\(y\\)</th><td>\\(28\\)</td><td>\\(0\\)</td></tr></table><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(2x+3y\\le60\\): con el origen, \\(0\\le60\\) se cumple → semiplano que lo contiene.</li><li>\\(2x+y\\ge28\\): con el origen, \\(0\\ge28\\) no se cumple → semiplano que <b>no</b> lo contiene.</li></ul><p>Además, \\(x\\ge0\\) y \\(y\\ge0\\) limitan la región al primer cuadrante.</p><div style='overflow-x:auto'><svg viewBox='0 0 420 300' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><line x1='67.3' y1='266.0' x2='67.3' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='113.5' y1='266.0' x2='113.5' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='159.6' y1='266.0' x2='159.6' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='205.8' y1='266.0' x2='205.8' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='252.0' y1='266.0' x2='252.0' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='298.2' y1='266.0' x2='298.2' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='344.4' y1='266.0' x2='344.4' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='244.6' x2='386.0' y2='244.6' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='188.8' x2='386.0' y2='188.8' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='133.0' x2='386.0' y2='133.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='77.3' x2='386.0' y2='77.3' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='244.6' x2='386.0' y2='244.6' stroke='#111' stroke-width='1.3'/><line x1='67.3' y1='266.0' x2='67.3' y2='34.0' stroke='#111' stroke-width='1.3'/><text x='113.5' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>5</text><text x='159.6' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>10</text><text x='205.8' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>15</text><text x='252.0' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>20</text><text x='298.2' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>25</text><text x='344.4' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>30</text><text x='63.3' y='191.8' font-size='10' text-anchor='end' fill='#374151'>5</text><text x='63.3' y='136.0' font-size='10' text-anchor='end' fill='#374151'>10</text><text x='63.3' y='80.3' font-size='10' text-anchor='end' fill='#374151'>15</text><text x='384.0' y='239.6' font-size='11' text-anchor='end' font-style='italic'>x</text><text x='72.3' y='44.0' font-size='11' font-style='italic'>y</text><polygon points='196.6,244.6 344.4,244.6 122.7,66.1' fill='#fcd34d' fill-opacity='0.55' stroke='none'/><line x1='371.0' y1='266.0' x2='82.8' y2='34.0' stroke='#b45309' stroke-width='2'/><text x='279.6' y='191.4' font-size='10' fill='#b45309' text-anchor='end'>2x+3y=60</text><line x1='205.5' y1='266.0' x2='109.4' y2='34.0' stroke='#2563eb' stroke-width='2'/><text x='162.4' y='145.0' font-size='10' fill='#2563eb' text-anchor='start'>2x+y=28</text><text x='221.2' y='190.1' font-size='15' fill='#92400e' text-anchor='middle' font-weight='bold'>R</text><circle cx='196.6' cy='244.6' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='189.6' y='259.6' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>A</text><circle cx='344.4' cy='244.6' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='351.4' y='259.6' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>B</text><circle cx='122.7' cy='66.1' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='115.7' y='59.1' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>C</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(A:\\;\\left\\{\\begin{array}{l}2x+y=28\\\\y=0\\end{array}\\right.\\) \\(\\Rightarrow x=14\\) \\(\\Rightarrow \\boxed{A(14,0)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}2x+3y=60\\\\y=0\\end{array}\\right.\\) \\(\\Rightarrow x=30\\) \\(\\Rightarrow \\boxed{B(30,0)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}2x+3y=60\\\\2x+y=28\\end{array}\\right.\\) \\(\\Rightarrow y=-2x+28\\) \\(\\Rightarrow 2x+3(-2x+28)=60\\) \\(\\Rightarrow x=6,\\ y=16\\) \\(\\Rightarrow \\boxed{C(6,16)}\\)</li></ul><p>En el eje de ordenadas no hay región: con \\(x=0\\) haría falta \\(y\\ge28\\), pero \\(3y\\le60\\) obliga a \\(y\\le20\\).</p></div>"
     },
     {
      "titulo": "Optimización",
-     "html": "<div class='ex'><p>La función \\(B\\) alcanza sus extremos en el recinto, en puntos de su frontera; evaluamos, por tanto, \\(B\\) en los vértices<i class='n' data-t='th'>Teorema fundamental de la programación lineal: si la región factible es un polígono convexo y acotado, la función objetivo alcanza su máximo y su mínimo en alguno de sus vértices.</i>:</p>\\[\\begin{aligned}&A:\\\\ B(14,0)&=4\\cdot14+6\\cdot0\\\\&=56\\end{aligned}\\]\\[\\begin{aligned}&B:\\\\ B(30,0)&=4\\cdot30+6\\cdot0\\\\&=120\\end{aligned}\\]\\[\\begin{aligned}&C:\\\\ B(6,16)&=4\\cdot6+6\\cdot16\\\\&=120\\end{aligned}\\]<p>\\(B\\) alcanza un máximo de valor \\(120\\) en todos los puntos del segmento de extremos \\(B\\) y \\(C\\).</p><p>La función objetivo es \\(4x+6y=2(2x+3y)\\), paralela a la restricción \\(2x+3y\\le60\\)<i class='n' data-t='why'>Cuando la función objetivo es paralela a un lado del recinto, el óptimo se alcanza en todo ese lado.</i>. Como las prendas son unidades enteras, sirven los puntos con coordenadas enteras del segmento \\(BC\\): \\((30,0)\\), \\((27,2)\\), \\((24,4)\\), \\((21,6)\\), \\((18,8)\\), \\((15,10)\\), \\((12,12)\\), \\((9,14)\\) y \\((6,16)\\).</p><div class='res'>El beneficio máximo es 120 € y se obtiene con cualquiera de esas combinaciones; por ejemplo, 30 pañuelos y ninguna corbata, o 6 pañuelos y 16 corbatas</div></div>"
+     "html": "<div class='ex'><p>La función \\(F\\) alcanza sus extremos en el recinto, en puntos de su frontera; evaluamos, por tanto, \\(F\\) en los vértices<i class='n' data-t='th'>Teorema fundamental de la programación lineal: si la región factible es un polígono convexo y acotado, la función objetivo alcanza su máximo y su mínimo en alguno de sus vértices.</i>:</p>\\[\\begin{aligned}&A:\\\\ F(14,0)&=4\\cdot14+6\\cdot0\\\\&=56\\end{aligned}\\]\\[\\begin{aligned}&B:\\\\ F(30,0)&=4\\cdot30+6\\cdot0\\\\&=120\\end{aligned}\\]\\[\\begin{aligned}&C:\\\\ F(6,16)&=4\\cdot6+6\\cdot16\\\\&=120\\end{aligned}\\]<p>\\(F\\) alcanza un máximo de valor \\(120\\) en todos los puntos del segmento de extremos \\(B\\) y \\(C\\).</p><p>La función objetivo es \\(4x+6y=2(2x+3y)\\), paralela a la restricción \\(2x+3y\\le60\\)<i class='n' data-t='why'>Cuando la función objetivo es paralela a un lado del recinto, el óptimo se alcanza en todo ese lado.</i>. Como las prendas son unidades enteras, sirven los puntos con coordenadas enteras del segmento \\(BC\\): \\((30,0)\\), \\((27,2)\\), \\((24,4)\\), \\((21,6)\\), \\((18,8)\\), \\((15,10)\\), \\((12,12)\\), \\((9,14)\\) y \\((6,16)\\).</p><div class='res'>El beneficio máximo es 120 € y se obtiene con cualquiera de esas combinaciones; por ejemplo, 30 pañuelos y ninguna corbata, o 6 pañuelos y 16 corbatas</div></div>"
     }
    ],
    "clasificacion": [
@@ -57,7 +57,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2018-reserva-2-2",
@@ -104,7 +104,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2018-reserva-2-3",
@@ -150,7 +150,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2018-reserva-2-4",
@@ -196,7 +196,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2018-reserva-2-5",
@@ -243,7 +243,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2018-reserva-2-6",
@@ -261,7 +261,7 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>Derivamos el cociente<i class='n' data-t='th'>\\(\\left(\\frac uv\\right)'=\\frac{u'v-uv'}{v^2}\\).</i>: \\(f'(x)=\\dfrac{a(bx+1)-ax\\cdot b}{(bx+1)^2}\\) \\(=\\dfrac a{(bx+1)^2}\\).</p><p>• Tangente paralela a \\(y=2x+1\\) en \\(x=0\\): misma pendiente<i class='n' data-t='why'>Dos rectas paralelas tienen la misma pendiente, y la pendiente de la tangente en \\(x=0\\) es \\(f'(0)\\).</i>, \\(f'(0)=a=2\\).</p><p>• \\(f(-1)=\\dfrac{-a}{-b+1}=1\\) \\(\\Rightarrow-a=1-b\\Rightarrow b\\) \\(=1+a=3\\).</p><div class='res'>\\(a=2\\) y \\(b=3\\)</div></div>"
+     "html": "<div class='ex'><p>Derivamos el cociente<i class='n' data-t='th'>\\(\\left(\\frac uv\\right)'=\\frac{u'v-uv'}{v^2}\\).</i>: \\(f'(x)=\\dfrac{a(bx+1)-ax\\cdot b}{(bx+1)^2}\\) \\(=\\dfrac a{(bx+1)^2}\\).</p><p>• Tangente paralela a \\(y=2x+1\\) en \\(x=0\\): misma pendiente<i class='n' data-t='why'>Dos rectas paralelas tienen la misma pendiente, y la pendiente de la tangente en \\(x=0\\) es \\(f'(0)\\).</i>, \\(f'(0)=a=2\\).</p><p>• \\(f(-1)=\\dfrac{-a}{-b+1}=1\\) \\(\\Rightarrow-a=1-b\\) \\(\\Rightarrow b\\) \\(=1+a=3\\).</p><div class='res'>\\(a=2\\) y \\(b=3\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
@@ -290,7 +290,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2018-reserva-2-7",
@@ -337,7 +337,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2018-reserva-2-8",
@@ -388,7 +388,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   }
  ]
 }

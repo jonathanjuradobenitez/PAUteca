@@ -46,7 +46,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2016-junio-2",
@@ -64,7 +64,7 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>Para ser derivable en \\(x=1\\) debe ser continua y tener derivadas laterales iguales<i class='n' data-t='th'>Derivable en un punto \\(\\Rightarrow\\) continua en ese punto.</i>:</p>\\[\\text{Continuidad: }\\frac b{2-1}=a-3+1\\Rightarrow b=a-2\\]\\[\\text{Derivadas: }f'(x)=\\frac b{(2-x)^2}\\Rightarrow f'(1^-)=b;\\quad f'(x)=2ax-3\\Rightarrow f'(1^+)=2a-3\\ \\Rightarrow\\ b=2a-3\\]<p>Igualando: \\(a-2=2a-3\\Rightarrow a=1\\) y \\(b=-1\\).</p><div class='res'>\\(a=1\\) y \\(b=-1\\)</div></div>"
+     "html": "<div class='ex'><p>Para ser derivable en \\(x=1\\) debe ser continua y tener derivadas laterales iguales<i class='n' data-t='th'>Derivable en un punto \\(\\Rightarrow\\) continua en ese punto.</i>:</p>\\[\\text{Continuidad: }\\frac b{2-1}=a-3+1\\Rightarrow b=a-2\\]\\[\\text{Derivadas: }f'(x)=\\frac b{(2-x)^2}\\Rightarrow f'(1^-)=b;\\quad f'(x)=2ax-3\\Rightarrow f'(1^+)=2a-3\\ \\Rightarrow\\ b=2a-3\\]<p>Igualando: \\(a-2=2a-3\\) \\(\\Rightarrow a=1\\) y \\(b=-1\\).</p><div class='res'>\\(a=1\\) y \\(b=-1\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
@@ -93,7 +93,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2016-junio-3",
@@ -139,7 +139,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2016-junio-4",
@@ -195,7 +195,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2016-junio-5",
@@ -210,15 +210,15 @@
    "solucion": [
     {
      "titulo": "Planteamiento",
-     "html": "<div class='ex'><p>Llamamos \\(x\\) a las alfombras de seda e \\(y\\) a las de lana, al mes.</p><table class='tb'><tr><th></th><th>Manual (h)</th><th>Máquina (h)</th><th>Beneficio (€)</th></tr><tr><td>Seda (\\(x\\))</td><td>2</td><td>2</td><td>150</td></tr><tr><td>Lana (\\(y\\))</td><td>3</td><td>1</td><td>100</td></tr><tr><th>Disponible</th><td>\\(\\le600\\)</td><td>\\(\\le480\\)</td><td></td></tr></table>\\[\\begin{cases}2x+3y\\le600\\\\2x+y\\le480\\\\x\\ge0,\\ y\\ge0\\end{cases}\\qquad B(x,y)=150x+100y\\]</div>"
+     "html": "<div class='ex'><p>Llamamos \\(x\\) a las alfombras de seda e \\(y\\) a las de lana, al mes.</p><table class='tb'><tr><th></th><th>Manual (h)</th><th>Máquina (h)</th><th>Beneficio (€)</th></tr><tr><td>Seda (\\(x\\))</td><td>2</td><td>2</td><td>150</td></tr><tr><td>Lana (\\(y\\))</td><td>3</td><td>1</td><td>100</td></tr><tr><th>Disponible</th><td>\\(\\le600\\)</td><td>\\(\\le480\\)</td><td></td></tr></table>\\[\\begin{cases}2x+3y\\le600\\\\2x+y\\le480\\\\x\\ge0,\\ y\\ge0\\end{cases}\\qquad F(x,y)=150x+100y\\]</div>"
     },
     {
      "titulo": "Región factible y vértices",
-     "html": "<div class='ex'><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th>\\(2x+3y=600\\)</th><td>\\(x\\)</td><td>0</td><td>300</td></tr><tr><th></th><td>\\(y\\)</td><td>200</td><td>0</td></tr></table><table class='tb'><tr><th>\\(2x+y=480\\)</th><td>\\(x\\)</td><td>0</td><td>240</td></tr><tr><th></th><td>\\(y\\)</td><td>480</td><td>0</td></tr></table><p>Probamos el origen \\((0,0)\\): \\(0\\le600\\) y \\(0\\le480\\) se cumplen, así que los semiplanos son los que contienen al origen<i class='n' data-t='why'>Si el origen cumple la inecuación, el semiplano solución es el que lo contiene.</i>; además \\(x\\ge0\\), \\(y\\ge0\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 330 210' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='30.0,195.0 294.0,195.0 261.0,147.0 30.0,35.0' fill='#b9a4f5' fill-opacity='.5' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M19 195H322M30 205V19'/></g><text x='316' y='190'>x</text><text x='35' y='27'>y</text><g font-size='10' fill='currentColor'><line x1='140.0' y1='192.0' x2='140.0' y2='198.0' stroke='currentColor'/><text x='140.0' y='209.0' text-anchor='middle'>100</text><line x1='250.0' y1='192.0' x2='250.0' y2='198.0' stroke='currentColor'/><text x='250.0' y='209.0' text-anchor='middle'>200</text><line x1='27.0' y1='115.0' x2='33.0' y2='115.0' stroke='currentColor'/><text x='24.0' y='118.0' text-anchor='end'>100</text><line x1='27.0' y1='35.0' x2='33.0' y2='35.0' stroke='currentColor'/><text x='24.0' y='38.0' text-anchor='end'>200</text></g><circle cx='30.0' cy='195.0' r='3.3' fill='#e8487a'/><text x='16.0' y='209.0' font-weight='700'>O</text><circle cx='294.0' cy='195.0' r='3.3' fill='#e8487a'/><text x='264.0' y='187.0' font-weight='700'>C(240,0)</text><circle cx='261.0' cy='147.0' r='3.3' fill='#e8487a'/><text x='267.0' y='141.0' font-weight='700'>B(210,60)</text><circle cx='30.0' cy='35.0' r='3.3' fill='#e8487a'/><text x='36.0' y='33.0' font-weight='700'>A(0,200)</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(O=(0,0)\\)</li><li>\\(A:\\;\\left\\{\\begin{array}{l}x=0\\\\2x+3y=600\\end{array}\\right.\\Rightarrow\\boxed{A(0,200)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}2x+3y=600\\\\2x+y=480\\end{array}\\right.\\Rightarrow2y=120\\Rightarrow\\boxed{B(210,60)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}y=0\\\\2x+y=480\\end{array}\\right.\\Rightarrow\\boxed{C(240,0)}\\)</li></ul></div>"
+     "html": "<div class='ex'><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th>\\(2x+3y=600\\)</th><td>\\(x\\)</td><td>0</td><td>300</td></tr><tr><th></th><td>\\(y\\)</td><td>200</td><td>0</td></tr></table><table class='tb'><tr><th>\\(2x+y=480\\)</th><td>\\(x\\)</td><td>0</td><td>240</td></tr><tr><th></th><td>\\(y\\)</td><td>480</td><td>0</td></tr></table><p>Probamos el origen \\((0,0)\\): \\(0\\le600\\) y \\(0\\le480\\) se cumplen, así que los semiplanos son los que contienen al origen<i class='n' data-t='why'>Si el origen cumple la inecuación, el semiplano solución es el que lo contiene.</i>; además \\(x\\ge0\\), \\(y\\ge0\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 420 300' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><line x1='67.3' y1='266.0' x2='67.3' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='125.0' y1='266.0' x2='125.0' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='182.7' y1='266.0' x2='182.7' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='240.5' y1='266.0' x2='240.5' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='298.2' y1='266.0' x2='298.2' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='356.0' y1='266.0' x2='356.0' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='244.6' x2='386.0' y2='244.6' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='200.0' x2='386.0' y2='200.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='155.4' x2='386.0' y2='155.4' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='110.7' x2='386.0' y2='110.7' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='66.1' x2='386.0' y2='66.1' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='244.6' x2='386.0' y2='244.6' stroke='#111' stroke-width='1.3'/><line x1='67.3' y1='266.0' x2='67.3' y2='34.0' stroke='#111' stroke-width='1.3'/><text x='125.0' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>50</text><text x='182.7' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>100</text><text x='240.5' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>150</text><text x='298.2' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>200</text><text x='356.0' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>250</text><text x='63.3' y='203.0' font-size='10' text-anchor='end' fill='#374151'>50</text><text x='63.3' y='158.4' font-size='10' text-anchor='end' fill='#374151'>100</text><text x='63.3' y='113.7' font-size='10' text-anchor='end' fill='#374151'>150</text><text x='63.3' y='69.1' font-size='10' text-anchor='end' fill='#374151'>200</text><text x='384.0' y='239.6' font-size='11' text-anchor='end' font-style='italic'>x</text><text x='72.3' y='44.0' font-size='11' font-style='italic'>y</text><polygon points='67.3,244.6 344.4,244.6 309.8,191.0 67.3,66.1' fill='#fcd34d' fill-opacity='0.55' stroke='none'/><line x1='358.3' y1='266.0' x2='208.2' y2='34.0' stroke='#b45309' stroke-width='2'/><text x='218.2' y='52.2' font-size='10' fill='#b45309' text-anchor='end'>2x+y=480</text><line x1='34.0' y1='49.0' x2='386.0' y2='230.3' stroke='#2563eb' stroke-width='2'/><text x='144.6' y='98.4' font-size='10' fill='#2563eb' text-anchor='start'>2x+3y=600</text><text x='197.2' y='191.6' font-size='15' fill='#92400e' text-anchor='middle' font-weight='bold'>R</text><circle cx='67.3' cy='244.6' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='60.3' y='259.6' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>O</text><circle cx='344.4' cy='244.6' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='351.4' y='259.6' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>C</text><circle cx='309.8' cy='191.0' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='316.8' y='206.0' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>B</text><circle cx='67.3' cy='66.1' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='60.3' y='59.1' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>A</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(O=(0,0)\\)</li><li>\\(A:\\;\\left\\{\\begin{array}{l}x=0\\\\2x+3y=600\\end{array}\\right.\\) \\(\\Rightarrow\\boxed{A(0,200)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}2x+3y=600\\\\2x+y=480\\end{array}\\right.\\) \\(\\Rightarrow2y=120\\) \\(\\Rightarrow\\boxed{B(210,60)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}y=0\\\\2x+y=480\\end{array}\\right.\\) \\(\\Rightarrow\\boxed{C(240,0)}\\)</li></ul></div>"
     },
     {
      "titulo": "Optimización",
-     "html": "<div class='ex'><p>La función \\(B\\) alcanza sus extremos en el recinto, en puntos de su frontera; evaluamos, por tanto, \\(B\\) en los vértices<i class='n' data-t='th'>Teorema fundamental de la programación lineal: si la región factible es un polígono acotado, la función objetivo alcanza su máximo y su mínimo en vértices; si los alcanza en dos vértices consecutivos, también en todo el lado que los une.</i>.</p>\\[\\begin{array}{l}B(O)=B(0,0)=0\\\\B(A)=B(0,200)=100\\cdot200=20\\,000\\\\B(B)=B(210,60)=31\\,500+6000=37\\,500\\\\B(C)=B(240,0)=150\\cdot240=36\\,000\\end{array}\\]<div class='res'>\\(B\\) alcanza un máximo en \\(B(210,60)\\) de valor 37 500 €: debe elaborar 210 alfombras de seda y 60 de lana al mes.</div></div>"
+     "html": "<div class='ex'><p>La función \\(F\\) alcanza sus extremos en el recinto, en puntos de su frontera; evaluamos, por tanto, \\(F\\) en los vértices<i class='n' data-t='th'>Teorema fundamental de la programación lineal: si la región factible es un polígono acotado, la función objetivo alcanza su máximo y su mínimo en vértices; si los alcanza en dos vértices consecutivos, también en todo el lado que los une.</i>.</p>\\[\\begin{array}{l}F(O)=F(0,0)=0\\\\F(A)=F(0,200)=100\\cdot200=20\\,000\\\\F(B)=F(210,60)=31\\,500+6000=37\\,500\\\\F(C)=F(240,0)=150\\cdot240=36\\,000\\end{array}\\]<div class='res'>\\(F\\) alcanza un máximo en \\(B(210,60)\\) de valor 37 500 €: debe elaborar 210 alfombras de seda y 60 de lana al mes.</div></div>"
     }
    ],
    "clasificacion": [
@@ -300,7 +300,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2016-junio-7",
@@ -356,7 +356,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2016-junio-8",
@@ -402,7 +402,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   }
  ]
 }

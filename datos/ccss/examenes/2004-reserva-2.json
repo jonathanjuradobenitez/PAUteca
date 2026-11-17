@@ -35,7 +35,7 @@
     "criterio": "regla general fijada por el autor: año y convocatoria del nombre del archivo; un PDF con las dos opciones es el examen completo",
     "incidencias": []
    },
-   "revision": "borrador"
+   "revision": "revisado"
   }
  ],
  "ejercicios": [
@@ -95,11 +95,11 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador",
-    "c": "borrador"
+    "a": "revisado",
+    "b": "revisado",
+    "c": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -161,11 +161,11 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador",
-    "c": "borrador"
+    "a": "revisado",
+    "b": "revisado",
+    "c": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -187,7 +187,7 @@
    "solucion": [
     {
      "titulo": "Datos",
-     "html": "<div class='ex'><p>Datos: \\(P(A)=0{,}4\\), \\(P(B^c)=0{,}7\\Rightarrow P(B)=1-0{,}7=0{,}3\\)<i class='n' data-t='why'>En cada nudo del árbol las ramas suman 1.</i> y \\(P(A\\cup B)=0{,}6\\). Despejamos la intersección de la fórmula de la unión<i class='n' data-t='th'>Probabilidad de la unión: \\(P(A\\cup B)=P(A)+P(B)-P(A\\cap B)\\); se resta la intersección porque al sumar se cuenta dos veces.</i>:</p>\\[P(A\\cap B)=P(A)+P(B)-P(A\\cup B)=0{,}4+0{,}3-0{,}6=0{,}1\\]</div>"
+     "html": "<div class='ex'><p>Datos: \\(P(A)=0{,}4\\), \\(P(B^c)=0{,}7\\) \\(\\Rightarrow P(B)=1-0{,}7=0{,}3\\)<i class='n' data-t='why'>En cada nudo del árbol las ramas suman 1.</i> y \\(P(A\\cup B)=0{,}6\\). Despejamos la intersección de la fórmula de la unión<i class='n' data-t='th'>Probabilidad de la unión: \\(P(A\\cup B)=P(A)+P(B)-P(A\\cap B)\\); se resta la intersección porque al sumar se cuenta dos veces.</i>:</p>\\[P(A\\cap B)=P(A)+P(B)-P(A\\cup B)=0{,}4+0{,}3-0{,}6=0{,}1\\]</div>"
     },
     {
      "titulo": "Apartado a",
@@ -221,10 +221,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -275,10 +275,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {
     "a": [
@@ -334,9 +334,9 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "": "borrador"
+    "": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -393,11 +393,11 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador",
-    "c": "borrador"
+    "a": "revisado",
+    "b": "revisado",
+    "c": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -448,10 +448,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -507,10 +507,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {
     "a": [

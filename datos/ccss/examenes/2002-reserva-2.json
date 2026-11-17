@@ -34,7 +34,7 @@
     "criterio": "regla general fijada por el autor: año y convocatoria del nombre del archivo; un PDF con las dos opciones es el examen completo",
     "incidencias": []
    },
-   "revision": "borrador"
+   "revision": "revisado"
   }
  ],
  "ejercicios": [
@@ -58,7 +58,7 @@
     },
     {
      "titulo": "Apartado b",
-     "html": "<div class='ex'><p>Si \\(A\\) tiene inversa, multiplicamos por \\(A^{-1}\\) por la izquierda en los dos miembros<i class='n' data-t='why'>Se multiplica por la inversa por la izquierda, porque la matriz está a la izquierda de \\(X\\) (el producto de matrices no es conmutativo).</i>:</p>\\[A\\cdot X=B\\Rightarrow X=A^{-1}\\cdot B,\\]\\[B=\\begin{pmatrix}1\\\\ 2\\\\ 3\\end{pmatrix}\\]<p>La matriz \\(A\\) tiene inversa si y solo si \\(|A|\\neq0\\)<i class='n' data-t='th'>Una matriz cuadrada tiene inversa si y solo si su determinante es distinto de 0.</i>:</p>\\[|A|=\\begin{vmatrix}1&0&0\\\\ 1&1&0\\\\ 1&0&1\\end{vmatrix}\\]\\[=1\\cdot1\\cdot1+0\\cdot0\\cdot1+0\\cdot1\\cdot0-\\left[0\\cdot1\\cdot1+1\\cdot0\\cdot0+0\\cdot1\\cdot1\\right]=1\\neq0\\]<p>Luego existe \\(A^{-1}\\), y la calculamos con \\(A^{-1}=\\dfrac1{|A|}(\\operatorname{Adj}A)^t\\)<i class='n' data-t='th'>La adjunta se forma con los adjuntos \\(A_{ij}=(-1)^{i+j}M_{ij}\\), donde \\(M_{ij}\\) es el menor que queda al suprimir la fila \\(i\\) y la columna \\(j\\).</i>:</p>\\[\\operatorname{Adj}A=\\begin{pmatrix}1&-1&-1\\\\ 0&1&0\\\\ 0&0&1\\end{pmatrix}\\]\\[(\\operatorname{Adj}A)^t=\\begin{pmatrix}1&0&0\\\\ -1&1&0\\\\ -1&0&1\\end{pmatrix}\\]\\[A^{-1}=\\begin{pmatrix}1&0&0\\\\ -1&1&0\\\\ -1&0&1\\end{pmatrix}\\]\\[X=A^{-1}\\cdot B=\\begin{pmatrix}1&0&0\\\\ -1&1&0\\\\ -1&0&1\\end{pmatrix}\\begin{pmatrix}1\\\\ 2\\\\ 3\\end{pmatrix}=\\begin{pmatrix}1\\cdot1+0\\cdot2+0\\cdot3\\\\ (-1)\\cdot1+1\\cdot2+0\\cdot3\\\\ (-1)\\cdot1+0\\cdot2+1\\cdot3\\end{pmatrix}=\\begin{pmatrix}1\\\\ 1\\\\ 2\\end{pmatrix}\\]<i class='n' data-t='tp'>Comprobación: \\(A\\cdot X=\\begin{pmatrix}1\\\\1+1\\\\1+2\\end{pmatrix}=\\begin{pmatrix}1\\\\2\\\\3\\end{pmatrix}\\) ✓.</i><div class='res'>\\(X=\\begin{pmatrix}1\\\\ 1\\\\ 2\\end{pmatrix}\\)</div></div>"
+     "html": "<div class='ex'><p>Si \\(A\\) tiene inversa, multiplicamos por \\(A^{-1}\\) por la izquierda en los dos miembros<i class='n' data-t='why'>Se multiplica por la inversa por la izquierda, porque la matriz está a la izquierda de \\(X\\) (el producto de matrices no es conmutativo).</i>:</p>\\[A\\cdot X=B\\Rightarrow X=A^{-1}\\cdot B,\\]\\[B=\\begin{pmatrix}1\\\\ 2\\\\ 3\\end{pmatrix}\\]<p>La matriz \\(A\\) tiene inversa si y solo si \\(|A|\\neq0\\)<i class='n' data-t='th'>Una matriz cuadrada tiene inversa si y solo si su determinante es distinto de 0.</i>:</p>\\[|A|=\\begin{vmatrix}1&0&0\\\\ 1&1&0\\\\ 1&0&1\\end{vmatrix}\\]\\[\\begin{aligned}&=1\\cdot1\\cdot1+0\\cdot0\\cdot1+0\\cdot1\\cdot0\\\\&\\quad-\\big[0\\cdot1\\cdot1\\\\&\\quad+1\\cdot0\\cdot0+0\\cdot1\\cdot1\\big]\\\\&=1\\neq0\\end{aligned}\\]<p>Luego existe \\(A^{-1}\\), y la calculamos con \\(A^{-1}=\\dfrac1{|A|}(\\operatorname{Adj}A)^t\\)<i class='n' data-t='th'>La adjunta se forma con los adjuntos \\(A_{ij}=(-1)^{i+j}M_{ij}\\), donde \\(M_{ij}\\) es el menor que queda al suprimir la fila \\(i\\) y la columna \\(j\\).</i>:</p>\\[\\operatorname{Adj}A=\\begin{pmatrix}1&-1&-1\\\\ 0&1&0\\\\ 0&0&1\\end{pmatrix}\\]\\[(\\operatorname{Adj}A)^t=\\begin{pmatrix}1&0&0\\\\ -1&1&0\\\\ -1&0&1\\end{pmatrix}\\]\\[A^{-1}=\\begin{pmatrix}1&0&0\\\\ -1&1&0\\\\ -1&0&1\\end{pmatrix}\\]\\[\\begin{aligned}X&=A^{-1}\\cdot B\\\\&=\\begin{pmatrix}1&0&0\\\\ -1&1&0\\\\ -1&0&1\\end{pmatrix}\\begin{pmatrix}1\\\\ 2\\\\ 3\\end{pmatrix}\\\\&=\\begin{pmatrix}1\\cdot1+0\\cdot2+0\\cdot3\\\\ (-1)\\cdot1+1\\cdot2+0\\cdot3\\\\ (-1)\\cdot1+0\\cdot2+1\\cdot3\\end{pmatrix}\\\\&=\\begin{pmatrix}1\\\\ 1\\\\ 2\\end{pmatrix}\\end{aligned}\\]<i class='n' data-t='tp'>Comprobación: \\(A\\cdot X=\\begin{pmatrix}1\\\\1+1\\\\1+2\\end{pmatrix}=\\begin{pmatrix}1\\\\2\\\\3\\end{pmatrix}\\) ✓.</i><div class='res'>\\(X=\\begin{pmatrix}1\\\\ 1\\\\ 2\\end{pmatrix}\\)</div></div>"
     }
    ],
    "clasificacion": [
@@ -89,10 +89,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -144,10 +144,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -199,10 +199,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -246,9 +246,9 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "": "borrador"
+    "": "revisado"
    },
    "dependencias": {
     "": [
@@ -309,10 +309,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -374,11 +374,11 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador",
-    "c": "borrador"
+    "a": "revisado",
+    "b": "revisado",
+    "c": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -434,10 +434,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -477,9 +477,9 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "": "borrador"
+    "": "revisado"
    },
    "dependencias": {
     "": [

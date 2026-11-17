@@ -30,7 +30,7 @@
     },
     {
      "titulo": "Apartado c",
-     "html": "<div class='ex'><p>Como \\(A\\) tiene inversa, podemos despejar \\(X\\). \\(B^t=\\begin{pmatrix}0\\\\1\\\\-1\\end{pmatrix}\\).<i class='n' data-t='why'>Al trasponer, la fila de \\(B\\) pasa a ser una columna.</i> Como \\(A\\) multiplica a \\(X\\) por la izquierda, \\(X=A^{-1}B^t\\)<i class='n' data-t='err'>\\(A\\cdot X=C\\Rightarrow X\\) \\(=A^{-1}\\cdot C\\) (por la izquierda).</i>:</p><div class='res'>\\(X=\\dfrac19\\begin{pmatrix}4&1&-2\\\\1&-2&4\\\\-2&4&1\\end{pmatrix}\\begin{pmatrix}0\\\\1\\\\-1\\end{pmatrix}=\\dfrac19\\begin{pmatrix}3\\\\-6\\\\3\\end{pmatrix}=\\begin{pmatrix}\\frac13\\\\-\\frac23\\\\\\frac13\\end{pmatrix}\\)</div></div>"
+     "html": "<div class='ex'><p>Como \\(A\\) tiene inversa, podemos despejar \\(X\\). \\(B^t=\\begin{pmatrix}0\\\\1\\\\-1\\end{pmatrix}\\).<i class='n' data-t='why'>Al trasponer, la fila de \\(B\\) pasa a ser una columna.</i> Como \\(A\\) multiplica a \\(X\\) por la izquierda, \\(X=A^{-1}B^t\\)<i class='n' data-t='err'>\\(A\\cdot X=C\\) \\(\\Rightarrow X\\) \\(=A^{-1}\\cdot C\\) (por la izquierda).</i>:</p><div class='res'>\\(X=\\dfrac19\\begin{pmatrix}4&1&-2\\\\1&-2&4\\\\-2&4&1\\end{pmatrix}\\begin{pmatrix}0\\\\1\\\\-1\\end{pmatrix}=\\dfrac19\\begin{pmatrix}3\\\\-6\\\\3\\end{pmatrix}=\\begin{pmatrix}\\frac13\\\\-\\frac23\\\\\\frac13\\end{pmatrix}\\)</div></div>"
     }
    ],
    "clasificacion": [
@@ -55,7 +55,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-julio-2",
@@ -73,7 +73,7 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>Despejo \\(y\\): \\(y\\ge\\frac{5x+19}4\\); \\(y\\ge\\frac{3x+13}4\\); \\(x\\ge-7\\); \\(y\\le-x-2\\). Las tres rectas \\(5x-4y=-19\\), \\(3x-4y=-13\\) y \\(x+y=-2\\) se cortan en \\((-3,1)\\) (restando las dos primeras, \\(2x=-6\\)), y la recta \\(x=-7\\) las corta en:</p>\\[x=-7:\\ 5x-4y=-19\\Rightarrow y=-4\\qquad3x-4y=-13\\Rightarrow y=-2\\qquad x+y=-2\\Rightarrow y=5\\]<p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(5x-4y=-19\\)</th></tr><tr><th>\\(x\\)</th><td>\\(-3\\)</td><td>\\(1\\)</td></tr><tr><th>\\(y\\)</th><td>\\(1\\)</td><td>\\(6\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(3x-4y=-13\\)</th></tr><tr><th>\\(x\\)</th><td>\\(-7\\)</td><td>\\(1\\)</td></tr><tr><th>\\(y\\)</th><td>\\(-2\\)</td><td>\\(4\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(-x-y=2\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(-2\\)</td></tr><tr><th>\\(y\\)</th><td>\\(-2\\)</td><td>\\(0\\)</td></tr></table><p>\\(x=-7\\) es una recta vertical, paralela al eje de ordenadas.</p><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(5x-4y\\le-19\\): con el origen, \\(0\\le-19\\) no se cumple → semiplano que <b>no</b> lo contiene.</li><li>\\(3x-4y\\le-13\\): con el origen, \\(0\\le-13\\) no se cumple → semiplano que <b>no</b> lo contiene.</li><li>\\(x\\ge-7\\): con el origen, \\(0\\ge-7\\) se cumple → semiplano que lo contiene.</li><li>\\(-x-y\\ge2\\): con el origen, \\(0\\ge2\\) no se cumple → semiplano que <b>no</b> lo contiene.</li></ul><div style='overflow-x:auto'><svg viewBox='0 0 300 226' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='75.0,158.0 75.0,60.0 175.0,116.0' fill='#b9a4f5' fill-opacity='.5' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M40 130H280M250 214V29'/></g><text x='274' y='125'>x</text><text x='255' y='37'>y</text><g font-size='10' fill='currentColor'><line x1='75.0' y1='127.0' x2='75.0' y2='133.0' stroke='currentColor'/><text x='75.0' y='144.0' text-anchor='middle'>-7</text><line x1='175.0' y1='127.0' x2='175.0' y2='133.0' stroke='currentColor'/><text x='175.0' y='144.0' text-anchor='middle'>-3</text><line x1='247.0' y1='158.0' x2='253.0' y2='158.0' stroke='currentColor'/><text x='244.0' y='161.0' text-anchor='end'>-2</text><line x1='247.0' y1='102.0' x2='253.0' y2='102.0' stroke='currentColor'/><text x='244.0' y='105.0' text-anchor='end'>2</text><line x1='247.0' y1='60.0' x2='253.0' y2='60.0' stroke='currentColor'/><text x='244.0' y='63.0' text-anchor='end'>5</text></g><line x1='50.0' y1='203.5' x2='250.0' y2='63.5' stroke='#2f6df0' stroke-width='1.6'/><line x1='50.0' y1='168.5' x2='250.0' y2='84.5' stroke='#17a673' stroke-width='1.6'/><line x1='50.0' y1='46.0' x2='250.0' y2='158.0' stroke='#e8487a' stroke-width='1.6'/><line x1='75.0' y1='214.0' x2='75.0' y2='32.0' stroke='#f0a30a' stroke-width='1.6'/><circle cx='75.0' cy='158.0' r='3.3' fill='#e8487a'/><text x='71.0' y='174.0' font-weight='700'>A(−7,−2)</text><circle cx='75.0' cy='60.0' r='3.3' fill='#e8487a'/><text x='71.0' y='52.0' font-weight='700'>B(−7,5)</text><circle cx='175.0' cy='116.0' r='3.3' fill='#e8487a'/><text x='181.0' y='110.0' font-weight='700'>C(−3,1)</text><text x='6' y='207' font-size='10'>azul: 5x−4y=−19 · verde: 3x−4y=−13</text><text x='6' y='220' font-size='10'>rosa: x+y=−2 · naranja: x=−7</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(A:\\;\\left\\{\\begin{array}{l}x=-7\\\\3x-4y=-13\\end{array}\\right.\\Rightarrow y=-2\\Rightarrow \\boxed{A(-7,-2)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}3x-4y=-13\\\\-x-y=2\\end{array}\\right.\\Rightarrow y=-x-2\\Rightarrow 3x-4(-x-2)=-13\\Rightarrow x=-3,\\ y=1\\Rightarrow \\boxed{C(-3,1)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}x=-7\\\\-x-y=2\\end{array}\\right.\\Rightarrow y=5\\Rightarrow \\boxed{B(-7,5)}\\)</li></ul><p>La recta \\(5x-4y=-19\\) no forma parte del borde: en la región ya se cumple con holgura (por ejemplo, en \\(A\\), \\(-35+8=-27\\le-19\\)).</p><div class='res'>Vértices: \\(A(-7,-2)\\), \\(B(-7,5)\\) y \\(C(-3,1)\\)</div></div>"
+     "html": "<div class='ex'><p>Despejo \\(y\\): \\(y\\ge\\frac{5x+19}4\\); \\(y\\ge\\frac{3x+13}4\\); \\(x\\ge-7\\); \\(y\\le-x-2\\). Las tres rectas \\(5x-4y=-19\\), \\(3x-4y=-13\\) y \\(x+y=-2\\) se cortan en \\((-3,1)\\) (restando las dos primeras, \\(2x=-6\\)), y la recta \\(x=-7\\) las corta en:</p>\\[x=-7:\\ 5x-4y=-19\\Rightarrow y=-4\\qquad3x-4y=-13\\Rightarrow y=-2\\qquad x+y=-2\\Rightarrow y=5\\]<p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(5x-4y=-19\\)</th></tr><tr><th>\\(x\\)</th><td>\\(-3\\)</td><td>\\(1\\)</td></tr><tr><th>\\(y\\)</th><td>\\(1\\)</td><td>\\(6\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(3x-4y=-13\\)</th></tr><tr><th>\\(x\\)</th><td>\\(-7\\)</td><td>\\(1\\)</td></tr><tr><th>\\(y\\)</th><td>\\(-2\\)</td><td>\\(4\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(-x-y=2\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(-2\\)</td></tr><tr><th>\\(y\\)</th><td>\\(-2\\)</td><td>\\(0\\)</td></tr></table><p>\\(x=-7\\) es una recta vertical, paralela al eje de ordenadas.</p><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(5x-4y\\le-19\\): con el origen, \\(0\\le-19\\) no se cumple → semiplano que <b>no</b> lo contiene.</li><li>\\(3x-4y\\le-13\\): con el origen, \\(0\\le-13\\) no se cumple → semiplano que <b>no</b> lo contiene.</li><li>\\(x\\ge-7\\): con el origen, \\(0\\ge-7\\) se cumple → semiplano que lo contiene.</li><li>\\(-x-y\\ge2\\): con el origen, \\(0\\ge2\\) no se cumple → semiplano que <b>no</b> lo contiene.</li></ul><div style='overflow-x:auto'><svg viewBox='0 0 300 226' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='75.0,158.0 75.0,60.0 175.0,116.0' fill='#b9a4f5' fill-opacity='.5' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M40 130H280M250 214V29'/></g><text x='274' y='125'>x</text><text x='255' y='37'>y</text><g font-size='10' fill='currentColor'><line x1='75.0' y1='127.0' x2='75.0' y2='133.0' stroke='currentColor'/><text x='75.0' y='144.0' text-anchor='middle'>-7</text><line x1='175.0' y1='127.0' x2='175.0' y2='133.0' stroke='currentColor'/><text x='175.0' y='144.0' text-anchor='middle'>-3</text><line x1='247.0' y1='158.0' x2='253.0' y2='158.0' stroke='currentColor'/><text x='244.0' y='161.0' text-anchor='end'>-2</text><line x1='247.0' y1='102.0' x2='253.0' y2='102.0' stroke='currentColor'/><text x='244.0' y='105.0' text-anchor='end'>2</text><line x1='247.0' y1='60.0' x2='253.0' y2='60.0' stroke='currentColor'/><text x='244.0' y='63.0' text-anchor='end'>5</text></g><line x1='50.0' y1='203.5' x2='250.0' y2='63.5' stroke='#2f6df0' stroke-width='1.6'/><line x1='50.0' y1='168.5' x2='250.0' y2='84.5' stroke='#17a673' stroke-width='1.6'/><line x1='50.0' y1='46.0' x2='250.0' y2='158.0' stroke='#e8487a' stroke-width='1.6'/><line x1='75.0' y1='214.0' x2='75.0' y2='32.0' stroke='#f0a30a' stroke-width='1.6'/><circle cx='75.0' cy='158.0' r='3.3' fill='#e8487a'/><text x='71.0' y='174.0' font-weight='700'>A(−7,−2)</text><circle cx='75.0' cy='60.0' r='3.3' fill='#e8487a'/><text x='71.0' y='52.0' font-weight='700'>B(−7,5)</text><circle cx='175.0' cy='116.0' r='3.3' fill='#e8487a'/><text x='181.0' y='110.0' font-weight='700'>C(−3,1)</text><text x='6' y='207' font-size='10'>azul: 5x−4y=−19 · verde: 3x−4y=−13</text><text x='6' y='220' font-size='10'>rosa: x+y=−2 · naranja: x=−7</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(A:\\;\\left\\{\\begin{array}{l}x=-7\\\\3x-4y=-13\\end{array}\\right.\\) \\(\\Rightarrow y=-2\\) \\(\\Rightarrow \\boxed{A(-7,-2)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}3x-4y=-13\\\\-x-y=2\\end{array}\\right.\\) \\(\\Rightarrow y=-x-2\\) \\(\\Rightarrow 3x-4(-x-2)=-13\\) \\(\\Rightarrow x=-3,\\ y=1\\) \\(\\Rightarrow \\boxed{C(-3,1)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}x=-7\\\\-x-y=2\\end{array}\\right.\\) \\(\\Rightarrow y=5\\) \\(\\Rightarrow \\boxed{B(-7,5)}\\)</li></ul><p>La recta \\(5x-4y=-19\\) no forma parte del borde: en la región ya se cumple con holgura (por ejemplo, en \\(A\\), \\(-35+8=-27\\le-19\\)).</p><div class='res'>Vértices: \\(A(-7,-2)\\), \\(B(-7,5)\\) y \\(C(-3,1)\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
@@ -106,7 +106,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-julio-3",
@@ -157,7 +157,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-julio-4",
@@ -203,7 +203,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-julio-5",
@@ -253,7 +253,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-julio-6",
@@ -312,7 +312,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-julio-7",
@@ -362,7 +362,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-julio-8",
@@ -417,7 +417,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   }
  ]
 }

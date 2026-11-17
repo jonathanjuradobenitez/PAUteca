@@ -1,0 +1,481 @@
+{
+ "version": 1,
+ "id": "ccss-2007-reserva-6",
+ "asignatura": "ccss",
+ "anio": 2007,
+ "convocatoria": "Reserva 6",
+ "documento": [
+  {
+   "archivo": "MAT_CCSS_2007_RESERVA_6.pdf",
+   "archivo_subido": "77c7b892-MAT_CCSS_2007_RESERVA_6.pdf",
+   "sha256": "624b79f779433f38811acc3caa915d72badcd080a1c3b450622940603836f90b",
+   "paginas": 2,
+   "contenido": "Examen completo: Opción A (pág. 1) y Opción B (pág. 2).",
+   "capa_texto": "correcta: enunciados extraídos del texto del PDF y comprobados con la imagen de la página en las fórmulas",
+   "procesado_en": "lote 2006-2008",
+   "identificacion": {
+    "segun_nombre": {
+     "anio": 2007,
+     "convocatoria": "Reserva 6"
+    },
+    "segun_contenido": {
+     "anio": null,
+     "convocatoria": null,
+     "opciones": [
+      "A",
+      "B"
+     ],
+     "nota": "La cabecera no indica año ni convocatoria; el documento trae las dos opciones."
+    },
+    "indicios": [
+     "Importes en euros (compatibles con 2002 o posterior)."
+    ],
+    "resultado": "confirmada",
+    "criterio": "regla general fijada por el autor: año y convocatoria del nombre del archivo; un PDF con las dos opciones es el examen completo",
+    "incidencias": []
+   },
+   "revision": "revisado"
+  }
+ ],
+ "ejercicios": [
+  {
+   "id": "ccss-2007-reserva-6-a1",
+   "n": "A1",
+   "num": 1,
+   "bloque": "Opción A",
+   "puntos": "3",
+   "enunciado": {
+    "intro": "Sean las matrices \\(A=\\begin{pmatrix}2&1\\\\1&1\\end{pmatrix}\\), \\(B=\\begin{pmatrix}1&x\\\\x&0\\end{pmatrix}\\) y \\(C=\\begin{pmatrix}0&-1\\\\-1&2\\end{pmatrix}\\).",
+    "apartados": [
+     "(1 punto) Encuentre el valor o valores de \\(x\\) de forma que \\(B^2=A\\).",
+     "(1 punto) Igualmente para que \\(B+C=A^{-1}\\).",
+     "(1 punto) Determine \\(x\\) para que \\(A+B+C=3\\cdot I_2\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'>\\[B^2=\\begin{pmatrix}1&x\\\\ x&0\\end{pmatrix}\\begin{pmatrix}1&x\\\\ x&0\\end{pmatrix}=\\begin{pmatrix}1+x^2&x\\\\ x&x^2\\end{pmatrix}\\]<p>Igualamos con \\(A=\\begin{pmatrix}2&1\\\\ 1&1\\end{pmatrix}\\) elemento a elemento:</p>\\[1+x^2=2\\iff x=\\pm1\\qquad x=1\\qquad x^2=1\\]<p>El único valor que cumple todas las condiciones es \\(x=1\\).</p><div class='res'>\\(x=1\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Calculamos la inversa de \\(A\\)<i class='n' data-t='th'>Una matriz cuadrada tiene inversa si y solo si su determinante es distinto de 0.</i>:</p><p>La matriz \\(A\\) tiene inversa si y solo si \\(|A|\\neq0\\)<i class='n' data-t='th'>Una matriz cuadrada tiene inversa si y solo si su determinante es distinto de 0.</i>:</p>\\[|A|=\\begin{vmatrix}2&1\\\\ 1&1\\end{vmatrix}=2\\cdot1-1\\cdot1=1\\neq0\\]<p>Luego existe \\(A^{-1}\\), y la calculamos con \\(A^{-1}=\\dfrac1{|A|}(\\operatorname{Adj}A)^t\\)<i class='n' data-t='th'>La adjunta se forma con los adjuntos \\(A_{ij}=(-1)^{i+j}M_{ij}\\), donde \\(M_{ij}\\) es el menor que queda al suprimir la fila \\(i\\) y la columna \\(j\\).</i>:</p>\\[\\operatorname{Adj}A=\\begin{pmatrix}1&-1\\\\ -1&2\\end{pmatrix}\\]\\[(\\operatorname{Adj}A)^t=\\begin{pmatrix}1&-1\\\\ -1&2\\end{pmatrix}\\]\\[A^{-1}=\\begin{pmatrix}1&-1\\\\ -1&2\\end{pmatrix}\\]\\[B+C=\\begin{pmatrix}1&x-1\\\\ x-1&2\\end{pmatrix}=\\begin{pmatrix}1&-1\\\\ -1&2\\end{pmatrix}\\]\\[x-1=-1\\iff x=0\\]<div class='res'>\\(x=0\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'>\\[A+B+C=\\begin{pmatrix}2+1+0&1+x-1\\\\ 1+x-1&1+0+2\\end{pmatrix}=\\begin{pmatrix}3&x\\\\ x&3\\end{pmatrix}\\]<p>Igualamos con \\(3I_2=\\begin{pmatrix}3&0\\\\ 0&3\\end{pmatrix}\\): los elementos de la diagonal ya coinciden, y fuera de ella hace falta \\(x=0\\).</p><div class='res'>\\(x=0\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "ops",
+     "apartados": "a, c"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT_CCSS_2007_RESERVA_6.pdf",
+    "sha256": "624b79f779433f38811acc3caa915d72badcd080a1c3b450622940603836f90b",
+    "pagina": 1,
+    "opcion": "A",
+    "ejercicio_original": 1,
+    "parte": null,
+    "transcripcion": "imagen de la página"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado",
+   "revision_apartados": {
+    "a": "revisado",
+    "b": "revisado",
+    "c": "revisado"
+   },
+   "dependencias": {},
+   "incidencias": [],
+   "relaciones": []
+  },
+  {
+   "id": "ccss-2007-reserva-6-a2",
+   "n": "A2",
+   "num": 2,
+   "bloque": "Opción A",
+   "puntos": "3",
+   "enunciado": {
+    "intro": "",
+    "apartados": [
+     "(1.5 puntos) Sea la función \\(f(x)=\\begin{cases}2x^2-3x+a&\\text{si }x\\le0\\\\x^2+bx+1&\\text{si }x\\gt 0\\end{cases}\\). Halle \\(a\\) y \\(b\\) para que la función sea continua y derivable.",
+     "(1.5 puntos) Calcule la derivada de las siguientes funciones: \\(g(x)=\\dfrac3{(2x-5)^2}+L(1-x)\\), \\(h(x)=\\dfrac{e^x}{x^3+1}\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Los dos trozos son polinomios, continuos y derivables en sus intervalos<i class='n' data-t='why'>Los polinomios son continuos y derivables en todo \\(\\mathbb R\\).</i>; estudiamos \\(x=0\\). Para que sea derivable, primero tiene que ser continua<i class='n' data-t='th'>Si una función no es continua en un punto, tampoco es derivable en él.</i>.</p><p><b>Continuidad en \\(x=0\\):</b></p>\\[\\lim_{x\\to0^-}(2x^2-3x+a)=a\\]\\[\\lim_{x\\to0^+}(x^2+bx+1)=1\\]\\[f(0)=a\\ \\Rightarrow\\ a=1\\]<p><b>Derivabilidad en \\(x=0\\)</b><i class='n' data-t='th'>\\(f\\) es derivable en \\(a\\) si es continua en \\(a\\) y las derivadas laterales existen y coinciden.</i>:</p>\\[f'(x)=\\begin{cases}4x-3&\\text{si }x\\lt0\\\\ 2x+b&\\text{si }x\\gt0\\end{cases}\\]\\[f'(0^-)=-3,\\quad f'(0^+)=b\\ \\Rightarrow\\ b=-3\\]<div class='res'>\\(a=1\\) y \\(b=-3\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p><b>Función \\(g\\).</b> Escribimos \\(\\frac3{(2x-5)^2}=3(2x-5)^{-2}\\) y aplicamos la regla de la cadena<i class='n' data-t='th'>\\(\\left(u^n\\right)'=n\\,u^{n-1}u'\\) y \\(\\left(L\\,u\\right)'=\\dfrac{u'}{u}\\) (\\(L\\) es el logaritmo neperiano).</i>:</p>\\[g'(x)=3\\cdot(-2)(2x-5)^{-3}\\cdot2+\\frac{-1}{1-x}=-\\frac{12}{(2x-5)^3}-\\frac1{1-x}\\]<p><b>Función \\(h\\).</b> Regla del cociente<i class='n' data-t='th'>\\(\\left(\\dfrac uv\\right)'=\\dfrac{u'v-uv'}{v^2}\\).</i>:</p>\\[h'(x)=\\frac{e^x(x^3+1)-e^x\\cdot3x^2}{(x^3+1)^2}=\\frac{e^x\\left(x^3-3x^2+1\\right)}{(x^3+1)^2}\\]<div class='res'>\\(g'(x)=-\\dfrac{12}{(2x-5)^3}-\\dfrac1{1-x}\\); \\(h'(x)=\\dfrac{e^x\\left(x^3-3x^2+1\\right)}{(x^3+1)^2}\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "cont",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "deriv",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT_CCSS_2007_RESERVA_6.pdf",
+    "sha256": "624b79f779433f38811acc3caa915d72badcd080a1c3b450622940603836f90b",
+    "pagina": 1,
+    "opcion": "A",
+    "ejercicio_original": 2,
+    "parte": null,
+    "transcripcion": "imagen de la página"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado",
+   "revision_apartados": {
+    "a": "revisado",
+    "b": "revisado"
+   },
+   "dependencias": {},
+   "incidencias": [],
+   "relaciones": []
+  },
+  {
+   "id": "ccss-2007-reserva-6-a3-1",
+   "n": "A3-I",
+   "num": "3 · Parte I",
+   "bloque": "Opción A",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "Se tienen dos dados, uno (A) con dos caras rojas y cuatro verdes, y otro (B) con dos caras verdes y cuatro rojas. Se lanza una moneda; si sale cara se arroja el dado A y si sale cruz el dado B.",
+    "apartados": [
+     "(1 punto) Halle la probabilidad de obtener una cara de color rojo.",
+     "(1 punto) Si sabemos que ha salido una cara de color verde en el dado, ¿cuál es la probabilidad de que en la moneda haya salido cara?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Diagrama de árbol",
+     "html": "<div class='ex'><p>Con cara se lanza el dado A (2 caras rojas, 4 verdes) y con cruz el dado B (4 rojas, 2 verdes).</p><div style='overflow-x:auto'><svg viewBox='0 0 420 180' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><circle cx='18' cy='90.0' r='4' fill='#9d174d'/><line x1='26' y1='90.0' x2='146' y2='40.0' stroke='#9d174d' stroke-width='1.5'/><text x='84.0' y='60.0' font-size='11' text-anchor='middle' fill='#9d174d'>1/2</text><text x='150' y='44.0' font-size='12' font-weight='bold'>Cara (A)</text><line x1='216' y1='40.0' x2='366' y2='20.0' stroke='#9d174d' stroke-width='1.3'/><text x='324.0' y='21.6' font-size='11' text-anchor='middle' fill='#9d174d'>2/6</text><text x='370' y='24.0' font-size='12' font-weight='bold'>R</text><line x1='216' y1='40.0' x2='366' y2='60.0' stroke='#9d174d' stroke-width='1.3'/><text x='324.0' y='50.4' font-size='11' text-anchor='middle' fill='#9d174d'>4/6</text><text x='370' y='64.0' font-size='12' font-weight='bold'>V</text><line x1='26' y1='90.0' x2='146' y2='120.0' stroke='#9d174d' stroke-width='1.5'/><text x='84.0' y='100.0' font-size='11' text-anchor='middle' fill='#9d174d'>1/2</text><text x='150' y='124.0' font-size='12' font-weight='bold'>Cruz (B)</text><line x1='216' y1='120.0' x2='366' y2='100.0' stroke='#9d174d' stroke-width='1.3'/><text x='324.0' y='101.6' font-size='11' text-anchor='middle' fill='#9d174d'>4/6</text><text x='370' y='104.0' font-size='12' font-weight='bold'>R</text><line x1='216' y1='120.0' x2='366' y2='140.0' stroke='#9d174d' stroke-width='1.3'/><text x='324.0' y='130.4' font-size='11' text-anchor='middle' fill='#9d174d'>2/6</text><text x='370' y='144.0' font-size='12' font-weight='bold'>V</text></svg></div></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Por el teorema de la probabilidad total<i class='n' data-t='th'>Teorema de la probabilidad total: la probabilidad de un suceso es la suma de las probabilidades de todas las ramas del árbol que llegan a él.</i>:</p>\\[P(R)=\\frac12\\cdot\\frac26+\\frac12\\cdot\\frac46=\\frac16+\\frac13=\\frac12\\]<div class='res'>\\(P(R)=\\dfrac12\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Sabemos que ha salido verde: \\(P(V)=1-\\frac12=\\frac12\\). Por el teorema de Bayes<i class='n' data-t='th'>Teorema de Bayes: se parte de la definición de probabilidad condicionada, \\(P(A\\mid B)=\\dfrac{P(A\\cap B)}{P(B)}\\), y el numerador es la rama del árbol que llega a \\(A\\cap B\\).</i>:</p>\\[P(\\text{Cara}\\mid V)=\\frac{\\frac12\\cdot\\frac46}{\\frac12}=\\frac23\\]<div class='res'>\\(P(\\text{Cara}\\mid V)=\\dfrac23\\approx0{,}6667\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "prob",
+     "tipo": "arbol",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT_CCSS_2007_RESERVA_6.pdf",
+    "sha256": "624b79f779433f38811acc3caa915d72badcd080a1c3b450622940603836f90b",
+    "pagina": 1,
+    "opcion": "A",
+    "ejercicio_original": 3,
+    "parte": "I",
+    "transcripcion": "imagen de la página"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado",
+   "revision_apartados": {
+    "a": "revisado",
+    "b": "revisado"
+   },
+   "dependencias": {},
+   "incidencias": [],
+   "relaciones": []
+  },
+  {
+   "id": "ccss-2007-reserva-6-a3-2",
+   "n": "A3-II",
+   "num": "3 · Parte II",
+   "bloque": "Opción A",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "(2 puntos) El salario de los trabajadores de una ciudad sigue una distribución Normal con desviación típica 15 euros. Se quiere calcular un intervalo de confianza para el salario medio con un nivel de confianza del 98 %. Determine cuál es el tamaño mínimo de la muestra que se necesitaría recoger para que el intervalo de confianza tenga una amplitud, como máximo, de 6 euros.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento (teoría)",
+     "html": "<div class='ex'><p>Sea \\(X\\) la variable aleatoria «salario, en euros, de un trabajador de la ciudad». Según el enunciado, \\(X\\) sigue una distribución normal de media \\(\\mu\\) desconocida y desviación típica \\(\\sigma=15\\):</p>\\[X\\sim N\\left(\\mu,\\ 15\\right)\\]<p>Tomamos muestras aleatorias simples de tamaño \\(n\\) y estudiamos la media muestral \\(\\bar X\\). Como la población es normal, la media muestral sigue una distribución normal con la misma media que la población y desviación típica \\(\\dfrac\\sigma{\\sqrt n}\\)<i class='n' data-t='th'>Teorema central del límite: si una población tiene media \\(\\mu\\) y desviación típica \\(\\sigma\\), la media de las muestras de tamaño \\(n\\) se distribuye \\(N\\left(\\mu,\\frac\\sigma{\\sqrt n}\\right)\\), exactamente si la población es normal y de forma aproximada si \\(n\\ge30\\).</i>:</p>\\[\\bar X\\sim N\\left(\\mu,\\ \\frac{\\sigma}{\\sqrt n}\\right)\\]<p>Si se exige que el error sea menor que una cantidad \\(E_0\\), despejamos \\(n\\):</p>\\[z_{1-\\alpha/2}\\frac\\sigma{\\sqrt n}\\lt E_0\\]\\[\\iff n\\gt\\left(\\frac{z_{1-\\alpha/2}\\,\\sigma}{E_0}\\right)^2\\]<p>y, como \\(n\\) es un número de individuos, se toma el entero mayor que el valor obtenido.</p></div>"
+    },
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>Nivel de confianza: \\(1-\\alpha=0{,}98\\), luego \\(\\alpha=0{,}02\\) y \\(\\dfrac\\alpha2=0{,}01\\).</p>\\[P\\left(Z\\lt z_{1-\\alpha/2}\\right)=1-\\frac\\alpha2\\]\\[P\\left(Z\\lt z_{1-\\alpha/2}\\right)=1-0{,}01=0{,}99\\]<p>Busco \\(0{,}99\\) en el interior de la tabla \\(N(0,1)\\)<i class='n' data-t='why'>El intervalo deja \\(\\frac\\alpha2\\) en cada cola, así que a la izquierda de \\(z_{1-\\alpha/2}\\) queda \\(1-\\frac\\alpha2\\).</i>: no aparece exacto; está entre \\(P(Z\\lt2{,}32)=0{,}9898\\) y \\(P(Z\\lt2{,}33)=0{,}9901\\), y el más próximo es \\(0{,}9901\\):</p>\\[\\Rightarrow\\ z_{1-\\alpha/2}=2{,}33\\]<div style='overflow-x:auto'><svg viewBox='0 0 320 170' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='8.0,135.0 8.0,134.9 9.0,134.9 10.0,134.9 10.9,134.9 11.9,134.9 12.9,134.9 13.9,134.8 14.9,134.8 15.8,134.8 16.8,134.8 17.8,134.8 18.8,134.8 19.8,134.7 20.7,134.7 21.7,134.7 22.7,134.7 23.7,134.6 24.7,134.6 25.6,134.6 26.6,134.5 27.6,134.5 28.6,134.5 29.6,134.4 30.5,134.4 31.5,134.3 32.5,134.3 33.5,134.2 34.5,134.1 35.4,134.1 36.4,134.0 37.4,133.9 38.4,133.8 39.4,133.7 40.3,133.6 41.3,133.5 42.3,133.4 43.3,133.3 44.3,133.2 45.2,133.0 46.2,132.9 47.2,132.8 48.2,132.6 49.2,132.4 50.1,132.2 51.1,132.1 52.1,131.9 53.1,131.6 54.1,131.4 55.0,131.2 56.0,130.9 57.0,130.7 58.0,130.4 59.0,130.1 59.9,129.8 60.9,129.4 61.9,129.1 62.9,128.7 63.9,128.3 64.8,127.9 65.8,127.5 66.8,127.1 66.8,135.0' fill='#e8487a' fill-opacity='.28' stroke='none'/><polygon points='253.2,135.0 253.2,127.1 254.2,127.5 255.2,127.9 256.1,128.3 257.1,128.7 258.1,129.1 259.1,129.4 260.1,129.8 261.0,130.1 262.0,130.4 263.0,130.7 264.0,130.9 265.0,131.2 265.9,131.4 266.9,131.6 267.9,131.9 268.9,132.1 269.9,132.2 270.8,132.4 271.8,132.6 272.8,132.8 273.8,132.9 274.8,133.0 275.7,133.2 276.7,133.3 277.7,133.4 278.7,133.5 279.7,133.6 280.6,133.7 281.6,133.8 282.6,133.9 283.6,134.0 284.6,134.1 285.5,134.1 286.5,134.2 287.5,134.3 288.5,134.3 289.5,134.4 290.4,134.4 291.4,134.5 292.4,134.5 293.4,134.5 294.4,134.6 295.3,134.6 296.3,134.6 297.3,134.7 298.3,134.7 299.3,134.7 300.2,134.7 301.2,134.8 302.2,134.8 303.2,134.8 304.2,134.8 305.1,134.8 306.1,134.8 307.1,134.9 308.1,134.9 309.1,134.9 310.0,134.9 311.0,134.9 312.0,134.9 312.0,135.0' fill='#e8487a' fill-opacity='.28' stroke='none'/><polygon points='66.8,135.0 66.8,127.1 69.9,125.5 73.0,123.8 76.1,121.7 79.2,119.4 82.3,116.8 85.4,113.9 88.5,110.7 91.7,107.2 94.8,103.3 97.9,99.2 101.0,94.7 104.1,90.0 107.2,84.9 110.3,79.7 113.4,74.3 116.5,68.7 119.6,63.1 122.7,57.5 125.8,51.9 128.9,46.5 132.0,41.3 135.1,36.3 138.3,31.8 141.4,27.6 144.5,24.0 147.6,21.0 150.7,18.5 153.8,16.8 156.9,15.7 160.0,15.3 163.1,15.7 166.2,16.8 169.3,18.5 172.4,21.0 175.5,24.0 178.6,27.6 181.7,31.8 184.9,36.3 188.0,41.3 191.1,46.5 194.2,51.9 197.3,57.5 200.4,63.1 203.5,68.7 206.6,74.3 209.7,79.7 212.8,84.9 215.9,90.0 219.0,94.7 222.1,99.2 225.2,103.3 228.3,107.2 231.5,110.7 234.6,113.9 237.7,116.8 240.8,119.4 243.9,121.7 247.0,123.8 250.1,125.5 253.2,127.1 253.2,135.0' fill='#6d4ae0' fill-opacity='.35' stroke='none'/><polyline points='8.0,134.9 10.5,134.9 13.1,134.9 15.6,134.8 18.1,134.8 20.7,134.7 23.2,134.7 25.7,134.6 28.3,134.5 30.8,134.4 33.3,134.2 35.9,134.0 38.4,133.8 40.9,133.6 43.5,133.3 46.0,132.9 48.5,132.5 51.1,132.1 53.6,131.5 56.1,130.9 58.7,130.2 61.2,129.3 63.7,128.4 66.3,127.3 68.8,126.1 71.3,124.7 73.9,123.2 76.4,121.5 78.9,119.6 81.5,117.6 84.0,115.3 86.5,112.8 89.1,110.2 91.6,107.3 94.1,104.2 96.7,100.8 99.2,97.3 101.7,93.6 104.3,89.7 106.8,85.6 109.3,81.3 111.9,77.0 114.4,72.5 116.9,68.0 119.5,63.4 122.0,58.8 124.5,54.2 127.1,49.7 129.6,45.3 132.1,41.1 134.7,37.1 137.2,33.3 139.7,29.7 142.3,26.5 144.8,23.7 147.3,21.2 149.9,19.1 152.4,17.5 154.9,16.3 157.5,15.6 160.0,15.3 162.5,15.6 165.1,16.3 167.6,17.5 170.1,19.1 172.7,21.2 175.2,23.7 177.7,26.5 180.3,29.7 182.8,33.3 185.3,37.1 187.9,41.1 190.4,45.3 192.9,49.7 195.5,54.2 198.0,58.8 200.5,63.4 203.1,68.0 205.6,72.5 208.1,77.0 210.7,81.3 213.2,85.6 215.7,89.7 218.3,93.6 220.8,97.3 223.3,100.8 225.9,104.2 228.4,107.3 230.9,110.2 233.5,112.8 236.0,115.3 238.5,117.6 241.1,119.6 243.6,121.5 246.1,123.2 248.7,124.7 251.2,126.1 253.7,127.3 256.3,128.4 258.8,129.3 261.3,130.2 263.9,130.9 266.4,131.5 268.9,132.1 271.5,132.5 274.0,132.9 276.5,133.3 279.1,133.6 281.6,133.8 284.1,134.0 286.7,134.2 289.2,134.4 291.7,134.5 294.3,134.6 296.8,134.7 299.3,134.7 301.9,134.8 304.4,134.8 306.9,134.9 309.5,134.9 312.0,134.9' fill='none' stroke='#2f6df0' stroke-width='2'/><line x1='4.0' y1='135.0' x2='316.0' y2='135.0' stroke='currentColor' stroke-width='1.2'/><line x1='66.8' y1='139.0' x2='66.8' y2='127.1' stroke='#6d4ae0' stroke-width='1.4' stroke-dasharray='3 2'/><text x='66.8' y='152.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>−z<tspan font-size='8' dy='3'>1−α/2</tspan></text><line x1='253.2' y1='139.0' x2='253.2' y2='127.1' stroke='#6d4ae0' stroke-width='1.4' stroke-dasharray='3 2'/><text x='253.2' y='152.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>z<tspan font-size='8' dy='3'>1−α/2</tspan></text><text x='253.2' y='165.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>= 2,33</text><text x='160.0' y='87.0' text-anchor='middle' font-size='12' font-weight='700'>1 − α = 0,98</text><line x1='56.8' y1='133.1' x2='36.0' y2='105.0' stroke='#c2185b' stroke-width='1'/><text x='8.0' y='102.0' text-anchor='start' font-size='10' fill='#c2185b'>α/2 = 0,01</text><line x1='263.2' y1='133.1' x2='284.0' y2='105.0' stroke='#c2185b' stroke-width='1'/><text x='312.0' y='102.0' text-anchor='end' font-size='10' fill='#c2185b'>α/2 = 0,01</text><text x='160.0' y='148.0' text-anchor='middle' font-size='9.5'>0</text></svg></div><p>La amplitud del intervalo es \\(2E\\); que sea inferior a \\(6\\) equivale a que el error sea inferior a \\(E_0=\\dfrac{6}{2}=3\\).</p><p>Imponemos que el error sea como máximo \\(3\\) y despejamos \\(n\\):</p>\\[2{,}33\\cdot\\frac{15}{\\sqrt n}\\le3\\iff\\sqrt n\\ge\\frac{2{,}33\\cdot15}{3}=11{,}65\\]\\[\\iff n\\ge11{,}65^2=135{,}7225\\]<p>Como \\(n\\) es un número de individuos, tomamos el entero mayor que \\(135{,}7225\\)<i class='n' data-t='err'>El tamaño de una muestra es un número entero y se toma siempre el entero mayor que el valor obtenido.</i>.</p><div class='res'>Tamaño mínimo: \\(n=136\\)</div><p><b>Conclusión:</b> para que el intervalo, al 98 %, tenga una amplitud de 6 euros como máximo, hay que tomar una muestra de al menos 136 trabajadores.</p></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "inf",
+     "tipo": "tam",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": "MAT_CCSS_2007_RESERVA_6.pdf",
+    "sha256": "624b79f779433f38811acc3caa915d72badcd080a1c3b450622940603836f90b",
+    "pagina": 1,
+    "opcion": "A",
+    "ejercicio_original": 3,
+    "parte": "II",
+    "transcripcion": "imagen de la página"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado",
+   "revision_apartados": {
+    "": "revisado"
+   },
+   "dependencias": {
+    "": [
+     "tabla_N01_oficial"
+    ]
+   },
+   "incidencias": [],
+   "relaciones": []
+  },
+  {
+   "id": "ccss-2007-reserva-6-b1",
+   "n": "B1",
+   "num": 1,
+   "bloque": "Opción B",
+   "puntos": "3",
+   "enunciado": {
+    "intro": "(3 puntos) Un Ayuntamiento concede licencia para la construcción de una urbanización de a lo sumo 120 viviendas, de dos tipos A y B.<br>Para ello la empresa constructora dispone de un capital máximo de 15 millones de euros, siendo el coste de construcción de la vivienda de tipo A de 100000 euros y la de tipo B 300000 euros.<br>Si el beneficio obtenido por la venta de una vivienda de tipo A asciende a 20000 euros y por una de tipo B a 40000 euros, ¿cuántas viviendas de cada tipo deben construirse para obtener un beneficio máximo?",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento",
+     "html": "<div class='ex'><p>Llamamos \\(x\\) al número de viviendas de tipo A e \\(y\\) al número de viviendas de tipo B que se construyen<i class='n' data-t='why'>Las incógnitas son siempre lo que nos piden calcular.</i>.</p><p>Función objetivo (beneficio, en euros, a maximizar): \\(F(x,y)=20\\,000x+40\\,000y\\)</p><p>Restricciones:</p>\\[\\left\\{\\begin{array}{l}x+y\\le120\\\\100\\,000x+300\\,000y\\le15\\,000\\,000\\iff x+3y\\le150\\\\x\\ge0,\\ y\\ge0\\end{array}\\right.\\]<i class='n' data-t='why'>\\(x\\ge0\\) e \\(y\\ge0\\) porque no se pueden producir (o comprar) cantidades negativas.</i></div>"
+    },
+    {
+     "titulo": "Región factible",
+     "html": "<div class='ex'><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(x+y=120\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(120\\)</td></tr><tr><th>\\(y\\)</th><td>\\(120\\)</td><td>\\(0\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(x+3y=150\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(150\\)</td></tr><tr><th>\\(y\\)</th><td>\\(50\\)</td><td>\\(0\\)</td></tr></table><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(x+y\\le120\\): con el origen, \\(0\\le120\\) se cumple → semiplano que lo contiene.</li><li>\\(x+3y\\le150\\): con el origen, \\(0\\le150\\) se cumple → semiplano que lo contiene.</li></ul><p>Además, \\(x\\ge0\\) y \\(y\\ge0\\) limitan la región al primer cuadrante.</p><div style='overflow-x:auto'><svg viewBox='0 0 420 300' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><line x1='50.8' y1='266.0' x2='50.8' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='92.7' y1='266.0' x2='92.7' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='134.6' y1='266.0' x2='134.6' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='176.5' y1='266.0' x2='176.5' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='218.4' y1='266.0' x2='218.4' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='260.3' y1='266.0' x2='260.3' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='302.2' y1='266.0' x2='302.2' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='344.1' y1='266.0' x2='344.1' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='386.0' y1='266.0' x2='386.0' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='255.8' x2='386.0' y2='255.8' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='221.6' x2='386.0' y2='221.6' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='187.5' x2='386.0' y2='187.5' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='153.4' x2='386.0' y2='153.4' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='119.3' x2='386.0' y2='119.3' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='85.2' x2='386.0' y2='85.2' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='51.1' x2='386.0' y2='51.1' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='255.8' x2='386.0' y2='255.8' stroke='#111' stroke-width='1.3'/><line x1='50.8' y1='266.0' x2='50.8' y2='34.0' stroke='#111' stroke-width='1.3'/><text x='92.7' y='268.8' font-size='10' text-anchor='middle' fill='#374151'>20</text><text x='134.6' y='268.8' font-size='10' text-anchor='middle' fill='#374151'>40</text><text x='176.5' y='268.8' font-size='10' text-anchor='middle' fill='#374151'>60</text><text x='218.4' y='268.8' font-size='10' text-anchor='middle' fill='#374151'>80</text><text x='260.3' y='268.8' font-size='10' text-anchor='middle' fill='#374151'>100</text><text x='302.2' y='268.8' font-size='10' text-anchor='middle' fill='#374151'>120</text><text x='344.1' y='268.8' font-size='10' text-anchor='middle' fill='#374151'>140</text><text x='386.0' y='268.8' font-size='10' text-anchor='middle' fill='#374151'>160</text><text x='46.8' y='224.6' font-size='10' text-anchor='end' fill='#374151'>20</text><text x='46.8' y='190.5' font-size='10' text-anchor='end' fill='#374151'>40</text><text x='46.8' y='156.4' font-size='10' text-anchor='end' fill='#374151'>60</text><text x='46.8' y='122.3' font-size='10' text-anchor='end' fill='#374151'>80</text><text x='46.8' y='88.2' font-size='10' text-anchor='end' fill='#374151'>100</text><text x='46.8' y='54.1' font-size='10' text-anchor='end' fill='#374151'>120</text><text x='384.0' y='250.8' font-size='11' text-anchor='end' font-style='italic'>x (tipo A)</text><text x='55.8' y='44.0' font-size='11' font-style='italic'>y (tipo B)</text><polygon points='50.8,255.8 302.2,255.8 270.8,230.2 50.8,170.5' fill='#fcd34d' fill-opacity='0.55' stroke='none'/><line x1='34.0' y1='37.4' x2='314.8' y2='266.0' stroke='#b45309' stroke-width='2'/><text x='67.1' y='55.3' font-size='10' fill='#b45309' text-anchor='start'>x+y=120</text><line x1='34.0' y1='165.9' x2='386.0' y2='261.5' stroke='#2563eb' stroke-width='2'/><text x='109.4' y='180.0' font-size='10' fill='#2563eb' text-anchor='start'>x+3y=150</text><text x='134.6' y='226.6' font-size='15' fill='#92400e' text-anchor='middle' font-weight='bold'>R</text><circle cx='50.8' cy='255.8' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='43.8' y='270.8' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>O</text><circle cx='302.2' cy='255.8' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='309.2' y='270.8' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>A</text><circle cx='270.8' cy='230.2' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='277.8' y='245.2' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>B</text><circle cx='50.8' cy='170.5' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='43.8' y='163.5' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>C</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(O:\\;\\left\\{\\begin{array}{l}x=0\\\\y=0\\end{array}\\right.\\) \\(\\Rightarrow \\boxed{O(0,0)}\\)</li><li>\\(A:\\;\\left\\{\\begin{array}{l}x+y=120\\\\y=0\\end{array}\\right.\\) \\(\\Rightarrow x=120\\) \\(\\Rightarrow \\boxed{A(120,0)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}x+y=120\\\\x+3y=150\\end{array}\\right.\\) \\(\\Rightarrow y=-x+120\\) \\(\\Rightarrow x+3(-x+120)=150\\) \\(\\Rightarrow x=105,\\ y=15\\) \\(\\Rightarrow \\boxed{B(105,15)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}x+3y=150\\\\x=0\\end{array}\\right.\\) \\(\\Rightarrow y=50\\) \\(\\Rightarrow \\boxed{C(0,50)}\\)</li></ul><div class='res'>El recinto es el cuadrilátero de vértices \\(O(0,0)\\), \\(A(120,0)\\), \\(B(105,15)\\) y \\(C(0,50)\\)</div></div>"
+    },
+    {
+     "titulo": "Optimización",
+     "html": "<div class='ex'><p>La función \\(F\\) alcanza sus extremos en el recinto, en puntos de su frontera; evaluamos, por tanto, \\(F\\) en los vértices<i class='n' data-t='th'>Teorema fundamental de la programación lineal: si la región factible es un polígono convexo y acotado, la función objetivo alcanza su máximo y su mínimo en alguno de sus vértices.</i>:</p>\\[F(O)=F(0,0)=20\\,000\\cdot0+40\\,000\\cdot0=0\\]\\[F(A)=F(120,0)=20\\,000\\cdot120+40\\,000\\cdot0=2\\,400\\,000\\]\\[F(B)=F(105,15)=20\\,000\\cdot105+40\\,000\\cdot15=2\\,700\\,000\\]\\[F(C)=F(0,50)=20\\,000\\cdot0+40\\,000\\cdot50=2\\,000\\,000\\]<p>\\(F\\) alcanza un máximo en \\(B(105,15)\\) de valor \\(2\\,700\\,000\\).</p><div class='res'>105 viviendas de tipo A y 15 de tipo B; el beneficio máximo es de 2 700 000 euros</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "pl",
+     "tipo": "plan",
+     "apartados": ""
+    },
+    {
+     "tema": "pl",
+     "tipo": "reg",
+     "apartados": ""
+    },
+    {
+     "tema": "pl",
+     "tipo": "opt",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": "MAT_CCSS_2007_RESERVA_6.pdf",
+    "sha256": "624b79f779433f38811acc3caa915d72badcd080a1c3b450622940603836f90b",
+    "pagina": 2,
+    "opcion": "B",
+    "ejercicio_original": 1,
+    "parte": null,
+    "transcripcion": "imagen de la página"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado",
+   "revision_apartados": {
+    "": "revisado"
+   },
+   "dependencias": {},
+   "incidencias": [],
+   "relaciones": []
+  },
+  {
+   "id": "ccss-2007-reserva-6-b2",
+   "n": "B2",
+   "num": 2,
+   "bloque": "Opción B",
+   "puntos": "3",
+   "enunciado": {
+    "intro": "",
+    "apartados": [
+     "(1.5 puntos) Determine dónde se alcanza el mínimo de la función \\(f(x)=3x^2-6x+a\\). Calcule el valor de \\(a\\) para que el valor mínimo de la función sea 5.",
+     "(1.5 puntos) Calcule \\(g'(3)\\), siendo \\(g(x)=2x\\cdot e^{3x-1}\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Es una parábola con las ramas hacia arriba: su mínimo está donde se anula la derivada<i class='n' data-t='th'>Si \\(f'(a)=0\\) y \\(f''(a)\\gt0\\), hay un mínimo relativo en \\(a\\); en una parábola con las ramas hacia arriba es el mínimo absoluto.</i>:</p>\\[f'(x)=6x-6=0\\iff x=1\\qquad f''(x)=6\\gt0\\]\\[f(1)=3-6+a=a-3=5\\iff a=8\\]<div class='res'>El mínimo se alcanza en \\(x=1\\); para que valga 5, \\(a=8\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Regla del producto<i class='n' data-t='th'>\\((u\\cdot v)'=u'v+uv'\\) y \\(\\left(e^{u}\\right)'=u'\\,e^{u}\\).</i>:</p><p>La derivada de \\(2x\\) es 2, y la de \\(e^{3x-1}\\) es \\(3e^{3x-1}\\):</p>\\[g'(x)=2e^{3x-1}+2x\\cdot3e^{3x-1}=e^{3x-1}(2+6x)\\]\\[g'(3)=e^{8}(2+18)=20e^8\\]<div class='res'>\\(g'(3)=20e^8\\approx59\\,619{,}16\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "deriv",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT_CCSS_2007_RESERVA_6.pdf",
+    "sha256": "624b79f779433f38811acc3caa915d72badcd080a1c3b450622940603836f90b",
+    "pagina": 2,
+    "opcion": "B",
+    "ejercicio_original": 2,
+    "parte": null,
+    "transcripcion": "imagen de la página"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado",
+   "revision_apartados": {
+    "a": "revisado",
+    "b": "revisado"
+   },
+   "dependencias": {},
+   "incidencias": [],
+   "relaciones": []
+  },
+  {
+   "id": "ccss-2007-reserva-6-b3-1",
+   "n": "B3-I",
+   "num": "3 · Parte I",
+   "bloque": "Opción B",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "En una población, el porcentaje de personas que ven un determinado programa de televisión es del 40 %. Se sabe que el 60 % de las personas que lo ven tiene estudios superiores y que el 30 % de las personas que no lo ven no tiene estudios superiores.",
+    "apartados": [
+     "(0.75 puntos) Calcule la probabilidad de que una persona vea dicho programa y tenga estudios superiores.",
+     "(1.25 puntos) Halle la probabilidad de que una persona que tiene estudios superiores vea el citado programa."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Diagrama de árbol",
+     "html": "<div class='ex'><p>Sean \\(V\\): «ve el programa» y \\(S\\): «tiene estudios superiores». Entre los que no lo ven, el 30 % no tiene estudios superiores, así que el 70 % sí.</p><div style='overflow-x:auto'><svg viewBox='0 0 420 180' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><circle cx='18' cy='90.0' r='4' fill='#9d174d'/><line x1='26' y1='90.0' x2='146' y2='40.0' stroke='#9d174d' stroke-width='1.5'/><text x='84.0' y='60.0' font-size='11' text-anchor='middle' fill='#9d174d'>0,4</text><text x='150' y='44.0' font-size='12' font-weight='bold'>V</text><line x1='167' y1='40.0' x2='366' y2='20.0' stroke='#9d174d' stroke-width='1.3'/><text x='310.3' y='21.6' font-size='11' text-anchor='middle' fill='#9d174d'>0,6</text><text x='370' y='24.0' font-size='12' font-weight='bold'>S</text><line x1='167' y1='40.0' x2='366' y2='60.0' stroke='#9d174d' stroke-width='1.3'/><text x='310.3' y='50.4' font-size='11' text-anchor='middle' fill='#9d174d'>0,4</text><text x='370' y='64.0' font-size='12' font-weight='bold'>Sᶜ</text><line x1='26' y1='90.0' x2='146' y2='120.0' stroke='#9d174d' stroke-width='1.5'/><text x='84.0' y='100.0' font-size='11' text-anchor='middle' fill='#9d174d'>0,6</text><text x='150' y='124.0' font-size='12' font-weight='bold'>Vᶜ</text><line x1='174' y1='120.0' x2='366' y2='100.0' stroke='#9d174d' stroke-width='1.3'/><text x='312.2' y='101.6' font-size='11' text-anchor='middle' fill='#9d174d'>0,7</text><text x='370' y='104.0' font-size='12' font-weight='bold'>S</text><line x1='174' y1='120.0' x2='366' y2='140.0' stroke='#9d174d' stroke-width='1.3'/><text x='312.2' y='130.4' font-size='11' text-anchor='middle' fill='#9d174d'>0,3</text><text x='370' y='144.0' font-size='12' font-weight='bold'>Sᶜ</text></svg></div></div>"
+    },
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Por la regla del producto<i class='n' data-t='th'>Regla del producto: \\(P(A\\cap B)=P(A)\\cdot P(B\\mid A)\\), que sale de la definición de probabilidad condicionada; en el árbol, se multiplican las probabilidades de la rama.</i>:</p>\\[P(V\\cap S)=0{,}4\\cdot0{,}6=0{,}24\\]<div class='res'>\\(P(V\\cap S)=0{,}24\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Por el teorema de la probabilidad total<i class='n' data-t='th'>Teorema de la probabilidad total: la probabilidad de un suceso es la suma de las probabilidades de todas las ramas del árbol que llegan a él.</i>, y luego por el de Bayes<i class='n' data-t='th'>Teorema de Bayes: se parte de la definición de probabilidad condicionada, \\(P(A\\mid B)=\\dfrac{P(A\\cap B)}{P(B)}\\), y el numerador es la rama del árbol que llega a \\(A\\cap B\\).</i>:</p>\\[P(S)=0{,}24+0{,}6\\cdot0{,}7=0{,}24+0{,}42=0{,}66\\]\\[P(V\\mid S)=\\frac{P(V\\cap S)}{P(S)}=\\frac{0{,}24}{0{,}66}=\\frac4{11}\\]<div class='res'>\\(P(V\\mid S)=\\dfrac4{11}\\approx0{,}3636\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "prob",
+     "tipo": "arbol",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT_CCSS_2007_RESERVA_6.pdf",
+    "sha256": "624b79f779433f38811acc3caa915d72badcd080a1c3b450622940603836f90b",
+    "pagina": 2,
+    "opcion": "B",
+    "ejercicio_original": 3,
+    "parte": "I",
+    "transcripcion": "imagen de la página"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado",
+   "revision_apartados": {
+    "a": "revisado",
+    "b": "revisado"
+   },
+   "dependencias": {},
+   "incidencias": [],
+   "relaciones": []
+  },
+  {
+   "id": "ccss-2007-reserva-6-b3-2",
+   "n": "B3-II",
+   "num": "3 · Parte II",
+   "bloque": "Opción B",
+   "puntos": "2",
+   "enunciado": {
+    "intro": "(2 puntos) En una encuesta representativa realizada a 1230 personas de una ciudad, se obtuvo como resultado que 654 de ellas van al cine los fines de semana.<br>Calcule un intervalo de confianza, al 97 %, para la proporción de asistencia al cine los fines de semana en dicha ciudad.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Planteamiento (teoría)",
+     "html": "<div class='ex'><p>Sea \\(p\\) la proporción de personas de la ciudad que van al cine los fines de semana en la población, que es desconocida. Para estimarla consideramos la variable aleatoria \\(\\hat p\\), «proporción de personas de la ciudad que van al cine los fines de semana en una muestra aleatoria de tamaño \\(n\\)», y llamamos \\(\\hat q=1-\\hat p\\). Según el enunciado, la muestra tiene \\(n=1230\\) elementos y en ella</p>\\[\\hat p=\\frac{654}{1230}\\approx0{,}5317\\]\\[\\hat q=1-0{,}5317=0{,}4683\\]<p>Según el teorema central del límite, como \\(n=1230\\ge30\\), \\(n\\hat p=653{,}99\\ge5\\) y \\(n\\hat q=576{,}01\\ge5\\), la proporción muestral sigue aproximadamente una distribución normal de media \\(p\\) y desviación típica \\(\\sqrt{p(1-p)/n}\\)<i class='n' data-t='th'>Teorema central del límite para proporciones: si \\(n\\ge30\\), \\(n\\hat p\\ge5\\) y \\(n\\hat q\\ge5\\), la proporción muestral se aproxima por \\(N\\left(p,\\sqrt{\\frac{p(1-p)}n}\\right)\\).</i>:</p>\\[\\hat p\\sim N\\left(p,\\ \\sqrt{\\frac{p(1-p)}n}\\right)\\]<p>Si tipificamos, obtenemos una normal estándar, \\(Z=\\dfrac{\\hat p-p}{\\sqrt{p(1-p)/n}}\\sim N(0,1)\\). Para un nivel de confianza \\(1-\\alpha\\) buscamos el valor crítico \\(z_{1-\\alpha/2}\\) que deja entre \\(-z_{1-\\alpha/2}\\) y \\(z_{1-\\alpha/2}\\) una probabilidad \\(1-\\alpha\\). Despejando \\(p\\) se obtiene el intervalo de confianza para la proporción poblacional; como \\(p\\) es desconocida, en el error se sustituye por \\(\\hat p\\):</p>\\[IC_{1-\\alpha}(p)=(\\hat p-E,\\ \\hat p+E)\\]\\[E=z_{1-\\alpha/2}\\sqrt{\\frac{\\hat p\\,\\hat q}n}\\]<p>donde \\(E\\) es el error máximo de la estimación.</p></div>"
+    },
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>Nivel de confianza: \\(1-\\alpha=0{,}97\\), luego \\(\\alpha=0{,}03\\) y \\(\\dfrac\\alpha2=0{,}015\\).</p>\\[P\\left(Z\\lt z_{1-\\alpha/2}\\right)=1-\\frac\\alpha2\\]\\[P\\left(Z\\lt z_{1-\\alpha/2}\\right)=1-0{,}015=0{,}985\\]<p>Busco \\(0{,}985\\) en el interior de la tabla \\(N(0,1)\\)<i class='n' data-t='why'>El intervalo deja \\(\\frac\\alpha2\\) en cada cola, así que a la izquierda de \\(z_{1-\\alpha/2}\\) queda \\(1-\\frac\\alpha2\\).</i>: \\(P(Z\\lt2{,}17)=0{,}985\\):</p>\\[\\Rightarrow\\ z_{1-\\alpha/2}=2{,}17\\]<div style='overflow-x:auto'><svg viewBox='0 0 320 170' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='8.0,135.0 8.0,134.9 9.1,134.9 10.2,134.9 11.3,134.9 12.3,134.9 13.4,134.9 14.5,134.8 15.6,134.8 16.7,134.8 17.8,134.8 18.9,134.8 20.0,134.7 21.0,134.7 22.1,134.7 23.2,134.7 24.3,134.6 25.4,134.6 26.5,134.5 27.6,134.5 28.6,134.5 29.7,134.4 30.8,134.3 31.9,134.3 33.0,134.2 34.1,134.2 35.2,134.1 36.3,134.0 37.3,133.9 38.4,133.8 39.5,133.7 40.6,133.6 41.7,133.5 42.8,133.4 43.9,133.2 44.9,133.1 46.0,132.9 47.1,132.8 48.2,132.6 49.3,132.4 50.4,132.2 51.5,132.0 52.6,131.8 53.6,131.5 54.7,131.3 55.8,131.0 56.9,130.7 58.0,130.4 59.1,130.0 60.2,129.7 61.2,129.3 62.3,128.9 63.4,128.5 64.5,128.1 65.6,127.6 66.7,127.1 67.8,126.6 68.9,126.1 69.9,125.5 71.0,124.9 72.1,124.3 73.2,123.6 73.2,135.0' fill='#e8487a' fill-opacity='.28' stroke='none'/><polygon points='246.8,135.0 246.8,123.6 247.9,124.3 249.0,124.9 250.1,125.5 251.1,126.1 252.2,126.6 253.3,127.1 254.4,127.6 255.5,128.1 256.6,128.5 257.7,128.9 258.8,129.3 259.8,129.7 260.9,130.0 262.0,130.4 263.1,130.7 264.2,131.0 265.3,131.3 266.4,131.5 267.4,131.8 268.5,132.0 269.6,132.2 270.7,132.4 271.8,132.6 272.9,132.8 274.0,132.9 275.1,133.1 276.1,133.2 277.2,133.4 278.3,133.5 279.4,133.6 280.5,133.7 281.6,133.8 282.7,133.9 283.7,134.0 284.8,134.1 285.9,134.2 287.0,134.2 288.1,134.3 289.2,134.3 290.3,134.4 291.4,134.5 292.4,134.5 293.5,134.5 294.6,134.6 295.7,134.6 296.8,134.7 297.9,134.7 299.0,134.7 300.0,134.7 301.1,134.8 302.2,134.8 303.3,134.8 304.4,134.8 305.5,134.8 306.6,134.9 307.7,134.9 308.7,134.9 309.8,134.9 310.9,134.9 312.0,134.9 312.0,135.0' fill='#e8487a' fill-opacity='.28' stroke='none'/><polygon points='73.2,135.0 73.2,123.6 76.1,121.7 79.0,119.6 81.9,117.2 84.8,114.6 87.7,111.7 90.6,108.5 93.5,105.0 96.3,101.3 99.2,97.2 102.1,93.0 105.0,88.5 107.9,83.7 110.8,78.8 113.7,73.7 116.6,68.6 119.5,63.3 122.4,58.1 125.3,52.9 128.2,47.8 131.1,42.9 134.0,38.2 136.9,33.8 139.7,29.7 142.6,26.1 145.5,22.9 148.4,20.2 151.3,18.1 154.2,16.6 157.1,15.6 160.0,15.3 162.9,15.6 165.8,16.6 168.7,18.1 171.6,20.2 174.5,22.9 177.4,26.1 180.3,29.7 183.1,33.8 186.0,38.2 188.9,42.9 191.8,47.8 194.7,52.9 197.6,58.1 200.5,63.3 203.4,68.6 206.3,73.7 209.2,78.8 212.1,83.7 215.0,88.5 217.9,93.0 220.8,97.2 223.7,101.3 226.5,105.0 229.4,108.5 232.3,111.7 235.2,114.6 238.1,117.2 241.0,119.6 243.9,121.7 246.8,123.6 246.8,135.0' fill='#6d4ae0' fill-opacity='.35' stroke='none'/><polyline points='8.0,134.9 10.5,134.9 13.1,134.9 15.6,134.8 18.1,134.8 20.7,134.7 23.2,134.7 25.7,134.6 28.3,134.5 30.8,134.4 33.3,134.2 35.9,134.0 38.4,133.8 40.9,133.6 43.5,133.3 46.0,132.9 48.5,132.5 51.1,132.1 53.6,131.5 56.1,130.9 58.7,130.2 61.2,129.3 63.7,128.4 66.3,127.3 68.8,126.1 71.3,124.7 73.9,123.2 76.4,121.5 78.9,119.6 81.5,117.6 84.0,115.3 86.5,112.8 89.1,110.2 91.6,107.3 94.1,104.2 96.7,100.8 99.2,97.3 101.7,93.6 104.3,89.7 106.8,85.6 109.3,81.3 111.9,77.0 114.4,72.5 116.9,68.0 119.5,63.4 122.0,58.8 124.5,54.2 127.1,49.7 129.6,45.3 132.1,41.1 134.7,37.1 137.2,33.3 139.7,29.7 142.3,26.5 144.8,23.7 147.3,21.2 149.9,19.1 152.4,17.5 154.9,16.3 157.5,15.6 160.0,15.3 162.5,15.6 165.1,16.3 167.6,17.5 170.1,19.1 172.7,21.2 175.2,23.7 177.7,26.5 180.3,29.7 182.8,33.3 185.3,37.1 187.9,41.1 190.4,45.3 192.9,49.7 195.5,54.2 198.0,58.8 200.5,63.4 203.1,68.0 205.6,72.5 208.1,77.0 210.7,81.3 213.2,85.6 215.7,89.7 218.3,93.6 220.8,97.3 223.3,100.8 225.9,104.2 228.4,107.3 230.9,110.2 233.5,112.8 236.0,115.3 238.5,117.6 241.1,119.6 243.6,121.5 246.1,123.2 248.7,124.7 251.2,126.1 253.7,127.3 256.3,128.4 258.8,129.3 261.3,130.2 263.9,130.9 266.4,131.5 268.9,132.1 271.5,132.5 274.0,132.9 276.5,133.3 279.1,133.6 281.6,133.8 284.1,134.0 286.7,134.2 289.2,134.4 291.7,134.5 294.3,134.6 296.8,134.7 299.3,134.7 301.9,134.8 304.4,134.8 306.9,134.9 309.5,134.9 312.0,134.9' fill='none' stroke='#2f6df0' stroke-width='2'/><line x1='4.0' y1='135.0' x2='316.0' y2='135.0' stroke='currentColor' stroke-width='1.2'/><line x1='73.2' y1='139.0' x2='73.2' y2='123.6' stroke='#6d4ae0' stroke-width='1.4' stroke-dasharray='3 2'/><text x='73.2' y='152.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>−z<tspan font-size='8' dy='3'>1−α/2</tspan></text><line x1='246.8' y1='139.0' x2='246.8' y2='123.6' stroke='#6d4ae0' stroke-width='1.4' stroke-dasharray='3 2'/><text x='246.8' y='152.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>z<tspan font-size='8' dy='3'>1−α/2</tspan></text><text x='246.8' y='165.0' text-anchor='middle' font-size='10.5' font-weight='700' fill='#6d4ae0'>= 2,17</text><text x='160.0' y='87.0' text-anchor='middle' font-size='12' font-weight='700'>1 − α = 0,97</text><line x1='63.2' y1='132.1' x2='36.0' y2='105.0' stroke='#c2185b' stroke-width='1'/><text x='8.0' y='102.0' text-anchor='start' font-size='10' fill='#c2185b'>α/2 = 0,015</text><line x1='256.8' y1='132.1' x2='284.0' y2='105.0' stroke='#c2185b' stroke-width='1'/><text x='312.0' y='102.0' text-anchor='end' font-size='10' fill='#c2185b'>α/2 = 0,015</text><text x='160.0' y='148.0' text-anchor='middle' font-size='9.5'>0</text></svg></div><p>Calculamos el error máximo con \\(\\hat p=0{,}5317\\), \\(\\hat q=0{,}4683\\) y \\(n=1230\\):</p>\\[E=z_{1-\\alpha/2}\\sqrt{\\frac{\\hat p\\,\\hat q}n}=2{,}17\\sqrt{\\frac{0{,}5317\\cdot0{,}4683}{1230}}\\]\\[E=2{,}17\\cdot0{,}0142=0{,}0308\\]<p>Los extremos del intervalo son la proporción muestral menos y más el error:</p>\\[\\hat p-E=0{,}5317-0{,}0308=0{,}5009\\]\\[\\hat p+E=0{,}5317+0{,}0308=0{,}5625\\]<div class='res'>\\(IC_{0{,}97}(p)=(0{,}5009;\\ 0{,}5625)\\)</div><p><b>Conclusión:</b> podemos afirmar, con un nivel de confianza del 97 %, que la proporción de personas que van al cine los fines de semana se encuentra entre 0,5009 y 0,5625.</p></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "inf",
+     "tipo": "prop",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": "MAT_CCSS_2007_RESERVA_6.pdf",
+    "sha256": "624b79f779433f38811acc3caa915d72badcd080a1c3b450622940603836f90b",
+    "pagina": 2,
+    "opcion": "B",
+    "ejercicio_original": 3,
+    "parte": "II",
+    "transcripcion": "imagen de la página"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "revisado",
+   "revision_apartados": {
+    "": "revisado"
+   },
+   "dependencias": {
+    "": [
+     "tabla_N01_oficial"
+    ]
+   },
+   "incidencias": [],
+   "relaciones": []
+  }
+ ]
+}

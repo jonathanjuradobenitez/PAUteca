@@ -21,11 +21,11 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>Sean \\(x\\) los surtidos de tipo \\(A\\) e \\(y\\) los de tipo \\(B\\). Paso los kilos a gramos: 3,75 kg \\(=3750\\) g y 4 kg \\(=4000\\) g.</p><table class='tb'><tr><th></th><th>Arándanos (g)</th><th>Frambuesas (g)</th><th>Precio (€)</th></tr><tr><td>Surtido \\(A\\) (\\(x\\))</td><td>75</td><td>100</td><td>2,40</td></tr><tr><td>Surtido \\(B\\) (\\(y\\))</td><td>75</td><td>50</td><td>1,80</td></tr><tr><th>Disponible</th><td>\\(\\le3750\\)</td><td>\\(\\le4000\\)</td><td></td></tr></table><p>Como no se indican costes, el beneficio es el importe de las ventas.</p>\\[\\text{Maximizar }\\ B(x,y)=2{,}4x+1{,}8y\\quad\\text{sujeto a}\\quad\\begin{cases}75x+75y\\le3750\\iff x+y\\le50\\\\100x+50y\\le4000\\iff2x+y\\le80\\\\x\\le2y\\\\x\\ge0,\\ y\\ge0\\end{cases}\\]<div class='res'>Maximizar \\(B(x,y)=2{,}4x+1{,}8y\\) con las restricciones anteriores</div></div>"
+     "html": "<div class='ex'><p>Sean \\(x\\) los surtidos de tipo \\(A\\) e \\(y\\) los de tipo \\(B\\). Paso los kilos a gramos: 3,75 kg \\(=3750\\) g y 4 kg \\(=4000\\) g.</p><table class='tb'><tr><th></th><th>Arándanos (g)</th><th>Frambuesas (g)</th><th>Precio (€)</th></tr><tr><td>Surtido \\(A\\) (\\(x\\))</td><td>75</td><td>100</td><td>2,40</td></tr><tr><td>Surtido \\(B\\) (\\(y\\))</td><td>75</td><td>50</td><td>1,80</td></tr><tr><th>Disponible</th><td>\\(\\le3750\\)</td><td>\\(\\le4000\\)</td><td></td></tr></table><p>Como no se indican costes, el beneficio es el importe de las ventas.</p>\\[\\text{Maximizar }\\ B(x,y)=2{,}4x+1{,}8y\\quad\\text{sujeto a}\\quad\\begin{cases}75x+75y\\le3750\\iff x+y\\le50\\\\100x+50y\\le4000\\iff2x+y\\le80\\\\x\\le2y\\\\x\\ge0,\\ y\\ge0\\end{cases}\\]<div class='res'>Maximizar \\(B(x,y)=2{,}4x+1{,}8y\\) sujeto a \\(x+y\\le50\\), \\(2x+y\\le80\\), \\(x\\le2y\\), \\(x\\ge0\\), \\(y\\ge0\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
-     "html": "<div class='ex'><p>Observa que no se impone \\(y\\ge0\\)<i class='n' data-t='err'>No añadas restricciones que el enunciado no da.</i>.</p><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(x+4y=5\\)</th></tr><tr><th>\\(x\\)</th><td>\\(5\\)</td><td>\\(1\\)</td></tr><tr><th>\\(y\\)</th><td>\\(0\\)</td><td>\\(1\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(x+2y=4\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(4\\)</td></tr><tr><th>\\(y\\)</th><td>\\(2\\)</td><td>\\(0\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(7x+5y=35\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(5\\)</td></tr><tr><th>\\(y\\)</th><td>\\(7\\)</td><td>\\(0\\)</td></tr></table><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(x+4y\\ge5\\): con el origen, \\(0\\ge5\\) no se cumple → semiplano que <b>no</b> lo contiene.</li><li>\\(x+2y\\ge4\\): con el origen, \\(0\\ge4\\) no se cumple → semiplano que <b>no</b> lo contiene.</li><li>\\(7x+5y\\le35\\): con el origen, \\(0\\le35\\) se cumple → semiplano que lo contiene.</li></ul><p>Además, \\(x\\ge0\\) deja la región a la derecha del eje de ordenadas.</p><div style='overflow-x:auto'><svg viewBox='0 0 290 225' width='100%' style='max-width:320px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='40.0,156.0 40.0,46.0 230.0,200.0 154.0,189.0' fill='#b9a4f5' fill-opacity='.5' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M17 200H283M40 218V24'/></g><text x='277' y='195'>x</text><text x='45' y='32'>y</text><g font-size='10' fill='currentColor'><line x1='78.0' y1='197.0' x2='78.0' y2='203.0' stroke='currentColor'/><text x='78.0' y='214.0' text-anchor='middle'>1</text><line x1='116.0' y1='197.0' x2='116.0' y2='203.0' stroke='currentColor'/><text x='116.0' y='214.0' text-anchor='middle'>2</text><line x1='154.0' y1='197.0' x2='154.0' y2='203.0' stroke='currentColor'/><text x='154.0' y='214.0' text-anchor='middle'>3</text><line x1='192.0' y1='197.0' x2='192.0' y2='203.0' stroke='currentColor'/><text x='192.0' y='214.0' text-anchor='middle'>4</text><line x1='230.0' y1='197.0' x2='230.0' y2='203.0' stroke='currentColor'/><text x='230.0' y='214.0' text-anchor='middle'>5</text><line x1='268.0' y1='197.0' x2='268.0' y2='203.0' stroke='currentColor'/><text x='268.0' y='214.0' text-anchor='middle'>6</text><line x1='37.0' y1='156.0' x2='43.0' y2='156.0' stroke='currentColor'/><text x='34.0' y='159.0' text-anchor='end'>2</text><line x1='37.0' y1='112.0' x2='43.0' y2='112.0' stroke='currentColor'/><text x='34.0' y='115.0' text-anchor='end'>4</text><line x1='37.0' y1='68.0' x2='43.0' y2='68.0' stroke='currentColor'/><text x='34.0' y='71.0' text-anchor='end'>6</text></g><circle cx='40.0' cy='156.0' r='3.3' fill='#e8487a'/><text x='46.0' y='170.0' font-weight='700'>A(0,2)</text><circle cx='40.0' cy='46.0' r='3.3' fill='#e8487a'/><text x='46.0' y='42.0' font-weight='700'>B(0,7)</text><circle cx='230.0' cy='200.0' r='3.3' fill='#e8487a'/><text x='222.0' y='190.0' font-weight='700'>C(5,0)</text><circle cx='154.0' cy='189.0' r='3.3' fill='#e8487a'/><text x='160.0' y='203.0' font-weight='700'>D(3, 1/2)</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(C:\\;\\left\\{\\begin{array}{l}x+4y=5\\\\7x+5y=35\\end{array}\\right.\\Rightarrow x=-4y+5\\Rightarrow 7(-4y+5)+5y=35\\Rightarrow y=0,\\ x=5\\Rightarrow \\boxed{C(5,0)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}x=0\\\\7x+5y=35\\end{array}\\right.\\Rightarrow y=7\\Rightarrow \\boxed{B(0,7)}\\)</li><li>\\(A:\\;\\left\\{\\begin{array}{l}x=0\\\\x+2y=4\\end{array}\\right.\\Rightarrow y=2\\Rightarrow \\boxed{A(0,2)}\\)</li><li>\\(D:\\;\\left\\{\\begin{array}{l}x+4y=5\\\\x+2y=4\\end{array}\\right.\\Rightarrow x=-4y+5\\Rightarrow (-4y+5)+2y=4\\Rightarrow y=\\frac{1}{2},\\ x=3\\Rightarrow \\boxed{D(3,\\frac{1}{2})}\\)</li></ul><p>La función \\(F\\) alcanza sus extremos en el recinto, en puntos de su frontera; evaluamos, por tanto, \\(F\\) en los vértices<i class='n' data-t='th'>Teorema fundamental de la programación lineal: si la región factible es un polígono convexo y acotado, la función objetivo alcanza su máximo y su mínimo en alguno de sus vértices.</i>:</p>\\[\\begin{aligned}F(A)&=F(0,2)=2\\cdot0+2\\\\&=2\\end{aligned}\\]\\[\\begin{aligned}F(B)&=F(0,7)=2\\cdot0+7\\\\&=7\\end{aligned}\\]\\[\\begin{aligned}F(C)&=F(5,0)=2\\cdot5+0\\\\&=10\\end{aligned}\\]\\[\\begin{aligned}F(D)&=F(3,\\frac{1}{2})=2\\cdot3+\\frac{1}{2}\\\\&=\\frac{13}{2}\\end{aligned}\\]<p>\\(F\\) alcanza un mínimo en \\(A(0,2)\\) de valor \\(2\\).</p><div class='res'>El mínimo de \\(F\\) se alcanza en \\(A(0,2)\\) y vale 2</div></div>"
+     "html": "<div class='ex'><p>Observa que no se impone \\(y\\ge0\\)<i class='n' data-t='err'>No añadas restricciones que el enunciado no da.</i>.</p><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(x+4y=5\\)</th></tr><tr><th>\\(x\\)</th><td>\\(5\\)</td><td>\\(1\\)</td></tr><tr><th>\\(y\\)</th><td>\\(0\\)</td><td>\\(1\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(x+2y=4\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(4\\)</td></tr><tr><th>\\(y\\)</th><td>\\(2\\)</td><td>\\(0\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(7x+5y=35\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(5\\)</td></tr><tr><th>\\(y\\)</th><td>\\(7\\)</td><td>\\(0\\)</td></tr></table><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(x+4y\\ge5\\): con el origen, \\(0\\ge5\\) no se cumple → semiplano que <b>no</b> lo contiene.</li><li>\\(x+2y\\ge4\\): con el origen, \\(0\\ge4\\) no se cumple → semiplano que <b>no</b> lo contiene.</li><li>\\(7x+5y\\le35\\): con el origen, \\(0\\le35\\) se cumple → semiplano que lo contiene.</li></ul><p>Además, \\(x\\ge0\\) deja la región a la derecha del eje de ordenadas.</p><div style='overflow-x:auto'><svg viewBox='0 0 420 300' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><line x1='67.3' y1='266.0' x2='67.3' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='122.7' y1='266.0' x2='122.7' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='178.1' y1='266.0' x2='178.1' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='233.6' y1='266.0' x2='233.6' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='289.0' y1='266.0' x2='289.0' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='344.4' y1='266.0' x2='344.4' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='244.6' x2='386.0' y2='244.6' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='193.6' x2='386.0' y2='193.6' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='142.6' x2='386.0' y2='142.6' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='91.6' x2='386.0' y2='91.6' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='40.6' x2='386.0' y2='40.6' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='244.6' x2='386.0' y2='244.6' stroke='#111' stroke-width='1.3'/><line x1='67.3' y1='266.0' x2='67.3' y2='34.0' stroke='#111' stroke-width='1.3'/><text x='122.7' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>1</text><text x='178.1' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>2</text><text x='233.6' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>3</text><text x='289.0' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>4</text><text x='344.4' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>5</text><text x='63.3' y='196.6' font-size='10' text-anchor='end' fill='#374151'>2</text><text x='63.3' y='145.6' font-size='10' text-anchor='end' fill='#374151'>4</text><text x='63.3' y='94.6' font-size='10' text-anchor='end' fill='#374151'>6</text><text x='63.3' y='43.6' font-size='10' text-anchor='end' fill='#374151'>8</text><text x='384.0' y='239.6' font-size='11' text-anchor='end' font-style='italic'>x</text><text x='72.3' y='44.0' font-size='11' font-style='italic'>y</text><polygon points='67.3,193.6 67.3,66.1 344.4,244.6 233.6,231.8' fill='#fcd34d' fill-opacity='0.55' stroke='none'/><line x1='34.0' y1='44.7' x2='377.7' y2='266.0' stroke='#b45309' stroke-width='2'/><text x='142.1' y='106.1' font-size='10' fill='#b45309' text-anchor='start'>7x+5y=35</text><line x1='34.0' y1='208.9' x2='386.0' y2='249.4' stroke='#2563eb' stroke-width='2'/><text x='144.6' y='216.0' font-size='10' fill='#2563eb' text-anchor='start'>x+4y=5</text><line x1='34.0' y1='185.9' x2='382.1' y2='266.0' stroke='#16a34a' stroke-width='2'/><text x='272.7' y='237.0' font-size='10' fill='#16a34a' text-anchor='end'>x+2y=4</text><text x='178.1' y='189.0' font-size='15' fill='#92400e' text-anchor='middle' font-weight='bold'>R</text><circle cx='67.3' cy='193.6' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='60.3' y='208.6' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>A</text><circle cx='67.3' cy='66.1' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='60.3' y='59.1' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>B</text><circle cx='344.4' cy='244.6' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='351.4' y='259.6' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>C</text><circle cx='233.6' cy='231.8' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='240.6' y='246.8' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>D</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(C:\\;\\left\\{\\begin{array}{l}x+4y=5\\\\7x+5y=35\\end{array}\\right.\\) \\(\\Rightarrow x=-4y+5\\) \\(\\Rightarrow 7(-4y+5)+5y=35\\) \\(\\Rightarrow y=0,\\ x=5\\) \\(\\Rightarrow \\boxed{C(5,0)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}x=0\\\\7x+5y=35\\end{array}\\right.\\) \\(\\Rightarrow y=7\\) \\(\\Rightarrow \\boxed{B(0,7)}\\)</li><li>\\(A:\\;\\left\\{\\begin{array}{l}x=0\\\\x+2y=4\\end{array}\\right.\\) \\(\\Rightarrow y=2\\) \\(\\Rightarrow \\boxed{A(0,2)}\\)</li><li>\\(D:\\;\\left\\{\\begin{array}{l}x+4y=5\\\\x+2y=4\\end{array}\\right.\\) \\(\\Rightarrow x=-4y+5\\) \\(\\Rightarrow (-4y+5)+2y=4\\) \\(\\Rightarrow y=\\frac{1}{2},\\ x=3\\) \\(\\Rightarrow \\boxed{D(3,\\frac{1}{2})}\\)</li></ul><p>La función \\(F\\) alcanza sus extremos en el recinto, en puntos de su frontera; evaluamos, por tanto, \\(F\\) en los vértices<i class='n' data-t='th'>Teorema fundamental de la programación lineal: si la región factible es un polígono convexo y acotado, la función objetivo alcanza su máximo y su mínimo en alguno de sus vértices.</i>:</p>\\[\\begin{aligned}F(A)&=F(0,2)=2\\cdot0+2\\\\&=2\\end{aligned}\\]\\[\\begin{aligned}F(B)&=F(0,7)=2\\cdot0+7\\\\&=7\\end{aligned}\\]\\[\\begin{aligned}F(C)&=F(5,0)=2\\cdot5+0\\\\&=10\\end{aligned}\\]\\[\\begin{aligned}F(D)&=F(3,\\frac{1}{2})=2\\cdot3+\\frac{1}{2}\\\\&=\\frac{13}{2}\\end{aligned}\\]<p>\\(F\\) alcanza un mínimo en \\(A(0,2)\\) de valor \\(2\\).</p><div class='res'>El mínimo de \\(F\\) se alcanza en \\(A(0,2)\\) y vale 2</div></div>"
     }
    ],
    "clasificacion": [
@@ -50,7 +50,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-reserva-3-2",
@@ -76,7 +76,7 @@
     },
     {
      "titulo": "Apartado c",
-     "html": "<div class='ex'><p>\\(M\\cdot X=B\\Rightarrow X=M^{-1}B\\) (\\(M\\) a la izquierda de \\(X\\)). Con \\((\\operatorname{Adj}M)^t\\) y \\(|M|=300\\):</p>\\[M^{-1}=\\frac1{300}\\begin{pmatrix}40&5&0\\\\20&40&0\\\\24&18&60\\end{pmatrix}\\]\\[X=M^{-1}B\\]\\[=\\frac1{300}\\begin{pmatrix}40&5&0\\\\20&40&0\\\\24&18&60\\end{pmatrix}\\begin{pmatrix}5\\\\20\\\\-3\\end{pmatrix}\\]\\[=\\frac1{300}\\begin{pmatrix}300\\\\900\\\\300\\end{pmatrix}\\]<div class='res'>\\(X=\\begin{pmatrix}1\\\\3\\\\1\\end{pmatrix}\\)</div><i class='n' data-t='tp'>Comprobación: \\(8\\cdot1-3=5\\), \\(-4+24=20\\), \\(-2-6+5=-3\\) ✓.</i></div>"
+     "html": "<div class='ex'><p>\\(M\\cdot X=B\\) \\(\\Rightarrow X=M^{-1}B\\) (\\(M\\) a la izquierda de \\(X\\)). Con \\((\\operatorname{Adj}M)^t\\) y \\(|M|=300\\):</p>\\[M^{-1}=\\frac1{300}\\begin{pmatrix}40&5&0\\\\20&40&0\\\\24&18&60\\end{pmatrix}\\]\\[X=M^{-1}B\\]\\[=\\frac1{300}\\begin{pmatrix}40&5&0\\\\20&40&0\\\\24&18&60\\end{pmatrix}\\begin{pmatrix}5\\\\20\\\\-3\\end{pmatrix}\\]\\[=\\frac1{300}\\begin{pmatrix}300\\\\900\\\\300\\end{pmatrix}\\]<div class='res'>\\(X=\\begin{pmatrix}1\\\\3\\\\1\\end{pmatrix}\\)</div><i class='n' data-t='tp'>Comprobación: \\(8\\cdot1-3=5\\), \\(-4+24=20\\), \\(-2-6+5=-3\\) ✓.</i></div>"
     }
    ],
    "clasificacion": [
@@ -101,7 +101,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-reserva-3-3",
@@ -152,7 +152,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-reserva-3-4",
@@ -169,7 +169,7 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p><b>\\(f\\):</b> producto; para cada factor uso la regla de la cadena<i class='n' data-t='th'>Cadena: \\((u^n)'=nu^{n-1}u'\\) y \\((\\ln v)'=\\frac{v'}v\\).</i>:</p>\\[f'(x)=4(5x^3+4x-2)^3(15x^2+4)\\ln(2x^5-4x^3+x)+(5x^3+4x-2)^4\\,\\frac{10x^4-12x^2+1}{2x^5-4x^3+x}\\]<p><b>\\(g\\):</b> cociente, con \\((e^{u})'=u'e^u\\) y \\((6x^2+2)^3\\) derivado por la cadena:</p>\\[\\begin{aligned}g'(x)&=\\frac{(6x-5)e^{3x^2-5x}(6x^2+2)^3-e^{3x^2-5x}\\cdot3(6x^2+2)^2\\cdot12x}{(6x^2+2)^6}\\\\&=\\frac{e^{3x^2-5x}\\bigl[(6x-5)(6x^2+2)-36x\\bigr]}{(6x^2+2)^4}\\end{aligned}\\]<div class='res'>\\(g'(x)=\\dfrac{e^{3x^2-5x}\\,(36x^3-30x^2-24x-10)}{(6x^2+2)^4}\\)</div></div>"
+     "html": "<div class='ex'><p><b>\\(f\\):</b> producto; para cada factor uso la regla de la cadena<i class='n' data-t='th'>Cadena: \\((u^n)'=nu^{n-1}u'\\) y \\((\\ln v)'=\\frac{v'}v\\).</i>:</p>\\[f'(x)=4(5x^3+4x-2)^3(15x^2+4)\\ln(2x^5-4x^3+x)+(5x^3+4x-2)^4\\,\\frac{10x^4-12x^2+1}{2x^5-4x^3+x}\\]<p><b>\\(g\\):</b> cociente, con \\((e^{u})'=u'e^u\\) y \\((6x^2+2)^3\\) derivado por la cadena:</p>\\[\\begin{aligned}g'(x)&=\\frac{(6x-5)e^{3x^2-5x}(6x^2+2)^3-e^{3x^2-5x}\\cdot3(6x^2+2)^2\\cdot12x}{(6x^2+2)^6}\\\\&=\\frac{e^{3x^2-5x}\\bigl[(6x-5)(6x^2+2)-36x\\bigr]}{(6x^2+2)^4}\\end{aligned}\\]<div class='res'>\\(f'(x)=4(5x^3+4x-2)^3(15x^2+4)\\ln(2x^5-4x^3+x)+\\dfrac{(5x^3+4x-2)^4(10x^4-12x^2+1)}{2x^5-4x^3+x}\\)<br>\\(g'(x)=\\dfrac{e^{3x^2-5x}\\,(36x^3-30x^2-24x-10)}{(6x^2+2)^4}\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
@@ -193,7 +193,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-reserva-3-5",
@@ -248,7 +248,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-reserva-3-6",
@@ -293,7 +293,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-reserva-3-7",
@@ -334,7 +334,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-reserva-3-8",
@@ -384,7 +384,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   }
  ]
 }

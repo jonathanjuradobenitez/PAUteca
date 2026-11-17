@@ -30,7 +30,7 @@
     },
     {
      "titulo": "Apartado c",
-     "html": "<div class='ex'><p>Una matriz cuadrada tiene inversa si y solo si su determinante es distinto de 0. \\(A^t+I_2=\\begin{pmatrix}2&-1\\\\0&2\\end{pmatrix}\\) tiene determinante \\(4\\neq0\\): existe su inversa. Como \\((A^t+I_2)\\) multiplica a \\(X\\) por la izquierda, \\(X=(A^t+I_2)^{-1}(A^t-I_2)\\)<i class='n' data-t='err'>La inversa va por la izquierda: \\(MX=N\\Rightarrow X=M^{-1}N\\).</i>:</p>\\[(A^t+I_2)^{-1}=\\frac14\\begin{pmatrix}2&1\\\\0&2\\end{pmatrix}\\]\\[ A^t-I_2=\\begin{pmatrix}0&-1\\\\0&0\\end{pmatrix}\\]<div class='res'>\\(X=\\dfrac14\\begin{pmatrix}2&1\\\\0&2\\end{pmatrix}\\begin{pmatrix}0&-1\\\\0&0\\end{pmatrix}=\\begin{pmatrix}0&-\\frac12\\\\0&0\\end{pmatrix}\\)</div></div>"
+     "html": "<div class='ex'><p>Una matriz cuadrada tiene inversa si y solo si su determinante es distinto de 0. \\(A^t+I_2=\\begin{pmatrix}2&-1\\\\0&2\\end{pmatrix}\\) tiene determinante \\(4\\neq0\\): existe su inversa. Como \\((A^t+I_2)\\) multiplica a \\(X\\) por la izquierda, \\(X=(A^t+I_2)^{-1}(A^t-I_2)\\)<i class='n' data-t='err'>La inversa va por la izquierda: \\(MX=N\\) \\(\\Rightarrow X=M^{-1}N\\).</i>:</p>\\[(A^t+I_2)^{-1}=\\frac14\\begin{pmatrix}2&1\\\\0&2\\end{pmatrix}\\]\\[ A^t-I_2=\\begin{pmatrix}0&-1\\\\0&0\\end{pmatrix}\\]<div class='res'>\\(X=\\dfrac14\\begin{pmatrix}2&1\\\\0&2\\end{pmatrix}\\begin{pmatrix}0&-1\\\\0&0\\end{pmatrix}=\\begin{pmatrix}0&-\\frac12\\\\0&0\\end{pmatrix}\\)</div></div>"
     }
    ],
    "clasificacion": [
@@ -50,7 +50,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-reserva-4-2",
@@ -68,7 +68,7 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(5x-3y=-9\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(3\\)</td></tr><tr><th>\\(y\\)</th><td>\\(3\\)</td><td>\\(8\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(x+y=11\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(11\\)</td></tr><tr><th>\\(y\\)</th><td>\\(11\\)</td><td>\\(0\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(6x+y=36\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(6\\)</td></tr><tr><th>\\(y\\)</th><td>\\(36\\)</td><td>\\(0\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(x+2y=6\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(6\\)</td></tr><tr><th>\\(y\\)</th><td>\\(3\\)</td><td>\\(0\\)</td></tr></table><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(5x-3y\\ge-9\\): con el origen, \\(0\\ge-9\\) se cumple → semiplano que lo contiene.</li><li>\\(x+y\\le11\\): con el origen, \\(0\\le11\\) se cumple → semiplano que lo contiene.</li><li>\\(6x+y\\le36\\): con el origen, \\(0\\le36\\) se cumple → semiplano que lo contiene.</li><li>\\(x+2y\\ge6\\): con el origen, \\(0\\ge6\\) no se cumple → semiplano que <b>no</b> lo contiene.</li></ul><div style='overflow-x:auto'><svg viewBox='0 0 300 220' width='100%' style='max-width:320px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='35.0,143.0 149.0,48.0 225.0,86.0 263.0,200.0' fill='#b9a4f5' fill-opacity='.5' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M12 200H312M35 215V21'/></g><text x='306' y='195'>x</text><text x='40' y='29'>y</text><g font-size='10' fill='currentColor'><line x1='73.0' y1='197.0' x2='73.0' y2='203.0' stroke='currentColor'/><text x='73.0' y='214.0' text-anchor='middle'>1</text><line x1='111.0' y1='197.0' x2='111.0' y2='203.0' stroke='currentColor'/><text x='111.0' y='214.0' text-anchor='middle'>2</text><line x1='149.0' y1='197.0' x2='149.0' y2='203.0' stroke='currentColor'/><text x='149.0' y='214.0' text-anchor='middle'>3</text><line x1='187.0' y1='197.0' x2='187.0' y2='203.0' stroke='currentColor'/><text x='187.0' y='214.0' text-anchor='middle'>4</text><line x1='225.0' y1='197.0' x2='225.0' y2='203.0' stroke='currentColor'/><text x='225.0' y='214.0' text-anchor='middle'>5</text><line x1='263.0' y1='197.0' x2='263.0' y2='203.0' stroke='currentColor'/><text x='263.0' y='214.0' text-anchor='middle'>6</text><line x1='301.0' y1='197.0' x2='301.0' y2='203.0' stroke='currentColor'/><text x='301.0' y='214.0' text-anchor='middle'>7</text><line x1='32.0' y1='162.0' x2='38.0' y2='162.0' stroke='currentColor'/><text x='29.0' y='165.0' text-anchor='end'>2</text><line x1='32.0' y1='124.0' x2='38.0' y2='124.0' stroke='currentColor'/><text x='29.0' y='127.0' text-anchor='end'>4</text><line x1='32.0' y1='86.0' x2='38.0' y2='86.0' stroke='currentColor'/><text x='29.0' y='89.0' text-anchor='end'>6</text><line x1='32.0' y1='48.0' x2='38.0' y2='48.0' stroke='currentColor'/><text x='29.0' y='51.0' text-anchor='end'>8</text></g><circle cx='35.0' cy='143.0' r='3.3' fill='#e8487a'/><text x='41.0' y='155.0' font-weight='700'>A(0,3)</text><circle cx='149.0' cy='48.0' r='3.3' fill='#e8487a'/><text x='155.0' y='44.0' font-weight='700'>B(3,8)</text><circle cx='225.0' cy='86.0' r='3.3' fill='#e8487a'/><text x='231.0' y='82.0' font-weight='700'>C(5,6)</text><circle cx='263.0' cy='200.0' r='3.3' fill='#e8487a'/><text x='249.0' y='190.0' font-weight='700'>D(6,0)</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(D:\\;\\left\\{\\begin{array}{l}6x+y=36\\\\x+2y=6\\end{array}\\right.\\Rightarrow y=-6x+36\\Rightarrow x+2(-6x+36)=6\\Rightarrow x=6,\\ y=0\\Rightarrow \\boxed{D(6,0)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}x+y=11\\\\6x+y=36\\end{array}\\right.\\Rightarrow y=-x+11\\Rightarrow 6x+(-x+11)=36\\Rightarrow x=5,\\ y=6\\Rightarrow \\boxed{C(5,6)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}5x-3y=-9\\\\x+y=11\\end{array}\\right.\\Rightarrow y=-x+11\\Rightarrow 5x-3(-x+11)=-9\\Rightarrow x=3,\\ y=8\\Rightarrow \\boxed{B(3,8)}\\)</li><li>\\(A:\\;\\left\\{\\begin{array}{l}5x-3y=-9\\\\x+2y=6\\end{array}\\right.\\Rightarrow x=-2y+6\\Rightarrow 5(-2y+6)-3y=-9\\Rightarrow y=3,\\ x=0\\Rightarrow \\boxed{A(0,3)}\\)</li></ul><div class='res'>Vértices: \\(A(0,3)\\), \\(B(3,8)\\), \\(C(5,6)\\) y \\(D(6,0)\\)</div></div>"
+     "html": "<div class='ex'><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(5x-3y=-9\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(3\\)</td></tr><tr><th>\\(y\\)</th><td>\\(3\\)</td><td>\\(8\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(x+y=11\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(11\\)</td></tr><tr><th>\\(y\\)</th><td>\\(11\\)</td><td>\\(0\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(6x+y=36\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(6\\)</td></tr><tr><th>\\(y\\)</th><td>\\(36\\)</td><td>\\(0\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(x+2y=6\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(6\\)</td></tr><tr><th>\\(y\\)</th><td>\\(3\\)</td><td>\\(0\\)</td></tr></table><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(5x-3y\\ge-9\\): con el origen, \\(0\\ge-9\\) se cumple → semiplano que lo contiene.</li><li>\\(x+y\\le11\\): con el origen, \\(0\\le11\\) se cumple → semiplano que lo contiene.</li><li>\\(6x+y\\le36\\): con el origen, \\(0\\le36\\) se cumple → semiplano que lo contiene.</li><li>\\(x+2y\\ge6\\): con el origen, \\(0\\ge6\\) no se cumple → semiplano que <b>no</b> lo contiene.</li></ul><div style='overflow-x:auto'><svg viewBox='0 0 420 300' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><line x1='67.3' y1='266.0' x2='67.3' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='113.5' y1='266.0' x2='113.5' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='159.6' y1='266.0' x2='159.6' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='205.8' y1='266.0' x2='205.8' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='252.0' y1='266.0' x2='252.0' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='298.2' y1='266.0' x2='298.2' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='344.4' y1='266.0' x2='344.4' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='244.6' x2='386.0' y2='244.6' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='200.0' x2='386.0' y2='200.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='155.4' x2='386.0' y2='155.4' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='110.7' x2='386.0' y2='110.7' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='66.1' x2='386.0' y2='66.1' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='244.6' x2='386.0' y2='244.6' stroke='#111' stroke-width='1.3'/><line x1='67.3' y1='266.0' x2='67.3' y2='34.0' stroke='#111' stroke-width='1.3'/><text x='113.5' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>1</text><text x='159.6' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>2</text><text x='205.8' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>3</text><text x='252.0' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>4</text><text x='298.2' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>5</text><text x='344.4' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>6</text><text x='63.3' y='203.0' font-size='10' text-anchor='end' fill='#374151'>2</text><text x='63.3' y='158.4' font-size='10' text-anchor='end' fill='#374151'>4</text><text x='63.3' y='113.7' font-size='10' text-anchor='end' fill='#374151'>6</text><text x='63.3' y='69.1' font-size='10' text-anchor='end' fill='#374151'>8</text><text x='384.0' y='239.6' font-size='11' text-anchor='end' font-style='italic'>x</text><text x='72.3' y='44.0' font-size='11' font-style='italic'>y</text><polygon points='67.3,177.7 205.8,66.1 298.2,110.7 344.4,244.6' fill='#fcd34d' fill-opacity='0.55' stroke='none'/><line x1='34.0' y1='204.4' x2='245.8' y2='34.0' stroke='#b45309' stroke-width='2'/><text x='144.9' y='114.2' font-size='10' fill='#b45309' text-anchor='start'>5x−3y=−9</text><line x1='386.0' y1='153.1' x2='139.3' y2='34.0' stroke='#2563eb' stroke-width='2'/><text x='356.3' y='136.2' font-size='10' fill='#2563eb' text-anchor='end'>x+y=11</text><line x1='351.8' y1='266.0' x2='271.7' y2='34.0' stroke='#16a34a' stroke-width='2'/><text x='274.8' y='52.2' font-size='10' fill='#16a34a' text-anchor='end'>6x+y=36</text><line x1='34.0' y1='169.6' x2='386.0' y2='254.6' stroke='#9333ea' stroke-width='2'/><text x='144.6' y='190.1' font-size='10' fill='#9333ea' text-anchor='start'>x+2y=6</text><text x='228.9' y='154.8' font-size='15' fill='#92400e' text-anchor='middle' font-weight='bold'>R</text><circle cx='67.3' cy='177.7' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='60.3' y='192.7' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>A</text><circle cx='205.8' cy='66.1' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='198.8' y='59.1' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>B</text><circle cx='298.2' cy='110.7' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='305.2' y='103.7' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>C</text><circle cx='344.4' cy='244.6' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='351.4' y='259.6' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>D</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(D:\\;\\left\\{\\begin{array}{l}6x+y=36\\\\x+2y=6\\end{array}\\right.\\) \\(\\Rightarrow y=-6x+36\\) \\(\\Rightarrow x+2(-6x+36)=6\\) \\(\\Rightarrow x=6,\\ y=0\\) \\(\\Rightarrow \\boxed{D(6,0)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}x+y=11\\\\6x+y=36\\end{array}\\right.\\) \\(\\Rightarrow y=-x+11\\) \\(\\Rightarrow 6x+(-x+11)=36\\) \\(\\Rightarrow x=5,\\ y=6\\) \\(\\Rightarrow \\boxed{C(5,6)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}5x-3y=-9\\\\x+y=11\\end{array}\\right.\\) \\(\\Rightarrow y=-x+11\\) \\(\\Rightarrow 5x-3(-x+11)=-9\\) \\(\\Rightarrow x=3,\\ y=8\\) \\(\\Rightarrow \\boxed{B(3,8)}\\)</li><li>\\(A:\\;\\left\\{\\begin{array}{l}5x-3y=-9\\\\x+2y=6\\end{array}\\right.\\) \\(\\Rightarrow x=-2y+6\\) \\(\\Rightarrow 5(-2y+6)-3y=-9\\) \\(\\Rightarrow y=3,\\ x=0\\) \\(\\Rightarrow \\boxed{A(0,3)}\\)</li></ul><div class='res'>Vértices: \\(A(0,3)\\), \\(B(3,8)\\), \\(C(5,6)\\) y \\(D(6,0)\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
@@ -106,7 +106,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-reserva-4-3",
@@ -157,7 +157,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-reserva-4-4",
@@ -208,7 +208,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-reserva-4-5",
@@ -262,7 +262,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-reserva-4-6",
@@ -302,7 +302,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-reserva-4-7",
@@ -352,7 +352,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2021-reserva-4-8",
@@ -412,7 +412,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   }
  ]
 }

@@ -34,7 +34,7 @@
     "criterio": "regla general fijada por el autor: año y convocatoria del nombre del archivo; un PDF con las dos opciones es el examen completo",
     "incidencias": []
    },
-   "revision": "borrador"
+   "revision": "revisado"
   }
  ],
  "ejercicios": [
@@ -54,11 +54,11 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>Escribimos la matriz de coeficientes \\(A\\) y la ampliada \\(A^*\\):</p>\\[A=\\begin{pmatrix}2&3&-1\\\\1&2&1\\end{pmatrix}\\]\\[A^*=\\left(\\begin{array}{ccc|c}2&3&-1&4\\\\1&2&1&5\\end{array}\\right)\\]<p>Hay 2 ecuaciones, así que el rango es como mucho 2. Tomamos el menor formado por las dos primeras columnas:</p>\\[\\begin{vmatrix}2&3\\\\1&2\\end{vmatrix}=4-3=1\\neq0\\Rightarrow\\operatorname{rg}A=2\\]<p>Ese menor también está en \\(A^*\\), así que \\(\\operatorname{rg}A^*=2\\). Como \\(\\operatorname{rg}A=\\operatorname{rg}A^*=2\\lt3\\) (número de incógnitas), por el teorema de Rouché-Frobenius el sistema es compatible indeterminado<i class='n' data-t='th'>Teorema de Rouché-Frobenius: el sistema es compatible si y solo si \\(\\operatorname{rg}A=\\operatorname{rg}A^*\\); si ese rango es igual al número de incógnitas es compatible determinado, y si es menor, compatible indeterminado.</i>: tiene infinitas soluciones, que dependen de \\(3-2=1\\) parámetro.</p><p>Las incógnitas del menor no nulo, \\(x\\) e \\(y\\), se despejan en función de \\(z=\\lambda\\)<i class='n' data-t='tp'>Se pasa al segundo miembro la incógnita que no está en el menor no nulo.</i>:</p>\\[\\left\\{\\begin{array}{l}2x+3y=4+\\lambda\\\\x+2y=5-\\lambda\\end{array}\\right.\\]<p>Lo resolvemos por Cramer<i class='n' data-t='th'>Regla de Cramer: cada incógnita es el cociente entre el determinante que resulta de sustituir su columna por la de términos independientes y el determinante de la matriz de coeficientes.</i>, con determinante 1:</p>\\[x=\\frac{\\begin{vmatrix}4+\\lambda&3\\\\5-\\lambda&2\\end{vmatrix}}{1}=8+2\\lambda-15+3\\lambda=-7+5\\lambda\\]\\[y=\\frac{\\begin{vmatrix}2&4+\\lambda\\\\1&5-\\lambda\\end{vmatrix}}{1}=10-2\\lambda-4-\\lambda=6-3\\lambda\\]<i class='n' data-t='tp'>Comprobación con \\(\\lambda=1\\): \\((-2,3,1)\\) → \\(-4+9-1=4\\) ✓ y \\(-2+6+1=5\\) ✓.</i><div class='res'>Sistema compatible indeterminado: \\((x,y,z)=(-7+5\\lambda,\\ 6-3\\lambda,\\ \\lambda)\\), con \\(\\lambda\\in\\mathbb R\\)</div></div>"
+     "html": "<div class='ex'><p>Escribimos la matriz de coeficientes \\(A\\) y la ampliada \\(A^*\\):</p>\\[A=\\begin{pmatrix}2&3&-1\\\\1&2&1\\end{pmatrix}\\]\\[A^*=\\left(\\begin{array}{ccc|c}2&3&-1&4\\\\1&2&1&5\\end{array}\\right)\\]<p>Hay 2 ecuaciones, así que el rango es como mucho 2. Tomamos el menor formado por las dos primeras columnas:</p>\\[\\begin{aligned}\\begin{vmatrix}2&3\\\\1&2\\end{vmatrix}&=4-3\\\\&=1\\neq0\\Rightarrow\\operatorname{rg}A=2\\end{aligned}\\]<p>Ese menor también está en \\(A^*\\), así que \\(\\operatorname{rg}A^*=2\\). Como \\(\\operatorname{rg}A=\\operatorname{rg}A^*=2\\lt3\\) (número de incógnitas), por el teorema de Rouché-Frobenius el sistema es compatible indeterminado<i class='n' data-t='th'>Teorema de Rouché-Frobenius: el sistema es compatible si y solo si \\(\\operatorname{rg}A=\\operatorname{rg}A^*\\); si ese rango es igual al número de incógnitas es compatible determinado, y si es menor, compatible indeterminado.</i>: tiene infinitas soluciones, que dependen de \\(3-2=1\\) parámetro.</p><p>Las incógnitas del menor no nulo, \\(x\\) e \\(y\\), se despejan en función de \\(z=\\lambda\\)<i class='n' data-t='tp'>Se pasa al segundo miembro la incógnita que no está en el menor no nulo.</i>:</p>\\[\\left\\{\\begin{array}{l}2x+3y=4+\\lambda\\\\x+2y=5-\\lambda\\end{array}\\right.\\]<p>Lo resolvemos por Cramer<i class='n' data-t='th'>Regla de Cramer: cada incógnita es el cociente entre el determinante que resulta de sustituir su columna por la de términos independientes y el determinante de la matriz de coeficientes.</i>, con determinante 1:</p>\\[\\begin{aligned}x&=\\frac{\\begin{vmatrix}4+\\lambda&3\\\\5-\\lambda&2\\end{vmatrix}}{1}\\\\&=8+2\\lambda-15+3\\lambda=-7+5\\lambda\\end{aligned}\\]\\[\\begin{aligned}y&=\\frac{\\begin{vmatrix}2&4+\\lambda\\\\1&5-\\lambda\\end{vmatrix}}{1}\\\\&=10-2\\lambda-4-\\lambda=6-3\\lambda\\end{aligned}\\]<i class='n' data-t='tp'>Comprobación con \\(\\lambda=1\\): \\((-2,3,1)\\) → \\(-4+9-1=4\\) ✓ y \\(-2+6+1=5\\) ✓.</i><div class='res'>Sistema compatible indeterminado: \\((x,y,z)=(-7+5\\lambda,\\ 6-3\\lambda,\\ \\lambda)\\), con \\(\\lambda\\in\\mathbb R\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
-     "html": "<div class='ex'><p>Calculamos la traspuesta de \\(A\\), cambiando filas por columnas:</p>\\[A^t=\\begin{pmatrix}1&2\\\\ -1&0\\end{pmatrix}\\]\\[A^t\\cdot B=\\begin{pmatrix}1&2\\\\ -1&0\\end{pmatrix}\\begin{pmatrix}1&-1\\\\ 1&2\\end{pmatrix}=\\begin{pmatrix}1\\cdot1+2\\cdot1&1\\cdot(-1)+2\\cdot2\\\\ (-1)\\cdot1+0\\cdot1&(-1)\\cdot(-1)+0\\cdot2\\end{pmatrix}=\\begin{pmatrix}3&3\\\\ -1&1\\end{pmatrix}\\]\\[C=A^t\\cdot B-2I_2=\\begin{pmatrix}3&3\\\\ -1&1\\end{pmatrix}-\\begin{pmatrix}2&0\\\\ 0&2\\end{pmatrix}=\\begin{pmatrix}1&3\\\\ -1&-1\\end{pmatrix}\\]<p>La matriz \\(C\\) tiene inversa si y solo si \\(|C|\\neq0\\)<i class='n' data-t='th'>Una matriz cuadrada tiene inversa si y solo si su determinante es distinto de 0.</i>:</p>\\[|C|=\\begin{vmatrix}1&3\\\\ -1&-1\\end{vmatrix}=1\\cdot(-1)-3\\cdot(-1)=2\\neq0\\]<p>Luego existe \\(C^{-1}\\), y la calculamos con \\(C^{-1}=\\dfrac1{|C|}(\\operatorname{Adj}C)^t\\)<i class='n' data-t='th'>La adjunta se forma con los adjuntos \\(A_{ij}=(-1)^{i+j}M_{ij}\\), donde \\(M_{ij}\\) es el menor que queda al suprimir la fila \\(i\\) y la columna \\(j\\).</i>:</p>\\[\\operatorname{Adj}C=\\begin{pmatrix}-1&1\\\\ -3&1\\end{pmatrix}\\]\\[(\\operatorname{Adj}C)^t=\\begin{pmatrix}-1&-3\\\\ 1&1\\end{pmatrix}\\]\\[C^{-1}=\\frac1{2}\\begin{pmatrix}-1&-3\\\\ 1&1\\end{pmatrix}=\\begin{pmatrix}-\\frac{1}{2}&-\\frac{3}{2}\\\\ \\frac{1}{2}&\\frac{1}{2}\\end{pmatrix}\\]<i class='n' data-t='tp'>Comprobación: \\(C\\cdot C^{-1}=\\frac12\\begin{pmatrix}-1+3&-3+3\\\\1-1&3-1\\end{pmatrix}=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\) ✓.</i><div class='res'>\\(\\left(A^t\\cdot B-2I_2\\right)^{-1}=\\dfrac12\\begin{pmatrix}-1&-3\\\\1&1\\end{pmatrix}\\)</div></div>"
+     "html": "<div class='ex'><p>Calculamos la traspuesta de \\(A\\), cambiando filas por columnas:</p>\\[A^t=\\begin{pmatrix}1&2\\\\ -1&0\\end{pmatrix}\\]\\[\\begin{aligned}A^t\\cdot B&=\\begin{pmatrix}1&2\\\\ -1&0\\end{pmatrix}\\begin{pmatrix}1&-1\\\\ 1&2\\end{pmatrix}\\\\&=\\begin{pmatrix}1\\cdot1+2\\cdot1&1\\cdot(-1)+2\\cdot2\\\\ (-1)\\cdot1+0\\cdot1&(-1)\\cdot(-1)+0\\cdot2\\end{pmatrix}\\\\&=\\begin{pmatrix}3&3\\\\ -1&1\\end{pmatrix}\\end{aligned}\\]\\[\\begin{aligned}C&=A^t\\cdot B-2I_2\\\\&=\\begin{pmatrix}3&3\\\\ -1&1\\end{pmatrix}-\\begin{pmatrix}2&0\\\\ 0&2\\end{pmatrix}\\\\&=\\begin{pmatrix}1&3\\\\ -1&-1\\end{pmatrix}\\end{aligned}\\]<p>La matriz \\(C\\) tiene inversa si y solo si \\(|C|\\neq0\\)<i class='n' data-t='th'>Una matriz cuadrada tiene inversa si y solo si su determinante es distinto de 0.</i>:</p>\\[\\begin{aligned}|C|&=\\begin{vmatrix}1&3\\\\ -1&-1\\end{vmatrix}\\\\&=1\\cdot(-1)-3\\cdot(-1)=2\\neq0\\end{aligned}\\]<p>Luego existe \\(C^{-1}\\), y la calculamos con \\(C^{-1}=\\dfrac1{|C|}(\\operatorname{Adj}C)^t\\)<i class='n' data-t='th'>La adjunta se forma con los adjuntos \\(A_{ij}=(-1)^{i+j}M_{ij}\\), donde \\(M_{ij}\\) es el menor que queda al suprimir la fila \\(i\\) y la columna \\(j\\).</i>:</p>\\[\\operatorname{Adj}C=\\begin{pmatrix}-1&1\\\\ -3&1\\end{pmatrix}\\]\\[(\\operatorname{Adj}C)^t=\\begin{pmatrix}-1&-3\\\\ 1&1\\end{pmatrix}\\]\\[\\begin{aligned}C^{-1}&=\\frac1{2}\\begin{pmatrix}-1&-3\\\\ 1&1\\end{pmatrix}\\\\&=\\begin{pmatrix}-\\frac{1}{2}&-\\frac{3}{2}\\\\ \\frac{1}{2}&\\frac{1}{2}\\end{pmatrix}\\end{aligned}\\]<i class='n' data-t='tp'>Comprobación:\\[\\begin{aligned}C\\cdot C^{-1}&=\\frac12\\begin{pmatrix}-1+3&-3+3\\\\1-1&3-1\\end{pmatrix}\\\\&=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\end{aligned}\\] ✓.</i><div class='res'>\\(\\left(A^t\\cdot B-2I_2\\right)^{-1}=\\dfrac12\\begin{pmatrix}-1&-3\\\\1&1\\end{pmatrix}\\)</div></div>"
     }
    ],
    "clasificacion": [
@@ -89,10 +89,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -154,11 +154,11 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador",
-    "c": "borrador"
+    "a": "revisado",
+    "b": "revisado",
+    "c": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -209,10 +209,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -256,9 +256,9 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "": "borrador"
+    "": "revisado"
    },
    "dependencias": {
     "": [
@@ -314,10 +314,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -369,10 +369,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -428,10 +428,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -487,10 +487,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {
     "a": [

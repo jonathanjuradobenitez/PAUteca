@@ -34,7 +34,7 @@
     "criterio": "regla general fijada por el autor: año y convocatoria del nombre del archivo; un PDF con las dos opciones es el examen completo",
     "incidencias": []
    },
-   "revision": "borrador"
+   "revision": "revisado"
   }
  ],
  "ejercicios": [
@@ -51,7 +51,7 @@
    "solucion": [
     {
      "titulo": "Resolución",
-     "html": "<div class='ex'><p>Comprobamos primero las dimensiones<i class='n' data-t='th'>Dos matrices se pueden multiplicar si el número de columnas de la primera coincide con el número de filas de la segunda; el resultado tiene las filas de la primera y las columnas de la segunda.</i>: \\(A\\) es \\(3\\times2\\) y \\(B\\) es \\(2\\times1\\), así que \\(A\\cdot B\\) existe y es \\(3\\times1\\), como \\(2C-D\\).</p>\\[A\\cdot B=\\begin{pmatrix}3&1\\\\ 1&3\\\\ 1&0\\end{pmatrix}\\begin{pmatrix}x\\\\y\\end{pmatrix}=\\begin{pmatrix}3x+y\\\\x+3y\\\\x\\end{pmatrix}\\]\\[2C-D=2\\begin{pmatrix}1\\\\1\\\\0\\end{pmatrix}-\\begin{pmatrix}z\\\\z\\\\z\\end{pmatrix}=\\begin{pmatrix}2-z\\\\2-z\\\\-z\\end{pmatrix}\\]<p>Dos matrices son iguales si lo son todos sus elementos<i class='n' data-t='th'>Dos matrices de la misma dimensión son iguales si y solo si coinciden elemento a elemento.</i>. Igualamos y pasamos las incógnitas al primer miembro:</p>\\[\\left\\{\\begin{array}{l}3x+y=2-z\\\\x+3y=2-z\\\\x=-z\\end{array}\\right.\\iff\\left\\{\\begin{array}{l}3x+y+z=2\\\\x+3y+z=2\\\\x+z=0\\end{array}\\right.\\]<p>Calculamos el determinante de la matriz de coeficientes por la regla de Sarrus:</p>\\[|M|=\\begin{vmatrix}3&1&1\\\\1&3&1\\\\1&0&1\\end{vmatrix}=3\\cdot3\\cdot1+1\\cdot1\\cdot1+1\\cdot1\\cdot0-\\left[1\\cdot3\\cdot1+3\\cdot1\\cdot0+1\\cdot1\\cdot1\\right]=6\\neq0\\]<p>Como \\(|M|\\neq0\\), \\(\\operatorname{rg}M=\\operatorname{rg}M^*=3=\\) número de incógnitas: por el teorema de Rouché-Frobenius el sistema es compatible determinado<i class='n' data-t='th'>Teorema de Rouché-Frobenius: el sistema es compatible si y solo si \\(\\operatorname{rg}A=\\operatorname{rg}A^*\\); si además ese rango es igual al número de incógnitas, la solución es única.</i>. Lo resolvemos por Gauss: restando la segunda ecuación a la primera,<i class='n' data-t='tp'>Las dos primeras ecuaciones tienen el mismo \\(z\\) y el mismo término independiente: al restarlas desaparecen.</i>:</p>\\[(3x+y+z)-(x+3y+z)=2-2\\iff2x-2y=0\\iff y=x\\]<p>De la tercera, \\(z=-x\\). Sustituimos en la primera:</p>\\[3x+x-x=2\\iff3x=2\\iff x=\\frac23\\]\\[\\boxed{x=\\tfrac23},\\qquad\\boxed{y=\\tfrac23},\\qquad\\boxed{z=-\\tfrac23}\\]<i class='n' data-t='tp'>Comprobación: \\(A\\cdot B=\\begin{pmatrix}2+\\frac23\\\\\\frac23+2\\\\\\frac23\\end{pmatrix}=\\begin{pmatrix}\\frac83\\\\\\frac83\\\\\\frac23\\end{pmatrix}\\) y \\(2C-D=\\begin{pmatrix}2+\\frac23\\\\2+\\frac23\\\\\\frac23\\end{pmatrix}\\) ✓.</i><div class='res'>\\(x=\\dfrac23,\\quad y=\\dfrac23,\\quad z=-\\dfrac23\\)</div></div>"
+     "html": "<div class='ex'><p>Comprobamos primero las dimensiones<i class='n' data-t='th'>Dos matrices se pueden multiplicar si el número de columnas de la primera coincide con el número de filas de la segunda; el resultado tiene las filas de la primera y las columnas de la segunda.</i>: \\(A\\) es \\(3\\times2\\) y \\(B\\) es \\(2\\times1\\), así que \\(A\\cdot B\\) existe y es \\(3\\times1\\), como \\(2C-D\\).</p>\\[\\begin{aligned}A\\cdot B&=\\begin{pmatrix}3&1\\\\ 1&3\\\\ 1&0\\end{pmatrix}\\begin{pmatrix}x\\\\y\\end{pmatrix}\\\\&=\\begin{pmatrix}3x+y\\\\x+3y\\\\x\\end{pmatrix}\\end{aligned}\\]\\[\\begin{aligned}2C-D&=2\\begin{pmatrix}1\\\\1\\\\0\\end{pmatrix}-\\begin{pmatrix}z\\\\z\\\\z\\end{pmatrix}\\\\&=\\begin{pmatrix}2-z\\\\2-z\\\\-z\\end{pmatrix}\\end{aligned}\\]<p>Dos matrices son iguales si lo son todos sus elementos<i class='n' data-t='th'>Dos matrices de la misma dimensión son iguales si y solo si coinciden elemento a elemento.</i>. Igualamos y pasamos las incógnitas al primer miembro:</p>\\[\\left\\{\\begin{array}{l}3x+y=2-z\\\\x+3y=2-z\\\\x=-z\\end{array}\\right.\\]\\[\\iff\\left\\{\\begin{array}{l}3x+y+z=2\\\\x+3y+z=2\\\\x+z=0\\end{array}\\right.\\]<p>Calculamos el determinante de la matriz de coeficientes por la regla de Sarrus:</p>\\[\\begin{aligned}|M|&=\\begin{vmatrix}3&1&1\\\\1&3&1\\\\1&0&1\\end{vmatrix}\\\\&=3\\cdot3\\cdot1+1\\cdot1\\cdot1+1\\cdot1\\cdot0\\\\&\\quad-\\big[1\\cdot3\\cdot1\\\\&\\quad+3\\cdot1\\cdot0+1\\cdot1\\cdot1\\big]\\\\&=6\\neq0\\end{aligned}\\]<p>Como \\(|M|\\neq0\\), \\(\\operatorname{rg}M=\\operatorname{rg}M^*=3=\\) número de incógnitas: por el teorema de Rouché-Frobenius el sistema es compatible determinado<i class='n' data-t='th'>Teorema de Rouché-Frobenius: el sistema es compatible si y solo si \\(\\operatorname{rg}A=\\operatorname{rg}A^*\\); si además ese rango es igual al número de incógnitas, la solución es única.</i>. Lo resolvemos por la regla de Cramer<i class='n' data-t='th'>Regla de Cramer: cada incógnita es el cociente entre el determinante que resulta de sustituir su columna por la de términos independientes y \\(|A|\\).</i>:</p>\\[\\begin{aligned}x&=\\frac{\\begin{vmatrix}2&1&1\\\\2&3&1\\\\0&0&1\\end{vmatrix}}{6}\\\\&=\\frac{4}{6}=\\frac{2}{3}\\end{aligned}\\]\\[\\begin{aligned}y&=\\frac{\\begin{vmatrix}3&2&1\\\\1&2&1\\\\1&0&1\\end{vmatrix}}{6}\\\\&=\\frac{4}{6}=\\frac{2}{3}\\end{aligned}\\]\\[\\begin{aligned}z&=\\frac{\\begin{vmatrix}3&1&2\\\\1&3&2\\\\1&0&0\\end{vmatrix}}{6}\\\\&=\\frac{-4}{6}=-\\frac{2}{3}\\end{aligned}\\]<i class='n' data-t='why'>Determinantes de los numeradores (regla de Sarrus):\\[\\begin{aligned}|M_x|&=6+0+0-\\left[0+0+2\\right]\\\\&=4\\end{aligned}\\]\\[\\begin{aligned}|M_y|&=6+2+0-\\left[2+0+2\\right]\\\\&=4\\end{aligned}\\]\\[\\begin{aligned}|M_z|&=0+2+0-\\left[6+0+0\\right]\\\\&=-4\\end{aligned}\\]</i><i class='n' data-t='tp'>Comprobación: \\(A\\cdot B=\\begin{pmatrix}2+\\frac23\\\\\\frac23+2\\\\\\frac23\\end{pmatrix}=\\begin{pmatrix}\\frac83\\\\\\frac83\\\\\\frac23\\end{pmatrix}\\) y \\(2C-D=\\begin{pmatrix}2+\\frac23\\\\2+\\frac23\\\\\\frac23\\end{pmatrix}\\) ✓.</i><div class='res'>\\(x=\\dfrac23,\\quad y=\\dfrac23,\\quad z=-\\dfrac23\\)</div></div>"
     }
    ],
    "clasificacion": [
@@ -77,9 +77,9 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "": "borrador"
+    "": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -110,7 +110,7 @@
     },
     {
      "titulo": "Apartado c",
-     "html": "<div class='ex'><p>La pendiente de la recta tangente en \\(x=a\\) es \\(f'(a)\\)<i class='n' data-t='th'>La pendiente de la recta tangente a la gráfica de \\(f\\) en \\(x=a\\) es \\(f'(a)\\).</i>. Buscamos dónde se anula la derivada:</p><p>• Si \\(x\\lt2\\): \\(f'(x)=3\\neq0\\).</p><p>• Si \\(x\\gt2\\): \\(f'(x)=2x-6=0\\iff x=3\\), que sí está en ese trozo.</p><p>En \\(x=2\\) no hay derivada, así que no hay recta tangente.<i class='n' data-t='err'>En un punto donde la función no es derivable no se puede hablar de la pendiente de la tangente.</i></p><p>El punto es \\((3,f(3))=(3,2)\\), y la tangente es horizontal: \\(y-2=0\\cdot(x-3)\\Rightarrow y=2\\).</p><div class='res'>Sí: en el punto \\((3,2)\\), el vértice de la parábola; allí la tangente es la recta \\(y=2\\)</div></div>"
+     "html": "<div class='ex'><p>La pendiente de la recta tangente en \\(x=a\\) es \\(f'(a)\\)<i class='n' data-t='th'>La pendiente de la recta tangente a la gráfica de \\(f\\) en \\(x=a\\) es \\(f'(a)\\).</i>. Buscamos dónde se anula la derivada:</p><p>• Si \\(x\\lt2\\): \\(f'(x)=3\\neq0\\).</p><p>• Si \\(x\\gt2\\): \\(f'(x)=2x-6=0\\iff x=3\\), que sí está en ese trozo.</p><p>En \\(x=2\\) no hay derivada, así que no hay recta tangente.<i class='n' data-t='err'>En un punto donde la función no es derivable no se puede hablar de la pendiente de la tangente.</i></p><p>El punto es \\((3,f(3))=(3,2)\\), y la tangente es horizontal: \\(y-2=0\\cdot(x-3)\\) \\(\\Rightarrow y=2\\).</p><div class='res'>Sí: en el punto \\((3,2)\\), el vértice de la parábola; allí la tangente es la recta \\(y=2\\)</div></div>"
     }
    ],
    "clasificacion": [
@@ -146,11 +146,11 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador",
-    "c": "borrador"
+    "a": "revisado",
+    "b": "revisado",
+    "c": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -202,11 +202,11 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador",
-    "c": "borrador"
+    "a": "revisado",
+    "b": "revisado",
+    "c": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -246,9 +246,9 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "": "borrador"
+    "": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -306,9 +306,9 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "": "borrador"
+    "": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -360,10 +360,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -415,10 +415,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -462,9 +462,9 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "": "borrador"
+    "": "revisado"
    },
    "dependencias": {
     "": [

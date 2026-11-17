@@ -82,7 +82,7 @@
    "solucion": [
     {
      "titulo": "Resolución",
-     "html": "<div class='ex'><p>Despejamos \\(X\\): \\(A\\cdot X-2B=C\\;\\Rightarrow\\;A\\cdot X=C+2B\\). Si \\(A\\) tiene inversa, \\(X=A^{-1}(C+2B)\\)<i class='n' data-t='why'>Se multiplica por \\(A^{-1}\\) por la izquierda, porque \\(A\\) está a la izquierda de \\(X\\) (el producto de matrices no es conmutativo).</i>.</p>\\[C+2B=\\begin{pmatrix}5\\\\3\\\\-1\\end{pmatrix}+\\begin{pmatrix}2\\\\-4\\\\8\\end{pmatrix}=\\begin{pmatrix}7\\\\-1\\\\7\\end{pmatrix}\\]<p>\\(A\\) tiene inversa si y solo si \\(|A|\\neq0\\)<i class='n' data-t='th'>Una matriz cuadrada es invertible si y solo si su determinante es distinto de 0.</i>:</p>\\[|A|=\\begin{vmatrix}0&-1&2\\\\1&0&1\\\\1&1&0\\end{vmatrix}=0+(-1)\\cdot1\\cdot1+2\\cdot1\\cdot1-(2\\cdot0\\cdot1+0\\cdot1\\cdot1+(-1)\\cdot1\\cdot0)=1\\neq0\\]\\[\\operatorname{Adj}A=\\begin{pmatrix}-1&1&1\\\\2&-2&-1\\\\-1&2&1\\end{pmatrix}\\;\\Rightarrow\\;A^{-1}=\\frac{1}{|A|}(\\operatorname{Adj}A)^t=\\begin{pmatrix}-1&2&-1\\\\1&-2&2\\\\1&-1&1\\end{pmatrix}\\]\\[X=A^{-1}(C+2B)=\\begin{pmatrix}-1&2&-1\\\\1&-2&2\\\\1&-1&1\\end{pmatrix}\\begin{pmatrix}7\\\\-1\\\\7\\end{pmatrix}=\\begin{pmatrix}-7-2-7\\\\7+2+14\\\\7+1+7\\end{pmatrix}=\\begin{pmatrix}-16\\\\23\\\\15\\end{pmatrix}\\]<i class='n' data-t='tp'>Comprobación: \\(A\\cdot X=\\begin{pmatrix}-23+30\\\\-16+15\\\\-16+23\\end{pmatrix}=\\begin{pmatrix}7\\\\-1\\\\7\\end{pmatrix}=C+2B\\).</i><div class='res'>\\(X=\\begin{pmatrix}-16\\\\23\\\\15\\end{pmatrix}\\)</div></div>"
+     "html": "<div class='ex'><p>Despejamos \\(X\\): \\(A\\cdot X-2B=C\\;\\) \\(\\Rightarrow\\;A\\cdot X=C+2B\\). Si \\(A\\) tiene inversa, \\(X=A^{-1}(C+2B)\\)<i class='n' data-t='why'>Se multiplica por \\(A^{-1}\\) por la izquierda, porque \\(A\\) está a la izquierda de \\(X\\) (el producto de matrices no es conmutativo).</i>.</p>\\[C+2B=\\begin{pmatrix}5\\\\3\\\\-1\\end{pmatrix}+\\begin{pmatrix}2\\\\-4\\\\8\\end{pmatrix}=\\begin{pmatrix}7\\\\-1\\\\7\\end{pmatrix}\\]<p>\\(A\\) tiene inversa si y solo si \\(|A|\\neq0\\)<i class='n' data-t='th'>Una matriz cuadrada es invertible si y solo si su determinante es distinto de 0.</i>:</p>\\[|A|=\\begin{vmatrix}0&-1&2\\\\1&0&1\\\\1&1&0\\end{vmatrix}=0+(-1)\\cdot1\\cdot1+2\\cdot1\\cdot1-(2\\cdot0\\cdot1+0\\cdot1\\cdot1+(-1)\\cdot1\\cdot0)=1\\neq0\\]\\[\\operatorname{Adj}A=\\begin{pmatrix}-1&1&1\\\\2&-2&-1\\\\-1&2&1\\end{pmatrix}\\;\\Rightarrow\\;A^{-1}=\\frac{1}{|A|}(\\operatorname{Adj}A)^t=\\begin{pmatrix}-1&2&-1\\\\1&-2&2\\\\1&-1&1\\end{pmatrix}\\]\\[X=A^{-1}(C+2B)=\\begin{pmatrix}-1&2&-1\\\\1&-2&2\\\\1&-1&1\\end{pmatrix}\\begin{pmatrix}7\\\\-1\\\\7\\end{pmatrix}=\\begin{pmatrix}-7-2-7\\\\7+2+14\\\\7+1+7\\end{pmatrix}=\\begin{pmatrix}-16\\\\23\\\\15\\end{pmatrix}\\]<i class='n' data-t='tp'>Comprobación: \\(A\\cdot X=\\begin{pmatrix}-23+30\\\\-16+15\\\\-16+23\\end{pmatrix}=\\begin{pmatrix}7\\\\-1\\\\7\\end{pmatrix}=C+2B\\).</i><div class='res'>\\(X=\\begin{pmatrix}-16\\\\23\\\\15\\end{pmatrix}\\)</div></div>"
     }
    ],
    "clasificacion": [
@@ -162,7 +162,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision",
+   "revision": "revisado",
    "revision_apartados": {
     "a": "revisado",
     "b": "revisado"
@@ -216,7 +216,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision",
+   "revision": "revisado",
    "revision_apartados": {
     "a": "revisado",
     "b": "revisado"
@@ -299,7 +299,7 @@
     },
     {
      "titulo": "Apartado b",
-     "html": "<div class='ex'><p>Hallamos sus vértices:</p><ul><li>\\(O:\\;\\left\\{\\begin{array}{l}x=0\\\\x-y=0\\end{array}\\right.\\Rightarrow\\boxed{O(0,0)}\\)</li><li>\\(A:\\;\\left\\{\\begin{array}{l}x-y=0\\\\x+y=9\\end{array}\\right.\\Rightarrow2x=9\\Rightarrow\\boxed{A(4{,}5;\\,4{,}5)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}x+y=9\\\\x+2y=16\\end{array}\\right.\\Rightarrow y=7,\\;x=2\\Rightarrow\\boxed{B(2,7)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}x=0\\\\x+2y=16\\end{array}\\right.\\Rightarrow\\boxed{C(0,8)}\\)</li></ul><div class='res'>Vértices: \\(O(0,0)\\), \\(A(4{,}5;\\,4{,}5)\\), \\(B(2,7)\\) y \\(C(0,8)\\)</div></div>"
+     "html": "<div class='ex'><p>Hallamos sus vértices:</p><ul><li>\\(O:\\;\\left\\{\\begin{array}{l}x=0\\\\x-y=0\\end{array}\\right.\\) \\(\\Rightarrow\\boxed{O(0,0)}\\)</li><li>\\(A:\\;\\left\\{\\begin{array}{l}x-y=0\\\\x+y=9\\end{array}\\right.\\) \\(\\Rightarrow2x=9\\) \\(\\Rightarrow\\boxed{A(4{,}5;\\,4{,}5)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}x+y=9\\\\x+2y=16\\end{array}\\right.\\) \\(\\Rightarrow y=7,\\;x=2\\) \\(\\Rightarrow\\boxed{B(2,7)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}x=0\\\\x+2y=16\\end{array}\\right.\\) \\(\\Rightarrow\\boxed{C(0,8)}\\)</li></ul><div class='res'>Vértices: \\(O(0,0)\\), \\(A(4{,}5;\\,4{,}5)\\), \\(B(2,7)\\) y \\(C(0,8)\\)</div></div>"
     },
     {
      "titulo": "Apartado c",
@@ -339,7 +339,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision",
+   "revision": "revisado",
    "revision_apartados": {
     "a": "revisado",
     "b": "revisado",
@@ -405,7 +405,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision",
+   "revision": "revisado",
    "revision_apartados": {
     "a": "revisado",
     "b": "revisado",
@@ -462,7 +462,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision",
+   "revision": "revisado",
    "revision_apartados": {
     "a": "revisado",
     "b": "revisado"

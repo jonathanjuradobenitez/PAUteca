@@ -21,11 +21,11 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>Sean \\(x\\) el número mayor, \\(y\\) el intermedio y \\(z\\) el menor.<i class='n' data-t='th'>Algoritmo de la división: \\(D=d\\cdot q+r\\) con \\(0\\le r\\lt d\\). Cada división da una ecuación.</i></p>\\[\\begin{cases}x+y+z=113\\\\x=6z+4\\\\x=2y+6\\end{cases}\\iff\\begin{cases}x+y+z=113\\\\x-6z=4\\\\x-2y=6\\end{cases}\\]<p>Despejo: \\(y=\\dfrac{x-6}{2}\\) y \\(z=\\dfrac{x-4}{6}\\). En la primera: \\(x+\\dfrac{x-6}2+\\dfrac{x-4}6\\) \\(=113\\) \\(\\Rightarrow6x+3x-18+x-4\\) \\(=678\\Rightarrow10x=700\\) \\(\\Rightarrow x=70\\).</p><p>Entonces \\(y=32\\) y \\(z=11\\).<i class='n' data-t='tp'>Comprueba las divisiones y los restos: \\(70=6\\cdot11+4\\) (resto \\(4\\lt11\\)) y \\(70=2\\cdot32+6\\) (resto \\(6\\lt32\\)).</i></p><div class='res'>Los números son 70, 32 y 11</div></div>"
+     "html": "<div class='ex'><p>Sean \\(x\\) el número mayor, \\(y\\) el intermedio y \\(z\\) el menor.<i class='n' data-t='th'>Algoritmo de la división: \\(D=d\\cdot q+r\\) con \\(0\\le r\\lt d\\). Cada división da una ecuación.</i></p>\\[\\begin{cases}x+y+z=113\\\\x=6z+4\\\\x=2y+6\\end{cases}\\]\\[\\iff\\begin{cases}x+y+z=113\\\\x-6z=4\\\\x-2y=6\\end{cases}\\]<p>Calculo el determinante de la matriz de coeficientes por la regla de Sarrus:</p>\\[\\begin{aligned}|A|&=\\begin{vmatrix}1&1&1\\\\1&0&-6\\\\1&-2&0\\end{vmatrix}\\\\&=1\\cdot0\\cdot0+1\\cdot(-6)\\cdot1\\\\&\\quad+1\\cdot1\\cdot(-2)\\\\&\\quad-\\big[1\\cdot0\\cdot1\\\\&\\quad+1\\cdot(-6)\\cdot(-2)\\\\&\\quad+1\\cdot1\\cdot0\\big]=-20\\end{aligned}\\]<p>Como \\(|A|\\neq0\\), \\(\\operatorname{rg}A=\\operatorname{rg}A^*=3\\) = n.º de incógnitas: el sistema es compatible determinado<i class='n' data-t='th'>Teorema de Rouché-Frobenius: el sistema es compatible si y solo si \\(\\operatorname{rg}A=\\operatorname{rg}A^*\\); si además ese rango es igual al número de incógnitas, la solución es única.</i>. Lo resuelvo por la regla de Cramer<i class='n' data-t='th'>Regla de Cramer: cada incógnita es el cociente entre el determinante que resulta de sustituir su columna por la de términos independientes y \\(|A|\\).</i>:</p>\\[\\begin{aligned}x&=\\frac{\\begin{vmatrix}113&1&1\\\\4&0&-6\\\\6&-2&0\\end{vmatrix}}{-20}\\\\&=\\frac{-1400}{-20}=70\\end{aligned}\\]\\[\\begin{aligned}y&=\\frac{\\begin{vmatrix}1&113&1\\\\1&4&-6\\\\1&6&0\\end{vmatrix}}{-20}\\\\&=\\frac{-640}{-20}=32\\end{aligned}\\]\\[\\begin{aligned}z&=\\frac{\\begin{vmatrix}1&1&113\\\\1&0&4\\\\1&-2&6\\end{vmatrix}}{-20}\\\\&=\\frac{-220}{-20}=11\\end{aligned}\\]<i class='n' data-t='why'>Determinantes de los numeradores (regla de Sarrus):\\[\\begin{aligned}|A_x|&=0-36-8\\\\&\\quad -\\left[0+1356+0\\right]\\\\&=-1400\\end{aligned}\\]\\[\\begin{aligned}|A_y|&=0-678+6-\\left[4-36+0\\right]\\\\&=-640\\end{aligned}\\]\\[\\begin{aligned}|A_z|&=0+4-226-\\left[0-8+6\\right]\\\\&=-220\\end{aligned}\\]</i><i class='n' data-t='tp'>Comprueba las divisiones y los restos: \\(70=6\\cdot11+4\\) (resto \\(4\\lt11\\)) y \\(70=2\\cdot32+6\\) (resto \\(6\\lt32\\)).</i><div class='res'>Los números son 70, 32 y 11</div></div>"
     },
     {
      "titulo": "Apartado b",
-     "html": "<div class='ex'><p>\\(A+B=\\begin{pmatrix}1&0\\\\4&4\\end{pmatrix}\\), con \\(|A+B|=4\\neq0\\):</p>\\[(A+B)^{-1}=\\frac14\\begin{pmatrix}4&0\\\\-4&1\\end{pmatrix}\\]\\[=\\begin{pmatrix}1&0\\\\-1&\\frac14\\end{pmatrix}\\]<p>\\(|A|=5\\) y \\(|B|=-2\\): \\(A^{-1}=\\dfrac15\\begin{pmatrix}3&1\\\\-2&1\\end{pmatrix}\\), \\(B^{-1}=-\\dfrac12\\begin{pmatrix}1&-1\\\\-2&0\\end{pmatrix}=\\begin{pmatrix}-\\frac12&\\frac12\\\\1&0\\end{pmatrix}\\).<i class='n' data-t='th'>Inversa de una matriz \\(2\\times2\\): \\(\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}^{-1}=\\dfrac1{ad-bc}\\begin{pmatrix}d&-b\\\\-c&a\\end{pmatrix}\\).</i></p>\\[A^{-1}+B^{-1}\\]\\[=\\begin{pmatrix}\\frac35-\\frac12&\\frac15+\\frac12\\\\-\\frac25+1&\\frac15\\end{pmatrix}\\]\\[=\\begin{pmatrix}\\frac1{10}&\\frac7{10}\\\\\\frac35&\\frac15\\end{pmatrix}\\neq(A+B)^{-1}\\]<div class='res'>No coinciden: \\((A+B)^{-1}\\) \\(\\neq A^{-1}+B^{-1}\\)</div><i class='n' data-t='why'>En general la inversa de una suma no es la suma de las inversas (la inversión no es lineal).</i></div>"
+     "html": "<div class='ex'><p>\\(A+B=\\begin{pmatrix}1&0\\\\4&4\\end{pmatrix}\\), con \\(|A+B|=4\\neq0\\):</p>\\[(A+B)^{-1}=\\frac14\\begin{pmatrix}4&0\\\\-4&1\\end{pmatrix}\\]\\[=\\begin{pmatrix}1&0\\\\-1&\\frac14\\end{pmatrix}\\]<p>\\(|A|=5\\) y \\(|B|=-2\\): \\(A^{-1}=\\dfrac15\\begin{pmatrix}3&1\\\\-2&1\\end{pmatrix}\\),\\[\\begin{aligned}B^{-1}&=-\\dfrac12\\begin{pmatrix}1&-1\\\\-2&0\\end{pmatrix}\\\\&=\\begin{pmatrix}-\\frac12&\\frac12\\\\1&0\\end{pmatrix}\\end{aligned}\\].<i class='n' data-t='th'>Inversa de una matriz \\(2\\times2\\): \\(\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}^{-1}=\\dfrac1{ad-bc}\\begin{pmatrix}d&-b\\\\-c&a\\end{pmatrix}\\).</i></p>\\[A^{-1}+B^{-1}\\]\\[=\\begin{pmatrix}\\frac35-\\frac12&\\frac15+\\frac12\\\\-\\frac25+1&\\frac15\\end{pmatrix}\\]\\[=\\begin{pmatrix}\\frac1{10}&\\frac7{10}\\\\\\frac35&\\frac15\\end{pmatrix}\\neq(A+B)^{-1}\\]<div class='res'>No coinciden: \\((A+B)^{-1}\\) \\(\\neq A^{-1}+B^{-1}\\)</div><i class='n' data-t='why'>En general la inversa de una suma no es la suma de las inversas (la inversión no es lineal).</i></div>"
     }
    ],
    "clasificacion": [
@@ -50,7 +50,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2025-reserva-4-2",
@@ -64,15 +64,15 @@
    "solucion": [
     {
      "titulo": "Planteamiento",
-     "html": "<div class='ex'><p>Sean \\(x\\) los kg del abono \\(A\\) e \\(y\\) los kg del abono \\(B\\).</p><table class='tb'><tr><th>Variables</th><th>Beneficio (€/kg)</th></tr><tr><td>\\(x\\): kg de \\(A\\)</td><td>15</td></tr><tr><td>\\(y\\): kg de \\(B\\)</td><td>10</td></tr></table>\\[\\begin{cases}x\\le200\\\\2y-3x\\le100\\\\x+2y\\le500\\\\x\\ge0,\\ y\\ge0\\end{cases}\\qquad B(x,y)=15x+10y\\]<i class='n' data-t='tp'>Traduce frase a frase: «no puede superar» \\(\\Rightarrow\\le\\); «doble de \\(B\\) menos triple de \\(A\\)» \\(\\Rightarrow2y-3x\\); «como mucho» \\(\\Rightarrow\\le\\).</i></div>"
+     "html": "<div class='ex'><p>Sean \\(x\\) los kg del abono \\(A\\) e \\(y\\) los kg del abono \\(B\\).</p><table class='tb'><tr><th>Variables</th><th>Beneficio (€/kg)</th></tr><tr><td>\\(x\\): kg de \\(A\\)</td><td>15</td></tr><tr><td>\\(y\\): kg de \\(B\\)</td><td>10</td></tr></table>\\[\\begin{cases}x\\le200\\\\2y-3x\\le100\\\\x+2y\\le500\\\\x\\ge0,\\ y\\ge0\\end{cases}\\qquad F(x,y)=15x+10y\\]<i class='n' data-t='tp'>Traduce frase a frase: «no puede superar» \\(\\Rightarrow\\le\\); «doble de \\(B\\) menos triple de \\(A\\)» \\(\\Rightarrow2y-3x\\); «como mucho» \\(\\Rightarrow\\le\\).</i></div>"
     },
     {
      "titulo": "Región factible y vértices",
-     "html": "<div class='ex'><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(-3x+2y=100\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(100\\)</td></tr><tr><th>\\(y\\)</th><td>\\(50\\)</td><td>\\(200\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(x+2y=500\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(500\\)</td></tr><tr><th>\\(y\\)</th><td>\\(250\\)</td><td>\\(0\\)</td></tr></table><p>\\(x=200\\) es una recta vertical, paralela al eje de ordenadas.</p><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(x\\le200\\): con el origen, \\(0\\le200\\) se cumple → semiplano que lo contiene.</li><li>\\(-3x+2y\\le100\\): con el origen, \\(0\\le100\\) se cumple → semiplano que lo contiene.</li><li>\\(x+2y\\le500\\): con el origen, \\(0\\le500\\) se cumple → semiplano que lo contiene.</li></ul><p>Además, \\(x\\ge0\\) y \\(y\\ge0\\) limitan la región al primer cuadrante.</p><div style='overflow-x:auto'><svg viewBox='0 0 300 265' width='100%' style='max-width:380px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='30,230 250,230 250,80 140,30 30,180' fill='#b9a4f5' fill-opacity='.5' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M20 230H290M30 240V10'/></g><g><text x='284' y='226'>x</text><text x='36' y='14'>y</text><text x='6' y='246' font-weight='700'>O(0,0)</text><text x='222' y='246' font-weight='700'>A(200,0)</text><text x='212' y='76' font-weight='700'>B(200,150)</text><text x='96' y='24' font-weight='700'>C(100,200)</text><text x='36' y='176' font-weight='700'>D(0,50)</text><text x='4' y='260' font-size='10'>r₁: x=200 · r₂: 2y−3x=100 · r₃: x+2y=500</text></g></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(O:\\;\\left\\{\\begin{array}{l}x=0\\\\y=0\\end{array}\\right.\\Rightarrow \\boxed{O(0,0)}\\)</li><li>\\(A:\\;\\left\\{\\begin{array}{l}x=200\\\\y=0\\end{array}\\right.\\Rightarrow \\boxed{A(200,0)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}x=200\\\\x+2y=500\\end{array}\\right.\\Rightarrow y=150\\Rightarrow \\boxed{B(200,150)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}-3x+2y=100\\\\x+2y=500\\end{array}\\right.\\Rightarrow x=-2y+500\\Rightarrow -3(-2y+500)+2y=100\\Rightarrow y=200,\\ x=100\\Rightarrow \\boxed{C(100,200)}\\)</li><li>\\(D:\\;\\left\\{\\begin{array}{l}-3x+2y=100\\\\x=0\\end{array}\\right.\\Rightarrow y=50\\Rightarrow \\boxed{D(0,50)}\\)</li></ul></div>"
+     "html": "<div class='ex'><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(-3x+2y=100\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(100\\)</td></tr><tr><th>\\(y\\)</th><td>\\(50\\)</td><td>\\(200\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(x+2y=500\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(500\\)</td></tr><tr><th>\\(y\\)</th><td>\\(250\\)</td><td>\\(0\\)</td></tr></table><p>\\(x=200\\) es una recta vertical, paralela al eje de ordenadas.</p><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(x\\le200\\): con el origen, \\(0\\le200\\) se cumple → semiplano que lo contiene.</li><li>\\(-3x+2y\\le100\\): con el origen, \\(0\\le100\\) se cumple → semiplano que lo contiene.</li><li>\\(x+2y\\le500\\): con el origen, \\(0\\le500\\) se cumple → semiplano que lo contiene.</li></ul><p>Además, \\(x\\ge0\\) y \\(y\\ge0\\) limitan la región al primer cuadrante.</p><div style='overflow-x:auto'><svg viewBox='0 0 420 300' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><line x1='67.3' y1='266.0' x2='67.3' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='136.6' y1='266.0' x2='136.6' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='205.8' y1='266.0' x2='205.8' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='275.1' y1='266.0' x2='275.1' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='344.4' y1='266.0' x2='344.4' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='244.6' x2='386.0' y2='244.6' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='200.0' x2='386.0' y2='200.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='155.4' x2='386.0' y2='155.4' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='110.7' x2='386.0' y2='110.7' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='66.1' x2='386.0' y2='66.1' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='244.6' x2='386.0' y2='244.6' stroke='#111' stroke-width='1.3'/><line x1='67.3' y1='266.0' x2='67.3' y2='34.0' stroke='#111' stroke-width='1.3'/><text x='136.6' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>50</text><text x='205.8' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>100</text><text x='275.1' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>150</text><text x='344.4' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>200</text><text x='63.3' y='203.0' font-size='10' text-anchor='end' fill='#374151'>50</text><text x='63.3' y='158.4' font-size='10' text-anchor='end' fill='#374151'>100</text><text x='63.3' y='113.7' font-size='10' text-anchor='end' fill='#374151'>150</text><text x='63.3' y='69.1' font-size='10' text-anchor='end' fill='#374151'>200</text><text x='384.0' y='239.6' font-size='11' text-anchor='end' font-style='italic'>x</text><text x='72.3' y='44.0' font-size='11' font-style='italic'>y</text><polygon points='67.3,244.6 344.4,244.6 344.4,110.7 205.8,66.1 67.3,200.0' fill='#fcd34d' fill-opacity='0.55' stroke='none'/><line x1='344.4' y1='266.0' x2='344.4' y2='34.0' stroke='#b45309' stroke-width='2'/><text x='339.4' y='52.2' font-size='10' fill='#b45309' text-anchor='end'>r₁: x=200</text><line x1='386.0' y1='124.1' x2='106.1' y2='34.0' stroke='#2563eb' stroke-width='2'/><text x='139.1' y='38.0' font-size='10' fill='#2563eb' text-anchor='start'>r₃: x+2y=500</text><line x1='34.0' y1='232.1' x2='239.1' y2='34.0' stroke='#16a34a' stroke-width='2'/><text x='141.6' y='128.0' font-size='10' fill='#16a34a' text-anchor='start'>r₂: 3x−2y=−100</text><text x='205.8' y='178.2' font-size='15' fill='#92400e' text-anchor='middle' font-weight='bold'>R</text><circle cx='67.3' cy='244.6' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='60.3' y='259.6' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>O</text><circle cx='344.4' cy='244.6' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='351.4' y='259.6' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>A</text><circle cx='344.4' cy='110.7' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='351.4' y='103.7' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>B</text><circle cx='205.8' cy='66.1' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='212.8' y='59.1' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>C</text><circle cx='67.3' cy='200.0' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='60.3' y='215.0' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>D</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(O:\\;\\left\\{\\begin{array}{l}x=0\\\\y=0\\end{array}\\right.\\) \\(\\Rightarrow \\boxed{O(0,0)}\\)</li><li>\\(A:\\;\\left\\{\\begin{array}{l}x=200\\\\y=0\\end{array}\\right.\\) \\(\\Rightarrow \\boxed{A(200,0)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}x=200\\\\x+2y=500\\end{array}\\right.\\) \\(\\Rightarrow y=150\\) \\(\\Rightarrow \\boxed{B(200,150)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}-3x+2y=100\\\\x+2y=500\\end{array}\\right.\\) \\(\\Rightarrow x=-2y+500\\) \\(\\Rightarrow -3(-2y+500)+2y=100\\) \\(\\Rightarrow y=200,\\ x=100\\) \\(\\Rightarrow \\boxed{C(100,200)}\\)</li><li>\\(D:\\;\\left\\{\\begin{array}{l}-3x+2y=100\\\\x=0\\end{array}\\right.\\) \\(\\Rightarrow y=50\\) \\(\\Rightarrow \\boxed{D(0,50)}\\)</li></ul></div>"
     },
     {
      "titulo": "Optimización",
-     "html": "<div class='ex'><p>La función \\(B\\) alcanza sus extremos en el recinto, en puntos de su frontera; evaluamos, por tanto, \\(B\\) en los vértices<i class='n' data-t='th'>Teorema fundamental de la programación lineal: si la región factible es un polígono convexo y acotado, la función objetivo alcanza su máximo y su mínimo en alguno de sus vértices.</i>:</p>\\[\\begin{aligned}&O:\\\\ B(0,0)&=15\\cdot0+10\\cdot0\\\\&=0\\end{aligned}\\]\\[\\begin{aligned}&A:\\\\& B(200,0)\\\\&=15\\cdot200+10\\cdot0=3000\\end{aligned}\\]\\[\\begin{aligned}&B:\\\\& B(200,150)\\\\&=15\\cdot200+10\\cdot150\\\\&=4500\\end{aligned}\\]\\[\\begin{aligned}&C:\\\\& B(100,200)\\\\&=15\\cdot100+10\\cdot200\\\\&=3500\\end{aligned}\\]\\[\\begin{aligned}&D:\\\\ B(0,50)&=15\\cdot0+10\\cdot50\\\\&=500\\end{aligned}\\]<p>\\(B\\) alcanza un máximo en \\(B(200,150)\\) de valor \\(4500\\).</p><div class='res'>El máximo beneficio es 4500 € y se obtiene produciendo 200 kg del abono \\(A\\) y 150 kg del abono \\(B\\)</div></div>"
+     "html": "<div class='ex'><p>La función \\(F\\) alcanza sus extremos en el recinto, en puntos de su frontera; evaluamos, por tanto, \\(F\\) en los vértices<i class='n' data-t='th'>Teorema fundamental de la programación lineal: si la región factible es un polígono convexo y acotado, la función objetivo alcanza su máximo y su mínimo en alguno de sus vértices.</i>:</p>\\[\\begin{aligned}&O:\\\\ F(0,0)&=15\\cdot0+10\\cdot0\\\\&=0\\end{aligned}\\]\\[\\begin{aligned}&A:\\\\& F(200,0)\\\\&=15\\cdot200+10\\cdot0=3000\\end{aligned}\\]\\[\\begin{aligned}&B:\\\\& F(200,150)\\\\&=15\\cdot200+10\\cdot150\\\\&=4500\\end{aligned}\\]\\[\\begin{aligned}&C:\\\\& F(100,200)\\\\&=15\\cdot100+10\\cdot200\\\\&=3500\\end{aligned}\\]\\[\\begin{aligned}&D:\\\\ F(0,50)&=15\\cdot0+10\\cdot50\\\\&=500\\end{aligned}\\]<p>\\(F\\) alcanza un máximo en \\(B(200,150)\\) de valor \\(4500\\).</p><div class='res'>El máximo beneficio es 4500 € y se obtiene produciendo 200 kg del abono \\(A\\) y 150 kg del abono \\(B\\)</div></div>"
     }
    ],
    "clasificacion": [
@@ -97,7 +97,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2025-reserva-4-3",
@@ -148,7 +148,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2025-reserva-4-4",
@@ -193,7 +193,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2025-reserva-4-5",
@@ -253,7 +253,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2025-reserva-4-6",
@@ -313,7 +313,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2025-reserva-4-7",
@@ -368,7 +368,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   }
  ]
 }

@@ -34,7 +34,7 @@
     "criterio": "regla general fijada por el autor: año y convocatoria del nombre del archivo; un PDF con las dos opciones es el examen completo",
     "incidencias": []
    },
-   "revision": "borrador"
+   "revision": "revisado"
   }
  ],
  "ejercicios": [
@@ -90,9 +90,9 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "": "borrador"
+    "": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -149,10 +149,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -208,10 +208,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -267,10 +267,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {
     "a": [
@@ -305,7 +305,7 @@
     },
     {
      "titulo": "Apartado b",
-     "html": "<div class='ex'><p>Desarrollamos el determinante por la regla de Sarrus:</p>\\[\\begin{vmatrix}1&3&-5\\\\4&2+x&x\\\\-1&1&-3\\end{vmatrix}\\]\\[=1\\cdot(2+x)(-3)+3\\cdot x\\cdot(-1)+(-5)\\cdot4\\cdot1-\\left[(-5)(2+x)(-1)+1\\cdot x\\cdot1+3\\cdot4\\cdot(-3)\\right]\\]\\[=-6-3x-3x-20-\\left[10+5x+x-36\\right]=-26-6x-6x+26=-12x\\]\\[-12x=0\\iff x=0\\]<i class='n' data-t='tp'>Comprobación: para \\(x=0\\) la segunda fila es \\((4,2,0)\\), y el determinante vale \\(1\\cdot(-6)-3\\cdot(-12)+(-5)\\cdot6=-6+36-30=0\\) ✓.</i><div class='res'>\\(x=0\\)</div></div>"
+     "html": "<div class='ex'><p>Desarrollamos el determinante por la regla de Sarrus:</p>\\[\\begin{vmatrix}1&3&-5\\\\4&2+x&x\\\\-1&1&-3\\end{vmatrix}\\]\\[\\begin{aligned}&=1\\cdot(2+x)(-3)\\\\&\\quad+3\\cdot x\\cdot(-1)\\\\&\\quad+(-5)\\cdot4\\cdot1\\\\&\\quad-\\big[(-5)(2+x)(-1)\\\\&\\quad+1\\cdot x\\cdot1\\\\&\\quad+3\\cdot4\\cdot(-3)\\big]\\end{aligned}\\]\\[\\begin{aligned}&=-6-3x-3x-20\\\\&\\quad-\\left[10+5x+x-36\\right]\\\\&=-26-6x-6x+26\\\\&=-12x\\end{aligned}\\]\\[-12x=0\\iff x=0\\]<i class='n' data-t='tp'>Comprobación: para \\(x=0\\) la segunda fila es \\((4,2,0)\\), y el determinante vale\\[\\begin{aligned}&1\\cdot(-6)-3\\cdot(-12)+(-5)\\cdot6\\\\&=-6+36-30=0\\end{aligned}\\] ✓.</i><div class='res'>\\(x=0\\)</div></div>"
     }
    ],
    "clasificacion": [
@@ -331,10 +331,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -391,10 +391,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -441,10 +441,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -500,10 +500,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {
     "a": [

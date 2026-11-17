@@ -27,7 +27,7 @@
     },
     {
      "titulo": "Apartado b",
-     "html": "<div class='ex'><p>Aquí \\(A\\) es \\(3\\times2\\), así que \\(A^t\\cdot A\\) es \\(2\\times2\\):</p>\\[A^t\\cdot A=\\begin{pmatrix}1&1&1\\\\1&-1&1\\end{pmatrix}\\begin{pmatrix}1&1\\\\1&-1\\\\1&1\\end{pmatrix}\\]\\[=\\begin{pmatrix}3&1\\\\1&3\\end{pmatrix}\\]<p>Una matriz cuadrada tiene inversa si y solo si su determinante es distinto de 0<i class='n' data-t='th'>Si \\(|M|\\neq0\\), \\(M^{-1}=\\dfrac1{|M|}\\operatorname{Adj}(M)^t\\).</i>.</p>\\[|A^tA|=\\begin{vmatrix}3&1\\\\1&3\\end{vmatrix}=9-1\\]\\[=8\\neq0\\]<p>Así que \\(A^tA\\) tiene inversa, y de \\((A^tA)\\cdot X=I_2\\) se obtiene \\(X=(A^tA)^{-1}\\)<i class='n' data-t='why'>Se multiplica por la izquierda por \\((A^tA)^{-1}\\) en los dos miembros: \\((A^tA)^{-1}(A^tA)X=(A^tA)^{-1}I\\Rightarrow X=(A^tA)^{-1}\\). El orden importa, porque el producto de matrices no es conmutativo.</i>:</p>\\[X=\\frac18\\begin{pmatrix}3&-1\\\\-1&3\\end{pmatrix}\\]<div class='res'>\\(X=\\dfrac18\\begin{pmatrix}3&-1\\\\-1&3\\end{pmatrix}\\)</div></div>"
+     "html": "<div class='ex'><p>Aquí \\(A\\) es \\(3\\times2\\), así que \\(A^t\\cdot A\\) es \\(2\\times2\\):</p>\\[A^t\\cdot A=\\begin{pmatrix}1&1&1\\\\1&-1&1\\end{pmatrix}\\begin{pmatrix}1&1\\\\1&-1\\\\1&1\\end{pmatrix}\\]\\[=\\begin{pmatrix}3&1\\\\1&3\\end{pmatrix}\\]<p>Una matriz cuadrada tiene inversa si y solo si su determinante es distinto de 0<i class='n' data-t='th'>Si \\(|M|\\neq0\\), \\(M^{-1}=\\dfrac1{|M|}\\operatorname{Adj}(M)^t\\).</i>.</p>\\[|A^tA|=\\begin{vmatrix}3&1\\\\1&3\\end{vmatrix}=9-1\\]\\[=8\\neq0\\]<p>Así que \\(A^tA\\) tiene inversa, y de \\((A^tA)\\cdot X=I_2\\) se obtiene \\(X=(A^tA)^{-1}\\)<i class='n' data-t='why'>Se multiplica por la izquierda por \\((A^tA)^{-1}\\) en los dos miembros: \\((A^tA)^{-1}(A^tA)X=(A^tA)^{-1}I\\) \\(\\Rightarrow X=(A^tA)^{-1}\\). El orden importa, porque el producto de matrices no es conmutativo.</i>:</p>\\[X=\\frac18\\begin{pmatrix}3&-1\\\\-1&3\\end{pmatrix}\\]<div class='res'>\\(X=\\dfrac18\\begin{pmatrix}3&-1\\\\-1&3\\end{pmatrix}\\)</div></div>"
     },
     {
      "titulo": "Apartado c",
@@ -51,7 +51,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2016-reserva-3-2",
@@ -69,7 +69,7 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>Los dos trozos son polinomios. Imponemos continuidad en \\(x=2\\)<i class='n' data-t='th'>\\(f\\) es continua en \\(a\\) si existen \\(f(a)\\) y \\(\\lim_{x\\to a}f(x)\\) y son iguales; para eso los dos límites laterales deben coincidir con \\(f(a)\\).</i>:</p>\\[\\frac4a+1=-2+a\\iff4+a=a^2-2a\\iff a^2-3a-4=0\\iff a=4\\ \\text{o}\\ a=-1\\]<p>Como \\(a\\gt0\\), \\(a=4\\). Derivadas laterales con \\(a=4\\)<i class='n' data-t='th'>\\(f\\) es derivable en \\(a\\) si es continua en \\(a\\) y las derivadas laterales existen y coinciden.</i>: \\(f'(x)=\\frac x2\\Rightarrow f'(2^-)=1\\); \\(f'(x)=-1\\Rightarrow f'(2^+)=-1\\).</p><div class='res'>\\(a=4\\). Con ese valor no es derivable en \\(x=2\\) (punto anguloso), aunque sí en el resto</div></div>"
+     "html": "<div class='ex'><p>Los dos trozos son polinomios. Imponemos continuidad en \\(x=2\\)<i class='n' data-t='th'>\\(f\\) es continua en \\(a\\) si existen \\(f(a)\\) y \\(\\lim_{x\\to a}f(x)\\) y son iguales; para eso los dos límites laterales deben coincidir con \\(f(a)\\).</i>:</p>\\[\\frac4a+1=-2+a\\iff4+a=a^2-2a\\iff a^2-3a-4=0\\iff a=4\\ \\text{o}\\ a=-1\\]<p>Como \\(a\\gt0\\), \\(a=4\\). Derivadas laterales con \\(a=4\\)<i class='n' data-t='th'>\\(f\\) es derivable en \\(a\\) si es continua en \\(a\\) y las derivadas laterales existen y coinciden.</i>: \\(f'(x)=\\frac x2\\) \\(\\Rightarrow f'(2^-)=1\\); \\(f'(x)=-1\\) \\(\\Rightarrow f'(2^+)=-1\\).</p><div class='res'>\\(a=4\\). Con ese valor no es derivable en \\(x=2\\) (punto anguloso), aunque sí en el resto</div></div>"
     },
     {
      "titulo": "Apartado b",
@@ -144,7 +144,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2016-reserva-3-4",
@@ -190,7 +190,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2016-reserva-3-5",
@@ -232,7 +232,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2016-reserva-3-6",
@@ -274,7 +274,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2016-reserva-3-7",
@@ -320,7 +320,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2016-reserva-3-8",

@@ -35,7 +35,7 @@
     "criterio": "regla general fijada por el autor: año y convocatoria del nombre del archivo; un PDF con las dos opciones es el examen completo",
     "incidencias": []
    },
-   "revision": "borrador"
+   "revision": "revisado"
   }
  ],
  "ejercicios": [
@@ -55,11 +55,11 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'>\\[A=\\begin{pmatrix}1&1&1\\\\ 2&3&-1\\\\ 4&5&1\\end{pmatrix}\\]\\[A^*=\\left(\\begin{array}{ccc|c}1&1&1&0\\\\ 2&3&-1&17\\\\ 4&5&1&17\\end{array}\\right)\\]<p>Calculamos \\(|A|\\) por la regla de Sarrus:</p>\\[|A|=1\\cdot3\\cdot1+1\\cdot(-1)\\cdot4+1\\cdot2\\cdot5-\\left[1\\cdot3\\cdot4+1\\cdot(-1)\\cdot5+1\\cdot2\\cdot1\\right]=0\\]<p>Tomamos un menor de orden 2: \\(\\begin{vmatrix}1&1\\\\ 2&3\\end{vmatrix}=1\\neq0\\), así que \\(\\operatorname{rg}A=2\\).</p><p>Los menores de orden 3 de \\(A^*\\) que contienen ese menor son \\(|A|=0\\) y</p>\\[\\begin{vmatrix}1&1&0\\\\ 2&3&17\\\\ 4&5&17\\end{vmatrix}=1\\cdot3\\cdot17+1\\cdot17\\cdot4+0\\cdot2\\cdot5-\\left[0\\cdot3\\cdot4+1\\cdot17\\cdot5+1\\cdot2\\cdot17\\right]=0\\]<p>Así que \\(\\operatorname{rg}A^*=2=\\operatorname{rg}A\\lt3\\): el sistema es compatible indeterminado<i class='n' data-t='th'>Teorema de Rouché-Frobenius: el sistema es compatible si y solo si \\(\\operatorname{rg}A=\\operatorname{rg}A^*\\); si ese rango es menor que el número de incógnitas, es compatible indeterminado.</i>. Las dos primeras ecuaciones son independientes; eliminamos la tercera y tomamos \\(z=\\lambda\\):</p>\\[\\left\\{\\begin{array}{l}x+y=-\\lambda\\\\ 2x+3y=17+\\lambda\\end{array}\\right.\\]<p>Restando a la segunda el doble de la primera: \\(y=17+3\\lambda\\); y entonces \\(x=-\\lambda-y=-17-4\\lambda\\).</p><i class='n' data-t='tp'>Comprobación en la tercera ecuación: \\(4(-17-4\\lambda)+5(17+3\\lambda)+\\lambda=-68-16\\lambda+85+15\\lambda+\\lambda=17\\) ✓.</i><div class='res'>Sistema compatible indeterminado: \\((x,y,z)=(-17-4\\lambda,\\ 17+3\\lambda,\\ \\lambda)\\), con \\(\\lambda\\in\\mathbb R\\)</div></div>"
+     "html": "<div class='ex'>\\[A=\\begin{pmatrix}1&1&1\\\\ 2&3&-1\\\\ 4&5&1\\end{pmatrix}\\]\\[A^*=\\left(\\begin{array}{ccc|c}1&1&1&0\\\\ 2&3&-1&17\\\\ 4&5&1&17\\end{array}\\right)\\]<p>Calculamos \\(|A|\\) por la regla de Sarrus:</p>\\[\\begin{aligned}|A|&=1\\cdot3\\cdot1+1\\cdot(-1)\\cdot4\\\\&\\quad+1\\cdot2\\cdot5\\\\&\\quad-\\big[1\\cdot3\\cdot4\\\\&\\quad+1\\cdot(-1)\\cdot5\\\\&\\quad+1\\cdot2\\cdot1\\big]=0\\end{aligned}\\]<p>Tomamos un menor de orden 2: \\(\\begin{vmatrix}1&1\\\\ 2&3\\end{vmatrix}=1\\neq0\\), así que \\(\\operatorname{rg}A=2\\).</p><p>Los menores de orden 3 de \\(A^*\\) que contienen ese menor son \\(|A|=0\\) y</p>\\[\\begin{aligned}&\\begin{vmatrix}1&1&0\\\\ 2&3&17\\\\ 4&5&17\\end{vmatrix}\\\\&=1\\cdot3\\cdot17+1\\cdot17\\cdot4\\\\&\\quad+0\\cdot2\\cdot5\\\\&\\quad-\\big[0\\cdot3\\cdot4\\\\&\\quad+1\\cdot17\\cdot5\\\\&\\quad+1\\cdot2\\cdot17\\big]=0\\end{aligned}\\]<p>Así que \\(\\operatorname{rg}A^*=2=\\operatorname{rg}A\\lt3\\): el sistema es compatible indeterminado<i class='n' data-t='th'>Teorema de Rouché-Frobenius: el sistema es compatible si y solo si \\(\\operatorname{rg}A=\\operatorname{rg}A^*\\); si ese rango es menor que el número de incógnitas, es compatible indeterminado.</i>. Las dos primeras ecuaciones son independientes; eliminamos la tercera y tomamos \\(z=\\lambda\\), que pasa al segundo miembro:</p>\\[\\left\\{\\begin{array}{l}x+y=-\\lambda\\\\ 2x+3y=17+\\lambda\\end{array}\\right.\\]<p>Lo resolvemos por la regla de Cramer<i class='n' data-t='th'>Regla de Cramer: cada incógnita es el cociente entre el determinante que resulta de sustituir su columna por la de términos independientes (que ahora dependen de \\(\\lambda\\)) y el determinante de la matriz de coeficientes.</i>, con el menor no nulo como determinante, \\(\\begin{vmatrix}1&1\\\\2&3\\end{vmatrix}=1\\)<i class='n' data-t='why'>La incógnita que no está en el menor no nulo pasa al segundo miembro como parámetro; así queda un sistema de Cramer con ese menor como determinante.</i>:</p>\\[\\begin{aligned}x&=\\frac{\\begin{vmatrix}-\\lambda&1\\\\17+\\lambda&3\\end{vmatrix}}{1}\\\\&=\\frac{-17-4\\lambda}{1}=-17-4\\lambda\\end{aligned}\\]\\[\\begin{aligned}y&=\\frac{\\begin{vmatrix}1&-\\lambda\\\\2&17+\\lambda\\end{vmatrix}}{1}\\\\&=\\frac{17+3\\lambda}{1}=17+3\\lambda\\end{aligned}\\]<i class='n' data-t='why'>Determinantes de los numeradores:\\[\\begin{aligned}|A_x|&=(-\\lambda)\\cdot3-1\\cdot(17+\\lambda)\\\\&=-17-4\\lambda\\end{aligned}\\]\\[\\begin{aligned}|A_y|&=1\\cdot(17+\\lambda)-(-\\lambda)\\cdot2\\\\&=17+3\\lambda\\end{aligned}\\]</i><i class='n' data-t='tp'>Comprobación en la tercera ecuación:\\[\\begin{aligned}&4(-17-4\\lambda)+5(17+3\\lambda)+\\lambda\\\\&=-68-16\\lambda+85+15\\lambda+\\lambda\\\\&=17\\end{aligned}\\] ✓.</i><div class='res'>Sistema compatible indeterminado: \\((x,y,z)=(-17-4\\lambda,\\ 17+3\\lambda,\\ \\lambda)\\), con \\(\\lambda\\in\\mathbb R\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
-     "html": "<div class='ex'><p>Sí. Como \\(\\operatorname{rg}A=\\operatorname{rg}A^*=2\\), solo hay dos ecuaciones independientes: la otra es combinación lineal de ellas<i class='n' data-t='why'>El rango de la matriz ampliada es el número de ecuaciones linealmente independientes.</i>. En concreto, la tercera es el doble de la primera más la segunda:</p>\\[2\\cdot(x+y+z=0)+(2x+3y-z=17)\\ \\Rightarrow\\ 4x+5y+z=17\\]<div class='res'>Sí: la tercera ecuación es \\(2\\cdot(1.^{\\text{a}})+(2.^{\\text{a}})\\)</div></div>"
+     "html": "<div class='ex'><p>Sí. Como \\(\\operatorname{rg}A=\\operatorname{rg}A^*=2\\), solo hay dos ecuaciones independientes: la otra es combinación lineal de ellas<i class='n' data-t='why'>El rango de la matriz ampliada es el número de ecuaciones linealmente independientes.</i>. En concreto, la tercera es el doble de la primera más la segunda:</p>\\[\\begin{aligned}&2\\cdot(x+y+z=0)\\\\&\\quad+(2x+3y-z=17)\\\\&\\Rightarrow 4x+5y+z=17\\end{aligned}\\]<div class='res'>Sí: la tercera ecuación es \\(2\\cdot(1.^{\\text{a}})+(2.^{\\text{a}})\\)</div></div>"
     }
    ],
    "clasificacion": [
@@ -80,10 +80,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -145,11 +145,11 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador",
-    "c": "borrador"
+    "a": "revisado",
+    "b": "revisado",
+    "c": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -200,10 +200,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -259,10 +259,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {
     "a": [
@@ -331,11 +331,11 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador",
-    "c": "borrador"
+    "a": "revisado",
+    "b": "revisado",
+    "c": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -392,11 +392,11 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador",
-    "c": "borrador"
+    "a": "revisado",
+    "b": "revisado",
+    "c": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -447,10 +447,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -502,10 +502,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {
     "b": [

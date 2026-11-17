@@ -70,7 +70,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2026-reserva-2-1b",
@@ -88,7 +88,7 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(4x+2y=5\\)</th></tr><tr><th>\\(x\\)</th><td>\\(\\frac{5}{4}\\)</td><td>\\(0\\)</td></tr><tr><th>\\(y\\)</th><td>\\(0\\)</td><td>\\(\\frac{5}{2}\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(2x+5y=9\\)</th></tr><tr><th>\\(x\\)</th><td>\\(2\\)</td><td>\\(-3\\)</td></tr><tr><th>\\(y\\)</th><td>\\(1\\)</td><td>\\(3\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(x+y=3\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(3\\)</td></tr><tr><th>\\(y\\)</th><td>\\(3\\)</td><td>\\(0\\)</td></tr></table><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(4x+2y\\ge5\\): con el origen, \\(0\\ge5\\) no se cumple → semiplano que <b>no</b> lo contiene.</li><li>\\(2x+5y\\le9\\): con el origen, \\(0\\le9\\) se cumple → semiplano que lo contiene.</li><li>\\(x+y\\le3\\): con el origen, \\(0\\le3\\) se cumple → semiplano que lo contiene.</li></ul><p>Además, \\(y\\ge0\\) deja la región por encima del eje de abscisas.</p><div style='overflow-x:auto'><svg viewBox='0 0 340 180' width='100%' style='max-width:420px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='125,150 230,150 170,90 76,52' fill='#b9a4f5' fill-opacity='.5' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M20 150H330M50 170V10'/><path d='M125 150L65 30M50 42L320 150M230 150L110 30' stroke-dasharray='4 3' stroke-opacity='.6'/></g><g><text x='334' y='154'>x</text><text x='56' y='14'>y</text><text x='112' y='166' font-weight='700'>A(5/4, 0)</text><text x='226' y='166' font-weight='700'>B(3, 0)</text><text x='176' y='86' font-weight='700'>C(2, 1)</text><text x='84' y='48' font-weight='700'>D(7/16, 13/8)</text><text x='56' y='108'>r₁: 4x + 2y = 5</text><text x='214' y='60'>r₃: x + y = 3</text><text x='250' y='128'>r₂: 2x + 5y = 9</text></g></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(A:\\;\\left\\{\\begin{array}{l}4x+2y=5\\\\y=0\\end{array}\\right.\\Rightarrow x=\\frac{5}{4}\\Rightarrow \\boxed{A(\\frac{5}{4},0)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}x+y=3\\\\y=0\\end{array}\\right.\\Rightarrow x=3\\Rightarrow \\boxed{B(3,0)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}2x+5y=9\\\\x+y=3\\end{array}\\right.\\Rightarrow y=-x+3\\Rightarrow 2x+5(-x+3)=9\\Rightarrow x=2,\\ y=1\\Rightarrow \\boxed{C(2,1)}\\)</li><li>\\(D:\\;\\left\\{\\begin{array}{l}4x+2y=5\\\\2x+5y=9\\end{array}\\right.\\Rightarrow -16y=-26\\Rightarrow y=\\frac{13}{8},\\ x=\\frac{7}{16}\\ \\text{(reducción)}\\Rightarrow \\boxed{D(\\frac{7}{16},\\frac{13}{8})}\\)</li></ul><div class='res'>Vértices: \\(A\\left(\\frac54,0\\right)\\), \\(B(3,0)\\), \\(C(2,1)\\) y \\(D\\left(\\frac7{16},\\frac{13}8\\right)\\)</div></div>"
+     "html": "<div class='ex'><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(4x+2y=5\\)</th></tr><tr><th>\\(x\\)</th><td>\\(\\frac{5}{4}\\)</td><td>\\(0\\)</td></tr><tr><th>\\(y\\)</th><td>\\(0\\)</td><td>\\(\\frac{5}{2}\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(2x+5y=9\\)</th></tr><tr><th>\\(x\\)</th><td>\\(2\\)</td><td>\\(-3\\)</td></tr><tr><th>\\(y\\)</th><td>\\(1\\)</td><td>\\(3\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(x+y=3\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(3\\)</td></tr><tr><th>\\(y\\)</th><td>\\(3\\)</td><td>\\(0\\)</td></tr></table><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(4x+2y\\ge5\\): con el origen, \\(0\\ge5\\) no se cumple → semiplano que <b>no</b> lo contiene.</li><li>\\(2x+5y\\le9\\): con el origen, \\(0\\le9\\) se cumple → semiplano que lo contiene.</li><li>\\(x+y\\le3\\): con el origen, \\(0\\le3\\) se cumple → semiplano que lo contiene.</li></ul><p>Además, \\(y\\ge0\\) deja la región por encima del eje de abscisas.</p><div style='overflow-x:auto'><svg viewBox='0 0 340 180' width='100%' style='max-width:420px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='125,150 230,150 170,90 76,52' fill='#b9a4f5' fill-opacity='.5' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M20 150H330M50 170V10'/><path d='M125 150L65 30M50 42L320 150M230 150L110 30' stroke-dasharray='4 3' stroke-opacity='.6'/></g><g><text x='334' y='154'>x</text><text x='56' y='14'>y</text><text x='112' y='166' font-weight='700'>A(5/4, 0)</text><text x='226' y='166' font-weight='700'>B(3, 0)</text><text x='176' y='86' font-weight='700'>C(2, 1)</text><text x='84' y='48' font-weight='700'>D(7/16, 13/8)</text><text x='56' y='108'>r₁: 4x + 2y = 5</text><text x='214' y='60'>r₃: x + y = 3</text><text x='250' y='128'>r₂: 2x + 5y = 9</text></g></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(A:\\;\\left\\{\\begin{array}{l}4x+2y=5\\\\y=0\\end{array}\\right.\\) \\(\\Rightarrow x=\\frac{5}{4}\\) \\(\\Rightarrow \\boxed{A(\\frac{5}{4},0)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}x+y=3\\\\y=0\\end{array}\\right.\\) \\(\\Rightarrow x=3\\) \\(\\Rightarrow \\boxed{B(3,0)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}2x+5y=9\\\\x+y=3\\end{array}\\right.\\) \\(\\Rightarrow y=-x+3\\) \\(\\Rightarrow 2x+5(-x+3)=9\\) \\(\\Rightarrow x=2,\\ y=1\\) \\(\\Rightarrow \\boxed{C(2,1)}\\)</li><li>\\(D:\\;\\left\\{\\begin{array}{l}4x+2y=5\\\\2x+5y=9\\end{array}\\right.\\) \\(\\Rightarrow -16y=-26\\) \\(\\Rightarrow y=\\frac{13}{8},\\ x=\\frac{7}{16}\\ \\text{(reducción)}\\) \\(\\Rightarrow \\boxed{D(\\frac{7}{16},\\frac{13}{8})}\\)</li></ul><div class='res'>Vértices: \\(A\\left(\\frac54,0\\right)\\), \\(B(3,0)\\), \\(C(2,1)\\) y \\(D\\left(\\frac7{16},\\frac{13}8\\right)\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
@@ -126,7 +126,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2026-reserva-2-2",
@@ -177,7 +177,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2026-reserva-2-3a",
@@ -195,7 +195,7 @@
    "solucion": [
     {
      "titulo": "Datos previos",
-     "html": "<div class='ex'><p>Datos: «alguno de ellos» es la unión y «simultáneamente», la intersección: \\(P(A\\cup B)=0{,}82\\), \\(P(A\\cap B)=0{,}38\\) y \\(P(A^c)=0{,}35\\Rightarrow P(A)\\) \\(=1-0{,}35=0{,}65\\).</p><p>De la probabilidad de la unión<i class='n' data-t='th'>\\(P(A\\cup B)\\) \\(=P(A)+P(B)-P(A\\cap B)\\).</i>: \\(P(B)=0{,}82-0{,}65+0{,}38\\) \\(=0{,}55\\).</p></div>"
+     "html": "<div class='ex'><p>Datos: «alguno de ellos» es la unión y «simultáneamente», la intersección: \\(P(A\\cup B)=0{,}82\\), \\(P(A\\cap B)=0{,}38\\) y \\(P(A^c)=0{,}35\\) \\(\\Rightarrow P(A)\\) \\(=1-0{,}35=0{,}65\\).</p><p>De la probabilidad de la unión<i class='n' data-t='th'>\\(P(A\\cup B)\\) \\(=P(A)+P(B)-P(A\\cap B)\\).</i>: \\(P(B)=0{,}82-0{,}65+0{,}38\\) \\(=0{,}55\\).</p></div>"
     },
     {
      "titulo": "Apartado a",
@@ -232,7 +232,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2026-reserva-2-3b",
@@ -278,7 +278,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2026-reserva-2-4",
@@ -339,7 +339,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   }
  ]
 }

@@ -18,11 +18,11 @@
    "solucion": [
     {
      "titulo": "Planteamiento",
-     "html": "<div class='ex'><p>Sean \\(x\\), \\(y\\) y \\(z\\) los precios originales del rotulador, el cuaderno y la carpeta.<i class='n' data-t='why'>Los precios que se piden son los <b>originales</b>, antes del descuento: ahí van las incógnitas.</i></p><p>Con el 10 % de descuento se paga el 90 % de cada precio:</p>\\[\\begin{cases}0{,}9(x+y+z)=3{,}96\\\\y=\\dfrac x2\\\\z=y+0{,}2x\\end{cases}\\iff\\begin{cases}x+y+z=4{,}4\\\\x-2y=0\\\\-0{,}2x-y+z=0\\end{cases}\\]<p>El determinante de la matriz de coeficientes es \\(\\begin{vmatrix}1&1&1\\\\1&-2&0\\\\-0{,}2&-1&1\\end{vmatrix}=-4{,}4\\neq0\\): sistema compatible determinado.<i class='n' data-t='th'>Rouché-Frobenius: si \\(|A|\\neq0\\), \\(\\operatorname{rg}A=\\operatorname{rg}A^*=3\\) = n.º de incógnitas, y la solución es única.</i></p></div>"
+     "html": "<div class='ex'><p>Sean \\(x\\), \\(y\\) y \\(z\\) los precios originales del rotulador, el cuaderno y la carpeta.<i class='n' data-t='why'>Los precios que se piden son los <b>originales</b>, antes del descuento: ahí van las incógnitas.</i></p><p>Con el 10 % de descuento se paga el 90 % de cada precio:</p>\\[\\begin{cases}0{,}9(x+y+z)=3{,}96\\\\y=\\dfrac x2\\\\z=y+0{,}2x\\end{cases}\\]\\[\\iff\\begin{cases}x+y+z=4{,}4\\\\x-2y=0\\\\-0{,}2x-y+z=0\\end{cases}\\]<p>El determinante de la matriz de coeficientes es \\(\\begin{vmatrix}1&1&1\\\\1&-2&0\\\\-0{,}2&-1&1\\end{vmatrix}=-4{,}4\\neq0\\): sistema compatible determinado.<i class='n' data-t='th'>Rouché-Frobenius: si \\(|A|\\neq0\\), \\(\\operatorname{rg}A=\\operatorname{rg}A^*=3\\) = n.º de incógnitas, y la solución es única.</i></p></div>"
     },
     {
      "titulo": "Resolución",
-     "html": "<div class='ex'><p>De la segunda ecuación, \\(y=\\dfrac x2\\). En la tercera, \\(z=\\dfrac x2+0{,}2x=0{,}7x\\). Sustituyo en la primera:</p>\\[\\begin{aligned}x+0{,}5x+0{,}7x&=4{,}4\\\\&\\iff2{,}2x=4{,}4\\\\&\\iff x=2\\end{aligned}\\]<p>Entonces \\(y=1\\) y \\(z=0{,}7\\cdot2=1{,}4\\).<i class='n' data-t='tp'>Comprueba con el enunciado: \\(0{,}9\\cdot(2+1+1{,}4)\\) \\(=0{,}9\\cdot4{,}4=3{,}96\\) ✓.</i></p><div class='res'>Rotulador: 2 €, cuaderno: 1 €, carpeta: 1,40 €</div></div>"
+     "html": "<div class='ex'><p>Para quitar decimales, multiplico la tercera ecuación por 5<i class='n' data-t='why'>Multiplicar una ecuación por un número distinto de 0 no cambia las soluciones; el determinante queda multiplicado por 5: \\(5\\cdot(-4{,}4)=-22\\).</i>:</p>\\[\\begin{cases}x+y+z=4{,}4\\\\x-2y=0\\\\-x-5y+5z=0\\end{cases}\\]\\[\\begin{aligned}|A|&=\\begin{vmatrix}1&1&1\\\\1&-2&0\\\\-1&-5&5\\end{vmatrix}\\\\&=1\\cdot(-2)\\cdot5+1\\cdot0\\cdot(-1)\\\\&\\quad+1\\cdot1\\cdot(-5)\\\\&\\quad-\\big[1\\cdot(-2)\\cdot(-1)\\\\&\\quad+1\\cdot0\\cdot(-5)\\\\&\\quad+1\\cdot1\\cdot5\\big]=-22\\end{aligned}\\]<p>Como \\(|A|\\neq0\\), lo resuelvo por la regla de Cramer<i class='n' data-t='th'>Regla de Cramer: cada incógnita es el cociente entre el determinante que resulta de sustituir su columna por la de términos independientes y \\(|A|\\).</i>:</p>\\[\\begin{aligned}x&=\\frac{\\begin{vmatrix}4{,}4&1&1\\\\0&-2&0\\\\0&-5&5\\end{vmatrix}}{-22}\\\\&=\\frac{-44}{-22}=2\\end{aligned}\\]\\[\\begin{aligned}y&=\\frac{\\begin{vmatrix}1&4{,}4&1\\\\1&0&0\\\\-1&0&5\\end{vmatrix}}{-22}\\\\&=\\frac{-22}{-22}=1\\end{aligned}\\]\\[\\begin{aligned}z&=\\frac{\\begin{vmatrix}1&1&4{,}4\\\\1&-2&0\\\\-1&-5&0\\end{vmatrix}}{-22}\\\\&=\\frac{-30{,}8}{-22}=1{,}4\\end{aligned}\\]<i class='n' data-t='why'>Determinantes de los numeradores (regla de Sarrus):\\[\\begin{aligned}|A_x|&=-44+0+0-\\left[0+0+0\\right]\\\\&=-44\\end{aligned}\\]\\[\\begin{aligned}|A_y|&=0+0+0-\\left[0+0+22\\right]\\\\&=-22\\end{aligned}\\]\\[\\begin{aligned}|A_z|&=0+0-22-\\left[8{,}8+0+0\\right]\\\\&=-30{,}8\\end{aligned}\\]</i><i class='n' data-t='tp'>Comprueba con el enunciado: \\(0{,}9\\cdot(2+1+1{,}4)\\) \\(=0{,}9\\cdot4{,}4=3{,}96\\) ✓.</i><div class='res'>Rotulador: 2 €, cuaderno: 1 €, carpeta: 1,40 €</div></div>"
     }
    ],
    "clasificacion": [
@@ -42,7 +42,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2025-modelo-6-1b",
@@ -56,15 +56,15 @@
    "solucion": [
     {
      "titulo": "Planteamiento",
-     "html": "<div class='ex'><p>Sean \\(x\\) el número de pañuelos e \\(y\\) el número de corbatas que se confeccionan a la semana.</p><table class='tb'><tr><th>Variables</th><th>Horas de trabajo</th><th>Beneficio (€/unidad)</th></tr><tr><td>\\(x\\): pañuelos</td><td>2</td><td>4</td></tr><tr><td>\\(y\\): corbatas</td><td>3</td><td>6</td></tr><tr><th>Límite</th><td>\\(\\le60\\)</td><td></td></tr></table><p>El compromiso «corbatas más el doble de pañuelos, como mínimo 28» es \\(y+2x\\ge28\\).<i class='n' data-t='tp'>«Como mínimo» es \\(\\ge\\); «capacidad máxima» es \\(\\le\\). Traduce cada palabra del enunciado a un signo.</i></p>\\[\\begin{cases}2x+3y\\le60\\\\2x+y\\ge28\\\\x\\ge0,\\ y\\ge0\\end{cases}\\qquad B(x,y)=4x+6y\\]</div>"
+     "html": "<div class='ex'><p>Sean \\(x\\) el número de pañuelos e \\(y\\) el número de corbatas que se confeccionan a la semana.</p><table class='tb'><tr><th>Variables</th><th>Horas de trabajo</th><th>Beneficio (€/unidad)</th></tr><tr><td>\\(x\\): pañuelos</td><td>2</td><td>4</td></tr><tr><td>\\(y\\): corbatas</td><td>3</td><td>6</td></tr><tr><th>Límite</th><td>\\(\\le60\\)</td><td></td></tr></table><p>El compromiso «corbatas más el doble de pañuelos, como mínimo 28» es \\(y+2x\\ge28\\).<i class='n' data-t='tp'>«Como mínimo» es \\(\\ge\\); «capacidad máxima» es \\(\\le\\). Traduce cada palabra del enunciado a un signo.</i></p>\\[\\begin{cases}2x+3y\\le60\\\\2x+y\\ge28\\\\x\\ge0,\\ y\\ge0\\end{cases}\\qquad F(x,y)=4x+6y\\]</div>"
     },
     {
      "titulo": "Región factible y vértices",
-     "html": "<div class='ex'><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(2x+3y=60\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(30\\)</td></tr><tr><th>\\(y\\)</th><td>\\(20\\)</td><td>\\(0\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(2x+y=28\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(14\\)</td></tr><tr><th>\\(y\\)</th><td>\\(28\\)</td><td>\\(0\\)</td></tr></table><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(2x+3y\\le60\\): con el origen, \\(0\\le60\\) se cumple → semiplano que lo contiene.</li><li>\\(2x+y\\ge28\\): con el origen, \\(0\\ge28\\) no se cumple → semiplano que <b>no</b> lo contiene.</li></ul><p>Además, \\(x\\ge0\\) y \\(y\\ge0\\) limitan la región al primer cuadrante.</p><div style='overflow-x:auto'><svg viewBox='0 0 300 230' width='100%' style='max-width:400px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='142,190 270,190 78,62' fill='#b9a4f5' fill-opacity='.5' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M20 190H290M30 200V10'/><path d='M142 190L54 14M270 190L30 30' stroke-dasharray='4 3' stroke-opacity='.6'/></g><g><text x='286' y='186'>x</text><text x='36' y='14'>y</text><text x='122' y='206' font-weight='700'>A(14, 0)</text><text x='246' y='206' font-weight='700'>B(30, 0)</text><text x='84' y='58' font-weight='700'>C(6, 16)</text><text x='150' y='128'>r₁: 2x + y = 28</text><text x='168' y='92'>r₂: 2x + 3y = 60</text></g></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(A:\\;\\left\\{\\begin{array}{l}2x+y=28\\\\y=0\\end{array}\\right.\\Rightarrow x=14\\Rightarrow \\boxed{A(14,0)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}2x+3y=60\\\\y=0\\end{array}\\right.\\Rightarrow x=30\\Rightarrow \\boxed{B(30,0)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}2x+3y=60\\\\2x+y=28\\end{array}\\right.\\Rightarrow y=-2x+28\\Rightarrow 2x+3(-2x+28)=60\\Rightarrow x=6,\\ y=16\\Rightarrow \\boxed{C(6,16)}\\)</li></ul></div>"
+     "html": "<div class='ex'><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(2x+3y=60\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(30\\)</td></tr><tr><th>\\(y\\)</th><td>\\(20\\)</td><td>\\(0\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(2x+y=28\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(14\\)</td></tr><tr><th>\\(y\\)</th><td>\\(28\\)</td><td>\\(0\\)</td></tr></table><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(2x+3y\\le60\\): con el origen, \\(0\\le60\\) se cumple → semiplano que lo contiene.</li><li>\\(2x+y\\ge28\\): con el origen, \\(0\\ge28\\) no se cumple → semiplano que <b>no</b> lo contiene.</li></ul><p>Además, \\(x\\ge0\\) y \\(y\\ge0\\) limitan la región al primer cuadrante.</p><div style='overflow-x:auto'><svg viewBox='0 0 300 230' width='100%' style='max-width:400px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='142,190 270,190 78,62' fill='#b9a4f5' fill-opacity='.5' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M20 190H290M30 200V10'/><path d='M142 190L54 14M270 190L30 30' stroke-dasharray='4 3' stroke-opacity='.6'/></g><g><text x='286' y='186'>x</text><text x='36' y='14'>y</text><text x='122' y='206' font-weight='700'>A(14, 0)</text><text x='246' y='206' font-weight='700'>B(30, 0)</text><text x='84' y='58' font-weight='700'>C(6, 16)</text><text x='150' y='128'>r₁: 2x + y = 28</text><text x='168' y='92'>r₂: 2x + 3y = 60</text></g></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(A:\\;\\left\\{\\begin{array}{l}2x+y=28\\\\y=0\\end{array}\\right.\\) \\(\\Rightarrow x=14\\) \\(\\Rightarrow \\boxed{A(14,0)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}2x+3y=60\\\\y=0\\end{array}\\right.\\) \\(\\Rightarrow x=30\\) \\(\\Rightarrow \\boxed{B(30,0)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}2x+3y=60\\\\2x+y=28\\end{array}\\right.\\) \\(\\Rightarrow y=-2x+28\\) \\(\\Rightarrow 2x+3(-2x+28)=60\\) \\(\\Rightarrow x=6,\\ y=16\\) \\(\\Rightarrow \\boxed{C(6,16)}\\)</li></ul></div>"
     },
     {
      "titulo": "Optimización",
-     "html": "<div class='ex'><p>La función \\(B\\) alcanza sus extremos en el recinto, en puntos de su frontera; evaluamos, por tanto, \\(B\\) en los vértices<i class='n' data-t='th'>Teorema fundamental de la programación lineal: si la región factible es un polígono convexo y acotado, la función objetivo alcanza su máximo y su mínimo en alguno de sus vértices.</i>:</p>\\[\\begin{aligned}&A:\\\\ B(14,0)&=4\\cdot14+6\\cdot0\\\\&=56\\end{aligned}\\]\\[\\begin{aligned}&B:\\\\ B(30,0)&=4\\cdot30+6\\cdot0\\\\&=120\\end{aligned}\\]\\[\\begin{aligned}&C:\\\\ B(6,16)&=4\\cdot6+6\\cdot16\\\\&=120\\end{aligned}\\]<p>\\(B\\) alcanza un máximo de valor \\(120\\) en todos los puntos del segmento de extremos \\(B\\) y \\(C\\).</p><p>El valor se repite en dos vértices consecutivos, \\(B\\) y \\(C\\)<i class='n' data-t='th'>Si la función objetivo toma el mismo valor óptimo en dos vértices consecutivos, lo toma en todo el lado que los une: hay infinitas soluciones.</i>, así que se alcanza en todo el segmento \\(BC\\), sobre la recta \\(2x+3y=60\\).</p><div class='res'>El beneficio máximo es 120 € y se obtiene con cualquier combinación \\((x,\\ \\tfrac{60-2x}{3})\\) con \\(6\\le x\\le30\\). Como las unidades son enteras, \\(x\\) múltiplo de 3: (6,16), (9,14), (12,12), (15,10), (18,8), (21,6), (24,4), (27,2), (30,0)</div></div>"
+     "html": "<div class='ex'><p>La función \\(F\\) alcanza sus extremos en el recinto, en puntos de su frontera; evaluamos, por tanto, \\(F\\) en los vértices<i class='n' data-t='th'>Teorema fundamental de la programación lineal: si la región factible es un polígono convexo y acotado, la función objetivo alcanza su máximo y su mínimo en alguno de sus vértices.</i>:</p>\\[\\begin{aligned}&A:\\\\ F(14,0)&=4\\cdot14+6\\cdot0\\\\&=56\\end{aligned}\\]\\[\\begin{aligned}&B:\\\\ F(30,0)&=4\\cdot30+6\\cdot0\\\\&=120\\end{aligned}\\]\\[\\begin{aligned}&C:\\\\ F(6,16)&=4\\cdot6+6\\cdot16\\\\&=120\\end{aligned}\\]<p>\\(F\\) alcanza un máximo de valor \\(120\\) en todos los puntos del segmento de extremos \\(B\\) y \\(C\\).</p><p>El valor se repite en dos vértices consecutivos, \\(B\\) y \\(C\\)<i class='n' data-t='th'>Si la función objetivo toma el mismo valor óptimo en dos vértices consecutivos, lo toma en todo el lado que los une: hay infinitas soluciones.</i>, así que se alcanza en todo el segmento \\(BC\\), sobre la recta \\(2x+3y=60\\).</p><div class='res'>El beneficio máximo es 120 € y se obtiene con cualquier combinación \\((x,\\ \\tfrac{60-2x}{3})\\) con \\(6\\le x\\le30\\). Como las unidades son enteras, \\(x\\) múltiplo de 3: (6,16), (9,14), (12,12), (15,10), (18,8), (21,6), (24,4), (27,2), (30,0)</div></div>"
     }
    ],
    "clasificacion": [
@@ -94,7 +94,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2025-modelo-6-2",
@@ -140,7 +140,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2025-modelo-6-3a",
@@ -185,7 +185,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2025-modelo-6-3b",
@@ -235,7 +235,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2025-modelo-6-4a",
@@ -280,7 +280,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2025-modelo-6-4b",
@@ -325,7 +325,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   }
  ]
 }

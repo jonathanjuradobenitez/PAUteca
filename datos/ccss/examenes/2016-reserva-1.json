@@ -26,7 +26,7 @@
     },
     {
      "titulo": "Apartado b",
-     "html": "<div class='ex'><p>Despejamos: \\(A\\cdot X=B+C^t\\). Como \\(A^2=I_2\\), \\(A\\) es su propia inversa (\\(A^{-1}=A\\)), y como está a la izquierda de \\(X\\), multiplicamos por \\(A\\) por la izquierda<i class='n' data-t='tp'>Del apartado anterior: \\(A\\cdot A=I_2\\Rightarrow A^{-1}=A\\), sin necesidad de calcularla.</i>:</p>\\[B+C^t=\\begin{pmatrix}1&2&2\\\\-1&-1&2\\end{pmatrix}+\\begin{pmatrix}1&-1&2\\\\2&0&-2\\end{pmatrix}\\]\\[=\\begin{pmatrix}2&1&4\\\\1&-1&0\\end{pmatrix}\\]\\[X=A(B+C^t)\\]\\[=\\begin{pmatrix}1&2\\\\0&-1\\end{pmatrix}\\begin{pmatrix}2&1&4\\\\1&-1&0\\end{pmatrix}\\]<div class='res'>\\(X=\\begin{pmatrix}4&-1&4\\\\-1&1&0\\end{pmatrix}\\)</div></div>"
+     "html": "<div class='ex'><p>Despejamos: \\(A\\cdot X=B+C^t\\). Como \\(A^2=I_2\\), \\(A\\) es su propia inversa (\\(A^{-1}=A\\)), y como está a la izquierda de \\(X\\), multiplicamos por \\(A\\) por la izquierda<i class='n' data-t='tp'>Del apartado anterior: \\(A\\cdot A=I_2\\) \\(\\Rightarrow A^{-1}=A\\), sin necesidad de calcularla.</i>:</p>\\[B+C^t=\\begin{pmatrix}1&2&2\\\\-1&-1&2\\end{pmatrix}+\\begin{pmatrix}1&-1&2\\\\2&0&-2\\end{pmatrix}\\]\\[=\\begin{pmatrix}2&1&4\\\\1&-1&0\\end{pmatrix}\\]\\[X=A(B+C^t)\\]\\[=\\begin{pmatrix}1&2\\\\0&-1\\end{pmatrix}\\begin{pmatrix}2&1&4\\\\1&-1&0\\end{pmatrix}\\]<div class='res'>\\(X=\\begin{pmatrix}4&-1&4\\\\-1&1&0\\end{pmatrix}\\)</div></div>"
     }
    ],
    "clasificacion": [
@@ -46,7 +46,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2016-reserva-1-2",
@@ -98,7 +98,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2016-reserva-1-3",
@@ -149,7 +149,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2016-reserva-1-4",
@@ -213,7 +213,7 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>Llamamos \\(x\\) a las unidades de A e \\(y\\) a las de B, por semana.</p><table class='tb'><tr><th></th><th>P1 (h)</th><th>P2 (h)</th><th>Beneficio (€)</th></tr><tr><td>A (\\(x\\))</td><td>3</td><td>3</td><td>500</td></tr><tr><td>B (\\(y\\))</td><td>5</td><td>3</td><td>600</td></tr><tr><th>Disponible</th><td>\\(\\le150\\)</td><td>\\(\\le120\\)</td><td></td></tr></table>\\[\\text{Maximizar }B(x,y)=500x+600y\\quad\\text{sujeto a}\\quad\\begin{cases}3x+5y\\le150\\\\3x+3y\\le120\\iff x+y\\le40\\\\x\\ge0,\\ y\\ge0\\end{cases}\\]<p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th>\\(3x+5y=150\\)</th><td>\\(x\\)</td><td>0</td><td>50</td></tr><tr><th></th><td>\\(y\\)</td><td>30</td><td>0</td></tr></table><table class='tb'><tr><th>\\(x+y=40\\)</th><td>\\(x\\)</td><td>0</td><td>40</td></tr><tr><th></th><td>\\(y\\)</td><td>40</td><td>0</td></tr></table><p>Probamos el origen \\((0,0)\\): \\(0\\le150\\) y \\(0\\le40\\) se cumplen, así que los semiplanos son los que contienen al origen<i class='n' data-t='why'>Si el origen cumple la inecuación, el semiplano solución es el que lo contiene.</i>; además \\(x\\ge0\\), \\(y\\ge0\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 330 210' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='30.0,195.0 290.0,195.0 192.5,112.5 30.0,30.0' fill='#b9a4f5' fill-opacity='.5' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M17 195H322M30 206V14'/></g><text x='316' y='190'>x</text><text x='35' y='22'>y</text><g font-size='10' fill='currentColor'><line x1='95.0' y1='192.0' x2='95.0' y2='198.0' stroke='currentColor'/><text x='95.0' y='209.0' text-anchor='middle'>10</text><line x1='160.0' y1='192.0' x2='160.0' y2='198.0' stroke='currentColor'/><text x='160.0' y='209.0' text-anchor='middle'>20</text><line x1='225.0' y1='192.0' x2='225.0' y2='198.0' stroke='currentColor'/><text x='225.0' y='209.0' text-anchor='middle'>30</text><line x1='290.0' y1='192.0' x2='290.0' y2='198.0' stroke='currentColor'/><text x='290.0' y='209.0' text-anchor='middle'>40</text><line x1='27.0' y1='140.0' x2='33.0' y2='140.0' stroke='currentColor'/><text x='24.0' y='143.0' text-anchor='end'>10</text><line x1='27.0' y1='85.0' x2='33.0' y2='85.0' stroke='currentColor'/><text x='24.0' y='88.0' text-anchor='end'>20</text><line x1='27.0' y1='30.0' x2='33.0' y2='30.0' stroke='currentColor'/><text x='24.0' y='33.0' text-anchor='end'>30</text></g><circle cx='30.0' cy='195.0' r='3.3' fill='#e8487a'/><text x='16.0' y='209.0' font-weight='700'>O</text><circle cx='290.0' cy='195.0' r='3.3' fill='#e8487a'/><text x='264.0' y='187.0' font-weight='700'>C(40,0)</text><circle cx='192.5' cy='112.5' r='3.3' fill='#e8487a'/><text x='198.5' y='106.5' font-weight='700'>B(25,15)</text><circle cx='30.0' cy='30.0' r='3.3' fill='#e8487a'/><text x='36.0' y='26.0' font-weight='700'>A(0,30)</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(O=(0,0)\\)</li><li>\\(A:\\;\\left\\{\\begin{array}{l}x=0\\\\3x+5y=150\\end{array}\\right.\\Rightarrow\\boxed{A(0,30)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}3x+5y=150\\\\x+y=40\\end{array}\\right.\\Rightarrow3x+200-5x=150\\Rightarrow\\boxed{B(25,15)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}y=0\\\\x+y=40\\end{array}\\right.\\Rightarrow\\boxed{C(40,0)}\\)</li></ul><div class='res'>El recinto es el cuadrilátero de vértices \\(O(0,0)\\), \\(A(0,30)\\), \\(B(25,15)\\) y \\(C(40,0)\\)</div></div>"
+     "html": "<div class='ex'><p>Llamamos \\(x\\) a las unidades de A e \\(y\\) a las de B, por semana.</p><table class='tb'><tr><th></th><th>P1 (h)</th><th>P2 (h)</th><th>Beneficio (€)</th></tr><tr><td>A (\\(x\\))</td><td>3</td><td>3</td><td>500</td></tr><tr><td>B (\\(y\\))</td><td>5</td><td>3</td><td>600</td></tr><tr><th>Disponible</th><td>\\(\\le150\\)</td><td>\\(\\le120\\)</td><td></td></tr></table>\\[\\text{Maximizar }B(x,y)=500x+600y\\quad\\text{sujeto a}\\quad\\begin{cases}3x+5y\\le150\\\\3x+3y\\le120\\iff x+y\\le40\\\\x\\ge0,\\ y\\ge0\\end{cases}\\]<p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th>\\(3x+5y=150\\)</th><td>\\(x\\)</td><td>0</td><td>50</td></tr><tr><th></th><td>\\(y\\)</td><td>30</td><td>0</td></tr></table><table class='tb'><tr><th>\\(x+y=40\\)</th><td>\\(x\\)</td><td>0</td><td>40</td></tr><tr><th></th><td>\\(y\\)</td><td>40</td><td>0</td></tr></table><p>Probamos el origen \\((0,0)\\): \\(0\\le150\\) y \\(0\\le40\\) se cumplen, así que los semiplanos son los que contienen al origen<i class='n' data-t='why'>Si el origen cumple la inecuación, el semiplano solución es el que lo contiene.</i>; además \\(x\\ge0\\), \\(y\\ge0\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 420 300' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><line x1='67.3' y1='266.0' x2='67.3' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='136.6' y1='266.0' x2='136.6' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='205.8' y1='266.0' x2='205.8' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='275.1' y1='266.0' x2='275.1' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='344.4' y1='266.0' x2='344.4' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='244.6' x2='386.0' y2='244.6' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='214.8' x2='386.0' y2='214.8' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='185.1' x2='386.0' y2='185.1' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='155.4' x2='386.0' y2='155.4' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='125.6' x2='386.0' y2='125.6' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='95.9' x2='386.0' y2='95.9' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='66.1' x2='386.0' y2='66.1' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='36.4' x2='386.0' y2='36.4' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='244.6' x2='386.0' y2='244.6' stroke='#111' stroke-width='1.3'/><line x1='67.3' y1='266.0' x2='67.3' y2='34.0' stroke='#111' stroke-width='1.3'/><text x='136.6' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>10</text><text x='205.8' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>20</text><text x='275.1' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>30</text><text x='344.4' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>40</text><text x='63.3' y='217.8' font-size='10' text-anchor='end' fill='#374151'>5</text><text x='63.3' y='188.1' font-size='10' text-anchor='end' fill='#374151'>10</text><text x='63.3' y='158.4' font-size='10' text-anchor='end' fill='#374151'>15</text><text x='63.3' y='128.6' font-size='10' text-anchor='end' fill='#374151'>20</text><text x='63.3' y='98.9' font-size='10' text-anchor='end' fill='#374151'>25</text><text x='63.3' y='69.1' font-size='10' text-anchor='end' fill='#374151'>30</text><text x='63.3' y='39.4' font-size='10' text-anchor='end' fill='#374151'>35</text><text x='384.0' y='239.6' font-size='11' text-anchor='end' font-style='italic'>x</text><text x='72.3' y='44.0' font-size='11' font-style='italic'>y</text><polygon points='67.3,244.6 344.4,244.6 240.5,155.4 67.3,66.1' fill='#fcd34d' fill-opacity='0.55' stroke='none'/><line x1='369.4' y1='266.0' x2='99.1' y2='34.0' stroke='#b45309' stroke-width='2'/><text x='158.2' y='75.4' font-size='10' fill='#b45309' text-anchor='start'>x+y=40</text><line x1='34.0' y1='49.0' x2='386.0' y2='230.3' stroke='#2563eb' stroke-width='2'/><text x='310.6' y='189.0' font-size='10' fill='#2563eb' text-anchor='end'>3x+5y=150</text><text x='179.9' y='182.7' font-size='15' fill='#92400e' text-anchor='middle' font-weight='bold'>R</text><circle cx='67.3' cy='244.6' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='60.3' y='259.6' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>O</text><circle cx='344.4' cy='244.6' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='351.4' y='259.6' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>C</text><circle cx='240.5' cy='155.4' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='247.5' y='148.4' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>B</text><circle cx='67.3' cy='66.1' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='60.3' y='59.1' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>A</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(O=(0,0)\\)</li><li>\\(A:\\;\\left\\{\\begin{array}{l}x=0\\\\3x+5y=150\\end{array}\\right.\\) \\(\\Rightarrow\\boxed{A(0,30)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}3x+5y=150\\\\x+y=40\\end{array}\\right.\\) \\(\\Rightarrow3x+200-5x=150\\) \\(\\Rightarrow\\boxed{B(25,15)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}y=0\\\\x+y=40\\end{array}\\right.\\) \\(\\Rightarrow\\boxed{C(40,0)}\\)</li></ul><div class='res'>El recinto es el cuadrilátero de vértices \\(O(0,0)\\), \\(A(0,30)\\), \\(B(25,15)\\) y \\(C(40,0)\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
@@ -242,7 +242,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2016-reserva-1-6",
@@ -350,7 +350,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2016-reserva-1-8",

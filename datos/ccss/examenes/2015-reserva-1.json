@@ -27,7 +27,7 @@
     },
     {
      "titulo": "Apartado b",
-     "html": "<div class='ex'><p>Despejamos como en una ecuación numérica (aquí no hay productos de matrices, solo sumas y un número): \\(2X=B-A\\Rightarrow X\\) \\(=\\frac12(B-A)\\).</p>\\[B-A=\\begin{pmatrix}1&-3\\\\-2&6\\end{pmatrix}\\]<div class='res'>\\(X=\\begin{pmatrix}\\frac12&-\\frac32\\\\-1&3\\end{pmatrix}\\)</div></div>"
+     "html": "<div class='ex'><p>Despejamos como en una ecuación numérica (aquí no hay productos de matrices, solo sumas y un número): \\(2X=B-A\\) \\(\\Rightarrow X\\) \\(=\\frac12(B-A)\\).</p>\\[B-A=\\begin{pmatrix}1&-3\\\\-2&6\\end{pmatrix}\\]<div class='res'>\\(X=\\begin{pmatrix}\\frac12&-\\frac32\\\\-1&3\\end{pmatrix}\\)</div></div>"
     },
     {
      "titulo": "Apartado c",
@@ -56,7 +56,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2015-reserva-1-2",
@@ -103,7 +103,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2015-reserva-1-3",
@@ -202,7 +202,7 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>Rectas frontera: \\(4x+2y=5\\) (la región queda por encima, lejos del origen), \\(2x+5y=10\\) y \\(x+y=3\\) (por debajo, del lado del origen) y los ejes. En el eje \\(Y\\) no hay región: con \\(x=0\\) haría falta \\(y\\ge2{,}5\\) y a la vez \\(y\\le2\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 340 210' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='98.8,190.0 195.0,190.0 121.7,116.7 47.2,86.9' fill='#b9a4f5' fill-opacity='.5' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M14 190H316M30 206V3'/></g><text x='310' y='185'>x</text><text x='35' y='11'>y</text><g font-size='10' fill='currentColor'><line x1='85.0' y1='187.0' x2='85.0' y2='193.0' stroke='currentColor'/><text x='85.0' y='204.0' text-anchor='middle'>1</text><line x1='140.0' y1='187.0' x2='140.0' y2='193.0' stroke='currentColor'/><text x='140.0' y='204.0' text-anchor='middle'>2</text><line x1='195.0' y1='187.0' x2='195.0' y2='193.0' stroke='currentColor'/><text x='195.0' y='204.0' text-anchor='middle'>3</text><line x1='250.0' y1='187.0' x2='250.0' y2='193.0' stroke='currentColor'/><text x='250.0' y='204.0' text-anchor='middle'>4</text><line x1='305.0' y1='187.0' x2='305.0' y2='193.0' stroke='currentColor'/><text x='305.0' y='204.0' text-anchor='middle'>5</text><line x1='27.0' y1='135.0' x2='33.0' y2='135.0' stroke='currentColor'/><text x='24.0' y='138.0' text-anchor='end'>1</text><line x1='27.0' y1='80.0' x2='33.0' y2='80.0' stroke='currentColor'/><text x='24.0' y='83.0' text-anchor='end'>2</text><line x1='27.0' y1='25.0' x2='33.0' y2='25.0' stroke='currentColor'/><text x='24.0' y='28.0' text-anchor='end'>3</text></g><circle cx='98.8' cy='190.0' r='3.3' fill='#e8487a'/><text x='36.8' y='184.0' font-weight='700'>A(5/4, 0)</text><circle cx='195.0' cy='190.0' r='3.3' fill='#e8487a'/><text x='201.0' y='182.0' font-weight='700'>B(3, 0)</text><circle cx='121.7' cy='116.7' r='3.3' fill='#e8487a'/><text x='127.7' y='110.7' font-weight='700'>C(5/3, 4/3)</text><circle cx='47.2' cy='86.9' r='3.3' fill='#e8487a'/><text x='53.2' y='78.9' font-weight='700'>D(5/16, 15/8)</text></svg></div><p>Hallamos sus vértices:</p>\\[A:\\ y=0,\\ 4x=5\\Rightarrow\\boxed{A\\left(\\tfrac54,0\\right)}\\qquad B:\\ y=0,\\ x+y=3\\Rightarrow\\boxed{B(3,0)}\\]\\[C:\\begin{cases}2x+5y=10\\\\x+y=3\\end{cases}\\Rightarrow3y=4\\Rightarrow\\boxed{C\\left(\\tfrac53,\\tfrac43\\right)}\\qquad D:\\begin{cases}4x+2y=5\\\\2x+5y=10\\end{cases}\\Rightarrow8y=15\\Rightarrow\\boxed{D\\left(\\tfrac5{16},\\tfrac{15}8\\right)}\\]<div class='res'>El recinto es el cuadrilátero de vértices \\(A\\left(\\frac54,0\\right)\\), \\(B(3,0)\\), \\(C\\left(\\frac53,\\frac43\\right)\\) y \\(D\\left(\\frac5{16},\\frac{15}8\\right)\\)</div></div>"
+     "html": "<div class='ex'><p>Rectas frontera: \\(4x+2y=5\\) (la región queda por encima, lejos del origen), \\(2x+5y=10\\) y \\(x+y=3\\) (por debajo, del lado del origen) y los ejes. En el eje \\(Y\\) no hay región: con \\(x=0\\) haría falta \\(y\\ge2{,}5\\) y a la vez \\(y\\le2\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 420 300' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><line x1='67.3' y1='266.0' x2='67.3' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='113.5' y1='266.0' x2='113.5' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='159.6' y1='266.0' x2='159.6' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='205.8' y1='266.0' x2='205.8' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='252.0' y1='266.0' x2='252.0' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='298.2' y1='266.0' x2='298.2' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='344.4' y1='266.0' x2='344.4' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='244.6' x2='386.0' y2='244.6' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='197.0' x2='386.0' y2='197.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='149.4' x2='386.0' y2='149.4' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='101.8' x2='386.0' y2='101.8' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='54.2' x2='386.0' y2='54.2' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='244.6' x2='386.0' y2='244.6' stroke='#111' stroke-width='1.3'/><line x1='67.3' y1='266.0' x2='67.3' y2='34.0' stroke='#111' stroke-width='1.3'/><text x='113.5' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>0,5</text><text x='159.6' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>1</text><text x='205.8' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>1,5</text><text x='252.0' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>2</text><text x='298.2' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>2,5</text><text x='344.4' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>3</text><text x='63.3' y='200.0' font-size='10' text-anchor='end' fill='#374151'>0,5</text><text x='63.3' y='152.4' font-size='10' text-anchor='end' fill='#374151'>1</text><text x='63.3' y='104.8' font-size='10' text-anchor='end' fill='#374151'>1,5</text><text x='63.3' y='57.2' font-size='10' text-anchor='end' fill='#374151'>2</text><text x='384.0' y='239.6' font-size='11' text-anchor='end' font-style='italic'>x</text><text x='72.3' y='44.0' font-size='11' font-style='italic'>y</text><polygon points='182.7,244.6 344.4,244.6 221.2,117.7 96.1,66.1' fill='#fcd34d' fill-opacity='0.55' stroke='none'/><line x1='365.2' y1='266.0' x2='140.0' y2='34.0' stroke='#b45309' stroke-width='2'/><text x='292.7' y='191.4' font-size='10' fill='#b45309' text-anchor='end'>x+y=3</text><line x1='34.0' y1='40.5' x2='386.0' y2='185.6' stroke='#2563eb' stroke-width='2'/><text x='345.8' y='166.1' font-size='10' fill='#2563eb' text-anchor='end'>2x+5y=10</text><line x1='193.1' y1='266.0' x2='80.5' y2='34.0' stroke='#16a34a' stroke-width='2'/><text x='141.8' y='145.0' font-size='10' fill='#16a34a' text-anchor='start'>4x+2y=5</text><text x='211.1' y='173.2' font-size='15' fill='#92400e' text-anchor='middle' font-weight='bold'>R</text><circle cx='182.7' cy='244.6' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='175.7' y='259.6' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>A</text><circle cx='344.4' cy='244.6' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='351.4' y='259.6' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>B</text><circle cx='221.2' cy='117.7' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='228.2' y='110.7' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>C</text><circle cx='96.1' cy='66.1' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='89.1' y='59.1' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>D</text></svg></div><p>Hallamos sus vértices:</p>\\[A:\\ y=0,\\ 4x=5\\Rightarrow\\boxed{A\\left(\\tfrac54,0\\right)}\\qquad B:\\ y=0,\\ x+y=3\\Rightarrow\\boxed{B(3,0)}\\]\\[C:\\begin{cases}2x+5y=10\\\\x+y=3\\end{cases}\\Rightarrow3y=4\\Rightarrow\\boxed{C\\left(\\tfrac53,\\tfrac43\\right)}\\qquad D:\\begin{cases}4x+2y=5\\\\2x+5y=10\\end{cases}\\Rightarrow8y=15\\Rightarrow\\boxed{D\\left(\\tfrac5{16},\\tfrac{15}8\\right)}\\]<div class='res'>El recinto es el cuadrilátero de vértices \\(A\\left(\\frac54,0\\right)\\), \\(B(3,0)\\), \\(C\\left(\\frac53,\\frac43\\right)\\) y \\(D\\left(\\frac5{16},\\frac{15}8\\right)\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
@@ -226,7 +226,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2015-reserva-1-6",
@@ -244,7 +244,7 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>Si es derivable en \\(x=-1\\), también es continua<i class='n' data-t='th'>Derivable en un punto \\(\\Rightarrow\\) continua en ese punto.</i>. Imponemos las dos condiciones:</p>\\[\\text{Continuidad: }\\frac12(-a-12)=-1-2b\\iff a=4b-10\\]\\[\\text{Derivabilidad: }f'(-1^-)=\\frac a2,\\quad f'(-1^+)=-2(-1)+b=2+b\\ \\Rightarrow\\ a=4+2b\\]<p>Igualando: \\(4b-10=4+2b\\Rightarrow b=7\\) y \\(a=18\\).</p><div class='res'>\\(a=18\\) y \\(b=7\\)</div></div>"
+     "html": "<div class='ex'><p>Si es derivable en \\(x=-1\\), también es continua<i class='n' data-t='th'>Derivable en un punto \\(\\Rightarrow\\) continua en ese punto.</i>. Imponemos las dos condiciones:</p>\\[\\text{Continuidad: }\\frac12(-a-12)=-1-2b\\iff a=4b-10\\]\\[\\text{Derivabilidad: }f'(-1^-)=\\frac a2,\\quad f'(-1^+)=-2(-1)+b=2+b\\ \\Rightarrow\\ a=4+2b\\]<p>Igualando: \\(4b-10=4+2b\\) \\(\\Rightarrow b=7\\) y \\(a=18\\).</p><div class='res'>\\(a=18\\) y \\(b=7\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
@@ -319,7 +319,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2015-reserva-1-8",

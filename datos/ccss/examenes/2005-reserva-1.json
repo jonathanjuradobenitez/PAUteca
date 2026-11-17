@@ -35,7 +35,7 @@
     "criterio": "regla general fijada por el autor: año y convocatoria del nombre del archivo; un PDF con las dos opciones es el examen completo",
     "incidencias": []
    },
-   "revision": "borrador"
+   "revision": "revisado"
   }
  ],
  "ejercicios": [
@@ -91,9 +91,9 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "": "borrador"
+    "": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -150,10 +150,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -200,10 +200,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -259,10 +259,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {
     "a": [
@@ -321,10 +321,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -346,7 +346,7 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p><b>Dominio.</b> \\(x+2=0\\iff x=-2\\): \\(\\operatorname{Dom}f=\\mathbb R\\setminus\\{-2\\}\\).</p><p><b>Cortes con los ejes.</b> Con el eje \\(Y\\): \\(f(0)=\\frac12\\Rightarrow\\left(0,\\frac12\\right)\\). Con el eje \\(X\\): \\(x+1=0\\iff x=-1\\Rightarrow(-1,0)\\).</p><p><b>Asíntota vertical.</b> En \\(x=-2\\) el numerador vale \\(-1\\):</p>\\[\\lim_{x\\to-2^-}\\frac{x+1}{x+2}=\\frac{-1}{0^-}=+\\infty\\]\\[\\lim_{x\\to-2^+}\\frac{x+1}{x+2}=\\frac{-1}{0^+}=-\\infty\\]<p><b>Asíntota horizontal.</b></p>\\[\\lim_{x\\to\\pm\\infty}\\frac{x+1}{x+2}=1\\Rightarrow y=1\\]<p><b>Monotonía.</b></p><p>Al ser \\(f\\) una función racional, el único punto «problemático» es \\(x=-2\\), que anula el denominador y no pertenece al dominio.</p><p>Estudiamos el signo de \\(f'\\)<i class='n' data-t='tp'>Dentro de cada intervalo la derivada no cambia de signo, así que basta sustituir un valor cualquiera del intervalo para conocer su signo.</i>.</p>\\[f'(x)=\\dfrac{1\\cdot(x+2)-(x+1)\\cdot1}{(x+2)^2}=\\dfrac{1}{(x+2)^2}\\]<p>El numerador, 1, no se anula nunca: \\(f'\\) no tiene raíces.</p><div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 192 108' width='100%' style='max-width:230px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H178' stroke='currentColor' stroke-width='1.6'/><circle cx='96' cy='52' r='4' fill='#fff' stroke='currentColor' stroke-width='1.5'/><text x='96' y='76' text-anchor='middle' font-weight='700'>−2</text><text x='29.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#17a673'>+</text><path d='M43.0 40L79.0 10' stroke='#17a673' stroke-width='2' fill='none'/><path d='M70.0 11L79.0 10L77.0 19' stroke='#17a673' stroke-width='2' fill='none'/><text x='55.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(−3) &gt; 0</text><text x='111.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#17a673'>+</text><path d='M125.0 40L161.0 10' stroke='#17a673' stroke-width='2' fill='none'/><path d='M152.0 11L161.0 10L159.0 19' stroke='#17a673' stroke-width='2' fill='none'/><text x='137.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(−1) &gt; 0</text></svg></div><p>Luego \\(f\\) crece en \\((-\\infty,-2)\\) y \\((-2,+\\infty)\\)<i class='n' data-t='th'>Si \\(f'\\gt0\\) en un intervalo, \\(f\\) crece en él; si \\(f'\\lt0\\), decrece.</i>.</p><p>No tiene extremos relativos.</p><div class='res'>\\(\\operatorname{Dom}f=\\mathbb R\\setminus\\{-2\\}\\); cortes \\((-1,0)\\) y \\(\\left(0,\\frac12\\right)\\); asíntotas \\(x=-2\\) e \\(y=1\\); creciente en \\((-\\infty,-2)\\) y en \\((-2,+\\infty)\\)</div></div>"
+     "html": "<div class='ex'><p><b>Dominio.</b> \\(x+2=0\\iff x=-2\\): \\(\\operatorname{Dom}f=\\mathbb R\\setminus\\{-2\\}\\).</p><p><b>Cortes con los ejes.</b> Con el eje \\(Y\\): \\(f(0)=\\frac12\\) \\(\\Rightarrow\\left(0,\\frac12\\right)\\). Con el eje \\(X\\): \\(x+1=0\\iff x=-1\\) \\(\\Rightarrow(-1,0)\\).</p><p><b>Asíntota vertical.</b> En \\(x=-2\\) el numerador vale \\(-1\\):</p>\\[\\lim_{x\\to-2^-}\\frac{x+1}{x+2}=\\frac{-1}{0^-}=+\\infty\\]\\[\\lim_{x\\to-2^+}\\frac{x+1}{x+2}=\\frac{-1}{0^+}=-\\infty\\]<p><b>Asíntota horizontal.</b></p>\\[\\lim_{x\\to\\pm\\infty}\\frac{x+1}{x+2}=1\\Rightarrow y=1\\]<p><b>Monotonía.</b></p><p>Al ser \\(f\\) una función racional, el único punto «problemático» es \\(x=-2\\), que anula el denominador y no pertenece al dominio.</p><p>Estudiamos el signo de \\(f'\\)<i class='n' data-t='tp'>Dentro de cada intervalo la derivada no cambia de signo, así que basta sustituir un valor cualquiera del intervalo para conocer su signo.</i>.</p>\\[f'(x)=\\dfrac{1\\cdot(x+2)-(x+1)\\cdot1}{(x+2)^2}=\\dfrac{1}{(x+2)^2}\\]<p>El numerador, 1, no se anula nunca: \\(f'\\) no tiene raíces.</p><div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 192 108' width='100%' style='max-width:230px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H178' stroke='currentColor' stroke-width='1.6'/><circle cx='96' cy='52' r='4' fill='#fff' stroke='currentColor' stroke-width='1.5'/><text x='96' y='76' text-anchor='middle' font-weight='700'>−2</text><text x='29.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#17a673'>+</text><path d='M43.0 40L79.0 10' stroke='#17a673' stroke-width='2' fill='none'/><path d='M70.0 11L79.0 10L77.0 19' stroke='#17a673' stroke-width='2' fill='none'/><text x='55.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(−3) &gt; 0</text><text x='111.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#17a673'>+</text><path d='M125.0 40L161.0 10' stroke='#17a673' stroke-width='2' fill='none'/><path d='M152.0 11L161.0 10L159.0 19' stroke='#17a673' stroke-width='2' fill='none'/><text x='137.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(−1) &gt; 0</text></svg></div><p>Luego \\(f\\) crece en \\((-\\infty,-2)\\) y \\((-2,+\\infty)\\)<i class='n' data-t='th'>Si \\(f'\\gt0\\) en un intervalo, \\(f\\) crece en él; si \\(f'\\lt0\\), decrece.</i>.</p><p>No tiene extremos relativos.</p><div class='res'>\\(\\operatorname{Dom}f=\\mathbb R\\setminus\\{-2\\}\\); cortes \\((-1,0)\\) y \\(\\left(0,\\frac12\\right)\\); asíntotas \\(x=-2\\) e \\(y=1\\); creciente en \\((-\\infty,-2)\\) y en \\((-2,+\\infty)\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
@@ -381,10 +381,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -445,11 +445,11 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador",
-    "c": "borrador"
+    "a": "revisado",
+    "b": "revisado",
+    "c": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -505,10 +505,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {
     "a": [

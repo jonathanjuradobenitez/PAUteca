@@ -51,7 +51,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2012-reserva-4-2",
@@ -93,7 +93,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2012-reserva-4-3",
@@ -154,7 +154,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2012-reserva-4-4",
@@ -241,7 +241,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2012-reserva-4-6",
@@ -302,7 +302,7 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>\\(A\\) y \\(B\\) son independientes si \\(P(A\\mid B)=P(A)\\), es decir, \\(P(A\\cap B)=P(A)\\cdot P(B)\\).</p><p>Calculamos primero \\(P(A\\cap B)\\) despejándola de la fórmula de la unión<i class='n' data-t='th'>\\(P(A\\cup B)=P(A)+P(B)-P(A\\cap B)\\Rightarrow P(A\\cap B)=P(A)+P(B)-P(A\\cup B)\\).</i>:</p>\\[P(A\\cap B)=0{,}8+0{,}7-0{,}94=0{,}56\\]\\[P(A)\\cdot P(B)=0{,}8\\cdot0{,}7=0{,}56\\]<div class='res'>Sí son independientes, porque \\(P(A\\cap B)=P(A)\\cdot P(B)\\)</div></div>"
+     "html": "<div class='ex'><p>\\(A\\) y \\(B\\) son independientes si \\(P(A\\mid B)=P(A)\\), es decir, \\(P(A\\cap B)=P(A)\\cdot P(B)\\).</p><p>Calculamos primero \\(P(A\\cap B)\\) despejándola de la fórmula de la unión<i class='n' data-t='th'>\\(P(A\\cup B)=P(A)+P(B)-P(A\\cap B)\\) \\(\\Rightarrow P(A\\cap B)=P(A)+P(B)-P(A\\cup B)\\).</i>:</p>\\[P(A\\cap B)=0{,}8+0{,}7-0{,}94=0{,}56\\]\\[P(A)\\cdot P(B)=0{,}8\\cdot0{,}7=0{,}56\\]<div class='res'>Sí son independientes, porque \\(P(A\\cap B)=P(A)\\cdot P(B)\\)</div></div>"
     },
     {
      "titulo": "Apartado b",

@@ -70,6 +70,30 @@ function notes(root,pre){const L={why:"💡",th:"📘",err:"⚠️",tp:"⭐"},T=
   else{const h=find(el,"previousElementSibling")||find(el,"nextElementSibling");
    if(h){const p=h.querySelector("p");p?p.append(b):h.prepend(b);(h._l||h).after(d);h._l=d;el.remove()}else el.replaceWith(b,d)}});
  root.querySelectorAll("button.mk").forEach((b,i)=>{const o=b.dataset.n,d=root.querySelector('.bub[data-n="'+o+'"]'),n=i+1;b.textContent=n;b.dataset.n=pre+"x"+n;if(d){d.dataset.n=pre+"x"+n;d.querySelector(".s").textContent=n}})}
+function f3d(){document.querySelectorAll(".f3d:not([data-ok])").forEach(box=>{box.dataset.ok=1;let D;try{D=JSON.parse(box.dataset.f)}catch(e){return}
+ const svg=box.querySelector("svg");if(!svg)return;let az=D.az,el=D.el;const A0=az,E0=el;const C={n:"#dc2626",d:"#16a34a",g:"#64748b",r:"#2563eb"};const key=c=>({"#dc2626":"n","#16a34a":"d","#64748b":"g","#2563eb":"r"}[c]||"g");
+ const pts=[];D.p.forEach(q=>{if(q[0]==="poly")q[1].forEach(P=>pts.push(P));else if(q[0]==="line"||q[0]==="vec"){pts.push(q[1],q[2])}else pts.push(q[1])});
+ const cen=[0,1,2].map(i=>(Math.min(...pts.map(p=>p[i]))+Math.max(...pts.map(p=>p[i])))/2);const R=Math.max(...pts.map(p=>Math.hypot(p[0]-cen[0],p[1]-cen[1],p[2]-cen[2])))||1;
+ const W=340,H=300,s=(Math.min(W,H-50)/2-6)/R,uid="f"+Math.random().toString(36).slice(2,7),f=v=>v.toFixed(1);
+ const LEY={"plano":`<rect x='0' y='-8' width='12' height='9' fill='#8b5cf6' fill-opacity='.4' stroke='#7c3aed'/>`,"recta":`<line x1='0' y1='-4' x2='14' y2='-4' stroke='#2563eb' stroke-width='2'/>`,"vector normal":`<line x1='0' y1='-4' x2='14' y2='-4' stroke='#dc2626' stroke-width='2.4'/>`,"vector director":`<line x1='0' y1='-4' x2='14' y2='-4' stroke='#16a34a' stroke-width='2.4'/>`,"puntos":`<circle cx='6' cy='-4' r='3.8' fill='#e8487a'/>`};
+ function draw(){const a=az*Math.PI/180,e=el*Math.PI/180,ca=Math.cos(a),sa=Math.sin(a),ce=Math.cos(e),se=Math.sin(e);
+  const pr=P=>{const x=P[0]-cen[0],y=P[1]-cen[1],z=P[2]-cen[2];const u=y*ca-x*sa,d=y*sa+x*ca,v=z*ce-d*se;return[W/2+u*s,(H-50)/2+8-v*s]};
+  const o=[],top=[];D.p.forEach(q=>{const k=q[0];
+   if(k==="poly")o.push(`<polygon points='${q[1].map(P=>pr(P).map(f).join(",")).join(" ")}' fill='${q[2]}' fill-opacity='.26' stroke='${q[3]}' stroke-width='1.2'/>`);
+   else if(k==="line"){const[a1,b1]=pr(q[1]),[a2,b2]=pr(q[2]);o.push(`<line x1='${f(a1)}' y1='${f(b1)}' x2='${f(a2)}' y2='${f(b2)}' stroke='${q[3]}' stroke-width='${q[4]}'${q[5]?" stroke-dasharray='4 3'":""}/>`)}
+   else if(k==="vec"){const[a1,b1]=pr(q[1]),[a2,b2]=pr(q[2]);o.push(`<line x1='${f(a1)}' y1='${f(b1)}' x2='${f(a2)}' y2='${f(b2)}' stroke='${q[3]}' stroke-width='2.4' marker-end='url(#${uid}${key(q[3])})'/>`);if(q[4])o.push(`<text x='${f(a2+q[5])}' y='${f(b2+q[6])}' fill='${q[3]}' font-weight='700'>${q[4]}</text>`)}
+   else if(k==="pt"){const[x,y]=pr(q[1]);top.push(`<circle cx='${f(x)}' cy='${f(y)}' r='3.8' fill='#e8487a'/><text x='${f(x+q[3])}' y='${f(y+q[4])}' font-weight='700'>${q[2]}</text>`)}
+   else if(k==="txt"){const[x,y]=pr(q[1]);o.push(`<text x='${f(x+q[4])}' y='${f(y+q[5])}' fill='${q[3]}' font-weight='700' font-style='italic'>${q[2]}</text>`)}});
+  const defs="<defs>"+Object.entries(C).map(([k,c])=>`<marker id='${uid}${k}' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='${c}'/></marker>`).join("")+"</defs>";
+  const ox=24,oy=H-30;let ej="";[[1,0,0,"x"],[0,1,0,"y"],[0,0,1,"z"]].forEach(([x,y,z,n])=>{const u=y*ca-x*sa,d=y*sa+x*ca,v=z*ce-d*se,x2=ox+u*16,y2=oy-v*16;ej+=`<line x1='${ox}' y1='${oy}' x2='${f(x2)}' y2='${f(y2)}' stroke='#64748b' stroke-width='1.2'/><text x='${f(x2+(x2-ox)*.35-3)}' y='${f(y2+(y2-oy)*.35+4)}' fill='#64748b' font-size='10'>${n}</text>`});
+  let lx=56,ly="";(D.ley||[]).forEach(k=>{ly+=`<g transform='translate(${f(lx)},${H-8})'>${LEY[k]||""}<text x='18' y='0' font-size='10'>${k}</text></g>`;lx+=24+5.3*k.length});
+  const WW=Math.max(W,Math.round(lx));svg.setAttribute("viewBox",`0 0 ${WW} ${H}`);
+  svg.innerHTML=defs+o.join("")+top.join("")+ej+ly+`<g data-r='1' style='cursor:pointer'><rect x='${WW-58}' y='4' width='54' height='20' rx='10' fill='#ede9fe'/><text x='${WW-31}' y='18' text-anchor='middle' font-size='11' fill='#6d28d9' font-weight='700'>Reiniciar</text></g>`}
+ draw();svg.style.touchAction="none";svg.style.cursor="grab";svg.style.userSelect="none";svg.style.webkitUserSelect="none";let dr=null;
+ svg.addEventListener("pointerdown",ev=>{if(ev.target.closest("[data-r]")){az=A0;el=E0;draw();return}dr=[ev.clientX,ev.clientY];svg.setPointerCapture(ev.pointerId)});
+ svg.addEventListener("pointermove",ev=>{if(!dr)return;const dx=ev.clientX-dr[0],dy=ev.clientY-dr[1];dr=[ev.clientX,ev.clientY];az-=dx*.6;el=Math.max(-85,Math.min(85,el+dy*.5));draw()});
+ const fin=()=>{dr=null};svg.addEventListener("pointerup",fin);svg.addEventListener("pointercancel",fin)})}
+
 function smooth(){document.querySelectorAll(".sol svg polyline").forEach(pl=>{
  const pts=pl.getAttribute("points").trim().split(/\s+/).map(q=>q.split(",").map(Number));
  if(pts.length<3)return;
@@ -97,7 +121,9 @@ function rxFix(){document.querySelectorAll("svg.rxs").forEach(sv=>{try{let x=10;
   if(b){b.setAttribute("x",x+.5);x+=b.getComputedTextLength()+1}});
  sv.querySelectorAll("path[data-a]").forEach(p=>{const xa=pos[p.dataset.a],xb=pos[p.dataset.b],y=+p.dataset.y,d=+p.dataset.d;p.setAttribute("d","M"+xa+" "+y+" V"+(y+d)+" H"+xb+" V"+(y+6))});
  sv.setAttribute("viewBox","0 0 "+Math.max(x+12,260)+" "+sv.dataset.h)}catch(e){}})}
-function render(){$("app").innerHTML=`<div class="top">${S.s!=="home"?'<button class="sq" data-a="back" aria-label="Volver">‹</button>':""}<div class="logo">PAU<span>teca</span></div></div>`+crumbs()+view();document.querySelectorAll(".sol").forEach((so,i)=>notes(so,"s"+i));smooth();rxFix();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(rxFix);{const cn=document.querySelector(".crumbs");if(cn)cn.scrollLeft=cn.scrollWidth}if(window.mjOk)MathJax.typesetPromise([$("app")])}
+function render(){$("app").innerHTML=`<div class="top">${S.s!=="home"?'<button class="sq" data-a="back" aria-label="Volver">‹</button>':""}<div class="logo">PAU<span>teca</span></div></div>`+crumbs()+view();document.querySelectorAll(".sol").forEach((so,i)=>notes(so,"s"+i));smooth();f3d();rxFix();if(document.fonts&&document.fonts.ready)document.fonts.ready.then(rxFix);{const cn=document.querySelector(".crumbs");if(cn)cn.scrollLeft=cn.scrollWidth}if(window.mjOk)MathJax.typesetPromise([$("app")]).then(mjWide)}
+function mjWide(){document.querySelectorAll(".sol mjx-container:not([display])").forEach(m=>{m.classList.remove("mjw");const p=m.parentElement;if(!p||!p.clientWidth)return;if(m.getBoundingClientRect().width>p.clientWidth-2)m.classList.add("mjw")})}
+window.mjWide=mjWide;addEventListener("resize",()=>{clearTimeout(window._mjt);window._mjt=setTimeout(mjWide,200)});
 const nav=n=>{if(n.sj===undefined)n.sj=S.sj;stack.push(S);S=n;draw();scrollTo(0,0)};
 document.addEventListener("click",ev=>{const b=ev.target.closest("[data-a]");if(!b)return;const a=b.dataset.a;
  if(a==="back"){S=stack.pop()||{s:"home"};draw();scrollTo(0,0)}

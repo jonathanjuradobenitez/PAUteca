@@ -34,7 +34,7 @@
     "criterio": "regla general fijada por el autor: año y convocatoria del nombre del archivo; un PDF con las dos opciones es el examen completo",
     "incidencias": []
    },
-   "revision": "borrador"
+   "revision": "revisado"
   }
  ],
  "ejercicios": [
@@ -55,7 +55,7 @@
     },
     {
      "titulo": "Resolución",
-     "html": "<div class='ex'><p>Escribimos la matriz de coeficientes \\(A\\) y la ampliada \\(A^*\\):</p>\\[A=\\begin{pmatrix}4&1&2\\\\ 3&0&-1\\\\ 4&-1&4\\end{pmatrix}\\]\\[A^*=\\left(\\begin{array}{ccc|c}4&1&2&26\\\\3&0&-1&0\\\\4&-1&4&0\\end{array}\\right)\\]<p>Calculamos \\(|A|\\) por la regla de Sarrus:</p>\\[|A|=\\begin{vmatrix}4&1&2\\\\ 3&0&-1\\\\ 4&-1&4\\end{vmatrix}=4\\cdot0\\cdot4+1\\cdot(-1)\\cdot4+2\\cdot3\\cdot(-1)-\\left[2\\cdot0\\cdot4+4\\cdot(-1)\\cdot(-1)+1\\cdot3\\cdot4\\right]=-26\\neq0\\]<p>Como \\(|A|\\neq0\\), \\(\\operatorname{rg}A=3=\\operatorname{rg}A^*=\\) número de incógnitas. Por el teorema de Rouché-Frobenius, el sistema es compatible determinado<i class='n' data-t='th'>Teorema de Rouché-Frobenius: el sistema es compatible si y solo si \\(\\operatorname{rg}A=\\operatorname{rg}A^*\\); si además ese rango es igual al número de incógnitas, la solución es única.</i>. Lo resolvemos por la regla de Cramer<i class='n' data-t='th'>Regla de Cramer: cada incógnita es el cociente entre el determinante que resulta de sustituir su columna por la de términos independientes y \\(|A|\\).</i>:</p>\\[x=\\frac{\\begin{vmatrix}26&1&2\\\\0&0&-1\\\\0&-1&4\\end{vmatrix}}{-26}=\\frac{26\\cdot(0-1)}{-26}=\\frac{-26}{-26}=1\\]\\[y=\\frac{\\begin{vmatrix}4&26&2\\\\3&0&-1\\\\4&0&4\\end{vmatrix}}{-26}=\\frac{-26\\cdot(12+4)}{-26}=\\frac{-416}{-26}=16\\]\\[z=\\frac{\\begin{vmatrix}4&1&26\\\\3&0&0\\\\4&-1&0\\end{vmatrix}}{-26}=\\frac{26\\cdot(-3-0)}{-26}=\\frac{-78}{-26}=3\\]<i class='n' data-t='tp'>Los tres determinantes se desarrollan por la columna de términos independientes, que solo tiene un elemento no nulo (26).</i><i class='n' data-t='tp'>Comprobación: \\(24\\cdot1+6\\cdot16+12\\cdot3=24+96+36=156\\) ✓, \\(3=3\\cdot1\\) ✓ y \\(16=4\\cdot3+4\\cdot1\\) ✓.</i><div class='res'>La leche cuesta 1 €/L, el jamón serrano 16 €/kg y el aceite de oliva 3 €/L</div></div>"
+     "html": "<div class='ex'><p>Escribimos la matriz de coeficientes \\(A\\) y la ampliada \\(A^*\\):</p>\\[A=\\begin{pmatrix}4&1&2\\\\ 3&0&-1\\\\ 4&-1&4\\end{pmatrix}\\]\\[A^*=\\left(\\begin{array}{ccc|c}4&1&2&26\\\\3&0&-1&0\\\\4&-1&4&0\\end{array}\\right)\\]<p>Calculamos \\(|A|\\) por la regla de Sarrus:</p>\\[\\begin{aligned}|A|&=\\begin{vmatrix}4&1&2\\\\ 3&0&-1\\\\ 4&-1&4\\end{vmatrix}\\\\&=4\\cdot0\\cdot4+1\\cdot(-1)\\cdot4\\\\&\\quad+2\\cdot3\\cdot(-1)\\\\&\\quad-\\big[2\\cdot0\\cdot4\\\\&\\quad+4\\cdot(-1)\\cdot(-1)\\\\&\\quad+1\\cdot3\\cdot4\\big]=-26\\neq0\\end{aligned}\\]<p>Como \\(|A|\\neq0\\), \\(\\operatorname{rg}A=3=\\operatorname{rg}A^*=\\) número de incógnitas. Por el teorema de Rouché-Frobenius, el sistema es compatible determinado<i class='n' data-t='th'>Teorema de Rouché-Frobenius: el sistema es compatible si y solo si \\(\\operatorname{rg}A=\\operatorname{rg}A^*\\); si además ese rango es igual al número de incógnitas, la solución es única.</i>. Lo resolvemos por la regla de Cramer<i class='n' data-t='th'>Regla de Cramer: cada incógnita es el cociente entre el determinante que resulta de sustituir su columna por la de términos independientes y \\(|A|\\).</i>:</p>\\[\\begin{aligned}x&=\\frac{\\begin{vmatrix}26&1&2\\\\0&0&-1\\\\0&-1&4\\end{vmatrix}}{-26}\\\\&=\\frac{26\\cdot(0-1)}{-26}=\\frac{-26}{-26}=1\\end{aligned}\\]\\[\\begin{aligned}y&=\\frac{\\begin{vmatrix}4&26&2\\\\3&0&-1\\\\4&0&4\\end{vmatrix}}{-26}\\\\&=\\frac{-26\\cdot(12+4)}{-26}=\\frac{-416}{-26}=16\\end{aligned}\\]\\[\\begin{aligned}z&=\\frac{\\begin{vmatrix}4&1&26\\\\3&0&0\\\\4&-1&0\\end{vmatrix}}{-26}\\\\&=\\frac{26\\cdot(-3-0)}{-26}=\\frac{-78}{-26}=3\\end{aligned}\\]<i class='n' data-t='tp'>Los tres determinantes se desarrollan por la columna de términos independientes, que solo tiene un elemento no nulo (26).</i><i class='n' data-t='tp'>Comprobación:\\[\\begin{aligned}&24\\cdot1+6\\cdot16+12\\cdot3\\\\&=24+96+36=156\\end{aligned}\\] ✓, \\(3=3\\cdot1\\) ✓ y \\(16=4\\cdot3+4\\cdot1\\) ✓.</i><div class='res'>La leche cuesta 1 €/L, el jamón serrano 16 €/kg y el aceite de oliva 3 €/L</div></div>"
     }
    ],
    "clasificacion": [
@@ -81,9 +81,9 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "": "borrador"
+    "": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -135,10 +135,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -189,10 +189,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -248,10 +248,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {
     "a": [
@@ -310,10 +310,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -336,7 +336,7 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p><b>Dominio.</b> El denominador \\(x+1\\) solo se anula en \\(x=-1\\), que no está en el dominio, porque \\(x\\ge0\\)<i class='n' data-t='why'>\\(x\\) es un precio, así que no puede ser negativo.</i>: \\(\\operatorname{Dom}f=[0,+\\infty)\\).</p><p><b>Cortes con los ejes.</b> Con el eje \\(Y\\): \\(f(0)=2-4=-2\\Rightarrow(0,-2)\\). Con el eje \\(X\\):</p>\\[2-\\frac4{x+1}=0\\iff\\frac4{x+1}=2\\iff x+1=2\\iff x=1\\Rightarrow(1,0)\\]<p><b>Asíntotas.</b> No hay asíntota vertical en el dominio<i class='n' data-t='why'>La única candidata es \\(x=-1\\), que queda fuera de \\([0,+\\infty)\\).</i>. Horizontal:</p>\\[\\lim_{x\\to+\\infty}\\left(2-\\frac4{x+1}\\right)=2-0=2\\Rightarrow y=2\\]<p><b>Monotonía.</b></p><p>Al ser \\(f\\) una función racional, el único punto «problemático» sería \\(x=-1\\), que anula el denominador, pero no pertenece al dominio. Su dominio es \\([0,+\\infty)\\)<i class='n' data-t='why'>Rayamos la parte de la recta que queda fuera del dominio: ahí la función no está definida y no se estudia.</i>.</p><p>Estudiamos el signo de \\(f'\\)<i class='n' data-t='tp'>Dentro de cada intervalo la derivada no cambia de signo, así que basta sustituir un valor cualquiera del intervalo para conocer su signo.</i>.</p>\\[f'(x)=0-\\dfrac{0\\cdot(x+1)-4\\cdot1}{(x+1)^2}\\]\\[f'(x)=\\dfrac{4}{(x+1)^2}\\]<p>El numerador, 4, no se anula nunca: \\(f'\\) no tiene raíces y su signo es siempre el mismo.</p><div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 136 108' width='100%' style='max-width:163px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H122' stroke='currentColor' stroke-width='1.6'/><path d='M14 56L18 48M18 56L22 48M22 56L26 48M26 56L30 48M30 56L34 48M34 56L38 48' stroke='currentColor' stroke-width='1.1'/><path d='M40 46V58' stroke='currentColor' stroke-width='1.6'/><text x='40' y='76' text-anchor='middle' font-weight='700'>0</text><text x='55.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#17a673'>+</text><path d='M69.0 40L105.0 10' stroke='#17a673' stroke-width='2' fill='none'/><path d='M96.0 11L105.0 10L103.0 19' stroke='#17a673' stroke-width='2' fill='none'/><text x='81.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(1) &gt; 0</text></svg></div><p>Luego \\(f\\) crece en \\((0,+\\infty)\\)<i class='n' data-t='th'>Si \\(f'\\gt0\\) en un intervalo, \\(f\\) crece en él; si \\(f'\\lt0\\), decrece.</i>.</p><p>No tiene extremos relativos.</p><p><b>Curvatura.</b></p><p>Estudiamos su curvatura<i class='n' data-t='th'>Si \\(f''\\gt0\\) en un intervalo, \\(f\\) es convexa (\\(\\cup\\)) en él; si \\(f''\\lt0\\), es cóncava (\\(\\cap\\)).</i>.</p>\\[f''(x)=\\dfrac{0\\cdot(x+1)^2-4\\cdot2(x+1)}{(x+1)^4}\\]\\[f''(x)=\\dfrac{-8}{(x+1)^3}\\]<p>\\(f''\\) no se anula nunca: para \\(x\\ge0\\), \\((x+1)^3\\gt0\\).</p><p>Estudiamos el signo de \\(f''\\).</p><div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 136 108' width='100%' style='max-width:163px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H122' stroke='currentColor' stroke-width='1.6'/><path d='M14 56L18 48M18 56L22 48M22 56L26 48M26 56L30 48M30 56L34 48M34 56L38 48' stroke='currentColor' stroke-width='1.1'/><path d='M40 46V58' stroke='currentColor' stroke-width='1.6'/><text x='40' y='76' text-anchor='middle' font-weight='700'>0</text><path d='M63.0 42Q81.0 -4 99.0 42' stroke='#e8487a' stroke-width='2' fill='none'/><text x='81.0' y='36' text-anchor='middle' font-size='18' font-weight='700' fill='#e8487a'>−</text><text x='81.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>″(1) &lt; 0</text></svg></div><p>\\(f\\) es cóncava en \\((0,+\\infty)\\).</p><p>No tiene puntos de inflexión.</p><table class='tb'><tr><th>\\(x\\)</th><td>0</td><td>1</td><td>3</td><td>7</td></tr><tr><th>\\(y\\)</th><td>−2</td><td>0</td><td>1</td><td>1,5</td></tr></table><div style='overflow-x:auto'><svg viewBox='0 0 420 300' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><line x1='55.2' y1='266.0' x2='55.2' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='108.1' y1='266.0' x2='108.1' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='161.0' y1='266.0' x2='161.0' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='214.0' y1='266.0' x2='214.0' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='266.9' y1='266.0' x2='266.9' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='319.8' y1='266.0' x2='319.8' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='372.8' y1='266.0' x2='372.8' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='240.2' x2='386.0' y2='240.2' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='197.3' x2='386.0' y2='197.3' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='154.3' x2='386.0' y2='154.3' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='111.3' x2='386.0' y2='111.3' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='68.4' x2='386.0' y2='68.4' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='154.3' x2='386.0' y2='154.3' stroke='#111' stroke-width='1.3'/><line x1='55.2' y1='266.0' x2='55.2' y2='34.0' stroke='#111' stroke-width='1.3'/><text x='108.1' y='167.3' font-size='10' text-anchor='middle' fill='#374151'>2</text><text x='161.0' y='167.3' font-size='10' text-anchor='middle' fill='#374151'>4</text><text x='214.0' y='167.3' font-size='10' text-anchor='middle' fill='#374151'>6</text><text x='266.9' y='167.3' font-size='10' text-anchor='middle' fill='#374151'>8</text><text x='319.8' y='167.3' font-size='10' text-anchor='middle' fill='#374151'>10</text><text x='372.8' y='167.3' font-size='10' text-anchor='middle' fill='#374151'>12</text><text x='51.2' y='243.2' font-size='10' text-anchor='end' fill='#374151'>-2</text><text x='51.2' y='200.3' font-size='10' text-anchor='end' fill='#374151'>-1</text><text x='51.2' y='114.3' font-size='10' text-anchor='end' fill='#374151'>1</text><text x='51.2' y='71.4' font-size='10' text-anchor='end' fill='#374151'>2</text><text x='384.0' y='149.3' font-size='11' text-anchor='end' font-style='italic'>x (€/L)</text><text x='60.2' y='44.0' font-size='11' font-style='italic'>f (miles de €)</text><line x1='34.0' y1='68.4' x2='386.0' y2='68.4' stroke='#94a3b8' stroke-width='1.4' stroke-dasharray='5 4'/><polyline points='55.2,240.2 57.8,224.6 60.5,211.6 63.1,200.6 65.8,191.1 68.4,182.9 71.1,175.8 73.7,169.5 76.3,163.8 79.0,158.8 81.6,154.3 84.3,150.2 86.9,146.5 89.6,143.1 92.2,140.0 94.9,137.1 97.5,134.5 100.2,132.0 102.8,129.7 105.5,127.6 108.1,125.7 110.8,123.8 113.4,122.1 116.0,120.4 118.7,118.9 121.3,117.5 124.0,116.1 126.6,114.8 129.3,113.6 131.9,112.4 134.6,111.3 137.2,110.3 139.9,109.3 142.5,108.3 145.2,107.4 147.8,106.6 150.5,105.7 153.1,104.9 155.7,104.2 158.4,103.4 161.0,102.7 163.7,102.1 166.3,101.4 169.0,100.8 171.6,100.2 174.3,99.6 176.9,99.1 179.6,98.5 182.2,98.0 184.9,97.5 187.5,97.0 190.2,96.5 192.8,96.1 195.4,95.6 198.1,95.2 200.7,94.8 203.4,94.4 206.0,94.0 208.7,93.6 211.3,93.3 214.0,92.9 216.6,92.6 219.3,92.2 221.9,91.9 224.6,91.6 227.2,91.3 229.8,91.0 232.5,90.7 235.1,90.4 237.8,90.1 240.4,89.9 243.1,89.6 245.7,89.3 248.4,89.1 251.0,88.8 253.7,88.6 256.3,88.4 259.0,88.1 261.6,87.9 264.3,87.7 266.9,87.5 269.5,87.3 272.2,87.0 274.8,86.8 277.5,86.7 280.1,86.5 282.8,86.3 285.4,86.1 288.1,85.9 290.7,85.7 293.4,85.6 296.0,85.4 298.7,85.2 301.3,85.1 304.0,84.9 306.6,84.7 309.2,84.6 311.9,84.4 314.5,84.3 317.2,84.1 319.8,84.0 322.5,83.9 325.1,83.7 327.8,83.6 330.4,83.4 333.1,83.3 335.7,83.2 338.4,83.1 341.0,82.9 343.7,82.8 346.3,82.7 348.9,82.6 351.6,82.5 354.2,82.3 356.9,82.2 359.5,82.1 362.2,82.0 364.8,81.9 367.5,81.8 370.1,81.7 372.8,81.6' fill='none' stroke='#2563eb' stroke-width='2.2'/><circle cx='55.2' cy='240.2' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><circle cx='81.6' cy='154.3' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='61.2' y='244.2' font-size='10' fill='#111' text-anchor='start' font-weight='bold'>(0, −2)</text><text x='87.6' y='168.3' font-size='10' fill='#111' text-anchor='start' font-weight='bold'>(1, 0)</text><text x='309.8' y='62.4' font-size='10' fill='#111' text-anchor='start' font-weight='bold'>y = 2</text></svg></div><div class='res'>Rama de hipérbola creciente y cóncava que empieza en \\((0,-2)\\), corta al eje en \\((1,0)\\) y se acerca a la asíntota horizontal \\(y=2\\)</div></div>"
+     "html": "<div class='ex'><p><b>Dominio.</b> El denominador \\(x+1\\) solo se anula en \\(x=-1\\), que no está en el dominio, porque \\(x\\ge0\\)<i class='n' data-t='why'>\\(x\\) es un precio, así que no puede ser negativo.</i>: \\(\\operatorname{Dom}f=[0,+\\infty)\\).</p><p><b>Cortes con los ejes.</b> Con el eje \\(Y\\): \\(f(0)=2-4=-2\\) \\(\\Rightarrow(0,-2)\\). Con el eje \\(X\\):</p>\\[2-\\frac4{x+1}=0\\iff\\frac4{x+1}=2\\iff x+1=2\\iff x=1\\Rightarrow(1,0)\\]<p><b>Asíntotas.</b> No hay asíntota vertical en el dominio<i class='n' data-t='why'>La única candidata es \\(x=-1\\), que queda fuera de \\([0,+\\infty)\\).</i>. Horizontal:</p>\\[\\lim_{x\\to+\\infty}\\left(2-\\frac4{x+1}\\right)=2-0=2\\Rightarrow y=2\\]<p><b>Monotonía.</b></p><p>Al ser \\(f\\) una función racional, el único punto «problemático» sería \\(x=-1\\), que anula el denominador, pero no pertenece al dominio. Su dominio es \\([0,+\\infty)\\)<i class='n' data-t='why'>Rayamos la parte de la recta que queda fuera del dominio: ahí la función no está definida y no se estudia.</i>.</p><p>Estudiamos el signo de \\(f'\\)<i class='n' data-t='tp'>Dentro de cada intervalo la derivada no cambia de signo, así que basta sustituir un valor cualquiera del intervalo para conocer su signo.</i>.</p>\\[f'(x)=0-\\dfrac{0\\cdot(x+1)-4\\cdot1}{(x+1)^2}\\]\\[f'(x)=\\dfrac{4}{(x+1)^2}\\]<p>El numerador, 4, no se anula nunca: \\(f'\\) no tiene raíces y su signo es siempre el mismo.</p><div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 136 108' width='100%' style='max-width:163px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H122' stroke='currentColor' stroke-width='1.6'/><path d='M14 56L18 48M18 56L22 48M22 56L26 48M26 56L30 48M30 56L34 48M34 56L38 48' stroke='currentColor' stroke-width='1.1'/><path d='M40 46V58' stroke='currentColor' stroke-width='1.6'/><text x='40' y='76' text-anchor='middle' font-weight='700'>0</text><text x='55.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#17a673'>+</text><path d='M69.0 40L105.0 10' stroke='#17a673' stroke-width='2' fill='none'/><path d='M96.0 11L105.0 10L103.0 19' stroke='#17a673' stroke-width='2' fill='none'/><text x='81.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(1) &gt; 0</text></svg></div><p>Luego \\(f\\) crece en \\((0,+\\infty)\\)<i class='n' data-t='th'>Si \\(f'\\gt0\\) en un intervalo, \\(f\\) crece en él; si \\(f'\\lt0\\), decrece.</i>.</p><p>No tiene extremos relativos.</p><p><b>Curvatura.</b></p><p>Estudiamos su curvatura<i class='n' data-t='th'>Si \\(f''\\gt0\\) en un intervalo, \\(f\\) es convexa (\\(\\cup\\)) en él; si \\(f''\\lt0\\), es cóncava (\\(\\cap\\)).</i>.</p>\\[f''(x)=\\dfrac{0\\cdot(x+1)^2-4\\cdot2(x+1)}{(x+1)^4}\\]\\[f''(x)=\\dfrac{-8}{(x+1)^3}\\]<p>\\(f''\\) no se anula nunca: para \\(x\\ge0\\), \\((x+1)^3\\gt0\\).</p><p>Estudiamos el signo de \\(f''\\).</p><div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 136 108' width='100%' style='max-width:163px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H122' stroke='currentColor' stroke-width='1.6'/><path d='M14 56L18 48M18 56L22 48M22 56L26 48M26 56L30 48M30 56L34 48M34 56L38 48' stroke='currentColor' stroke-width='1.1'/><path d='M40 46V58' stroke='currentColor' stroke-width='1.6'/><text x='40' y='76' text-anchor='middle' font-weight='700'>0</text><path d='M63.0 42Q81.0 -4 99.0 42' stroke='#e8487a' stroke-width='2' fill='none'/><text x='81.0' y='36' text-anchor='middle' font-size='18' font-weight='700' fill='#e8487a'>−</text><text x='81.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>″(1) &lt; 0</text></svg></div><p>\\(f\\) es cóncava en \\((0,+\\infty)\\).</p><p>No tiene puntos de inflexión.</p><table class='tb'><tr><th>\\(x\\)</th><td>0</td><td>1</td><td>3</td><td>7</td></tr><tr><th>\\(y\\)</th><td>−2</td><td>0</td><td>1</td><td>1,5</td></tr></table><div style='overflow-x:auto'><svg viewBox='0 0 420 300' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><line x1='55.2' y1='266.0' x2='55.2' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='108.1' y1='266.0' x2='108.1' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='161.0' y1='266.0' x2='161.0' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='214.0' y1='266.0' x2='214.0' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='266.9' y1='266.0' x2='266.9' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='319.8' y1='266.0' x2='319.8' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='372.8' y1='266.0' x2='372.8' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='240.2' x2='386.0' y2='240.2' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='197.3' x2='386.0' y2='197.3' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='154.3' x2='386.0' y2='154.3' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='111.3' x2='386.0' y2='111.3' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='68.4' x2='386.0' y2='68.4' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='154.3' x2='386.0' y2='154.3' stroke='#111' stroke-width='1.3'/><line x1='55.2' y1='266.0' x2='55.2' y2='34.0' stroke='#111' stroke-width='1.3'/><text x='108.1' y='167.3' font-size='10' text-anchor='middle' fill='#374151'>2</text><text x='161.0' y='167.3' font-size='10' text-anchor='middle' fill='#374151'>4</text><text x='214.0' y='167.3' font-size='10' text-anchor='middle' fill='#374151'>6</text><text x='266.9' y='167.3' font-size='10' text-anchor='middle' fill='#374151'>8</text><text x='319.8' y='167.3' font-size='10' text-anchor='middle' fill='#374151'>10</text><text x='372.8' y='167.3' font-size='10' text-anchor='middle' fill='#374151'>12</text><text x='51.2' y='243.2' font-size='10' text-anchor='end' fill='#374151'>-2</text><text x='51.2' y='200.3' font-size='10' text-anchor='end' fill='#374151'>-1</text><text x='51.2' y='114.3' font-size='10' text-anchor='end' fill='#374151'>1</text><text x='51.2' y='71.4' font-size='10' text-anchor='end' fill='#374151'>2</text><text x='384.0' y='149.3' font-size='11' text-anchor='end' font-style='italic'>x (€/L)</text><text x='60.2' y='44.0' font-size='11' font-style='italic'>f (miles de €)</text><line x1='34.0' y1='68.4' x2='386.0' y2='68.4' stroke='#94a3b8' stroke-width='1.4' stroke-dasharray='5 4'/><polyline points='55.2,240.2 57.8,224.6 60.5,211.6 63.1,200.6 65.8,191.1 68.4,182.9 71.1,175.8 73.7,169.5 76.3,163.8 79.0,158.8 81.6,154.3 84.3,150.2 86.9,146.5 89.6,143.1 92.2,140.0 94.9,137.1 97.5,134.5 100.2,132.0 102.8,129.7 105.5,127.6 108.1,125.7 110.8,123.8 113.4,122.1 116.0,120.4 118.7,118.9 121.3,117.5 124.0,116.1 126.6,114.8 129.3,113.6 131.9,112.4 134.6,111.3 137.2,110.3 139.9,109.3 142.5,108.3 145.2,107.4 147.8,106.6 150.5,105.7 153.1,104.9 155.7,104.2 158.4,103.4 161.0,102.7 163.7,102.1 166.3,101.4 169.0,100.8 171.6,100.2 174.3,99.6 176.9,99.1 179.6,98.5 182.2,98.0 184.9,97.5 187.5,97.0 190.2,96.5 192.8,96.1 195.4,95.6 198.1,95.2 200.7,94.8 203.4,94.4 206.0,94.0 208.7,93.6 211.3,93.3 214.0,92.9 216.6,92.6 219.3,92.2 221.9,91.9 224.6,91.6 227.2,91.3 229.8,91.0 232.5,90.7 235.1,90.4 237.8,90.1 240.4,89.9 243.1,89.6 245.7,89.3 248.4,89.1 251.0,88.8 253.7,88.6 256.3,88.4 259.0,88.1 261.6,87.9 264.3,87.7 266.9,87.5 269.5,87.3 272.2,87.0 274.8,86.8 277.5,86.7 280.1,86.5 282.8,86.3 285.4,86.1 288.1,85.9 290.7,85.7 293.4,85.6 296.0,85.4 298.7,85.2 301.3,85.1 304.0,84.9 306.6,84.7 309.2,84.6 311.9,84.4 314.5,84.3 317.2,84.1 319.8,84.0 322.5,83.9 325.1,83.7 327.8,83.6 330.4,83.4 333.1,83.3 335.7,83.2 338.4,83.1 341.0,82.9 343.7,82.8 346.3,82.7 348.9,82.6 351.6,82.5 354.2,82.3 356.9,82.2 359.5,82.1 362.2,82.0 364.8,81.9 367.5,81.8 370.1,81.7 372.8,81.6' fill='none' stroke='#2563eb' stroke-width='2.2'/><circle cx='55.2' cy='240.2' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><circle cx='81.6' cy='154.3' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='61.2' y='244.2' font-size='10' fill='#111' text-anchor='start' font-weight='bold'>(0, −2)</text><text x='87.6' y='168.3' font-size='10' fill='#111' text-anchor='start' font-weight='bold'>(1, 0)</text><text x='309.8' y='62.4' font-size='10' fill='#111' text-anchor='start' font-weight='bold'>y = 2</text></svg></div><div class='res'>Rama de hipérbola creciente y cóncava que empieza en \\((0,-2)\\), corta al eje en \\((1,0)\\) y se acerca a la asíntota horizontal \\(y=2\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
@@ -375,11 +375,11 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador",
-    "c": "borrador"
+    "a": "revisado",
+    "b": "revisado",
+    "c": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -430,10 +430,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -489,10 +489,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {
     "a": [

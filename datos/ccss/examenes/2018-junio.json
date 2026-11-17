@@ -26,7 +26,7 @@
     },
     {
      "titulo": "Apartado b",
-     "html": "<div class='ex'><p>Escribimos las inecuaciones con las incógnitas a la izquierda: \\(x\\ge0\\), \\(x\\le2y+2\\iff x-2y\\le2\\) y \\(x+y\\le5\\). No se pide \\(y\\ge0\\), así que el recinto puede quedar por debajo del eje de abscisas<i class='n' data-t='err'>No añadas restricciones que el enunciado no da: aquí el vértice \\(B\\) tiene ordenada negativa.</i>.</p><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(x-2y=2\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(2\\)</td></tr><tr><th>\\(y\\)</th><td>\\(-1\\)</td><td>\\(0\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(x+y=5\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(5\\)</td></tr><tr><th>\\(y\\)</th><td>\\(5\\)</td><td>\\(0\\)</td></tr></table><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(x-2y\\le2\\): con el origen, \\(0\\le2\\) se cumple → semiplano que lo contiene.</li><li>\\(x+y\\le5\\): con el origen, \\(0\\le5\\) se cumple → semiplano que lo contiene.</li></ul><p>Además, \\(x\\ge0\\) deja la región a la derecha del eje de ordenadas.</p><div style='overflow-x:auto'><svg viewBox='0 0 320 205' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='40.0,15.0 40.0,177.0 232.0,123.0' fill='#b9a4f5' fill-opacity='.5' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M16 150H304M40 193V-7'/></g><text x='298' y='145'>x</text><text x='45' y='1'>y</text><g font-size='10' fill='currentColor'><line x1='88.0' y1='147.0' x2='88.0' y2='153.0' stroke='currentColor'/><text x='88.0' y='164.0' text-anchor='middle'>1</text><line x1='136.0' y1='147.0' x2='136.0' y2='153.0' stroke='currentColor'/><text x='136.0' y='164.0' text-anchor='middle'>2</text><line x1='184.0' y1='147.0' x2='184.0' y2='153.0' stroke='currentColor'/><text x='184.0' y='164.0' text-anchor='middle'>3</text><line x1='232.0' y1='147.0' x2='232.0' y2='153.0' stroke='currentColor'/><text x='232.0' y='164.0' text-anchor='middle'>4</text><line x1='280.0' y1='147.0' x2='280.0' y2='153.0' stroke='currentColor'/><text x='280.0' y='164.0' text-anchor='middle'>5</text><line x1='37.0' y1='177.0' x2='43.0' y2='177.0' stroke='currentColor'/><text x='34.0' y='180.0' text-anchor='end'>-1</text><line x1='37.0' y1='123.0' x2='43.0' y2='123.0' stroke='currentColor'/><text x='34.0' y='126.0' text-anchor='end'>1</text><line x1='37.0' y1='96.0' x2='43.0' y2='96.0' stroke='currentColor'/><text x='34.0' y='99.0' text-anchor='end'>2</text><line x1='37.0' y1='69.0' x2='43.0' y2='69.0' stroke='currentColor'/><text x='34.0' y='72.0' text-anchor='end'>3</text><line x1='37.0' y1='42.0' x2='43.0' y2='42.0' stroke='currentColor'/><text x='34.0' y='45.0' text-anchor='end'>4</text><line x1='37.0' y1='15.0' x2='43.0' y2='15.0' stroke='currentColor'/><text x='34.0' y='18.0' text-anchor='end'>5</text></g><circle cx='40.0' cy='15.0' r='3.3' fill='#e8487a'/><text x='46.0' y='11.0' font-weight='700'>A(0,5)</text><circle cx='40.0' cy='177.0' r='3.3' fill='#e8487a'/><text x='46.0' y='191.0' font-weight='700'>B(0,−1)</text><circle cx='232.0' cy='123.0' r='3.3' fill='#e8487a'/><text x='238.0' y='117.0' font-weight='700'>C(4,1)</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(A:\\;\\left\\{\\begin{array}{l}x=0\\\\x+y=5\\end{array}\\right.\\Rightarrow y=5\\Rightarrow \\boxed{A(0,5)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}x=0\\\\x-2y=2\\end{array}\\right.\\Rightarrow y=-1\\Rightarrow \\boxed{B(0,-1)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}x-2y=2\\\\x+y=5\\end{array}\\right.\\Rightarrow x=2y+2\\Rightarrow (2y+2)+y=5\\Rightarrow y=1,\\ x=4\\Rightarrow \\boxed{C(4,1)}\\)</li></ul><p>La función \\(F\\) alcanza sus extremos en el recinto, en puntos de su frontera; evaluamos, por tanto, \\(F\\) en los vértices<i class='n' data-t='th'>Teorema fundamental de la programación lineal: si la región factible es un polígono convexo y acotado, la función objetivo alcanza su máximo y su mínimo en alguno de sus vértices.</i>:</p>\\[\\begin{aligned}F(A)&=F(0,5)\\\\&=4\\cdot0+3\\cdot5=15\\end{aligned}\\]\\[\\begin{aligned}F(B)&=F(0,-1)\\\\&=4\\cdot0+3\\cdot(-1)\\\\&=-3\\end{aligned}\\]\\[\\begin{aligned}F(C)&=F(4,1)\\\\&=4\\cdot4+3\\cdot1=19\\end{aligned}\\]<p>\\(F\\) alcanza un máximo en \\(C(4,1)\\) de valor \\(19\\).</p><div class='res'>El recinto es el triángulo de vértices \\((0,5)\\), \\((0,-1)\\) y \\((4,1)\\); el máximo de \\(F\\) es 19 y se alcanza en \\((4,1)\\)</div></div>"
+     "html": "<div class='ex'><p>Escribimos las inecuaciones con las incógnitas a la izquierda: \\(x\\ge0\\), \\(x\\le2y+2\\iff x-2y\\le2\\) y \\(x+y\\le5\\). No se pide \\(y\\ge0\\), así que el recinto puede quedar por debajo del eje de abscisas<i class='n' data-t='err'>No añadas restricciones que el enunciado no da: aquí el vértice \\(B\\) tiene ordenada negativa.</i>.</p><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(x-2y=2\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(2\\)</td></tr><tr><th>\\(y\\)</th><td>\\(-1\\)</td><td>\\(0\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(x+y=5\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(5\\)</td></tr><tr><th>\\(y\\)</th><td>\\(5\\)</td><td>\\(0\\)</td></tr></table><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(x-2y\\le2\\): con el origen, \\(0\\le2\\) se cumple → semiplano que lo contiene.</li><li>\\(x+y\\le5\\): con el origen, \\(0\\le5\\) se cumple → semiplano que lo contiene.</li></ul><p>Además, \\(x\\ge0\\) deja la región a la derecha del eje de ordenadas.</p><div style='overflow-x:auto'><svg viewBox='0 0 420 300' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><line x1='67.3' y1='266.0' x2='67.3' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='136.6' y1='266.0' x2='136.6' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='205.8' y1='266.0' x2='205.8' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='275.1' y1='266.0' x2='275.1' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='344.4' y1='266.0' x2='344.4' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='244.6' x2='386.0' y2='244.6' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='214.8' x2='386.0' y2='214.8' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='185.1' x2='386.0' y2='185.1' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='155.4' x2='386.0' y2='155.4' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='125.6' x2='386.0' y2='125.6' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='95.9' x2='386.0' y2='95.9' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='66.1' x2='386.0' y2='66.1' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='36.4' x2='386.0' y2='36.4' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='214.8' x2='386.0' y2='214.8' stroke='#111' stroke-width='1.3'/><line x1='67.3' y1='266.0' x2='67.3' y2='34.0' stroke='#111' stroke-width='1.3'/><text x='136.6' y='227.8' font-size='10' text-anchor='middle' fill='#374151'>1</text><text x='205.8' y='227.8' font-size='10' text-anchor='middle' fill='#374151'>2</text><text x='275.1' y='227.8' font-size='10' text-anchor='middle' fill='#374151'>3</text><text x='344.4' y='227.8' font-size='10' text-anchor='middle' fill='#374151'>4</text><text x='63.3' y='247.6' font-size='10' text-anchor='end' fill='#374151'>-1</text><text x='63.3' y='188.1' font-size='10' text-anchor='end' fill='#374151'>1</text><text x='63.3' y='158.4' font-size='10' text-anchor='end' fill='#374151'>2</text><text x='63.3' y='128.6' font-size='10' text-anchor='end' fill='#374151'>3</text><text x='63.3' y='98.9' font-size='10' text-anchor='end' fill='#374151'>4</text><text x='63.3' y='69.1' font-size='10' text-anchor='end' fill='#374151'>5</text><text x='63.3' y='39.4' font-size='10' text-anchor='end' fill='#374151'>6</text><text x='384.0' y='209.8' font-size='11' text-anchor='end' font-style='italic'>x</text><text x='72.3' y='44.0' font-size='11' font-style='italic'>y</text><polygon points='67.3,66.1 67.3,244.6 344.4,185.1' fill='#fcd34d' fill-opacity='0.55' stroke='none'/><line x1='34.0' y1='251.7' x2='386.0' y2='176.2' stroke='#b45309' stroke-width='2'/><text x='215.0' y='208.9' font-size='10' fill='#b45309' text-anchor='start'>x−2y=2</text><line x1='34.0' y1='51.8' x2='386.0' y2='202.9' stroke='#2563eb' stroke-width='2'/><text x='144.6' y='92.2' font-size='10' fill='#2563eb' text-anchor='start'>x+y=5</text><text x='159.6' y='170.3' font-size='15' fill='#92400e' text-anchor='middle' font-weight='bold'>R</text><circle cx='67.3' cy='66.1' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='60.3' y='59.1' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>A</text><circle cx='67.3' cy='244.6' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='60.3' y='259.6' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>B</text><circle cx='344.4' cy='185.1' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='351.4' y='200.1' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>C</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(A:\\;\\left\\{\\begin{array}{l}x=0\\\\x+y=5\\end{array}\\right.\\) \\(\\Rightarrow y=5\\) \\(\\Rightarrow \\boxed{A(0,5)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}x=0\\\\x-2y=2\\end{array}\\right.\\) \\(\\Rightarrow y=-1\\) \\(\\Rightarrow \\boxed{B(0,-1)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}x-2y=2\\\\x+y=5\\end{array}\\right.\\) \\(\\Rightarrow x=2y+2\\) \\(\\Rightarrow (2y+2)+y=5\\) \\(\\Rightarrow y=1,\\ x=4\\) \\(\\Rightarrow \\boxed{C(4,1)}\\)</li></ul><p>La función \\(F\\) alcanza sus extremos en el recinto, en puntos de su frontera; evaluamos, por tanto, \\(F\\) en los vértices<i class='n' data-t='th'>Teorema fundamental de la programación lineal: si la región factible es un polígono convexo y acotado, la función objetivo alcanza su máximo y su mínimo en alguno de sus vértices.</i>:</p>\\[\\begin{aligned}F(A)&=F(0,5)\\\\&=4\\cdot0+3\\cdot5=15\\end{aligned}\\]\\[\\begin{aligned}F(B)&=F(0,-1)\\\\&=4\\cdot0+3\\cdot(-1)\\\\&=-3\\end{aligned}\\]\\[\\begin{aligned}F(C)&=F(4,1)\\\\&=4\\cdot4+3\\cdot1=19\\end{aligned}\\]<p>\\(F\\) alcanza un máximo en \\(C(4,1)\\) de valor \\(19\\).</p><div class='res'>El recinto es el triángulo de vértices \\((0,5)\\), \\((0,-1)\\) y \\((4,1)\\); el máximo de \\(F\\) es 19 y se alcanza en \\((4,1)\\)</div></div>"
     }
    ],
    "clasificacion": [
@@ -51,7 +51,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2018-junio-2",
@@ -103,7 +103,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2018-junio-3",
@@ -154,7 +154,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2018-junio-4",
@@ -191,7 +191,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2018-junio-5",
@@ -238,7 +238,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2018-junio-6",
@@ -256,7 +256,7 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p><b>Continuidad en \\(x=1\\):</b> los límites laterales deben coincidir con \\(f(1)\\)<i class='n' data-t='th'>Si una función es derivable en un punto, es continua en él. Por eso primero se impone la continuidad y después que coincidan las derivadas laterales.</i>:</p>\\[\\lim_{x\\to1^-}(x^3+ax^2)=1+a\\]\\[\\begin{aligned}\\lim_{x\\to1^+}\\left(bx+\\frac2x\\right)&=b+2\\\\&=f(1)\\end{aligned}\\]\\[\\Rightarrow\\ 1+a=b+2\\]<p><b>Derivabilidad en \\(x=1\\):</b> las derivadas laterales deben coincidir. \\(f'(x)=3x^2+2ax\\) a la izquierda y \\(f'(x)=b-\\dfrac2{x^2}\\) a la derecha:</p>\\[3+2a=b-2\\]<p>Resolvemos el sistema: de la segunda, \\(b=5+2a\\); sustituyendo en la primera, \\(1+a=7+2a\\Rightarrow a\\) \\(=-6\\), y \\(b=-7\\).</p><div class='res'>\\(a=-6\\) y \\(b=-7\\)</div></div>"
+     "html": "<div class='ex'><p><b>Continuidad en \\(x=1\\):</b> los límites laterales deben coincidir con \\(f(1)\\)<i class='n' data-t='th'>Si una función es derivable en un punto, es continua en él. Por eso primero se impone la continuidad y después que coincidan las derivadas laterales.</i>:</p>\\[\\lim_{x\\to1^-}(x^3+ax^2)=1+a\\]\\[\\begin{aligned}\\lim_{x\\to1^+}\\left(bx+\\frac2x\\right)&=b+2\\\\&=f(1)\\end{aligned}\\]\\[\\Rightarrow\\ 1+a=b+2\\]<p><b>Derivabilidad en \\(x=1\\):</b> las derivadas laterales deben coincidir. \\(f'(x)=3x^2+2ax\\) a la izquierda y \\(f'(x)=b-\\dfrac2{x^2}\\) a la derecha:</p>\\[3+2a=b-2\\]<p>Resolvemos el sistema: de la segunda, \\(b=5+2a\\); sustituyendo en la primera, \\(1+a=7+2a\\) \\(\\Rightarrow a\\) \\(=-6\\), y \\(b=-7\\).</p><div class='res'>\\(a=-6\\) y \\(b=-7\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
@@ -280,7 +280,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2018-junio-7",
@@ -303,7 +303,7 @@
     },
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>\\(A\\) y \\(B\\) son incompatibles si y solo si \\(P(A\\cap B)=0\\): una plaza no puede estar en dos zonas a la vez, así que sumamos. Por la regla de Laplace<i class='n' data-t='th'>Regla de Laplace: casos favorables entre casos posibles, cuando todos son igualmente probables.</i>:</p>\\[\\begin{aligned}P(A\\cup B)&=P(A)+P(B)\\\\&=\\frac{1500}{3000}+\\frac{1000}{3000}=\\frac{2500}{3000}\\end{aligned}\\]<div class='res'>\\(P(A\\cup B)=\\dfrac56\\approx0{,}8333\\)</div></div>"
+     "html": "<div class='ex'><p>Las zonas \\(A\\) y \\(B\\) son incompatibles, porque una plaza no puede estar en las dos a la vez; por tanto, la probabilidad de la unión es la suma. Por la regla de Laplace<i class='n' data-t='th'>Regla de Laplace: casos favorables entre casos posibles, cuando todos son igualmente probables.</i>:</p>\\[\\begin{aligned}P(A\\cup B)&=P(A)+P(B)\\\\&=\\frac{1500}{3000}+\\frac{1000}{3000}=\\frac{2500}{3000}\\end{aligned}\\]<div class='res'>\\(P(A\\cup B)=\\dfrac56\\approx0{,}8333\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
@@ -331,7 +331,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2018-junio-8",
@@ -382,7 +382,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   }
  ]
 }

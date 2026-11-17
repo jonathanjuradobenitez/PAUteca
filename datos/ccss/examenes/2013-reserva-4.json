@@ -51,7 +51,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2013-reserva-4-2",
@@ -93,7 +93,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2013-reserva-4-3",
@@ -144,7 +144,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2013-reserva-4-4",
@@ -200,7 +200,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2013-reserva-4-5",
@@ -219,7 +219,7 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>Despejando \\(y\\): \\(y\\ge9-3x\\); \\(y\\le14-\\frac47x\\) (es decir, \\(4x+7y\\le98\\)); \\(y\\ge\\frac{5x-15}2\\); \\(x\\ge0\\).</p><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(3x+y=9\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(3\\)</td></tr><tr><th>\\(y\\)</th><td>\\(9\\)</td><td>\\(0\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(4x+7y=98\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(7\\)</td></tr><tr><th>\\(y\\)</th><td>\\(14\\)</td><td>\\(10\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(5x-2y=15\\)</th></tr><tr><th>\\(x\\)</th><td>\\(3\\)</td><td>\\(-1\\)</td></tr><tr><th>\\(y\\)</th><td>\\(0\\)</td><td>\\(-10\\)</td></tr></table><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(3x+y\\ge9\\): con el origen, \\(0\\ge9\\) no se cumple → semiplano que <b>no</b> lo contiene.</li><li>\\(4x+7y\\le98\\): con el origen, \\(0\\le98\\) se cumple → semiplano que lo contiene.</li><li>\\(5x-2y\\le15\\): con el origen, \\(0\\le15\\) se cumple → semiplano que lo contiene.</li></ul><p>Además, \\(x\\ge0\\) deja la región a la derecha del eje de ordenadas.</p><div style='overflow-x:auto'><svg viewBox='0 0 330 200' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='30.0,86.0 132.0,185.0 268.0,75.0 30.0,31.0' fill='#b9a4f5' fill-opacity='.5' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M13 185H322M30 192V14'/></g><text x='316' y='180'>x</text><text x='35' y='22'>y</text><g font-size='10' fill='currentColor'><line x1='98.0' y1='182.0' x2='98.0' y2='188.0' stroke='currentColor'/><text x='98.0' y='199.0' text-anchor='middle'>2</text><line x1='166.0' y1='182.0' x2='166.0' y2='188.0' stroke='currentColor'/><text x='166.0' y='199.0' text-anchor='middle'>4</text><line x1='234.0' y1='182.0' x2='234.0' y2='188.0' stroke='currentColor'/><text x='234.0' y='199.0' text-anchor='middle'>6</text><line x1='302.0' y1='182.0' x2='302.0' y2='188.0' stroke='currentColor'/><text x='302.0' y='199.0' text-anchor='middle'>8</text><line x1='27.0' y1='141.0' x2='33.0' y2='141.0' stroke='currentColor'/><text x='24.0' y='144.0' text-anchor='end'>4</text><line x1='27.0' y1='97.0' x2='33.0' y2='97.0' stroke='currentColor'/><text x='24.0' y='100.0' text-anchor='end'>8</text><line x1='27.0' y1='53.0' x2='33.0' y2='53.0' stroke='currentColor'/><text x='24.0' y='56.0' text-anchor='end'>12</text></g><circle cx='30.0' cy='86.0' r='3.3' fill='#e8487a'/><text x='36.0' y='96.0' font-weight='700'>A(0,9)</text><circle cx='132.0' cy='185.0' r='3.3' fill='#e8487a'/><text x='138.0' y='179.0' font-weight='700'>B(3,0)</text><circle cx='268.0' cy='75.0' r='3.3' fill='#e8487a'/><text x='274.0' y='71.0' font-weight='700'>C(7,10)</text><circle cx='30.0' cy='31.0' r='3.3' fill='#e8487a'/><text x='36.0' y='25.0' font-weight='700'>D(0,14)</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(A:\\;\\left\\{\\begin{array}{l}3x+y=9\\\\x=0\\end{array}\\right.\\) \\(\\Rightarrow y=9\\) \\(\\Rightarrow \\boxed{A(0,9)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}3x+y=9\\\\5x-2y=15\\end{array}\\right.\\) \\(\\Rightarrow y=-3x+9\\) \\(\\Rightarrow 5x-2(-3x+9)\\) \\(=15\\) \\(\\Rightarrow x=3,\\ y=0\\) \\(\\Rightarrow \\boxed{B(3,0)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}4x+7y=98\\\\5x-2y=15\\end{array}\\right.\\) \\(\\Rightarrow 43y=430\\) \\(\\Rightarrow y=10,\\ x=7\\ \\text{(reducción)}\\) \\(\\Rightarrow \\boxed{C(7,10)}\\)</li><li>\\(D:\\;\\left\\{\\begin{array}{l}4x+7y=98\\\\x=0\\end{array}\\right.\\) \\(\\Rightarrow y=14\\) \\(\\Rightarrow \\boxed{D(0,14)}\\)</li></ul><div class='res'>El recinto es el cuadrilátero de vértices \\(A(0,9)\\), \\(B(3,0)\\), \\(C(7,10)\\) y \\(D(0,14)\\)</div></div>"
+     "html": "<div class='ex'><p>Despejando \\(y\\): \\(y\\ge9-3x\\); \\(y\\le14-\\frac47x\\) (es decir, \\(4x+7y\\le98\\)); \\(y\\ge\\frac{5x-15}2\\); \\(x\\ge0\\).</p><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(3x+y=9\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(3\\)</td></tr><tr><th>\\(y\\)</th><td>\\(9\\)</td><td>\\(0\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(4x+7y=98\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(7\\)</td></tr><tr><th>\\(y\\)</th><td>\\(14\\)</td><td>\\(10\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(5x-2y=15\\)</th></tr><tr><th>\\(x\\)</th><td>\\(3\\)</td><td>\\(-1\\)</td></tr><tr><th>\\(y\\)</th><td>\\(0\\)</td><td>\\(-10\\)</td></tr></table><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(3x+y\\ge9\\): con el origen, \\(0\\ge9\\) no se cumple → semiplano que <b>no</b> lo contiene.</li><li>\\(4x+7y\\le98\\): con el origen, \\(0\\le98\\) se cumple → semiplano que lo contiene.</li><li>\\(5x-2y\\le15\\): con el origen, \\(0\\le15\\) se cumple → semiplano que lo contiene.</li></ul><p>Además, \\(x\\ge0\\) deja la región a la derecha del eje de ordenadas.</p><div style='overflow-x:auto'><svg viewBox='0 0 420 300' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><line x1='67.3' y1='266.0' x2='67.3' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='146.4' y1='266.0' x2='146.4' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='225.6' y1='266.0' x2='225.6' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='304.8' y1='266.0' x2='304.8' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='384.0' y1='266.0' x2='384.0' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='244.6' x2='386.0' y2='244.6' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='180.8' x2='386.0' y2='180.8' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='117.1' x2='386.0' y2='117.1' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='53.4' x2='386.0' y2='53.4' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='244.6' x2='386.0' y2='244.6' stroke='#111' stroke-width='1.3'/><line x1='67.3' y1='266.0' x2='67.3' y2='34.0' stroke='#111' stroke-width='1.3'/><text x='146.4' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>2</text><text x='225.6' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>4</text><text x='304.8' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>6</text><text x='384.0' y='257.6' font-size='10' text-anchor='middle' fill='#374151'>8</text><text x='63.3' y='183.8' font-size='10' text-anchor='end' fill='#374151'>5</text><text x='63.3' y='120.1' font-size='10' text-anchor='end' fill='#374151'>10</text><text x='63.3' y='56.4' font-size='10' text-anchor='end' fill='#374151'>15</text><text x='384.0' y='239.6' font-size='11' text-anchor='end' font-style='italic'>x</text><text x='72.3' y='44.0' font-size='11' font-style='italic'>y</text><polygon points='67.3,129.9 186.0,244.6 344.4,117.1 67.3,66.1' fill='#fcd34d' fill-opacity='0.55' stroke='none'/><line x1='34.0' y1='97.7' x2='208.2' y2='266.0' stroke='#b45309' stroke-width='2'/><text x='126.1' y='176.9' font-size='10' fill='#b45309' text-anchor='start'>3x+y=9</text><line x1='386.0' y1='83.7' x2='159.4' y2='266.0' stroke='#2563eb' stroke-width='2'/><text x='267.7' y='169.8' font-size='10' fill='#2563eb' text-anchor='end'>5x−2y=15</text><line x1='34.0' y1='60.0' x2='386.0' y2='124.8' stroke='#16a34a' stroke-width='2'/><text x='144.6' y='74.4' font-size='10' fill='#16a34a' text-anchor='start'>4x+7y=98</text><text x='166.2' y='144.4' font-size='15' fill='#92400e' text-anchor='middle' font-weight='bold'>R</text><circle cx='67.3' cy='129.9' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='60.3' y='122.9' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>A</text><circle cx='186.0' cy='244.6' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='193.0' y='259.6' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>B</text><circle cx='344.4' cy='117.1' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='351.4' y='110.1' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>C</text><circle cx='67.3' cy='66.1' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='60.3' y='59.1' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>D</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(A:\\;\\left\\{\\begin{array}{l}3x+y=9\\\\x=0\\end{array}\\right.\\) \\(\\Rightarrow y=9\\) \\(\\Rightarrow \\boxed{A(0,9)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}3x+y=9\\\\5x-2y=15\\end{array}\\right.\\) \\(\\Rightarrow y=-3x+9\\) \\(\\Rightarrow 5x-2(-3x+9)\\) \\(=15\\) \\(\\Rightarrow x=3,\\ y=0\\) \\(\\Rightarrow \\boxed{B(3,0)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}4x+7y=98\\\\5x-2y=15\\end{array}\\right.\\) \\(\\Rightarrow 43y=430\\) \\(\\Rightarrow y=10,\\ x=7\\ \\text{(reducción)}\\) \\(\\Rightarrow \\boxed{C(7,10)}\\)</li><li>\\(D:\\;\\left\\{\\begin{array}{l}4x+7y=98\\\\x=0\\end{array}\\right.\\) \\(\\Rightarrow y=14\\) \\(\\Rightarrow \\boxed{D(0,14)}\\)</li></ul><div class='res'>El recinto es el cuadrilátero de vértices \\(A(0,9)\\), \\(B(3,0)\\), \\(C(7,10)\\) y \\(D(0,14)\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
@@ -252,7 +252,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2013-reserva-4-6",
@@ -299,7 +299,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2013-reserva-4-7",
@@ -346,7 +346,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2013-reserva-4-8",

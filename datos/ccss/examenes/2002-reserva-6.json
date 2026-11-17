@@ -34,7 +34,7 @@
     "criterio": "regla general fijada por el autor: año y convocatoria del nombre del archivo; un PDF con las dos opciones es el examen completo",
     "incidencias": []
    },
-   "revision": "borrador"
+   "revision": "revisado"
   }
  ],
  "ejercicios": [
@@ -89,10 +89,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -149,12 +149,12 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador",
-    "c": "borrador",
-    "d": "borrador"
+    "a": "revisado",
+    "b": "revisado",
+    "c": "revisado",
+    "d": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -205,10 +205,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -255,10 +255,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {
     "a": [
@@ -323,9 +323,9 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "": "borrador"
+    "": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -347,7 +347,7 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>Derivamos: \\(f(x)=ax^{-1}+bx^2\\Rightarrow f'(x)=-\\dfrac{a}{x^2}+2bx\\).</p><p>Traducimos cada condición a una ecuación:</p><p>• Pasa por \\((1,3)\\): \\(f(1)=3\\iff a+b=3\\).</p><p>• Extremo relativo en \\(x=1\\): \\(f'(1)=0\\)<i class='n' data-t='th'>Si \\(f\\) es derivable y tiene un extremo relativo en \\(x=a\\), entonces \\(f'(a)=0\\).</i>, es decir, \\(-a+2b=0\\).</p>\\[\\left\\{\\begin{array}{l}a+b=3\\\\-a+2b=0\\end{array}\\right.\\Rightarrow3b=3\\Rightarrow\\boxed{b=1},\\ \\boxed{a=2}\\]<p>Comprobamos que es un extremo: \\(f''(x)=\\dfrac{2a}{x^3}+2b\\), y \\(f''(1)=4+2=6\\gt0\\), así que en \\((1,3)\\) hay un mínimo relativo<i class='n' data-t='th'>Si \\(f'(a)=0\\) y \\(f''(a)\\gt0\\), en \\(x=a\\) hay un mínimo relativo; si \\(f''(a)\\lt0\\), un máximo.</i>.</p><div class='res'>\\(a=2\\) y \\(b=1\\): \\(f(x)=\\dfrac2x+x^2\\), con un mínimo relativo en \\((1,3)\\)</div></div>"
+     "html": "<div class='ex'><p>Derivamos: \\(f(x)=ax^{-1}+bx^2\\) \\(\\Rightarrow f'(x)=-\\dfrac{a}{x^2}+2bx\\).</p><p>Traducimos cada condición a una ecuación:</p><p>• Pasa por \\((1,3)\\): \\(f(1)=3\\iff a+b=3\\).</p><p>• Extremo relativo en \\(x=1\\): \\(f'(1)=0\\)<i class='n' data-t='th'>Si \\(f\\) es derivable y tiene un extremo relativo en \\(x=a\\), entonces \\(f'(a)=0\\).</i>, es decir, \\(-a+2b=0\\).</p>\\[\\left\\{\\begin{array}{l}a+b=3\\\\-a+2b=0\\end{array}\\right.\\Rightarrow3b=3\\Rightarrow\\boxed{b=1},\\ \\boxed{a=2}\\]<p>Comprobamos que es un extremo: \\(f''(x)=\\dfrac{2a}{x^3}+2b\\), y \\(f''(1)=4+2=6\\gt0\\), así que en \\((1,3)\\) hay un mínimo relativo<i class='n' data-t='th'>Si \\(f'(a)=0\\) y \\(f''(a)\\gt0\\), en \\(x=a\\) hay un mínimo relativo; si \\(f''(a)\\lt0\\), un máximo.</i>.</p><div class='res'>\\(a=2\\) y \\(b=1\\): \\(f(x)=\\dfrac2x+x^2\\), con un mínimo relativo en \\((1,3)\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
@@ -377,10 +377,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -441,10 +441,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -500,10 +500,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {
     "a": [

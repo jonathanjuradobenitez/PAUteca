@@ -27,7 +27,7 @@
     },
     {
      "titulo": "Apartado b",
-     "html": "<div class='ex'><p>Hallamos sus vértices, resolviendo el sistema formado por cada par de rectas que se cortan en el recinto<i class='n' data-t='tp'>Mira el dibujo para saber qué pares de rectas forman cada vértice; así no resuelves sistemas de más.</i>:</p><ul><li>\\(A:\\;\\left\\{\\begin{array}{l}6x-y=-9\\\\2x-3y=5\\end{array}\\right.\\Rightarrow y=6x+9\\Rightarrow2x-18x-27=5\\Rightarrow x=-2,\\ y=-3\\Rightarrow\\boxed{A(-2,-3)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}2x+5y=13\\\\2x-3y=5\\end{array}\\right.\\Rightarrow8y=8\\Rightarrow y=1,\\ x=4\\Rightarrow\\boxed{B(4,1)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}6x-y=-9\\\\2x+5y=13\\end{array}\\right.\\Rightarrow2x+30x+45=13\\Rightarrow x=-1,\\ y=3\\Rightarrow\\boxed{C(-1,3)}\\)</li></ul><div class='res'>Vértices: \\(A(-2,-3)\\), \\(B(4,1)\\) y \\(C(-1,3)\\)</div></div>"
+     "html": "<div class='ex'><p>Hallamos sus vértices, resolviendo el sistema formado por cada par de rectas que se cortan en el recinto<i class='n' data-t='tp'>Mira el dibujo para saber qué pares de rectas forman cada vértice; así no resuelves sistemas de más.</i>:</p><ul><li>\\(A:\\;\\left\\{\\begin{array}{l}6x-y=-9\\\\2x-3y=5\\end{array}\\right.\\) \\(\\Rightarrow y=6x+9\\) \\(\\Rightarrow2x-18x-27=5\\) \\(\\Rightarrow x=-2,\\ y=-3\\) \\(\\Rightarrow\\boxed{A(-2,-3)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}2x+5y=13\\\\2x-3y=5\\end{array}\\right.\\) \\(\\Rightarrow8y=8\\) \\(\\Rightarrow y=1,\\ x=4\\) \\(\\Rightarrow\\boxed{B(4,1)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}6x-y=-9\\\\2x+5y=13\\end{array}\\right.\\) \\(\\Rightarrow2x+30x+45=13\\) \\(\\Rightarrow x=-1,\\ y=3\\) \\(\\Rightarrow\\boxed{C(-1,3)}\\)</li></ul><div class='res'>Vértices: \\(A(-2,-3)\\), \\(B(4,1)\\) y \\(C(-1,3)\\)</div></div>"
     },
     {
      "titulo": "Apartado c",
@@ -51,7 +51,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2011-reserva-5-2",
@@ -103,7 +103,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2011-reserva-5-3",
@@ -201,7 +201,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2011-reserva-5-5",
@@ -373,7 +373,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   }
  ]
 }

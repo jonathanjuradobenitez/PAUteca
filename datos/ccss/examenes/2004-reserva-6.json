@@ -35,7 +35,7 @@
     "criterio": "regla general fijada por el autor: año y convocatoria del nombre del archivo; un PDF con las dos opciones es el examen completo",
     "incidencias": []
    },
-   "revision": "borrador"
+   "revision": "revisado"
   }
  ],
  "ejercicios": [
@@ -90,11 +90,11 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador",
-    "c": "borrador"
+    "a": "revisado",
+    "b": "revisado",
+    "c": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -146,10 +146,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -200,10 +200,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -259,10 +259,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {
     "a": [
@@ -295,7 +295,7 @@
     },
     {
      "titulo": "Apartado b",
-     "html": "<div class='ex'><p>Calculamos el determinante de la matriz de coeficientes por la regla de Sarrus:</p>\\[|A|=\\begin{vmatrix}1&1&1\\\\ 2&-1&2\\\\ 3&2&-3\\end{vmatrix}=1\\cdot(-1)\\cdot(-3)+1\\cdot2\\cdot3+1\\cdot2\\cdot2-\\left[1\\cdot(-1)\\cdot3+1\\cdot2\\cdot2+1\\cdot2\\cdot(-3)\\right]=18\\neq0\\]<p>Como \\(|A|\\neq0\\), \\(\\operatorname{rg}A=\\operatorname{rg}A^*=3\\): por el teorema de Rouché-Frobenius el sistema es compatible determinado<i class='n' data-t='th'>Teorema de Rouché-Frobenius: el sistema es compatible si y solo si \\(\\operatorname{rg}A=\\operatorname{rg}A^*\\); si además ese rango es igual al número de incógnitas, la solución es única.</i>. Lo resolvemos por Cramer<i class='n' data-t='th'>Regla de Cramer: cada incógnita es el cociente entre el determinante que resulta de sustituir su columna por la de términos independientes y \\(|A|\\).</i>:</p>\\[x=\\frac{\\begin{vmatrix}6&1&1\\\\ 3&-1&2\\\\ 3&2&-3\\end{vmatrix}}{18}=\\frac{18}{18}=1\\]\\[y=\\frac{\\begin{vmatrix}1&6&1\\\\ 2&3&2\\\\ 3&3&-3\\end{vmatrix}}{18}=\\frac{54}{18}=3\\]\\[z=\\frac{\\begin{vmatrix}1&1&6\\\\ 2&-1&3\\\\ 3&2&3\\end{vmatrix}}{18}=\\frac{36}{18}=2\\]<i class='n' data-t='tp'>Comprobación: \\(1+3+2=6\\) ✓, \\(2-3+4=3\\) ✓ y \\(3+6-6=3\\) ✓.</i><div class='res'>Sistema compatible determinado: \\(x=1\\), \\(y=3\\), \\(z=2\\)</div></div>"
+     "html": "<div class='ex'><p>Calculamos el determinante de la matriz de coeficientes por la regla de Sarrus:</p>\\[\\begin{aligned}|A|&=\\begin{vmatrix}1&1&1\\\\ 2&-1&2\\\\ 3&2&-3\\end{vmatrix}\\\\&=1\\cdot(-1)\\cdot(-3)+1\\cdot2\\cdot3\\\\&\\quad+1\\cdot2\\cdot2\\\\&\\quad-\\big[1\\cdot(-1)\\cdot3\\\\&\\quad+1\\cdot2\\cdot2\\\\&\\quad+1\\cdot2\\cdot(-3)\\big]\\\\&=18\\neq0\\end{aligned}\\]<p>Como \\(|A|\\neq0\\), \\(\\operatorname{rg}A=\\operatorname{rg}A^*=3\\): por el teorema de Rouché-Frobenius el sistema es compatible determinado<i class='n' data-t='th'>Teorema de Rouché-Frobenius: el sistema es compatible si y solo si \\(\\operatorname{rg}A=\\operatorname{rg}A^*\\); si además ese rango es igual al número de incógnitas, la solución es única.</i>. Lo resolvemos por Cramer<i class='n' data-t='th'>Regla de Cramer: cada incógnita es el cociente entre el determinante que resulta de sustituir su columna por la de términos independientes y \\(|A|\\).</i>:</p>\\[x=\\frac{\\begin{vmatrix}6&1&1\\\\ 3&-1&2\\\\ 3&2&-3\\end{vmatrix}}{18}=\\frac{18}{18}=1\\]\\[y=\\frac{\\begin{vmatrix}1&6&1\\\\ 2&3&2\\\\ 3&3&-3\\end{vmatrix}}{18}=\\frac{54}{18}=3\\]\\[z=\\frac{\\begin{vmatrix}1&1&6\\\\ 2&-1&3\\\\ 3&2&3\\end{vmatrix}}{18}=\\frac{36}{18}=2\\]<i class='n' data-t='tp'>Comprobación: \\(1+3+2=6\\) ✓, \\(2-3+4=3\\) ✓ y \\(3+6-6=3\\) ✓.</i><div class='res'>Sistema compatible determinado: \\(x=1\\), \\(y=3\\), \\(z=2\\)</div></div>"
     }
    ],
    "clasificacion": [
@@ -321,10 +321,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -386,11 +386,11 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador",
-    "c": "borrador"
+    "a": "revisado",
+    "b": "revisado",
+    "c": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -446,10 +446,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -501,10 +501,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {
     "b": [

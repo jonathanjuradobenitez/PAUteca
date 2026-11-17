@@ -35,7 +35,7 @@
     "criterio": "regla general fijada por el autor: año y convocatoria del nombre del archivo; un PDF con las dos opciones es el examen completo",
     "incidencias": []
    },
-   "revision": "borrador"
+   "revision": "revisado"
   }
  ],
  "ejercicios": [
@@ -55,11 +55,11 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>Llamamos \\(t\\), \\(c\\) y \\(g\\) al precio, en euros, de un kilo de tomates, de carne y de gambas<i class='n' data-t='why'>Las incógnitas son siempre lo que nos piden calcular.</i>. 250 g son 0,25 kg y 500 g son 0,5 kg.</p><table class='tb'><tr><th>Dato</th><th>Ecuación</th></tr><tr><th>Tomates: la mitad que la carne</th><td>\\(t=\\dfrac c2\\)</td></tr><tr><th>Gambas: el doble que la carne</th><td>\\(g=2c\\)</td></tr><tr><th>3 kg de tomates, 1 kg de carne y 250 g de gambas cuestan 18 €</th><td>\\(3t+c+0{,}25g=18\\)</td></tr></table>\\[\\left\\{\\begin{array}{l}2t-c=0\\\\ g-2c=0\\\\ 3t+c+0{,}25g=18\\end{array}\\right.\\]<p>Las dos primeras ecuaciones dan \\(t\\) y \\(g\\) en función de \\(c\\); sustituimos en la tercera<i class='n' data-t='tp'>Es el método de Gauss aplicado a un sistema que ya está casi escalonado.</i>:</p>\\[3\\cdot\\frac c2+c+0{,}25\\cdot2c=18\\iff1{,}5c+c+0{,}5c=18\\iff3c=18\\iff\\boxed{c=6}\\]\\[t=\\frac62=3\\qquad g=2\\cdot6=12\\]<p>Ahora calculamos lo que se pide: 2 kg de carne, 1 kg de tomates y 0,5 kg de gambas.</p>\\[2c+t+0{,}5g=2\\cdot6+3+0{,}5\\cdot12=12+3+6=21\\]<i class='n' data-t='tp'>Comprobación: \\(3\\cdot3+6+0{,}25\\cdot12=9+6+3=18\\) ✓.</i><div class='res'>La carne cuesta 6 €/kg, los tomates 3 €/kg y las gambas 12 €/kg; pagaríamos 21 €</div></div>"
+     "html": "<div class='ex'><p>Llamamos \\(t\\), \\(c\\) y \\(g\\) al precio, en euros, de un kilo de tomates, de carne y de gambas<i class='n' data-t='why'>Las incógnitas son siempre lo que nos piden calcular.</i>. 250 g son 0,25 kg y 500 g son 0,5 kg.</p><table class='tb'><tr><th>Dato</th><th>Ecuación</th></tr><tr><th>Tomates: la mitad que la carne</th><td>\\(t=\\dfrac c2\\)</td></tr><tr><th>Gambas: el doble que la carne</th><td>\\(g=2c\\)</td></tr><tr><th>3 kg de tomates, 1 kg de carne y 250 g de gambas cuestan 18 €</th><td>\\(3t+c+0{,}25g=18\\)</td></tr></table>\\[\\left\\{\\begin{array}{l}2t-c=0\\\\ g-2c=0\\\\ 3t+c+0{,}25g=18\\end{array}\\right.\\]<p>Multiplicamos la tercera ecuación por 4 para quitar decimales<i class='n' data-t='tp'>Multiplicar una ecuación por un número distinto de 0 no cambia las soluciones del sistema.</i>:</p>\\[\\left\\{\\begin{array}{l}2t-c=0\\\\ -2c+g=0\\\\ 12t+4c+g=72\\end{array}\\right.\\]<p>Calculamos el determinante de la matriz de coeficientes por la regla de Sarrus:</p>\\[\\begin{aligned}|A|&=\\begin{vmatrix}2&-1&0\\\\0&-2&1\\\\12&4&1\\end{vmatrix}\\\\&=2\\cdot(-2)\\cdot1\\\\&\\quad+(-1)\\cdot1\\cdot12\\\\&\\quad+0\\cdot0\\cdot4\\\\&\\quad-\\big[0\\cdot(-2)\\cdot12\\\\&\\quad+2\\cdot1\\cdot4\\\\&\\quad+(-1)\\cdot0\\cdot1\\big]=-24\\end{aligned}\\]<p>Como \\(|A|\\neq0\\), \\(\\operatorname{rg}A=\\operatorname{rg}A^*=3=\\) número de incógnitas: por el teorema de Rouché-Frobenius el sistema es compatible determinado<i class='n' data-t='th'>Teorema de Rouché-Frobenius: el sistema es compatible si y solo si \\(\\operatorname{rg}A=\\operatorname{rg}A^*\\); si además ese rango es igual al número de incógnitas, la solución es única.</i>. Lo resolvemos por la regla de Cramer<i class='n' data-t='th'>Regla de Cramer: cada incógnita es el cociente entre el determinante que resulta de sustituir su columna por la de términos independientes y \\(|A|\\).</i>:</p>\\[\\begin{aligned}t&=\\frac{\\begin{vmatrix}0&-1&0\\\\0&-2&1\\\\72&4&1\\end{vmatrix}}{-24}\\\\&=\\frac{-72}{-24}=3\\end{aligned}\\]\\[\\begin{aligned}c&=\\frac{\\begin{vmatrix}2&0&0\\\\0&0&1\\\\12&72&1\\end{vmatrix}}{-24}\\\\&=\\frac{-144}{-24}=6\\end{aligned}\\]\\[\\begin{aligned}g&=\\frac{\\begin{vmatrix}2&-1&0\\\\0&-2&0\\\\12&4&72\\end{vmatrix}}{-24}\\\\&=\\frac{-288}{-24}=12\\end{aligned}\\]<i class='n' data-t='why'>Determinantes de los numeradores (regla de Sarrus):\\[\\begin{aligned}|A_t|&=0-72+0-\\left[0+0+0\\right]\\\\&=-72\\end{aligned}\\]\\[\\begin{aligned}|A_c|&=0+0+0-\\left[0+144+0\\right]\\\\&=-144\\end{aligned}\\]\\[\\begin{aligned}|A_g|&=-288+0+0-\\left[0+0+0\\right]\\\\&=-288\\end{aligned}\\]</i><p>Ahora calculamos lo que se pide: 2 kg de carne, 1 kg de tomates y 0,5 kg de gambas.</p>\\[\\begin{aligned}2c+t+0{,}5g&=2\\cdot6+3+0{,}5\\cdot12\\\\&=12+3+6=21\\end{aligned}\\]<i class='n' data-t='tp'>Comprobación:\\[\\begin{aligned}&3\\cdot3+6+0{,}25\\cdot12\\\\&=9+6+3=18\\end{aligned}\\] ✓.</i><div class='res'>La carne cuesta 6 €/kg, los tomates 3 €/kg y las gambas 12 €/kg; pagaríamos 21 €</div></div>"
     },
     {
      "titulo": "Apartado b",
-     "html": "<div class='ex'><p>Calculamos las primeras potencias para ver si hay un patrón:</p>\\[A^2=\\begin{pmatrix}1&0\\\\ 0&-1\\end{pmatrix}\\begin{pmatrix}1&0\\\\ 0&-1\\end{pmatrix}=\\begin{pmatrix}1&0\\\\ 0&1\\end{pmatrix}=I_2\\]<p>Como \\(A^2=I_2\\), las potencias pares valen \\(I_2\\) y las impares, \\(A\\)<i class='n' data-t='why'>\\(A^{2k}=(A^2)^k=I_2^k=I_2\\) y \\(A^{2k+1}=A^{2k}\\cdot A=A\\).</i>. 2004 es par:</p>\\[A^{2004}=\\left(A^2\\right)^{1002}=I_2^{1002}=I_2\\]<div class='res'>\\(A^{2004}=\\begin{pmatrix}1&0\\\\ 0&1\\end{pmatrix}\\)</div></div>"
+     "html": "<div class='ex'><p>Calculamos las primeras potencias para ver si hay un patrón:</p>\\[\\begin{aligned}A^2&=\\begin{pmatrix}1&0\\\\ 0&-1\\end{pmatrix}\\begin{pmatrix}1&0\\\\ 0&-1\\end{pmatrix}\\\\&=\\begin{pmatrix}1&0\\\\ 0&1\\end{pmatrix}=I_2\\end{aligned}\\]<p>Como \\(A^2=I_2\\), las potencias pares valen \\(I_2\\) y las impares, \\(A\\)<i class='n' data-t='why'>\\(A^{2k}=(A^2)^k=I_2^k=I_2\\) y \\(A^{2k+1}=A^{2k}\\cdot A=A\\).</i>. 2004 es par:</p>\\[A^{2004}=\\left(A^2\\right)^{1002}=I_2^{1002}=I_2\\]<div class='res'>\\(A^{2004}=\\begin{pmatrix}1&0\\\\ 0&1\\end{pmatrix}\\)</div></div>"
     }
    ],
    "clasificacion": [
@@ -90,10 +90,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -150,11 +150,11 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador",
-    "c": "borrador"
+    "a": "revisado",
+    "b": "revisado",
+    "c": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -205,10 +205,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -255,10 +255,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {
     "a": [
@@ -317,10 +317,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -372,10 +372,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -426,10 +426,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {},
    "incidencias": [],
@@ -485,10 +485,10 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "borrador",
+   "revision": "revisado",
    "revision_apartados": {
-    "a": "borrador",
-    "b": "borrador"
+    "a": "revisado",
+    "b": "revisado"
    },
    "dependencias": {
     "a": [

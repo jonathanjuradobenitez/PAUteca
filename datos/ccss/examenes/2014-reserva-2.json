@@ -22,7 +22,7 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>Despejando \\(y\\): \\(y\\le\\frac{3-x}2\\); \\(y\\ge x-1\\); \\(x\\ge-1\\); \\(y\\ge0\\).</p><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(x+2y=3\\)</th></tr><tr><th>\\(x\\)</th><td>\\(3\\)</td><td>\\(\\frac{5}{3}\\)</td></tr><tr><th>\\(y\\)</th><td>\\(0\\)</td><td>\\(\\frac{2}{3}\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(x-y=1\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(1\\)</td></tr><tr><th>\\(y\\)</th><td>\\(-1\\)</td><td>\\(0\\)</td></tr></table><p>\\(x=-1\\) es una recta vertical, paralela al eje de ordenadas.</p><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(x+2y\\le3\\): con el origen, \\(0\\le3\\) se cumple → semiplano que lo contiene.</li><li>\\(x-y\\le1\\): con el origen, \\(0\\le1\\) se cumple → semiplano que lo contiene.</li><li>\\(x\\ge-1\\): con el origen, \\(0\\ge-1\\) se cumple → semiplano que lo contiene.</li></ul><p>Además, \\(y\\ge0\\) deja la región por encima del eje de abscisas.</p><div style='overflow-x:auto'><svg viewBox='0 0 330 195' width='100%' style='max-width:340px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='65.0,175.0 215.0,175.0 265.0,135.0 65.0,55.0' fill='#b9a4f5' fill-opacity='.5' stroke='#6d4ae0' stroke-width='1.5'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M20 175H320M140 199V19'/></g><text x='314' y='170'>x</text><text x='145' y='27'>y</text><g font-size='10' fill='currentColor'><line x1='65.0' y1='172.0' x2='65.0' y2='178.0' stroke='currentColor'/><text x='65.0' y='189.0' text-anchor='middle'>-1</text><line x1='215.0' y1='172.0' x2='215.0' y2='178.0' stroke='currentColor'/><text x='215.0' y='189.0' text-anchor='middle'>1</text><line x1='290.0' y1='172.0' x2='290.0' y2='178.0' stroke='currentColor'/><text x='290.0' y='189.0' text-anchor='middle'>2</text><line x1='137.0' y1='115.0' x2='143.0' y2='115.0' stroke='currentColor'/><text x='134.0' y='118.0' text-anchor='end'>1</text><line x1='137.0' y1='55.0' x2='143.0' y2='55.0' stroke='currentColor'/><text x='134.0' y='58.0' text-anchor='end'>2</text></g><circle cx='65.0' cy='175.0' r='3.3' fill='#e8487a'/><text x='13.0' y='169.0' font-weight='700'>A(−1,0)</text><circle cx='215.0' cy='175.0' r='3.3' fill='#e8487a'/><text x='219.0' y='167.0' font-weight='700'>B(1,0)</text><circle cx='265.0' cy='135.0' r='3.3' fill='#e8487a'/><text x='271.0' y='131.0' font-weight='700'>C(5/3, 2/3)</text><circle cx='65.0' cy='55.0' r='3.3' fill='#e8487a'/><text x='15.0' y='51.0' font-weight='700'>D(−1,2)</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(A:\\;\\left\\{\\begin{array}{l}x=-1\\\\y=0\\end{array}\\right.\\) \\(\\Rightarrow \\boxed{A(-1,0)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}x-y=1\\\\y=0\\end{array}\\right.\\) \\(\\Rightarrow x=1\\) \\(\\Rightarrow \\boxed{B(1,0)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}x+2y=3\\\\x-y=1\\end{array}\\right.\\) \\(\\Rightarrow x=-2y+3\\) \\(\\Rightarrow (-2y+3)-y=1\\) \\(\\Rightarrow y=\\frac{2}{3},\\ x=\\frac{5}{3}\\) \\(\\Rightarrow \\boxed{C(\\frac{5}{3},\\frac{2}{3})}\\)</li><li>\\(D:\\;\\left\\{\\begin{array}{l}x+2y=3\\\\x=-1\\end{array}\\right.\\) \\(\\Rightarrow y=2\\) \\(\\Rightarrow \\boxed{D(-1,2)}\\)</li></ul><div class='res'>El recinto es el cuadrilátero de vértices \\(A(-1,0)\\), \\(B(1,0)\\), \\(C\\left(\\frac53,\\frac23\\right)\\) y \\(D(-1,2)\\)</div></div>"
+     "html": "<div class='ex'><p>Despejando \\(y\\): \\(y\\le\\frac{3-x}2\\); \\(y\\ge x-1\\); \\(x\\ge-1\\); \\(y\\ge0\\).</p><p>Tablas de valores de las rectas frontera:</p><table class='tb'><tr><th colspan='3'>\\(x+2y=3\\)</th></tr><tr><th>\\(x\\)</th><td>\\(3\\)</td><td>\\(\\frac{5}{3}\\)</td></tr><tr><th>\\(y\\)</th><td>\\(0\\)</td><td>\\(\\frac{2}{3}\\)</td></tr></table><table class='tb'><tr><th colspan='3'>\\(x-y=1\\)</th></tr><tr><th>\\(x\\)</th><td>\\(0\\)</td><td>\\(1\\)</td></tr><tr><th>\\(y\\)</th><td>\\(-1\\)</td><td>\\(0\\)</td></tr></table><p>\\(x=-1\\) es una recta vertical, paralela al eje de ordenadas.</p><p>Para elegir cada semiplano probamos un punto que no esté en la recta, normalmente el origen<i class='n' data-t='why'>Si el punto cumple la inecuación, el semiplano solución es el que lo contiene; si no la cumple, es el otro.</i>:</p><ul><li>\\(x+2y\\le3\\): con el origen, \\(0\\le3\\) se cumple → semiplano que lo contiene.</li><li>\\(x-y\\le1\\): con el origen, \\(0\\le1\\) se cumple → semiplano que lo contiene.</li><li>\\(x\\ge-1\\): con el origen, \\(0\\ge-1\\) se cumple → semiplano que lo contiene.</li></ul><p>Además, \\(y\\ge0\\) deja la región por encima del eje de abscisas.</p><div style='overflow-x:auto'><svg viewBox='0 0 420 300' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><line x1='86.1' y1='266.0' x2='86.1' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='151.3' y1='266.0' x2='151.3' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='216.5' y1='266.0' x2='216.5' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='281.7' y1='266.0' x2='281.7' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='346.9' y1='266.0' x2='346.9' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='249.0' x2='386.0' y2='249.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='192.4' x2='386.0' y2='192.4' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='135.9' x2='386.0' y2='135.9' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='79.3' x2='386.0' y2='79.3' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='192.4' x2='386.0' y2='192.4' stroke='#111' stroke-width='1.3'/><line x1='151.3' y1='266.0' x2='151.3' y2='34.0' stroke='#111' stroke-width='1.3'/><text x='86.1' y='205.4' font-size='10' text-anchor='middle' fill='#374151'>-1</text><text x='216.5' y='205.4' font-size='10' text-anchor='middle' fill='#374151'>1</text><text x='281.7' y='205.4' font-size='10' text-anchor='middle' fill='#374151'>2</text><text x='346.9' y='205.4' font-size='10' text-anchor='middle' fill='#374151'>3</text><text x='147.3' y='252.0' font-size='10' text-anchor='end' fill='#374151'>-1</text><text x='147.3' y='138.9' font-size='10' text-anchor='end' fill='#374151'>1</text><text x='147.3' y='82.3' font-size='10' text-anchor='end' fill='#374151'>2</text><text x='384.0' y='187.4' font-size='11' text-anchor='end' font-style='italic'>x</text><text x='156.3' y='44.0' font-size='11' font-style='italic'>y</text><polygon points='86.1,192.4 216.5,192.4 260.0,154.7 86.1,79.3' fill='#fcd34d' fill-opacity='0.55' stroke='none'/><line x1='34.0' y1='56.6' x2='386.0' y2='209.4' stroke='#b45309' stroke-width='2'/><text x='345.8' y='189.1' font-size='10' fill='#b45309' text-anchor='end'>x+2y=3</text><line x1='386.0' y1='45.3' x2='131.8' y2='266.0' stroke='#2563eb' stroke-width='2'/><text x='355.6' y='62.4' font-size='10' fill='#2563eb' text-anchor='end'>x−y=1</text><line x1='86.1' y1='266.0' x2='86.1' y2='34.0' stroke='#16a34a' stroke-width='2'/><text x='91.1' y='237.8' font-size='10' fill='#16a34a' text-anchor='start'>x=−1</text><text x='164.4' y='152.2' font-size='15' fill='#92400e' text-anchor='middle' font-weight='bold'>R</text><circle cx='86.1' cy='192.4' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='79.1' y='207.4' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>A</text><circle cx='216.5' cy='192.4' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='223.5' y='207.4' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>B</text><circle cx='260.0' cy='154.7' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='267.0' y='147.7' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>C</text><circle cx='86.1' cy='79.3' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='79.1' y='72.3' font-size='12' fill='#111' text-anchor='end' font-weight='bold'>D</text></svg></div><p>Hallamos sus vértices:</p><ul><li>\\(A:\\;\\left\\{\\begin{array}{l}x=-1\\\\y=0\\end{array}\\right.\\) \\(\\Rightarrow \\boxed{A(-1,0)}\\)</li><li>\\(B:\\;\\left\\{\\begin{array}{l}x-y=1\\\\y=0\\end{array}\\right.\\) \\(\\Rightarrow x=1\\) \\(\\Rightarrow \\boxed{B(1,0)}\\)</li><li>\\(C:\\;\\left\\{\\begin{array}{l}x+2y=3\\\\x-y=1\\end{array}\\right.\\) \\(\\Rightarrow x=-2y+3\\) \\(\\Rightarrow (-2y+3)-y=1\\) \\(\\Rightarrow y=\\frac{2}{3},\\ x=\\frac{5}{3}\\) \\(\\Rightarrow \\boxed{C(\\frac{5}{3},\\frac{2}{3})}\\)</li><li>\\(D:\\;\\left\\{\\begin{array}{l}x+2y=3\\\\x=-1\\end{array}\\right.\\) \\(\\Rightarrow y=2\\) \\(\\Rightarrow \\boxed{D(-1,2)}\\)</li></ul><div class='res'>El recinto es el cuadrilátero de vértices \\(A(-1,0)\\), \\(B(1,0)\\), \\(C\\left(\\frac53,\\frac23\\right)\\) y \\(D(-1,2)\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
@@ -51,7 +51,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2014-reserva-2-2",
@@ -69,7 +69,7 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>El segundo trozo solo falla en \\(x=1\\), que no está en \\(x\\gt2\\). En \\(x=2\\) imponemos continuidad y derivabilidad<i class='n' data-t='th'>Derivable en un punto \\(\\Rightarrow\\) continua en ese punto.</i>:</p><p><b>Continuidad en \\(x=2\\).</b> Los límites laterales deben existir y coincidir con \\(f(2)\\)<i class='n' data-t='th'>\\(f\\) es continua en \\(a\\) si existen los dos límites laterales, coinciden y valen \\(f(a)\\).</i>:</p>\\[\\lim_{x\\to2^-}(x^2+ax)=4+2a\\]\\[\\begin{aligned}\\lim_{x\\to2^+}\\frac{x+b}{x-1}&=\\frac{2+b}{1}\\\\&=2+b\\end{aligned}\\]\\[f(2)=4+2a\\]<p>Por tanto, \\(4+2a=2+b\\iff b\\) \\(=2+2a\\).</p><p><b>Derivabilidad en \\(x=2\\).</b> Las derivadas laterales deben coincidir<i class='n' data-t='th'>Una función continua en un punto es derivable en él si y solo si sus derivadas laterales existen y coinciden.</i>:</p>\\[\\begin{aligned}f'(2^-)&=2\\cdot2+a\\\\&=4+a\\end{aligned}\\]\\[\\begin{aligned}f'(x)&=\\frac{(x-1)-(x+b)}{(x-1)^2}\\\\&=\\frac{-1-b}{(x-1)^2}\\\\&\\Rightarrow f'(2^+)\\\\&=-1-b\\end{aligned}\\]<p>Por tanto, \\(4+a=-1-b\\).</p><p>Sustituyendo la primera en la segunda: \\(4+a=-3-2a\\Rightarrow3a\\) \\(=-7\\Rightarrow a=-\\frac73\\), y \\(b=2-\\frac{14}3=-\\frac83\\).</p><div class='res'>\\(a=-\\dfrac73\\) y \\(b=-\\dfrac83\\)</div><i class='n' data-t='tp'>Comprobación: \\(4+2a=-\\frac23=2+b\\) ✓ y \\(4+a=\\frac53=-1-b\\) ✓.</i></div>"
+     "html": "<div class='ex'><p>El segundo trozo solo falla en \\(x=1\\), que no está en \\(x\\gt2\\). En \\(x=2\\) imponemos continuidad y derivabilidad<i class='n' data-t='th'>Derivable en un punto \\(\\Rightarrow\\) continua en ese punto.</i>:</p><p><b>Continuidad en \\(x=2\\).</b> Los límites laterales deben existir y coincidir con \\(f(2)\\)<i class='n' data-t='th'>\\(f\\) es continua en \\(a\\) si existen los dos límites laterales, coinciden y valen \\(f(a)\\).</i>:</p>\\[\\lim_{x\\to2^-}(x^2+ax)=4+2a\\]\\[\\begin{aligned}\\lim_{x\\to2^+}\\frac{x+b}{x-1}&=\\frac{2+b}{1}\\\\&=2+b\\end{aligned}\\]\\[f(2)=4+2a\\]<p>Por tanto, \\(4+2a=2+b\\iff b\\) \\(=2+2a\\).</p><p><b>Derivabilidad en \\(x=2\\).</b> Las derivadas laterales deben coincidir<i class='n' data-t='th'>Una función continua en un punto es derivable en él si y solo si sus derivadas laterales existen y coinciden.</i>:</p>\\[\\begin{aligned}f'(2^-)&=2\\cdot2+a\\\\&=4+a\\end{aligned}\\]\\[\\begin{aligned}f'(x)&=\\frac{(x-1)-(x+b)}{(x-1)^2}\\\\&=\\frac{-1-b}{(x-1)^2}\\\\&\\Rightarrow f'(2^+)\\\\&=-1-b\\end{aligned}\\]<p>Por tanto, \\(4+a=-1-b\\).</p><p>Sustituyendo la primera en la segunda: \\(4+a=-3-2a\\) \\(\\Rightarrow3a\\) \\(=-7\\) \\(\\Rightarrow a=-\\frac73\\), y \\(b=2-\\frac{14}3=-\\frac83\\).</p><div class='res'>\\(a=-\\dfrac73\\) y \\(b=-\\dfrac83\\)</div><i class='n' data-t='tp'>Comprobación: \\(4+2a=-\\frac23=2+b\\) ✓ y \\(4+a=\\frac53=-1-b\\) ✓.</i></div>"
     },
     {
      "titulo": "Apartado b",
@@ -93,7 +93,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2014-reserva-2-3",
@@ -139,7 +139,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2014-reserva-2-4",
@@ -203,7 +203,7 @@
    "solucion": [
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>Efectuamos los dos productos:</p>\\[\\begin{pmatrix}2x+y\\\\3x+y\\end{pmatrix}=\\begin{pmatrix}3\\\\3y\\end{pmatrix}\\iff\\begin{cases}2x+y=3\\\\3x=2y\\end{cases}\\]<p>De la primera, \\(y=3-2x\\); sustituyendo, \\(3x=6-4x\\Rightarrow x=\\frac67\\), \\(y=\\frac97\\).</p><div class='res'>\\(x=\\dfrac67\\) e \\(y=\\dfrac97\\)</div></div>"
+     "html": "<div class='ex'><p>Efectuamos los dos productos:</p>\\[\\begin{pmatrix}2x+y\\\\3x+y\\end{pmatrix}=\\begin{pmatrix}3\\\\3y\\end{pmatrix}\\iff\\begin{cases}2x+y=3\\\\3x=2y\\end{cases}\\]<p>De la primera, \\(y=3-2x\\); sustituyendo, \\(3x=6-4x\\) \\(\\Rightarrow x=\\frac67\\), \\(y=\\frac97\\).</p><div class='res'>\\(x=\\dfrac67\\) e \\(y=\\dfrac97\\)</div></div>"
     },
     {
      "titulo": "Apartado b",
@@ -274,7 +274,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2014-reserva-2-7",
@@ -335,7 +335,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2014-reserva-2-8",

@@ -45,7 +45,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2025-junio-2",
@@ -68,7 +68,7 @@
     },
     {
      "titulo": "Apartado b",
-     "html": "<div class='ex'><p>Con \\(N(0)=0\\): al principio nadie ha visto la noticia. Por la derecha, cuando \\(t\\to+\\infty\\):<i class='n' data-t='th'>La asíntota horizontal describe la tendencia a largo plazo: \\(\\lim_{t\\to+\\infty}N(t)=L\\) da \\(y=L\\).</i></p>\\[\\lim_{t\\to+\\infty}500\\,000\\bigl(1-e^{-0{,}2t}\\bigr)=500\\,000\\]<p>Tabla de valores: \\(N(2)\\approx164\\,800\\), \\(N(5)\\approx316\\,000\\), \\(N(10)\\approx432\\,300\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 300 235' width='100%' style='max-width:400px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M20 210H295M30 220V10'/><path d='M30 20H290' stroke-dasharray='5 3' stroke-opacity='.6'/></g><polyline points='30,210 54,147.4 78,105.4 102,77.2 126,58.4 150,45.7 210,29.5 270,23.5' fill='none' stroke='#2f6df0' stroke-width='2'/><circle cx='168' cy='39' r='3.5' fill='#e8487a'/><g><text x='34' y='16'>y = 500 000</text><text x='172' y='56'>(11,51; 450 000)</text><text x='34' y='204'>0</text><text x='284' y='226'>t</text></g></svg></div><i class='n' data-t='tp'>Dibuja siempre la asíntota \\(y=500\\,000\\) (discontinua) y que la curva se acerca a ella por debajo sin tocarla.</i><div class='res'>La noticia se acerca a las 500 000 personas sin superarlas nunca (asíntota horizontal \\(y=500\\,000\\))</div></div>"
+     "html": "<div class='ex'><p>Con \\(N(0)=0\\): al principio nadie ha visto la noticia. Por la derecha, cuando \\(t\\to+\\infty\\):<i class='n' data-t='th'>La asíntota horizontal describe la tendencia a largo plazo: \\(\\lim_{t\\to+\\infty}N(t)=L\\) da \\(y=L\\).</i></p>\\[\\lim_{t\\to+\\infty}500\\,000\\bigl(1-e^{-0{,}2t}\\bigr)=500\\,000\\]<p>Tabla de valores: \\(N(2)\\approx164\\,800\\), \\(N(5)\\approx316\\,000\\), \\(N(10)\\approx432\\,300\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 420 300' width='100%' style='max-width:420px' xmlns='http://www.w3.org/2000/svg' font-family='sans-serif'><line x1='92.7' y1='266.0' x2='92.7' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='134.6' y1='266.0' x2='134.6' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='176.5' y1='266.0' x2='176.5' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='218.4' y1='266.0' x2='218.4' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='260.3' y1='266.0' x2='260.3' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='302.2' y1='266.0' x2='302.2' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='344.1' y1='266.0' x2='344.1' y2='34.0' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='211.9' x2='386.0' y2='211.9' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='173.2' x2='386.0' y2='173.2' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='134.5' x2='386.0' y2='134.5' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='95.9' x2='386.0' y2='95.9' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='57.2' x2='386.0' y2='57.2' stroke='#e5e7eb' stroke-width='1'/><line x1='34.0' y1='250.5' x2='386.0' y2='250.5' stroke='#111' stroke-width='1.3'/><line x1='50.8' y1='266.0' x2='50.8' y2='34.0' stroke='#111' stroke-width='1.3'/><text x='92.7' y='263.5' font-size='10' text-anchor='middle' fill='#374151'>5</text><text x='134.6' y='263.5' font-size='10' text-anchor='middle' fill='#374151'>10</text><text x='176.5' y='263.5' font-size='10' text-anchor='middle' fill='#374151'>15</text><text x='218.4' y='263.5' font-size='10' text-anchor='middle' fill='#374151'>20</text><text x='260.3' y='263.5' font-size='10' text-anchor='middle' fill='#374151'>25</text><text x='302.2' y='263.5' font-size='10' text-anchor='middle' fill='#374151'>30</text><text x='344.1' y='263.5' font-size='10' text-anchor='middle' fill='#374151'>35</text><text x='46.8' y='214.9' font-size='10' text-anchor='end' fill='#374151'>100</text><text x='46.8' y='176.2' font-size='10' text-anchor='end' fill='#374151'>200</text><text x='46.8' y='137.5' font-size='10' text-anchor='end' fill='#374151'>300</text><text x='46.8' y='98.9' font-size='10' text-anchor='end' fill='#374151'>400</text><text x='46.8' y='60.2' font-size='10' text-anchor='end' fill='#374151'>500</text><text x='384.0' y='245.5' font-size='11' text-anchor='end' font-style='italic'>t (h)</text><text x='55.8' y='44.0' font-size='11' font-style='italic'>N (miles)</text><line x1='34.0' y1='57.2' x2='386.0' y2='57.2' stroke='#64748b' stroke-width='1.4' stroke-dasharray='5 4'/><polyline points='50.8,250.5 52.4,243.0 54.1,235.7 55.8,228.7 57.5,221.9 59.1,215.5 60.8,209.3 62.5,203.3 64.2,197.6 65.8,192.1 67.5,186.8 69.2,181.7 70.9,176.8 72.6,172.1 74.2,167.6 75.9,163.3 77.6,159.1 79.3,155.1 80.9,151.3 82.6,147.6 84.3,144.1 86.0,140.7 87.6,137.4 89.3,134.2 91.0,131.2 92.7,128.3 94.3,125.5 96.0,122.9 97.7,120.3 99.4,117.8 101.0,115.4 102.7,113.1 104.4,111.0 106.1,108.8 107.8,106.8 109.4,104.9 111.1,103.0 112.8,101.2 114.5,99.5 116.1,97.8 117.8,96.2 119.5,94.7 121.2,93.2 122.8,91.8 124.5,90.5 126.2,89.2 127.9,87.9 129.5,86.7 131.2,85.5 132.9,84.4 134.6,83.4 136.2,82.3 137.9,81.4 139.6,80.4 141.3,79.5 143.0,78.6 144.6,77.8 146.3,77.0 148.0,76.2 149.7,75.5 151.3,74.7 153.0,74.1 154.7,73.4 156.4,72.8 158.0,72.1 159.7,71.6 161.4,71.0 163.1,70.5 164.7,69.9 166.4,69.4 168.1,69.0 169.8,68.5 171.4,68.1 173.1,67.6 174.8,67.2 176.5,66.8 178.2,66.4 179.8,66.1 181.5,65.7 183.2,65.4 184.9,65.1 186.5,64.8 188.2,64.5 189.9,64.2 191.6,63.9 193.2,63.7 194.9,63.4 196.6,63.2 198.3,62.9 199.9,62.7 201.6,62.5 203.3,62.3 205.0,62.1 206.6,61.9 208.3,61.7 210.0,61.5 211.7,61.4 213.4,61.2 215.0,61.0 216.7,60.9 218.4,60.7 220.1,60.6 221.7,60.5 223.4,60.3 225.1,60.2 226.8,60.1 228.4,60.0 230.1,59.9 231.8,59.8 233.5,59.7 235.1,59.6 236.8,59.5 238.5,59.4 240.2,59.3 241.8,59.2 243.5,59.1 245.2,59.1 246.9,59.0 248.6,58.9 250.2,58.9 251.9,58.8 253.6,58.7 255.3,58.7 256.9,58.6 258.6,58.6 260.3,58.5 262.0,58.5 263.6,58.4 265.3,58.4 267.0,58.3 268.7,58.3 270.3,58.2 272.0,58.2 273.7,58.1 275.4,58.1 277.0,58.1 278.7,58.0 280.4,58.0 282.1,58.0 283.8,57.9 285.4,57.9 287.1,57.9 288.8,57.9 290.5,57.8 292.1,57.8 293.8,57.8 295.5,57.8 297.2,57.7 298.8,57.7 300.5,57.7 302.2,57.7 303.9,57.7 305.5,57.6 307.2,57.6 308.9,57.6 310.6,57.6 312.2,57.6 313.9,57.6 315.6,57.5 317.3,57.5 319.0,57.5 320.6,57.5 322.3,57.5 324.0,57.5 325.7,57.5 327.3,57.5 329.0,57.5 330.7,57.4 332.4,57.4 334.0,57.4 335.7,57.4 337.4,57.4 339.1,57.4 340.7,57.4 342.4,57.4 344.1,57.4 345.8,57.4 347.4,57.4 349.1,57.4 350.8,57.4 352.5,57.3 354.2,57.3 355.8,57.3 357.5,57.3 359.2,57.3 360.9,57.3 362.5,57.3 364.2,57.3 365.9,57.3 367.6,57.3 369.2,57.3 370.9,57.3 372.6,57.3 374.3,57.3 375.9,57.3 377.6,57.3 379.3,57.3 381.0,57.3 382.6,57.3 384.3,57.3 386.0,57.3' fill='none' stroke='#2563eb' stroke-width='2.2'/><circle cx='147.2' cy='76.5' r='3.6' fill='#111' stroke='#111' stroke-width='1.6'/><text x='153.2' y='90.5' font-size='12' fill='#111' text-anchor='start' font-weight='bold'>(11,51; 450 000)</text><text x='377.6' y='51.4' font-size='11' fill='#64748b' text-anchor='end'>y = 500 000</text></svg></div><i class='n' data-t='tp'>Dibuja siempre la asíntota \\(y=500\\,000\\) (discontinua) y que la curva se acerca a ella por debajo sin tocarla.</i><div class='res'>La noticia se acerca a las 500 000 personas sin superarlas nunca (asíntota horizontal \\(y=500\\,000\\))</div></div>"
     },
     {
      "titulo": "Apartado c",
@@ -101,7 +101,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2025-junio-3",
@@ -147,7 +147,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2025-junio-4",
@@ -206,7 +206,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2025-junio-5",
@@ -256,7 +256,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2025-junio-6",
@@ -279,7 +279,7 @@
     },
     {
      "titulo": "Apartado a",
-     "html": "<div class='ex'><p>El intervalo es \\(IC_{0{,}97}(\\mu)=(\\bar x-E,\\ \\bar x+E)=(10{,}794;\\ 13{,}206)\\). La media muestral es el punto medio de los extremos<i class='n' data-t='why'>Al ser \\(\\bar x-E\\) y \\(\\bar x+E\\) simétricos respecto de \\(\\bar x\\), sumarlos y dividir entre 2 elimina el error.</i>:</p>\\[\\begin{aligned}\\bar x&=\\frac{10{,}794+13{,}206}{2}\\\\&=\\frac{24}{2}=12\\end{aligned}\\]<p>Comprobación: \\(E=\\dfrac{13{,}206-10{,}794}{2}\\) \\(=1{,}206\\) y, con \\(1-\\alpha=0{,}97\\Rightarrow\\alpha=0{,}03\\) \\(\\Rightarrow1-\\tfrac\\alpha2=0{,}985\\) \\(\\Rightarrow z_{0{,}985}=2{,}17\\),\\[\\begin{aligned}E&=z_{1-\\alpha/2}\\frac{\\sigma}{\\sqrt n}\\\\&=2{,}17\\cdot\\frac{5}{\\sqrt{81}}\\\\&=2{,}17\\cdot\\frac59\\approx1{,}206\\ \\checkmark\\end{aligned}\\]</p><div class='res'>El tiempo medio de estudio de la muestra es \\(\\bar x=12\\) horas</div><p><b>Conclusión:</b> podemos afirmar, con un nivel de confianza del 97 %, que el tiempo medio de estudio semanal de los estudiantes andaluces está entre 10,794 y 13,206 horas.</p></div>"
+     "html": "<div class='ex'><p>El intervalo es \\(IC_{0{,}97}(\\mu)=(\\bar x-E,\\ \\bar x+E)=(10{,}794;\\ 13{,}206)\\). La media muestral es el punto medio de los extremos<i class='n' data-t='why'>Al ser \\(\\bar x-E\\) y \\(\\bar x+E\\) simétricos respecto de \\(\\bar x\\), sumarlos y dividir entre 2 elimina el error.</i>:</p>\\[\\begin{aligned}\\bar x&=\\frac{10{,}794+13{,}206}{2}\\\\&=\\frac{24}{2}=12\\end{aligned}\\]<p>Comprobación: \\(E=\\dfrac{13{,}206-10{,}794}{2}\\) \\(=1{,}206\\) y, con \\(1-\\alpha=0{,}97\\) \\(\\Rightarrow\\alpha=0{,}03\\) \\(\\Rightarrow1-\\tfrac\\alpha2=0{,}985\\) \\(\\Rightarrow z_{0{,}985}=2{,}17\\),\\[\\begin{aligned}E&=z_{1-\\alpha/2}\\frac{\\sigma}{\\sqrt n}\\\\&=2{,}17\\cdot\\frac{5}{\\sqrt{81}}\\\\&=2{,}17\\cdot\\frac59\\approx1{,}206\\ \\checkmark\\end{aligned}\\]</p><div class='res'>El tiempo medio de estudio de la muestra es \\(\\bar x=12\\) horas</div><p><b>Conclusión:</b> podemos afirmar, con un nivel de confianza del 97 %, que el tiempo medio de estudio semanal de los estudiantes andaluces está entre 10,794 y 13,206 horas.</p></div>"
     },
     {
      "titulo": "Apartado b",
@@ -316,7 +316,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   },
   {
    "id": "ccss-2025-junio-7",
@@ -343,11 +343,11 @@
     },
     {
      "titulo": "Apartado b1",
-     "html": "<div class='ex'><p>Ahora se toma una muestra de \\(n=15\\) trenes. Como \\(X\\) es normal con \\(\\sigma=2{,}2\\) conocida, la media muestral cumple\\[\\bar X\\sim N\\!\\left(\\mu,\\ \\frac{\\sigma}{\\sqrt n}\\right)=N\\!\\left(\\mu,\\ \\frac{2{,}2}{\\sqrt{15}}\\right)\\]<i class='n' data-t='th'>Teorema central del límite: aquí es exacto porque \\(X\\) ya es normal. Si no lo fuera, con \\(n=15\\lt30\\) no podríamos aplicarlo con garantías.</i></p><p>El intervalo de confianza para la media poblacional es\\[IC_{1-\\alpha}(\\mu)=\\bigl(\\bar x-E,\\ \\bar x+E\\bigr),\\qquad  E=z_{1-\\alpha/2}\\cdot\\frac{\\sigma}{\\sqrt n}\\]</p><p>Media de la muestra:\\[\\begin{aligned}\\bar x&=\\frac{0+1{,}3-2{,}1-1{,}5+2+0{,}8+5+2{,}1-3+1{,}8+3{,}1+4-0{,}7+1{,}6-5{,}4}{15}\\\\&=\\frac{9}{15}=0{,}6\\end{aligned}\\]</p><p>Nivel de confianza \\(96\\,\\%\\): \\(1-\\alpha=0{,}96\\Rightarrow\\alpha=0{,}04\\) \\(\\Rightarrow1-\\tfrac\\alpha2=0{,}98\\) \\(\\Rightarrow z_{0{,}98}=2{,}05\\).<i class='n' data-t='why'>Buscamos en la tabla el valor de \\(z\\) cuya probabilidad acumulada es \\(1-\\alpha/2=0{,}98\\), no \\(0{,}96\\): el área que dejamos fuera se reparte en las dos colas.</i></p>\\[\\begin{aligned}E&=2{,}05\\cdot\\frac{2{,}2}{\\sqrt{15}}\\\\&=2{,}05\\cdot0{,}568\\approx1{,}16\\end{aligned}\\]\\[\\begin{aligned}IC_{0{,}96}(\\mu)&=(0{,}6-1{,}16;\\ 0{,}6+1{,}16)\\\\&=(-0{,}56;\\ 1{,}76)\\end{aligned}\\]<div class='res'>\\(IC_{0{,}96}(\\mu)\\) \\(=(-0{,}56;\\ 1{,}76)\\). El error máximo es \\(E\\approx1{,}16\\) minutos</div><p>El valor 2 no pertenece al intervalo (\\(2\\gt1{,}76\\)), luego con un nivel de confianza del 96 % no puede afirmarse que el desajuste medio de los trenes sea de 2 minutos: es inferior.<i class='n' data-t='err'>El intervalo se refiere a la <b>media</b> poblacional. Un tren concreto sí puede llegar con 2 minutos de desajuste: no confundas la media con un valor individual.</i></p><p><b>Conclusión:</b> podemos afirmar, con un nivel de confianza del 96 %, que el desajuste medio de los trenes de alta velocidad está entre −0,56 y 1,76 minutos.</p></div>"
+     "html": "<div class='ex'><p>Ahora se toma una muestra de \\(n=15\\) trenes. Como \\(X\\) es normal con \\(\\sigma=2{,}2\\) conocida, la media muestral cumple\\[\\bar X\\sim N\\!\\left(\\mu,\\ \\frac{\\sigma}{\\sqrt n}\\right)=N\\!\\left(\\mu,\\ \\frac{2{,}2}{\\sqrt{15}}\\right)\\]<i class='n' data-t='th'>Teorema central del límite: aquí es exacto porque \\(X\\) ya es normal. Si no lo fuera, con \\(n=15\\lt30\\) no podríamos aplicarlo con garantías.</i></p><p>El intervalo de confianza para la media poblacional es\\[IC_{1-\\alpha}(\\mu)=\\bigl(\\bar x-E,\\ \\bar x+E\\bigr),\\qquad  E=z_{1-\\alpha/2}\\cdot\\frac{\\sigma}{\\sqrt n}\\]</p><p>Media de la muestra:\\[\\begin{aligned}\\bar x&=\\frac{0+1{,}3-2{,}1-1{,}5+2+0{,}8+5+2{,}1-3+1{,}8+3{,}1+4-0{,}7+1{,}6-5{,}4}{15}\\\\&=\\frac{9}{15}=0{,}6\\end{aligned}\\]</p><p>Nivel de confianza \\(96\\,\\%\\): \\(1-\\alpha=0{,}96\\) \\(\\Rightarrow\\alpha=0{,}04\\) \\(\\Rightarrow1-\\tfrac\\alpha2=0{,}98\\) \\(\\Rightarrow z_{0{,}98}=2{,}05\\).<i class='n' data-t='why'>Buscamos en la tabla el valor de \\(z\\) cuya probabilidad acumulada es \\(1-\\alpha/2=0{,}98\\), no \\(0{,}96\\): el área que dejamos fuera se reparte en las dos colas.</i></p>\\[\\begin{aligned}E&=2{,}05\\cdot\\frac{2{,}2}{\\sqrt{15}}\\\\&=2{,}05\\cdot0{,}568\\approx1{,}16\\end{aligned}\\]\\[\\begin{aligned}IC_{0{,}96}(\\mu)&=(0{,}6-1{,}16;\\ 0{,}6+1{,}16)\\\\&=(-0{,}56;\\ 1{,}76)\\end{aligned}\\]<div class='res'>\\(IC_{0{,}96}(\\mu)\\) \\(=(-0{,}56;\\ 1{,}76)\\). El error máximo es \\(E\\approx1{,}16\\) minutos</div><p>El valor 2 no pertenece al intervalo (\\(2\\gt1{,}76\\)), luego con un nivel de confianza del 96 % no puede afirmarse que el desajuste medio de los trenes sea de 2 minutos: es inferior.<i class='n' data-t='err'>El intervalo se refiere a la <b>media</b> poblacional. Un tren concreto sí puede llegar con 2 minutos de desajuste: no confundas la media con un valor individual.</i></p><p><b>Conclusión:</b> podemos afirmar, con un nivel de confianza del 96 %, que el desajuste medio de los trenes de alta velocidad está entre −0,56 y 1,76 minutos.</p></div>"
     },
     {
      "titulo": "Apartado b2",
-     "html": "<div class='ex'><p>Nivel de confianza \\(98\\,\\%\\): \\(1-\\alpha=0{,}98\\Rightarrow\\alpha=0{,}02\\) \\(\\Rightarrow1-\\tfrac\\alpha2=0{,}99\\) \\(\\Rightarrow z_{0{,}99}=2{,}33\\).</p><p>«La diferencia entre la media poblacional y su estimación muestral» es el error \\(E=|\\bar x-\\mu|\\), que debe ser a lo sumo 1,1:\\[\\begin{aligned}&E\\le1{,}1\\\\&\\iff2{,}33\\cdot\\frac{2{,}2}{\\sqrt n}\\le1{,}1\\\\&\\iff\\sqrt n\\ge\\frac{2{,}33\\cdot2{,}2}{1{,}1}=4{,}66\\\\&\\iff n\\ge21{,}7\\end{aligned}\\]<i class='n' data-t='why'>Cuanto menor sea el error permitido, más datos necesitamos: por eso aparece una desigualdad hacia arriba en \\(n\\).</i></p><p>Como \\(n\\) es un número entero, se toma el menor entero que cumple la condición.<i class='n' data-t='err'>Aquí se redondea <b>hacia arriba</b> (22, no 21): con 21 trenes el error sería ligeramente mayor que 1,1 minutos.</i></p><div class='res'>Hay que elegir como mínimo \\(n=22\\) trenes</div></div>"
+     "html": "<div class='ex'><p>Nivel de confianza \\(98\\,\\%\\): \\(1-\\alpha=0{,}98\\) \\(\\Rightarrow\\alpha=0{,}02\\) \\(\\Rightarrow1-\\tfrac\\alpha2=0{,}99\\) \\(\\Rightarrow z_{0{,}99}=2{,}33\\).</p><p>«La diferencia entre la media poblacional y su estimación muestral» es el error \\(E=|\\bar x-\\mu|\\), que debe ser a lo sumo 1,1:\\[\\begin{aligned}&E\\le1{,}1\\\\&\\iff2{,}33\\cdot\\frac{2{,}2}{\\sqrt n}\\le1{,}1\\\\&\\iff\\sqrt n\\ge\\frac{2{,}33\\cdot2{,}2}{1{,}1}=4{,}66\\\\&\\iff n\\ge21{,}7\\end{aligned}\\]<i class='n' data-t='why'>Cuanto menor sea el error permitido, más datos necesitamos: por eso aparece una desigualdad hacia arriba en \\(n\\).</i></p><p>Como \\(n\\) es un número entero, se toma el menor entero que cumple la condición.<i class='n' data-t='err'>Aquí se redondea <b>hacia arriba</b> (22, no 21): con 21 trenes el error sería ligeramente mayor que 1,1 minutos.</i></p><div class='res'>Hay que elegir como mínimo \\(n=22\\) trenes</div></div>"
     }
    ],
    "clasificacion": [
@@ -382,7 +382,7 @@
    },
    "dificultad": null,
    "etiquetas": [],
-   "revision": "requiere_revision"
+   "revision": "revisado"
   }
  ]
 }

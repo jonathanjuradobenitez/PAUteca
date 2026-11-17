@@ -111,3 +111,8 @@ button.tile:active{transform:scale(.96)}
 @keyframes tileIn{from{opacity:0;transform:translateX(calc((2 - var(--i))*105%)) scale(.25) rotate(-120deg);border-radius:50%}to{opacity:1;transform:none;border-radius:22px}}
 @media (prefers-reduced-motion:reduce){.tiles .tile{animation:none!important}}
 .sol mjx-container[display="true"]{display:block;max-width:100%;overflow-x:auto;overflow-y:hidden;padding-bottom:2px}
+
+/* fórmulas en línea más anchas que la pantalla: bloque con desplazamiento propio */
+.sol mjx-container.mjw{display:block;max-width:100%;overflow-x:auto;overflow-y:hidden;padding:2px 0 4px;-webkit-overflow-scrolling:touch}
+.sol{min-width:0;overflow-wrap:anywhere}
+html,body{overflow-x:hidden}
