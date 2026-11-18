@@ -1,0 +1,317 @@
+{
+ "version": 1,
+ "id": "matematicas-2014-reserva-3",
+ "asignatura": "matematicas",
+ "anio": 2014,
+ "convocatoria": "Reserva 3",
+ "documento": "MAT-2014-RESERVA_3.pdf",
+ "ejercicios": [
+  {
+   "id": "matematicas-2014-reserva-3-1",
+   "n": 1,
+   "num": 1,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sabiendo que \\(\\displaystyle\\lim_{x\\to1}\\left(\\frac x{x-1}-\\frac a{\\ln x}\\right)\\) es finito, calcula \\(a\\) y el valor del límite (\\(\\ln\\) denota el logaritmo neperiano).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>Es una indeterminación \\(\\infty-\\infty\\). Opero:</p>\\[\\lim_{x\\to1}\\left(\\frac x{x-1}-\\frac a{\\ln x}\\right)=\\lim_{x\\to1}\\frac{x\\ln x-a(x-1)}{(x-1)\\ln x}=\\left[\\frac00\\right]\\]<p>Aplico la regla de L'Hôpital<i class='n' data-t='th'>Regla de L'Hôpital: si el límite de \\(\\frac fg\\) da \\(\\frac00\\) o \\(\\frac\\infty\\infty\\), es igual al límite de \\(\\frac{f'}{g'}\\), si este existe.</i>:</p>\\[\\overset{\\text{L'H}}=\\lim_{x\\to1}\\frac{\\ln x+1-a}{\\ln x+\\frac{x-1}x}\\]<p>El denominador tiende a 0 y el numerador a \\(1-a\\). Si \\(1-a\\neq0\\), el límite sería infinito<i class='n' data-t='why'>Un número distinto de cero dividido entre algo que tiende a 0 da infinito: el límite no sería finito.</i>. Para que sea finito, \\(\\boxed{a=1}\\). Con \\(a=1\\) vuelve a ser \\(\\frac00\\):</p>\\[\\lim_{x\\to1}\\frac{\\ln x}{\\ln x+1-\\frac1x}\\overset{\\text{L'H}}=\\lim_{x\\to1}\\frac{\\frac1x}{\\frac1x+\\frac1{x^2}}=\\frac1{1+1}=\\frac12\\]<div class='res'>\\(a=1\\) y el límite vale \\(\\dfrac12\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "lim",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2014-RESERVA_3.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2014-reserva-3-2",
+   "n": 2,
+   "num": 2,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Determina una función derivable \\(f:\\mathbb R\\to\\mathbb R\\) sabiendo que \\(f(1)=-1\\) y que \\(f'(x)=\\begin{cases}x^2-2x&\\text{si }x\\lt0\\\\e^x-1&\\text{si }x\\ge0.\\end{cases}\\)",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>Integro cada trozo:</p>\\[f(x)=\\begin{cases}\\dfrac{x^3}3-x^2+C_1&\\text{si }x\\lt0\\\\e^x-x+C_2&\\text{si }x\\ge0\\end{cases}\\]<p>\\(f(1)=-1\\)<b>:</b> \\(e-1+C_2=-1\\iff C_2=-e\\).</p><p>\\(f\\)<b> es derivable, luego continua</b> en \\(x=0\\)<i class='n' data-t='th'>Si una función es derivable en un punto, es continua en él.</i>: \\(\\lim_{x\\to0^-}f(x)=C_1\\) y \\(f(0)=1+C_2=1-e\\). Así \\(C_1=1-e\\).</p><i class='n' data-t='tp'>Las derivadas laterales en \\(x=0\\) coinciden: \\(0^2-0=0\\) y \\(e^0-1=0\\). Por tanto \\(f\\) es derivable también en 0.</i><div class='res'>\\(f(x)=\\begin{cases}\\dfrac{x^3}3-x^2+1-e&\\text{si }x\\lt0\\\\e^x-x-e&\\text{si }x\\ge0\\end{cases}\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "pcond",
+     "apartados": ""
+    },
+    {
+     "tema": "funciones",
+     "tipo": "cont",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2014-RESERVA_3.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2014-reserva-3-3",
+   "n": 3,
+   "num": 3,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Se sabe que el determinante de la matriz \\(A=\\begin{pmatrix}a_{11}&a_{12}&a_{13}\\\\a_{21}&a_{22}&a_{23}\\\\a_{31}&a_{32}&a_{33}\\end{pmatrix}\\) es \\(-3\\). Calcula, indicando las propiedades que utilices, los siguientes determinantes:",
+    "apartados": [
+     "(1 p.) \\(\\det(-2A)\\) y \\(\\det(A^{-1})\\).",
+     "(1,5 p.) \\(\\begin{vmatrix}a_{21}&a_{22}&a_{23}\\\\7a_{11}&7a_{12}&7a_{13}\\\\2a_{31}&2a_{32}&2a_{33}\\end{vmatrix}\\) y \\(\\begin{vmatrix}a_{11}&a_{21}+2a_{31}&5a_{31}\\\\a_{12}&a_{22}+2a_{32}&5a_{32}\\\\a_{13}&a_{23}+2a_{33}&5a_{33}\\end{vmatrix}\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Al multiplicar \\(A\\) por \\(-2\\) se multiplican sus 3 filas por \\(-2\\)<i class='n' data-t='th'>Si se multiplica una fila por \\(k\\), el determinante queda multiplicado por \\(k\\). En orden 3, \\(|kA|=k^3|A|\\).</i>:</p>\\[\\det(-2A)=(-2)^3\\cdot(-3)=24\\qquad\\det(A^{-1})=\\frac1{\\det A}=-\\frac13\\]<div class='res'>\\(\\det(-2A)=24\\); \\(\\det(A^{-1})=-\\dfrac13\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p><b>Primero.</b> Saco el 7 de la fila 2 y el 2 de la fila 3; luego intercambio las filas 1 y 2, lo que cambia el signo<i class='n' data-t='th'>Al intercambiar dos filas el determinante cambia de signo.</i>:</p>\\[\\begin{vmatrix}a_{21}&a_{22}&a_{23}\\\\7a_{11}&7a_{12}&7a_{13}\\\\2a_{31}&2a_{32}&2a_{33}\\end{vmatrix}=14\\begin{vmatrix}a_{21}&a_{22}&a_{23}\\\\a_{11}&a_{12}&a_{13}\\\\a_{31}&a_{32}&a_{33}\\end{vmatrix}=-14\\det A=42\\]<p><b>Segundo.</b> Saco el 5 de la columna 3 y a la columna 2 le resto el doble de la columna 3, lo que no cambia el determinante<i class='n' data-t='th'>Si a una columna se le suma una combinación lineal de las otras, el determinante no varía.</i>. Queda la traspuesta de \\(A\\), que tiene su mismo determinante:</p>\\[\\begin{vmatrix}a_{11}&a_{21}+2a_{31}&5a_{31}\\\\a_{12}&a_{22}+2a_{32}&5a_{32}\\\\a_{13}&a_{23}+2a_{33}&5a_{33}\\end{vmatrix}=5\\begin{vmatrix}a_{11}&a_{21}&a_{31}\\\\a_{12}&a_{22}&a_{32}\\\\a_{13}&a_{23}&a_{33}\\end{vmatrix}=5\\det(A^t)=-15\\]<div class='res'>El primero vale \\(42\\) y el segundo \\(-15\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "det",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2014-RESERVA_3.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2014-reserva-3-4",
+   "n": 4,
+   "num": 4,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera los vectores \\(\\vec u=(1,-1,3)\\), \\(\\vec v=(1,0,-1)\\) y \\(\\vec w=(\\lambda,1,0)\\).",
+    "apartados": [
+     "(0,75 p.) Calcula los valores de \\(\\lambda\\) que hacen que \\(\\vec u\\) y \\(\\vec w\\) sean ortogonales.",
+     "(0,75 p.) Calcula los valores de \\(\\lambda\\) que hacen que \\(\\vec u\\), \\(\\vec v\\) y \\(\\vec w\\) sean linealmente independientes.",
+     "(1 p.) Para \\(\\lambda=1\\) escribe el vector \\(\\vec r=(3,0,2)\\) como combinación lineal de \\(\\vec u\\), \\(\\vec v\\) y \\(\\vec w\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Son ortogonales si su producto escalar es 0:</p>\\[\\vec u\\cdot\\vec w=\\lambda-1+0=0\\iff\\lambda=1\\]<div class='res'>\\(\\lambda=1\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Tres vectores de \\(\\mathbb R^3\\) son linealmente independientes si y solo si el determinante que forman no es nulo. Por la regla de Sarrus<i class='n' data-t='th'>Regla de Sarrus: se suman los productos de la diagonal principal y de los dos triángulos con un lado paralelo a ella (en verde) y se restan los de la diagonal secundaria y sus dos triángulos (en rojo).<span style='display:block;margin:6px 0 0'><svg viewBox='0 0 206 106' width='100%' style='max-width:230px' font-family='system-ui,sans-serif'><text x='0' y='30' font-size='20' font-weight='700' fill='#17a673'>+</text><text x='0' y='86' font-size='20' font-weight='700' fill='#e8487a'>−</text><polygon points='26,10 41,25 56,40' fill='#17a673' fill-opacity='.15' stroke='#17a673' stroke-width='1.8' stroke-linejoin='round'/><circle cx='26' cy='10' r='3.6' fill='#17a673'/><circle cx='41' cy='10' r='2.2' fill='#9ca3af'/><circle cx='56' cy='10' r='2.2' fill='#9ca3af'/><circle cx='26' cy='25' r='2.2' fill='#9ca3af'/><circle cx='41' cy='25' r='3.6' fill='#17a673'/><circle cx='56' cy='25' r='2.2' fill='#9ca3af'/><circle cx='26' cy='40' r='2.2' fill='#9ca3af'/><circle cx='41' cy='40' r='2.2' fill='#9ca3af'/><circle cx='56' cy='40' r='3.6' fill='#17a673'/><polygon points='103,10 118,25 88,40' fill='#17a673' fill-opacity='.15' stroke='#17a673' stroke-width='1.8' stroke-linejoin='round'/><circle cx='88' cy='10' r='2.2' fill='#9ca3af'/><circle cx='103' cy='10' r='3.6' fill='#17a673'/><circle cx='118' cy='10' r='2.2' fill='#9ca3af'/><circle cx='88' cy='25' r='2.2' fill='#9ca3af'/><circle cx='103' cy='25' r='2.2' fill='#9ca3af'/><circle cx='118' cy='25' r='3.6' fill='#17a673'/><circle cx='88' cy='40' r='3.6' fill='#17a673'/><circle cx='103' cy='40' r='2.2' fill='#9ca3af'/><circle cx='118' cy='40' r='2.2' fill='#9ca3af'/><polygon points='180,10 150,25 165,40' fill='#17a673' fill-opacity='.15' stroke='#17a673' stroke-width='1.8' stroke-linejoin='round'/><circle cx='150' cy='10' r='2.2' fill='#9ca3af'/><circle cx='165' cy='10' r='2.2' fill='#9ca3af'/><circle cx='180' cy='10' r='3.6' fill='#17a673'/><circle cx='150' cy='25' r='3.6' fill='#17a673'/><circle cx='165' cy='25' r='2.2' fill='#9ca3af'/><circle cx='180' cy='25' r='2.2' fill='#9ca3af'/><circle cx='150' cy='40' r='2.2' fill='#9ca3af'/><circle cx='165' cy='40' r='3.6' fill='#17a673'/><circle cx='180' cy='40' r='2.2' fill='#9ca3af'/><polygon points='56,66 41,81 26,96' fill='#e8487a' fill-opacity='.15' stroke='#e8487a' stroke-width='1.8' stroke-linejoin='round'/><circle cx='26' cy='66' r='2.2' fill='#9ca3af'/><circle cx='41' cy='66' r='2.2' fill='#9ca3af'/><circle cx='56' cy='66' r='3.6' fill='#e8487a'/><circle cx='26' cy='81' r='2.2' fill='#9ca3af'/><circle cx='41' cy='81' r='3.6' fill='#e8487a'/><circle cx='56' cy='81' r='2.2' fill='#9ca3af'/><circle cx='26' cy='96' r='3.6' fill='#e8487a'/><circle cx='41' cy='96' r='2.2' fill='#9ca3af'/><circle cx='56' cy='96' r='2.2' fill='#9ca3af'/><polygon points='88,66 118,81 103,96' fill='#e8487a' fill-opacity='.15' stroke='#e8487a' stroke-width='1.8' stroke-linejoin='round'/><circle cx='88' cy='66' r='3.6' fill='#e8487a'/><circle cx='103' cy='66' r='2.2' fill='#9ca3af'/><circle cx='118' cy='66' r='2.2' fill='#9ca3af'/><circle cx='88' cy='81' r='2.2' fill='#9ca3af'/><circle cx='103' cy='81' r='2.2' fill='#9ca3af'/><circle cx='118' cy='81' r='3.6' fill='#e8487a'/><circle cx='88' cy='96' r='2.2' fill='#9ca3af'/><circle cx='103' cy='96' r='3.6' fill='#e8487a'/><circle cx='118' cy='96' r='2.2' fill='#9ca3af'/><polygon points='165,66 150,81 180,96' fill='#e8487a' fill-opacity='.15' stroke='#e8487a' stroke-width='1.8' stroke-linejoin='round'/><circle cx='150' cy='66' r='2.2' fill='#9ca3af'/><circle cx='165' cy='66' r='3.6' fill='#e8487a'/><circle cx='180' cy='66' r='2.2' fill='#9ca3af'/><circle cx='150' cy='81' r='3.6' fill='#e8487a'/><circle cx='165' cy='81' r='2.2' fill='#9ca3af'/><circle cx='180' cy='81' r='2.2' fill='#9ca3af'/><circle cx='150' cy='96' r='2.2' fill='#9ca3af'/><circle cx='165' cy='96' r='2.2' fill='#9ca3af'/><circle cx='180' cy='96' r='3.6' fill='#e8487a'/></svg></span></i>:</p>\\[\\det(\\vec u,\\vec v,\\vec w)=\\begin{vmatrix}1&-1&3\\\\1&0&-1\\\\\\lambda&1&0\\end{vmatrix}\\]\\[=\\bigl(0+\\lambda+3\\bigr)-\\bigl(0-1+0\\bigr)\\]\\[=\\lambda+4\\]<div class='res'>Son linealmente independientes si \\(\\lambda\\neq-4\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Con \\(\\lambda=1\\), \\(\\vec w=(1,1,0)\\). Busco \\(a,b,c\\) con \\(a\\vec u+b\\vec v+c\\vec w=\\vec r\\):</p>\\[\\begin{cases}a+b+c=3\\\\-a+c=0\\\\3a-b=2\\end{cases}\\]<p>De la 2.ª, \\(c=a\\); de la 3.ª, \\(b=3a-2\\). En la 1.ª: \\(a+3a-2+a=3\\iff a=1\\), y \\(b=1\\), \\(c=1\\).</p><div class='res'>\\(\\vec r=\\vec u+\\vec v+\\vec w\\)</div><i class='n' data-t='tp'>Comprobación: \\((1,-1,3)+(1,0,-1)+(1,1,0)=(3,0,2)\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "vec",
+     "apartados": "a, b, c"
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2014-RESERVA_3.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2014-reserva-3-5",
+   "n": 5,
+   "num": 1,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función derivable \\(f:\\mathbb R\\to\\mathbb R\\) definida por \\(f(x)=\\begin{cases}\\dfrac{e^x-e^{-x}}{2x}&\\text{si }x\\lt0\\\\ax+b&\\text{si }x\\ge0\\end{cases}\\)",
+    "apartados": [
+     "(1,75 p.) Calcula \\(a\\) y \\(b\\).",
+     "(0,75 p.) Halla la ecuación de la recta tangente a la gráfica de \\(f\\) en el punto de abscisa \\(x=-1\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Cada trozo es derivable en su intervalo abierto. Estudio \\(x=0\\).</p><p><b>Continuidad</b> (necesaria para ser derivable<i class='n' data-t='th'>Si una función es derivable en un punto, es continua en él.</i>): \\(f(0)=b\\) y</p>\\[\\lim_{x\\to0^-}\\frac{e^x-e^{-x}}{2x}=\\left[\\frac00\\right]\\overset{\\text{L'H}}=\\lim_{x\\to0^-}\\frac{e^x+e^{-x}}2=1\\Rightarrow\\boxed{b=1}\\]<p><b>Derivabilidad.</b> Por la derecha, \\(f'(0^+)=a\\). Por la izquierda uso la definición de derivada<i class='n' data-t='th'>Regla de L'Hôpital: si el límite de \\(\\frac fg\\) da \\(\\frac00\\) o \\(\\frac\\infty\\infty\\), es igual al límite de \\(\\frac{f'}{g'}\\), si este existe.</i>:</p>\\[f'(0^-)=\\lim_{x\\to0^-}\\frac{\\frac{e^x-e^{-x}}{2x}-1}x=\\lim_{x\\to0^-}\\frac{e^x-e^{-x}-2x}{2x^2}\\overset{\\text{L'H}}=\\lim_{x\\to0^-}\\frac{e^x+e^{-x}-2}{4x}\\overset{\\text{L'H}}=\\lim_{x\\to0^-}\\frac{e^x-e^{-x}}4=0\\]<p>Ha de ser \\(a=0\\).</p><div class='res'>\\(a=0\\), \\(b=1\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>En \\(x=-1\\) se usa el primer trozo:</p>\\[f(-1)=\\frac{e^{-1}-e}{-2}=\\frac{e-e^{-1}}2\\]\\[f'(x)=\\frac{(e^x+e^{-x})\\,2x-2(e^x-e^{-x})}{4x^2}=\\frac{x(e^x+e^{-x})-(e^x-e^{-x})}{2x^2}\\]\\[f'(-1)=\\frac{-(e^{-1}+e)-(e^{-1}-e)}2=\\frac{-2e^{-1}}2=-\\frac1e\\]<div class='res'>\\(y-\\dfrac{e-e^{-1}}2=-\\dfrac1e(x+1)\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "cont",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2014-RESERVA_3.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2014-reserva-3-6",
+   "n": 6,
+   "num": 2,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el recinto limitado por las siguientes curvas: \\(y=x^2\\), \\(y=2-x^2\\), \\(y=4\\).",
+    "apartados": [
+     "(1 p.) Haz un esbozo del recinto y calcula los puntos de corte de las curvas.",
+     "(1,5 p.) Calcula el área del recinto."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(y=x^2\\) es una parábola hacia arriba con vértice \\((0,0)\\); \\(y=2-x^2\\), hacia abajo con vértice \\((0,2)\\); \\(y=4\\) es una recta horizontal.</p>\\[x^2=2-x^2\\iff x=\\pm1\\Rightarrow(\\pm1,1)\\qquad x^2=4\\iff x=\\pm2\\Rightarrow(\\pm2,4)\\]<p>\\(2-x^2=4\\) no tiene solución: esa parábola no llega a la recta. El recinto queda por debajo de \\(y=4\\) y por encima de las dos parábolas:</p><div style='overflow-x:auto'><svg viewBox='0 0 300 230' width='100%' style='max-width:380px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='50.0,49.2 52.5,49.2 55.0,49.2 57.5,49.2 60.0,49.2 62.5,49.2 65.0,49.2 67.5,49.2 70.0,49.2 72.5,49.2 75.0,49.2 77.5,49.2 80.0,49.2 82.5,49.2 85.0,49.2 87.5,49.2 90.0,49.2 92.5,49.2 95.0,49.2 97.5,49.2 100.0,49.2 102.5,49.2 105.0,49.2 107.5,49.2 110.0,49.2 112.5,49.2 115.0,49.2 117.5,49.2 120.0,49.2 122.5,49.2 125.0,49.2 127.5,49.2 130.0,49.2 132.5,49.2 135.0,49.2 137.5,49.2 140.0,49.2 142.5,49.2 145.0,49.2 147.5,49.2 150.0,49.2 152.5,49.2 155.0,49.2 157.5,49.2 160.0,49.2 162.5,49.2 165.0,49.2 167.5,49.2 170.0,49.2 172.5,49.2 175.0,49.2 177.5,49.2 180.0,49.2 182.5,49.2 185.0,49.2 187.5,49.2 190.0,49.2 192.5,49.2 195.0,49.2 197.5,49.2 200.0,49.2 202.5,49.2 205.0,49.2 207.5,49.2 210.0,49.2 212.5,49.2 215.0,49.2 217.5,49.2 220.0,49.2 222.5,49.2 225.0,49.2 227.5,49.2 230.0,49.2 232.5,49.2 235.0,49.2 237.5,49.2 240.0,49.2 242.5,49.2 245.0,49.2 247.5,49.2 250.0,49.2 250.0,49.2 247.5,56.4 245.0,63.5 242.5,70.3 240.0,77.0 237.5,83.5 235.0,89.8 232.5,95.9 230.0,101.8 227.5,107.6 225.0,113.2 222.5,118.6 220.0,123.8 217.5,128.8 215.0,133.6 212.5,138.3 210.0,142.8 207.5,147.1 205.0,151.2 202.5,155.1 200.0,158.8 197.5,155.3 195.0,151.9 192.5,148.7 190.0,145.7 187.5,142.9 185.0,140.2 182.5,137.7 180.0,135.5 177.5,133.4 175.0,131.4 172.5,129.7 170.0,128.2 167.5,126.8 165.0,125.6 162.5,124.6 160.0,123.8 157.5,123.1 155.0,122.7 152.5,122.4 150.0,122.3 147.5,122.4 145.0,122.7 142.5,123.1 140.0,123.8 137.5,124.6 135.0,125.6 132.5,126.8 130.0,128.2 127.5,129.7 125.0,131.4 122.5,133.4 120.0,135.5 117.5,137.7 115.0,140.2 112.5,142.9 110.0,145.7 107.5,148.7 105.0,151.9 102.5,155.3 100.0,158.8 97.5,155.1 95.0,151.2 92.5,147.1 90.0,142.8 87.5,138.3 85.0,133.6 82.5,128.8 80.0,123.8 77.5,118.6 75.0,113.2 72.5,107.6 70.0,101.8 67.5,95.9 65.0,89.8 62.5,83.5 60.0,77.0 57.5,70.3 55.0,63.5 52.5,56.4 50.0,49.2' fill='#b9a4f5' fill-opacity='.55'/><polyline points='35.0,2.1 38.8,14.8 42.7,27.0 46.5,38.8 50.3,50.2 54.2,61.2 58.0,71.7 61.8,81.8 65.7,91.4 69.5,100.7 73.3,109.5 77.2,117.9 81.0,125.8 84.8,133.3 88.7,140.4 92.5,147.1 96.3,153.3 100.2,159.1 104.0,164.5 107.8,169.4 111.7,173.9 115.5,178.0 119.3,181.6 123.2,184.9 127.0,187.7 130.8,190.0 134.7,191.9 138.5,193.5 142.3,194.5 146.2,195.2 150.0,195.4 153.8,195.2 157.7,194.5 161.5,193.5 165.3,191.9 169.2,190.0 173.0,187.7 176.8,184.9 180.7,181.6 184.5,178.0 188.3,173.9 192.2,169.4 196.0,164.5 199.8,159.1 203.7,153.3 207.5,147.1 211.3,140.4 215.2,133.3 219.0,125.8 222.8,117.9 226.7,109.5 230.5,100.7 234.3,91.4 238.2,81.8 242.0,71.7 245.8,61.2 249.7,50.2 253.5,38.8 257.3,27.0 261.2,14.8 265.0,2.1' fill='none' stroke='#2f6df0' stroke-width='2'/><polyline points='70.0,215.8 72.7,209.7 75.3,203.8 78.0,198.1 80.7,192.6 83.3,187.3 86.0,182.2 88.7,177.3 91.3,172.6 94.0,168.1 96.7,163.9 99.3,159.8 102.0,156.0 104.7,152.3 107.3,148.9 110.0,145.7 112.7,142.7 115.3,139.9 118.0,137.3 120.7,134.9 123.3,132.7 126.0,130.7 128.7,129.0 131.3,127.4 134.0,126.0 136.7,124.9 139.3,124.0 142.0,123.2 144.7,122.7 147.3,122.4 150.0,122.3 152.7,122.4 155.3,122.7 158.0,123.2 160.7,124.0 163.3,124.9 166.0,126.0 168.7,127.4 171.3,129.0 174.0,130.7 176.7,132.7 179.3,134.9 182.0,137.3 184.7,139.9 187.3,142.7 190.0,145.7 192.7,148.9 195.3,152.3 198.0,156.0 200.7,159.8 203.3,163.9 206.0,168.1 208.7,172.6 211.3,177.3 214.0,182.2 216.7,187.3 219.3,192.6 222.0,198.1 224.7,203.8 227.3,209.7 230.0,215.8' fill='none' stroke='#16a34a' stroke-width='2'/><polyline points='20.0,49.2 150.0,49.2 280.0,49.2' fill='none' stroke='#f0a30a' stroke-width='2'/><circle cx='100.0' cy='158.8' r='3.5' fill='#e8487a'/><text x='56.0' y='162.8'>(−1,1)</text><circle cx='200.0' cy='158.8' r='3.5' fill='#e8487a'/><text x='208.0' y='162.8'>(1,1)</text><circle cx='50.0' cy='49.2' r='3.5' fill='#e8487a'/><text x='10.0' y='43.2'>(−2,4)</text><circle cx='250.0' cy='49.2' r='3.5' fill='#e8487a'/><text x='256.0' y='43.2'>(2,4)</text><text x='250.0' y='85.8' fill='#2f6df0' font-size='10'>y = x²</text><text x='157.5' y='111.3' fill='#16a34a' font-size='10'>y = 2 − x²</text><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M12.0 195.4H294.0M150.0 224.0V8.0'/></g><line x1='50.0' y1='192.4' x2='50.0' y2='198.4' stroke='currentColor'/><text x='47.0' y='209.4' font-size='10'>-2</text><line x1='100.0' y1='192.4' x2='100.0' y2='198.4' stroke='currentColor'/><text x='97.0' y='209.4' font-size='10'>-1</text><line x1='200.0' y1='192.4' x2='200.0' y2='198.4' stroke='currentColor'/><text x='197.0' y='209.4' font-size='10'>1</text><line x1='250.0' y1='192.4' x2='250.0' y2='198.4' stroke='currentColor'/><text x='247.0' y='209.4' font-size='10'>2</text><line x1='147.0' y1='158.8' x2='153.0' y2='158.8' stroke='currentColor'/><text x='134.0' y='162.8' font-size='10'>1</text><line x1='147.0' y1='122.3' x2='153.0' y2='122.3' stroke='currentColor'/><text x='134.0' y='126.3' font-size='10'>2</text><line x1='147.0' y1='49.2' x2='153.0' y2='49.2' stroke='currentColor'/><text x='134.0' y='53.2' font-size='10'>4</text></svg></div><div class='res'>Puntos de corte: \\((-1,1)\\), \\((1,1)\\), \\((-2,4)\\) y \\((2,4)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>El recinto es simétrico respecto del eje \\(OY\\). En \\([0,1]\\) el borde inferior es \\(y=2-x^2\\) y en \\([1,2]\\) es \\(y=x^2\\):</p>\\[A=2\\left[\\int_0^1\\bigl(4-(2-x^2)\\bigr)dx+\\int_1^2(4-x^2)\\,dx\\right]\\]\\[\\int_0^1(2+x^2)\\,dx=\\Bigl[2x+\\frac{x^3}3\\Bigr]_0^1=\\frac73\\qquad\\int_1^2(4-x^2)\\,dx=\\Bigl[4x-\\frac{x^3}3\\Bigr]_1^2=\\frac{16}3-\\frac{11}3=\\frac53\\]\\[A=2\\left(\\frac73+\\frac53\\right)=8\\]<div class='res'>Área \\(=8\\ u^2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "area",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2014-RESERVA_3.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2014-reserva-3-7",
+   "n": 7,
+   "num": 3,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las matrices \\(A=\\begin{pmatrix}1&0&2\\\\1&1&1\\\\2&3&0\\end{pmatrix}\\) y \\(B=\\begin{pmatrix}2&0&-3\\\\3&-1&-3\\\\-1&-2&-1\\end{pmatrix}\\).",
+    "apartados": [
+     "(0,5 p.) Calcula \\(A^{-1}\\).",
+     "(2 p.) Halla la matriz \\(X\\) que verifica que \\(A^tX+B=I\\), siendo \\(I\\) la matriz identidad y \\(A^t\\) la matriz traspuesta de \\(A\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Calculo \\(|A|\\) por la regla de Sarrus<i class='n' data-t='th'>Regla de Sarrus: se suman los productos de la diagonal principal y de los dos triángulos con un lado paralelo a ella (en verde) y se restan los de la diagonal secundaria y sus dos triángulos (en rojo).<span style='display:block;margin:6px 0 0'><svg viewBox='0 0 206 106' width='100%' style='max-width:230px' font-family='system-ui,sans-serif'><text x='0' y='30' font-size='20' font-weight='700' fill='#17a673'>+</text><text x='0' y='86' font-size='20' font-weight='700' fill='#e8487a'>−</text><polygon points='26,10 41,25 56,40' fill='#17a673' fill-opacity='.15' stroke='#17a673' stroke-width='1.8' stroke-linejoin='round'/><circle cx='26' cy='10' r='3.6' fill='#17a673'/><circle cx='41' cy='10' r='2.2' fill='#9ca3af'/><circle cx='56' cy='10' r='2.2' fill='#9ca3af'/><circle cx='26' cy='25' r='2.2' fill='#9ca3af'/><circle cx='41' cy='25' r='3.6' fill='#17a673'/><circle cx='56' cy='25' r='2.2' fill='#9ca3af'/><circle cx='26' cy='40' r='2.2' fill='#9ca3af'/><circle cx='41' cy='40' r='2.2' fill='#9ca3af'/><circle cx='56' cy='40' r='3.6' fill='#17a673'/><polygon points='103,10 118,25 88,40' fill='#17a673' fill-opacity='.15' stroke='#17a673' stroke-width='1.8' stroke-linejoin='round'/><circle cx='88' cy='10' r='2.2' fill='#9ca3af'/><circle cx='103' cy='10' r='3.6' fill='#17a673'/><circle cx='118' cy='10' r='2.2' fill='#9ca3af'/><circle cx='88' cy='25' r='2.2' fill='#9ca3af'/><circle cx='103' cy='25' r='2.2' fill='#9ca3af'/><circle cx='118' cy='25' r='3.6' fill='#17a673'/><circle cx='88' cy='40' r='3.6' fill='#17a673'/><circle cx='103' cy='40' r='2.2' fill='#9ca3af'/><circle cx='118' cy='40' r='2.2' fill='#9ca3af'/><polygon points='180,10 150,25 165,40' fill='#17a673' fill-opacity='.15' stroke='#17a673' stroke-width='1.8' stroke-linejoin='round'/><circle cx='150' cy='10' r='2.2' fill='#9ca3af'/><circle cx='165' cy='10' r='2.2' fill='#9ca3af'/><circle cx='180' cy='10' r='3.6' fill='#17a673'/><circle cx='150' cy='25' r='3.6' fill='#17a673'/><circle cx='165' cy='25' r='2.2' fill='#9ca3af'/><circle cx='180' cy='25' r='2.2' fill='#9ca3af'/><circle cx='150' cy='40' r='2.2' fill='#9ca3af'/><circle cx='165' cy='40' r='3.6' fill='#17a673'/><circle cx='180' cy='40' r='2.2' fill='#9ca3af'/><polygon points='56,66 41,81 26,96' fill='#e8487a' fill-opacity='.15' stroke='#e8487a' stroke-width='1.8' stroke-linejoin='round'/><circle cx='26' cy='66' r='2.2' fill='#9ca3af'/><circle cx='41' cy='66' r='2.2' fill='#9ca3af'/><circle cx='56' cy='66' r='3.6' fill='#e8487a'/><circle cx='26' cy='81' r='2.2' fill='#9ca3af'/><circle cx='41' cy='81' r='3.6' fill='#e8487a'/><circle cx='56' cy='81' r='2.2' fill='#9ca3af'/><circle cx='26' cy='96' r='3.6' fill='#e8487a'/><circle cx='41' cy='96' r='2.2' fill='#9ca3af'/><circle cx='56' cy='96' r='2.2' fill='#9ca3af'/><polygon points='88,66 118,81 103,96' fill='#e8487a' fill-opacity='.15' stroke='#e8487a' stroke-width='1.8' stroke-linejoin='round'/><circle cx='88' cy='66' r='3.6' fill='#e8487a'/><circle cx='103' cy='66' r='2.2' fill='#9ca3af'/><circle cx='118' cy='66' r='2.2' fill='#9ca3af'/><circle cx='88' cy='81' r='2.2' fill='#9ca3af'/><circle cx='103' cy='81' r='2.2' fill='#9ca3af'/><circle cx='118' cy='81' r='3.6' fill='#e8487a'/><circle cx='88' cy='96' r='2.2' fill='#9ca3af'/><circle cx='103' cy='96' r='3.6' fill='#e8487a'/><circle cx='118' cy='96' r='2.2' fill='#9ca3af'/><polygon points='165,66 150,81 180,96' fill='#e8487a' fill-opacity='.15' stroke='#e8487a' stroke-width='1.8' stroke-linejoin='round'/><circle cx='150' cy='66' r='2.2' fill='#9ca3af'/><circle cx='165' cy='66' r='3.6' fill='#e8487a'/><circle cx='180' cy='66' r='2.2' fill='#9ca3af'/><circle cx='150' cy='81' r='3.6' fill='#e8487a'/><circle cx='165' cy='81' r='2.2' fill='#9ca3af'/><circle cx='180' cy='81' r='2.2' fill='#9ca3af'/><circle cx='150' cy='96' r='2.2' fill='#9ca3af'/><circle cx='165' cy='96' r='2.2' fill='#9ca3af'/><circle cx='180' cy='96' r='3.6' fill='#e8487a'/></svg></span></i>:</p>\\[|A|=\\begin{vmatrix}1&0&2\\\\1&1&1\\\\2&3&0\\end{vmatrix}\\]\\[=\\bigl(0+0+6\\bigr)-\\bigl(4+3+0\\bigr)\\]\\[=-1\\]<p>Como \\(|A|\\neq0\\), existe la inversa: \\(A^{-1}=\\dfrac1{|A|}(\\operatorname{Adj}A)^t\\).</p>\\[\\operatorname{Adj}A=\\begin{pmatrix}-3 & 2 & 1\\\\6 & -4 & -3\\\\-2 & 1 & 1\\end{pmatrix}\\Rightarrow A^{-1}=-\\begin{pmatrix}-3 & 6 & -2\\\\2 & -4 & 1\\\\1 & -3 & 1\\end{pmatrix}=\\begin{pmatrix}3 & -6 & 2\\\\-2 & 4 & -1\\\\-1 & 3 & -1\\end{pmatrix}\\]<div class='res'>\\(A^{-1}=\\begin{pmatrix}3 & -6 & 2\\\\-2 & 4 & -1\\\\-1 & 3 & -1\\end{pmatrix}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(A^tX=I-B\\). Como \\(|A^t|=|A|\\neq0\\), \\(A^t\\) es invertible y \\((A^t)^{-1}=(A^{-1})^t\\)<i class='n' data-t='th'>La inversa de la traspuesta es la traspuesta de la inversa.</i>:</p>\\[X=(A^{-1})^t(I-B)\\]\\[(A^{-1})^t=\\begin{pmatrix}3 & -2 & -1\\\\-6 & 4 & 3\\\\2 & -1 & -1\\end{pmatrix},\\qquad I-B=\\begin{pmatrix}-1 & 0 & 3\\\\-3 & 2 & 3\\\\1 & 2 & 2\\end{pmatrix}\\]\\[X=\\begin{pmatrix}3 & -2 & -1\\\\-6 & 4 & 3\\\\2 & -1 & -1\\end{pmatrix}\\begin{pmatrix}-1 & 0 & 3\\\\-3 & 2 & 3\\\\1 & 2 & 2\\end{pmatrix}=\\begin{pmatrix}2 & -6 & 1\\\\-3 & 14 & 0\\\\0 & -4 & 1\\end{pmatrix}\\]<div class='res'>\\(X=\\begin{pmatrix}2 & -6 & 1\\\\-3 & 14 & 0\\\\0 & -4 & 1\\end{pmatrix}\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "ecmat",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2014-RESERVA_3.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2014-reserva-3-8",
+   "n": 8,
+   "num": 4,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea \\(r\\) la recta dada por \\(\\dfrac{x+2}2=y+1=\\dfrac{z-1}{-3}\\) y sea \\(s\\) la recta dada por \\(\\begin{cases}x-y-3=0\\\\3y-z+6=0\\end{cases}\\)",
+    "apartados": [
+     "(1 p.) Estudia la posición relativa de \\(r\\) y \\(s\\).",
+     "(1,5 p.) Halla la ecuación general del plano que contiene a \\(r\\) y es paralelo a \\(s\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(r\\) pasa por \\(R(-2,-1,1)\\) con \\(\\vec u=(2,1,-3)\\). Paso \\(s\\) a paramétricas: con \\(y=\\lambda\\), \\(x=3+\\lambda\\), \\(z=6+3\\lambda\\); pasa por \\(S(3,0,6)\\) con \\(\\vec v=(1,1,3)\\).</p><p>Los directores no son proporcionales. Con \\(\\overrightarrow{RS}=(5,1,5)\\) calculo el producto mixto por la regla de Sarrus<i class='n' data-t='th'>Regla de Sarrus: se suman los productos de la diagonal principal y de los dos triángulos con un lado paralelo a ella (en verde) y se restan los de la diagonal secundaria y sus dos triángulos (en rojo).<span style='display:block;margin:6px 0 0'><svg viewBox='0 0 206 106' width='100%' style='max-width:230px' font-family='system-ui,sans-serif'><text x='0' y='30' font-size='20' font-weight='700' fill='#17a673'>+</text><text x='0' y='86' font-size='20' font-weight='700' fill='#e8487a'>−</text><polygon points='26,10 41,25 56,40' fill='#17a673' fill-opacity='.15' stroke='#17a673' stroke-width='1.8' stroke-linejoin='round'/><circle cx='26' cy='10' r='3.6' fill='#17a673'/><circle cx='41' cy='10' r='2.2' fill='#9ca3af'/><circle cx='56' cy='10' r='2.2' fill='#9ca3af'/><circle cx='26' cy='25' r='2.2' fill='#9ca3af'/><circle cx='41' cy='25' r='3.6' fill='#17a673'/><circle cx='56' cy='25' r='2.2' fill='#9ca3af'/><circle cx='26' cy='40' r='2.2' fill='#9ca3af'/><circle cx='41' cy='40' r='2.2' fill='#9ca3af'/><circle cx='56' cy='40' r='3.6' fill='#17a673'/><polygon points='103,10 118,25 88,40' fill='#17a673' fill-opacity='.15' stroke='#17a673' stroke-width='1.8' stroke-linejoin='round'/><circle cx='88' cy='10' r='2.2' fill='#9ca3af'/><circle cx='103' cy='10' r='3.6' fill='#17a673'/><circle cx='118' cy='10' r='2.2' fill='#9ca3af'/><circle cx='88' cy='25' r='2.2' fill='#9ca3af'/><circle cx='103' cy='25' r='2.2' fill='#9ca3af'/><circle cx='118' cy='25' r='3.6' fill='#17a673'/><circle cx='88' cy='40' r='3.6' fill='#17a673'/><circle cx='103' cy='40' r='2.2' fill='#9ca3af'/><circle cx='118' cy='40' r='2.2' fill='#9ca3af'/><polygon points='180,10 150,25 165,40' fill='#17a673' fill-opacity='.15' stroke='#17a673' stroke-width='1.8' stroke-linejoin='round'/><circle cx='150' cy='10' r='2.2' fill='#9ca3af'/><circle cx='165' cy='10' r='2.2' fill='#9ca3af'/><circle cx='180' cy='10' r='3.6' fill='#17a673'/><circle cx='150' cy='25' r='3.6' fill='#17a673'/><circle cx='165' cy='25' r='2.2' fill='#9ca3af'/><circle cx='180' cy='25' r='2.2' fill='#9ca3af'/><circle cx='150' cy='40' r='2.2' fill='#9ca3af'/><circle cx='165' cy='40' r='3.6' fill='#17a673'/><circle cx='180' cy='40' r='2.2' fill='#9ca3af'/><polygon points='56,66 41,81 26,96' fill='#e8487a' fill-opacity='.15' stroke='#e8487a' stroke-width='1.8' stroke-linejoin='round'/><circle cx='26' cy='66' r='2.2' fill='#9ca3af'/><circle cx='41' cy='66' r='2.2' fill='#9ca3af'/><circle cx='56' cy='66' r='3.6' fill='#e8487a'/><circle cx='26' cy='81' r='2.2' fill='#9ca3af'/><circle cx='41' cy='81' r='3.6' fill='#e8487a'/><circle cx='56' cy='81' r='2.2' fill='#9ca3af'/><circle cx='26' cy='96' r='3.6' fill='#e8487a'/><circle cx='41' cy='96' r='2.2' fill='#9ca3af'/><circle cx='56' cy='96' r='2.2' fill='#9ca3af'/><polygon points='88,66 118,81 103,96' fill='#e8487a' fill-opacity='.15' stroke='#e8487a' stroke-width='1.8' stroke-linejoin='round'/><circle cx='88' cy='66' r='3.6' fill='#e8487a'/><circle cx='103' cy='66' r='2.2' fill='#9ca3af'/><circle cx='118' cy='66' r='2.2' fill='#9ca3af'/><circle cx='88' cy='81' r='2.2' fill='#9ca3af'/><circle cx='103' cy='81' r='2.2' fill='#9ca3af'/><circle cx='118' cy='81' r='3.6' fill='#e8487a'/><circle cx='88' cy='96' r='2.2' fill='#9ca3af'/><circle cx='103' cy='96' r='3.6' fill='#e8487a'/><circle cx='118' cy='96' r='2.2' fill='#9ca3af'/><polygon points='165,66 150,81 180,96' fill='#e8487a' fill-opacity='.15' stroke='#e8487a' stroke-width='1.8' stroke-linejoin='round'/><circle cx='150' cy='66' r='2.2' fill='#9ca3af'/><circle cx='165' cy='66' r='3.6' fill='#e8487a'/><circle cx='180' cy='66' r='2.2' fill='#9ca3af'/><circle cx='150' cy='81' r='3.6' fill='#e8487a'/><circle cx='165' cy='81' r='2.2' fill='#9ca3af'/><circle cx='180' cy='81' r='2.2' fill='#9ca3af'/><circle cx='150' cy='96' r='2.2' fill='#9ca3af'/><circle cx='165' cy='96' r='2.2' fill='#9ca3af'/><circle cx='180' cy='96' r='3.6' fill='#e8487a'/></svg></span></i><i class='n' data-t='th'>Si el producto mixto es 0 las rectas se cortan; si no, se cruzan.</i>:</p>\\[[\\overrightarrow{RS},\\vec u,\\vec v]=\\begin{vmatrix}5&1&5\\\\2&1&-3\\\\1&1&3\\end{vmatrix}\\]\\[=\\bigl(15-3+10\\bigr)-\\bigl(5-15+6\\bigr)\\]\\[=26\\neq0\\]<div class='res'>\\(r\\) y \\(s\\) se cruzan</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>El plano contiene a \\(\\vec u\\) (contiene a \\(r\\)) y a \\(\\vec v\\) (es paralelo a \\(s\\)):</p>\\[\\vec n=\\vec u\\times\\vec v=\\begin{vmatrix}\\vec i&\\vec j&\\vec k\\\\2&1&-3\\\\1&1&3\\end{vmatrix}=(6,\\,-9,\\,1)\\]<p>Es de la forma \\(6x-9y+z+D=0\\) y contiene a \\(R\\): \\(-12+9+1+D=0\\iff D=2\\).</p><div class='f3d' data-f='{\"az\":-54,\"el\":8,\"p\":[[\"poly\",[[-0.365,0.468,4.398],[-3.984,-1.945,4.398],[-3.666,-2.422,-1.798],[-0.047,-0.009,-1.798]],\"#8b5cf6\",\"#7c3aed\"],[\"txt\",[-3.666,-2.422,-1.798],\"π\",\"#7c3aed\",4,0],[\"line\",[-3.6,-1.8,3.4],[-0.4,-0.2,-1.4],\"#2563eb\",2.2,false],[\"txt\",[-0.4,-0.2,-1.4],\"r\",\"#2563eb\",6,0],[\"line\",[1.8,-1.2,2.4],[3.6,0.6,7.8],\"#16a34a\",2.2,false],[\"txt\",[3.6,0.6,7.8],\"s\",\"#16a34a\",6,0],[\"pt\",[-2,-1,1],\"R\",7,-6],[\"pt\",[3,0,6],\"S\",7,-6]],\"ley\":[\"plano\",\"recta\",\"vector director\",\"puntos\"]}' style='overflow-x:auto'><svg viewBox='0 0 340 300' width='100%' style='max-width:440px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><defs><marker id='m14r3b4n' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#dc2626'/></marker><marker id='m14r3b4d' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#16a34a'/></marker><marker id='m14r3b4g' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#64748b'/></marker><marker id='m14r3b4r' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#2563eb'/></marker></defs><polygon points='133.4,93.2 26.6,92.6 26.0,245.4 132.8,246.0' fill='#8b5cf6' fill-opacity='.26' stroke='#7c3aed' stroke-width='1.2'/><text x='30.0' y='245.4' fill='#7c3aed' font-weight='700' font-style='italic'>π</text><line x1='36.3' y1='117.3' x2='123.1' y2='236.1' stroke='#2563eb' stroke-width='2.2'/><text x='129.1' y='236.1' fill='#2563eb' font-weight='700' font-style='italic'>r</text><line x1='152.4' y1='150.8' x2='214.2' y2='18.0' stroke='#16a34a' stroke-width='2.2'/><text x='220.2' y='18.0' fill='#16a34a' font-weight='700' font-style='italic'>s</text><circle cx='79.7' cy='176.7' r='3.8' fill='#e8487a'/><text x='86.7' y='170.7' font-weight='700'>R</text><circle cx='193.6' cy='62.3' r='3.8' fill='#e8487a'/><text x='200.6' y='56.3' font-weight='700'>S</text><line x1='24' y1='270' x2='36.9' y2='271.3' stroke='#64748b' stroke-width='1.2'/><text x='38.5' y='275.8' fill='#64748b' font-size='10'>x</text><line x1='24' y1='270' x2='33.4' y2='268.2' stroke='#64748b' stroke-width='1.2'/><text x='33.7' y='271.6' fill='#64748b' font-size='10'>y</text><line x1='24' y1='270' x2='24.0' y2='254.2' stroke='#64748b' stroke-width='1.2'/><text x='21.0' y='252.6' fill='#64748b' font-size='10'>z</text><g transform='translate(56.0,292)'><rect x='0' y='-8' width='12' height='9' fill='#8b5cf6' fill-opacity='.4' stroke='#7c3aed'/><text x='18' y='0' font-size='10'>plano</text></g><g transform='translate(106.5,292)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#2563eb' stroke-width='2'/><text x='18' y='0' font-size='10'>recta</text></g><g transform='translate(157.0,292)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#16a34a' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector director</text></g><g transform='translate(260.5,292)'><circle cx='6' cy='-4' r='3.8' fill='#e8487a'/><text x='18' y='0' font-size='10'>puntos</text></g></svg><p class='mut' style='font-size:.8rem;margin:.2rem 0;text-align:center'>Figura interactiva: arrástrala para girarla en 3D.</p></div><div class='res'>\\(6x-9y+z+2=0\\)</div><i class='n' data-t='tp'>\\(S\\) no está en el plano (\\(18+6+2\\neq0\\)): \\(s\\) es paralela a él, no está contenida ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "pos",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "ecs",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2014-RESERVA_3.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  }
+ ]
+}

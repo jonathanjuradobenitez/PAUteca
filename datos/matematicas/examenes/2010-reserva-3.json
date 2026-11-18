@@ -1,0 +1,303 @@
+{
+ "version": 1,
+ "id": "matematicas-2010-reserva-3",
+ "asignatura": "matematicas",
+ "anio": 2010,
+ "convocatoria": "Reserva 3",
+ "documento": "MAT-2010-RESERVA_3.pdf",
+ "ejercicios": [
+  {
+   "id": "matematicas-2010-reserva-3-1",
+   "n": 1,
+   "num": 1,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea la función \\(f:\\mathbb R\\to\\mathbb R\\) dada por \\(f(x)=\\begin{cases}e^x(x^2+ax)&\\text{si }x\\le0\\\\\\dfrac{bx^2+c}{x+1}&\\text{si }x\\gt0\\end{cases}\\) Calcula las constantes \\(a\\), \\(b\\) y \\(c\\) sabiendo que \\(f\\) es derivable y que la recta tangente a la gráfica de \\(f\\) en el punto de abscisa \\(x=1\\) tiene pendiente 3.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>Cada trozo es derivable en su intervalo abierto (\\(x+1\\neq0\\) si \\(x\\gt0\\)). Estudio \\(x=0\\).</p><p><b>Continuidad</b> (necesaria para ser derivable<i class='n' data-t='th'>Si una función es derivable en un punto, es continua en él.</i>): \\(f(0)=e^0(0+0)=0\\) y \\(\\displaystyle\\lim_{x\\to0^+}\\frac{bx^2+c}{x+1}=c\\). Así \\(\\boxed{c=0}\\).</p><p><b>Derivabilidad.</b> Con \\(c=0\\):</p>\\[f'(x)=\\begin{cases}e^x(x^2+ax)+e^x(2x+a)&\\text{si }x\\lt0\\\\\\dfrac{2bx(x+1)-bx^2}{(x+1)^2}=\\dfrac{b(x^2+2x)}{(x+1)^2}&\\text{si }x\\gt0\\end{cases}\\]<p>\\(f'(0^-)=a\\) y \\(f'(0^+)=0\\), así que \\(\\boxed{a=0}\\).</p><p><b>Pendiente 3 en </b>\\(x=1\\)<b>:</b> \\(f'(1)=\\dfrac{b\\cdot3}{4}=3\\iff\\boxed{b=4}\\).</p><div class='res'>\\(a=0,\\ b=4,\\ c=0\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "cont",
+     "apartados": ""
+    },
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2010-RESERVA_3.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2010-reserva-3-2",
+   "n": 2,
+   "num": 2,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Dada la función \\(f\\) definida por \\(f(x)=\\dfrac3{x^2-5x+4}\\) para \\(x\\neq1\\) y \\(x\\neq4\\). Calcula el área del recinto limitado por la gráfica de \\(f\\), el eje de abscisas, y las rectas \\(x=2\\), \\(x=3\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>\\(x^2-5x+4=(x-1)(x-4)\\) es negativo en \\((1,4)\\): en \\([2,3]\\) la función es negativa y el recinto queda por debajo del eje. El área es el valor absoluto de la integral<i class='n' data-t='why'>Si \\(f\\lt0\\), la integral sale negativa; el área es su valor absoluto.</i>.</p><div style='overflow-x:auto'><svg viewBox='0 0 300 200' width='100%' style='max-width:380px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='117.5,60.0 119.1,60.0 120.7,60.0 122.4,60.0 124.0,60.0 125.6,60.0 127.2,60.0 128.9,60.0 130.5,60.0 132.1,60.0 133.8,60.0 135.4,60.0 137.0,60.0 138.6,60.0 140.2,60.0 141.9,60.0 143.5,60.0 145.1,60.0 146.8,60.0 148.4,60.0 150.0,60.0 151.6,60.0 153.2,60.0 154.9,60.0 156.5,60.0 158.1,60.0 159.8,60.0 161.4,60.0 163.0,60.0 164.6,60.0 166.2,60.0 167.9,60.0 169.5,60.0 171.1,60.0 172.8,60.0 174.4,60.0 176.0,60.0 177.6,60.0 179.2,60.0 180.9,60.0 182.5,60.0 182.5,100.0 180.9,99.5 179.2,99.1 177.6,98.7 176.0,98.3 174.4,97.9 172.8,97.6 171.1,97.3 169.5,97.0 167.9,96.8 166.2,96.6 164.6,96.4 163.0,96.2 161.4,96.0 159.8,95.9 158.1,95.8 156.5,95.7 154.9,95.6 153.2,95.6 151.6,95.6 150.0,95.6 148.4,95.6 146.8,95.6 145.1,95.6 143.5,95.7 141.9,95.8 140.2,95.9 138.6,96.0 137.0,96.2 135.4,96.4 133.8,96.6 132.1,96.8 130.5,97.0 128.9,97.3 127.2,97.6 125.6,97.9 124.0,98.3 122.4,98.7 120.7,99.1 119.1,99.5 117.5,100.0' fill='#b9a4f5' fill-opacity='.55'/><polyline points='68.8,176.4 71.5,161.3 74.2,150.0 76.9,141.3 79.6,134.3 82.3,128.7 85.0,124.0 87.7,120.1 90.4,116.7 93.1,113.9 95.8,111.4 98.5,109.3 101.2,107.4 104.0,105.8 106.7,104.3 109.4,103.0 112.1,101.9 114.8,100.9 117.5,100.0 120.2,99.2 122.9,98.5 125.6,97.9 128.3,97.4 131.0,97.0 133.8,96.6 136.5,96.3 139.2,96.0 141.9,95.8 144.6,95.7 147.3,95.6 150.0,95.6 152.7,95.6 155.4,95.7 158.1,95.8 160.8,96.0 163.5,96.3 166.2,96.6 169.0,97.0 171.7,97.4 174.4,97.9 177.1,98.5 179.8,99.2 182.5,100.0 185.2,100.9 187.9,101.9 190.6,103.0 193.3,104.3 196.0,105.8 198.8,107.4 201.5,109.3 204.2,111.4 206.9,113.9 209.6,116.7 212.3,120.1 215.0,124.0 217.7,128.7 220.4,134.3 223.1,141.3 225.8,150.0 228.5,161.3 231.2,176.4' fill='none' stroke='#2f6df0' stroke-width='2'/><line x1='52.5' y1='180.0' x2='52.5' y2='20.0' stroke='#94a3b8' stroke-width='1.4' stroke-dasharray='5 4'/><line x1='247.5' y1='180.0' x2='247.5' y2='20.0' stroke='#94a3b8' stroke-width='1.4' stroke-dasharray='5 4'/><line x1='117.5' y1='60.0' x2='117.5' y2='100.0' stroke='#64748b' stroke-width='1.4' stroke-dasharray='5 4'/><line x1='182.5' y1='60.0' x2='182.5' y2='100.0' stroke='#64748b' stroke-width='1.4' stroke-dasharray='5 4'/><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M12.0 60.0H294.0M-12.5 194.0V8.0'/></g><line x1='52.5' y1='57.0' x2='52.5' y2='63.0' stroke='currentColor'/><text x='49.5' y='74.0' font-size='10'>1</text><line x1='117.5' y1='57.0' x2='117.5' y2='63.0' stroke='currentColor'/><text x='114.5' y='74.0' font-size='10'>2</text><line x1='182.5' y1='57.0' x2='182.5' y2='63.0' stroke='currentColor'/><text x='179.5' y='74.0' font-size='10'>3</text><line x1='247.5' y1='57.0' x2='247.5' y2='63.0' stroke='currentColor'/><text x='244.5' y='74.0' font-size='10'>4</text><line x1='-15.5' y1='113.3' x2='-9.5' y2='113.3' stroke='currentColor'/><text x='-28.5' y='117.3' font-size='10'>-2</text><line x1='-15.5' y1='166.7' x2='-9.5' y2='166.7' stroke='currentColor'/><text x='-28.5' y='170.7' font-size='10'>-4</text></svg></div><p>Fracciones simples: \\(\\dfrac3{(x-1)(x-4)}=\\dfrac A{x-1}+\\dfrac B{x-4}\\). Con \\(x=1\\): \\(A=-1\\); con \\(x=4\\): \\(B=1\\).</p><p>Por la regla de Barrow<i class='n' data-t='th'>Regla de Barrow: \\(\\int_a^bf(x)\\,dx=F(b)-F(a)\\), siendo \\(F\\) una primitiva de \\(f\\).</i>:</p>\\[\\int_2^3\\frac{3\\,dx}{x^2-5x+4}=\\Bigl[\\ln|x-4|-\\ln|x-1|\\Bigr]_2^3=(0-\\ln2)-(\\ln2-0)=-2\\ln2\\]<div class='res'>Área \\(=2\\ln2\\approx1{,}386\\ u^2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "area",
+     "apartados": ""
+    },
+    {
+     "tema": "integ",
+     "tipo": "racional",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2010-RESERVA_3.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2010-reserva-3-3",
+   "n": 3,
+   "num": 3,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las siguientes matrices \\(A=\\begin{pmatrix}-1&2\\\\0&1\\end{pmatrix}\\) y \\(B=\\begin{pmatrix}-3&0\\\\2&-1\\end{pmatrix}\\).",
+    "apartados": [
+     "(0,75 p.) Calcula \\(A^{-1}\\).",
+     "(1,75 p.) Resuelve la ecuación matricial \\(AXA^t-B=2I\\), donde \\(I\\) es la matriz identidad de orden 2 y \\(A^t\\) es la matriz traspuesta de \\(A\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'>\\[|A|=-1\\neq0\\Rightarrow A^{-1}=\\frac1{-1}\\begin{pmatrix}1&-2\\\\0&-1\\end{pmatrix}=\\begin{pmatrix}-1 & 2\\\\0 & 1\\end{pmatrix}\\]<div class='res'>\\(A^{-1}=\\begin{pmatrix}-1 & 2\\\\0 & 1\\end{pmatrix}\\) (coincide con \\(A\\))</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(AXA^t=2I+B\\). Multiplico por \\(A^{-1}\\) por la izquierda y por \\((A^t)^{-1}=(A^{-1})^t\\) por la derecha<i class='n' data-t='err'>Cada factor se elimina con su inversa por su mismo lado.</i>:</p>\\[X=A^{-1}(2I+B)(A^{-1})^t\\]\\[2I+B=\\begin{pmatrix}-1 & 0\\\\2 & 1\\end{pmatrix},\\qquad A^{-1}(2I+B)=\\begin{pmatrix}5 & 2\\\\2 & 1\\end{pmatrix}\\]\\[X=\\begin{pmatrix}5 & 2\\\\2 & 1\\end{pmatrix}\\begin{pmatrix}-1 & 0\\\\2 & 1\\end{pmatrix}=\\begin{pmatrix}-1 & 2\\\\0 & 1\\end{pmatrix}\\]<div class='res'>\\(X=\\begin{pmatrix}-1 & 2\\\\0 & 1\\end{pmatrix}\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "ecmat",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2010-RESERVA_3.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2010-reserva-3-4",
+   "n": 4,
+   "num": 4,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera los puntos \\(A(1,2,1)\\) y \\(B(-1,0,3)\\).",
+    "apartados": [
+     "(1,25 p.) Calcula las coordenadas de los puntos que dividen el segmento \\(AB\\) en tres partes iguales.",
+     "(1,25 p.) Halla la ecuación del plano perpendicular al segmento \\(AB\\) y que pasa por \\(A\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(\\overrightarrow{AB}=(-2,-2,2)\\). Los puntos son \\(P_1=A+\\frac13\\overrightarrow{AB}\\) y \\(P_2=A+\\frac23\\overrightarrow{AB}\\):</p>\\[P_1=\\left(\\frac13,\\frac43,\\frac53\\right)\\qquad P_2=\\left(-\\frac13,\\frac23,\\frac73\\right)\\]<div class='res'>\\(P_1\\left(\\dfrac13,\\dfrac43,\\dfrac53\\right)\\) y \\(P_2\\left(-\\dfrac13,\\dfrac23,\\dfrac73\\right)\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Su normal es \\(\\overrightarrow{AB}\\parallel(1,1,-1)\\): \\(x+y-z+D=0\\). Contiene a \\(A\\): \\(1+2-1+D=0\\iff D=-2\\).</p><div class='f3d' data-f='{\"az\":33,\"el\":8,\"p\":[[\"poly\",[[1.321,3.169,2.49],[3.169,1.321,2.49],[2.179,0.331,0.51],[0.331,2.179,0.51]],\"#8b5cf6\",\"#7c3aed\"],[\"txt\",[2.179,0.331,0.51],\"π\",\"#7c3aed\",4,0],[\"line\",[1,2,1],[-1,0,3],\"#16a34a\",2.0,false],[\"line\",[0.827,1.827,1.173],[1.039,1.615,1.173],\"#475569\",1.3,false],[\"line\",[1.039,1.615,1.173],[1.212,1.788,1.0],\"#475569\",1.3,false],[\"pt\",[1,2,1],\"A\",7,-6],[\"pt\",[-1,0,3],\"B\",7,-6],[\"pt\",[0.333,1.333,1.667],\"P₁\",7,-6],[\"pt\",[-0.333,0.667,2.333],\"P₂\",7,-6]],\"ley\":[\"plano\",\"vector director\",\"puntos\"]}' style='overflow-x:auto'><svg viewBox='0 0 340 300' width='100%' style='max-width:440px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><defs><marker id='m10r3a4n' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#dc2626'/></marker><marker id='m10r3a4d' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#16a34a'/></marker><marker id='m10r3a4g' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#64748b'/></marker><marker id='m10r3a4r' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#2563eb'/></marker></defs><polygon points='252.9,99.0 49.2,105.0 26.0,246.0 229.7,240.0' fill='#8b5cf6' fill-opacity='.26' stroke='#7c3aed' stroke-width='1.2'/><text x='30.0' y='246.0' fill='#7c3aed' font-weight='700' font-style='italic'>π</text><line x1='188.7' y1='206.5' x2='141.9' y2='18.0' stroke='#16a34a' stroke-width='2.0'/><line x1='184.6' y1='190.1' x2='161.3' y2='190.8' stroke='#475569' stroke-width='1.3'/><line x1='161.3' y1='190.8' x2='165.3' y2='207.2' stroke='#475569' stroke-width='1.3'/><circle cx='188.7' cy='206.5' r='3.8' fill='#e8487a'/><text x='195.7' y='200.5' font-weight='700'>A</text><circle cx='141.9' cy='18.0' r='3.8' fill='#e8487a'/><text x='148.9' y='12.0' font-weight='700'>B</text><circle cx='173.1' cy='143.6' r='3.8' fill='#e8487a'/><text x='180.1' y='137.6' font-weight='700'>P₁</text><circle cx='157.5' cy='80.8' r='3.8' fill='#e8487a'/><text x='164.5' y='74.8' font-weight='700'>P₂</text><line x1='24' y1='270' x2='15.3' y2='271.9' stroke='#64748b' stroke-width='1.2'/><text x='9.2' y='276.5' fill='#64748b' font-size='10'>x</text><line x1='24' y1='270' x2='37.4' y2='271.2' stroke='#64748b' stroke-width='1.2'/><text x='39.1' y='275.6' fill='#64748b' font-size='10'>y</text><line x1='24' y1='270' x2='24.0' y2='254.2' stroke='#64748b' stroke-width='1.2'/><text x='21.0' y='252.6' fill='#64748b' font-size='10'>z</text><g transform='translate(56.0,292)'><rect x='0' y='-8' width='12' height='9' fill='#8b5cf6' fill-opacity='.4' stroke='#7c3aed'/><text x='18' y='0' font-size='10'>plano</text></g><g transform='translate(106.5,292)'><line x1='0' y1='-4' x2='14' y2='-4' stroke='#16a34a' stroke-width='2.4'/><text x='18' y='0' font-size='10'>vector director</text></g><g transform='translate(210.0,292)'><circle cx='6' cy='-4' r='3.8' fill='#e8487a'/><text x='18' y='0' font-size='10'>puntos</text></g></svg><p class='mut' style='font-size:.8rem;margin:.2rem 0;text-align:center'>Figura interactiva: arrástrala para girarla en 3D.</p></div><div class='res'>\\(x+y-z-2=0\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "vec",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "ecs",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2010-RESERVA_3.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2010-reserva-3-5",
+   "n": 5,
+   "num": 1,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea \\(f:\\mathbb R\\to\\mathbb R\\) la función definida como \\(f(x)=(x+1)\\sqrt[3]{3-x}\\). Halla las ecuaciones de la recta tangente y de la recta normal a la gráfica de \\(f\\) en el punto de abscisa \\(x=-5\\) y en el punto de abscisa \\(x=2\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'>\\[f'(x)=\\sqrt[3]{3-x}+(x+1)\\cdot\\frac{-1}{3\\sqrt[3]{(3-x)^2}}=\\frac{3(3-x)-(x+1)}{3\\sqrt[3]{(3-x)^2}}=\\frac{8-4x}{3\\sqrt[3]{(3-x)^2}}\\]<p><b>En </b>\\(x=-5\\)<b>:</b> \\(f(-5)=-4\\sqrt[3]8=-8\\) y \\(f'(-5)=\\dfrac{28}{3\\sqrt[3]{64}}=\\dfrac{28}{12}=\\dfrac73\\).</p>\\[\\text{Tangente: }y+8=\\frac73(x+5)\\qquad\\text{Normal: }y+8=-\\frac37(x+5)\\]<p><b>En </b>\\(x=2\\)<b>:</b> \\(f(2)=3\\cdot1=3\\) y \\(f'(2)=0\\). La tangente es horizontal y la normal, vertical<i class='n' data-t='why'>Si \\(f'(a)=0\\), la normal no tiene pendiente: es la recta vertical \\(x=a\\).</i>.</p><div class='res'>En \\(x=-5\\): tangente \\(y+8=\\frac73(x+5)\\), normal \\(y+8=-\\frac37(x+5)\\). En \\(x=2\\): tangente \\(y=3\\), normal \\(x=2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2010-RESERVA_3.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2010-reserva-3-6",
+   "n": 6,
+   "num": 2,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(f:\\mathbb R\\to\\mathbb R\\) definida por \\(f(x)=x|2-x|\\).",
+    "apartados": [
+     "(1 p.) Esboza su gráfica.",
+     "(1,5 p.) Calcula el área del recinto limitado por la gráfica de \\(f\\), el eje de abscisas y la recta de ecuación \\(x=3\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'>\\[f(x)=x|2-x|=\\begin{cases}-x^2+2x&\\text{si }x\\le2\\\\x^2-2x&\\text{si }x\\gt2\\end{cases}\\]<p>Para \\(x\\le2\\) es una parábola hacia abajo con vértice \\((1,1)\\); para \\(x\\gt2\\), una parábola hacia arriba. Corta al eje en \\(x=0\\) y \\(x=2\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 300 220' width='100%' style='max-width:380px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polyline points='30.8,224.8 32.8,220.3 34.8,215.9 36.8,211.5 38.8,207.3 40.8,203.1 42.8,199.0 44.7,195.0 46.7,191.1 48.7,187.2 50.7,183.5 52.7,179.8 54.7,176.2 56.7,172.7 58.6,169.3 60.6,165.9 62.6,162.7 64.6,159.5 66.6,156.4 68.6,153.4 70.6,150.5 72.5,147.6 74.5,144.9 76.5,142.2 78.5,139.6 80.5,137.1 82.5,134.7 84.5,132.3 86.4,130.1 88.4,127.9 90.4,125.8 92.4,123.8 94.4,121.9 96.4,120.1 98.4,118.3 100.3,116.6 102.3,115.0 104.3,113.5 106.3,112.1 108.3,110.8 110.3,109.5 112.3,108.3 114.2,107.3 116.2,106.3 118.2,105.3 120.2,104.5 122.2,103.7 124.2,103.1 126.2,102.5 128.2,102.0 130.1,101.6 132.1,101.2 134.1,101.0 136.1,100.8 138.1,100.7 140.1,100.7 142.1,100.8 144.0,100.9 146.0,101.2 148.0,101.5 150.0,101.9 152.0,102.4 154.0,103.0 156.0,103.7 157.9,104.4 159.9,105.2 161.9,106.2 163.9,107.2 165.9,108.2 167.9,109.4 169.9,110.7 171.8,112.0 173.8,113.4 175.8,114.9 177.8,116.5 179.8,118.1 181.8,119.9 183.8,121.7 185.8,123.6 187.7,125.6 189.7,127.7 191.7,129.9 193.7,131.3 195.7,129.0 197.7,126.6 199.7,124.1 201.6,121.5 203.6,118.8 205.6,116.1 207.6,113.2 209.6,110.3 211.6,107.3 213.6,104.2 215.5,101.1 217.5,97.8 219.5,94.5 221.5,91.1 223.5,87.6 225.5,84.0 227.5,80.3 229.4,76.6 231.4,72.7 233.4,68.8 235.4,64.8 237.4,60.7 239.4,56.5 241.4,52.3 243.3,48.0 245.3,43.5 247.3,39.0 249.3,34.4 251.3,29.8 253.3,25.0 255.3,20.2 257.3,15.3 259.2,10.3 261.2,5.2 263.2,0.0 265.2,-5.2 267.2,-10.6 269.2,-16.0' fill='none' stroke='#2f6df0' stroke-width='2'/><circle cx='139.2' cy='100.7' r='3.5' fill='#e8487a'/><text x='127.2' y='92.7'>(1,1)</text><circle cx='193.3' cy='131.7' r='3.5' fill='#e8487a'/><text x='183.3' y='147.7'>(2,0)</text><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M12.0 131.7H294.0M85.0 214.0V8.0'/></g><line x1='30.8' y1='128.7' x2='30.8' y2='134.7' stroke='currentColor'/><text x='27.8' y='145.7' font-size='10'>-1</text><line x1='139.2' y1='128.7' x2='139.2' y2='134.7' stroke='currentColor'/><text x='136.2' y='145.7' font-size='10'>1</text><line x1='193.3' y1='128.7' x2='193.3' y2='134.7' stroke='currentColor'/><text x='190.3' y='145.7' font-size='10'>2</text><line x1='247.5' y1='128.7' x2='247.5' y2='134.7' stroke='currentColor'/><text x='244.5' y='145.7' font-size='10'>3</text><line x1='82.0' y1='193.8' x2='88.0' y2='193.8' stroke='currentColor'/><text x='69.0' y='197.8' font-size='10'>-2</text><line x1='82.0' y1='69.7' x2='88.0' y2='69.7' stroke='currentColor'/><text x='69.0' y='73.7' font-size='10'>2</text></svg></div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Entre 0 y 3, \\(f\\ge0\\) (se anula en 0 y 2). Separo en \\(x=2\\):</p><div style='overflow-x:auto'><svg viewBox='0 0 300 220' width='100%' style='max-width:380px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='85.0,131.7 87.0,129.4 89.1,127.2 91.1,125.1 93.1,123.1 95.2,121.2 97.2,119.3 99.2,117.6 101.2,115.9 103.3,114.3 105.3,112.8 107.3,111.4 109.4,110.1 111.4,108.8 113.4,107.7 115.5,106.6 117.5,105.7 119.5,104.8 121.6,104.0 123.6,103.3 125.6,102.6 127.7,102.1 129.7,101.6 131.7,101.3 133.8,101.0 135.8,100.8 137.8,100.7 139.8,100.7 141.9,100.8 143.9,100.9 145.9,101.2 148.0,101.5 150.0,101.9 152.0,102.4 154.1,103.0 156.1,103.7 158.1,104.5 160.2,105.3 162.2,106.3 164.2,107.3 166.3,108.4 168.3,109.7 170.3,111.0 172.3,112.3 174.4,113.8 176.4,115.4 178.4,117.0 180.5,118.7 182.5,120.6 184.5,122.5 186.6,124.5 188.6,126.5 190.6,128.7 192.7,131.0 194.7,130.2 196.7,127.7 198.8,125.2 200.8,122.6 202.8,119.9 204.8,117.1 206.9,114.3 208.9,111.3 210.9,108.3 213.0,105.1 215.0,101.9 217.0,98.6 219.1,95.2 221.1,91.8 223.1,88.2 225.2,84.5 227.2,80.8 229.2,77.0 231.3,73.1 233.3,69.1 235.3,65.0 237.3,60.8 239.4,56.5 241.4,52.2 243.4,47.8 245.5,43.2 247.5,38.6 247.5,131.7 245.5,131.7 243.4,131.7 241.4,131.7 239.4,131.7 237.3,131.7 235.3,131.7 233.3,131.7 231.3,131.7 229.2,131.7 227.2,131.7 225.2,131.7 223.1,131.7 221.1,131.7 219.1,131.7 217.0,131.7 215.0,131.7 213.0,131.7 210.9,131.7 208.9,131.7 206.9,131.7 204.8,131.7 202.8,131.7 200.8,131.7 198.8,131.7 196.7,131.7 194.7,131.7 192.7,131.7 190.6,131.7 188.6,131.7 186.6,131.7 184.5,131.7 182.5,131.7 180.5,131.7 178.4,131.7 176.4,131.7 174.4,131.7 172.3,131.7 170.3,131.7 168.3,131.7 166.3,131.7 164.2,131.7 162.2,131.7 160.2,131.7 158.1,131.7 156.1,131.7 154.1,131.7 152.0,131.7 150.0,131.7 148.0,131.7 145.9,131.7 143.9,131.7 141.9,131.7 139.8,131.7 137.8,131.7 135.8,131.7 133.8,131.7 131.7,131.7 129.7,131.7 127.7,131.7 125.6,131.7 123.6,131.7 121.6,131.7 119.5,131.7 117.5,131.7 115.5,131.7 113.4,131.7 111.4,131.7 109.4,131.7 107.3,131.7 105.3,131.7 103.3,131.7 101.2,131.7 99.2,131.7 97.2,131.7 95.2,131.7 93.1,131.7 91.1,131.7 89.1,131.7 87.0,131.7 85.0,131.7' fill='#b9a4f5' fill-opacity='.55'/><polyline points='30.8,224.8 32.8,220.3 34.8,215.9 36.8,211.5 38.8,207.3 40.8,203.1 42.8,199.0 44.7,195.0 46.7,191.1 48.7,187.2 50.7,183.5 52.7,179.8 54.7,176.2 56.7,172.7 58.6,169.3 60.6,165.9 62.6,162.7 64.6,159.5 66.6,156.4 68.6,153.4 70.6,150.5 72.5,147.6 74.5,144.9 76.5,142.2 78.5,139.6 80.5,137.1 82.5,134.7 84.5,132.3 86.4,130.1 88.4,127.9 90.4,125.8 92.4,123.8 94.4,121.9 96.4,120.1 98.4,118.3 100.3,116.6 102.3,115.0 104.3,113.5 106.3,112.1 108.3,110.8 110.3,109.5 112.3,108.3 114.2,107.3 116.2,106.3 118.2,105.3 120.2,104.5 122.2,103.7 124.2,103.1 126.2,102.5 128.2,102.0 130.1,101.6 132.1,101.2 134.1,101.0 136.1,100.8 138.1,100.7 140.1,100.7 142.1,100.8 144.0,100.9 146.0,101.2 148.0,101.5 150.0,101.9 152.0,102.4 154.0,103.0 156.0,103.7 157.9,104.4 159.9,105.2 161.9,106.2 163.9,107.2 165.9,108.2 167.9,109.4 169.9,110.7 171.8,112.0 173.8,113.4 175.8,114.9 177.8,116.5 179.8,118.1 181.8,119.9 183.8,121.7 185.8,123.6 187.7,125.6 189.7,127.7 191.7,129.9 193.7,131.3 195.7,129.0 197.7,126.6 199.7,124.1 201.6,121.5 203.6,118.8 205.6,116.1 207.6,113.2 209.6,110.3 211.6,107.3 213.6,104.2 215.5,101.1 217.5,97.8 219.5,94.5 221.5,91.1 223.5,87.6 225.5,84.0 227.5,80.3 229.4,76.6 231.4,72.7 233.4,68.8 235.4,64.8 237.4,60.7 239.4,56.5 241.4,52.3 243.3,48.0 245.3,43.5 247.3,39.0 249.3,34.4 251.3,29.8 253.3,25.0 255.3,20.2 257.3,15.3 259.2,10.3 261.2,5.2 263.2,0.0 265.2,-5.2 267.2,-10.6 269.2,-16.0' fill='none' stroke='#2f6df0' stroke-width='2'/><line x1='247.5' y1='131.7' x2='247.5' y2='38.6' stroke='#64748b' stroke-width='1.4' stroke-dasharray='5 4'/><circle cx='139.2' cy='100.7' r='3.5' fill='#e8487a'/><text x='127.2' y='92.7'>(1,1)</text><circle cx='193.3' cy='131.7' r='3.5' fill='#e8487a'/><text x='199.3' y='147.7'>(2,0)</text><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M12.0 131.7H294.0M85.0 214.0V8.0'/></g><line x1='30.8' y1='128.7' x2='30.8' y2='134.7' stroke='currentColor'/><text x='27.8' y='145.7' font-size='10'>-1</text><line x1='139.2' y1='128.7' x2='139.2' y2='134.7' stroke='currentColor'/><text x='136.2' y='145.7' font-size='10'>1</text><line x1='193.3' y1='128.7' x2='193.3' y2='134.7' stroke='currentColor'/><text x='190.3' y='145.7' font-size='10'>2</text><line x1='247.5' y1='128.7' x2='247.5' y2='134.7' stroke='currentColor'/><text x='244.5' y='145.7' font-size='10'>3</text><line x1='82.0' y1='193.8' x2='88.0' y2='193.8' stroke='currentColor'/><text x='69.0' y='197.8' font-size='10'>-2</text><line x1='82.0' y1='69.7' x2='88.0' y2='69.7' stroke='currentColor'/><text x='69.0' y='73.7' font-size='10'>2</text></svg></div>\\[A=\\int_0^2(2x-x^2)\\,dx+\\int_2^3(x^2-2x)\\,dx=\\Bigl[x^2-\\frac{x^3}3\\Bigr]_0^2+\\Bigl[\\frac{x^3}3-x^2\\Bigr]_2^3=\\frac43+\\left(0+\\frac43\\right)=\\frac83\\]<div class='res'>Área \\(=\\dfrac83\\ u^2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "rep",
+     "apartados": "a"
+    },
+    {
+     "tema": "integ",
+     "tipo": "area",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2010-RESERVA_3.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2010-reserva-3-7",
+   "n": 7,
+   "num": 3,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Obtén un vector no nulo \\(\\vec v=(a,b,c)\\), de manera que las matrices siguientes tengan simultáneamente rango 2: \\(A=\\begin{pmatrix}1&1&a\\\\1&0&b\\\\1&1&c\\end{pmatrix}\\), \\(B=\\begin{pmatrix}2&0&a\\\\0&-1&b\\\\3&1&c\\end{pmatrix}\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>Las dos matrices tienen un menor de orden 2 no nulo que no depende de \\(\\vec v\\): \\(\\begin{vmatrix}1&1\\\\1&0\\end{vmatrix}=-1\\) en \\(A\\) y \\(\\begin{vmatrix}2&0\\\\0&-1\\end{vmatrix}=-2\\) en \\(B\\). Su rango es al menos 2, y es exactamente 2 si su determinante es 0. Por la regla de Sarrus<i class='n' data-t='th'>Regla de Sarrus: se suman los productos de la diagonal principal y de los dos triángulos con un lado paralelo a ella (en verde) y se restan los de la diagonal secundaria y sus dos triángulos (en rojo).<span style='display:block;margin:6px 0 0'><svg viewBox='0 0 206 106' width='100%' style='max-width:230px' font-family='system-ui,sans-serif'><text x='0' y='30' font-size='20' font-weight='700' fill='#17a673'>+</text><text x='0' y='86' font-size='20' font-weight='700' fill='#e8487a'>−</text><polygon points='26,10 41,25 56,40' fill='#17a673' fill-opacity='.15' stroke='#17a673' stroke-width='1.8' stroke-linejoin='round'/><circle cx='26' cy='10' r='3.6' fill='#17a673'/><circle cx='41' cy='10' r='2.2' fill='#9ca3af'/><circle cx='56' cy='10' r='2.2' fill='#9ca3af'/><circle cx='26' cy='25' r='2.2' fill='#9ca3af'/><circle cx='41' cy='25' r='3.6' fill='#17a673'/><circle cx='56' cy='25' r='2.2' fill='#9ca3af'/><circle cx='26' cy='40' r='2.2' fill='#9ca3af'/><circle cx='41' cy='40' r='2.2' fill='#9ca3af'/><circle cx='56' cy='40' r='3.6' fill='#17a673'/><polygon points='103,10 118,25 88,40' fill='#17a673' fill-opacity='.15' stroke='#17a673' stroke-width='1.8' stroke-linejoin='round'/><circle cx='88' cy='10' r='2.2' fill='#9ca3af'/><circle cx='103' cy='10' r='3.6' fill='#17a673'/><circle cx='118' cy='10' r='2.2' fill='#9ca3af'/><circle cx='88' cy='25' r='2.2' fill='#9ca3af'/><circle cx='103' cy='25' r='2.2' fill='#9ca3af'/><circle cx='118' cy='25' r='3.6' fill='#17a673'/><circle cx='88' cy='40' r='3.6' fill='#17a673'/><circle cx='103' cy='40' r='2.2' fill='#9ca3af'/><circle cx='118' cy='40' r='2.2' fill='#9ca3af'/><polygon points='180,10 150,25 165,40' fill='#17a673' fill-opacity='.15' stroke='#17a673' stroke-width='1.8' stroke-linejoin='round'/><circle cx='150' cy='10' r='2.2' fill='#9ca3af'/><circle cx='165' cy='10' r='2.2' fill='#9ca3af'/><circle cx='180' cy='10' r='3.6' fill='#17a673'/><circle cx='150' cy='25' r='3.6' fill='#17a673'/><circle cx='165' cy='25' r='2.2' fill='#9ca3af'/><circle cx='180' cy='25' r='2.2' fill='#9ca3af'/><circle cx='150' cy='40' r='2.2' fill='#9ca3af'/><circle cx='165' cy='40' r='3.6' fill='#17a673'/><circle cx='180' cy='40' r='2.2' fill='#9ca3af'/><polygon points='56,66 41,81 26,96' fill='#e8487a' fill-opacity='.15' stroke='#e8487a' stroke-width='1.8' stroke-linejoin='round'/><circle cx='26' cy='66' r='2.2' fill='#9ca3af'/><circle cx='41' cy='66' r='2.2' fill='#9ca3af'/><circle cx='56' cy='66' r='3.6' fill='#e8487a'/><circle cx='26' cy='81' r='2.2' fill='#9ca3af'/><circle cx='41' cy='81' r='3.6' fill='#e8487a'/><circle cx='56' cy='81' r='2.2' fill='#9ca3af'/><circle cx='26' cy='96' r='3.6' fill='#e8487a'/><circle cx='41' cy='96' r='2.2' fill='#9ca3af'/><circle cx='56' cy='96' r='2.2' fill='#9ca3af'/><polygon points='88,66 118,81 103,96' fill='#e8487a' fill-opacity='.15' stroke='#e8487a' stroke-width='1.8' stroke-linejoin='round'/><circle cx='88' cy='66' r='3.6' fill='#e8487a'/><circle cx='103' cy='66' r='2.2' fill='#9ca3af'/><circle cx='118' cy='66' r='2.2' fill='#9ca3af'/><circle cx='88' cy='81' r='2.2' fill='#9ca3af'/><circle cx='103' cy='81' r='2.2' fill='#9ca3af'/><circle cx='118' cy='81' r='3.6' fill='#e8487a'/><circle cx='88' cy='96' r='2.2' fill='#9ca3af'/><circle cx='103' cy='96' r='3.6' fill='#e8487a'/><circle cx='118' cy='96' r='2.2' fill='#9ca3af'/><polygon points='165,66 150,81 180,96' fill='#e8487a' fill-opacity='.15' stroke='#e8487a' stroke-width='1.8' stroke-linejoin='round'/><circle cx='150' cy='66' r='2.2' fill='#9ca3af'/><circle cx='165' cy='66' r='3.6' fill='#e8487a'/><circle cx='180' cy='66' r='2.2' fill='#9ca3af'/><circle cx='150' cy='81' r='3.6' fill='#e8487a'/><circle cx='165' cy='81' r='2.2' fill='#9ca3af'/><circle cx='180' cy='81' r='2.2' fill='#9ca3af'/><circle cx='150' cy='96' r='2.2' fill='#9ca3af'/><circle cx='165' cy='96' r='2.2' fill='#9ca3af'/><circle cx='180' cy='96' r='3.6' fill='#e8487a'/></svg></span></i>:</p>\\[|A|=\\begin{vmatrix}1&1&a\\\\1&0&b\\\\1&1&c\\end{vmatrix}\\]\\[=\\bigl(0+b+a\\bigr)-\\bigl(0+b+c\\bigr)\\]\\[=a-c\\]\\[|B|=\\begin{vmatrix}2&0&a\\\\0&-1&b\\\\3&1&c\\end{vmatrix}\\]\\[=\\bigl(- 2 c+0+0\\bigr)-\\bigl(- 3 a+2 b+0\\bigr)\\]\\[=3a-2b-2c\\]\\[\\begin{cases}a-c=0\\\\3a-2b-2c=0\\end{cases}\\Rightarrow c=a,\\quad3a-2b-2a=0\\iff a=2b\\]<p>Los vectores son \\(\\vec v=(2b,b,2b)=b(2,1,2)\\) con \\(b\\neq0\\).</p><div class='res'>Por ejemplo, \\(\\vec v=(2,1,2)\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "rango",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2010-RESERVA_3.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2010-reserva-3-8",
+   "n": 8,
+   "num": 4,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el plano \\(\\pi\\) definido por \\(2x-y+nz=0\\) y la recta \\(r\\) dada por \\(\\dfrac{x-1}m=\\dfrac y4=\\dfrac{z-1}2\\), con \\(m\\neq0\\).",
+    "apartados": [
+     "(1,25 p.) Calcula \\(m\\) y \\(n\\) para que la recta \\(r\\) sea perpendicular al plano \\(\\pi\\).",
+     "(1,25 p.) Calcula \\(m\\) y \\(n\\) para que la recta \\(r\\) esté contenida en el plano \\(\\pi\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>\\(r\\) pasa por \\((1,0,1)\\) con \\(\\vec d=(m,4,2)\\); \\(\\vec n_\\pi=(2,-1,n)\\). Es perpendicular al plano si \\(\\vec d\\parallel\\vec n_\\pi\\)<i class='n' data-t='why'>Si la recta es perpendicular al plano, su dirección es la del vector normal.</i>:</p>\\[\\frac m2=\\frac4{-1}=\\frac2n\\iff m=-8,\\ n=-\\frac12\\]<div class='res'>\\(m=-8\\), \\(n=-\\dfrac12\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Está contenida si un punto suyo está en el plano y su director es perpendicular al normal:</p>\\[(1,0,1)\\in\\pi:\\ 2-0+n=0\\iff n=-2\\]\\[\\vec d\\cdot\\vec n_\\pi=2m-4+2n=0\\iff2m-4-4=0\\iff m=4\\]<div class='res'>\\(m=4\\), \\(n=-2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "pos",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2010-RESERVA_3.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  }
+ ]
+}

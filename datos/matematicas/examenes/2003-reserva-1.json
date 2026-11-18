@@ -1,0 +1,298 @@
+{
+ "version": 1,
+ "id": "matematicas-2003-reserva-1",
+ "asignatura": "matematicas",
+ "anio": 2003,
+ "convocatoria": "Reserva 1",
+ "documento": "MAT-2003-RESERVA-1.pdf",
+ "ejercicios": [
+  {
+   "id": "matematicas-2003-reserva-1-1",
+   "n": 1,
+   "num": 1,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sea la función \\(f:\\mathbb R\\to\\mathbb R\\) definida por \\(f(x)=2x^3-6x+4\\). Calcula el área del recinto limitado por la gráfica de \\(f\\) y su recta tangente en el punto de abscisa correspondiente al máximo relativo de la función.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>Signo de \\(f'\\)<i class='n' data-t='tp'>Dentro de cada intervalo la derivada no cambia de signo, así que basta sustituir un valor cualquiera del intervalo para conocer su signo.</i>: \\(f'(x)=6x^2-6=0\\iff\\boxed{x=\\pm1}\\).</p><div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 274 108' width='100%' style='max-width:329px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H260' stroke='currentColor' stroke-width='1.6'/><path d='M96 46V58' stroke='currentColor' stroke-width='1.6'/><text x='96' y='76' text-anchor='middle' font-weight='700'>−1</text><path d='M178 46V58' stroke='currentColor' stroke-width='1.6'/><text x='178' y='76' text-anchor='middle' font-weight='700'>1</text><text x='29.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#17a673'>+</text><path d='M43.0 40L79.0 10' stroke='#17a673' stroke-width='2' fill='none'/><path d='M70.0 11L79.0 10L77.0 19' stroke='#17a673' stroke-width='2' fill='none'/><text x='55.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(−2) &gt; 0</text><text x='111.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#e8487a'>−</text><path d='M125.0 10L161.0 40' stroke='#e8487a' stroke-width='2' fill='none'/><path d='M152.0 39L161.0 40L159.0 31' stroke='#e8487a' stroke-width='2' fill='none'/><text x='137.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(0) &lt; 0</text><text x='193.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#17a673'>+</text><path d='M207.0 40L243.0 10' stroke='#17a673' stroke-width='2' fill='none'/><path d='M234.0 11L243.0 10L241.0 19' stroke='#17a673' stroke-width='2' fill='none'/><text x='219.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(2) &gt; 0</text></svg></div><p>Máximo relativo en \\(x=-1\\)<i class='n' data-t='why'>Hay un mínimo donde \\(f\\) pasa de decrecer a crecer y un máximo donde pasa de crecer a decrecer.</i>, con \\(f(-1)=-2+6+4=8\\). La tangente ahí es horizontal: \\(y=8\\).</p>\\[2x^3-6x+4=8\\iff x^3-3x-2=0\\iff(x+1)^2(x-2)=0\\iff x=-1\\ \\text{(doble)},\\ x=2\\]<div style='overflow-x:auto'><svg viewBox='0 0 300 210' width='100%' style='max-width:380px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='92.8,76.7 96.7,76.7 100.6,76.7 104.5,76.7 108.4,76.7 112.3,76.7 116.2,76.7 120.1,76.7 124.0,76.7 127.9,76.7 131.8,76.7 135.7,76.7 139.6,76.7 143.5,76.7 147.4,76.7 151.3,76.7 155.2,76.7 159.1,76.7 163.0,76.7 166.9,76.7 170.8,76.7 174.7,76.7 178.6,76.7 182.5,76.7 186.4,76.7 190.3,76.7 194.2,76.7 198.1,76.7 202.0,76.7 205.9,76.7 209.8,76.7 213.7,76.7 217.6,76.7 221.5,76.7 225.4,76.7 229.3,76.7 233.2,76.7 237.1,76.7 241.0,76.7 244.9,76.7 248.8,76.7 248.8,76.7 244.9,91.2 241.0,104.3 237.1,115.9 233.2,126.2 229.3,135.2 225.4,143.0 221.5,149.6 217.6,155.0 213.7,159.4 209.8,162.7 205.9,165.1 202.0,166.6 198.1,167.3 194.2,167.2 190.3,166.3 186.4,164.8 182.5,162.7 178.6,160.0 174.7,156.8 170.8,153.2 166.9,149.2 163.0,144.8 159.1,140.2 155.2,135.4 151.3,130.5 147.4,125.4 143.5,120.3 139.6,115.2 135.7,110.2 131.8,105.4 127.9,100.7 124.0,96.3 120.1,92.1 116.2,88.4 112.3,85.0 108.4,82.2 104.5,79.9 100.6,78.1 96.7,77.0 92.8,76.7' fill='#b9a4f5' fill-opacity='.55'/><polyline points='30.4,213.8 33.3,199.7 36.2,186.5 39.1,174.2 42.0,162.8 44.9,152.2 47.8,142.4 50.6,133.4 53.5,125.2 56.4,117.7 59.3,110.9 62.2,104.8 65.1,99.4 68.0,94.6 70.9,90.4 73.8,86.9 76.7,83.9 79.6,81.4 82.5,79.5 85.4,78.1 88.2,77.2 91.1,76.7 94.0,76.7 96.9,77.1 99.8,77.9 102.7,79.0 105.6,80.5 108.5,82.2 111.4,84.3 114.3,86.7 117.2,89.3 120.1,92.1 123.0,95.1 125.9,98.3 128.7,101.7 131.6,105.2 134.5,108.7 137.4,112.4 140.3,116.1 143.2,119.9 146.1,123.7 149.0,127.5 151.9,131.2 154.8,134.9 157.7,138.5 160.6,142.0 163.5,145.3 166.3,148.6 169.2,151.6 172.1,154.5 175.0,157.1 177.9,159.5 180.8,161.6 183.7,163.4 186.6,164.9 189.5,166.1 192.4,166.9 195.3,167.3 198.2,167.3 201.1,166.9 203.9,166.0 206.8,164.6 209.7,162.8 212.6,160.4 215.5,157.5 218.4,154.0 221.3,149.9 224.2,145.1 227.1,139.8 230.0,133.8 232.9,127.0 235.8,119.6 238.7,111.4 241.6,102.5 244.4,92.8 247.3,82.3 250.2,71.0 253.1,58.8 256.0,45.7 258.9,31.7 261.8,16.8' fill='none' stroke='#2f6df0' stroke-width='2'/><polyline points='20.0,76.7 150.0,76.7 280.0,76.7' fill='none' stroke='#f0a30a' stroke-width='2'/><circle cx='92.8' cy='76.7' r='3.5' fill='#e8487a'/><text x='72.8' y='68.7'>(−1,8)</text><circle cx='248.8' cy='76.7' r='3.5' fill='#e8487a'/><text x='254.8' y='70.7'>(2,8)</text><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M12.0 167.3H294.0M144.8 204.0V8.0'/></g><line x1='40.8' y1='164.3' x2='40.8' y2='170.3' stroke='currentColor'/><text x='37.8' y='181.3' font-size='10'>-2</text><line x1='92.8' y1='164.3' x2='92.8' y2='170.3' stroke='currentColor'/><text x='89.8' y='181.3' font-size='10'>-1</text><line x1='196.8' y1='164.3' x2='196.8' y2='170.3' stroke='currentColor'/><text x='193.8' y='181.3' font-size='10'>1</text><line x1='248.8' y1='164.3' x2='248.8' y2='170.3' stroke='currentColor'/><text x='245.8' y='181.3' font-size='10'>2</text><line x1='141.8' y1='122.0' x2='147.8' y2='122.0' stroke='currentColor'/><text x='128.8' y='126.0' font-size='10'>4</text><line x1='141.8' y1='76.7' x2='147.8' y2='76.7' stroke='currentColor'/><text x='128.8' y='80.7' font-size='10'>8</text><line x1='141.8' y1='31.3' x2='147.8' y2='31.3' stroke='currentColor'/><text x='128.8' y='35.3' font-size='10'>12</text></svg></div>\\[A=\\int_{-1}^2\\bigl(8-2x^3+6x-4\\bigr)dx=\\Bigl[4x+3x^2-\\frac{x^4}2\\Bigr]_{-1}^2=12-\\left(-\\frac32\\right)=\\frac{27}2\\]<div class='res'>Área \\(=\\dfrac{27}2\\ u^2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": ""
+    },
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": ""
+    },
+    {
+     "tema": "integ",
+     "tipo": "area",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2003-RESERVA-1.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2003-reserva-1-2",
+   "n": 2,
+   "num": 2,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Dada la función \\(f\\) definida para \\(x\\neq-1\\) por \\(f(x)=\\dfrac{x^3}{(1+x)^2}\\), determina:",
+    "apartados": [
+     "(1,5 p.) Las asíntotas de la gráfica de \\(f\\).",
+     "(1 p.) Los puntos de corte, si existen, de dicha gráfica con sus asíntotas."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p><b>Vertical:</b> \\(\\displaystyle\\lim_{x\\to-1}\\frac{x^3}{(1+x)^2}=\\frac{-1}{0^+}=-\\infty\\): \\(x=-1\\).</p><p><b>Horizontal:</b> \\(\\displaystyle\\lim_{x\\to\\pm\\infty}f(x)=\\pm\\infty\\): no hay. <b>Oblicua:</b> dividiendo, \\(x^3=(x^2+2x+1)(x-2)+3x+2\\):</p>\\[f(x)=x-2+\\frac{3x+2}{(1+x)^2},\\qquad\\lim_{x\\to\\pm\\infty}\\frac{3x+2}{(1+x)^2}=0\\]<div class='res'>Asíntota vertical \\(x=-1\\) y asíntota oblicua \\(y=x-2\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Con la vertical no puede cortarse (\\(x=-1\\) no está en el dominio). Con la oblicua: \\(f(x)=x-2\\iff\\frac{3x+2}{(1+x)^2}=0\\iff x=-\\frac23\\), y \\(y=-\\frac23-2=-\\frac83\\).</p><div class='res'>Corta a la asíntota oblicua en \\(\\left(-\\frac23,-\\frac83\\right)\\); a la vertical, en ningún punto</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "asint",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2003-RESERVA-1.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2003-reserva-1-3",
+   "n": 3,
+   "num": 3,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las matrices \\(A=\\begin{pmatrix}1&0&-1\\\\0&m&3\\\\4&1&-m\\end{pmatrix}\\), \\(B=\\begin{pmatrix}1\\\\-1\\\\3\\end{pmatrix}\\) y \\(X=\\begin{pmatrix}x\\\\y\\\\z\\end{pmatrix}\\).",
+    "apartados": [
+     "(0,75 p.) ¿Para qué valores de \\(m\\) existe la matriz \\(A^{-1}\\)?",
+     "(1 p.) Siendo \\(m=2\\), calcula \\(A^{-1}\\) y resuelve el sistema \\(A\\cdot X=B\\).",
+     "(0,75 p.) Resuelve el sistema \\(A\\cdot X=B\\) para \\(m=1\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Existe si \\(|A|\\neq0\\). Por la regla de Sarrus<i class='n' data-t='th'>Regla de Sarrus: se suman los productos de la diagonal principal y de los dos triángulos con un lado paralelo a ella (en verde) y se restan los de la diagonal secundaria y sus dos triángulos (en rojo).<span style='display:block;margin:6px 0 0'><svg viewBox='0 0 206 106' width='100%' style='max-width:230px' font-family='system-ui,sans-serif'><text x='0' y='30' font-size='20' font-weight='700' fill='#17a673'>+</text><text x='0' y='86' font-size='20' font-weight='700' fill='#e8487a'>−</text><polygon points='26,10 41,25 56,40' fill='#17a673' fill-opacity='.15' stroke='#17a673' stroke-width='1.8' stroke-linejoin='round'/><circle cx='26' cy='10' r='3.6' fill='#17a673'/><circle cx='41' cy='10' r='2.2' fill='#9ca3af'/><circle cx='56' cy='10' r='2.2' fill='#9ca3af'/><circle cx='26' cy='25' r='2.2' fill='#9ca3af'/><circle cx='41' cy='25' r='3.6' fill='#17a673'/><circle cx='56' cy='25' r='2.2' fill='#9ca3af'/><circle cx='26' cy='40' r='2.2' fill='#9ca3af'/><circle cx='41' cy='40' r='2.2' fill='#9ca3af'/><circle cx='56' cy='40' r='3.6' fill='#17a673'/><polygon points='103,10 118,25 88,40' fill='#17a673' fill-opacity='.15' stroke='#17a673' stroke-width='1.8' stroke-linejoin='round'/><circle cx='88' cy='10' r='2.2' fill='#9ca3af'/><circle cx='103' cy='10' r='3.6' fill='#17a673'/><circle cx='118' cy='10' r='2.2' fill='#9ca3af'/><circle cx='88' cy='25' r='2.2' fill='#9ca3af'/><circle cx='103' cy='25' r='2.2' fill='#9ca3af'/><circle cx='118' cy='25' r='3.6' fill='#17a673'/><circle cx='88' cy='40' r='3.6' fill='#17a673'/><circle cx='103' cy='40' r='2.2' fill='#9ca3af'/><circle cx='118' cy='40' r='2.2' fill='#9ca3af'/><polygon points='180,10 150,25 165,40' fill='#17a673' fill-opacity='.15' stroke='#17a673' stroke-width='1.8' stroke-linejoin='round'/><circle cx='150' cy='10' r='2.2' fill='#9ca3af'/><circle cx='165' cy='10' r='2.2' fill='#9ca3af'/><circle cx='180' cy='10' r='3.6' fill='#17a673'/><circle cx='150' cy='25' r='3.6' fill='#17a673'/><circle cx='165' cy='25' r='2.2' fill='#9ca3af'/><circle cx='180' cy='25' r='2.2' fill='#9ca3af'/><circle cx='150' cy='40' r='2.2' fill='#9ca3af'/><circle cx='165' cy='40' r='3.6' fill='#17a673'/><circle cx='180' cy='40' r='2.2' fill='#9ca3af'/><polygon points='56,66 41,81 26,96' fill='#e8487a' fill-opacity='.15' stroke='#e8487a' stroke-width='1.8' stroke-linejoin='round'/><circle cx='26' cy='66' r='2.2' fill='#9ca3af'/><circle cx='41' cy='66' r='2.2' fill='#9ca3af'/><circle cx='56' cy='66' r='3.6' fill='#e8487a'/><circle cx='26' cy='81' r='2.2' fill='#9ca3af'/><circle cx='41' cy='81' r='3.6' fill='#e8487a'/><circle cx='56' cy='81' r='2.2' fill='#9ca3af'/><circle cx='26' cy='96' r='3.6' fill='#e8487a'/><circle cx='41' cy='96' r='2.2' fill='#9ca3af'/><circle cx='56' cy='96' r='2.2' fill='#9ca3af'/><polygon points='88,66 118,81 103,96' fill='#e8487a' fill-opacity='.15' stroke='#e8487a' stroke-width='1.8' stroke-linejoin='round'/><circle cx='88' cy='66' r='3.6' fill='#e8487a'/><circle cx='103' cy='66' r='2.2' fill='#9ca3af'/><circle cx='118' cy='66' r='2.2' fill='#9ca3af'/><circle cx='88' cy='81' r='2.2' fill='#9ca3af'/><circle cx='103' cy='81' r='2.2' fill='#9ca3af'/><circle cx='118' cy='81' r='3.6' fill='#e8487a'/><circle cx='88' cy='96' r='2.2' fill='#9ca3af'/><circle cx='103' cy='96' r='3.6' fill='#e8487a'/><circle cx='118' cy='96' r='2.2' fill='#9ca3af'/><polygon points='165,66 150,81 180,96' fill='#e8487a' fill-opacity='.15' stroke='#e8487a' stroke-width='1.8' stroke-linejoin='round'/><circle cx='150' cy='66' r='2.2' fill='#9ca3af'/><circle cx='165' cy='66' r='3.6' fill='#e8487a'/><circle cx='180' cy='66' r='2.2' fill='#9ca3af'/><circle cx='150' cy='81' r='3.6' fill='#e8487a'/><circle cx='165' cy='81' r='2.2' fill='#9ca3af'/><circle cx='180' cy='81' r='2.2' fill='#9ca3af'/><circle cx='150' cy='96' r='2.2' fill='#9ca3af'/><circle cx='165' cy='96' r='2.2' fill='#9ca3af'/><circle cx='180' cy='96' r='3.6' fill='#e8487a'/></svg></span></i>:</p>\\[|A|=\\begin{vmatrix}1&0&-1\\\\0&m&3\\\\4&1&-m\\end{vmatrix}\\]\\[=\\bigl(- m^{2}+0+0\\bigr)-\\bigl(- 4 m+3+0\\bigr)\\]\\[=-m^2+4m-3=-(m-1)(m-3)\\]<div class='res'>\\(A^{-1}\\) existe si \\(m\\neq1\\) y \\(m\\neq3\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Con \\(m=2\\), \\(|A|=1\\):</p><p>Como \\(|A|\\neq0\\), existe la inversa: \\(A^{-1}=\\dfrac1{|A|}(\\operatorname{Adj}A)^t\\).</p>\\[\\operatorname{Adj}A=\\begin{pmatrix}-7 & 12 & -8\\\\-1 & 2 & -1\\\\2 & -3 & 2\\end{pmatrix}\\Rightarrow A^{-1}=\\begin{pmatrix}-7 & -1 & 2\\\\12 & 2 & -3\\\\-8 & -1 & 2\\end{pmatrix}\\]\\[X=A^{-1}B=\\begin{pmatrix}-7 & -1 & 2\\\\12 & 2 & -3\\\\-8 & -1 & 2\\end{pmatrix}\\begin{pmatrix}1\\\\-1\\\\3\\end{pmatrix}=\\begin{pmatrix}0\\\\1\\\\-1\\end{pmatrix}\\]<div class='res'>\\(A^{-1}=\\begin{pmatrix}-7 & -1 & 2\\\\12 & 2 & -3\\\\-8 & -1 & 2\\end{pmatrix}\\); solución \\(x=0,\\ y=1,\\ z=-1\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'><p>Con \\(m=1\\), \\(|A|=0\\) y \\(\\begin{vmatrix}1&0\\\\0&1\\end{vmatrix}=1\\neq0\\): \\(\\operatorname{rg}A=2\\). Menor de \\((A|B)\\) de las columnas 1, 2 y 4:</p>\\[\\begin{vmatrix}1&0&1\\\\0&1&-1\\\\4&1&3\\end{vmatrix}\\]\\[=\\bigl(3+0+0\\bigr)-\\bigl(4-1+0\\bigr)\\]\\[=0\\]<p>Rango 2 en las dos: compatible indeterminado<i class='n' data-t='th'>Rouché-Frobenius: el sistema es compatible si y solo si \\(\\operatorname{rg}A=\\operatorname{rg}A^*\\); determinado si ese rango es el número de incógnitas, indeterminado si es menor.</i>. Con las dos primeras y \\(z=t\\): \\(x=1+t\\), \\(y=-1-3t\\).</p><div class='res'>\\(x=1+t,\\ y=-1-3t,\\ z=t\\), con \\(t\\in\\mathbb R\\)</div><i class='n' data-t='tp'>Comprobación en la 3.ª (\\(4x+y-z=3\\)): \\(4+4t-1-3t-t=3\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": "b, c"
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2003-RESERVA-1.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2003-reserva-1-4",
+   "n": 4,
+   "num": 4,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el plano \\(\\pi\\equiv x-2y+1=0\\) y la recta \\(r\\equiv\\begin{cases}x-3y+z=0\\\\x-y+az+2=0\\end{cases}\\)",
+    "apartados": [
+     "(1,25 p.) Halla el valor de \\(a\\) sabiendo que la recta está contenida en el plano.",
+     "(1,25 p.) Calcula el ángulo formado por el plano \\(\\pi\\) y la recta \\(s\\equiv\\begin{cases}x-3y+z=0\\\\x-y+z+2=0\\end{cases}\\)"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Director de \\(r\\): \\((1,-3,1)\\times(1,-1,a)=(1-3a,\\ 1-a,\\ 2)\\). Normal de \\(\\pi\\): \\(\\vec n=(1,-2,0)\\).</p><p>Contenida: \\(\\vec d\\perp\\vec n\\) y un punto de \\(r\\) en \\(\\pi\\). \\(\\vec d\\cdot\\vec n=1-3a-2+2a=-1-a=0\\iff a=-1\\).</p><p>Con \\(a=-1\\) y \\(z=0\\): \\(x-3y=0\\), \\(x-y=-2\\Rightarrow y=-1\\), \\(x=-3\\). En \\(\\pi\\): \\(-3+2+1=0\\) ✓.</p><div class='res'>\\(a=-1\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>\\(s\\) es la recta con \\(a=1\\): director \\((-2,0,2)\\parallel(-1,0,1)\\). El ángulo \\(\\theta\\) entre recta y plano cumple<i class='n' data-t='fm'>\\(\\mathrm{sen}\\,\\theta=\\dfrac{|\\vec d\\cdot\\vec n|}{|\\vec d|\\,|\\vec n|}\\): es el complementario del ángulo entre el director y la normal.</i>:</p>\\[\\mathrm{sen}\\,\\theta=\\frac{|-1+0+0|}{\\sqrt2\\cdot\\sqrt5}=\\frac1{\\sqrt{10}}\\]<div class='res'>\\(\\theta=\\arcsen\\dfrac1{\\sqrt{10}}\\approx18{,}43^\\circ\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "pos",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2003-RESERVA-1.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2003-reserva-1-5",
+   "n": 5,
+   "num": 1,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "De entre todos los rectángulos que tienen uno de sus vértices en el origen de coordenadas, el opuesto de este vértice en la curva \\(y=\\dfrac{2x^2}{x^2-1}\\) (\\(x\\gt1\\)), uno de sus lados situado sobre el semieje positivo de abscisas y otro lado sobre el semieje positivo de ordenadas, halla el que tiene área mínima.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>El vértice opuesto al origen es \\(\\left(x,\\frac{2x^2}{x^2-1}\\right)\\), con \\(x\\gt1\\). El área es</p>\\[A(x)=x\\cdot\\frac{2x^2}{x^2-1}=\\frac{2x^3}{x^2-1},\\qquad x\\gt1\\]<p>Estudiamos el signo de \\(A'\\)<i class='n' data-t='tp'>Dentro de cada intervalo la derivada no cambia de signo, así que basta sustituir un valor cualquiera del intervalo para conocer su signo.</i>:</p>\\[A'(x)=\\frac{6x^2(x^2-1)-2x^3\\cdot2x}{(x^2-1)^2}=\\frac{2x^2(x^2-3)}{(x^2-1)^2}=0\\iff\\boxed{x=\\sqrt3}\\ (x\\gt1)\\]<div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 210 108' width='100%' style='max-width:252px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H196' stroke='currentColor' stroke-width='1.6'/><path d='M14 56L18 48M18 56L22 48M22 56L26 48M26 56L30 48M30 56L34 48M34 56L38 48' stroke='currentColor' stroke-width='1.1'/><path d='M40 46V58' stroke='currentColor' stroke-width='1.6'/><text x='40' y='76' text-anchor='middle' font-weight='700'>1</text><path d='M114 46V58' stroke='currentColor' stroke-width='1.6'/><text x='114' y='76' text-anchor='middle' font-weight='700'>√3</text><text x='51.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#e8487a'>−</text><path d='M65.0 10L101.0 40' stroke='#e8487a' stroke-width='2' fill='none'/><path d='M92.0 39L101.0 40L99.0 31' stroke='#e8487a' stroke-width='2' fill='none'/><text x='77.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>A</tspan>′(1,5) &lt; 0</text><text x='129.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#17a673'>+</text><path d='M143.0 40L179.0 10' stroke='#17a673' stroke-width='2' fill='none'/><path d='M170.0 11L179.0 10L177.0 19' stroke='#17a673' stroke-width='2' fill='none'/><text x='155.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>A</tspan>′(2) &gt; 0</text></svg></div><p>\\(A\\) decrece en \\((1,\\sqrt3)\\) debido a que \\(A'(x)\\lt0\\), y crece en \\((\\sqrt3,+\\infty)\\) debido a que \\(A'(x)\\gt0\\): mínimo absoluto en \\(x=\\sqrt3\\)<i class='n' data-t='why'>Hay un mínimo donde \\(f\\) pasa de decrecer a crecer y un máximo donde pasa de crecer a decrecer.</i>. La altura es \\(\\frac{2\\cdot3}{3-1}=3\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 300 200' width='100%' style='max-width:380px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polyline points='105.5,-7.4 107.7,16.5 109.9,33.2 112.1,45.7 114.2,55.2 116.4,62.8 118.6,68.9 120.8,74.0 123.0,78.2 125.1,81.8 127.3,84.9 129.5,87.6 131.7,90.0 133.9,92.1 136.0,93.9 138.2,95.6 140.4,97.1 142.6,98.4 144.8,99.7 147.0,100.8 149.1,101.8 151.3,102.7 153.5,103.6 155.7,104.4 157.9,105.1 160.0,105.8 162.2,106.4 164.4,107.0 166.6,107.5 168.8,108.0 170.9,108.5 173.1,108.9 175.3,109.4 177.5,109.8 179.7,110.1 181.9,110.5 184.0,110.8 186.2,111.1 188.4,111.4 190.6,111.7 192.8,112.0 194.9,112.2 197.1,112.5 199.3,112.7 201.5,112.9 203.7,113.1 205.8,113.3 208.0,113.5 210.2,113.7 212.4,113.9 214.6,114.1 216.7,114.2 218.9,114.4 221.1,114.5 223.3,114.7 225.5,114.8 227.7,114.9 229.8,115.0 232.0,115.2 234.2,115.3 236.4,115.4 238.6,115.5 240.7,115.6 242.9,115.7 245.1,115.8 247.3,115.9 249.5,116.0 251.6,116.1 253.8,116.2 256.0,116.2 258.2,116.3 260.4,116.4 262.6,116.5 264.7,116.5 266.9,116.6 269.1,116.7 271.3,116.8 273.5,116.8 275.6,116.9 277.8,116.9 280.0,117.0' fill='none' stroke='#2f6df0' stroke-width='2'/><line x1='137.4' y1='170.0' x2='137.4' y2='95.0' stroke='#f0a30a' stroke-width='1.4' stroke-dasharray='5 4'/><line x1='37.3' y1='95.0' x2='137.4' y2='95.0' stroke='#f0a30a' stroke-width='1.4' stroke-dasharray='5 4'/><circle cx='137.4' cy='95.0' r='3.5' fill='#e8487a'/><text x='143.4' y='89.0'>(√3, 3)</text><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M12.0 170.0H294.0M37.3 194.0V8.0'/></g><line x1='95.1' y1='167.0' x2='95.1' y2='173.0' stroke='currentColor'/><text x='92.1' y='184.0' font-size='10'>1</text><line x1='152.9' y1='167.0' x2='152.9' y2='173.0' stroke='currentColor'/><text x='149.9' y='184.0' font-size='10'>2</text><line x1='210.7' y1='167.0' x2='210.7' y2='173.0' stroke='currentColor'/><text x='207.7' y='184.0' font-size='10'>3</text><line x1='268.4' y1='167.0' x2='268.4' y2='173.0' stroke='currentColor'/><text x='265.4' y='184.0' font-size='10'>4</text><line x1='34.3' y1='120.0' x2='40.3' y2='120.0' stroke='currentColor'/><text x='21.3' y='124.0' font-size='10'>2</text><line x1='34.3' y1='70.0' x2='40.3' y2='70.0' stroke='currentColor'/><text x='21.3' y='74.0' font-size='10'>4</text></svg></div><div class='res'>El rectángulo de base \\(\\sqrt3\\) y altura \\(3\\) (vértice \\((\\sqrt3,3)\\)), con área mínima \\(3\\sqrt3\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "opt",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2003-RESERVA-1.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2003-reserva-1-6",
+   "n": 6,
+   "num": 2,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las funciones \\(f,g:\\mathbb R\\to\\mathbb R\\) definidas por \\(f(x)=6-x^2\\) y \\(g(x)=|x|\\).",
+    "apartados": [
+     "(0,75 p.) Dibuja el recinto acotado que está limitado por las gráficas de \\(f\\) y \\(g\\).",
+     "(1,75 p.) Calcula el área del recinto descrito en el apartado anterior."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Las dos son pares. Para \\(x\\geq0\\): \\(6-x^2=x\\iff x^2+x-6=0\\iff x=2\\) (la raíz \\(-3\\) no vale); por simetría también \\(x=-2\\).</p><div style='overflow-x:auto'><svg viewBox='0 0 300 210' width='100%' style='max-width:380px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='63.3,124.6 67.7,116.1 72.0,108.1 76.3,100.4 80.7,93.2 85.0,86.5 89.3,80.2 93.7,74.3 98.0,68.8 102.3,63.8 106.7,59.2 111.0,55.1 115.3,51.4 119.7,48.1 124.0,45.3 128.3,42.9 132.7,40.9 137.0,39.4 141.3,38.3 145.7,37.7 150.0,37.4 154.3,37.7 158.7,38.3 163.0,39.4 167.3,40.9 171.7,42.9 176.0,45.3 180.3,48.1 184.7,51.4 189.0,55.1 193.3,59.2 197.7,63.8 202.0,68.8 206.3,74.3 210.7,80.2 215.0,86.5 219.3,93.2 223.7,100.4 228.0,108.1 232.3,116.1 236.7,124.6 236.7,124.6 232.3,126.8 228.0,129.0 223.7,131.2 219.3,133.3 215.0,135.5 210.7,137.7 206.3,139.9 202.0,142.1 197.7,144.2 193.3,146.4 189.0,148.6 184.7,150.8 180.3,152.9 176.0,155.1 171.7,157.3 167.3,159.5 163.0,161.7 158.7,163.8 154.3,166.0 150.0,168.2 145.7,166.0 141.3,163.8 137.0,161.7 132.7,159.5 128.3,157.3 124.0,155.1 119.7,152.9 115.3,150.8 111.0,148.6 106.7,146.4 102.3,144.2 98.0,142.1 93.7,139.9 89.3,137.7 85.0,135.5 80.7,133.3 76.3,131.2 72.0,129.0 67.7,126.8 63.3,124.6' fill='#b9a4f5' fill-opacity='.55'/><polyline points='33.0,196.3 36.9,185.9 40.8,175.8 44.7,166.1 48.6,156.8 52.5,147.8 56.4,139.1 60.3,130.8 64.2,122.9 68.1,115.3 72.0,108.1 75.9,101.2 79.8,94.6 83.7,88.5 87.6,82.6 91.5,77.2 95.4,72.0 99.3,67.3 103.2,62.9 107.1,58.8 111.0,55.1 114.9,51.7 118.8,48.7 122.7,46.1 126.6,43.8 130.5,41.8 134.4,40.3 138.3,39.0 142.2,38.1 146.1,37.6 150.0,37.4 153.9,37.6 157.8,38.1 161.7,39.0 165.6,40.3 169.5,41.8 173.4,43.8 177.3,46.1 181.2,48.7 185.1,51.7 189.0,55.1 192.9,58.8 196.8,62.9 200.7,67.3 204.6,72.0 208.5,77.2 212.4,82.6 216.3,88.5 220.2,94.6 224.1,101.2 228.0,108.1 231.9,115.3 235.8,122.9 239.7,130.8 243.6,139.1 247.5,147.8 251.4,156.8 255.3,166.1 259.2,175.8 263.1,185.9 267.0,196.3' fill='none' stroke='#2f6df0' stroke-width='2'/><polyline points='20.0,102.8 22.2,103.9 24.3,105.0 26.5,106.1 28.7,107.2 30.8,108.3 33.0,109.4 35.2,110.4 37.3,111.5 39.5,112.6 41.7,113.7 43.8,114.8 46.0,115.9 48.2,117.0 50.3,118.1 52.5,119.2 54.7,120.3 56.8,121.3 59.0,122.4 61.2,123.5 63.3,124.6 65.5,125.7 67.7,126.8 69.8,127.9 72.0,129.0 74.2,130.1 76.3,131.2 78.5,132.2 80.7,133.3 82.8,134.4 85.0,135.5 87.2,136.6 89.3,137.7 91.5,138.8 93.7,139.9 95.8,141.0 98.0,142.1 100.2,143.1 102.3,144.2 104.5,145.3 106.7,146.4 108.8,147.5 111.0,148.6 113.2,149.7 115.3,150.8 117.5,151.9 119.7,152.9 121.8,154.0 124.0,155.1 126.2,156.2 128.3,157.3 130.5,158.4 132.7,159.5 134.8,160.6 137.0,161.7 139.2,162.8 141.3,163.8 143.5,164.9 145.7,166.0 147.8,167.1 150.0,168.2 152.2,167.1 154.3,166.0 156.5,164.9 158.7,163.8 160.8,162.8 163.0,161.7 165.2,160.6 167.3,159.5 169.5,158.4 171.7,157.3 173.8,156.2 176.0,155.1 178.2,154.0 180.3,152.9 182.5,151.9 184.7,150.8 186.8,149.7 189.0,148.6 191.2,147.5 193.3,146.4 195.5,145.3 197.7,144.2 199.8,143.1 202.0,142.1 204.2,141.0 206.3,139.9 208.5,138.8 210.7,137.7 212.8,136.6 215.0,135.5 217.2,134.4 219.3,133.3 221.5,132.2 223.7,131.2 225.8,130.1 228.0,129.0 230.2,127.9 232.3,126.8 234.5,125.7 236.7,124.6 238.8,123.5 241.0,122.4 243.2,121.3 245.3,120.3 247.5,119.2 249.7,118.1 251.8,117.0 254.0,115.9 256.2,114.8 258.3,113.7 260.5,112.6 262.7,111.5 264.8,110.4 267.0,109.4 269.2,108.3 271.3,107.2 273.5,106.1 275.7,105.0 277.8,103.9 280.0,102.8' fill='none' stroke='#f0a30a' stroke-width='2'/><circle cx='63.3' cy='124.6' r='3.5' fill='#e8487a'/><text x='17.3' y='120.6'>(−2,2)</text><circle cx='236.7' cy='124.6' r='3.5' fill='#e8487a'/><text x='242.7' y='120.6'>(2,2)</text><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M12.0 168.2H294.0M150.0 204.0V8.0'/></g><line x1='63.3' y1='165.2' x2='63.3' y2='171.2' stroke='currentColor'/><text x='60.3' y='182.2' font-size='10'>-2</text><line x1='106.7' y1='165.2' x2='106.7' y2='171.2' stroke='currentColor'/><text x='103.7' y='182.2' font-size='10'>-1</text><line x1='193.3' y1='165.2' x2='193.3' y2='171.2' stroke='currentColor'/><text x='190.3' y='182.2' font-size='10'>1</text><line x1='236.7' y1='165.2' x2='236.7' y2='171.2' stroke='currentColor'/><text x='233.7' y='182.2' font-size='10'>2</text><line x1='147.0' y1='124.6' x2='153.0' y2='124.6' stroke='currentColor'/><text x='134.0' y='128.6' font-size='10'>2</text><line x1='147.0' y1='81.0' x2='153.0' y2='81.0' stroke='currentColor'/><text x='134.0' y='85.0' font-size='10'>4</text><line x1='147.0' y1='37.4' x2='153.0' y2='37.4' stroke='currentColor'/><text x='134.0' y='41.4' font-size='10'>6</text></svg></div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Por la simetría, calculo la mitad derecha y multiplico por 2:</p>\\[A=2\\int_0^2(6-x^2-x)\\,dx=2\\Bigl[6x-\\frac{x^3}3-\\frac{x^2}2\\Bigr]_0^2=2\\left(12-\\frac83-2\\right)=\\frac{44}3\\]<div class='res'>Área \\(=\\dfrac{44}3\\ u^2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "area",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2003-RESERVA-1.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2003-reserva-1-7",
+   "n": 7,
+   "num": 3,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Una empresa cinematográfica dispone de tres salas, A, B y C. Los precios de entrada a estas salas son de 3, 4 y 5 euros, respectivamente. Un día la recaudación conjunta de las tres salas fue de 720 euros y el número total de espectadores fue de 200. Si los espectadores de la sala A hubieran asistido a la sala B y los de la sala B a la sala A, se hubiese obtenido una recaudación de 20 euros más. Calcula el número de espectadores que acudió a cada una de las salas.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>Sean \\(a\\), \\(b\\), \\(c\\) los espectadores de las salas A, B y C:</p>\\[\\begin{cases}a+b+c=200\\\\3a+4b+5c=720\\\\3b+4a+5c=740\\end{cases}\\]<p>3.ª − 2.ª: \\(a-b=20\\). 2.ª − 5·(1.ª): \\(-2a-b=-280\\iff2a+b=280\\). Con \\(a=b+20\\): \\(3b+40=280\\iff b=80\\), \\(a=100\\), \\(c=20\\).</p><div class='res'>Sala A: 100 espectadores; sala B: 80; sala C: 20</div><i class='n' data-t='tp'>Comprobación: \\(300+320+100=720\\) y \\(400+240+100=740\\) ✓.</i></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "sistemas",
+     "tipo": "plan",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2003-RESERVA-1.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2003-reserva-1-8",
+   "n": 8,
+   "num": 4,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Halla la ecuación de una circunferencia que pase por el punto \\((-1,-8)\\) y sea tangente a los ejes coordenados.",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>Si es tangente a los dos ejes, su centro está a la misma distancia \\(r\\) de ambos, y como \\((-1,-8)\\) está en el tercer cuadrante, el centro es \\((-r,-r)\\) con radio \\(r\\):</p>\\[(x+r)^2+(y+r)^2=r^2\\]<p>Pasa por \\((-1,-8)\\):</p>\\[(r-1)^2+(r-8)^2=r^2\\iff r^2-18r+65=0\\iff r=5\\ \\text{ o }\\ r=13\\]<div style='overflow-x:auto'><svg viewBox='0 0 260 260' width='100%' style='max-width:380px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polyline points='20.0,41.3 130.0,41.3 240.0,41.3' fill='none' stroke='#94a3b8' stroke-width='2'/><line x1='218.7' y1='240.0' x2='218.7' y2='20.0' stroke='#94a3b8' stroke-width='1.4' stroke-dasharray='5 4'/><polyline points='147.7,76.8 148.3,70.3 148.9,67.7 149.5,65.7 150.1,64.0 150.7,62.6 151.3,61.3 151.9,60.1 152.5,59.1 153.1,58.1 153.7,57.2 154.2,56.3 154.8,55.5 155.4,54.7 156.0,54.0 156.6,53.3 157.2,52.6 157.8,52.0 158.4,51.4 159.0,50.9 159.6,50.3 160.2,49.8 160.8,49.3 161.3,48.8 161.9,48.4 162.5,48.0 163.1,47.5 163.7,47.1 164.3,46.8 164.9,46.4 165.5,46.0 166.1,45.7 166.7,45.4 167.3,45.1 167.8,44.8 168.4,44.5 169.0,44.3 169.6,44.0 170.2,43.8 170.8,43.5 171.4,43.3 172.0,43.1 172.6,42.9 173.2,42.7 173.8,42.6 174.4,42.4 174.9,42.3 175.5,42.1 176.1,42.0 176.7,41.9 177.3,41.8 177.9,41.7 178.5,41.6 179.1,41.5 179.7,41.5 180.3,41.4 180.9,41.4 181.5,41.3 182.0,41.3 182.6,41.3 183.2,41.3 183.8,41.3 184.4,41.3 185.0,41.3 185.6,41.4 186.2,41.4 186.8,41.5 187.4,41.5 188.0,41.6 188.5,41.7 189.1,41.8 189.7,41.9 190.3,42.0 190.9,42.1 191.5,42.3 192.1,42.4 192.7,42.6 193.3,42.7 193.9,42.9 194.5,43.1 195.1,43.3 195.6,43.5 196.2,43.8 196.8,44.0 197.4,44.3 198.0,44.5 198.6,44.8 199.2,45.1 199.8,45.4 200.4,45.7 201.0,46.0 201.6,46.4 202.2,46.8 202.7,47.1 203.3,47.5 203.9,48.0 204.5,48.4 205.1,48.8 205.7,49.3 206.3,49.8 206.9,50.3 207.5,50.9 208.1,51.4 208.7,52.0 209.2,52.6 209.8,53.3 210.4,54.0 211.0,54.7 211.6,55.5 212.2,56.3 212.8,57.2 213.4,58.1 214.0,59.1 214.6,60.1 215.2,61.3 215.8,62.6 216.3,64.0 216.9,65.7 217.5,67.7 218.1,70.3 218.7,76.8' fill='none' stroke='#2f6df0' stroke-width='2'/><polyline points='147.7,76.8 148.3,83.2 148.9,85.9 149.5,87.9 150.1,89.5 150.7,91.0 151.3,92.2 151.9,93.4 152.5,94.5 153.1,95.5 153.7,96.4 154.2,97.3 154.8,98.1 155.4,98.8 156.0,99.6 156.6,100.2 157.2,100.9 157.8,101.5 158.4,102.1 159.0,102.7 159.6,103.2 160.2,103.7 160.8,104.2 161.3,104.7 161.9,105.2 162.5,105.6 163.1,106.0 163.7,106.4 164.3,106.8 164.9,107.2 165.5,107.5 166.1,107.8 166.7,108.2 167.3,108.5 167.8,108.8 168.4,109.0 169.0,109.3 169.6,109.5 170.2,109.8 170.8,110.0 171.4,110.2 172.0,110.4 172.6,110.6 173.2,110.8 173.8,111.0 174.4,111.1 174.9,111.3 175.5,111.4 176.1,111.5 176.7,111.7 177.3,111.8 177.9,111.9 178.5,111.9 179.1,112.0 179.7,112.1 180.3,112.1 180.9,112.2 181.5,112.2 182.0,112.2 182.6,112.3 183.2,112.3 183.8,112.3 184.4,112.2 185.0,112.2 185.6,112.2 186.2,112.1 186.8,112.1 187.4,112.0 188.0,111.9 188.5,111.9 189.1,111.8 189.7,111.7 190.3,111.5 190.9,111.4 191.5,111.3 192.1,111.1 192.7,111.0 193.3,110.8 193.9,110.6 194.5,110.4 195.1,110.2 195.6,110.0 196.2,109.8 196.8,109.5 197.4,109.3 198.0,109.0 198.6,108.8 199.2,108.5 199.8,108.2 200.4,107.8 201.0,107.5 201.6,107.2 202.2,106.8 202.7,106.4 203.3,106.0 203.9,105.6 204.5,105.2 205.1,104.7 205.7,104.2 206.3,103.7 206.9,103.2 207.5,102.7 208.1,102.1 208.7,101.5 209.2,100.9 209.8,100.2 210.4,99.6 211.0,98.8 211.6,98.1 212.2,97.3 212.8,96.4 213.4,95.5 214.0,94.5 214.6,93.4 215.2,92.2 215.8,91.0 216.3,89.5 216.9,87.9 217.5,85.9 218.1,83.2 218.7,76.8' fill='none' stroke='#2f6df0' stroke-width='2'/><polyline points='34.2,133.5 35.7,116.8 37.3,109.9 38.8,104.7 40.3,100.4 41.9,96.7 43.4,93.3 45.0,90.3 46.5,87.5 48.0,84.9 49.6,82.6 51.1,80.3 52.6,78.2 54.2,76.2 55.7,74.3 57.3,72.5 58.8,70.8 60.3,69.2 61.9,67.7 63.4,66.2 64.9,64.8 66.5,63.4 68.0,62.2 69.6,60.9 71.1,59.7 72.6,58.6 74.2,57.5 75.7,56.5 77.2,55.5 78.8,54.6 80.3,53.7 81.9,52.8 83.4,52.0 84.9,51.2 86.5,50.4 88.0,49.7 89.5,49.0 91.1,48.3 92.6,47.7 94.2,47.1 95.7,46.6 97.2,46.0 98.8,45.5 100.3,45.1 101.8,44.6 103.4,44.2 104.9,43.8 106.5,43.5 108.0,43.2 109.5,42.9 111.1,42.6 112.6,42.3 114.2,42.1 115.7,41.9 117.2,41.8 118.8,41.6 120.3,41.5 121.8,41.4 123.4,41.3 124.9,41.3 126.5,41.3 128.0,41.3 129.5,41.3 131.1,41.4 132.6,41.5 134.1,41.6 135.7,41.8 137.2,41.9 138.8,42.1 140.3,42.3 141.8,42.6 143.4,42.9 144.9,43.2 146.4,43.5 148.0,43.8 149.5,44.2 151.1,44.6 152.6,45.1 154.1,45.5 155.7,46.0 157.2,46.6 158.7,47.1 160.3,47.7 161.8,48.3 163.4,49.0 164.9,49.7 166.4,50.4 168.0,51.2 169.5,52.0 171.0,52.8 172.6,53.7 174.1,54.6 175.7,55.5 177.2,56.5 178.7,57.5 180.3,58.6 181.8,59.7 183.3,60.9 184.9,62.2 186.4,63.4 188.0,64.8 189.5,66.2 191.0,67.7 192.6,69.2 194.1,70.8 195.6,72.5 197.2,74.3 198.7,76.2 200.3,78.2 201.8,80.3 203.3,82.6 204.9,84.9 206.4,87.5 207.9,90.3 209.5,93.3 211.0,96.7 212.6,100.4 214.1,104.7 215.6,109.9 217.2,116.8 218.7,133.5' fill='none' stroke='#16a34a' stroke-width='2'/><polyline points='34.2,133.5 35.7,150.3 37.3,157.2 38.8,162.4 40.3,166.7 41.9,170.4 43.4,173.8 45.0,176.8 46.5,179.6 48.0,182.1 49.6,184.5 51.1,186.8 52.6,188.9 54.2,190.9 55.7,192.8 57.3,194.6 58.8,196.3 60.3,197.9 61.9,199.4 63.4,200.9 64.9,202.3 66.5,203.7 68.0,204.9 69.6,206.2 71.1,207.4 72.6,208.5 74.2,209.6 75.7,210.6 77.2,211.6 78.8,212.5 80.3,213.4 81.9,214.3 83.4,215.1 84.9,215.9 86.5,216.7 88.0,217.4 89.5,218.1 91.1,218.8 92.6,219.4 94.2,220.0 95.7,220.5 97.2,221.1 98.8,221.6 100.3,222.0 101.8,222.5 103.4,222.9 104.9,223.3 106.5,223.6 108.0,223.9 109.5,224.2 111.1,224.5 112.6,224.8 114.2,225.0 115.7,225.2 117.2,225.3 118.8,225.5 120.3,225.6 121.8,225.7 123.4,225.8 124.9,225.8 126.5,225.8 128.0,225.8 129.5,225.8 131.1,225.7 132.6,225.6 134.1,225.5 135.7,225.3 137.2,225.2 138.8,225.0 140.3,224.8 141.8,224.5 143.4,224.2 144.9,223.9 146.4,223.6 148.0,223.3 149.5,222.9 151.1,222.5 152.6,222.0 154.1,221.6 155.7,221.1 157.2,220.5 158.7,220.0 160.3,219.4 161.8,218.8 163.4,218.1 164.9,217.4 166.4,216.7 168.0,215.9 169.5,215.1 171.0,214.3 172.6,213.4 174.1,212.5 175.7,211.6 177.2,210.6 178.7,209.6 180.3,208.5 181.8,207.4 183.3,206.2 184.9,204.9 186.4,203.7 188.0,202.3 189.5,200.9 191.0,199.4 192.6,197.9 194.1,196.3 195.6,194.6 197.2,192.8 198.7,190.9 200.3,188.9 201.8,186.8 203.3,184.5 204.9,182.1 206.4,179.6 207.9,176.8 209.5,173.8 211.0,170.4 212.6,166.7 214.1,162.4 215.6,157.2 217.2,150.3 218.7,133.5' fill='none' stroke='#16a34a' stroke-width='2'/><circle cx='211.6' cy='98.1' r='3.5' fill='#e8487a'/><text x='217.6' y='102.1'>(−1,−8)</text><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M12.0 41.3H254.0M218.7 254.0V8.0'/></g><line x1='34.2' y1='38.3' x2='34.2' y2='44.3' stroke='currentColor'/><text x='31.2' y='55.3' font-size='10'>-26</text><line x1='126.5' y1='38.3' x2='126.5' y2='44.3' stroke='currentColor'/><text x='123.5' y='55.3' font-size='10'>-13</text><line x1='183.2' y1='38.3' x2='183.2' y2='44.3' stroke='currentColor'/><text x='180.2' y='55.3' font-size='10'>-5</text><line x1='215.7' y1='225.8' x2='221.7' y2='225.8' stroke='currentColor'/><text x='202.7' y='229.8' font-size='10'>-26</text><line x1='215.7' y1='133.5' x2='221.7' y2='133.5' stroke='currentColor'/><text x='202.7' y='137.5' font-size='10'>-13</text><line x1='215.7' y1='76.8' x2='221.7' y2='76.8' stroke='currentColor'/><text x='202.7' y='80.8' font-size='10'>-5</text></svg></div><div class='res'>Hay dos: \\((x+5)^2+(y+5)^2=25\\) y \\((x+13)^2+(y+13)^2=169\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "lug",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2003-RESERVA-1.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  }
+ ]
+}

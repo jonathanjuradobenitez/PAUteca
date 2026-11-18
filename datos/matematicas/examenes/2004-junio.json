@@ -1,0 +1,337 @@
+{
+ "version": 1,
+ "id": "matematicas-2004-junio",
+ "asignatura": "matematicas",
+ "anio": 2004,
+ "convocatoria": "Junio",
+ "documento": "MAT-2004-JUNIO.pdf",
+ "ejercicios": [
+  {
+   "id": "matematicas-2004-junio-1",
+   "n": 1,
+   "num": 1,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "De la función \\(f:(-1,+\\infty)\\to\\mathbb R\\) se sabe que \\(f'(x)=\\dfrac3{(x+1)^2}\\) y que \\(f(2)=0\\).",
+    "apartados": [
+     "(1,25 p.) Determina \\(f\\).",
+     "(1,25 p.) Halla la primitiva de \\(f\\) cuya gráfica pasa por el punto \\((0,1)\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'>\\[f(x)=\\int\\frac3{(x+1)^2}dx=3\\int(x+1)^{-2}dx=-\\frac3{x+1}+C\\]<p>\\(f(2)=-1+C=0\\iff C=1\\).</p><div class='res'>\\(f(x)=1-\\dfrac3{x+1}=\\dfrac{x-2}{x+1}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'>\\[F(x)=\\int\\left(1-\\frac3{x+1}\\right)dx=x-3\\ln(x+1)+K\\]<p>(\\(x+1\\gt0\\) en el dominio, así que no hace falta el valor absoluto.) \\(F(0)=0-3\\ln1+K=1\\iff K=1\\).</p><div class='res'>\\(F(x)=x-3\\ln(x+1)+1\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "pcond",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "integ",
+     "tipo": "prim",
+     "apartados": "a, b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2004-JUNIO.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2004-junio-2",
+   "n": 2,
+   "num": 2,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera la función \\(f:\\mathbb R\\to\\mathbb R\\) definida por \\(f(x)=(x+1)(x-1)(x-2)\\).",
+    "apartados": [
+     "(1 p.) Halla las ecuaciones de las rectas tangente y normal a la gráfica de \\(f\\) en el punto de abscisa \\(x=1\\).",
+     "(1,5 p.) Determina los intervalos de concavidad y de convexidad de \\(f\\). ¿Tiene puntos de inflexión la gráfica de \\(f\\)?"
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'>\\[f(x)=(x^2-1)(x-2)=x^3-2x^2-x+2,\\qquad f'(x)=3x^2-4x-1\\]\\[f(1)=0,\\qquad f'(1)=3-4-1=-2\\]<p>Tangente: \\(y=-2(x-1)\\). Normal (pendiente \\(-\\frac1{f'(1)}=\\frac12\\)): \\(y=\\frac12(x-1)\\).</p><div class='res'>Tangente \\(y=-2x+2\\); normal \\(y=\\dfrac12x-\\dfrac12\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'>\\[f''(x)=6x-4=0\\iff\\boxed{x=\\frac23}\\]<div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 192 108' width='100%' style='max-width:230px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H178' stroke='currentColor' stroke-width='1.6'/><path d='M96 46V58' stroke='currentColor' stroke-width='1.6'/><text x='96' y='76' text-anchor='middle' font-weight='700'>2/3</text><text x='29.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#e8487a'>−</text><path d='M51.0 40Q67.0 4 83.0 40' stroke='#e8487a' stroke-width='2.2' fill='none'/><text x='55.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>″(0) &lt; 0</text><text x='111.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#17a673'>+</text><path d='M133.0 12Q149.0 48 165.0 12' stroke='#17a673' stroke-width='2.2' fill='none'/><text x='137.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>″(1) &gt; 0</text></svg></div><p>\\(f''\\) cambia de signo en \\(x=\\frac23\\): hay punto de inflexión, con \\(f\\left(\\frac23\\right)=\\frac8{27}-\\frac89-\\frac23+2=\\frac{20}{27}\\).</p><div class='res'>Cóncava en \\(\\left(-\\infty,\\frac23\\right)\\), convexa en \\(\\left(\\frac23,+\\infty\\right)\\). Punto de inflexión \\(\\left(\\frac23,\\frac{20}{27}\\right)\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "tang",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "curv",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2004-JUNIO.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2004-junio-3",
+   "n": 3,
+   "num": 3,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera el sistema de ecuaciones \\[\\begin{cases}mx-y=1\\\\x-my=2m-1\\end{cases}\\]",
+    "apartados": [
+     "(1,5 p.) Clasifica el sistema según los valores de \\(m\\).",
+     "(1 p.) Calcula los valores de \\(m\\) para los que el sistema tiene una solución en la que \\(x=3\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'>\\[A^*=\\left(\\begin{array}{cc|c}m&-1&1\\\\1&-m&2m-1\\end{array}\\right),\\qquad|A|=-m^2+1=0\\iff m=\\pm1\\]<p>Uso el teorema de Rouché-Frobenius<i class='n' data-t='th'>Rouché-Frobenius: el sistema es compatible si y solo si \\(\\operatorname{rg}A=\\operatorname{rg}A^*\\); determinado si ese rango es el número de incógnitas, indeterminado si es menor.</i>.</p><p><b>• Si </b>\\(m\\neq\\pm1\\)<b>:</b> \\(\\operatorname{rg}A=\\operatorname{rg}A^*=2\\): compatible determinado.</p><p><b>• Si </b>\\(m=1\\)<b>:</b> las dos ecuaciones son \\(x-y=1\\): \\(\\operatorname{rg}A=\\operatorname{rg}A^*=1\\), compatible indeterminado.</p><p><b>• Si </b>\\(m=-1\\)<b>:</b> \\(-x-y=1\\) y \\(x+y=-3\\), es decir, \\(x+y=-1\\) y \\(x+y=-3\\): incompatible.</p><div class='res'>Si \\(m\\neq\\pm1\\): compatible determinado. Si \\(m=1\\): compatible indeterminado. Si \\(m=-1\\): incompatible</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Con \\(x=3\\), de la 1.ª: \\(y=3m-1\\). En la 2.ª:</p>\\[3-m(3m-1)=2m-1\\iff3m^2+m-4=0\\iff m=1\\ \\text{ o }\\ m=-\\frac43\\]<p>Con \\(m=1\\) (indeterminado) la solución \\((3,2)\\) es una de las infinitas; con \\(m=-\\frac43\\) es la única, \\(\\left(3,-5\\right)\\).</p><div class='res'>\\(m=1\\) y \\(m=-\\dfrac43\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "sistemas",
+     "tipo": "disc",
+     "apartados": "a"
+    },
+    {
+     "tema": "sistemas",
+     "tipo": "res",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2004-JUNIO.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2004-junio-4",
+   "n": 4,
+   "num": 4,
+   "bloque": "Opción A",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Sean los puntos \\(A(1,2,1)\\), \\(B(2,3,1)\\), \\(C(0,5,3)\\) y \\(D(-1,4,3)\\).",
+    "apartados": [
+     "(1 p.) Prueba que los cuatro puntos están en el mismo plano. Halla la ecuación de dicho plano.",
+     "(0,75 p.) Demuestra que el polígono de vértices consecutivos \\(ABCD\\) es un rectángulo.",
+     "(0,75 p.) Calcula el área de dicho rectángulo."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'>\\[\\overrightarrow{AB}=(1,1,0),\\quad\\overrightarrow{AC}=(-1,3,2),\\quad\\overrightarrow{AD}=(-2,2,2)\\]<p>Los cuatro puntos son coplanarios si estos vectores son linealmente dependientes. Por la regla de Sarrus<i class='n' data-t='th'>Regla de Sarrus: se suman los productos de la diagonal principal y de los dos triángulos con un lado paralelo a ella (en verde) y se restan los de la diagonal secundaria y sus dos triángulos (en rojo).<span style='display:block;margin:6px 0 0'><svg viewBox='0 0 206 106' width='100%' style='max-width:230px' font-family='system-ui,sans-serif'><text x='0' y='30' font-size='20' font-weight='700' fill='#17a673'>+</text><text x='0' y='86' font-size='20' font-weight='700' fill='#e8487a'>−</text><polygon points='26,10 41,25 56,40' fill='#17a673' fill-opacity='.15' stroke='#17a673' stroke-width='1.8' stroke-linejoin='round'/><circle cx='26' cy='10' r='3.6' fill='#17a673'/><circle cx='41' cy='10' r='2.2' fill='#9ca3af'/><circle cx='56' cy='10' r='2.2' fill='#9ca3af'/><circle cx='26' cy='25' r='2.2' fill='#9ca3af'/><circle cx='41' cy='25' r='3.6' fill='#17a673'/><circle cx='56' cy='25' r='2.2' fill='#9ca3af'/><circle cx='26' cy='40' r='2.2' fill='#9ca3af'/><circle cx='41' cy='40' r='2.2' fill='#9ca3af'/><circle cx='56' cy='40' r='3.6' fill='#17a673'/><polygon points='103,10 118,25 88,40' fill='#17a673' fill-opacity='.15' stroke='#17a673' stroke-width='1.8' stroke-linejoin='round'/><circle cx='88' cy='10' r='2.2' fill='#9ca3af'/><circle cx='103' cy='10' r='3.6' fill='#17a673'/><circle cx='118' cy='10' r='2.2' fill='#9ca3af'/><circle cx='88' cy='25' r='2.2' fill='#9ca3af'/><circle cx='103' cy='25' r='2.2' fill='#9ca3af'/><circle cx='118' cy='25' r='3.6' fill='#17a673'/><circle cx='88' cy='40' r='3.6' fill='#17a673'/><circle cx='103' cy='40' r='2.2' fill='#9ca3af'/><circle cx='118' cy='40' r='2.2' fill='#9ca3af'/><polygon points='180,10 150,25 165,40' fill='#17a673' fill-opacity='.15' stroke='#17a673' stroke-width='1.8' stroke-linejoin='round'/><circle cx='150' cy='10' r='2.2' fill='#9ca3af'/><circle cx='165' cy='10' r='2.2' fill='#9ca3af'/><circle cx='180' cy='10' r='3.6' fill='#17a673'/><circle cx='150' cy='25' r='3.6' fill='#17a673'/><circle cx='165' cy='25' r='2.2' fill='#9ca3af'/><circle cx='180' cy='25' r='2.2' fill='#9ca3af'/><circle cx='150' cy='40' r='2.2' fill='#9ca3af'/><circle cx='165' cy='40' r='3.6' fill='#17a673'/><circle cx='180' cy='40' r='2.2' fill='#9ca3af'/><polygon points='56,66 41,81 26,96' fill='#e8487a' fill-opacity='.15' stroke='#e8487a' stroke-width='1.8' stroke-linejoin='round'/><circle cx='26' cy='66' r='2.2' fill='#9ca3af'/><circle cx='41' cy='66' r='2.2' fill='#9ca3af'/><circle cx='56' cy='66' r='3.6' fill='#e8487a'/><circle cx='26' cy='81' r='2.2' fill='#9ca3af'/><circle cx='41' cy='81' r='3.6' fill='#e8487a'/><circle cx='56' cy='81' r='2.2' fill='#9ca3af'/><circle cx='26' cy='96' r='3.6' fill='#e8487a'/><circle cx='41' cy='96' r='2.2' fill='#9ca3af'/><circle cx='56' cy='96' r='2.2' fill='#9ca3af'/><polygon points='88,66 118,81 103,96' fill='#e8487a' fill-opacity='.15' stroke='#e8487a' stroke-width='1.8' stroke-linejoin='round'/><circle cx='88' cy='66' r='3.6' fill='#e8487a'/><circle cx='103' cy='66' r='2.2' fill='#9ca3af'/><circle cx='118' cy='66' r='2.2' fill='#9ca3af'/><circle cx='88' cy='81' r='2.2' fill='#9ca3af'/><circle cx='103' cy='81' r='2.2' fill='#9ca3af'/><circle cx='118' cy='81' r='3.6' fill='#e8487a'/><circle cx='88' cy='96' r='2.2' fill='#9ca3af'/><circle cx='103' cy='96' r='3.6' fill='#e8487a'/><circle cx='118' cy='96' r='2.2' fill='#9ca3af'/><polygon points='165,66 150,81 180,96' fill='#e8487a' fill-opacity='.15' stroke='#e8487a' stroke-width='1.8' stroke-linejoin='round'/><circle cx='150' cy='66' r='2.2' fill='#9ca3af'/><circle cx='165' cy='66' r='3.6' fill='#e8487a'/><circle cx='180' cy='66' r='2.2' fill='#9ca3af'/><circle cx='150' cy='81' r='3.6' fill='#e8487a'/><circle cx='165' cy='81' r='2.2' fill='#9ca3af'/><circle cx='180' cy='81' r='2.2' fill='#9ca3af'/><circle cx='150' cy='96' r='2.2' fill='#9ca3af'/><circle cx='165' cy='96' r='2.2' fill='#9ca3af'/><circle cx='180' cy='96' r='3.6' fill='#e8487a'/></svg></span></i>:</p>\\[[\\overrightarrow{AB},\\overrightarrow{AC},\\overrightarrow{AD}]=\\begin{vmatrix}1&1&0\\\\-1&3&2\\\\-2&2&2\\end{vmatrix}\\]\\[=\\bigl(6-4+0\\bigr)-\\bigl(0+4-2\\bigr)\\]\\[=0\\]\\[\\vec n=\\overrightarrow{AB}\\times\\overrightarrow{AD}=\\begin{vmatrix}\\vec i&\\vec j&\\vec k\\\\1&1&0\\\\-2&2&2\\end{vmatrix}=(2,\\,-2,\\,4)\\parallel(1,-1,2)\\]<p>Plano \\(x-y+2z+D=0\\) por \\(A\\): \\(1-2+2+D=0\\iff D=-1\\).</p><div class='res'>Son coplanarios; el plano es \\(x-y+2z-1=0\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'>\\[\\overrightarrow{AB}=(1,1,0)=\\overrightarrow{DC},\\qquad\\overrightarrow{AB}\\cdot\\overrightarrow{AD}=-2+2+0=0\\]<p>Los lados opuestos \\(AB\\) y \\(DC\\) son iguales y paralelos: es un paralelogramo. Además el ángulo en \\(A\\) es recto, así que es un rectángulo.</p><div class='f3d' data-f='{\"az\":-42,\"el\":52,\"p\":[[\"poly\",[[1,2,1],[2,3,1],[0,5,3],[-1,4,3]],\"#f59e0b\",\"#b45309\"],[\"line\",[1.247,2.247,1.0],[1.045,2.45,1.202],\"#475569\",1.3,false],[\"line\",[1.045,2.45,1.202],[0.798,2.202,1.202],\"#475569\",1.3,false],[\"pt\",[1,2,1],\"A\",7,-6],[\"pt\",[2,3,1],\"B\",7,-6],[\"pt\",[0,5,3],\"C\",7,-6],[\"pt\",[-1,4,3],\"D\",7,-6]],\"ley\":[\"plano\",\"puntos\"]}' style='overflow-x:auto'><svg viewBox='0 0 340 300' width='100%' style='max-width:440px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><defs><marker id='m04ja4n' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#dc2626'/></marker><marker id='m04ja4d' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#16a34a'/></marker><marker id='m04ja4g' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#64748b'/></marker><marker id='m04ja4r' viewBox='0 0 10 10' refX='9' refY='5' markerWidth='7' markerHeight='7' orient='auto'><path d='M0 0L10 5L0 10z' fill='#2563eb'/></marker></defs><polygon points='26.0,242.2 117.6,246.0 127.2,21.8 35.6,18.0' fill='#f59e0b' fill-opacity='.26' stroke='#b45309' stroke-width='1.2'/><line x1='48.7' y1='243.2' x2='49.6' y2='220.5' stroke='#475569' stroke-width='1.3'/><line x1='49.6' y1='220.5' x2='27.0' y2='219.6' stroke='#475569' stroke-width='1.3'/><circle cx='26.0' cy='242.2' r='3.8' fill='#e8487a'/><text x='33.0' y='236.2' font-weight='700'>A</text><circle cx='117.6' cy='246.0' r='3.8' fill='#e8487a'/><text x='124.6' y='240.0' font-weight='700'>B</text><circle cx='127.2' cy='21.8' r='3.8' fill='#e8487a'/><text x='134.2' y='15.8' font-weight='700'>C</text><circle cx='35.6' cy='18.0' r='3.8' fill='#e8487a'/><text x='42.6' y='12.0' font-weight='700'>D</text><line x1='24' y1='270' x2='34.7' y2='279.4' stroke='#64748b' stroke-width='1.2'/><text x='35.5' y='286.6' fill='#64748b' font-size='10'>x</text><line x1='24' y1='270' x2='35.9' y2='261.6' stroke='#64748b' stroke-width='1.2'/><text x='37.1' y='262.6' fill='#64748b' font-size='10'>y</text><line x1='24' y1='270' x2='24.0' y2='260.1' stroke='#64748b' stroke-width='1.2'/><text x='21.0' y='260.7' fill='#64748b' font-size='10'>z</text><g transform='translate(56.0,292)'><rect x='0' y='-8' width='12' height='9' fill='#8b5cf6' fill-opacity='.4' stroke='#7c3aed'/><text x='18' y='0' font-size='10'>plano</text></g><g transform='translate(106.5,292)'><circle cx='6' cy='-4' r='3.8' fill='#e8487a'/><text x='18' y='0' font-size='10'>puntos</text></g></svg><p class='mut' style='font-size:.8rem;margin:.2rem 0;text-align:center'>Figura interactiva: arrástrala para girarla en 3D.</p></div><div class='res'>\\(ABCD\\) es un rectángulo</div></div>"
+    },
+    {
+     "titulo": "Apartado c",
+     "html": "<div class='ex'>\\[|\\overrightarrow{AB}|=\\sqrt2,\\qquad|\\overrightarrow{AD}|=\\sqrt{4+4+4}=2\\sqrt3,\\qquad\\text{Área}=\\sqrt2\\cdot2\\sqrt3=2\\sqrt6\\]<div class='res'>Área \\(=2\\sqrt6\\approx4{,}90\\ u^2\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "vec",
+     "apartados": "a, b"
+    },
+    {
+     "tema": "geom",
+     "tipo": "ecs",
+     "apartados": "a"
+    },
+    {
+     "tema": "geom",
+     "tipo": "area",
+     "apartados": "c"
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2004-JUNIO.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2004-junio-5",
+   "n": 5,
+   "num": 1,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Se sabe que la función \\(f:(-1,+\\infty)\\to\\mathbb R\\) definida por \\[f(x)=\\begin{cases}x^2-4x+3&\\text{si }-1\\lt x\\lt0\\\\[1mm]\\dfrac{x^2+a}{x+1}&\\text{si }x\\geq0\\end{cases}\\] es continua en \\((-1,+\\infty)\\).",
+    "apartados": [
+     "(1,25 p.) Halla el valor de \\(a\\). ¿Es \\(f\\) derivable en \\(x=0\\)?",
+     "(1,25 p.) Determina los intervalos de crecimiento y de decrecimiento de \\(f\\)."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'><p>Cada trozo es continuo en su intervalo (en el segundo, \\(x+1\\gt0\\)). En \\(x=0\\):</p>\\[\\lim_{x\\to0^-}(x^2-4x+3)=3,\\qquad\\lim_{x\\to0^+}\\frac{x^2+a}{x+1}=a=f(0)\\ \\Rightarrow\\ a=3\\]\\[f'(x)=\\begin{cases}2x-4&-1\\lt x\\lt0\\\\[1mm]\\dfrac{2x(x+1)-(x^2+3)}{(x+1)^2}=\\dfrac{x^2+2x-3}{(x+1)^2}&x\\gt0\\end{cases}\\qquad f'(0^-)=-4,\\quad f'(0^+)=-3\\]<div class='res'>\\(a=3\\). \\(f\\) no es derivable en \\(x=0\\) (derivadas laterales distintas)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>El dominio empieza en \\(-1\\)<i class='n' data-t='why'>Rayamos la parte de la recta que queda fuera del dominio: ahí la función no está definida y no se estudia.</i> y \\(x=0\\) es un punto «problemático»<i class='n' data-t='why'>Los puntos «problemáticos» son los que no pertenecen al dominio (por ejemplo, los que anulan un denominador) y los puntos donde cambia la expresión de una función a trozos. Hay que marcarlos en la recta porque en ellos también puede cambiar el signo de la derivada.</i>. En \\((-1,0)\\), \\(2x-4\\neq0\\); en \\(x\\gt0\\), \\(x^2+2x-3=(x+3)(x-1)=0\\iff\\boxed{x=1}\\). Signo de \\(f'\\)<i class='n' data-t='tp'>Dentro de cada intervalo la derivada no cambia de signo, así que basta sustituir un valor cualquiera del intervalo para conocer su signo.</i>:</p><div class='rs' style='overflow-x:auto;margin:.35rem 0'><svg viewBox='0 0 284 108' width='100%' style='max-width:341px;display:block;margin:auto' font-family='system-ui,sans-serif' font-size='14.5' fill='currentColor'><path d='M14 52H270' stroke='currentColor' stroke-width='1.6'/><path d='M14 56L18 48M18 56L22 48M22 56L26 48M26 56L30 48M30 56L34 48M34 56L38 48' stroke='currentColor' stroke-width='1.1'/><path d='M40 46V58' stroke='currentColor' stroke-width='1.6'/><text x='40' y='76' text-anchor='middle' font-weight='700'>−1</text><path d='M114 46V58' stroke='currentColor' stroke-width='1.6'/><text x='114' y='76' text-anchor='middle' font-weight='700'>0</text><path d='M188 46V58' stroke='currentColor' stroke-width='1.6'/><text x='188' y='76' text-anchor='middle' font-weight='700'>1</text><text x='51.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#e8487a'>−</text><path d='M65.0 10L101.0 40' stroke='#e8487a' stroke-width='2' fill='none'/><path d='M92.0 39L101.0 40L99.0 31' stroke='#e8487a' stroke-width='2' fill='none'/><text x='77.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(−½) &lt; 0</text><text x='125.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#e8487a'>−</text><path d='M139.0 10L175.0 40' stroke='#e8487a' stroke-width='2' fill='none'/><path d='M166.0 39L175.0 40L173.0 31' stroke='#e8487a' stroke-width='2' fill='none'/><text x='151.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(½) &lt; 0</text><text x='203.0' y='22' text-anchor='middle' font-size='22' font-weight='700' fill='#17a673'>+</text><path d='M217.0 40L253.0 10' stroke='#17a673' stroke-width='2' fill='none'/><path d='M244.0 11L253.0 10L251.0 19' stroke='#17a673' stroke-width='2' fill='none'/><text x='229.0' y='99' text-anchor='middle'><tspan font-style='italic' font-family='Georgia,serif'>f</tspan>′(2) &gt; 0</text></svg></div><p>\\(f\\) decrece en \\((-1,1)\\) debido a que \\(f'(x)\\lt0\\) (y es continua en 0), y crece en \\((1,+\\infty)\\) debido a que \\(f'(x)\\gt0\\)<i class='n' data-t='th'>Si \\(f'\\gt0\\) en un intervalo, \\(f\\) crece en él; si \\(f'\\lt0\\), decrece.</i>. (Mínimo en \\(x=1\\), \\(f(1)=2\\).)</p><div class='res'>Decrece en \\((-1,1)\\) y crece en \\((1,+\\infty)\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "funciones",
+     "tipo": "cont",
+     "apartados": "a"
+    },
+    {
+     "tema": "funciones",
+     "tipo": "mono",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2004-JUNIO.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2004-junio-6",
+   "n": 6,
+   "num": 2,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Determina \\(b\\) sabiendo que \\(b\\gt0\\) y que el área de la región limitada por la curva \\(y=x^2\\) y la recta \\(y=bx\\) es igual a \\(\\frac92\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>Cortes: \\(x^2=bx\\iff x=0\\) o \\(x=b\\). Entre ellos (con \\(b\\gt0\\)) la recta va por encima (dibujo con \\(b=3\\)):</p><div style='overflow-x:auto'><svg viewBox='0 0 300 200' width='100%' style='max-width:380px' font-family='system-ui,sans-serif' font-size='11' fill='currentColor'><polygon points='65.2,167.9 69.5,164.5 73.7,161.1 77.9,157.7 82.2,154.3 86.4,150.9 90.7,147.5 94.9,144.2 99.1,140.8 103.4,137.4 107.6,134.0 111.8,130.6 116.1,127.2 120.3,123.8 124.6,120.4 128.8,117.0 133.0,113.6 137.3,110.2 141.5,106.8 145.8,103.4 150.0,100.0 154.2,96.6 158.5,93.2 162.7,89.8 167.0,86.4 171.2,83.0 175.4,79.6 179.7,76.2 183.9,72.8 188.2,69.4 192.4,66.0 196.6,62.6 200.9,59.2 205.1,55.8 209.3,52.5 213.6,49.1 217.8,45.7 222.1,42.3 226.3,38.9 230.5,35.5 234.8,32.1 234.8,32.1 230.5,38.8 226.3,45.3 222.1,51.7 217.8,57.9 213.6,63.9 209.3,69.8 205.1,75.5 200.9,81.0 196.6,86.3 192.4,91.5 188.2,96.5 183.9,101.4 179.7,106.0 175.4,110.5 171.2,114.9 167.0,119.0 162.7,123.0 158.5,126.8 154.2,130.5 150.0,134.0 145.8,137.3 141.5,140.4 137.3,143.4 133.0,146.2 128.8,148.8 124.6,151.3 120.3,153.6 116.1,155.7 111.8,157.7 107.6,159.4 103.4,161.0 99.1,162.5 94.9,163.8 90.7,164.9 86.4,165.8 82.2,166.6 77.9,167.2 73.7,167.6 69.5,167.8 65.2,167.9' fill='#b9a4f5' fill-opacity='.55'/><polyline points='25.7,160.5 29.3,161.8 33.0,163.0 36.7,164.1 40.3,165.0 44.0,165.8 47.7,166.5 51.4,167.0 55.0,167.4 58.7,167.7 62.4,167.9 66.1,167.9 69.7,167.8 73.4,167.6 77.1,167.3 80.8,166.8 84.4,166.2 88.1,165.4 91.8,164.6 95.5,163.6 99.1,162.5 102.8,161.2 106.5,159.9 110.2,158.4 113.8,156.8 117.5,155.0 121.2,153.1 124.8,151.1 128.5,149.0 132.2,146.7 135.9,144.3 139.5,141.8 143.2,139.2 146.9,136.4 150.6,133.5 154.2,130.5 157.9,127.3 161.6,124.0 165.3,120.6 168.9,117.1 172.6,113.4 176.3,109.6 180.0,105.7 183.6,101.7 187.3,97.5 191.0,93.2 194.7,88.8 198.3,84.2 202.0,79.5 205.7,74.7 209.3,69.8 213.0,64.7 216.7,59.5 220.4,54.2 224.0,48.7 227.7,43.2 231.4,37.5 235.1,31.6 238.7,25.7 242.4,19.6 246.1,13.4' fill='none' stroke='#2f6df0' stroke-width='2'/><polyline points='53.9,177.0 150.0,100.0 246.1,23.0' fill='none' stroke='#f0a30a' stroke-width='2'/><circle cx='234.8' cy='32.1' r='3.5' fill='#e8487a'/><text x='188.8' y='28.1'>(b,b²)</text><g stroke='currentColor' fill='none' stroke-width='1.2'><path d='M12.0 167.9H294.0M65.2 194.0V8.0'/></g><line x1='121.7' y1='164.9' x2='121.7' y2='170.9' stroke='currentColor'/><text x='118.7' y='181.9' font-size='10'>1</text><line x1='178.3' y1='164.9' x2='178.3' y2='170.9' stroke='currentColor'/><text x='175.3' y='181.9' font-size='10'>2</text><line x1='234.8' y1='164.9' x2='234.8' y2='170.9' stroke='currentColor'/><text x='231.8' y='181.9' font-size='10'>3</text><line x1='62.2' y1='122.6' x2='68.2' y2='122.6' stroke='currentColor'/><text x='49.2' y='126.6' font-size='10'>3</text><line x1='62.2' y1='77.4' x2='68.2' y2='77.4' stroke='currentColor'/><text x='49.2' y='81.4' font-size='10'>6</text><line x1='62.2' y1='32.1' x2='68.2' y2='32.1' stroke='currentColor'/><text x='49.2' y='36.1' font-size='10'>9</text></svg></div>\\[A=\\int_0^b(bx-x^2)\\,dx=\\Bigl[\\frac{bx^2}2-\\frac{x^3}3\\Bigr]_0^b=\\frac{b^3}2-\\frac{b^3}3=\\frac{b^3}6\\]\\[\\frac{b^3}6=\\frac92\\iff b^3=27\\iff b=3\\]<div class='res'>\\(b=3\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "integ",
+     "tipo": "area",
+     "apartados": ""
+    },
+    {
+     "tema": "integ",
+     "tipo": "def",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2004-JUNIO.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2004-junio-7",
+   "n": 7,
+   "num": 3,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Considera las matrices \\(A=\\begin{pmatrix}1&0&1\\\\0&1&2\\end{pmatrix}\\), \\(B=\\begin{pmatrix}1&0\\\\0&1\\\\0&0\\end{pmatrix}\\) y \\(C=\\begin{pmatrix}1&0\\\\0&2\\\\1&0\\end{pmatrix}\\).",
+    "apartados": [
+     "(1,25 p.) Calcula \\(A\\cdot B\\), \\(A\\cdot C\\), \\(A^t\\cdot B^t\\) y \\(C^t\\cdot A^t\\), siendo \\(A^t\\), \\(B^t\\) y \\(C^t\\) las matrices transpuestas de \\(A\\), \\(B\\) y \\(C\\), respectivamente.",
+     "(1,25 p.) Razona cuáles de las matrices \\(A\\), \\(B\\), \\(C\\) y \\(A\\cdot B\\) tienen matriz inversa y en los casos en que la respuesta sea afirmativa, halla la correspondiente matriz inversa."
+    ]
+   },
+   "solucion": [
+    {
+     "titulo": "Apartado a",
+     "html": "<div class='ex'>\\[A\\cdot B=\\begin{pmatrix}1 & 0 & 1\\\\0 & 1 & 2\\end{pmatrix}\\begin{pmatrix}1 & 0\\\\0 & 1\\\\0 & 0\\end{pmatrix}=\\begin{pmatrix}1 & 0\\\\0 & 1\\end{pmatrix}=I,\\qquad A\\cdot C=\\begin{pmatrix}1 & 0 & 1\\\\0 & 1 & 2\\end{pmatrix}\\begin{pmatrix}1 & 0\\\\0 & 2\\\\1 & 0\\end{pmatrix}=\\begin{pmatrix}2 & 0\\\\2 & 2\\end{pmatrix}\\]<p>Por la propiedad \\((MN)^t=N^tM^t\\)<i class='n' data-t='th'>La traspuesta de un producto es el producto de las traspuestas en orden inverso: \\((MN)^t=N^tM^t\\).</i>: \\(A^tB^t=(BA)^t\\) y \\(C^tA^t=(AC)^t\\).</p>\\[BA=\\begin{pmatrix}1 & 0 & 1\\\\0 & 1 & 2\\\\0 & 0 & 0\\end{pmatrix}\\Rightarrow A^tB^t=\\begin{pmatrix}1 & 0 & 0\\\\0 & 1 & 0\\\\1 & 2 & 0\\end{pmatrix},\\qquad C^tA^t=(AC)^t=\\begin{pmatrix}2 & 2\\\\0 & 2\\end{pmatrix}\\]<div class='res'>\\(AB=I\\), \\(AC=\\begin{pmatrix}2 & 0\\\\2 & 2\\end{pmatrix}\\), \\(A^tB^t=\\begin{pmatrix}1 & 0 & 0\\\\0 & 1 & 0\\\\1 & 2 & 0\\end{pmatrix}\\), \\(C^tA^t=\\begin{pmatrix}2 & 2\\\\0 & 2\\end{pmatrix}\\)</div></div>"
+    },
+    {
+     "titulo": "Apartado b",
+     "html": "<div class='ex'><p>Solo una matriz cuadrada puede tener inversa. \\(A\\) (\\(2\\times3\\)), \\(B\\) y \\(C\\) (\\(3\\times2\\)) no son cuadradas: no tienen inversa.</p><p>\\(AB=I\\) es cuadrada con determinante 1, y su inversa es ella misma.</p><div class='res'>Solo \\(AB\\) tiene inversa: \\((AB)^{-1}=I=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "matrices",
+     "tipo": "ops",
+     "apartados": "a"
+    },
+    {
+     "tema": "matrices",
+     "tipo": "inv",
+     "apartados": "b"
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2004-JUNIO.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  },
+  {
+   "id": "matematicas-2004-junio-8",
+   "n": 8,
+   "num": 4,
+   "bloque": "Opción B",
+   "puntos": "2,5",
+   "enunciado": {
+    "intro": "Dados los vectores \\(\\vec u=(2,1,0)\\) y \\(\\vec v=(-1,0,1)\\), halla un vector unitario \\(\\vec w\\) que sea coplanario con \\(\\vec u\\) y \\(\\vec v\\) y ortogonal a \\(\\vec v\\).",
+    "apartados": []
+   },
+   "solucion": [
+    {
+     "titulo": "Resolución",
+     "html": "<div class='ex'><p>Coplanario con \\(\\vec u\\) y \\(\\vec v\\) (que no son proporcionales) significa combinación lineal de ellos:</p>\\[\\vec w=\\alpha\\vec u+\\beta\\vec v=(2\\alpha-\\beta,\\ \\alpha,\\ \\beta)\\]\\[\\vec w\\cdot\\vec v=-(2\\alpha-\\beta)+0+\\beta=-2\\alpha+2\\beta=0\\iff\\beta=\\alpha\\ \\Rightarrow\\ \\vec w=\\alpha(1,1,1)\\]<p>Unitario: \\(|\\alpha|\\sqrt3=1\\iff\\alpha=\\pm\\frac1{\\sqrt3}\\).</p><div class='res'>\\(\\vec w=\\left(\\dfrac{\\sqrt3}3,\\dfrac{\\sqrt3}3,\\dfrac{\\sqrt3}3\\right)\\) (o su opuesto)</div></div>"
+    }
+   ],
+   "clasificacion": [
+    {
+     "tema": "geom",
+     "tipo": "vec",
+     "apartados": ""
+    }
+   ],
+   "origen": {
+    "documento": "MAT-2004-JUNIO.pdf"
+   },
+   "dificultad": null,
+   "etiquetas": [],
+   "revision": "borrador"
+  }
+ ]
+}
