@@ -3,9 +3,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script>window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"]]},svg:{fontCache:"global"},startup:{pageReady:()=>MathJax.startup.defaultPageReady().then(()=>{window.mjOk=1;return MathJax.typesetPromise([document.getElementById("app")]).then(()=>window.mjWide&&window.mjWide())})}};</script>
 <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-svg.js"></script>
-<title>PAUteca · Selectividad Matemáticas CCSS II</title>
+<title>PAUteca</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="application-name" content="PAUteca">
+<meta name="apple-mobile-web-app-title" content="PAUteca">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#6d4ae0">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="167x167" href="apple-touch-icon-167.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="shortcut icon" href="favicon.ico">
 <link rel="stylesheet" href="estilos.css">
 </head>
 <body><main id="app"></main>
 <script src="app.js"></script>
+<script>if("serviceWorker"in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}))</script>
 </body></html>

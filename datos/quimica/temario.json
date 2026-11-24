@@ -1,19 +1,42 @@
 {
- "version": 1,
  "temas": [
   {
    "id": "form",
-   "nombre": "Formulación y nomenclatura",
-   "icono": "🏷️",
-   "color": "#8b5cf6",
+   "nombre": "Formulación",
+   "icono": "🧾",
+   "color": "#0e7490",
    "tipos": [
     {
      "id": "inorg",
-     "nombre": "Formulación y nomenclatura inorgánica"
+     "nombre": "Formulación inorgánica"
     },
     {
-     "id": "orgf",
-     "nombre": "Formulación y nomenclatura orgánica"
+     "id": "org",
+     "nombre": "Formulación orgánica"
+    }
+   ]
+  },
+  {
+   "id": "estq",
+   "nombre": "Cálculos químicos y estequiometría",
+   "icono": "🧮",
+   "color": "#475569",
+   "tipos": [
+    {
+     "id": "mol",
+     "nombre": "Mol, masa molar, átomos y moléculas"
+    },
+    {
+     "id": "gases",
+     "nombre": "Gases ideales"
+    },
+    {
+     "id": "disol",
+     "nombre": "Disoluciones: concentración y dilución"
+    },
+    {
+     "id": "reac",
+     "nombre": "Estequiometría: reactivo limitante y rendimiento"
     }
    ]
   },
@@ -21,159 +44,155 @@
    "id": "atom",
    "nombre": "Estructura atómica y sistema periódico",
    "icono": "⚛️",
-   "color": "#2f6df0",
+   "color": "#7c3aed",
    "tipos": [
     {
      "id": "part",
-     "nombre": "Partículas subatómicas, isótopos e iones"
+     "nombre": "Partículas, isótopos e iones"
     },
     {
      "id": "conf",
-     "nombre": "Configuración electrónica y posición en la tabla"
-    },
-    {
-     "id": "cuant",
-     "nombre": "Números cuánticos"
+     "nombre": "Configuración electrónica y números cuánticos"
     },
     {
      "id": "prop",
-     "nombre": "Propiedades periódicas (radio, energía de ionización, electronegatividad, afinidad)"
+     "nombre": "Propiedades periódicas"
+    },
+    {
+     "id": "mod",
+     "nombre": "Modelos atómicos"
     }
    ]
   },
   {
-   "id": "enlace",
-   "nombre": "Enlace químico y propiedades de las sustancias",
+   "id": "enl",
+   "nombre": "Enlace químico",
    "icono": "🔗",
-   "color": "#17a673",
+   "color": "#2563eb",
    "tipos": [
     {
-     "id": "lewis",
-     "nombre": "Estructuras de Lewis, geometría (RPECV) e hibridación"
+     "id": "tipo",
+     "nombre": "Tipo de enlace y propiedades de las sustancias"
     },
     {
-     "id": "pol",
-     "nombre": "Polaridad de las moléculas"
+     "id": "geo",
+     "nombre": "Estructura de Lewis, geometría, hibridación y polaridad"
     },
     {
      "id": "inter",
-     "nombre": "Fuerzas intermoleculares, solubilidad y puntos de fusión"
-    },
-    {
-     "id": "tipo",
-     "nombre": "Tipos de enlace y propiedades de las sustancias"
+     "nombre": "Fuerzas intermoleculares"
     }
    ]
   },
   {
    "id": "termo",
-   "nombre": "Termodinámica química",
+   "nombre": "Termoquímica y espontaneidad",
    "icono": "🔥",
-   "color": "#dc2626",
+   "color": "#b45309",
    "tipos": [
     {
-     "id": "ent",
-     "nombre": "Entalpía de reacción (formación, enlaces, Hess)"
+     "id": "hess",
+     "nombre": "Entalpía: ley de Hess, formación y energías de enlace"
     },
     {
-     "id": "esp",
-     "nombre": "Entropía, energía libre de Gibbs y espontaneidad"
+     "id": "espont",
+     "nombre": "Entropía, energía libre y espontaneidad"
     },
     {
      "id": "calor",
-     "nombre": "Calor a presión y a volumen constante"
+     "nombre": "Calor de reacción y cantidades de sustancia"
     }
    ]
   },
   {
-   "id": "cinet",
+   "id": "cin",
    "nombre": "Cinética química",
    "icono": "⏱️",
-   "color": "#f0a30a",
+   "color": "#ea580c",
    "tipos": [
     {
-     "id": "vel",
-     "nombre": "Ecuación de velocidad, órdenes y unidades"
+     "id": "ecv",
+     "nombre": "Ecuación de velocidad, orden y unidades de k"
     },
     {
      "id": "fact",
-     "nombre": "Factores que modifican la velocidad"
+     "nombre": "Factores que afectan a la velocidad y catalizadores"
     }
    ]
   },
   {
-   "id": "equil",
-   "nombre": "Equilibrio químico y solubilidad",
+   "id": "eq",
+   "nombre": "Equilibrio químico",
    "icono": "⚖️",
-   "color": "#2f9e9e",
+   "color": "#16a34a",
    "tipos": [
     {
-     "id": "kc",
-     "nombre": "Constantes Kc y Kp y cálculo de concentraciones"
+     "id": "kckp",
+     "nombre": "Cálculo de Kc, Kp y concentraciones"
     },
     {
      "id": "lech",
      "nombre": "Principio de Le Châtelier"
-    },
-    {
-     "id": "solub",
-     "nombre": "Solubilidad y producto de solubilidad"
     }
    ]
   },
   {
-   "id": "acbase",
-   "nombre": "Reacciones ácido-base",
-   "icono": "💧",
-   "color": "#6d4ae0",
+   "id": "sol",
+   "nombre": "Solubilidad y precipitación",
+   "icono": "🧂",
+   "color": "#ca8a04",
    "tipos": [
     {
-     "id": "prep",
-     "nombre": "Preparación de disoluciones y concentraciones"
+     "id": "ks",
+     "nombre": "Producto de solubilidad y solubilidad"
     },
+    {
+     "id": "efecto",
+     "nombre": "Ion común, precipitación y desplazamiento"
+    }
+   ]
+  },
+  {
+   "id": "acb",
+   "nombre": "Ácidos y bases",
+   "icono": "🧪",
+   "color": "#db2777",
+   "tipos": [
     {
      "id": "ph",
      "nombre": "Cálculo de pH y grado de disociación"
     },
     {
-     "id": "hidrol",
-     "nombre": "Hidrólisis de sales y carácter ácido-base"
+     "id": "hidr",
+     "nombre": "Hidrólisis de sales"
+    },
+    {
+     "id": "teo",
+     "nombre": "Teoría de Brönsted-Lowry y fuerza de ácidos y bases"
     },
     {
      "id": "neut",
-     "nombre": "Neutralización y volumetrías"
-    },
-    {
-     "id": "pares",
-     "nombre": "Pares conjugados y especies anfóteras"
+     "nombre": "Neutralización y valoraciones"
     }
    ]
   },
   {
    "id": "redox",
-   "nombre": "Reacciones redox y electroquímica",
-   "icono": "⚡",
-   "color": "#e8487a",
+   "nombre": "Reacciones de oxidación-reducción",
+   "icono": "🔋",
+   "color": "#dc2626",
    "tipos": [
     {
      "id": "ajuste",
-     "nombre": "Ajuste por el método del ion-electrón"
-    },
-    {
-     "id": "estq",
-     "nombre": "Estequiometría de reacciones redox"
+     "nombre": "Ajuste por ion-electrón y estequiometría"
     },
     {
      "id": "pila",
-     "nombre": "Pilas galvánicas y potenciales estándar"
+     "nombre": "Pilas y potenciales de reducción"
     },
     {
      "id": "elec",
      "nombre": "Electrólisis y leyes de Faraday"
-    },
-    {
-     "id": "ident",
-     "nombre": "Oxidante y reductor"
     }
    ]
   },
@@ -181,15 +200,19 @@
    "id": "org",
    "nombre": "Química orgánica",
    "icono": "🧬",
-   "color": "#7c5a2b",
+   "color": "#65a30d",
    "tipos": [
     {
-     "id": "reac",
-     "nombre": "Reacciones orgánicas (adición, eliminación, sustitución, combustión)"
+     "id": "iso",
+     "nombre": "Isomería"
     },
     {
-     "id": "isom",
-     "nombre": "Isomería e hibridación del carbono"
+     "id": "reac",
+     "nombre": "Tipos de reacciones orgánicas"
+    },
+    {
+     "id": "grupos",
+     "nombre": "Grupos funcionales y propiedades"
     }
    ]
   }

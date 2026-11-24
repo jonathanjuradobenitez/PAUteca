@@ -42,7 +42,7 @@
    "nombre": "Ciencias Generales",
    "icono": "🌍",
    "color": "#e8487a",
-   "activa": false,
+   "activa": true,
    "carpeta": "datos/ciencias-generales/"
   }
  ]

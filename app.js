@@ -5,7 +5,9 @@ const att={};const $=id=>document.getElementById(id);
 let CAT={anios:{desde:2001,hasta:2027},asignaturas:[]},SUBJ=[];
 const DB={},FULL={},LOAD={};
 const SI=id=>Math.max(0,CAT.asignaturas.findIndex(a=>a.id===id));
-const getJ=u=>fetch(u).then(q=>{if(!q.ok)throw new Error(u+" → "+q.status);return q.json()});
+const getJ0=u=>fetch(u).then(q=>{if(!q.ok)throw new Error(u+" → "+q.status);return q.json()});
+/* window.PAQ: los exámenes se leen de paquetes por año (datos/<asig>/paquetes/AAAA.json), para el artefacto de claude.ai */
+const PQ={},getJ=u=>{const m=window.PAQ&&String(u).match(/^(datos\/[^/]+\/)examenes\/((\d{4})[^/]*)\.json$/);if(!m)return getJ0(u);const b=m[1]+"paquetes/"+m[3]+".json";return(PQ[b]||(PQ[b]=getJ0(b).catch(e=>{delete PQ[b];throw e}))).then(P=>{if(!P[m[2]])throw new Error(u+" no está en "+b);return P[m[2]]})};
 const clsT=L=>{const T={};(L||[]).forEach(c=>(T[c.tema]=T[c.tema]||[]).push([c.tipo,c.apartados]));return T};
 function loadSubj(id){if(LOAD[id])return LOAD[id];const a=CAT.asignaturas.find(z=>z.id===id);if(!a)return Promise.reject(new Error("Asignatura desconocida: "+id));const d=a.carpeta;
  return LOAD[id]=Promise.all([getJ(d+"temario.json"),getJ(d+"formatos.json"),getJ(d+"indice.json")]).then(([tm,fm,ix])=>{
@@ -59,7 +61,7 @@ function view(){
  if(S.s==="years"){let ys="";for(let y=CAT.anios.hasta;y>=CAT.anios.desde;y--)ys+=`<button class="y${hasYear(y)?"":" off"}" data-a="year" data-y="${y}"><i>🗓</i>${y}</button>`;
   return (tp?hero(tp.i,tp.c,SB()[0],tp.n+" · Elige el año"):hero("📄",SB()[2],SB()[0],"Exámenes completos · Elige el año"))+`<div class="card ygrid">${ys}</div>`}
  const X=exams(),k=Math.min(S.k||0,X.length-1),e=X[k],its=e.ex.filter(x=>inc(e,x)),c0=(tp||{}).c||SB()[2],tn=S.m==="type"?TYS()[S.t].find(z=>z[0]===S.ty)[1]:"";
- return `<h1>${SB()[0]}</h1><p class="mut">${S.m==="type"?tp.n+" · "+tn:S.m==="topic"?tp.n+" · "+S.y:"Examen "+S.y}</p>${S.m==="year"?fmt(e):""}<div class="chips" style="--c:${c0}">${X.map((q,n)=>`<button class="ch${n===k?" on":""}" data-a="tab" data-i="${n}">${S.m==="type"?q.year+" "+q.conv:q.conv}</button>`).join("")}</div>${its.map(x=>block(e,FULL[e.id][x.id])).join("")}<p class="note">Resoluciones elaboradas paso a paso; conviene revisarlas antes de usarlas en clase.</p>`}
+ return `<h1>${SB()[0]}</h1><p class="mut">${S.m==="type"?tp.n+" · "+tn:S.m==="topic"?tp.n+" · "+S.y:"Examen "+S.y}</p><div class="chips" style="--c:${c0}">${X.map((q,n)=>`<button class="ch${n===k?" on":""}" data-a="tab" data-i="${n}">${S.m==="type"?q.year+" "+q.conv:q.conv}</button>`).join("")}</div>${its.map(x=>block(e,FULL[e.id][x.id])).join("")}<p class="note">Resoluciones elaboradas paso a paso; conviene revisarlas antes de usarlas en clase.</p>`}
 function notes(root,pre){const L={why:"💡",th:"📘",err:"⚠️",tp:"⭐"},T=["why","th","err","tp"];
  const find=(el,dir)=>{let h=el[dir];while(h&&h.tagName!=="H4"){if(h.matches(".ex"))return h;h=h[dir]}return null};
  let id=0;
@@ -140,4 +142,9 @@ document.addEventListener("click",ev=>{const b=ev.target.closest("[data-a]");if(
  else if(a==="crumb"){const i=+b.dataset.i;if(i<stack.length){S=stack[i];stack=stack.slice(0,i);draw();scrollTo(0,0)}}
  else if(a==="all")b.closest(".sol").classList.toggle("all")});
 document.addEventListener("input",ev=>{if(ev.target.dataset&&ev.target.dataset.k)att[ev.target.dataset.k]=ev.target.value});
+/* rueda para cualquier número de asignaturas (con 5 queda igual que antes) */
+wheel=function(){const N=SUBJ.length||5,st=360/N,cx=170,cy=170,ro=162,ri=56,R=Math.PI/180,f=v=>v.toFixed(1);
+ const pt=(r,a)=>f(cx+r*Math.cos(a*R))+" "+f(cy+r*Math.sin(a*R));
+ return `<svg class="wheel" viewBox="0 0 340 340" width="100%" style="max-width:380px;display:block;margin:6px auto 0">`+SUBJ.map((u,i)=>{const a0=-90+st*i+1,a1=a0+st-2,m=a0+(st-2)/2,tx=cx+108*Math.cos(m*R),ty=cy+108*Math.sin(m*R),nm=u[0].split(" ");
+  return `<g ${u[3]?'data-a="subj" data-s="'+i+'"':'class="off"'}><path d="M${pt(ro,a0)} A${ro} ${ro} 0 0 1 ${pt(ro,a1)} L${pt(ri,a1)} A${ri} ${ri} 0 0 0 ${pt(ri,a0)} Z" fill="${u[2]}"/><text x="${f(tx)}" y="${f(ty-10)}" text-anchor="middle" font-size="${u[1].length>2?22:26}" fill="#fff">${u[1]}</text><text text-anchor="middle" font-size="12" font-weight="700" fill="#fff"><tspan x="${f(tx)}" y="${f(ty+12)}">${nm[0]}</tspan>${nm[1]?`<tspan x="${f(tx)}" dy="14">${nm.slice(1).join(" ")}</tspan>`:""}</text>${u[3]?"":`<text x="${f(tx)}" y="${f(ty+44)}" text-anchor="middle" font-size="9" fill="#fff" opacity=".9">Próximamente</text>`}</g>`}).join("")+`<circle cx="170" cy="170" r="52" fill="var(--card)"/><text x="170" y="166" text-anchor="middle" font-size="13" font-weight="800" fill="var(--ink)">Elige</text><text x="170" y="182" text-anchor="middle" font-size="11" fill="var(--mut)">asignatura</text></svg>`};
 boot();
